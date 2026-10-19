@@ -1,2 +1,5 @@
 *.zip
 *.json
+__pycache__/
+*.pyc
+data/
