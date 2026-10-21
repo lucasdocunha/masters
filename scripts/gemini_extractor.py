@@ -67,7 +67,8 @@ Se algum dado estiver completamente ilegível ou ausente, retorne null no respec
 def extract_pdf_with_gemini(
     client: genai.Client,
     pdf_path: Path,
-    model_name: str = "gemini-2.5-flash",
+    model_name: str = "gemini-3.5-flash-lite",
+    max_retries: int = 4,
 ) -> dict[str, Any]:
     """Lê um PDF, envia para a API do Gemini com schema estruturado e retorna o dicionário."""
     with open(pdf_path, "rb") as f:
@@ -82,36 +83,55 @@ def extract_pdf_with_gemini(
         temperature=0.1,
     )
 
-    response = client.models.generate_content(
-        model=model_name,
-        contents=[pdf_part, "Extraia as informações deste documento fiscal conforme o schema estruturado."],
-        config=config,
-    )
-
-    if response.parsed:
-        if isinstance(response.parsed, BaseModel):
-            return response.parsed.model_dump()
-        elif isinstance(response.parsed, dict):
-            return response.parsed
-
-    # Fallback para parsing manual do texto
-    if response.text:
+    last_error = None
+    for attempt in range(max_retries):
         try:
-            return json.loads(response.text)
-        except Exception:
-            return {"erro_parsing": response.text}
+            response = client.models.generate_content(
+                model=model_name,
+                contents=[pdf_part, "Extraia as informações deste documento fiscal conforme o schema estruturado."],
+                config=config,
+            )
 
-    return {"erro": "Resposta vazia da API"}
+            if response.parsed:
+                if isinstance(response.parsed, BaseModel):
+                    return response.parsed.model_dump()
+                elif isinstance(response.parsed, dict):
+                    return response.parsed
+
+            # Fallback para parsing manual do texto
+            if response.text:
+                try:
+                    return json.loads(response.text)
+                except Exception:
+                    return {"erro_parsing": response.text}
+
+            return {"erro": "Resposta vazia da API"}
+        except Exception as e:
+            last_error = e
+            err_msg = str(e)
+            # Se for cota diária esgotada, não adianta tentar em loop
+            if "PerDay" in err_msg or "daily" in err_msg.lower():
+                raise e
+
+            # Se for limite por minuto (15 RPM) ou instabilidade temporária (503)
+            if attempt < max_retries - 1 and any(code in err_msg for code in ("503", "429", "UNAVAILABLE", "RESOURCE_EXHAUSTED")):
+                wait_time = 15 * (attempt + 1)
+                print(f" [Limite/Espera temporária detectada. Aguardando {wait_time}s para retry {attempt+1}/{max_retries}...]", end="", flush=True)
+                time.sleep(wait_time)
+                continue
+            raise e
+
+    raise last_error
 
 
 def run_batch_extraction(
     input_dir: Path,
     api_key: Optional[str] = None,
-    model_name: str = "gemini-2.5-flash",
+    model_name: str = "gemini-3.5-flash-lite",
     limit: Optional[int] = None,
     filter_year: Optional[int] = None,
     filter_doc_id: Optional[str] = None,
-    delay: float = 1.0,
+    delay: float = 5.0,
     overwrite: bool = False,
 ) -> list[Path]:
     """Processa os PDFs selecionados na pasta input_dir e salva os arquivos _extraido.json."""
@@ -179,6 +199,11 @@ def run_batch_extraction(
             processed_files.append(out_json_path)
         except Exception as e:
             print(f" ERRO: {e}")
+            err_str = str(e)
+            if "PerDay" in err_str or "daily" in err_str.lower():
+                print(f"\n[Aviso de Quota] A cota diária do plano gratuito (RPD) para o modelo '{model_name}' foi atingida.")
+                print("O processamento foi pausado para evitar novas falhas. Todas as extrações feitas até agora estão salvas!")
+                break
 
         if delay > 0 and idx < len(docs):
             time.sleep(delay)
@@ -191,11 +216,11 @@ def main():
     parser = argparse.ArgumentParser(description="Extração multimodal de dados fiscais com Google Gemini")
     parser.add_argument("--input-dir", "-i", type=Path, default=Path("data/pdfs_selecionados"), help="Pasta com PDFs e manifest")
     parser.add_argument("--api-key", help="Chave GEMINI_API_KEY (ou via variável de ambiente / .env)")
-    parser.add_argument("--model", default="gemini-2.5-flash", help="Nome do modelo (ex: gemini-2.5-flash, gemini-2.5-pro)")
+    parser.add_argument("--model", default="gemini-3.5-flash-lite", help="Nome do modelo (ex: gemini-3.5-flash-lite, gemini-flash-lite-latest)")
     parser.add_argument("--limit", type=int, help="Limita o número de documentos para teste rápido")
     parser.add_argument("--year", type=int, help="Filtra por um ano específico")
     parser.add_argument("--doc-id", help="Processa apenas um documento específico pelo ID")
-    parser.add_argument("--delay", type=float, default=1.0, help="Intervalo em segundos entre chamadas")
+    parser.add_argument("--delay", type=float, default=5.0, help="Intervalo em segundos entre chamadas (padrão: 5.0s para respeitar 15 RPM do plano gratuito)")
     parser.add_argument("--overwrite", action="store_true", help="Sobrescreve extrações já existentes")
     args = parser.parse_args()
 

@@ -223,12 +223,12 @@ def main() -> None:
         batch_texts = []
         batch_page_meta = []
 
-        for offset, file_path in enumerate(chunk_files):
-            doc_id = i + offset
+        for file_path in chunk_files:
             pages = render_pdf_pages(file_path) if file_path.suffix.lower() == ".pdf" else [{"page_idx": 0, "image": Image.open(file_path).convert("RGB"), "text": ""}]
             if not pages:
                 continue
 
+            doc_id = len(doc_meta)
             doc_meta.append({"doc_id": doc_id, "doc_name": file_path.name, "num_pages": len(pages)})
             for p in pages:
                 batch_images.append(p["image"])
