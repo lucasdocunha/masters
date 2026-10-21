@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import sys
 from pathlib import Path
 
+# Garantir que a raiz do projeto esteja no sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import numpy as np
-from scripts.clusterizacao import cluster
+
+try:
+    from scripts.clusterizacao import cluster
+except ModuleNotFoundError:
+    from clusterizacao import cluster
 
 
 def main():
