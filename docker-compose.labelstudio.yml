@@ -7,8 +7,8 @@ services:
     environment:
       - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
       - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/data
-      - LABEL_STUDIO_DISABLE_SIGNUP_WITHOUT_LINK=true
       - LABEL_STUDIO_BASE_DATA_DIR=/label-studio/data
+      - USE_DEFAULT_BANNED_SUBNETS=false
     volumes:
       - ./label_studio_data:/label-studio/data
       - /media/ssd2/datasets/CEAP:/data/pdfs:ro
