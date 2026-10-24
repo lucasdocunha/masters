@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.10"
 dependencies = [
     "psycopg[binary]>=3.3.6",
+    "faiss-cpu>=1.10.0",
 ]
 
 [project.scripts]

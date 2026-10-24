@@ -1,0 +1,3201 @@
+{
+  "analysis": {
+    "0": {
+      "cluster_id": 0,
+      "total_docs": 96,
+      "percentage": 1.92,
+      "similarity_mean": 0.8418078422546387,
+      "similarity_min": 0.5132429599761963,
+      "similarity_max": 0.9495023488998413,
+      "distance_mean": 0.15819215774536133,
+      "inferred_taxonomy": "BILHETE_AEREO_EMBARQUE",
+      "dominant_subcota": "PASSAGEM AÉREA - REEMBOLSO",
+      "dominant_subcota_pct": 57.291666666666664,
+      "top_subcotas": [
+        [
+          "PASSAGEM AÉREA - REEMBOLSO",
+          55,
+          57.3
+        ],
+        [
+          "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+          14,
+          14.6
+        ],
+        [
+          "PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS",
+          12,
+          12.5
+        ],
+        [
+          "SERVIÇOS POSTAIS",
+          9,
+          9.4
+        ],
+        [
+          "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+          2,
+          2.1
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "TAM LINHAS AÉREAS.",
+          8,
+          8.3
+        ],
+        [
+          "GOL LINHAS AÉREAS INTELIGENTES",
+          7,
+          7.3
+        ],
+        [
+          "AVIANCA",
+          6,
+          6.2
+        ],
+        [
+          "TAM LINHAS AÉREAS S.A.",
+          5,
+          5.2
+        ],
+        [
+          "GOL - LINHAS AÉREAS S/A",
+          4,
+          4.2
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          59,
+          61.5
+        ],
+        [
+          2015,
+          37,
+          38.5
+        ]
+      ]
+    },
+    "1": {
+      "cluster_id": 1,
+      "total_docs": 850,
+      "percentage": 17.0,
+      "similarity_mean": 0.8976629972457886,
+      "similarity_min": 0.6545820236206055,
+      "similarity_max": 0.969244122505188,
+      "distance_mean": 0.10233700275421143,
+      "inferred_taxonomy": "CUPOM_FISCAL_COMBUSTIVEL",
+      "dominant_subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "dominant_subcota_pct": 77.41176470588236,
+      "top_subcotas": [
+        [
+          "COMBUSTÍVEIS E LUBRIFICANTES.",
+          658,
+          77.4
+        ],
+        [
+          "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+          165,
+          19.4
+        ],
+        [
+          "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+          13,
+          1.5
+        ],
+        [
+          "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+          6,
+          0.7
+        ],
+        [
+          "PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS",
+          3,
+          0.4
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+          25,
+          2.9
+        ],
+        [
+          "SERV. NAC. DE APRENDIZAGEM COMERCIAL - SENAC",
+          21,
+          2.5
+        ],
+        [
+          "CASCOL COMBUSTÍVEIS PARA VEÍCULOS LTDA",
+          10,
+          1.2
+        ],
+        [
+          "CENTRAL PARK RESTAURANTE E EVENTOS LTDA ME",
+          7,
+          0.8
+        ],
+        [
+          "SERVIÇO NACIONAL DE APRENDIZAGEM COMERCIAL - SENAC",
+          7,
+          0.8
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          631,
+          74.2
+        ],
+        [
+          2015,
+          219,
+          25.8
+        ]
+      ]
+    },
+    "2": {
+      "cluster_id": 2,
+      "total_docs": 219,
+      "percentage": 4.38,
+      "similarity_mean": 0.8875501155853271,
+      "similarity_min": 0.7076939940452576,
+      "similarity_max": 0.960961103439331,
+      "distance_mean": 0.11244988441467285,
+      "inferred_taxonomy": "RECIBO_TAXI_ESTACIONAMENTO",
+      "dominant_subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "dominant_subcota_pct": 95.8904109589041,
+      "top_subcotas": [
+        [
+          "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+          210,
+          95.9
+        ],
+        [
+          "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+          4,
+          1.8
+        ],
+        [
+          "COMBUSTÍVEIS E LUBRIFICANTES.",
+          3,
+          1.4
+        ],
+        [
+          "LOCAÇÃO OU FRETAMENTO DE AERONAVES",
+          1,
+          0.5
+        ],
+        [
+          "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+          1,
+          0.5
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "SINPETAXI",
+          55,
+          25.1
+        ],
+        [
+          "SINPETAXI - Taxi",
+          35,
+          16.0
+        ],
+        [
+          "SINPETAXI - DF",
+          16,
+          7.3
+        ],
+        [
+          "COOPERTAXI 202 NORTE",
+          14,
+          6.4
+        ],
+        [
+          "SINPETAXI  - Taxi",
+          8,
+          3.7
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          144,
+          65.8
+        ],
+        [
+          2015,
+          75,
+          34.2
+        ]
+      ]
+    },
+    "3": {
+      "cluster_id": 3,
+      "total_docs": 472,
+      "percentage": 9.44,
+      "similarity_mean": 0.9046923518180847,
+      "similarity_min": 0.7030525803565979,
+      "similarity_max": 0.957999587059021,
+      "distance_mean": 0.09530764818191528,
+      "inferred_taxonomy": "CUPOM_REFEICAO_ALIMENTACAO",
+      "dominant_subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "dominant_subcota_pct": 48.940677966101696,
+      "top_subcotas": [
+        [
+          "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+          231,
+          48.9
+        ],
+        [
+          "COMBUSTÍVEIS E LUBRIFICANTES.",
+          145,
+          30.7
+        ],
+        [
+          "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+          37,
+          7.8
+        ],
+        [
+          "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+          18,
+          3.8
+        ],
+        [
+          "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+          15,
+          3.2
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+          14,
+          3.0
+        ],
+        [
+          "WMS Comércio de Artigos de Papelaria LTDA",
+          13,
+          2.8
+        ],
+        [
+          "PBJM COMERCIO DE GENEROS ALIMENTICIOS LTDA",
+          10,
+          2.1
+        ],
+        [
+          "POSTO DA TORRE LTDA",
+          6,
+          1.3
+        ],
+        [
+          "Cascol Combustíveis para Veículos Ltda.",
+          6,
+          1.3
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          350,
+          74.2
+        ],
+        [
+          2015,
+          122,
+          25.8
+        ]
+      ]
+    },
+    "4": {
+      "cluster_id": 4,
+      "total_docs": 543,
+      "percentage": 10.86,
+      "similarity_mean": 0.8693384528160095,
+      "similarity_min": 0.6107989549636841,
+      "similarity_max": 0.9493407607078552,
+      "distance_mean": 0.13066154718399048,
+      "inferred_taxonomy": "DANFE_A4_OU_FATURA",
+      "dominant_subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "dominant_subcota_pct": 53.591160220994475,
+      "top_subcotas": [
+        [
+          "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+          291,
+          53.6
+        ],
+        [
+          "COMBUSTÍVEIS E LUBRIFICANTES.",
+          98,
+          18.0
+        ],
+        [
+          "SERVIÇOS POSTAIS",
+          61,
+          11.2
+        ],
+        [
+          "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+          26,
+          4.8
+        ],
+        [
+          "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+          25,
+          4.6
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "CEMIG DISTRIBUIÇAO S.A.",
+          13,
+          2.4
+        ],
+        [
+          "Coelba Grupo Neoenergia",
+          13,
+          2.4
+        ],
+        [
+          "COPEL DISTRIBUIÇÃO S.A.",
+          12,
+          2.2
+        ],
+        [
+          "ELETROPAULO METROPOLITANA ELETRICIDADE DE SÃO PAULO S.A.",
+          11,
+          2.0
+        ],
+        [
+          "ECT - EMP. BRAS. DE CORREIOS E TELEGRAFOS",
+          11,
+          2.0
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          420,
+          77.3
+        ],
+        [
+          2015,
+          123,
+          22.7
+        ]
+      ]
+    },
+    "5": {
+      "cluster_id": 5,
+      "total_docs": 845,
+      "percentage": 16.900000000000002,
+      "similarity_mean": 0.8744298815727234,
+      "similarity_min": 0.3165048062801361,
+      "similarity_max": 0.9576350450515747,
+      "distance_mean": 0.1255701184272766,
+      "inferred_taxonomy": "DANFE_A4_OU_FATURA",
+      "dominant_subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "dominant_subcota_pct": 25.917159763313606,
+      "top_subcotas": [
+        [
+          "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+          219,
+          25.9
+        ],
+        [
+          "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+          140,
+          16.6
+        ],
+        [
+          "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+          122,
+          14.4
+        ],
+        [
+          "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+          121,
+          14.3
+        ],
+        [
+          "COMBUSTÍVEIS E LUBRIFICANTES.",
+          90,
+          10.7
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "CENTRO DE GESTÃO DE MEIOS DE PGTO. S/A",
+          5,
+          0.6
+        ],
+        [
+          "IRACEMA S SOUZA - ME",
+          5,
+          0.6
+        ],
+        [
+          "CONDE & DELL ARINGA DESENVOL DE SOFTWARES LTDA EPP",
+          5,
+          0.6
+        ],
+        [
+          "GP SISTEMAS E SERVIÇOS LTDA",
+          5,
+          0.6
+        ],
+        [
+          "HOTEL JACONE",
+          4,
+          0.5
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          614,
+          72.7
+        ],
+        [
+          2015,
+          231,
+          27.3
+        ]
+      ]
+    },
+    "6": {
+      "cluster_id": 6,
+      "total_docs": 225,
+      "percentage": 4.5,
+      "similarity_mean": 0.8433263897895813,
+      "similarity_min": 0.45579802989959717,
+      "similarity_max": 0.9388938546180725,
+      "distance_mean": 0.1566736102104187,
+      "inferred_taxonomy": "CUPOM_FISCAL_COMBUSTIVEL",
+      "dominant_subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "dominant_subcota_pct": 69.33333333333334,
+      "top_subcotas": [
+        [
+          "COMBUSTÍVEIS E LUBRIFICANTES.",
+          156,
+          69.3
+        ],
+        [
+          "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+          50,
+          22.2
+        ],
+        [
+          "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+          8,
+          3.6
+        ],
+        [
+          "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+          4,
+          1.8
+        ],
+        [
+          "PASSAGEM AÉREA - REEMBOLSO",
+          4,
+          1.8
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+          7,
+          3.1
+        ],
+        [
+          "AUTO POSTO AEROPORTO LTDA",
+          4,
+          1.8
+        ],
+        [
+          "SERVIÇO NACIONAL DE APRENDIZAGEM COMERCIAL - SENAC",
+          4,
+          1.8
+        ],
+        [
+          "RODOVIA DAS CATARATAS S.A.",
+          2,
+          0.9
+        ],
+        [
+          "CERQUEIRA E PIMENTEL LTDA",
+          2,
+          0.9
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          175,
+          77.8
+        ],
+        [
+          2015,
+          50,
+          22.2
+        ]
+      ]
+    },
+    "7": {
+      "cluster_id": 7,
+      "total_docs": 377,
+      "percentage": 7.539999999999999,
+      "similarity_mean": 0.8549942374229431,
+      "similarity_min": 0.705510139465332,
+      "similarity_max": 0.9275195002555847,
+      "distance_mean": 0.14500576257705688,
+      "inferred_taxonomy": "RECIBO_TAXI_ESTACIONAMENTO",
+      "dominant_subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "dominant_subcota_pct": 97.34748010610079,
+      "top_subcotas": [
+        [
+          "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+          367,
+          97.3
+        ],
+        [
+          "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+          3,
+          0.8
+        ],
+        [
+          "COMBUSTÍVEIS E LUBRIFICANTES.",
+          3,
+          0.8
+        ],
+        [
+          "PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS",
+          3,
+          0.8
+        ],
+        [
+          "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+          1,
+          0.3
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "Conc. Sistema Anhanguera-Bandeirantes S/A",
+          68,
+          18.0
+        ],
+        [
+          "Concessionaria das Rodovias Ayrton Senna",
+          27,
+          7.2
+        ],
+        [
+          "CONCESS. RODOVIA OESTE DE SÃO PAULO",
+          26,
+          6.9
+        ],
+        [
+          "CAMINHOS DO PARANA S/A",
+          18,
+          4.8
+        ],
+        [
+          "CCR-RODONORTE",
+          15,
+          4.0
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          260,
+          69.0
+        ],
+        [
+          2015,
+          117,
+          31.0
+        ]
+      ]
+    },
+    "8": {
+      "cluster_id": 8,
+      "total_docs": 1136,
+      "percentage": 22.720000000000002,
+      "similarity_mean": 0.9008457064628601,
+      "similarity_min": 0.6955302357673645,
+      "similarity_max": 0.9562085866928101,
+      "distance_mean": 0.09915429353713989,
+      "inferred_taxonomy": "CUPOM_FISCAL_COMBUSTIVEL",
+      "dominant_subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "dominant_subcota_pct": 68.22183098591549,
+      "top_subcotas": [
+        [
+          "COMBUSTÍVEIS E LUBRIFICANTES.",
+          775,
+          68.2
+        ],
+        [
+          "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+          302,
+          26.6
+        ],
+        [
+          "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+          27,
+          2.4
+        ],
+        [
+          "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+          21,
+          1.8
+        ],
+        [
+          "PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS",
+          7,
+          0.6
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "SERVIÇO NACIONAL DE APRENDIZ COMERCIAL - SENAC",
+          24,
+          2.1
+        ],
+        [
+          "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+          22,
+          1.9
+        ],
+        [
+          "PETROIL COMBUSTIVEIS LTDA",
+          12,
+          1.1
+        ],
+        [
+          "POSTO DA TORRE LTDA",
+          10,
+          0.9
+        ],
+        [
+          "SERV. NAC. DE APRENDIZAGEM COMERCIAL - SENAC",
+          9,
+          0.8
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          840,
+          73.9
+        ],
+        [
+          2015,
+          296,
+          26.1
+        ]
+      ]
+    },
+    "9": {
+      "cluster_id": 9,
+      "total_docs": 237,
+      "percentage": 4.74,
+      "similarity_mean": 0.9281848669052124,
+      "similarity_min": 0.7140932679176331,
+      "similarity_max": 0.9689397215843201,
+      "distance_mean": 0.0718151330947876,
+      "inferred_taxonomy": "CUPOM_FISCAL_COMBUSTIVEL",
+      "dominant_subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "dominant_subcota_pct": 74.26160337552743,
+      "top_subcotas": [
+        [
+          "COMBUSTÍVEIS E LUBRIFICANTES.",
+          176,
+          74.3
+        ],
+        [
+          "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+          53,
+          22.4
+        ],
+        [
+          "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+          5,
+          2.1
+        ],
+        [
+          "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+          3,
+          1.3
+        ]
+      ],
+      "top_fornecedores": [
+        [
+          "POSTO SERVUS",
+          9,
+          3.8
+        ],
+        [
+          "SANTOS E QUEIROZ COMERCIO DE COMBUSTIVEIS LTDA.",
+          9,
+          3.8
+        ],
+        [
+          "CASCOL COMBUSTÍVEIS PARA VEÍCULOS LTDA.",
+          6,
+          2.5
+        ],
+        [
+          "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+          6,
+          2.5
+        ],
+        [
+          "ELO COMÉRCIO E SERVIÇOS LTDA",
+          5,
+          2.1
+        ]
+      ],
+      "top_years": [
+        [
+          2014,
+          173,
+          73.0
+        ],
+        [
+          2015,
+          64,
+          27.0
+        ]
+      ]
+    }
+  },
+  "samples": {
+    "0": [
+      {
+        "rank": 1,
+        "doc_id": 3853,
+        "doc_name": "5671157.pdf",
+        "year": 2015,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "Adria viagens e turismo",
+        "num_pages": 3,
+        "dist_to_centroid": 0.05049765110015869,
+        "image": "01_5671157.png",
+        "pdf": "01_5671157.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 1075,
+        "doc_name": "5471892.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "GOL TRANSPORTES AEREOS LTDA",
+        "num_pages": 4,
+        "dist_to_centroid": 0.06139737367630005,
+        "image": "02_5471892.png",
+        "pdf": "02_5471892.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 3806,
+        "doc_name": "5849133.pdf",
+        "year": 2015,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "AVIANCA BRASIL",
+        "num_pages": 4,
+        "dist_to_centroid": 0.06355506181716919,
+        "image": "03_5849133.png",
+        "pdf": "03_5849133.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 4746,
+        "doc_name": "5637613.pdf",
+        "year": 2015,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "GOL LINHAS AÉREAS INTELIGENTES",
+        "num_pages": 6,
+        "dist_to_centroid": 0.06893754005432129,
+        "image": "04_5637613.png",
+        "pdf": "04_5637613.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 3251,
+        "doc_name": "5514476.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "Kapital Viagem e Turismo - LTDA",
+        "num_pages": 4,
+        "dist_to_centroid": 0.06895965337753296,
+        "image": "05_5514476.png",
+        "pdf": "05_5514476.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 4608,
+        "doc_name": "5812370.pdf",
+        "year": 2015,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "AVIANCA",
+        "num_pages": 3,
+        "dist_to_centroid": 0.07197028398513794,
+        "image": "06_5812370.png",
+        "pdf": "06_5812370.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 3169,
+        "doc_name": "5564650.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "GOL LINHAS AÉREAS INTELIGENTES",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07284528017044067,
+        "image": "07_5564650.png",
+        "pdf": "07_5564650.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 132,
+        "doc_name": "5572625.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "GOL LINHAS AÉREAS INTELIGENTES",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0768423080444336,
+        "image": "08_5572625.png",
+        "pdf": "08_5572625.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 4673,
+        "doc_name": "5800893.pdf",
+        "year": 2015,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "GOL - LINHAS AÉREAS S/A",
+        "num_pages": 4,
+        "dist_to_centroid": 0.07840639352798462,
+        "image": "09_5800893.png",
+        "pdf": "09_5800893.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 4006,
+        "doc_name": "5676891.pdf",
+        "year": 2015,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "Gol Linhas Aereas",
+        "num_pages": 2,
+        "dist_to_centroid": 0.08405858278274536,
+        "image": "10_5676891.png",
+        "pdf": "10_5676891.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 2287,
+        "doc_name": "5545295.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "Gol Linhas Aereas",
+        "num_pages": 3,
+        "dist_to_centroid": 0.08557265996932983,
+        "image": "11_5545295.png",
+        "pdf": "11_5545295.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 1654,
+        "doc_name": "5562851.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "GOL LINHAS AÉREAS INTELIGENTES",
+        "num_pages": 4,
+        "dist_to_centroid": 0.09322130680084229,
+        "image": "12_5562851.png",
+        "pdf": "12_5562851.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 1059,
+        "doc_name": "5472312.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "Azul Linhas Aéreas Brasileiras.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.09801703691482544,
+        "image": "13_5472312.png",
+        "pdf": "13_5472312.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 4351,
+        "doc_name": "5667510.pdf",
+        "year": 2015,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "TAM LINHAS AÉREAS.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.09915870428085327,
+        "image": "14_5667510.png",
+        "pdf": "14_5667510.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 2868,
+        "doc_name": "5564710.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "Azul Linhas Aéreas Brasileiras.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.09943515062332153,
+        "image": "15_5564710.png",
+        "pdf": "15_5564710.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 2205,
+        "doc_name": "5551347.pdf",
+        "year": 2014,
+        "subcota": "PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS",
+        "fornecedor": "guanabara",
+        "num_pages": 1,
+        "dist_to_centroid": 0.10091584920883179,
+        "image": "16_5551347.png",
+        "pdf": "16_5551347.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 4030,
+        "doc_name": "5812884.pdf",
+        "year": 2015,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "TAM LINHAS AÉREAS.",
+        "num_pages": 4,
+        "dist_to_centroid": 0.10185247659683228,
+        "image": "17_5812884.png",
+        "pdf": "17_5812884.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 775,
+        "doc_name": "5535572.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "TAM LINHAS AÉREAS S.A.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.10420715808868408,
+        "image": "18_5535572.png",
+        "pdf": "18_5535572.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 566,
+        "doc_name": "5486098.pdf",
+        "year": 2014,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "GOL LINHAS AÉREAS INTELIGENTES",
+        "num_pages": 1,
+        "dist_to_centroid": 0.10598880052566528,
+        "image": "19_5486098.png",
+        "pdf": "19_5486098.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 4513,
+        "doc_name": "5769161.pdf",
+        "year": 2015,
+        "subcota": "PASSAGEM AÉREA - REEMBOLSO",
+        "fornecedor": "TAM LINHAS AÉREAS.",
+        "num_pages": 4,
+        "dist_to_centroid": 0.10618752241134644,
+        "image": "20_5769161.png",
+        "pdf": "20_5769161.pdf"
+      }
+    ],
+    "1": [
+      {
+        "rank": 1,
+        "doc_id": 4774,
+        "doc_name": "5806719.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO M R DA TAQUARA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.03075587749481201,
+        "image": "01_5806719.png",
+        "pdf": "01_5806719.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 4616,
+        "doc_name": "5627221.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "SERV. NAC. DE APRENDIZAGEM COMERCIAL - SENAC",
+        "num_pages": 1,
+        "dist_to_centroid": 0.044637858867645264,
+        "image": "02_5627221.png",
+        "pdf": "02_5627221.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 1478,
+        "doc_name": "5533077.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "SERV. NAC. DE APRENDIZAGEM COMERCIAL - SENAC",
+        "num_pages": 1,
+        "dist_to_centroid": 0.044724106788635254,
+        "image": "03_5533077.png",
+        "pdf": "03_5533077.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 3387,
+        "doc_name": "5531550.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "TORRE COMBUSTIVEIS LTDA ME",
+        "num_pages": 1,
+        "dist_to_centroid": 0.045484960079193115,
+        "image": "04_5531550.png",
+        "pdf": "04_5531550.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 2388,
+        "doc_name": "5536393.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO DO SINO LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04567670822143555,
+        "image": "05_5536393.png",
+        "pdf": "05_5536393.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 238,
+        "doc_name": "5477051.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "G A MENDES COMERCIO DE COMBUSTIVEIS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.047869980335235596,
+        "image": "06_5477051.png",
+        "pdf": "06_5477051.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 152,
+        "doc_name": "5517105.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "CASCOL COMBUSTÍVEIS PARA VEÍCULOS LTDA.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.048952460289001465,
+        "image": "07_5517105.png",
+        "pdf": "07_5517105.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 1521,
+        "doc_name": "5504062.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "CASCOL COMBUSTÍVEIS PARA VEÍCULOS LTDA",
+        "num_pages": 4,
+        "dist_to_centroid": 0.04908931255340576,
+        "image": "08_5504062.png",
+        "pdf": "08_5504062.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 4647,
+        "doc_name": "5832709.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "SENAC - serviço de Nacional de aprendizagem comercial",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04944711923599243,
+        "image": "09_5832709.png",
+        "pdf": "09_5832709.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 3348,
+        "doc_name": "5500410.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO CARRETEIRO LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04979163408279419,
+        "image": "10_5500410.png",
+        "pdf": "10_5500410.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 3404,
+        "doc_name": "5513065.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "CATANA COMER. DE COMBUS. E LUBRIFICANTES LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04991447925567627,
+        "image": "11_5513065.png",
+        "pdf": "11_5513065.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 3889,
+        "doc_name": "5862227.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "PETROIL COMBUSTIVEIS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.050690293312072754,
+        "image": "12_5862227.png",
+        "pdf": "12_5862227.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 4482,
+        "doc_name": "5902962.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "BRASIL 21 EVENTOS E HOTELARIA LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05137515068054199,
+        "image": "13_5902962.png",
+        "pdf": "13_5902962.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 834,
+        "doc_name": "5464646.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "CALL TECH COMBUSTÍVEIS",
+        "num_pages": 1,
+        "dist_to_centroid": 0.052047550678253174,
+        "image": "14_5464646.png",
+        "pdf": "14_5464646.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 4387,
+        "doc_name": "5860658.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "C ALBUQUERQUE COMERCIO DE COMBUSTIVEIS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05274003744125366,
+        "image": "15_5860658.png",
+        "pdf": "15_5860658.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 2741,
+        "doc_name": "5573697.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "F&L EMPREENDIMENTOS COMERCIAIS LTDA - ME",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05278223752975464,
+        "image": "16_5573697.png",
+        "pdf": "16_5573697.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 405,
+        "doc_name": "5454314.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO ALGODIRMÃOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05278277397155762,
+        "image": "17_5454314.png",
+        "pdf": "17_5454314.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 1260,
+        "doc_name": "5511912.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO PETROMETAL",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05348706245422363,
+        "image": "18_5511912.png",
+        "pdf": "18_5511912.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 2944,
+        "doc_name": "5571965.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "FAMA EMPREENDIMENTOS ALIMENTICIOS LTDA EPP",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05371576547622681,
+        "image": "19_5571965.png",
+        "pdf": "19_5571965.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 1474,
+        "doc_name": "5493214.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "PETRO AGAMENON LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.054082274436950684,
+        "image": "20_5493214.png",
+        "pdf": "20_5493214.pdf"
+      }
+    ],
+    "2": [
+      {
+        "rank": 1,
+        "doc_id": 4322,
+        "doc_name": "5680034.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.039038896560668945,
+        "image": "01_5680034.png",
+        "pdf": "01_5680034.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 7,
+        "doc_name": "5475644.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI - DF",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04192948341369629,
+        "image": "02_5475644.png",
+        "pdf": "02_5475644.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 1497,
+        "doc_name": "5568271.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI - Taxi",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04584777355194092,
+        "image": "03_5568271.png",
+        "pdf": "03_5568271.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 4392,
+        "doc_name": "5630298.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04694640636444092,
+        "image": "04_5630298.png",
+        "pdf": "04_5630298.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 4395,
+        "doc_name": "5601048.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.047228455543518066,
+        "image": "05_5601048.png",
+        "pdf": "05_5601048.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 744,
+        "doc_name": "5502367.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.047306716442108154,
+        "image": "06_5502367.png",
+        "pdf": "06_5502367.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 1784,
+        "doc_name": "5470298.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI - DF",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04868805408477783,
+        "image": "07_5470298.png",
+        "pdf": "07_5470298.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 4446,
+        "doc_name": "5830295.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "sinpetaxi",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05074477195739746,
+        "image": "08_5830295.png",
+        "pdf": "08_5830295.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 4981,
+        "doc_name": "5814467.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI-SINDICATO PERMISSIONARIA DE TAXIS E MOT AUX DO DF",
+        "num_pages": 1,
+        "dist_to_centroid": 0.050989627838134766,
+        "image": "09_5814467.png",
+        "pdf": "09_5814467.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 3819,
+        "doc_name": "5723864.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.051297903060913086,
+        "image": "10_5723864.png",
+        "pdf": "10_5723864.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 1881,
+        "doc_name": "5558604.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI - Taxi",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05162400007247925,
+        "image": "11_5558604.png",
+        "pdf": "11_5558604.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 4448,
+        "doc_name": "5822823.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI-SINDICATO PERMISSIONARIA DE TAXIS E MOT AUX DO DF",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05424624681472778,
+        "image": "12_5822823.png",
+        "pdf": "12_5822823.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 3305,
+        "doc_name": "5533992.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI - Taxi",
+        "num_pages": 1,
+        "dist_to_centroid": 0.055843472480773926,
+        "image": "13_5533992.png",
+        "pdf": "13_5533992.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 4620,
+        "doc_name": "5695439.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.056349992752075195,
+        "image": "14_5695439.png",
+        "pdf": "14_5695439.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 1945,
+        "doc_name": "5505392.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05711442232131958,
+        "image": "15_5505392.png",
+        "pdf": "15_5505392.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 4260,
+        "doc_name": "5721134.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.058315396308898926,
+        "image": "16_5721134.png",
+        "pdf": "16_5721134.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 1655,
+        "doc_name": "5523612.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05833029747009277,
+        "image": "17_5523612.png",
+        "pdf": "17_5523612.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 2247,
+        "doc_name": "5456864.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "SINPETAXI - DF",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05855977535247803,
+        "image": "18_5456864.png",
+        "pdf": "18_5456864.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 771,
+        "doc_name": "5576221.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI  - Taxi",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05883896350860596,
+        "image": "19_5576221.png",
+        "pdf": "19_5576221.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 3898,
+        "doc_name": "5727913.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "SINPETAXI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05898690223693848,
+        "image": "20_5727913.png",
+        "pdf": "20_5727913.pdf"
+      }
+    ],
+    "3": [
+      {
+        "rank": 1,
+        "doc_id": 3097,
+        "doc_name": "5560186.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "PBJM COMERCIO DE GENEROS ALIMENTICIOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.042000412940979004,
+        "image": "01_5560186.png",
+        "pdf": "01_5560186.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 1216,
+        "doc_name": "5519681.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "LUIZ CARLOS PORTO FUNARI-CHURRASCARIA ACEGUÁ",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04481315612792969,
+        "image": "02_5519681.png",
+        "pdf": "02_5519681.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 2452,
+        "doc_name": "5474628.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "PBJM COMERCIO DE GENEROS ALIMENTICIOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0455319881439209,
+        "image": "03_5474628.png",
+        "pdf": "03_5474628.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 2639,
+        "doc_name": "5500960.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "COISA E TALL COM DE ALIMENTOS LTDA.-ME",
+        "num_pages": 1,
+        "dist_to_centroid": 0.046780407428741455,
+        "image": "04_5500960.png",
+        "pdf": "04_5500960.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 4035,
+        "doc_name": "5831915.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "RESTAURANTE PICANHAS DO SUL LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04712265729904175,
+        "image": "05_5831915.png",
+        "pdf": "05_5831915.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 590,
+        "doc_name": "5500954.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "COISA E TALL COM DE ALIMENTOS LTDA.-ME",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04722011089324951,
+        "image": "06_5500954.png",
+        "pdf": "06_5500954.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 1175,
+        "doc_name": "5576165.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "GCZ COMÉRCIO DE ALIMENTOS LTDA. EPP",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04786026477813721,
+        "image": "07_5576165.png",
+        "pdf": "07_5576165.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 3013,
+        "doc_name": "5499399.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "COISA E TALL COM DE ALIMENTOS LTDA.-ME",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04888087511062622,
+        "image": "08_5499399.png",
+        "pdf": "08_5499399.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 3757,
+        "doc_name": "5726487.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "Coco Bambu BRASÍLIA COMÉRCIO DE ALIMENTOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.049487411975860596,
+        "image": "09_5726487.png",
+        "pdf": "09_5726487.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 1823,
+        "doc_name": "5469105.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "RESTAURANTE SOMBRERO",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04953038692474365,
+        "image": "10_5469105.png",
+        "pdf": "10_5469105.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 1604,
+        "doc_name": "5564021.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "Cafe do Brasil",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04996293783187866,
+        "image": "11_5564021.png",
+        "pdf": "11_5564021.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 4296,
+        "doc_name": "5695429.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "PBJM COMERCIO DE GENEROS ALIMENTICIOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05074232816696167,
+        "image": "12_5695429.png",
+        "pdf": "12_5695429.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 364,
+        "doc_name": "5453813.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "Churrascaria e Pizzaria Bocas Grill",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05151253938674927,
+        "image": "13_5453813.png",
+        "pdf": "13_5453813.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 3393,
+        "doc_name": "5597075.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "SALTA COMERCIO DE ALIMENTOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.052174925804138184,
+        "image": "14_5597075.png",
+        "pdf": "14_5597075.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 4732,
+        "doc_name": "5760360.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "Nossa Cozinha Gastronomia Albanese",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05223202705383301,
+        "image": "15_5760360.png",
+        "pdf": "15_5760360.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 1290,
+        "doc_name": "5560705.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "SERRANA COMÉRCIO DE ALIMENTOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0525856614112854,
+        "image": "16_5560705.png",
+        "pdf": "16_5560705.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 4979,
+        "doc_name": "5653597.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "PBJM COMERCIO DE GENEROS ALIMENTICIOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05303066968917847,
+        "image": "17_5653597.png",
+        "pdf": "17_5653597.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 2462,
+        "doc_name": "5538814.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "RESTAURANTE PICANHAS DO SUL LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05327177047729492,
+        "image": "18_5538814.png",
+        "pdf": "18_5538814.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 2687,
+        "doc_name": "5502853.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "CANTINA BOM APETITE",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05346834659576416,
+        "image": "19_5502853.png",
+        "pdf": "19_5502853.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 1532,
+        "doc_name": "5565354.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "PBJM COMERCIO DE GENEROS ALIMENTICIOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05351758003234863,
+        "image": "20_5565354.png",
+        "pdf": "20_5565354.pdf"
+      }
+    ],
+    "4": [
+      {
+        "rank": 1,
+        "doc_id": 3716,
+        "doc_name": "5684684.pdf",
+        "year": 2015,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "CEMIG DISTRIBUIÇAO S.A.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.050659239292144775,
+        "image": "01_5684684.png",
+        "pdf": "01_5684684.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 2567,
+        "doc_name": "5536834.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "AMORETTO CAFÉS EXPRESSO LTDA",
+        "num_pages": 2,
+        "dist_to_centroid": 0.052318274974823,
+        "image": "02_5536834.png",
+        "pdf": "02_5536834.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 1298,
+        "doc_name": "5480508.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "CEMIG DISTROBUIÇÃO S.A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05446147918701172,
+        "image": "03_5480508.png",
+        "pdf": "03_5480508.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 2455,
+        "doc_name": "5494785.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "CEMIG DISTRIBUIÇAO S.A.",
+        "num_pages": 2,
+        "dist_to_centroid": 0.0552402138710022,
+        "image": "04_5494785.png",
+        "pdf": "04_5494785.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 1566,
+        "doc_name": "5543764.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "GVT GLOBAL VILAGE  TELECOM",
+        "num_pages": 3,
+        "dist_to_centroid": 0.06399089097976685,
+        "image": "05_5543764.png",
+        "pdf": "05_5543764.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 1161,
+        "doc_name": "5503906.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "CEMIG DISTRIBUIÇAO S.A.",
+        "num_pages": 2,
+        "dist_to_centroid": 0.06457501649856567,
+        "image": "06_5503906.png",
+        "pdf": "06_5503906.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 735,
+        "doc_name": "5583975.pdf",
+        "year": 2014,
+        "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+        "fornecedor": "QUASAR LOCADORA DE VEÍCULOS LTDA",
+        "num_pages": 6,
+        "dist_to_centroid": 0.06463217735290527,
+        "image": "07_5583975.png",
+        "pdf": "07_5583975.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 2508,
+        "doc_name": "5507962.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "CEMIG DISTRIBUIÇAO S.A.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06567466259002686,
+        "image": "08_5507962.png",
+        "pdf": "08_5507962.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 690,
+        "doc_name": "5480097.pdf",
+        "year": 2014,
+        "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+        "fornecedor": "INVESTICAR VEÍCULOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06589782238006592,
+        "image": "09_5480097.png",
+        "pdf": "09_5480097.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 1989,
+        "doc_name": "5577647.pdf",
+        "year": 2014,
+        "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+        "fornecedor": "INVESTICAR VEÍCULOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06595653295516968,
+        "image": "10_5577647.png",
+        "pdf": "10_5577647.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 4041,
+        "doc_name": "5754788.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "SÃO JOÃO POSTOS DE ABASTECIMENTOS E SERVIÇOS",
+        "num_pages": 3,
+        "dist_to_centroid": 0.06607085466384888,
+        "image": "11_5754788.png",
+        "pdf": "11_5754788.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 4241,
+        "doc_name": "5706870.pdf",
+        "year": 2015,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "ENERGISA -EMPRESA ENERGÉTICA DE MS",
+        "num_pages": 2,
+        "dist_to_centroid": 0.0660790205001831,
+        "image": "12_5706870.png",
+        "pdf": "12_5706870.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 4726,
+        "doc_name": "5609864.pdf",
+        "year": 2015,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "AMORETTO CAFÉS EXPRESSO LTDA",
+        "num_pages": 3,
+        "dist_to_centroid": 0.0665854811668396,
+        "image": "13_5609864.png",
+        "pdf": "13_5609864.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 3971,
+        "doc_name": "5903088.pdf",
+        "year": 2015,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "ELETROBRÁS DISTRIBUICAO PIAUI",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06708544492721558,
+        "image": "14_5903088.png",
+        "pdf": "14_5903088.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 4129,
+        "doc_name": "5708032.pdf",
+        "year": 2015,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "CELG",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06721872091293335,
+        "image": "15_5708032.png",
+        "pdf": "15_5708032.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 478,
+        "doc_name": "5527240.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "CEMIG DISTROBUIÇÃO S.A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06765985488891602,
+        "image": "16_5527240.png",
+        "pdf": "16_5527240.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 623,
+        "doc_name": "5482848.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "COMERCIAL DE ALIMENTOS GRANO LTDA",
+        "num_pages": 3,
+        "dist_to_centroid": 0.06814587116241455,
+        "image": "17_5482848.png",
+        "pdf": "17_5482848.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 1024,
+        "doc_name": "5556162.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO RADIAL",
+        "num_pages": 2,
+        "dist_to_centroid": 0.0702965259552002,
+        "image": "18_5556162.png",
+        "pdf": "18_5556162.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 2342,
+        "doc_name": "5557164.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "COMAVI DE MÁQUINAS E VISUAIS LTDA",
+        "num_pages": 4,
+        "dist_to_centroid": 0.07073241472244263,
+        "image": "19_5557164.png",
+        "pdf": "19_5557164.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 474,
+        "doc_name": "5457298.pdf",
+        "year": 2014,
+        "subcota": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+        "fornecedor": "RCD EMPREENDIMENTOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07183367013931274,
+        "image": "20_5457298.png",
+        "pdf": "20_5457298.pdf"
+      }
+    ],
+    "5": [
+      {
+        "rank": 1,
+        "doc_id": 4393,
+        "doc_name": "5753022.pdf",
+        "year": 2015,
+        "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+        "fornecedor": "DALCAR SERVICE LTDA",
+        "num_pages": 2,
+        "dist_to_centroid": 0.04236495494842529,
+        "image": "01_5753022.png",
+        "pdf": "01_5753022.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 1195,
+        "doc_name": "5554173.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "MARCELO LOPES GUARALDO",
+        "num_pages": 3,
+        "dist_to_centroid": 0.04863083362579346,
+        "image": "02_5554173.png",
+        "pdf": "02_5554173.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 2948,
+        "doc_name": "5569144.pdf",
+        "year": 2014,
+        "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+        "fornecedor": "ALTAIR DOS SANTOS MASCARENHAS",
+        "num_pages": 2,
+        "dist_to_centroid": 0.04997360706329346,
+        "image": "03_5569144.png",
+        "pdf": "03_5569144.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 1347,
+        "doc_name": "5463140.pdf",
+        "year": 2014,
+        "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+        "fornecedor": "QUASAR LOCADORA DE VEÍCULOS LTDA",
+        "num_pages": 9,
+        "dist_to_centroid": 0.050166964530944824,
+        "image": "04_5463140.png",
+        "pdf": "04_5463140.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 4899,
+        "doc_name": "5671989.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "MASSAPE PETROLEO LTDA POSTO JOALINA",
+        "num_pages": 5,
+        "dist_to_centroid": 0.05290597677230835,
+        "image": "05_5671989.png",
+        "pdf": "05_5671989.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 951,
+        "doc_name": "5555775.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE SEGURANÇA PRESTADO POR EMPRESA ESPECIALIZADA.",
+        "fornecedor": "SIEMENS",
+        "num_pages": 2,
+        "dist_to_centroid": 0.05295068025588989,
+        "image": "06_5555775.png",
+        "pdf": "06_5555775.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 285,
+        "doc_name": "5458339.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "MARCELO LOPES GUARALDO",
+        "num_pages": 2,
+        "dist_to_centroid": 0.05335545539855957,
+        "image": "07_5458339.png",
+        "pdf": "07_5458339.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 102,
+        "doc_name": "5577585.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "COMPANHIA DO CARTUCHO",
+        "num_pages": 2,
+        "dist_to_centroid": 0.05345654487609863,
+        "image": "08_5577585.png",
+        "pdf": "08_5577585.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 380,
+        "doc_name": "5530561.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO DE SERVIÇOS CAMBUI LTDA",
+        "num_pages": 3,
+        "dist_to_centroid": 0.05377304553985596,
+        "image": "09_5530561.png",
+        "pdf": "09_5530561.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 4330,
+        "doc_name": "5744922.pdf",
+        "year": 2015,
+        "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+        "fornecedor": "ACD FIETOSA",
+        "num_pages": 2,
+        "dist_to_centroid": 0.05678212642669678,
+        "image": "10_5744922.png",
+        "pdf": "10_5744922.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 3335,
+        "doc_name": "5541862.pdf",
+        "year": 2014,
+        "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+        "fornecedor": "ALTAIR DOS SANTOS",
+        "num_pages": 2,
+        "dist_to_centroid": 0.05790954828262329,
+        "image": "11_5541862.png",
+        "pdf": "11_5541862.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 4097,
+        "doc_name": "5723423.pdf",
+        "year": 2015,
+        "subcota": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+        "fornecedor": "LUXOR PIAUÍ HOTEL",
+        "num_pages": 3,
+        "dist_to_centroid": 0.05875426530838013,
+        "image": "12_5723423.png",
+        "pdf": "12_5723423.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 2689,
+        "doc_name": "5491203.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "TELEFONICA TECNICA E SERVICOS LTDA",
+        "num_pages": 2,
+        "dist_to_centroid": 0.05877113342285156,
+        "image": "13_5491203.png",
+        "pdf": "13_5491203.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 4883,
+        "doc_name": "5873872.pdf",
+        "year": 2015,
+        "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+        "fornecedor": "KALLINY COMUNICAÇÕES & TECNOLOGIA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.059233009815216064,
+        "image": "14_5873872.png",
+        "pdf": "14_5873872.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 4410,
+        "doc_name": "5657266.pdf",
+        "year": 2015,
+        "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+        "fornecedor": "DALCAR SERVICE LTDA",
+        "num_pages": 2,
+        "dist_to_centroid": 0.059409260749816895,
+        "image": "15_5657266.png",
+        "pdf": "15_5657266.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 3208,
+        "doc_name": "5579908.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE SEGURANÇA PRESTADO POR EMPRESA ESPECIALIZADA.",
+        "fornecedor": "ARAUJO SERVIÇOS LTDA -ME",
+        "num_pages": 2,
+        "dist_to_centroid": 0.060145020484924316,
+        "image": "16_5579908.png",
+        "pdf": "16_5579908.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 1437,
+        "doc_name": "5512439.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE SEGURANÇA PRESTADO POR EMPRESA ESPECIALIZADA.",
+        "fornecedor": "ATLANTA SUL SEGURANÇA E VIGILANCIA LTDA",
+        "num_pages": 2,
+        "dist_to_centroid": 0.060563623905181885,
+        "image": "17_5512439.png",
+        "pdf": "17_5512439.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 2080,
+        "doc_name": "5468144.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "TRANSSERVICE PETROLEO LTDA",
+        "num_pages": 3,
+        "dist_to_centroid": 0.060762882232666016,
+        "image": "18_5468144.png",
+        "pdf": "18_5468144.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 2982,
+        "doc_name": "5554311.pdf",
+        "year": 2014,
+        "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+        "fornecedor": "E.J.W DOS PRAZERES - PAPELARIA MARCO ZERO",
+        "num_pages": 3,
+        "dist_to_centroid": 0.06138741970062256,
+        "image": "19_5554311.png",
+        "pdf": "19_5554311.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 3102,
+        "doc_name": "5506024.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "SERTO REVENDEDORA DE COMBUSTIVEL LTDA",
+        "num_pages": 4,
+        "dist_to_centroid": 0.06310290098190308,
+        "image": "20_5506024.png",
+        "pdf": "20_5506024.pdf"
+      }
+    ],
+    "6": [
+      {
+        "rank": 1,
+        "doc_id": 661,
+        "doc_name": "5579040.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "MEGA POSTO BERIMBAU LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06110614538192749,
+        "image": "01_5579040.png",
+        "pdf": "01_5579040.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 562,
+        "doc_name": "5520653.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO RETIRO DOS BANDEIRANTES",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06316298246383667,
+        "image": "02_5520653.png",
+        "pdf": "02_5520653.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 236,
+        "doc_name": "5602957.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "COMBUSTÍVEIS LOBINHO LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0662890076637268,
+        "image": "03_5602957.png",
+        "pdf": "03_5602957.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 3431,
+        "doc_name": "5556767.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "F&L EMPREENDIMENTOS COMERCIAIS LTDA - ME",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06674104928970337,
+        "image": "04_5556767.png",
+        "pdf": "04_5556767.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 1372,
+        "doc_name": "5541564.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "PETRO AGAMENON LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06832849979400635,
+        "image": "05_5541564.png",
+        "pdf": "05_5541564.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 2635,
+        "doc_name": "5476698.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "EUROPOSTO DE COMB. E DERV. DE PETRÓLEO LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0689401626586914,
+        "image": "06_5476698.png",
+        "pdf": "06_5476698.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 3914,
+        "doc_name": "5664726.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO VILA NOVA LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.06916409730911255,
+        "image": "07_5664726.png",
+        "pdf": "07_5664726.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 2599,
+        "doc_name": "5526146.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO OURO DE MANILHA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07436680793762207,
+        "image": "08_5526146.png",
+        "pdf": "08_5526146.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 3037,
+        "doc_name": "5522308.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO ABASTECIMENTO E SERV",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07496893405914307,
+        "image": "09_5522308.png",
+        "pdf": "09_5522308.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 1620,
+        "doc_name": "5515398.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "TIC COMERCIO DE COMBUSTÍVEIS LTDA.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07524621486663818,
+        "image": "10_5515398.png",
+        "pdf": "10_5515398.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 4452,
+        "doc_name": "5766245.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "CENTRO AUTOMOTIVO CRUZADA DA BARRA LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07595324516296387,
+        "image": "11_5766245.png",
+        "pdf": "11_5766245.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 871,
+        "doc_name": "5520470.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO CHEFAO CAMINHONEIRO",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07650238275527954,
+        "image": "12_5520470.png",
+        "pdf": "12_5520470.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 2873,
+        "doc_name": "5515766.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "ARRUDA COMERCIO DE DERIV. PETROLEO",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07706904411315918,
+        "image": "13_5515766.png",
+        "pdf": "13_5515766.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 1110,
+        "doc_name": "5513984.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO DE GASOLINA  PRESSAO DE MESQUITA LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07810330390930176,
+        "image": "14_5513984.png",
+        "pdf": "14_5513984.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 1174,
+        "doc_name": "5482326.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO MAURO RAMOS",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07815283536911011,
+        "image": "15_5482326.png",
+        "pdf": "15_5482326.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 4292,
+        "doc_name": "5899028.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "Auto Posto Nova Esperança",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07851386070251465,
+        "image": "16_5899028.png",
+        "pdf": "16_5899028.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 2299,
+        "doc_name": "5504183.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "SIC 2004 COMBUSTÍVEIS E PARTICIPAÇÕES LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07862246036529541,
+        "image": "17_5504183.png",
+        "pdf": "17_5504183.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 491,
+        "doc_name": "5508982.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO INTERNACIONAL LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07954221963882446,
+        "image": "18_5508982.png",
+        "pdf": "18_5508982.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 4294,
+        "doc_name": "5870194.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSATO ITAUNA V LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.08023381233215332,
+        "image": "19_5870194.png",
+        "pdf": "19_5870194.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 4015,
+        "doc_name": "5789388.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "FRATELLI POSTO DE COMBUSTÍVEIS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0808303952217102,
+        "image": "20_5789388.png",
+        "pdf": "20_5789388.pdf"
+      }
+    ],
+    "7": [
+      {
+        "rank": 1,
+        "doc_id": 3497,
+        "doc_name": "5547372.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "ECOSUL",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07248049974441528,
+        "image": "01_5547372.png",
+        "pdf": "01_5547372.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 3043,
+        "doc_name": "5534476.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "ECOSUL",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07292628288269043,
+        "image": "02_5534476.png",
+        "pdf": "02_5534476.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 734,
+        "doc_name": "5468268.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "EGR",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0730329155921936,
+        "image": "03_5468268.png",
+        "pdf": "03_5468268.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 4760,
+        "doc_name": "5701303.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07398849725723267,
+        "image": "04_5701303.png",
+        "pdf": "04_5701303.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 2271,
+        "doc_name": "5498496.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07545828819274902,
+        "image": "05_5498496.png",
+        "pdf": "05_5498496.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 2184,
+        "doc_name": "5588608.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "CONCESS. RODOVIA OESTE DE SÃO PAULO",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07626473903656006,
+        "image": "06_5588608.png",
+        "pdf": "06_5588608.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 2617,
+        "doc_name": "5483496.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07751268148422241,
+        "image": "07_5483496.png",
+        "pdf": "07_5483496.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 4771,
+        "doc_name": "5860977.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07771480083465576,
+        "image": "08_5860977.png",
+        "pdf": "08_5860977.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 40,
+        "doc_name": "5469217.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "CONCESS. RODOVIA OESTE DE SÃO PAULO",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07783180475234985,
+        "image": "09_5469217.png",
+        "pdf": "09_5469217.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 3560,
+        "doc_name": "5547263.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07834231853485107,
+        "image": "10_5547263.png",
+        "pdf": "10_5547263.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 136,
+        "doc_name": "5559406.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "CONCESS. RODOVIA OESTE DE SÃO PAULO",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07915151119232178,
+        "image": "11_5559406.png",
+        "pdf": "11_5559406.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 2893,
+        "doc_name": "5486821.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "CONCESS. RODOVIA OESTE DE SÃO PAULO",
+        "num_pages": 1,
+        "dist_to_centroid": 0.07930618524551392,
+        "image": "12_5486821.png",
+        "pdf": "12_5486821.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 1269,
+        "doc_name": "5474492.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "AUTO PISTA FERNÃO DIAS",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0809137225151062,
+        "image": "13_5474492.png",
+        "pdf": "13_5474492.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 192,
+        "doc_name": "5552801.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "CONCESS. RODOVIA OESTE DE SÃO PAULO",
+        "num_pages": 1,
+        "dist_to_centroid": 0.08110964298248291,
+        "image": "14_5552801.png",
+        "pdf": "14_5552801.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 492,
+        "doc_name": "5460603.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.08211690187454224,
+        "image": "15_5460603.png",
+        "pdf": "15_5460603.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 1397,
+        "doc_name": "5460448.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.08420610427856445,
+        "image": "16_5460448.png",
+        "pdf": "16_5460448.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 2131,
+        "doc_name": "5493174.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "AUTOPISTA PLANALTO SUL S.A.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.08622574806213379,
+        "image": "17_5493174.png",
+        "pdf": "17_5493174.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 2943,
+        "doc_name": "5537392.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.08639794588088989,
+        "image": "18_5537392.png",
+        "pdf": "18_5537392.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 4055,
+        "doc_name": "5722330.pdf",
+        "year": 2015,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0864686369895935,
+        "image": "19_5722330.png",
+        "pdf": "19_5722330.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 759,
+        "doc_name": "5514331.pdf",
+        "year": 2014,
+        "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+        "fornecedor": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.08654123544692993,
+        "image": "20_5514331.png",
+        "pdf": "20_5514331.pdf"
+      }
+    ],
+    "8": [
+      {
+        "rank": 1,
+        "doc_id": 4485,
+        "doc_name": "5682568.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO DE GASOLINA DIA E NOITE LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04379141330718994,
+        "image": "01_5682568.png",
+        "pdf": "01_5682568.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 2776,
+        "doc_name": "5460576.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO AMF VALENTIM LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04531526565551758,
+        "image": "02_5460576.png",
+        "pdf": "02_5460576.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 2229,
+        "doc_name": "5571466.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO NOVO HORIZONTE LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04718810319900513,
+        "image": "03_5571466.png",
+        "pdf": "03_5571466.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 1987,
+        "doc_name": "5494685.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "RIO BRANCO MERCANTIL ALIMENTOS LTDA**",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0478438138961792,
+        "image": "04_5494685.png",
+        "pdf": "04_5494685.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 3517,
+        "doc_name": "5463076.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "N.P MURTA FILHO",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04787570238113403,
+        "image": "05_5463076.png",
+        "pdf": "05_5463076.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 4469,
+        "doc_name": "5731362.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "DE JOUR RESTAURANTE LTDA EPP",
+        "num_pages": 1,
+        "dist_to_centroid": 0.047953128814697266,
+        "image": "06_5731362.png",
+        "pdf": "06_5731362.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 54,
+        "doc_name": "5479438.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "ABREU FLORES E PEREIRA LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04915493726730347,
+        "image": "07_5479438.png",
+        "pdf": "07_5479438.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 4830,
+        "doc_name": "5855657.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "Auto Posto br 060 ltda",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04984647035598755,
+        "image": "08_5855657.png",
+        "pdf": "08_5855657.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 978,
+        "doc_name": "5504376.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO DO TRABALHO S/A",
+        "num_pages": 1,
+        "dist_to_centroid": 0.050255537033081055,
+        "image": "09_5504376.png",
+        "pdf": "09_5504376.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 1018,
+        "doc_name": "5507641.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "Posto Via Sul -Cavalcante -CE",
+        "num_pages": 1,
+        "dist_to_centroid": 0.050705909729003906,
+        "image": "10_5507641.png",
+        "pdf": "10_5507641.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 3615,
+        "doc_name": "5542200.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO ROBERTO LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05081760883331299,
+        "image": "11_5542200.png",
+        "pdf": "11_5542200.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 200,
+        "doc_name": "5494054.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.050906360149383545,
+        "image": "12_5494054.png",
+        "pdf": "12_5494054.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 2792,
+        "doc_name": "5546792.pdf",
+        "year": 2014,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "MINAS GRILL RESTAURANTE",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05135124921798706,
+        "image": "13_5546792.png",
+        "pdf": "13_5546792.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 2047,
+        "doc_name": "5574474.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "Rabelo Derivados de Petróleo Ltda",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05143851041793823,
+        "image": "14_5574474.png",
+        "pdf": "14_5574474.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 1112,
+        "doc_name": "5451786.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "RICARDO EDUARDO & INACIO COMBUSTIVEIS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.052423954010009766,
+        "image": "15_5451786.png",
+        "pdf": "15_5451786.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 41,
+        "doc_name": "5479629.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO XIV BIS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05274099111557007,
+        "image": "16_5479629.png",
+        "pdf": "16_5479629.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 1588,
+        "doc_name": "5541655.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "Comercial de Combustíveis MAM LTDA.",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05314195156097412,
+        "image": "17_5541655.png",
+        "pdf": "17_5541655.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 4893,
+        "doc_name": "5865655.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "ditrendo posto e logistica ltda",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05318516492843628,
+        "image": "18_5865655.png",
+        "pdf": "18_5865655.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 1267,
+        "doc_name": "5453048.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO DE SERVIÇOS 307 LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.053373873233795166,
+        "image": "19_5453048.png",
+        "pdf": "19_5453048.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 1649,
+        "doc_name": "5598102.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "Posto Raio Kobrasol",
+        "num_pages": 1,
+        "dist_to_centroid": 0.05354231595993042,
+        "image": "20_5598102.png",
+        "pdf": "20_5598102.pdf"
+      }
+    ],
+    "9": [
+      {
+        "rank": 1,
+        "doc_id": 4555,
+        "doc_name": "5712234.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "JK COMBUSTÍVEIS",
+        "num_pages": 1,
+        "dist_to_centroid": 0.03106027841567993,
+        "image": "01_5712234.png",
+        "pdf": "01_5712234.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 2460,
+        "doc_name": "5452089.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "GARAGE SIGARAN LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.03166496753692627,
+        "image": "02_5452089.png",
+        "pdf": "02_5452089.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 4723,
+        "doc_name": "5742228.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO OURO FINO LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.032908082008361816,
+        "image": "03_5742228.png",
+        "pdf": "03_5742228.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 2100,
+        "doc_name": "5476294.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO CENTRAL NOVA ERA LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.03551006317138672,
+        "image": "04_5476294.png",
+        "pdf": "04_5476294.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 1856,
+        "doc_name": "5545177.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO SERVUS",
+        "num_pages": 1,
+        "dist_to_centroid": 0.03597766160964966,
+        "image": "05_5545177.png",
+        "pdf": "05_5545177.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 3495,
+        "doc_name": "5492456.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO UNILESTE LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.0360180139541626,
+        "image": "06_5492456.png",
+        "pdf": "06_5492456.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 1505,
+        "doc_name": "5532197.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO PETER PAN 01 LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.037445068359375,
+        "image": "07_5532197.png",
+        "pdf": "07_5532197.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 4511,
+        "doc_name": "5789840.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "Cascol Combustíveis para Veículos Ltda",
+        "num_pages": 1,
+        "dist_to_centroid": 0.03905552625656128,
+        "image": "08_5789840.png",
+        "pdf": "08_5789840.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 2506,
+        "doc_name": "5557144.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO PETER PAN 01 LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04042172431945801,
+        "image": "09_5557144.png",
+        "pdf": "09_5557144.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 191,
+        "doc_name": "5461728.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "PETROBEL LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04076653718948364,
+        "image": "10_5461728.png",
+        "pdf": "10_5461728.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 472,
+        "doc_name": "5578205.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "GARAGE SIGARAN LTDA - ME",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04082244634628296,
+        "image": "11_5578205.png",
+        "pdf": "11_5578205.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 1690,
+        "doc_name": "5524908.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "GOES COMBUSTIVEIS LUBRIFICANTES - Posto Monumental",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04091006517410278,
+        "image": "12_5524908.png",
+        "pdf": "12_5524908.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 4716,
+        "doc_name": "5784013.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "CATANA COMER. DE COMBUS. E LUBRIFICANTES LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04172295331954956,
+        "image": "13_5784013.png",
+        "pdf": "13_5784013.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 1858,
+        "doc_name": "5540862.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "COM. COMB. BR NONOAI LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.042210161685943604,
+        "image": "14_5540862.png",
+        "pdf": "14_5540862.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 4908,
+        "doc_name": "5666169.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "AUTO POSTO PORTAL DE INTERLAGOS LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04253733158111572,
+        "image": "15_5666169.png",
+        "pdf": "15_5666169.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 4903,
+        "doc_name": "5699076.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "PROJAC RIO 2016 AUTO POSTO LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04264211654663086,
+        "image": "16_5699076.png",
+        "pdf": "16_5699076.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 4163,
+        "doc_name": "5708018.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "COMERCIAL DE COMBUSTIVEL GUARANI US LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04265248775482178,
+        "image": "17_5708018.png",
+        "pdf": "17_5708018.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 1808,
+        "doc_name": "5574244.pdf",
+        "year": 2014,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "CORTESIA POSTO SHALON",
+        "num_pages": 1,
+        "dist_to_centroid": 0.042654216289520264,
+        "image": "18_5574244.png",
+        "pdf": "18_5574244.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 3976,
+        "doc_name": "5837269.pdf",
+        "year": 2015,
+        "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+        "fornecedor": "SENAC - SERVIÇO NACIONAL DE APRENDIZAGEM COMERCIAL",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04306989908218384,
+        "image": "19_5837269.png",
+        "pdf": "19_5837269.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 3881,
+        "doc_name": "5771969.pdf",
+        "year": 2015,
+        "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+        "fornecedor": "POSTO RECREIO OURO LTDA",
+        "num_pages": 1,
+        "dist_to_centroid": 0.04328274726867676,
+        "image": "20_5771969.png",
+        "pdf": "20_5771969.pdf"
+      }
+    ]
+  }
+}

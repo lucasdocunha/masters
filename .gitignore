@@ -6,6 +6,11 @@ data/*
 !data/cluster-dino/
 !data/cluster-colpali/
 !data/clusters_comparison.html
+!data/cluster-faiss-vlm-k10/
+!data/cluster-faiss-dino-k10/
+!data/cluster-vlm-k10
+!data/cluster-dino-k10
+!data/clusters_k10_comparison.html
 !data/latent_vectors_full_3d.html
 !data/latent_vectors_sample_5pct_3d.html
 !data/demo_clusters_3d.html
