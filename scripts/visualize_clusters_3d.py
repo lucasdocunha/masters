@@ -60,6 +60,61 @@ def extract_year_from_name(name: str) -> str:
     return match.group(1) if match else "N/A"
 
 
+def get_pdf_to_year_map(raw_dir: Optional[Path] = None) -> dict[str, int]:
+    """Retorna dicionário {nome_arquivo_pdf: ano} usando cache se disponível."""
+    if raw_dir is None:
+        raw_dir = Path(__file__).resolve().parent.parent / "data" / "raw"
+    cache_file = raw_dir.parent / "pdf_to_year.json"
+    if cache_file.exists():
+        try:
+            with open(cache_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+
+    mapping = {}
+    if raw_dir.exists():
+        for ano_file in sorted(raw_dir.glob("Ano-*.json")):
+            try:
+                with open(ano_file, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                items = data.get("dados", []) if isinstance(data, dict) else data
+                fallback_year = int(ano_file.stem.split("-")[-1]) if ano_file.stem.split("-")[-1].isdigit() else 0
+                for it in items:
+                    url = it.get("urlDocumento", "")
+                    if url and url.lower().endswith(".pdf"):
+                        fname = url.split("/")[-1]
+                        if fname not in mapping:
+                            mapping[fname] = int(it.get("ano", fallback_year))
+            except Exception:
+                pass
+        if mapping:
+            try:
+                with open(cache_file, "w", encoding="utf-8") as f:
+                    json.dump(mapping, f)
+            except Exception:
+                pass
+    return mapping
+
+
+YEAR_PALETTE = {
+    "2014": "#1f77b4",  # Azul
+    "2015": "#00bcd4",  # Ciano
+    "2016": "#009688",  # Teal
+    "2017": "#4caf50",  # Verde
+    "2018": "#8bc34a",  # Verde claro
+    "2019": "#ffeb3b",  # Amarelo
+    "2020": "#ff9800",  # Laranja
+    "2021": "#ff5722",  # Laranja escuro / coral
+    "2022": "#e91e63",  # Rosa
+    "2023": "#9c27b0",  # Roxo
+    "2024": "#673ab7",  # Roxo escuro / índigo
+    "2025": "#3f51b5",  # Azul royal
+    "2026": "#795548",  # Marrom
+    "N/A":  "#9e9e9e",  # Cinza
+}
+
+
 def build_3d_figure(
     coords_dino: np.ndarray,
     labels_dino: np.ndarray,
@@ -67,51 +122,75 @@ def build_3d_figure(
     labels_vlm: Optional[np.ndarray],
     meta_items: list[dict[str, Any]],
     title_suffix: str = "Documentos",
+    color_by: str = "year",
 ) -> go.Figure:
-    """Constrói a figura 3D interativa do Plotly com suporte a alternância DINO vs VLM."""
+    """Constrói a figura 3D interativa do Plotly com suporte a alternância DINO vs VLM e coloração por ano ou cluster."""
     fig = go.Figure()
 
     doc_names = [m.get("doc_name", f"item_{i}") for i, m in enumerate(meta_items)]
     num_pages = [m.get("num_pages", 1) for m in meta_items]
-    years = [m.get("year", extract_year_from_name(name)) for name, m in zip(doc_names, meta_items)]
+    years = [str(m.get("year", extract_year_from_name(name))) for name, m in zip(doc_names, meta_items)]
 
-    # 1. Traces do DINO (agrupados por cluster)
-    unique_clusters_dino = sorted(set(labels_dino))
     colors = [
         "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd",
         "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf",
         "#aec7e8", "#ffbb78", "#98df8a", "#ff9896", "#c5b0d5"
     ]
 
+    if color_by == "year":
+        unique_groups = sorted(set(years), key=lambda y: (y == "N/A", str(y)))
+        group_colors = {
+            g: YEAR_PALETTE.get(g, colors[i % len(colors)])
+            for i, g in enumerate(unique_groups)
+        }
+        group_title = "Ano"
+    else:
+        unique_groups = sorted(set(labels_dino))
+        group_colors = {
+            g: colors[g % len(colors)] for g in unique_groups
+        }
+        group_title = "Cluster"
+
+    # 1. Traces do DINO
     dino_trace_indices = []
-    for c_id in unique_clusters_dino:
-        mask = (labels_dino == c_id)
+    for g in unique_groups:
+        if color_by == "year":
+            mask = np.array([y == g for y in years])
+            trace_name = f"{g} ({np.sum(mask):,})"
+        else:
+            mask = (labels_dino == g)
+            trace_name = f"DINO: Cluster {g} ({np.sum(mask):,})"
+
+        if not np.any(mask):
+            continue
+
         pts = coords_dino[mask]
         c_names = [doc_names[i] for i, m in enumerate(mask) if m]
         c_pages = [num_pages[i] for i, m in enumerate(mask) if m]
         c_years = [years[i] for i, m in enumerate(mask) if m]
+        c_clusters = [labels_dino[i] for i, m in enumerate(mask) if m]
 
-        customdata = np.stack((c_names, c_pages, c_years, [f"Cluster {c_id}"] * len(c_names)), axis=-1)
-        color = colors[c_id % len(colors)]
+        customdata = np.stack((c_names, c_pages, c_years, [f"Cluster {c}" for c in c_clusters]), axis=-1)
+        color = group_colors[g]
 
         trace = go.Scatter3d(
             x=pts[:, 0],
             y=pts[:, 1],
             z=pts[:, 2],
             mode="markers",
-            name=f"DINO: Cluster {c_id} ({len(pts)})",
+            name=trace_name,
             customdata=customdata,
             hovertemplate=(
                 "<b>%{customdata[0]}</b><br>"
-                "Cluster: %{customdata[3]}<br>"
                 "Ano: %{customdata[2]}<br>"
+                "Cluster: %{customdata[3]}<br>"
                 "Páginas: %{customdata[1]}<br>"
                 "X: %{x:.2f} | Y: %{y:.2f} | Z: %{z:.2f}<extra></extra>"
             ),
             marker=dict(
                 size=3,
                 color=color,
-                opacity=0.75,
+                opacity=0.8,
             ),
             visible=True,
         )
@@ -120,38 +199,53 @@ def build_3d_figure(
 
     # 2. Traces do ColPali VLM
     vlm_trace_indices = []
-    if coords_vlm is not None and labels_vlm is not None:
-        unique_clusters_vlm = sorted(set(labels_vlm))
-        for c_id in unique_clusters_vlm:
-            mask = (labels_vlm == c_id)
+    if coords_vlm is not None:
+        if color_by != "year" and labels_vlm is not None:
+            vlm_groups = sorted(set(labels_vlm))
+        else:
+            vlm_groups = unique_groups
+
+        for g in vlm_groups:
+            if color_by == "year":
+                mask = np.array([y == g for y in years])
+                trace_name = f"{g} ({np.sum(mask):,})"
+                color = group_colors[g]
+            else:
+                mask = (labels_vlm == g)
+                trace_name = f"ColPali: Cluster {g} ({np.sum(mask):,})"
+                color = colors[(g + 5) % len(colors)]
+
+            if not np.any(mask):
+                continue
+
             pts = coords_vlm[mask]
             c_names = [doc_names[i] for i, m in enumerate(mask) if m]
             c_pages = [num_pages[i] for i, m in enumerate(mask) if m]
             c_years = [years[i] for i, m in enumerate(mask) if m]
+            c_clusters = [labels_vlm[i] if labels_vlm is not None else 0 for i, m in enumerate(mask) if m]
 
-            customdata = np.stack((c_names, c_pages, c_years, [f"Cluster {c_id}"] * len(c_names)), axis=-1)
-            color = colors[(c_id + 5) % len(colors)]
+            customdata = np.stack((c_names, c_pages, c_years, [f"Cluster {c}" for c in c_clusters]), axis=-1)
 
             trace = go.Scatter3d(
                 x=pts[:, 0],
                 y=pts[:, 1],
                 z=pts[:, 2],
                 mode="markers",
-                name=f"ColPali: Cluster {c_id} ({len(pts)})",
+                name=trace_name,
                 customdata=customdata,
                 hovertemplate=(
                     "<b>%{customdata[0]}</b><br>"
-                    "Cluster: %{customdata[3]}<br>"
                     "Ano: %{customdata[2]}<br>"
+                    "Cluster: %{customdata[3]}<br>"
                     "Páginas: %{customdata[1]}<br>"
                     "X: %{x:.2f} | Y: %{y:.2f} | Z: %{z:.2f}<extra></extra>"
                 ),
                 marker=dict(
                     size=3,
                     color=color,
-                    opacity=0.75,
+                    opacity=0.8,
                 ),
-                visible=False,  # Oculto por padrão até ser selecionado no menu
+                visible=False,
             )
             fig.add_trace(trace)
             vlm_trace_indices.append(len(fig.data) - 1)
@@ -197,7 +291,7 @@ def build_3d_figure(
 
     fig.update_layout(
         title=dict(
-            text=f"Navegação 3D dos Clusters CEAP ({title_suffix})",
+            text=f"Navegação 3D dos Documentos CEAP ({title_suffix})",
             font=dict(size=18, color="#ffffff"),
             x=0.5,
             xanchor="center",
@@ -210,7 +304,7 @@ def build_3d_figure(
             aspectmode="cube",
         ),
         legend=dict(
-            title=dict(text="Clusters", font=dict(color="#ffffff")),
+            title=dict(text=group_title, font=dict(color="#ffffff")),
             itemsizing="constant",
             bgcolor="rgba(20,20,20,0.7)",
             bordercolor="#444",
@@ -231,6 +325,7 @@ def generate_3d_visualization(
     level: str = "doc",
     subsample: int = 25000,
     seed: int = 42,
+    color_by: str = "year",
 ) -> Path:
     """Carrega dados, reduz para 3D e salva arquivo HTML interativo."""
     if not npz_path.exists():
@@ -287,6 +382,15 @@ def generate_3d_visualization(
     if not items_meta or len(items_meta) != len(dino_embs):
         items_meta = [{"doc_name": f"item_{i}", "num_pages": 1} for i in range(len(dino_embs))]
 
+    # Garantir que o campo 'year' esteja preenchido
+    pdf_to_year = None
+    for m in items_meta:
+        if "year" not in m:
+            if pdf_to_year is None:
+                pdf_to_year = get_pdf_to_year_map()
+            name = m.get("doc_name", "")
+            m["year"] = pdf_to_year.get(name, extract_year_from_name(name))
+
     if labels_dino is None:
         labels_dino = np.zeros(len(dino_embs), dtype=int)
     if labels_vlm is None and vlm_embs is not None:
@@ -311,6 +415,7 @@ def generate_3d_visualization(
         labels_vlm=labels_vlm,
         meta_items=items_meta,
         title_suffix=title_suffix,
+        color_by=color_by,
     )
 
     output_html.parent.mkdir(parents=True, exist_ok=True)
@@ -332,6 +437,7 @@ def main():
     parser.add_argument("--output-html", "-o", type=Path, default=Path("data/clusters_3d.html"), help="Caminho do HTML gerado")
     parser.add_argument("--method", choices=["umap", "pca"], default="umap", help="Método de redução 3D (umap ou pca)")
     parser.add_argument("--level", choices=["doc", "page"], default="doc", help="Nível da visualização (doc ou page)")
+    parser.add_argument("--color-by", choices=["year", "cluster"], default="year", help="Coloração dos pontos (por ano ou por cluster)")
     parser.add_argument("--subsample", type=int, default=25000, help="Máximo de pontos para navegação 3D fluida (0 para todos)")
     parser.add_argument("--seed", type=int, default=42, help="Seed para reprodutibilidade")
     args = parser.parse_args()
@@ -342,6 +448,7 @@ def main():
         output_html=args.output_html,
         method=args.method,
         level=args.level,
+        color_by=args.color_by,
         subsample=args.subsample,
         seed=args.seed,
     )
