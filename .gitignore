@@ -5,6 +5,7 @@ data/*
 !data/clusters/
 !data/latent_vectors_sample_5pct_3d.html
 !data/demo_clusters_3d.html
+data/pgdata/
 logs/
 .venv/
 .env

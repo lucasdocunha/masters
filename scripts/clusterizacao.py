@@ -24,6 +24,7 @@ def render_pdf_pages(pdf_path: Path) -> list[dict[str, Any]]:
                 pages.append({"page_idx": i, "image": img, "text": text})
             except Exception:
                 pass
+        pdf.close()
         return pages
     except Exception:
         try:
@@ -62,10 +63,14 @@ def get_sampled_files(raw_dir: Path, pdf_dir: Path, years: list[int], sample_rat
             if it.get("urlDocumento", "").lower().endswith(".pdf")
         })
         valid_files = [pdf_dir / u.split("/")[-1] for u in urls if u.split("/")[-1] in existing_set]
-        k = max(1, int(len(valid_files) * sample_rate))
-        chosen = rng.sample(valid_files, k)
+        if sample_rate >= 1.0:
+            chosen = valid_files
+            print(f"[{y}] Selecionados {len(chosen)}/{len(valid_files)} documentos (100.0%)")
+        else:
+            k = max(1, int(len(valid_files) * sample_rate))
+            chosen = rng.sample(valid_files, k)
+            print(f"[{y}] Amostrados {len(chosen)}/{len(valid_files)} documentos ({sample_rate * 100:.1f}%)")
         sampled.extend(chosen)
-        print(f"[{y}] Amostrados {len(chosen)}/{len(valid_files)} documentos ({sample_rate * 100:.1f}%)")
 
     return sampled
 
@@ -122,7 +127,7 @@ def extract_vlm_batch(images: list[Image.Image], texts: list[str], vlm_type: str
 
     embeddings = []
     if vlm_type == "colpali":
-        batch_size = 4
+        batch_size = 8
         for i in range(0, len(images), batch_size):
             inputs = processor.process_images(images[i : i + batch_size]).to(device)
             patch_embs = model(**inputs)  # [B, N_patches, 128]
@@ -163,7 +168,9 @@ def pool_document_embeddings(page_embs: np.ndarray, page_meta: list[dict[str, An
 def cluster(embeddings: np.ndarray, n_clusters: int) -> np.ndarray:
     k = min(max(2, n_clusters), len(embeddings))
     try:
-        from sklearn.cluster import KMeans
+        from sklearn.cluster import KMeans, MiniBatchKMeans
+        if len(embeddings) > 100000:
+            return MiniBatchKMeans(n_clusters=k, random_state=42, batch_size=4096, n_init="auto").fit_predict(embeddings)
         return KMeans(n_clusters=k, random_state=42, n_init="auto").fit_predict(embeddings)
     except ImportError:
         from scipy.cluster.vq import kmeans2
@@ -183,14 +190,14 @@ def main() -> None:
     parser.add_argument("--vlm-model", default="vidore/colpali-v1.2", help="VLM dedicada a documentos (ex: vidore/colpali-v1.2)")
     parser.add_argument("--k-doc", type=int, default=5, help="Clusters de documentos")
     parser.add_argument("--k-page", type=int, default=10, help="Clusters de páginas")
-    parser.add_argument("--checkpoint-every", type=int, default=500, help="Salva checkpoint a cada N documentos processados")
+    parser.add_argument("--checkpoint-every", type=int, default=5000, help="Salva checkpoint a cada N documentos processados")
     args = parser.parse_args()
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     args.output_prefix.parent.mkdir(parents=True, exist_ok=True)
 
     # 1. Definir arquivos a processar
-    if args.years and args.sample_rate < 1.0:
+    if args.years:
         files = get_sampled_files(args.raw_dir, args.input_dir, args.years, args.sample_rate, args.sample_seed)
     elif args.sample_rate < 1.0 and (args.raw_dir / "Ano-2014.json").exists():
         all_years = list(range(2014, 2027))
@@ -208,23 +215,53 @@ def main() -> None:
     dino_proc, dino_model = init_dino(args.dino_model, device)
     vlm_type, vlm_proc, vlm_model = init_vlm(args.vlm_model, device)
 
-    # 3. Processamento em Streaming/Batches
+    # 3. Checkpointing e Retomada
+    ckpt_npz = args.output_prefix.with_name(f"{args.output_prefix.stem}_checkpoint.npz")
+    ckpt_json = args.output_prefix.with_name(f"{args.output_prefix.stem}_checkpoint_meta.json")
+
     doc_meta = []
     page_meta = []
     dino_page_embs = []
     vlm_page_embs = []
+    start_idx = 0
+
+    if ckpt_npz.exists() and ckpt_json.exists():
+        try:
+            print(f"Encontrado checkpoint em {ckpt_npz.name}. Carregando...", flush=True)
+            with open(ckpt_json, "r", encoding="utf-8") as f:
+                ckpt_data = json.load(f)
+            doc_meta = ckpt_data.get("documents", [])
+            page_meta = ckpt_data.get("pages", [])
+
+            loaded_npz = np.load(ckpt_npz)
+            dino_page_embs = [loaded_npz["dino_page_embeddings"]]
+            vlm_page_embs = [loaded_npz["vlm_page_embeddings"]]
+            start_idx = len(doc_meta)
+            print(f"Checkpoint restaurado! {start_idx}/{total_files} documentos ({len(page_meta)} páginas) já processados. Retomando...", flush=True)
+        except Exception as e:
+            print(f"Aviso: Falha ao carregar checkpoint ({e}). Iniciando do início...", flush=True)
+            doc_meta, page_meta = [], []
+            dino_page_embs, vlm_page_embs = [], []
+            start_idx = 0
 
     chunk_size = 32
     print(f"\nIniciando inferência em streaming com lotes de {chunk_size} documentos...", flush=True)
 
-    for i in range(0, total_files, chunk_size):
+    last_print_docs = start_idx
+    last_ckpt_docs = start_idx
+
+    for i in range(start_idx, total_files, chunk_size):
         chunk_files = files[i : i + chunk_size]
         batch_images = []
         batch_texts = []
         batch_page_meta = []
 
         for file_path in chunk_files:
-            pages = render_pdf_pages(file_path) if file_path.suffix.lower() == ".pdf" else [{"page_idx": 0, "image": Image.open(file_path).convert("RGB"), "text": ""}]
+            try:
+                pages = render_pdf_pages(file_path) if file_path.suffix.lower() == ".pdf" else [{"page_idx": 0, "image": Image.open(file_path).convert("RGB"), "text": ""}]
+            except Exception:
+                continue
+
             if not pages:
                 continue
 
@@ -233,7 +270,12 @@ def main() -> None:
             for p in pages:
                 batch_images.append(p["image"])
                 batch_texts.append(p["text"])
-                batch_page_meta.append({"doc_id": doc_id, "doc_name": file_path.name, "page_idx": p["page_idx"], "text": p["text"]})
+                batch_page_meta.append({
+                    "doc_id": doc_id,
+                    "doc_name": file_path.name,
+                    "page_idx": p["page_idx"],
+                    "text": p["text"][:100],
+                })
 
         if batch_images:
             d_embs = extract_dino_batch(batch_images, dino_proc, dino_model, device)
@@ -248,9 +290,26 @@ def main() -> None:
         gc.collect()
 
         processed_docs = min(i + chunk_size, total_files)
-        if processed_docs % 100 == 0 or processed_docs == total_files:
+        if (processed_docs - last_print_docs >= 500) or processed_docs == total_files:
             pct = (processed_docs * 100) // total_files
             print(f"\r[{processed_docs}/{total_files}] ({pct}%) documentos processados ({len(page_meta)} páginas)", end="", flush=True)
+            last_print_docs = processed_docs
+
+        if (processed_docs - last_ckpt_docs >= args.checkpoint_every and processed_docs > start_idx) or processed_docs == total_files:
+            try:
+                temp_dino = np.vstack(dino_page_embs) if dino_page_embs else np.empty((0, 384), dtype=np.float32)
+                temp_vlm = np.vstack(vlm_page_embs) if vlm_page_embs else np.empty((0, 128), dtype=np.float32)
+                np.savez_compressed(
+                    ckpt_npz,
+                    dino_page_embeddings=temp_dino,
+                    vlm_page_embeddings=temp_vlm,
+                )
+                with open(ckpt_json, "w", encoding="utf-8") as f:
+                    json.dump({"documents": doc_meta, "pages": page_meta}, f)
+                print(f"\n[Checkpoint {processed_docs}/{total_files} docs] Salvo com sucesso.", flush=True)
+                last_ckpt_docs = processed_docs
+            except Exception as e:
+                print(f"\n[Aviso Checkpoint] Falha ao salvar ({e}). Continuando execução...", flush=True)
 
     print("\n\nInferência concluída. Consolidando embeddings...", flush=True)
 
@@ -281,6 +340,10 @@ def main() -> None:
     clean_pages = [{k: v for k, v in p.items() if k != "image"} for p in page_meta]
     with open(args.output_prefix.with_name(f"{args.output_prefix.stem}_metadata.json"), "w", encoding="utf-8") as f:
         json.dump({"documents": doc_meta, "pages": clean_pages}, f, ensure_ascii=False, indent=2)
+
+    # Remover checkpoints intermediários após conclusão bem-sucedida
+    ckpt_npz.unlink(missing_ok=True)
+    ckpt_json.unlink(missing_ok=True)
 
     print(f"\nVetores latentes salvos em: {npz_path}")
     print("Para carregar no FAISS:")

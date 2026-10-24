@@ -7,7 +7,9 @@ authors = [
     { name = "Lucas", email = "c.oliveira25@pucpr.edu.br" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "psycopg[binary]>=3.3.6",
+]
 
 [project.scripts]
 dados = "dados:main"
@@ -15,3 +17,6 @@ dados = "dados:main"
 [build-system]
 requires = ["uv_build>=0.12.21,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

@@ -29,6 +29,14 @@ def test_clustering_and_pooling() -> None:
     assert len(set(labels)) <= 2
 
 
+def test_cluster_minibatch() -> None:
+    # Teste de cluster com MiniBatchKMeans para datasets grandes
+    large_embs = np.random.randn(100500, 16).astype(np.float32)
+    labels = cluster(large_embs, n_clusters=5)
+    assert len(labels) == 100500
+    assert len(set(labels)) <= 5
+
+
 if __name__ == "__main__":
     test_clustering_and_pooling()
     print("OK")
