@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hub de Visualização dos Clusters CEAP</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #0b0f19;
+    color: #f1f5f9;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    max-width: 900px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  p.subtitle {
+    color: #94a3b8;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .hub-card {
+    background: #151d30;
+    border: 1px solid #263352;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+  }
+  .hub-card:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+  }
+  .badge {
+    align-self: flex-start;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .badge-dino { background: #1e3a8a; color: #93c5fd; }
+  .badge-vlm { background: #581c87; color: #d8b4fe; }
+  .badge-3d { background: #065f46; color: #6ee7b7; }
+  .card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  .card-desc {
+    color: #94a3b8;
+    font-size: 13px;
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: 16px;
+  }
+  .btn-action {
+    background: #0284c7;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .footer-note {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 13px;
+    color: #cbd5e1;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Visualização dos Clusters CEAP (1.34M Documentos)</h1>
+  <p class="subtitle">Selecione uma das técnicas abaixo para visualizar as 20 amostras mais representativas de cada cluster ou navegar no espaço 3D.</p>
+
+  <div class="cards-grid">
+    <a href="cluster-dino/index.html" class="hub-card">
+      <span class="badge badge-dino">Visual / Layout</span>
+      <div class="card-title">DINOv2 (Vision Transformer)</div>
+      <div class="card-desc">
+        Clusterização baseada na estrutura e layout visual dos documentos.<br><br>
+        &bull; 5 clusters<br>
+        &bull; 20 documentos por cluster<br>
+        &bull; Imagens PNG e atalhos PDF
+      </div>
+      <div class="btn-action">Abrir Galeria DINOv2 &rarr;</div>
+    </a>
+
+    <a href="cluster-colpali/index.html" class="hub-card">
+      <span class="badge badge-vlm">Visão + Semântica</span>
+      <div class="card-title">ColPali VLM (Multimodal)</div>
+      <div class="card-desc">
+        Clusterização multimodal combinando texto e imagens de documentos.<br><br>
+        &bull; 5 clusters<br>
+        &bull; 20 documentos por cluster<br>
+        &bull; Imagens PNG e atalhos PDF
+      </div>
+      <div class="btn-action">Abrir Galeria ColPali &rarr;</div>
+    </a>
+
+    <a href="latent_vectors_full_3d.html" class="hub-card">
+      <span class="badge badge-3d">Interativo 3D</span>
+      <div class="card-title">Espaço 3D UMAP</div>
+      <div class="card-desc">
+        Navegador 3D interativo com 25.000 documentos amostrados, com rotação 360°, zoom e pontos coloridos por ano de emissão (2014-2025).
+      </div>
+      <div class="btn-action" style="background: #059669;">Navegar em 3D &rarr;</div>
+    </a>
+  </div>
+
+  <div class="footer-note">
+    <b>Localização das pastas de arquivos:</b><br>
+    &bull; DINOv2: <code>data/cluster-dino/{0,1,2,3,4}/</code><br>
+    &bull; ColPali VLM: <code>data/cluster-colpali/{0,1,2,3,4}/</code><br>
+    Cada pasta contém as imagens em alta resolução da primeira página (<code>.png</code>) e o link direto para o PDF original (<code>.pdf</code>).
+  </div>
+</div>
+</body>
+</html>
