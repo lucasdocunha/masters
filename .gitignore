@@ -17,6 +17,8 @@ data/*
 *.pdf
 data/pgdata/
 logs/
+label_studio_data/
+ml_backend/models/
 .venv/
 .env
 .env.*

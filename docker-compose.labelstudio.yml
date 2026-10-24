@@ -1,0 +1,41 @@
+services:
+  label-studio:
+    image: heartexlabs/label-studio:latest
+    container_name: ceap-label-studio
+    ports:
+      - "8085:8080"
+    environment:
+      - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+      - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/data
+      - LABEL_STUDIO_DISABLE_SIGNUP_WITHOUT_LINK=true
+      - LABEL_STUDIO_BASE_DATA_DIR=/label-studio/data
+    volumes:
+      - ./label_studio_data:/label-studio/data
+      - /media/ssd2/datasets/CEAP:/data/pdfs:ro
+      - ./data/rendered_pages:/data/images:ro
+    restart: unless-stopped
+    networks:
+      - ceap-label-net
+
+  ml-backend:
+    build:
+      context: ./ml_backend
+      dockerfile: Dockerfile
+    container_name: ceap-ml-backend
+    ports:
+      - "9090:9090"
+    environment:
+      - RETRAIN_INTERVAL=100
+      - EMBEDDINGS_NPZ=/data/latent_vectors_sample_5pct.npz
+      - METADATA_JSON=/data/latent_vectors_sample_5pct_metadata.json
+      - MODEL_DIR=/app/models
+    volumes:
+      - ./ml_backend/models:/app/models
+      - ./data:/data:ro
+    restart: unless-stopped
+    networks:
+      - ceap-label-net
+
+networks:
+  ceap-label-net:
+    driver: bridge
