@@ -23,3 +23,4 @@ ml_backend/models/
 .env
 .env.*
 validacao_uber
+validacao_nfs
