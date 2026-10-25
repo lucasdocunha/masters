@@ -25,7 +25,7 @@ services:
     ports:
       - "9090:9090"
     environment:
-      - RETRAIN_INTERVAL=100
+      - RETRAIN_INTERVAL=50
       - EMBEDDINGS_NPZ=/data/latent_vectors_sample_5pct.npz
       - METADATA_JSON=/data/latent_vectors_sample_5pct_metadata.json
       - MODEL_DIR=/app/models

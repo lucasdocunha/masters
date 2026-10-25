@@ -30,20 +30,20 @@ def test_classifier_manager_training_and_retrain_trigger(tmp_path: Path):
     manager.embeddings_lookup["doc5"] = np.random.randn(512).astype(np.float32)
 
     # Adicionar anotações 1 e 2 (não atinge retrain_interval=3)
-    r1 = manager.add_annotation("doc1.pdf", "CUPOM_FISCAL_COMBUSTIVEL")
+    r1 = manager.add_annotation("doc1.pdf", "nfc")
     assert r1 is False
     assert manager.new_annotations_counter == 1
 
-    r2 = manager.add_annotation("doc2.pdf", "BILHETE_AEREO_EMBARQUE")
+    r2 = manager.add_annotation("doc2.pdf", "recibo")
     assert r2 is False
     assert manager.new_annotations_counter == 2
 
     # Pré-carregar mais algumas anotações para ter amostras suficientes para treinar (>=5)
-    manager.annotations_history["doc4"] = "CUPOM_FISCAL_COMBUSTIVEL"
-    manager.annotations_history["doc5"] = "BILHETE_AEREO_EMBARQUE"
+    manager.annotations_history["doc4"] = "nfc"
+    manager.annotations_history["doc5"] = "recibo"
 
     # Adicionar anotação 3 -> deve atingir o gatilho (counter == 3) e retreinar
-    r3 = manager.add_annotation("doc3.pdf", "CUPOM_FISCAL_COMBUSTIVEL")
+    r3 = manager.add_annotation("doc3.pdf", "nfc")
     assert r3 is True
     assert manager.new_annotations_counter == 0
     assert manager.train_count == 1
@@ -52,7 +52,7 @@ def test_classifier_manager_training_and_retrain_trigger(tmp_path: Path):
     # Verificar predição pós-treino
     pred = manager.predict("doc1.pdf")
     assert pred["model_version"] == "v1"
-    assert pred["class"] in ["CUPOM_FISCAL_COMBUSTIVEL", "BILHETE_AEREO_EMBARQUE"]
+    assert pred["class"] in ["nfc", "recibo"]
     assert "probabilities" in pred
     assert len(pred["probabilities"]) == 2
 

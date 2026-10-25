@@ -53,16 +53,20 @@ def generate_label_studio_xml_config(output_file: Path) -> None:
   
   <Header value="Selecione a Classe Documental Correspondente:" size="5" style="margin-top: 16px;"/>
   <Choices name="choice" toName="image" choice="single" showInline="true">
-    <Choice value="CUPOM_FISCAL_COMBUSTIVEL" hint="Postos de combustível (gasolina, diesel, etanol)" />
-    <Choice value="BILHETE_AEREO_EMBARQUE" hint="Passagem aérea, cartão de embarque" />
-    <Choice value="FATURA_TELECOMUNICACAO" hint="Telefonia celular, fixa, internet, dados" />
-    <Choice value="RECIBO_TAXI_ESTACIONAMENTO" hint="Recibos de táxi, app de mobilidade, estacionamento" />
-    <Choice value="CUPOM_REFEICAO_ALIMENTACAO" hint="Alimentação, restaurantes, lanchonetes" />
-    <Choice value="DANFE_A4_OU_FATURA" hint="DANFE padrão A4 mercantil com grade de produtos" />
-    <Choice value="NOTA_FISCAL_SERVICOS_NFSE" hint="NFS-e municipal de serviços técnicos e consultoria" />
-    <Choice value="CONTRATO_RECIBO_LOCACAO" hint="Locação ou fretamento de veículos automotores" />
-    <Choice value="NOTA_FISCAL_HOSPEDAGEM" hint="Hotéis, pousadas, diárias de hospedagem" />
-    <Choice value="OUTROS_DIVERSOS" hint="Comprovantes postais, taxas e outros documentos" />
+    <Choice value="nfc" hotkey="1" hint="Nota Fiscal de Consumidor (NFC-e / Cupom Fiscal)" />
+    <Choice value="nfe" hotkey="2" hint="Nota Fiscal Eletrônica (NF-e / DANFE)" />
+    <Choice value="nfse" hotkey="3" hint="Nota Fiscal de Serviços Eletrônica (NFS-e)" />
+    <Choice value="recibo" hotkey="4" hint="Recibos em geral (táxi, pedágio, locação, etc.)" />
+    <Choice value="emails" hotkey="5" hint="E-mails, trocas de mensagens e comunicações" />
+    <Choice value="energia" hotkey="6" hint="Faturas e contas de energia elétrica / luz" />
+    <Choice value="agua" hotkey="7" hint="Faturas e contas de água e saneamento" />
+    <Choice value="boleto" hotkey="8" hint="Boletos bancários de cobrança e compensação" />
+    <Choice value="fatura_cartao_credito" hotkey="9" text="fatura de cartao de credito" hint="Faturas e demonstrativos de cartão de crédito" />
+    <Choice value="uber" hotkey="0" hint="Recibos e comprovantes de viagens por aplicativo (Uber, 99, etc.)" />
+    <Choice value="aviao" hotkey="a" hint="Passagens aéreas, bilhetes e cartões de embarque" />
+    <Choice value="fatura_internet_celular" hotkey="c" text="fatura de internet/celular" hint="Faturas e contas de telefonia celular, fixa e internet" />
+    <Choice value="invoice" hotkey="i" hint="Invoices internacionais e recibos em moeda estrangeira" />
+    <Choice value="fatura" hotkey="f" hint="Faturas gerais de cobrança, locação ou prestação comercial" />
   </Choices>
 </View>
 """

@@ -9,9 +9,10 @@ import re
 from pathlib import Path
 from typing import Any, Optional
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+import requests
 
 from model import DocumentClassifierManager
 
@@ -32,7 +33,11 @@ app.add_middleware(
 MODEL_DIR = Path(os.environ.get("MODEL_DIR", "/app/models"))
 EMBEDDINGS_NPZ = Path(os.environ.get("EMBEDDINGS_NPZ", "/data/latent_vectors_sample_5pct.npz"))
 METADATA_JSON = Path(os.environ.get("METADATA_JSON", "/data/latent_vectors_sample_5pct_metadata.json"))
-RETRAIN_INTERVAL = int(os.environ.get("RETRAIN_INTERVAL", "100"))
+RETRAIN_INTERVAL = int(os.environ.get("RETRAIN_INTERVAL", "50"))
+
+LABEL_STUDIO_URL = os.environ.get("LABEL_STUDIO_URL", "http://ceap-label-studio:8080")
+LABEL_STUDIO_EMAIL = os.environ.get("LABEL_STUDIO_EMAIL", "admin@ceap.com")
+LABEL_STUDIO_PASS = os.environ.get("LABEL_STUDIO_PASS", "ceap-admin-2026")
 
 # Instância global do gerenciador
 manager = DocumentClassifierManager(
@@ -41,6 +46,52 @@ manager = DocumentClassifierManager(
     metadata_json=METADATA_JSON,
     retrain_interval=RETRAIN_INTERVAL,
 )
+
+
+def sync_predictions_for_unlabeled_tasks() -> None:
+    """Atualiza o model_version no Label Studio e gera predições para todas as tarefas pendentes."""
+    logger.info(f"[SYNC PREDICTIONS] Iniciando sincronização automática para modelo {manager.version}...")
+    try:
+        s = requests.Session()
+        login_url = f"{LABEL_STUDIO_URL}/user/login/"
+        s.get(login_url, timeout=10)
+        csrftoken = s.cookies.get("csrftoken")
+        login_res = s.post(
+            login_url,
+            data={
+                "email": LABEL_STUDIO_EMAIL,
+                "password": LABEL_STUDIO_PASS,
+                "csrfmiddlewaretoken": csrftoken,
+            },
+            headers={"Referer": login_url},
+            timeout=10,
+        )
+        if login_res.status_code != 200:
+            logger.error(f"[SYNC PREDICTIONS] Falha na autenticação do Label Studio: status {login_res.status_code}")
+            return
+
+        csrftoken = s.cookies.get("csrftoken")
+        headers = {"X-CSRFToken": csrftoken, "Referer": f"{LABEL_STUDIO_URL}/"}
+
+        # 1. Atualizar model_version do Projeto 1 para a nova versão treinada
+        p_res = s.patch(
+            f"{LABEL_STUDIO_URL}/api/projects/1",
+            json={"model_version": manager.version},
+            headers=headers,
+            timeout=10,
+        )
+        logger.info(f"[SYNC PREDICTIONS] Project 1 model_version atualizado para '{manager.version}' (status={p_res.status_code})")
+
+        # 2. Disparar a ação retrieve_tasks_predictions no Data Manager do Label Studio
+        action_res = s.post(
+            f"{LABEL_STUDIO_URL}/api/dm/actions?project=1&id=retrieve_tasks_predictions",
+            json={"selectedItems": {"all": True, "included": []}},
+            headers=headers,
+            timeout=180,
+        )
+        logger.info(f"[SYNC PREDICTIONS] Ação retrieve_tasks_predictions finalizada (status={action_res.status_code})")
+    except Exception as e:
+        logger.error(f"[SYNC PREDICTIONS] Erro ao sincronizar predições: {e}", exc_info=True)
 
 
 def extract_filename_from_url_or_data(data: dict[str, Any]) -> str:
@@ -144,7 +195,7 @@ async def predict(request: Request) -> dict[str, Any]:
 
 
 @app.post("/webhook")
-async def webhook(request: Request) -> dict[str, Any]:
+async def webhook(request: Request, background_tasks: BackgroundTasks) -> dict[str, Any]:
     """Webhook chamado automaticamente pelo Label Studio ao criar/editar anotações."""
     payload = await request.json()
     action = payload.get("action", "")
@@ -168,6 +219,8 @@ async def webhook(request: Request) -> dict[str, Any]:
 
         if doc_name and chosen_label:
             retrained = manager.add_annotation(doc_name, chosen_label)
+            if retrained:
+                background_tasks.add_task(sync_predictions_for_unlabeled_tasks)
             return {
                 "status": "recorded",
                 "doc_name": doc_name,
@@ -181,9 +234,11 @@ async def webhook(request: Request) -> dict[str, Any]:
 
 
 @app.post("/train")
-def train_manual() -> dict[str, Any]:
-    """Força retreinamento do modelo independente do contador."""
+def train_manual(background_tasks: BackgroundTasks) -> dict[str, Any]:
+    """Força retreinamento do modelo independente do contador e sincroniza predições."""
     result = manager.train()
+    if result.get("status") == "success":
+        background_tasks.add_task(sync_predictions_for_unlabeled_tasks)
     return result
 
 

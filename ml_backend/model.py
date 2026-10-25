@@ -17,16 +17,20 @@ from sklearn.linear_model import LogisticRegression
 logger = logging.getLogger("ml_backend.model")
 
 DEFAULT_CLASSES = [
-    "CUPOM_FISCAL_COMBUSTIVEL",
-    "BILHETE_AEREO_EMBARQUE",
-    "FATURA_TELECOMUNICACAO",
-    "RECIBO_TAXI_ESTACIONAMENTO",
-    "CUPOM_REFEICAO_ALIMENTACAO",
-    "DANFE_A4_OU_FATURA",
-    "NOTA_FISCAL_SERVICOS_NFSE",
-    "CONTRATO_RECIBO_LOCACAO",
-    "NOTA_FISCAL_HOSPEDAGEM",
-    "OUTROS_DIVERSOS",
+    "nfc",
+    "nfe",
+    "nfse",
+    "recibo",
+    "emails",
+    "energia",
+    "agua",
+    "boleto",
+    "fatura_cartao_credito",
+    "uber",
+    "aviao",
+    "fatura_internet_celular",
+    "invoice",
+    "fatura",
 ]
 
 
@@ -36,7 +40,7 @@ class DocumentClassifierManager:
         model_dir: Path,
         embeddings_npz: Optional[Path] = None,
         metadata_json: Optional[Path] = None,
-        retrain_interval: int = 100,
+        retrain_interval: int = 50,
     ):
         self.model_dir = Path(model_dir)
         self.model_dir.mkdir(parents=True, exist_ok=True)
@@ -200,8 +204,8 @@ class DocumentClassifierManager:
         if emb is None:
             # Fallback neutro se embedding não for encontrado
             return {
-                "class": "OUTROS_DIVERSOS",
-                "score": 0.2,
+                "class": "recibo",
+                "score": 0.25,
                 "model_version": self.version,
                 "probabilities": {},
             }
@@ -221,7 +225,7 @@ class DocumentClassifierManager:
         else:
             # Cold-start prior
             return {
-                "class": "CUPOM_FISCAL_COMBUSTIVEL",
+                "class": "nfc",
                 "score": 0.35,
                 "model_version": "v0-cold-start",
                 "probabilities": {},
