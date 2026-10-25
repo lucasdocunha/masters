@@ -96,12 +96,9 @@ def main(n_tasks: int = 500):
     c_nfse = np.mean(combined[[stem_to_idx[s] for s in nfse_stems]], axis=0)
     c_nfse /= np.linalg.norm(c_nfse)
 
-    # 3. Similaridade máxima com qualquer um dos centroides de NFs
-    print("Calculando similaridade máxima com a família de Notas Fiscais (NFC, NFSe, NFe)...")
-    sim_nfc = np.dot(combined, c_nfc)
+    # 3. Similaridade com o centroide de NFS-e Municipal
+    print("Calculando similaridade com o centroide das NFS-e Municipais (Nota Fiscal de Serviços)...")
     sim_nfse = np.dot(combined, c_nfse)
-    sim_all = np.dot(combined, c_all_nf)
-    best_sim = np.maximum(np.maximum(sim_nfc, sim_nfse), sim_all)
 
     # Lookup de metadados
     lookup: dict[str, Any] = {}
@@ -124,23 +121,19 @@ def main(n_tasks: int = 500):
         if not pdf_path.exists():
             continue
 
-        score = float(best_sim[idx])
-        # Identificar tipo mais próximo
-        s_nfc = float(sim_nfc[idx])
-        s_nfse = float(sim_nfse[idx])
-        s_all = float(sim_all[idx])
-        tipo = "NFC" if s_nfc >= s_nfse and s_nfc >= s_all else ("NFSe" if s_nfse >= s_all else "NFe/Geral")
+        score = float(sim_nfse[idx])
+        tipo = "NFS-e Municipal"
 
         candidates.append((score, doc_name, stem, pdf_path, idx, tipo))
 
-    # Ordenar decrescente pela similaridade (os mais próximos às NFs primeiro!)
+    # Ordenar decrescente pela similaridade de NFS-e (as mais puras NFS-e primeiro!)
     candidates.sort(key=lambda x: x[0], reverse=True)
     print(f"Total de candidatos válidos de 1 página: {len(candidates):,}")
 
     selected = candidates[:n_tasks]
-    print(f"Selecionados top {len(selected)} mais próximos às NFs.")
-    print(f"Maior similaridade: {selected[0][0]:.4f} ({selected[0][5]} - {selected[0][1]})")
-    print(f"Menor similaridade no lote: {selected[-1][0]:.4f} ({selected[-1][5]} - {selected[-1][1]})")
+    print(f"Selecionados top {len(selected)} mais próximos de NFS-e Municipal.")
+    print(f"Maior similaridade: {selected[0][0]:.4f} ({selected[0][1]})")
+    print(f"Menor similaridade no lote: {selected[-1][0]:.4f} ({selected[-1][1]})")
 
     # 4. Renderizar páginas PNG
     print(f"Renderizando imagens PNG em {IMAGES_DIR}...")
