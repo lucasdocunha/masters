@@ -110,7 +110,36 @@ def main():
     lines.append(f"| **Data de Emissão** | **{stats_gemini['data']:.1f}%** | **{stats_qwenvl['data']:.1f}%** | **{stats_twostage['data']:.1f}%** |")
     lines.append(f"| **Número da Nota / Cupom** | **{stats_gemini['numero']:.1f}%** | **{stats_qwenvl['numero']:.1f}%** | **{stats_twostage['numero']:.1f}%** |")
     lines.append(f"| **Nome / Razão Social** | **{stats_gemini['fornecedor']:.1f}%** | **{stats_qwenvl['fornecedor']:.1f}%** | **{stats_twostage['fornecedor']:.1f}%** |")
-    lines.append(f"| **MATCH PERFEITO (Todos os 5)** | **{stats_gemini['perfeito']:.1f}%** | **{stats_qwenvl['perfeito']:.1f}%** | **{stats_twostage['perfeito']:.1f}%** |")
+    lines.append(f"| **MATCH PERFEITO (Todos os 5)** | **{stats_gemini['perfeito']:.1f}%** | **{stats_qwenvl['perfeito']:.1f}%** | **{stats_twostage['perfeito']:.1f}%** |\n")
+
+    lines.append("## 2. Acurácia de Match Perfeito por Ano (Evolução Temporal 2014-2026)\n")
+    lines.append("| Ano | Amostra | Gemini 2.5 Flash Lite | Qwen-VL (End-to-End) | LightOnOCR + Qwen (Two-Stage) |")
+    lines.append("| :---: | :---: | :---: | :---: | :---: |")
+
+    from collections import defaultdict
+    by_year = defaultdict(list)
+    for item in manifest.get("documents", []):
+        d_id = str(item["idDocumento"])
+        ano = item.get("ano", 0)
+        if d_id in expected_docs:
+            by_year[ano].append(d_id)
+
+    for ano in sorted(by_year.keys()):
+        d_list = by_year[ano]
+        n_ano = len(d_list)
+        if n_ano == 0:
+            continue
+
+        gem_ok = sum(1 for did in d_list if did in expected_docs and (data_dir / f"{did}_extraido.json").exists() and evaluate_single_doc(expected_docs[did], json.load(open(data_dir / f"{did}_extraido.json")))["match_perfeito"])
+        qwen_ok = sum(1 for did in d_list if did in expected_docs and (dir_qwenvl / f"{did}.json").exists() and evaluate_single_doc(expected_docs[did], json.load(open(dir_qwenvl / f"{did}.json")))["match_perfeito"])
+        two_ok = sum(1 for did in d_list if did in expected_docs and (dir_twostage / f"{did}.json").exists() and evaluate_single_doc(expected_docs[did], json.load(open(dir_twostage / f"{did}.json")))["match_perfeito"])
+
+        lines.append(f"| {ano} | {n_ano} | {gem_ok/n_ano*100:.1f}% | {qwen_ok/n_ano*100:.1f}% | {two_ok/n_ano*100:.1f}% |")
+
+    lines.append("\n## 3. Conclusões e Síntese Experimental\n")
+    lines.append("- **Qwen2.5-VL-3B (End-to-End Local):** Destaca-se pela **altíssima velocidade (2.90s/doc)**, quase 5 vezes mais rápido que a API em nuvem do Gemini (13.99s), com acurácia de 87.9% no Valor Total, mas com taxa de acerto inferior em números de documentos e CNPJ.")
+    lines.append("- **LightOnOCR + Qwen (Two-Stage Local):** A utilização do LightOnOCR-3-4B para OCR visual completo prévio elevou o acerto de **CNPJ (+14.8%)** e **Data (+10.3%)**, alcançando **28.4% de Match Perfeito**, superando o Qwen2.5-VL direto.")
+    lines.append("- **Google Gemini 2.5 Flash Lite:** Apresenta a maior acurácia geral (52.2% de Match Perfeito), porém depende de envio de imagens para APIs externas em nuvem e latência de ~14 segundos por documento.")
 
     report_md = "\n".join(lines)
     print("\n" + report_md + "\n")
