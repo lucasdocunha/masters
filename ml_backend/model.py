@@ -120,7 +120,12 @@ class DocumentClassifierManager:
 
     def load_latest_model(self) -> None:
         """Carrega o modelo treinado mais recente do diretório de modelos."""
-        model_files = sorted(self.model_dir.glob("model_v*.joblib"))
+        import re
+        def _version_key(p: Path) -> int:
+            m = re.search(r"\d+", p.stem)
+            return int(m.group()) if m else 0
+
+        model_files = sorted(self.model_dir.glob("model_v*.joblib"), key=_version_key)
         if model_files:
             latest = model_files[-1]
             try:
