@@ -161,3 +161,68 @@ docker compose -f docker-compose.labelstudio.yml up -d
 ```bash
 uv run pytest tests/test_ml_backend.py
 ```
+
+---
+
+## 5. Benchmark Comparativo de Extração de Dados Fiscais (1.300 Documentos)
+
+Para validar a viabilidade de pipelines soberanos (100% locais e em hardware acadêmico) em comparação com soluções líderes de nuvem proprietárias, foi conduzido um benchmark exaustivo avaliando a extração dos 5 campos fiscais essenciais em **1.300 documentos** do CEAP (amostra estratificada com **100 documentos por ano de 2014 a 2026**).
+
+O Ground Truth foi derivado dos registros de prestação de contas oficiais da Câmara dos Deputados.
+
+### Pipelines Avaliados:
+1. **Google Gemini 2.5 Flash Lite (Cloud VLM API):** Extração zero-shot multimodal diretamente sobre a imagem renderizada (150 DPI) via API em nuvem.
+2. **Qwen2.5-VL-3B-Instruct (End-to-End Local):** Modelo multimodal compacto rodando localmente (2x NVIDIA RTX 3090) processando os patches visuais diretamente sem etapa intermediária de OCR.
+3. **LightOnOCR-3-4B + Qwen2.5-VL-3B (Two-Stage Local):** Pipeline em duas etapas onde o modelo de visão especializado **LightOnOCR-3-4B** transcreve todo o conteúdo visual em Markdown estruturado e o modelo **Qwen** atua na extração e normalização dos campos JSON.
+
+---
+
+### 1. Comparativo Geral de Desempenho e Acurácia (1.300 Documentos)
+
+| Métrica / Campo Fiscal | Google Gemini 2.5 Flash Lite | Opção B: Qwen2.5-VL-3B *(End-to-End)* | Opção A: LightOnOCR + Qwen *(Two-Stage)* |
+| :--- | :---: | :---: | :---: |
+| **Documentos Processados** | **1300 / 1300** | **1300 / 1300** | **1300 / 1300** |
+| **Tempo Médio / Doc** | **13.99s** *(API Nuvem)* | **2.90s** *(Local)* ⚡ | **17.99s** *(Local)* |
+| **CNPJ / CPF do Emissor** | **86.0%** | **63.4%** | **78.2%** *(+14.8%)* |
+| **Valor Total do Documento** | **95.4%** | **87.9%** | **76.2%** |
+| **Data de Emissão** | **90.3%** | **74.2%** | **84.5%** *(+10.3%)* |
+| **Número da Nota / Cupom** | **74.2%** | **55.1%** | **64.2%** *(+9.1%)* |
+| **Nome / Razão Social** | **81.2%** | **66.9%** | **72.5%** *(+5.6%)* |
+| **MATCH PERFEITO (Todos os 5)** | **52.2%** | **25.9%** | **28.4%** *(+2.5%)* |
+
+---
+
+### 2. Acurácia de Match Perfeito por Ano (Evolução Temporal 2014–2026)
+
+A evolução histórica reflete a transição dos documentos no Brasil: papéis térmicos antigos escaneados e impressoras matriciais (2014–2018) versus a consolidação das notas eletrônicas nativas (NF-e/NFC-e a partir de 2019/2020).
+
+| Ano | Amostra | Gemini 2.5 Flash Lite | Qwen-VL (End-to-End) | LightOnOCR + Qwen (Two-Stage) |
+| :---: | :---: | :---: | :---: | :---: |
+| **2014** | 100 | 34.0% | 9.0% | **18.0%** |
+| **2015** | 100 | 39.0% | 12.0% | **13.0%** |
+| **2016** | 100 | 37.0% | 23.0% | 20.0% |
+| **2017** | 100 | 47.0% | 26.0% | **33.0%** |
+| **2018** | 100 | 38.0% | 16.0% | **20.0%** |
+| **2019** | 100 | 45.0% | 20.0% | **32.0%** |
+| **2020** | 100 | 60.0% | 37.0% | **41.0%** |
+| **2021** | 100 | 59.0% | 32.0% | **35.0%** |
+| **2022** | 100 | 60.0% | **33.0%** | 30.0% |
+| **2023** | 100 | 59.0% | 29.0% | **35.0%** |
+| **2024** | 100 | 67.0% | **33.0%** | 29.0% |
+| **2025** | 100 | 58.0% | **31.0%** | 30.0% |
+| **2026** | 100 | 75.0% | **36.0%** | 33.0% |
+
+---
+
+### 3. Principais Insights e Conclusões da Pesquisa
+
+1. **Trade-off Velocidade vs. Precisão Fina:**
+   * **Qwen2.5-VL-3B direto** é quase **5x mais rápido** (2.90s/doc) do que a chamada via API do Gemini (13.99s), com excelente captação do valor global da despesa (**87.9%**). No entanto, modelos de visão compactos ponta a ponta sofrem com alucinações em sequências numéricas longas (CNPJ e número do documento).
+2. **O Papel do OCR Visual Especializado (Two-Stage):**
+   * O pipeline em duas etapas com **LightOnOCR-3-4B** resolve grande parte da limitação de leitura de fontes finas e cupons desgastados:
+     * O acerto de **CNPJ saltou de 63.4% para 78.2%** (+14.8%).
+     * O acerto da **Data saltou de 74.2% para 84.5%** (+10.3%).
+     * A taxa de **Match Perfeito** subiu para **28.4%**, superando o VLM direto em documentos anteriores a 2020.
+3. **Privacidade e Soberania de Dados:**
+   * Ambos os pipelines locais rodam inteiramente dentro do servidor institucional (`sicret2`), eliminando custos recorrentes de API e garantindo que nenhum dado fiscal ou parlamentar trafegue por nuvens de terceiros.
+
