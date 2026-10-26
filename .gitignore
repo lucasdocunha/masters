@@ -25,3 +25,4 @@ ml_backend/models/
 validacao_uber
 validacao_nfs
 validacao_nfe
+.venv_ocr
