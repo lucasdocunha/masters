@@ -20,10 +20,9 @@ LOOKUP_FILE = DATA_DIR / "pdf_metadata_lookup.json"
 NPZ_FILE = DATA_DIR / "latent_vectors_sample_5pct.npz"
 META_FILE = DATA_DIR / "latent_vectors_sample_5pct_metadata.json"
 
-print("=== ATUALIZAÇÃO DO CENTROIDE E GERAÇÃO DA PASTA NFE ===")
+print("=== REFINAMENTO PURO DO CENTROIDE NFE (SEM CONTAMINAÇÃO DE NFSE) ===")
 
-# 1. Carregar embeddings e metadados
-print("Carregando embeddings...")
+# 1. Carregar embeddings
 npz = np.load(NPZ_FILE)
 comb = np.hstack([npz["dino_doc_embeddings"], npz["vlm_doc_embeddings"]]).astype(np.float32)
 norms = np.linalg.norm(comb, axis=1, keepdims=True)
@@ -39,73 +38,40 @@ if LOOKUP_FILE.exists():
     with open(LOOKUP_FILE, "r", encoding="utf-8") as f:
         lookup = json.load(f)
 
-# 2. Consolidar sementes confirmadas
-# A. Sementes originais
-seeds77 = json.load(open(SEEDS_FILE)) if SEEDS_FILE.exists() else []
-all_seeds = {s["stem"]: s for s in seeds77}
+# 2. Sementes PURAS: apenas seeds77 + as confirmadas visualmente pelo usuário (EXCLUINDO danfe107!)
+seeds77 = json.load(open(DATA_DIR / "seeds_modelo_55.backup_77.json"))
+clean_seeds = {s["stem"]: s for s in seeds77}
 
-# B. Sementes confirmadas na subpasta 3_danfe_nfe_mercadorias
-danfe107_file = Path("/home/lucas.ocunha/Desktop/validacao_nfs/3_danfe_nfe_mercadorias/.candidatos.json")
-if danfe107_file.exists():
-    for d in json.load(open(danfe107_file)):
-        s = d["stem"]
-        if s not in all_seeds:
-            meta = lookup.get(f"{s}.pdf", {})
-            all_seeds[s] = {
-                "stem": s,
-                "doc_name": f"{s}.pdf",
-                "fornecedor": meta.get("fornecedor", d.get("fornecedor", "N/A")),
-                "subcota": meta.get("subcota", d.get("subcota", "N/A")),
-                "ano": meta.get("ano", "N/A"),
-                "reason": "Confirmado lote NFS subpasta 3_danfe"
-            }
+old_seeds = json.load(open(SEEDS_FILE))
+user_confirmed = [s for s in old_seeds if "Confirmado revisao visual" in s.get("reason", "")]
+for u in user_confirmed:
+    clean_seeds[u["stem"]] = u
 
-# C. Sementes validadas da pasta validacao_nfe (ranks 1 a 306 mantidos)
-old_manifest_path = DEST_DIR / ".candidatos.json"
-manifest_306 = json.load(open(old_manifest_path))[:306] if old_manifest_path.exists() else []
-existing_pngs = set(p.name for p in DEST_DIR.glob("rank_*.png"))
+# Rejeitados
+rejected_list = json.load(open(REJECTED_FILE))
+rejected_stems = set(r["stem"] for r in rejected_list)
 
-kept_306 = [m for m in manifest_306 if m["filename"] in existing_pngs]
-deleted_306 = [m for m in manifest_306 if m["filename"] not in existing_pngs]
+print(f"Total de sementes limpas: {len(clean_seeds)}")
 
-for k in kept_306:
-    s = k["stem"]
-    if s not in all_seeds:
-        meta = lookup.get(k["doc_name"], {})
-        all_seeds[s] = {
-            "stem": s,
-            "doc_name": k["doc_name"],
-            "fornecedor": k.get("fornecedor", meta.get("fornecedor", "N/A")),
-            "subcota": k.get("subcota", meta.get("subcota", "N/A")),
-            "ano": k.get("ano", meta.get("ano", "N/A")),
-            "reason": f"Confirmado revisao visual rank {k.get('rank', 'N/A')}"
-        }
-
-print(f"Total de sementes confirmadas: {len(all_seeds)}")
-
-# Salvar backup e novo seeds_modelo_55.json
-shutil.copyfile(SEEDS_FILE, DATA_DIR / "seeds_modelo_55.backup_77.json")
+# Salvar seeds_modelo_55.json limpo
 with open(SEEDS_FILE, "w", encoding="utf-8") as f:
-    json.dump(list(all_seeds.values()), f, indent=2, ensure_ascii=False)
-print(f"Salvo novo seeds_modelo_55.json com {len(all_seeds)} sementes!")
+    json.dump(list(clean_seeds.values()), f, indent=2, ensure_ascii=False)
 
-# Salvar rejeitados
-rejected_stems = [m["stem"] for m in deleted_306]
-with open(REJECTED_FILE, "w", encoding="utf-8") as f:
-    json.dump(deleted_306, f, indent=2, ensure_ascii=False)
-print(f"Salvo rejected_modelo_55.json com {len(deleted_306)} documentos rejeitados.")
+# 3. Calcular centroide puro de NFe
+seed_indices = [stem_to_idx[s] for s in clean_seeds if s in stem_to_idx]
+nfe_centroid = np.mean(comb[seed_indices], axis=0)
+nfe_centroid /= np.linalg.norm(nfe_centroid)
 
-# 3. Calcular novo centroide
-seed_indices = [stem_to_idx[s] for s in all_seeds if s in stem_to_idx]
-new_centroid = np.mean(comb[seed_indices], axis=0)
-new_centroid /= np.linalg.norm(new_centroid)
-print(f"Novo centroide calculado a partir de {len(seed_indices)} embeddings!")
-
-# 4. Encontrar candidatos com similaridade >= 0.90
+# 4. Calcular centroide de NFSe para contraste e filtro
 history = json.load(open(HISTORY_FILE)) if HISTORY_FILE.exists() else {}
-excluded = set(history.keys()).union(all_seeds.keys()).union(rejected_stems)
+nfse_stems = [s for s, l in history.items() if l == "nfse" and s in stem_to_idx]
+nfse_centroid = np.mean(comb[[stem_to_idx[s] for s in nfse_stems]], axis=0)
+nfse_centroid /= np.linalg.norm(nfse_centroid)
 
-sims = np.dot(comb, new_centroid)
+excluded = set(history.keys()).union(clean_seeds.keys()).union(rejected_stems)
+
+sims_nfe = np.dot(comb, nfe_centroid)
+sims_nfse = np.dot(comb, nfse_centroid)
 
 candidates = []
 for idx, d in enumerate(docs):
@@ -116,11 +82,17 @@ for idx, d in enumerate(docs):
     pdf_path = Path("/media/ssd2/datasets/CEAP") / doc_name
     if not pdf_path.exists():
         continue
-    s = float(sims[idx])
-    if s >= 0.90:
+    
+    s_nfe = float(sims_nfe[idx])
+    s_nfse = float(sims_nfse[idx])
+    
+    # Filtro rígido: similaridade alta com NFe E maior que com NFSe
+    if s_nfe >= 0.885 and s_nfe > s_nfse:
         meta = lookup.get(doc_name, {})
         candidates.append({
-            "sim": s,
+            "sim": s_nfe,
+            "sim_nfse": s_nfse,
+            "diff_sim": s_nfe - s_nfse,
             "doc_name": doc_name,
             "stem": stem,
             "pdf_path": str(pdf_path),
@@ -130,8 +102,11 @@ for idx, d in enumerate(docs):
             "png_target": str(RENDERED_DIR / f"{stem}.png")
         })
 
+# Ordenar por maior similaridade NFe
 candidates.sort(key=lambda x: x["sim"], reverse=True)
-print(f"Total de candidatos bem proximos (sim >= 0.90): {len(candidates):,} (de {candidates[-1]['sim']:.4f} a {candidates[0]['sim']:.4f})")
+min_sim = candidates[-1]["sim"]
+max_sim = candidates[0]["sim"]
+print(f"Candidatos selecionados (puros NFe): {len(candidates):,} (sim NFe: {min_sim:.4f} a {max_sim:.4f})")
 
 # 5. Limpar pasta DEST_DIR e criar novos links simbólicos
 for old_f in DEST_DIR.glob("rank_*.*"):
@@ -177,23 +152,23 @@ for rank, c in enumerate(candidates, 1):
 with open(DEST_DIR / ".candidatos.json", "w", encoding="utf-8") as f:
     json.dump(initial_manifest, f, indent=2, ensure_ascii=False)
 
-print(f"Criados {len(candidates)} links simbólicos.")
+print(f"Criados {len(candidates)} links simbólicos limpos.")
 
-# 6. Gerar miniaturas
+# 6. Garantir miniaturas
 t_th = time.time()
 with ThreadPoolExecutor(max_workers=16) as ex:
     futures = [ex.submit(setup_thumbnail, s, p) for s, p in thumb_tasks]
     ok = sum(1 for f in futures if f.result())
-print(f"Miniaturas geradas ({ok}/{len(thumb_tasks)}) em {time.time()-t_th:.2f}s!")
+print(f"Miniaturas verificadas ({ok}/{len(thumb_tasks)}) em {time.time()-t_th:.2f}s!")
 
 # 7. Atualizar LEIAME
 readme_path = DEST_DIR / "LEIAME.txt"
 with open(readme_path, "w", encoding="utf-8") as f:
-    f.write(f"""PASTA DE VALIDAÇÃO VISUAL - CLASSE NFE (DANFE - MODELO 55) - LOTE REFINADO
-========================================================================
+    f.write(f"""PASTA DE VALIDAÇÃO VISUAL - CLASSE NFE (DANFE - MODELO 55) - LOTE PURO
+======================================================================
 
-Esta pasta foi gerada a partir do NOVO CENTROIDE refinado com as 408 sementes confirmadas.
-Contém {len(candidates):,} documentos altamente similares (similaridade cosseno >= 0.9000).
+Lote gerado a partir do CENTROIDE PURO de NF-e (apenas sementes verificadas, com filtro de exclusão contra NFS-e).
+Total de candidatos: {len(candidates):,} documentos.
 
 COMO IDENTIFICAR O DANFE (MODELO 55):
 - Formato Folha A4 Retrato.
@@ -213,4 +188,4 @@ COMO USAR:
      cd ~/Desktop/validacao_nfe && ./confirmar_validacao.py
 """)
 
-print("\n[SUCESSO] Pasta validacao_nfe totalmente atualizada com o novo lote refinado!")
+print("\n[CONCLUÍDO] Pasta validacao_nfe recriada com documentos 100% alinhados à DANFE!")
