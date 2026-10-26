@@ -25,4 +25,6 @@ ml_backend/models/
 validacao_uber
 validacao_nfs
 validacao_nfe
+validacao_agua
+validacao_energia
 .venv_ocr
