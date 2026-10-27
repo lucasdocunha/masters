@@ -14,6 +14,7 @@ data/*
 !data/latent_vectors_full_3d.html
 !data/latent_vectors_dino_1_4m_3d.html
 !data/latent_vectors_colpali_1_4m_3d.html
+!data/latent_vectors_metric_learned_1_4m_3d.html
 !data/latent_vectors_sample_5pct_3d.html
 !data/demo_clusters_3d.html
 !data/pdfs_selecionados/manifest.json
@@ -24,7 +25,9 @@ data/*
 data/pgdata/
 logs/
 label_studio_data/
-ml_backend/models/
+ml_backend/models/*.joblib
+!ml_backend/models/metric_projection_head.pt
+!ml_backend/models/annotations_history.json
 .venv/
 .env
 .env.*
