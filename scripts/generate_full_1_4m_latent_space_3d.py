@@ -374,6 +374,9 @@ def generate_threejs_html(n_points: int, coord_b64: str, class_b64: str, palette
             colorArray[i*3+2] = pal.rgb[2];
             sizeArray[i] = basePointSize * 2.8;
           }} else {{
+            colorArray[i*3] = 0.0;
+            colorArray[i*3+1] = 0.0;
+            colorArray[i*3+2] = 0.0;
             sizeArray[i] = 0.0;
           }}
         }}
@@ -419,6 +422,13 @@ def generate_threejs_html(n_points: int, coord_b64: str, class_b64: str, palette
         uniform float uUnmappedAlpha;
 
         void main() {{
+          if (size <= 0.001 || (color.r == 0.0 && color.g == 0.0 && color.b == 0.0)) {{
+            vAlpha = 0.0;
+            vColor = vec3(0.0);
+            gl_PointSize = 0.0;
+            gl_Position = vec4(2.0, 2.0, 2.0, 1.0);
+            return;
+          }}
           vColor = color;
           // Se for cinza (nao mapeado), usa alpha reduzido
           if (color.r == color.g && color.g == color.b && color.r < 0.4) {{
@@ -437,7 +447,7 @@ def generate_threejs_html(n_points: int, coord_b64: str, class_b64: str, palette
         varying float vAlpha;
 
         void main() {{
-          if (vColor.r == 0.0 && vColor.g == 0.0 && vColor.b == 0.0) discard;
+          if (vAlpha <= 0.001 || (vColor.r == 0.0 && vColor.g == 0.0 && vColor.b == 0.0)) discard;
           // Círculo suave
           vec2 coord = gl_PointCoord - vec2(0.5);
           if (length(coord) > 0.5) discard;
