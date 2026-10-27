@@ -16,6 +16,10 @@ data/*
 !data/latent_vectors_colpali_1_4m_3d.html
 !data/latent_vectors_sample_5pct_3d.html
 !data/demo_clusters_3d.html
+!data/pdfs_selecionados/manifest.json
+!data/pdfs_selecionados/relatorio_avaliacao.md
+!data/pdfs_selecionados/relatorio_avaliacao.json
+!data/pdfs_selecionados/relatorio_comparativo_pipelines.md
 *.pdf
 data/pgdata/
 logs/
