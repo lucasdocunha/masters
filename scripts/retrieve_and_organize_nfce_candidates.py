@@ -26,7 +26,7 @@ cv2.setNumThreads(1)
 from rapidocr_onnxruntime import RapidOCR
 
 RE_NFCE = re.compile(
-    r'NFC-?E\b|DANFE\s*NFC|CONSUMIDOR\s*ELETR[OÔ]NIC|MOD(ELO)?\s*65|CHAVE\s*DE\s*ACESSO',
+    r'NFC-?E\b|DANFE|CO[NH]SUMIDOR\s*ELETR[OÔ]NIC|DOCU[HM]ENTO\s*AUXILIAR|MOD(ELO)?\s*65|CHAVE\s*DE\s*ACESSO',
     re.IGNORECASE
 )
 

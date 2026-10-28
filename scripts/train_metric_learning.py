@@ -811,6 +811,9 @@ def main():
             projected_all[start_idx:end_idx] = out_t.cpu().numpy()
 
     print(f"   Inferência dos 1.34M pontos concluída em {time.time()-t_inf:.2f}s!")
+    emb_save_path = DATA_DIR / "latent_vectors_metric_learned_128d.npy"
+    np.save(emb_save_path, projected_all)
+    print(f"   Embeddings métricos 128-D salvos em: {emb_save_path} ({emb_save_path.stat().st_size / (1024*1024):.1f} MB)")
 
     # 6. Projeção PCA 3D
     print("\n5. Calculando projeção 3D dos 1.34M pontos no novo espaço métrico...")
