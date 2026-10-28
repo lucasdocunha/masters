@@ -29,7 +29,9 @@ CLASS_PALETTE = {
     "Não Mapeado": {"hex": "#52525b", "rgb": [82, 82, 91]},
     "nfe": {"hex": "#3b82f6", "rgb": [59, 130, 246]},                 # Azul
     "nfse": {"hex": "#22c55e", "rgb": [34, 197, 94]},                # Verde
-    "nfc": {"hex": "#f97316", "rgb": [249, 115, 22]},                # Laranja
+    "cupom_fiscal": {"hex": "#f97316", "rgb": [249, 115, 22]},        # Laranja
+    "nfce": {"hex": "#f43f5e", "rgb": [244, 63, 94]},                # Coral/Rose
+    "nfc": {"hex": "#f97316", "rgb": [249, 115, 22]},                 # Laranja (compatibilidade)
     "recibo": {"hex": "#a855f7", "rgb": [168, 85, 247]},             # Roxo
     "uber": {"hex": "#eab308", "rgb": [234, 179, 8]},                # Amarelo/Ouro
     "energia": {"hex": "#06b6d4", "rgb": [6, 182, 212]},              # Ciano
