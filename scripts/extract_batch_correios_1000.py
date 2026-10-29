@@ -98,7 +98,7 @@ def main():
     pdf_dir = Path("/media/ssd2/datasets/CEAP")
     rendered_dir = root_dir / "data" / "rendered_pages"
     rendered_dir.mkdir(parents=True, exist_ok=True)
-    desktop_output = Path("/home/lucas.ocunha/Desktop/validacao_correios_1000")
+    desktop_output = root_dir / "data" / "validacao_batches" / "validacao_correios_1000"
 
     print(f"=== EXTRAÇÃO DE {target_count:,} CANDIDATOS DE SERVIÇOS POSTAIS (CORREIOS / ECT) ===")
     t0 = time.time()

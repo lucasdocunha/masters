@@ -3,9 +3,7 @@
 Gera visualização 3D interativa de ALTA PERFORMANCE em WebGL (Three.js) para todos os
 1.339.678 documentos do CEAP no espaço latente multimodal (512-D: DINOv2 + ColPali).
 Classes conhecidas em cores vibrantes; documentos não mapeados em cinza suave.
-Salva em:
-  - data/latent_vectors_full_3d.html
-  - Desktop/espaco_latente_1.4M_3d.html
+Salva em data/latent_vectors_full_3d.html.
 """
 
 import base64
@@ -22,7 +20,6 @@ NPZ_PATH = DATA_DIR / "latent_vectors_full.npz"
 META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
 HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
 OUTPUT_HTML = DATA_DIR / "latent_vectors_full_3d.html"
-DESKTOP_HTML = Path("/home/lucas.ocunha/Desktop/espaco_latente_1.4M_3d.html")
 
 # Cores hexadecimais e RGB para as classes
 CLASS_PALETTE = {
@@ -148,10 +145,6 @@ def main():
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
         f.write(html_content)
     print(f"   -> Salvo em {OUTPUT_HTML} ({OUTPUT_HTML.stat().st_size / (1024*1024):.2f} MB)")
-
-    with open(DESKTOP_HTML, "w", encoding="utf-8") as f:
-        f.write(html_content)
-    print(f"   -> Salvo em {DESKTOP_HTML} ({DESKTOP_HTML.stat().st_size / (1024*1024):.2f} MB)")
 
     print(f"\n=== SUCESSO TOTAL EM {time.time()-t_start:.1f} SEGUNDOS! ===")
 

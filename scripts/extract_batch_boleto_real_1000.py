@@ -105,7 +105,7 @@ def main():
     pdf_dir = Path("/media/ssd2/datasets/CEAP")
     rendered_dir = root_dir / "data" / "rendered_pages"
     rendered_dir.mkdir(parents=True, exist_ok=True)
-    desktop_output = Path("/home/lucas.ocunha/Desktop/validacao_boleto_1000")
+    batch_output = root_dir / "data" / "validacao_batches" / "validacao_boleto_1000"
 
     print(f"=== EXTRAÇÃO DE {target_count:,} BOLETOS BANCÁRIOS LEGÍTIMOS (BANCOS / CONDOMÍNIOS) ===")
     t0 = time.time()
@@ -209,11 +209,11 @@ def main():
                 print(f"   [{len(results)}/{len(selected)}] processados em {time.time()-t_ocr_start:.1f}s...", flush=True)
 
     # Limpar pasta anterior para remover os Sem Parar
-    if desktop_output.exists():
-        shutil.rmtree(desktop_output)
+    if batch_output.exists():
+        shutil.rmtree(batch_output)
 
-    folder_confirmed = desktop_output / "1_confirmadas_por_ocr"
-    folder_candidates = desktop_output / "2_alta_similaridade_candidatos"
+    folder_confirmed = batch_output / "1_confirmadas_por_ocr"
+    folder_candidates = batch_output / "2_alta_similaridade_candidatos"
     folder_confirmed.mkdir(parents=True, exist_ok=True)
     folder_candidates.mkdir(parents=True, exist_ok=True)
 
@@ -250,14 +250,14 @@ def main():
             "category": cat_name,
         })
 
-    manifest_path = desktop_output / "manifest.json"
+    manifest_path = batch_output / "manifest.json"
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
 
     print("\n" + "=" * 66)
     print("   LOTE DE 1.000 BOLETOS BANCÁRIOS REAIS GERADO COM SUCESSO!     ")
     print("=" * 66)
-    print(f"Destino: {desktop_output}")
+    print(f"Destino: {batch_output}")
     print(f"  ├── 1_confirmadas_por_ocr:          {confirmed_count} documentos")
     print(f"  └── 2_alta_similaridade_candidatos:  {candidate_count} documentos")
     print(f"Tempo total: {time.time()-t0:.1f} segundos")

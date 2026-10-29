@@ -2,7 +2,7 @@
 """
 Gera visualização 3D interativa do Espaço Latente Multimodal (512-D: DINOv2 + ColPali)
 colorido pelas classes conhecidas do modelo, com documentos não mapeados em cinza (#888888).
-Salva em data/latent_vectors_sample_5pct_3d.html e Desktop/espaco_latente_3d.html.
+Salva em data/latent_vectors_sample_5pct_3d.html.
 """
 
 import json
@@ -19,7 +19,6 @@ NPZ_PATH = DATA_DIR / "latent_vectors_sample_5pct.npz"
 META_PATH = DATA_DIR / "latent_vectors_sample_5pct_metadata.json"
 HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
 OUTPUT_HTML = DATA_DIR / "latent_vectors_sample_5pct_3d.html"
-DESKTOP_HTML = Path("/home/lucas.ocunha/Desktop/espaco_latente_3d.html")
 
 CLASS_COLORS = {
     "nfe": "#2563eb",                  # Azul royal
@@ -217,9 +216,6 @@ def main():
     print(f"\n5. Salvando HTML em:")
     print(f"   -> {OUTPUT_HTML}")
     fig.write_html(str(OUTPUT_HTML), include_plotlyjs=True, full_html=True)
-
-    print(f"   -> {DESKTOP_HTML}")
-    fig.write_html(str(DESKTOP_HTML), include_plotlyjs=True, full_html=True)
 
     print("\n[SUCESSO] Visualização 3D do Espaço Latente por Classes gerada com sucesso!")
 

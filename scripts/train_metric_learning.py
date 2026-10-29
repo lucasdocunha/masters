@@ -32,7 +32,6 @@ META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
 HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
 MODEL_SAVE_PATH = BASE_DIR / "ml_backend" / "models" / "metric_projection_head.pt"
 OUTPUT_HTML = DATA_DIR / "latent_vectors_metric_learned_1_4m_3d.html"
-DESKTOP_HTML = Path("/home/lucas.ocunha/Desktop/espaco_latente_metric_learning_1.4M_3d.html")
 
 CLASS_PALETTE = {
     "Não Mapeado": {"hex": "#52525b", "rgb": [82, 82, 91]},
@@ -861,10 +860,6 @@ def main():
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
         f.write(html_content)
     print(f"   -> Salvo em: {OUTPUT_HTML} ({OUTPUT_HTML.stat().st_size / (1024*1024):.2f} MB)")
-
-    with open(DESKTOP_HTML, "w", encoding="utf-8") as f:
-        f.write(html_content)
-    print(f"   -> Salvo em: {DESKTOP_HTML} ({DESKTOP_HTML.stat().st_size / (1024*1024):.2f} MB)")
 
     # 8. Sincronização automática com a aplicação Web 3D e Deploy no Vercel
     print("\n7. Sincronizando dados com o Web App 3D e atualizando Vercel...")

@@ -88,8 +88,11 @@ def load_all_batches():
         with open(history_p, "r", encoding="utf-8") as f:
             annotations = json.load(f)
 
+    # Lotes Validados (salvos em data/validacao_batches/)
+    batches_dir = BASE_DIR / "data" / "validacao_batches"
+
     # Lote de Boletos Reais
-    boleto_man = Path("/home/lucas.ocunha/Desktop/validacao_boleto_1000/manifest.json")
+    boleto_man = batches_dir / "validacao_boleto_1000" / "manifest.json"
     if boleto_man.exists():
         with open(boleto_man, "r", encoding="utf-8") as f:
             b_data = json.load(f)
@@ -99,7 +102,7 @@ def load_all_batches():
                 annotations[did] = "boleto"
 
     # Lote de Hotelaria
-    hot_man = Path("/home/lucas.ocunha/Desktop/validacao_hotelaria_1000/manifest.json")
+    hot_man = batches_dir / "validacao_hotelaria_1000" / "manifest.json"
     if hot_man.exists():
         with open(hot_man, "r", encoding="utf-8") as f:
             h_data = json.load(f)
@@ -109,7 +112,7 @@ def load_all_batches():
                 annotations[did] = "hotelaria"
 
     # Lote de Correios
-    cor_man = Path("/home/lucas.ocunha/Desktop/validacao_correios_1000/manifest.json")
+    cor_man = batches_dir / "validacao_correios_1000" / "manifest.json"
     if cor_man.exists():
         with open(cor_man, "r", encoding="utf-8") as f:
             c_data = json.load(f)
@@ -119,7 +122,7 @@ def load_all_batches():
                 annotations[did] = "correios"
 
     # Lote de Pedágio & Sem Parar
-    ped_man = Path("/home/lucas.ocunha/Desktop/validacao_pedagio_1000/manifest.json")
+    ped_man = batches_dir / "validacao_pedagio_1000" / "manifest.json"
     if ped_man.exists():
         with open(ped_man, "r", encoding="utf-8") as f:
             p_data = json.load(f)
