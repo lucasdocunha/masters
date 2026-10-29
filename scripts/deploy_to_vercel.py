@@ -93,11 +93,28 @@ def check_deployment_status(team_id: str, token: str, deployment_id: str) -> dic
         return json.loads(resp.read().decode())
 
 
+def load_env():
+    env_paths = [
+        Path("/home/lucas.ocunha/masters/.env"),
+        Path("/home/lucas.ocunha/masters/web_app/.env")
+    ]
+    for ep in env_paths:
+        if ep.exists():
+            for line in ep.read_text(encoding="utf-8").splitlines():
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    k, v = k.strip(), v.strip().strip("'\"")
+                    if k not in os.environ:
+                        os.environ[k] = v
+
+
 def main():
+    load_env()
     parser = argparse.ArgumentParser(description="Deploy Web App CEAP 3D para o Vercel")
     parser.add_argument("--token", default=os.getenv("VERCEL_TOKEN", DEFAULT_TOKEN), help="Vercel Access Token")
     parser.add_argument("--team-id", default=os.getenv("VERCEL_TEAM_ID", DEFAULT_TEAM_ID), help="Vercel Team ID")
-    parser.add_argument("--project", default=DEFAULT_PROJECT, help="Nome do projeto no Vercel")
+    parser.add_argument("--project", default=os.getenv("VERCEL_PROJECT", DEFAULT_PROJECT), help="Nome do projeto no Vercel")
     args = parser.parse_args()
 
     print("==================================================================")
