@@ -24,7 +24,9 @@ import numpy as np
 
 BASE_DIR = Path("/home/lucas.ocunha/masters")
 DATA_DIR = BASE_DIR / "data"
-WEB_DATA_DIR = BASE_DIR / "web_app" / "data"
+WEB_DATA_DIR = BASE_DIR / "web" / "data"
+if not (BASE_DIR / "web").exists() and (BASE_DIR / "web_app").exists():
+    WEB_DATA_DIR = BASE_DIR / "web_app" / "data"
 WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 EXTENDED_PALETTE = {

@@ -18,7 +18,9 @@ from pathlib import Path
 DEFAULT_TEAM_ID = "team_230KK43BCazj8vZkadCGtT8X"
 DEFAULT_TOKEN = "vcp_5ZfD1vUFEks5YXHY0h0MOk81hmwexfsBWjrWMzVaW94PM8xcsj3hIfd5"
 DEFAULT_PROJECT = "ceap-latent-space-3d"
-WEB_APP_DIR = Path("/home/lucas.ocunha/masters/web_app")
+WEB_APP_DIR = Path("/home/lucas.ocunha/masters/web")
+if not WEB_APP_DIR.exists():
+    WEB_APP_DIR = Path("/home/lucas.ocunha/masters/web_app")
 
 
 def compute_sha1(data: bytes) -> str:

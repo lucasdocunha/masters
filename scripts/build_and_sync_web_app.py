@@ -21,7 +21,9 @@ import numpy as np
 
 BASE_DIR = Path("/home/lucas.ocunha/masters")
 DATA_DIR = BASE_DIR / "data"
-WEB_APP_DIR = BASE_DIR / "web_app"
+WEB_APP_DIR = BASE_DIR / "web"
+if not WEB_APP_DIR.exists():
+    WEB_APP_DIR = BASE_DIR / "web_app"
 WEB_DATA_DIR = WEB_APP_DIR / "data"
 META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
 HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
