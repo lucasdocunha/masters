@@ -67,8 +67,8 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         <span>Exportar CSV</span>
       </button>
-      <button class="icon-btn" id="btn-toggle-inspect-nav" title="Modo Inspeção de Pontos (Clique para Ativar / Ver Metadados)">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+      <button class="icon-btn active" id="btn-toggle-hover" title="Hover Tooltips estilo Plotly (Ativar / Desativar)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
       </button>
       <button class="icon-btn" id="btn-reset-cam" title="Resetar Câmera 3D">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
@@ -92,65 +92,83 @@
     <!-- Canvas WebGL 3D -->
     <div id="canvas-container"></div>
 
-    <!-- HUD Flutuante de Ativação do Modo de Inspeção 3D -->
-    <div class="hud-inspect-container">
-      <button class="hud-inspect-toggle" id="btn-toggle-inspect" title="Ativar ou desativar o modo de inspeção para clicar nos pontos e ver seus detalhes">
-        <span class="hud-inspect-indicator"></span>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <span class="hud-inspect-title">Modo Inspeção</span>
-        <span class="hud-inspect-badge" id="hud-inspect-status">DESATIVADO</span>
-      </button>
-      <div class="hud-inspect-tip hidden" id="hud-inspect-tip">
-        <span>✨ Clique em qualquer ponto para inspecionar</span>
-      </div>
+    <!-- Indicador HUD Plotly Hover -->
+    <div class="hud-plotly-badge" id="hud-plotly-badge" title="Mova o mouse sobre qualquer ponto para inspecionar estilo Plotly">
+      <span class="hud-plotly-dot"></span>
+      <span>Hover Plotly Ativo</span>
     </div>
 
-    <!-- Card Flutuante de Inspeção de Ponto 3D -->
-    <div id="point-inspector-card" class="point-card hidden">
-      <div class="point-card-header">
-        <div class="point-card-title-group">
-          <span class="point-card-icon">🔍</span>
-          <span class="point-card-title" id="inspector-doc-id">Doc #5475644</span>
-          <span class="point-card-badge" id="inspector-class-badge">recibo</span>
+    <!-- Tooltip Flutuante Estilo Plotly (Segue o Cursor em Tempo Real) -->
+    <div id="plotly-hover-tooltip" class="plotly-hover-box hidden">
+      <div class="plotly-hover-header">
+        <span class="plotly-class-dot" id="hover-class-dot"></span>
+        <span class="plotly-class-name" id="hover-class-name">boleto</span>
+        <span class="plotly-doc-id" id="hover-doc-id">#5456002</span>
+      </div>
+      <div class="plotly-hover-body">
+        <div class="plotly-row" id="hover-supplier-row">
+          <span class="plotly-label">Fornecedor:</span>
+          <span class="plotly-val" id="hover-supplier">CONDOMINIO WALL STREET</span>
         </div>
-        <button class="point-card-close" id="btn-close-inspector" title="Fechar painel de inspeção">✕</button>
+        <div class="plotly-row" id="hover-subcota-row">
+          <span class="plotly-label">Subcota:</span>
+          <span class="plotly-val" id="hover-subcota">MANUTENÇÃO DE ESCRITÓRIO</span>
+        </div>
+        <div class="plotly-row">
+          <span class="plotly-label">Ano / Cluster:</span>
+          <span class="plotly-val" id="hover-proximity">2014 &bull; 98.5% boleto</span>
+        </div>
+        <div class="plotly-coords" id="hover-coords">x: 12.4, y: -8.1, z: 4.2</div>
+      </div>
+      <div class="plotly-hover-tip">Clique para fixar / abrir opções ↗</div>
+    </div>
+
+    <!-- Card Popover Fixado Estilo Plotly (Ao Clicar no Ponto) -->
+    <div id="plotly-pinned-card" class="plotly-pinned-box hidden">
+      <div class="plotly-pinned-header">
+        <div class="plotly-pinned-title-group">
+          <span class="plotly-class-dot" id="pinned-class-dot"></span>
+          <span class="plotly-pinned-title" id="pinned-doc-title">Doc #5456002</span>
+          <span class="plotly-pinned-badge" id="pinned-class-badge">boleto</span>
+        </div>
+        <button class="plotly-pinned-close" id="btn-close-pinned" title="Fechar (Esc)">✕</button>
       </div>
 
-      <div class="point-card-body">
-        <div class="point-meta-row">
-          <span class="point-meta-label">Fornecedor:</span>
-          <span class="point-meta-val" id="inspector-supplier">SINPETAXI - DF</span>
+      <div class="plotly-pinned-body">
+        <div class="plotly-pinned-row">
+          <span class="plotly-p-label">Fornecedor:</span>
+          <span class="plotly-p-val" id="pinned-supplier">CONDOMINIO WALL STREET</span>
         </div>
-        <div class="point-meta-row">
-          <span class="point-meta-label">Subcota:</span>
-          <span class="point-meta-val" id="inspector-subcota">SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO</span>
+        <div class="plotly-pinned-row">
+          <span class="plotly-p-label">Subcota:</span>
+          <span class="plotly-p-val" id="pinned-subcota">MANUTENÇÃO DE ESCRITÓRIO</span>
         </div>
-        <div class="point-meta-row">
-          <span class="point-meta-label">Ano do Gasto:</span>
-          <span class="point-meta-val" id="inspector-year">2014</span>
+        <div class="plotly-pinned-row">
+          <span class="plotly-p-label">Ano do Gasto:</span>
+          <span class="plotly-p-val" id="pinned-year">2014</span>
         </div>
-        <div class="point-meta-row">
-          <span class="point-meta-label">Proximidade:</span>
-          <span class="point-meta-val" id="inspector-cluster">recibo (93.5%)</span>
+        <div class="plotly-pinned-row">
+          <span class="plotly-p-label">Cluster Mais Próximo:</span>
+          <span class="plotly-p-val" id="pinned-cluster">boleto (98.5%)</span>
         </div>
-        <div class="point-meta-row">
-          <span class="point-meta-label">Coordenadas 3D:</span>
-          <span class="point-meta-val font-mono" id="inspector-coords">X: 12.4 | Y: -8.1 | Z: 4.2</span>
+        <div class="plotly-pinned-row">
+          <span class="plotly-p-label">Coordenadas 3D:</span>
+          <span class="plotly-p-val font-mono" id="pinned-coords">X: 12.4 | Y: -8.1 | Z: 4.2</span>
         </div>
       </div>
 
-      <div class="point-card-actions">
-        <a id="inspector-camara-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-camara" title="Abrir PDF original dos servidores da Câmara dos Deputados">
+      <div class="plotly-pinned-actions">
+        <a id="pinned-camara-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-plotly-action btn-camara" title="Abrir PDF original dos servidores da Câmara">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           <span>PDF Oficial</span>
         </a>
-        <a id="inspector-google-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-google" title="Abrir visualização rápida no Google Docs Viewer">
+        <a id="pinned-google-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-plotly-action btn-google" title="Abrir visualização no Google Docs Viewer">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-          <span>Google Viewer</span>
+          <span>Google Docs</span>
         </a>
-        <button id="btn-inspector-open-studio" class="btn-card-action btn-studio" title="Abrir este documento no Estúdio de Rotulação para classificar com 1 clique">
+        <button id="btn-pinned-open-studio" class="btn-plotly-action btn-studio" title="Abrir no Estúdio de Rotulação">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          <span>Rotular no Estúdio</span>
+          <span>Rotular</span>
         </button>
       </div>
     </div>

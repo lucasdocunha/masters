@@ -1361,206 +1361,252 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /* ==============================================================================
-   HUD DO MODO DE INSPEÇÃO 3D & CARD FLUTUANTE DE DETALHES DO PONTO
+   INSPEÇÃO 3D ESTILO PLOTLY (HOVER TOOLTIP EM TEMPO REAL + POPOVER FIXADO)
    ============================================================================== */
 
-.hud-inspect-container {
+/* Indicador HUD sutil de Hover Ativo */
+.hud-plotly-badge {
   position: absolute;
-  top: 80px;
-  left: 24px;
+  top: 76px;
+  left: 20px;
   z-index: 50;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.hud-inspect-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  background: rgba(15, 23, 42, 0.88);
-  border: 1px solid rgba(56, 189, 248, 0.35);
-  color: #f1f5f9;
-  padding: 8px 16px;
+  gap: 7px;
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 5px 12px;
   border-radius: 9999px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  cursor: pointer;
+  color: #94a3b8;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.hud-inspect-toggle:hover {
-  background: rgba(30, 41, 59, 0.95);
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 16px rgba(56, 189, 248, 0.25);
-  transform: translateY(-1px);
-}
-
-.hud-inspect-toggle.active {
-  background: rgba(16, 185, 129, 0.16);
-  border-color: #10b981;
-  color: #ffffff;
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.35);
-}
-
-.hud-inspect-indicator {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #64748b;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
   transition: all 0.2s ease;
 }
 
-.hud-inspect-toggle.active .hud-inspect-indicator {
+.hud-plotly-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
   background: #10b981;
-  box-shadow: 0 0 10px #10b981;
-  animation: pulse-indicator 1.6s infinite ease-in-out;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulse-dot 1.8s infinite ease-in-out;
 }
 
-@keyframes pulse-indicator {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.35); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.8; }
+@keyframes pulse-dot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
 }
 
-.hud-inspect-title {
-  letter-spacing: -0.2px;
-}
-
-.hud-inspect-badge {
-  font-size: 10px;
-  background: rgba(100, 116, 139, 0.2);
-  color: #94a3b8;
-  padding: 1px 7px;
-  border-radius: 9999px;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-}
-
-.hud-inspect-toggle.active .hud-inspect-badge {
-  background: rgba(16, 185, 129, 0.25);
-  color: #34d399;
-}
-
-.hud-inspect-tip {
-  background: rgba(15, 23, 42, 0.92);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 11px;
-  color: #38bdf8;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+/* Tooltip Hover Exato do Plotly (Segue o Cursor Instantaneamente) */
+.plotly-hover-box {
+  position: fixed;
   pointer-events: none;
-  animation: fadeIn 0.25s ease;
+  z-index: 10000;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-left: 4px solid var(--accent-cyan);
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.42;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75), 0 0 1px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  white-space: nowrap;
+  max-width: 320px;
+  transition: opacity 0.08s ease-out, transform 0.04s ease-out;
+  transform: translate(14px, -50%);
 }
 
-/* Card Flutuante de Inspeção de Ponto */
-.point-card {
+.plotly-hover-box.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(14px, -50%) scale(0.96);
+}
+
+.plotly-hover-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 11.5px;
+  margin-bottom: 4px;
+}
+
+.plotly-class-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 6px var(--accent-cyan);
+  flex-shrink: 0;
+}
+
+.plotly-class-name {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.plotly-doc-id {
+  color: #94a3b8;
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 11px;
+}
+
+.plotly-hover-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.plotly-row {
+  display: flex;
+  gap: 6px;
+  max-width: 290px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.plotly-label {
+  color: #64748b;
+  font-size: 10.5px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.plotly-val {
+  color: #e2e8f0;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.plotly-coords {
+  color: #38bdf8;
+  font-family: monospace;
+  font-size: 10px;
+  margin-top: 3px;
+  padding-top: 3px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+}
+
+.plotly-hover-tip {
+  margin-top: 4px;
+  font-size: 9.5px;
+  color: #a855f7;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+
+/* Popover Fixado ao Clicar (Com Botões de Ação) */
+.plotly-pinned-box {
   position: absolute;
   bottom: 24px;
   left: 24px;
-  width: 380px;
+  width: 360px;
   max-width: calc(100vw - 48px);
-  background: rgba(15, 23, 42, 0.93);
+  background: rgba(15, 23, 42, 0.95);
   border: 1px solid rgba(56, 189, 248, 0.4);
-  border-radius: 14px;
-  padding: 16px 18px;
+  border-left: 5px solid var(--accent-cyan);
+  border-radius: 12px;
+  padding: 14px 16px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65), 0 0 24px rgba(56, 189, 248, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 24px rgba(56, 189, 248, 0.15);
   z-index: 60;
   transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.point-card.hidden {
+.plotly-pinned-box.hidden {
   opacity: 0;
   pointer-events: none;
-  transform: translateY(18px) scale(0.97);
+  transform: translateY(16px) scale(0.96);
 }
 
-.point-card-header {
+.plotly-pinned-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(51, 65, 85, 0.6);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-.point-card-title-group {
+.plotly-pinned-title-group {
   display: flex;
   align-items: center;
-  gap: 8px;
-  min-width: 0;
+  gap: 7px;
 }
 
-.point-card-icon {
-  font-size: 14px;
-}
-
-.point-card-title {
-  font-size: 14px;
+.plotly-pinned-title {
+  font-size: 13.5px;
   font-weight: 700;
   color: #fff;
-  letter-spacing: -0.2px;
 }
 
-.point-card-badge {
-  font-size: 11px;
+.plotly-pinned-badge {
+  font-size: 10.5px;
   font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 6px;
+  padding: 2px 7px;
+  border-radius: 5px;
   border: 1px solid;
   text-transform: capitalize;
 }
 
-.point-card-close {
+.plotly-pinned-close {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-muted);
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 11px;
   transition: all 0.15s ease;
 }
 
-.point-card-close:hover {
+.plotly-pinned-close:hover {
   background: rgba(244, 63, 94, 0.2);
   color: #f43f5e;
   border-color: #f43f5e;
 }
 
-.point-card-body {
+.plotly-pinned-body {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   font-size: 11px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
-.point-meta-row {
+.plotly-pinned-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 8px;
 }
 
-.point-meta-label {
-  color: var(--text-dim);
+.plotly-p-label {
+  color: #64748b;
   font-weight: 500;
   flex-shrink: 0;
-  width: 110px;
+  width: 100px;
 }
 
-.point-meta-val {
+.plotly-p-val {
   color: #e2e8f0;
   font-weight: 600;
   text-align: right;
@@ -1570,27 +1616,27 @@ input[type="range"]::-webkit-slider-thumb {
   max-width: 220px;
 }
 
-.point-meta-val.font-mono {
+.plotly-p-val.font-mono {
   font-family: monospace;
   font-size: 10px;
   color: #38bdf8;
 }
 
-.point-card-actions {
+.plotly-pinned-actions {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 6px;
   padding-top: 10px;
   border-top: 1px solid rgba(51, 65, 85, 0.4);
 }
 
-.btn-card-action {
+.btn-plotly-action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
-  padding: 7px 8px;
-  border-radius: 7px;
+  padding: 6px 8px;
+  border-radius: 6px;
   font-size: 10.5px;
   font-weight: 600;
   text-decoration: none;
@@ -1600,43 +1646,43 @@ input[type="range"]::-webkit-slider-thumb {
   white-space: nowrap;
 }
 
-.btn-card-action.btn-camara {
+.btn-plotly-action.btn-camara {
   background: rgba(56, 189, 248, 0.12);
   border-color: rgba(56, 189, 248, 0.35);
   color: #38bdf8;
 }
 
-.btn-card-action.btn-camara:hover {
+.btn-plotly-action.btn-camara:hover {
   background: rgba(56, 189, 248, 0.25);
   border-color: #38bdf8;
   color: #fff;
 }
 
-.btn-card-action.btn-google {
+.btn-plotly-action.btn-google {
   background: rgba(168, 85, 247, 0.12);
   border-color: rgba(168, 85, 247, 0.35);
   color: #c084fc;
 }
 
-.btn-card-action.btn-google:hover {
+.btn-plotly-action.btn-google:hover {
   background: rgba(168, 85, 247, 0.25);
   border-color: #a855f7;
   color: #fff;
 }
 
-.btn-card-action.btn-studio {
+.btn-plotly-action.btn-studio {
   background: rgba(16, 185, 129, 0.15);
   border-color: rgba(16, 185, 129, 0.4);
   color: #34d399;
 }
 
-.btn-card-action.btn-studio:hover {
+.btn-plotly-action.btn-studio:hover {
   background: rgba(16, 185, 129, 0.3);
   border-color: #10b981;
   color: #fff;
 }
 
-#btn-toggle-inspect-nav.active {
+#btn-toggle-hover.active {
   background: rgba(16, 185, 129, 0.2);
   border-color: #10b981;
   color: #34d399;

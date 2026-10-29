@@ -91,23 +91,31 @@
   const pageNextBtn = document.getElementById('page-next-btn');
   const pageLastBtn = document.getElementById('page-last-btn');
 
-  // --- Elementos do DOM: Modo de Inspeção de Pontos 3D ---
-  const btnToggleInspect = document.getElementById('btn-toggle-inspect');
-  const btnToggleInspectNav = document.getElementById('btn-toggle-inspect-nav');
-  const hudInspectStatus = document.getElementById('hud-inspect-status');
-  const hudInspectTip = document.getElementById('hud-inspect-tip');
-  const pointInspectorCard = document.getElementById('point-inspector-card');
-  const inspectorDocId = document.getElementById('inspector-doc-id');
-  const inspectorClassBadge = document.getElementById('inspector-class-badge');
-  const btnCloseInspector = document.getElementById('btn-close-inspector');
-  const inspectorSupplier = document.getElementById('inspector-supplier');
-  const inspectorSubcota = document.getElementById('inspector-subcota');
-  const inspectorYear = document.getElementById('inspector-year');
-  const inspectorCluster = document.getElementById('inspector-cluster');
-  const inspectorCoords = document.getElementById('inspector-coords');
-  const inspectorCamaraLink = document.getElementById('inspector-camara-link');
-  const inspectorGoogleLink = document.getElementById('inspector-google-link');
-  const btnInspectorOpenStudio = document.getElementById('btn-inspector-open-studio');
+  // --- Elementos do DOM: Inspeção Estilo Plotly (Hover & Pinned) ---
+  const btnToggleHover = document.getElementById('btn-toggle-hover');
+  const hudPlotlyBadge = document.getElementById('hud-plotly-badge');
+  const plotlyHoverTooltip = document.getElementById('plotly-hover-tooltip');
+  const hoverClassDot = document.getElementById('hover-class-dot');
+  const hoverClassName = document.getElementById('hover-class-name');
+  const hoverDocId = document.getElementById('hover-doc-id');
+  const hoverSupplier = document.getElementById('hover-supplier');
+  const hoverSubcota = document.getElementById('hover-subcota');
+  const hoverProximity = document.getElementById('hover-proximity');
+  const hoverCoords = document.getElementById('hover-coords');
+
+  const plotlyPinnedCard = document.getElementById('plotly-pinned-card');
+  const pinnedClassDot = document.getElementById('pinned-class-dot');
+  const pinnedDocTitle = document.getElementById('pinned-doc-title');
+  const pinnedClassBadge = document.getElementById('pinned-class-badge');
+  const btnClosePinned = document.getElementById('btn-close-pinned');
+  const pinnedSupplier = document.getElementById('pinned-supplier');
+  const pinnedSubcota = document.getElementById('pinned-subcota');
+  const pinnedYear = document.getElementById('pinned-year');
+  const pinnedCluster = document.getElementById('pinned-cluster');
+  const pinnedCoords = document.getElementById('pinned-coords');
+  const pinnedCamaraLink = document.getElementById('pinned-camara-link');
+  const pinnedGoogleLink = document.getElementById('pinned-google-link');
+  const btnPinnedOpenStudio = document.getElementById('btn-pinned-open-studio');
 
   // --- Estado da Aplicação ---
   let metadata = null;
@@ -130,10 +138,14 @@
   let customClasses = {};
   let sessionLabeledCount = 0;
 
-  // Estado do Modo de Inspeção 3D
-  let isInspectMode = false;
-  let selectedCoordsIdx = null;
-  let selectionRingMesh = null;
+  // Estado da Inspeção Estilo Plotly
+  let isHoverEnabled = true;
+  let hoveredCoordsIdx = null;
+  let pinnedCoordsIdx = null;
+  let hoverReticle = null;
+  let pinnedReticle = null;
+  let isOrbitDragging = false;
+  let lastHoverTimestamp = 0;
   let docIds = null;
   let urlPrefixes = null;
   let urlIndices = null;
@@ -438,14 +450,14 @@
         pointsGeometry.attributes.position.needsUpdate = true;
       }
 
-      // Atualizar posição do marcador de inspeção se houver ponto selecionado
-      if (selectedCoordsIdx !== null && selectionRingMesh && pointsGeometry) {
+      // Atualizar posição do marcador fixado se houver ponto selecionado
+      if (pinnedCoordsIdx !== null && pinnedReticle && pointsGeometry) {
         const pos = pointsGeometry.attributes.position.array;
-        const sx = pos[selectedCoordsIdx * 3 + 0];
-        const sy = pos[selectedCoordsIdx * 3 + 1];
-        const sz = pos[selectedCoordsIdx * 3 + 2];
-        selectionRingMesh.position.set(sx, sy, sz);
-        inspectorCoords.textContent = `X: ${sx.toFixed(2)} | Y: ${sy.toFixed(2)} | Z: ${sz.toFixed(2)}`;
+        const sx = pos[pinnedCoordsIdx * 3 + 0];
+        const sy = pos[pinnedCoordsIdx * 3 + 1];
+        const sz = pos[pinnedCoordsIdx * 3 + 2];
+        pinnedReticle.position.set(sx, sy, sz);
+        if (pinnedCoords) pinnedCoords.textContent = `X: ${sx.toFixed(2)} | Y: ${sy.toFixed(2)} | Z: ${sz.toFixed(2)}`;
       }
 
       hideLoading();
@@ -810,96 +822,78 @@
     switchView('3d');
     controls.target.set(x, y, z);
     camera.position.set(x, y + 12, z + 28);
-    inspectPoint(coordsIdx);
+    pinPlotlyDoc(coordsIdx);
   }
 
   // =========================================================================
-  // MOTOR DE INSPEÇÃO DE PONTOS 3D (RAYCASTING & METADADOS EM TEMPO REAL)
+  // MOTOR DE INSPEÇÃO 3D ESTILO PLOTLY (HOVER TOOLTIP & PINNED CARD)
   // =========================================================================
-  function createSelectionMarker() {
-    if (selectionRingMesh) return selectionRingMesh;
+  function createPlotlyReticles() {
+    if (hoverReticle && pinnedReticle) return;
 
-    const group = new THREE.Group();
+    // 1. Retículo dinâmico de Hover (acompanha o mouse sobre os pontos)
+    const hGroup = new THREE.Group();
+    const hRingGeo = new THREE.RingGeometry(0.8, 1.3, 24);
+    const hRingMat = new THREE.MeshBasicMaterial({
+      color: 0xffffff,
+      side: THREE.DoubleSide,
+      transparent: true,
+      opacity: 0.9,
+      depthTest: false
+    });
+    hGroup.add(new THREE.Mesh(hRingGeo, hRingMat));
+    hGroup.renderOrder = 998;
+    hGroup.visible = false;
+    scene.add(hGroup);
+    hoverReticle = hGroup;
 
-    // Anel externo com brilho ciano
-    const ringGeo = new THREE.RingGeometry(1.2, 1.8, 32);
-    const ringMat = new THREE.MeshBasicMaterial({
+    // 2. Retículo fixado (ao clicar no ponto)
+    const pGroup = new THREE.Group();
+    const pRingGeo = new THREE.RingGeometry(1.2, 1.8, 32);
+    const pRingMat = new THREE.MeshBasicMaterial({
       color: 0x38bdf8,
       side: THREE.DoubleSide,
       transparent: true,
       opacity: 0.9,
       depthTest: false
     });
-    const ring = new THREE.Mesh(ringGeo, ringMat);
-    group.add(ring);
+    pGroup.add(new THREE.Mesh(pRingGeo, pRingMat));
 
-    // Retículo em cruz central
-    const crossMat = new THREE.LineBasicMaterial({
-      color: 0x38bdf8,
-      transparent: true,
-      opacity: 0.75,
-      depthTest: false
-    });
-    const crossGeoH = new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(-2.2, 0, 0),
-      new THREE.Vector3(2.2, 0, 0)
-    ]);
-    const crossH = new THREE.Line(crossGeoH, crossMat);
-    group.add(crossH);
-
-    const crossGeoV = new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(0, -2.2, 0),
-      new THREE.Vector3(0, 2.2, 0)
-    ]);
-    const crossV = new THREE.Line(crossGeoV, crossMat);
-    group.add(crossV);
-
-    // Ponto central esmeralda
-    const dotGeo = new THREE.CircleGeometry(0.35, 16);
-    const dotMat = new THREE.MeshBasicMaterial({
+    const pDotGeo = new THREE.CircleGeometry(0.35, 16);
+    const pDotMat = new THREE.MeshBasicMaterial({
       color: 0x34d399,
       side: THREE.DoubleSide,
       transparent: true,
       opacity: 0.95,
       depthTest: false
     });
-    const dot = new THREE.Mesh(dotGeo, dotMat);
-    group.add(dot);
+    pGroup.add(new THREE.Mesh(pDotGeo, pDotMat));
 
-    group.renderOrder = 999;
-    group.visible = false;
-    scene.add(group);
-    selectionRingMesh = group;
-    return group;
+    pGroup.renderOrder = 999;
+    pGroup.visible = false;
+    scene.add(pGroup);
+    pinnedReticle = pGroup;
   }
 
-  function toggleInspectMode(enable) {
-    isInspectMode = (enable !== undefined) ? enable : !isInspectMode;
+  function toggleHoverMode(enable) {
+    isHoverEnabled = (enable !== undefined) ? enable : !isHoverEnabled;
 
-    if (btnToggleInspect) {
-      btnToggleInspect.classList.toggle('active', isInspectMode);
+    if (btnToggleHover) {
+      btnToggleHover.classList.toggle('active', isHoverEnabled);
     }
-    if (btnToggleInspectNav) {
-      btnToggleInspectNav.classList.toggle('active', isInspectMode);
+    if (hudPlotlyBadge) {
+      hudPlotlyBadge.style.opacity = isHoverEnabled ? '1' : '0.4';
+      hudPlotlyBadge.querySelector('span:last-child').textContent = isHoverEnabled ? 'Hover Plotly Ativo' : 'Hover Pausado';
     }
-    if (hudInspectStatus) {
-      hudInspectStatus.textContent = isInspectMode ? 'ATIVO' : 'DESATIVADO';
-    }
-    if (hudInspectTip) {
-      hudInspectTip.classList.toggle('hidden', !isInspectMode);
-    }
-    container.style.cursor = isInspectMode ? 'crosshair' : 'default';
 
-    if (!isInspectMode && !selectedCoordsIdx) {
-      if (pointInspectorCard) pointInspectorCard.classList.add('hidden');
-      if (selectionRingMesh) selectionRingMesh.visible = false;
+    if (!isHoverEnabled) {
+      hidePlotlyHover();
     }
   }
 
   function openDocInStudio(docItem) {
     if (!docItem) return;
 
-    // Verificar se o documento já está no dataset de rotulação
     let existing = labelingDataset.find(d => String(d.id) === String(docItem.id));
     if (!existing) {
       labelingDataset.unshift(docItem);
@@ -907,7 +901,6 @@
       existing = docItem;
     }
 
-    // Verificar se já está na fila atual do estúdio
     let idx = studioQueue.findIndex(d => String(d.id) === String(docItem.id));
     if (idx === -1) {
       studioQueue.unshift(existing);
@@ -920,42 +913,30 @@
     updateStudioView();
   }
 
-  function inspectPoint(coordsIdx) {
-    if (!pointCloud || coordsIdx === undefined || coordsIdx < 0 || coordsIdx >= nPoints) return;
-    selectedCoordsIdx = coordsIdx;
+  function resolveDocInfo(coordsIdx) {
+    if (!pointCloud || coordsIdx === undefined || coordsIdx < 0 || coordsIdx >= nPoints) return null;
 
-    // 1. Obter coordenadas no modelo 3D atual
     const pos = pointsGeometry.attributes.position.array;
     const x = pos[coordsIdx * 3 + 0];
     const y = pos[coordsIdx * 3 + 1];
     const z = pos[coordsIdx * 3 + 2];
 
-    // 2. Posicionar retículo 3D
-    if (!selectionRingMesh) {
-      createSelectionMarker();
-    }
-    selectionRingMesh.position.set(x, y, z);
-    selectionRingMesh.visible = true;
-
-    // 3. Resolver ID do documento
-    let docId = docIds ? String(docIds[coordsIdx]) : null;
-
-    // 4. Resolver Classe Atual (GPU / Metadata / localStorage)
+    let docId = docIds ? String(docIds[coordsIdx]) : String(coordsIdx);
     let className = 'Não Mapeado';
     let classHex = '#52525b';
+
     const cid = classIds ? classIds[coordsIdx] : 0;
     if (metadata.palette[cid]) {
       className = metadata.palette[cid].name;
       classHex = metadata.palette[cid].hex;
     }
 
-    if (docId && userAnnotations[docId]) {
+    if (userAnnotations[docId]) {
       className = userAnnotations[docId];
       const pal = getClassPaletteByName(className);
       classHex = pal.hex;
     }
 
-    // 5. Verificar se temos metadados ricos em labelingDataset
     const datasetDoc = coordsIdxToDoc.get(coordsIdx);
 
     let supplier = 'Não informado no lote reduzido';
@@ -976,7 +957,6 @@
       proximity = `${datasetDoc.closest_cluster} (${simPct}%)`;
       url = datasetDoc.url;
     } else {
-      // Reconstruir URL oficial da Câmara a partir de url_prefixes
       if (urlPrefixes && urlIndices && docId) {
         const pref = urlPrefixes[urlIndices[coordsIdx]];
         if (pref) {
@@ -991,64 +971,128 @@
       url = `https://www.camara.leg.br/cota-parlamentar/documentos/publ/${docId}.pdf`;
     }
 
-    // 6. Atualizar DOM do Card de Inspeção
-    if (inspectorDocId) inspectorDocId.textContent = `Doc #${docId || coordsIdx}`;
-    if (inspectorClassBadge) {
-      inspectorClassBadge.textContent = className;
-      inspectorClassBadge.style.color = classHex;
-      inspectorClassBadge.style.borderColor = classHex;
-      inspectorClassBadge.style.backgroundColor = `${classHex}22`;
+    return {
+      coordsIdx,
+      docId,
+      className,
+      classHex,
+      supplier,
+      subcota,
+      ano,
+      proximity,
+      url,
+      x, y, z
+    };
+  }
+
+  function showPlotlyHover(coordsIdx, clientX, clientY) {
+    if (!isHoverEnabled) return;
+    hoveredCoordsIdx = coordsIdx;
+    const info = resolveDocInfo(coordsIdx);
+    if (!info) return;
+
+    if (hoverReticle) {
+      hoverReticle.position.set(info.x, info.y, info.z);
+      hoverReticle.children[0].material.color.set(info.classHex);
+      hoverReticle.visible = true;
     }
 
-    if (inspectorSupplier) {
-      inspectorSupplier.textContent = supplier;
-      inspectorSupplier.title = supplier;
+    plotlyHoverTooltip.style.borderLeftColor = info.classHex;
+    hoverClassDot.style.background = info.classHex;
+    hoverClassDot.style.boxShadow = `0 0 8px ${info.classHex}`;
+    hoverClassName.textContent = info.className;
+    hoverDocId.textContent = `#${info.docId}`;
+
+    hoverSupplier.textContent = info.supplier;
+    hoverSubcota.textContent = info.subcota;
+    hoverProximity.textContent = info.proximity !== '-' ? info.proximity : `Ano: ${info.ano}`;
+    hoverCoords.textContent = `x: ${info.x.toFixed(1)}, y: ${info.y.toFixed(1)}, z: ${info.z.toFixed(1)}`;
+
+    let left = clientX + 16;
+    let top = clientY;
+
+    if (left + 320 > window.innerWidth) {
+      left = clientX - 330;
     }
-    if (inspectorSubcota) {
-      inspectorSubcota.textContent = subcota;
-      inspectorSubcota.title = subcota;
-    }
-    if (inspectorYear) inspectorYear.textContent = ano;
-    if (inspectorCluster) inspectorCluster.textContent = proximity;
-    if (inspectorCoords) {
-      inspectorCoords.textContent = `X: ${x.toFixed(2)} | Y: ${y.toFixed(2)} | Z: ${z.toFixed(2)}`;
+    if (top + 90 > window.innerHeight) {
+      top = window.innerHeight - 95;
+    } else if (top - 80 < 60) {
+      top = 70;
     }
 
-    if (url) {
-      if (inspectorCamaraLink) {
-        inspectorCamaraLink.href = url;
-        inspectorCamaraLink.style.display = 'inline-flex';
-      }
-      if (inspectorGoogleLink) {
-        inspectorGoogleLink.href = `https://docs.google.com/viewer?url=${encodeURIComponent(url)}&embedded=true`;
-        inspectorGoogleLink.style.display = 'inline-flex';
-      }
+    plotlyHoverTooltip.style.left = `${left}px`;
+    plotlyHoverTooltip.style.top = `${top}px`;
+    plotlyHoverTooltip.classList.remove('hidden');
+  }
+
+  function hidePlotlyHover() {
+    hoveredCoordsIdx = null;
+    if (plotlyHoverTooltip) plotlyHoverTooltip.classList.add('hidden');
+    if (hoverReticle) hoverReticle.visible = false;
+  }
+
+  function pinPlotlyDoc(coordsIdx) {
+    pinnedCoordsIdx = coordsIdx;
+    const info = resolveDocInfo(coordsIdx);
+    if (!info) return;
+
+    if (pinnedReticle) {
+      pinnedReticle.position.set(info.x, info.y, info.z);
+      pinnedReticle.children[0].material.color.set(info.classHex);
+      pinnedReticle.visible = true;
+    }
+
+    plotlyPinnedCard.style.borderLeftColor = info.classHex;
+    pinnedClassDot.style.background = info.classHex;
+    pinnedClassDot.style.boxShadow = `0 0 8px ${info.classHex}`;
+    pinnedDocTitle.textContent = `Doc #${info.docId}`;
+    pinnedClassBadge.textContent = info.className;
+    pinnedClassBadge.style.color = info.classHex;
+    pinnedClassBadge.style.borderColor = info.classHex;
+    pinnedClassBadge.style.backgroundColor = `${info.classHex}22`;
+
+    pinnedSupplier.textContent = info.supplier;
+    pinnedSupplier.title = info.supplier;
+    pinnedSubcota.textContent = info.subcota;
+    pinnedSubcota.title = info.subcota;
+    pinnedYear.textContent = info.ano;
+    pinnedCluster.textContent = info.proximity !== '-' ? info.proximity : 'Não Mapeado';
+    pinnedCoords.textContent = `X: ${info.x.toFixed(2)} | Y: ${info.y.toFixed(2)} | Z: ${info.z.toFixed(2)}`;
+
+    if (info.url) {
+      pinnedCamaraLink.href = info.url;
+      pinnedCamaraLink.style.display = 'inline-flex';
+      pinnedGoogleLink.href = `https://docs.google.com/viewer?url=${encodeURIComponent(info.url)}&embedded=true`;
+      pinnedGoogleLink.style.display = 'inline-flex';
     } else {
-      if (inspectorCamaraLink) inspectorCamaraLink.style.display = 'none';
-      if (inspectorGoogleLink) inspectorGoogleLink.style.display = 'none';
+      pinnedCamaraLink.style.display = 'none';
+      pinnedGoogleLink.style.display = 'none';
     }
 
-    if (btnInspectorOpenStudio) {
-      btnInspectorOpenStudio.onclick = () => {
-        openDocInStudio({
-          id: String(docId || coordsIdx),
-          name: `${docId || coordsIdx}.pdf`,
-          class: className,
-          fornecedor: supplier,
-          subcota: subcota,
-          ano: ano,
-          url: url,
-          closest_cluster: datasetDoc ? datasetDoc.closest_cluster : className,
-          similarity: datasetDoc ? datasetDoc.similarity : 1.0,
-          coords_idx: coordsIdx,
-          status: datasetDoc ? datasetDoc.status : 'rotulado'
-        });
-      };
-    }
+    btnPinnedOpenStudio.onclick = () => {
+      openDocInStudio({
+        id: String(info.docId),
+        name: `${info.docId}.pdf`,
+        class: info.className,
+        fornecedor: info.supplier,
+        subcota: info.subcota,
+        ano: info.ano,
+        url: info.url,
+        closest_cluster: info.proximity !== '-' ? info.proximity.split(' ')[0] : info.className,
+        similarity: 1.0,
+        coords_idx: coordsIdx,
+        status: 'rotulado'
+      });
+    };
 
-    if (pointInspectorCard) {
-      pointInspectorCard.classList.remove('hidden');
-    }
+    plotlyPinnedCard.classList.remove('hidden');
+    hidePlotlyHover();
+  }
+
+  function unpinPlotlyDoc() {
+    pinnedCoordsIdx = null;
+    if (plotlyPinnedCard) plotlyPinnedCard.classList.add('hidden');
+    if (pinnedReticle) pinnedReticle.visible = false;
   }
 
   // =========================================================================
@@ -1414,53 +1458,79 @@
       btnTogglePanel.classList.toggle('active', !sidePanel.classList.contains('collapsed'));
     });
 
-    // 8. Modo de Inspeção de Pontos 3D
-    if (btnToggleInspect) {
-      btnToggleInspect.addEventListener('click', () => toggleInspectMode());
-    }
-    if (btnToggleInspectNav) {
-      btnToggleInspectNav.addEventListener('click', () => toggleInspectMode());
-    }
-    if (btnCloseInspector) {
-      btnCloseInspector.addEventListener('click', () => {
-        if (pointInspectorCard) pointInspectorCard.classList.add('hidden');
-        if (selectionRingMesh) selectionRingMesh.visible = false;
-        selectedCoordsIdx = null;
-      });
+    // 8. Inspeção 3D Estilo Plotly (Hover em tempo real + Clique para fixar)
+    if (btnToggleHover) {
+      btnToggleHover.addEventListener('click', () => toggleHoverMode());
     }
 
-    // Raycasting por clique no Canvas 3D
+    if (btnClosePinned) {
+      btnClosePinned.addEventListener('click', unpinPlotlyDoc);
+    }
+
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
-    let pointerDownPos = { x: 0, y: 0, time: 0 };
+    let pointerStartPos = { x: 0, y: 0, time: 0 };
 
-    renderer.domElement.addEventListener('pointerdown', (e) => {
-      pointerDownPos = { x: e.clientX, y: e.clientY, time: Date.now() };
+    // Detectar início e fim de órbita para pausar hover durante rotação da câmera (zero lag!)
+    controls.addEventListener('start', () => {
+      isOrbitDragging = true;
+      hidePlotlyHover();
     });
 
-    renderer.domElement.addEventListener('pointerup', (e) => {
-      const dx = Math.abs(e.clientX - pointerDownPos.x);
-      const dy = Math.abs(e.clientY - pointerDownPos.y);
-      const dt = Date.now() - pointerDownPos.time;
+    controls.addEventListener('end', () => {
+      isOrbitDragging = false;
+    });
 
-      // Se o usuário arrastou a câmera (órbita / pan), não tratar como clique
-      if (dx > 5 || dy > 5 || dt > 1200) return;
+    // Hover estilo Plotly: segue o mouse e exibe o tooltip ao passar sobre qualquer ponto
+    renderer.domElement.addEventListener('pointermove', (e) => {
+      if (isOrbitDragging || !isHoverEnabled || !pointCloud) return;
 
-      if (!isInspectMode) return;
+      const now = performance.now();
+      if (now - lastHoverTimestamp < 25) return; // Limita a ~40 FPS para máximo desempenho
+      lastHoverTimestamp = now;
 
       const rect = renderer.domElement.getBoundingClientRect();
       mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
       mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
 
       const camDist = camera.position.distanceTo(controls.target);
-      raycaster.params.Points.threshold = Math.max(0.6, Math.min(3.5, camDist * 0.02));
+      raycaster.params.Points.threshold = Math.max(1.2, Math.min(4.5, camDist * 0.022));
       raycaster.setFromCamera(mouse, camera);
 
-      if (pointCloud) {
-        const intersects = raycaster.intersectObject(pointCloud);
-        if (intersects && intersects.length > 0) {
-          inspectPoint(intersects[0].index);
-        }
+      const intersects = raycaster.intersectObject(pointCloud);
+      if (intersects && intersects.length > 0) {
+        showPlotlyHover(intersects[0].index, e.clientX, e.clientY);
+      } else {
+        hidePlotlyHover();
+      }
+    });
+
+    renderer.domElement.addEventListener('pointerleave', hidePlotlyHover);
+
+    // Clique simples (sem arrasto) para fixar o ponto e abrir opções
+    renderer.domElement.addEventListener('pointerdown', (e) => {
+      pointerStartPos = { x: e.clientX, y: e.clientY, time: Date.now() };
+    });
+
+    renderer.domElement.addEventListener('pointerup', (e) => {
+      const dx = Math.abs(e.clientX - pointerStartPos.x);
+      const dy = Math.abs(e.clientY - pointerStartPos.y);
+      const dt = Date.now() - pointerStartPos.time;
+
+      // Se o usuário arrastou a câmera (órbita / pan), não tratar como clique
+      if (dx > 5 || dy > 5 || dt > 1000) return;
+
+      if (hoveredCoordsIdx !== null) {
+        pinPlotlyDoc(hoveredCoordsIdx);
+      } else if (pinnedCoordsIdx !== null) {
+        unpinPlotlyDoc();
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        unpinPlotlyDoc();
+        hidePlotlyHover();
       }
     });
 
@@ -1476,12 +1546,19 @@
     requestAnimationFrame(animate);
     controls.update();
 
-    if (selectionRingMesh && selectionRingMesh.visible) {
-      selectionRingMesh.quaternion.copy(camera.quaternion);
-      const camDist = camera.position.distanceTo(selectionRingMesh.position);
-      const baseScale = Math.max(0.6, camDist * 0.015);
+    if (hoverReticle && hoverReticle.visible) {
+      hoverReticle.quaternion.copy(camera.quaternion);
+      const camDist = camera.position.distanceTo(hoverReticle.position);
+      const scale = Math.max(0.6, camDist * 0.016);
+      hoverReticle.scale.set(scale, scale, scale);
+    }
+
+    if (pinnedReticle && pinnedReticle.visible) {
+      pinnedReticle.quaternion.copy(camera.quaternion);
+      const camDist = camera.position.distanceTo(pinnedReticle.position);
+      const scale = Math.max(0.6, camDist * 0.016);
       const pulse = 1.0 + 0.12 * Math.sin(Date.now() * 0.007);
-      selectionRingMesh.scale.set(baseScale * pulse, baseScale * pulse, baseScale * pulse);
+      pinnedReticle.scale.set(scale * pulse, scale * pulse, scale * pulse);
     }
 
     renderer.render(scene, camera);
@@ -1547,7 +1624,7 @@
         console.log('Mapeamento universal de URLs da Câmara carregado.');
       }).catch(err => console.warn('Erro ao carregar url_mapping:', err));
 
-      createSelectionMarker();
+      createPlotlyReticles();
       updatePendingBadge();
       populateTableClassFilter();
       filterStudioQueue();
