@@ -1,0 +1,218 @@
+{
+  "n_points": 1339678,
+  "default_model": "metric",
+  "models": {
+    "dino": {
+      "id": "dino",
+      "name": "DINOv2 (Visual Puro)",
+      "badge": "Vision Transformer 384-D",
+      "dims": 384,
+      "type": "Visão Computacional",
+      "description": "Clusterização puramente visual baseada em diagramação, logotipos e densidade gráfica de pixels.",
+      "color": "#38bdf8",
+      "file": "coords_dino.bin.gz",
+      "inter_dist": "0.312",
+      "intra_sim": "0.820"
+    },
+    "colpali": {
+      "id": "colpali",
+      "name": "ColPali (Documental Puro)",
+      "badge": "Vision-Language Model 128-D",
+      "dims": 128,
+      "type": "Linguagem / OCR Semântico",
+      "description": "Clusterização por vocabulário e padrões textuais típicos de cada tipo de documento fiscal.",
+      "color": "#a855f7",
+      "file": "coords_colpali.bin.gz",
+      "inter_dist": "0.298",
+      "intra_sim": "0.835"
+    },
+    "combined": {
+      "id": "combined",
+      "name": "Multimodal (DINO + ColPali)",
+      "badge": "Fusão Densa 512-D",
+      "dims": 512,
+      "type": "Multimodal Não Supervisionado",
+      "description": "Concatenação balanceada dos embeddings de visão e linguagem antes do fine-tuning métrico.",
+      "color": "#22c55e",
+      "file": "coords_combined.bin.gz",
+      "inter_dist": "0.266",
+      "intra_sim": "0.850"
+    },
+    "metric": {
+      "id": "metric",
+      "name": "Deep Metric Learning (ArcFace)",
+      "badge": "ArcFace Margin 128-D",
+      "dims": 128,
+      "type": "Supervisionado / Angular Margin",
+      "description": "Margem angular explícita (+299.9% de separação inter-classe, 99.85% de acurácia de validação).",
+      "color": "#f43f5e",
+      "file": "coords_metric.bin.gz",
+      "inter_dist": "1.063",
+      "intra_sim": "0.960"
+    }
+  },
+  "palette": {
+    "0": {
+      "name": "Não Mapeado",
+      "hex": "#52525b",
+      "rgb": [
+        0.3215686274509804,
+        0.3215686274509804,
+        0.3568627450980392
+      ],
+      "count": 1322249
+    },
+    "1": {
+      "name": "agua",
+      "hex": "#38bdf8",
+      "rgb": [
+        0.2196078431372549,
+        0.7411764705882353,
+        0.9725490196078431
+      ],
+      "count": 133
+    },
+    "2": {
+      "name": "cupom_fiscal",
+      "hex": "#f97316",
+      "rgb": [
+        0.9764705882352941,
+        0.45098039215686275,
+        0.08627450980392157
+      ],
+      "count": 4000
+    },
+    "3": {
+      "name": "emails",
+      "hex": "#84cc16",
+      "rgb": [
+        0.5176470588235295,
+        0.8,
+        0.08627450980392157
+      ],
+      "count": 2
+    },
+    "4": {
+      "name": "energia",
+      "hex": "#06b6d4",
+      "rgb": [
+        0.023529411764705882,
+        0.7137254901960784,
+        0.8313725490196079
+      ],
+      "count": 491
+    },
+    "5": {
+      "name": "fatura",
+      "hex": "#14b8a6",
+      "rgb": [
+        0.0784313725490196,
+        0.7215686274509804,
+        0.6509803921568628
+      ],
+      "count": 460
+    },
+    "6": {
+      "name": "iptu",
+      "hex": "#6366f1",
+      "rgb": [
+        0.38823529411764707,
+        0.4,
+        0.9450980392156862
+      ],
+      "count": 803
+    },
+    "7": {
+      "name": "nfce",
+      "hex": "#f43f5e",
+      "rgb": [
+        0.9568627450980393,
+        0.24705882352941178,
+        0.3686274509803922
+      ],
+      "count": 1491
+    },
+    "8": {
+      "name": "nfe",
+      "hex": "#3b82f6",
+      "rgb": [
+        0.23137254901960785,
+        0.5098039215686274,
+        0.9647058823529412
+      ],
+      "count": 2584
+    },
+    "9": {
+      "name": "nfse",
+      "hex": "#22c55e",
+      "rgb": [
+        0.13333333333333333,
+        0.7725490196078432,
+        0.3686274509803922
+      ],
+      "count": 1064
+    },
+    "10": {
+      "name": "passagem_aerea",
+      "hex": "#ec4899",
+      "rgb": [
+        0.9254901960784314,
+        0.2823529411764706,
+        0.6
+      ],
+      "count": 100
+    },
+    "11": {
+      "name": "passagem_rodoviaria",
+      "hex": "#10b981",
+      "rgb": [
+        0.06274509803921569,
+        0.7254901960784313,
+        0.5058823529411764
+      ],
+      "count": 328
+    },
+    "12": {
+      "name": "pedagio",
+      "hex": "#d97706",
+      "rgb": [
+        0.8509803921568627,
+        0.4666666666666667,
+        0.023529411764705882
+      ],
+      "count": 85
+    },
+    "13": {
+      "name": "recibo",
+      "hex": "#a855f7",
+      "rgb": [
+        0.6588235294117647,
+        0.3333333333333333,
+        0.9686274509803922
+      ],
+      "count": 132
+    },
+    "14": {
+      "name": "telefonia",
+      "hex": "#ef4444",
+      "rgb": [
+        0.9372549019607843,
+        0.26666666666666666,
+        0.26666666666666666
+      ],
+      "count": 1097
+    },
+    "15": {
+      "name": "uber",
+      "hex": "#eab308",
+      "rgb": [
+        0.9176470588235294,
+        0.7019607843137254,
+        0.03137254901960784
+      ],
+      "count": 4659
+    }
+  },
+  "updated_at": "2026-10-29 10:03:12",
+  "total_annotated": 17429
+}

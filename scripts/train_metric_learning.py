@@ -866,6 +866,17 @@ def main():
         f.write(html_content)
     print(f"   -> Salvo em: {DESKTOP_HTML} ({DESKTOP_HTML.stat().st_size / (1024*1024):.2f} MB)")
 
+    # 8. Sincronização automática com a aplicação Web 3D e Deploy no Vercel
+    print("\n7. Sincronizando dados com o Web App 3D e atualizando Vercel...")
+    sync_script = BASE_DIR / "scripts" / "build_and_sync_web_app.py"
+    deploy_script = BASE_DIR / "scripts" / "deploy_to_vercel.py"
+    if sync_script.exists():
+        import subprocess
+        subprocess.run([sys.executable, str(sync_script)], check=False)
+        if deploy_script.exists():
+            print("   -> Disparando deploy automático na CDN do Vercel...")
+            subprocess.run([sys.executable, str(deploy_script)], check=False)
+
     print(f"\n=== SUCESSO TOTAL EM {time.time()-t_global:.1f} SEGUNDOS! ===")
 
 

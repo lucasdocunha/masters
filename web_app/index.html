@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CEAP 3D &bull; Espaço Latente de 1.4 Milhão de Documentos</title>
+  <meta name="description" content="Visualizador 3D interativo comparativo de 1.34M documentos do CEAP através de 4 espaços latentes: DINOv2, ColPali, Multimodal e ArcFace Metric Learning.">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Dependências Three.js e Pako via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+</head>
+<body>
+
+  <!-- Canvas WebGL 3D -->
+  <div id="canvas-container"></div>
+
+  <!-- Barra Superior de Navegação e Seleção de Espaço Latente -->
+  <header id="top-nav">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-title">CEAP 3D</span>
+      <span class="brand-badge" id="point-count-badge">1.34M docs</span>
+    </div>
+
+    <!-- Seletor de Modelo (Abas Minimalistas) -->
+    <nav class="model-tabs" id="model-tabs">
+      <button class="tab-btn" data-model="dino">
+        <span class="tab-indicator" style="background:#38bdf8;"></span>
+        <span class="tab-text">DINOv2</span>
+        <span class="tab-sub">Visual Puro</span>
+      </button>
+      <button class="tab-btn" data-model="colpali">
+        <span class="tab-indicator" style="background:#a855f7;"></span>
+        <span class="tab-text">ColPali</span>
+        <span class="tab-sub">Documental</span>
+      </button>
+      <button class="tab-btn" data-model="combined">
+        <span class="tab-indicator" style="background:#22c55e;"></span>
+        <span class="tab-text">Multimodal</span>
+        <span class="tab-sub">DINO + ColPali</span>
+      </button>
+      <button class="tab-btn active" data-model="metric">
+        <span class="tab-indicator" style="background:#f43f5e;"></span>
+        <span class="tab-text">Metric Learning</span>
+        <span class="tab-sub">ArcFace 128-D</span>
+      </button>
+    </nav>
+
+    <!-- Ações Rápidas -->
+    <div class="top-actions">
+      <button class="icon-btn" id="btn-reset-cam" title="Resetar Câmera">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-toggle-autorotate" title="Pausar / Rodar Automaticamente">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-fullscreen" title="Tela Cheia">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-toggle-panel" title="Minimizar / Expandir Painel">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Painel Flutuante Lateral (Glassmorphism) -->
+  <aside id="side-panel">
+    <div class="panel-header">
+      <div id="model-badge" class="model-badge">ArcFace Margin 128-D</div>
+      <h2 id="model-title">Deep Metric Learning (ArcFace)</h2>
+      <p id="model-desc">Margem angular explícita (+299.9% de separação inter-classe, 99.85% de acurácia de validação).</p>
+    </div>
+
+    <!-- Métricas do Modelo Atual -->
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-label">Dimensão</div>
+        <div class="metric-val" id="metric-dim">128-D</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Separação Inter</div>
+        <div class="metric-val" id="metric-inter">1.063</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Compactação Intra</div>
+        <div class="metric-val" id="metric-intra">0.960</div>
+      </div>
+    </div>
+
+    <!-- Controles de Renderização -->
+    <div class="controls-section">
+      <div class="control-row">
+        <span>Tamanho dos Pontos</span>
+        <span class="control-val" id="size-val">1.2px</span>
+      </div>
+      <input type="range" id="slider-size" min="0.4" max="4.0" step="0.1" value="1.2">
+
+      <div class="control-row" style="margin-top: 12px;">
+        <span>Opacidade Não Mapeados</span>
+        <span class="control-val" id="unmapped-val">15%</span>
+      </div>
+      <input type="range" id="slider-unmapped" min="0" max="100" step="5" value="15">
+    </div>
+
+    <!-- Filtro e Legenda das Classes -->
+    <div class="legend-header">
+      <div class="legend-title-row">
+        <h3>Classes Validadas</h3>
+        <span class="legend-count" id="total-annotated-count">18.051 docs</span>
+      </div>
+      <div class="legend-search-bar">
+        <input type="text" id="class-search" placeholder="Filtrar classe (ex: nfce, cupom)...">
+      </div>
+      <div class="legend-actions">
+        <button class="btn-micro" id="btn-show-all">Mostrar Todas</button>
+        <button class="btn-micro" id="btn-hide-unmapped">Ocultar Não Mapeados</button>
+      </div>
+    </div>
+
+    <div id="legend-list">
+      <!-- Inserido dinamicamente via app.js -->
+    </div>
+  </aside>
+
+  <!-- Toast / Loading Indicator -->
+  <div id="loading-overlay" class="loading-overlay hidden">
+    <div class="spinner"></div>
+    <span id="loading-text">Carregando coordenadas...</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
