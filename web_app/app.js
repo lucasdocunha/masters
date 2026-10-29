@@ -91,6 +91,24 @@
   const pageNextBtn = document.getElementById('page-next-btn');
   const pageLastBtn = document.getElementById('page-last-btn');
 
+  // --- Elementos do DOM: Modo de Inspeção de Pontos 3D ---
+  const btnToggleInspect = document.getElementById('btn-toggle-inspect');
+  const btnToggleInspectNav = document.getElementById('btn-toggle-inspect-nav');
+  const hudInspectStatus = document.getElementById('hud-inspect-status');
+  const hudInspectTip = document.getElementById('hud-inspect-tip');
+  const pointInspectorCard = document.getElementById('point-inspector-card');
+  const inspectorDocId = document.getElementById('inspector-doc-id');
+  const inspectorClassBadge = document.getElementById('inspector-class-badge');
+  const btnCloseInspector = document.getElementById('btn-close-inspector');
+  const inspectorSupplier = document.getElementById('inspector-supplier');
+  const inspectorSubcota = document.getElementById('inspector-subcota');
+  const inspectorYear = document.getElementById('inspector-year');
+  const inspectorCluster = document.getElementById('inspector-cluster');
+  const inspectorCoords = document.getElementById('inspector-coords');
+  const inspectorCamaraLink = document.getElementById('inspector-camara-link');
+  const inspectorGoogleLink = document.getElementById('inspector-google-link');
+  const btnInspectorOpenStudio = document.getElementById('btn-inspector-open-studio');
+
   // --- Estado da Aplicação ---
   let metadata = null;
   let currentModelKey = 'metric';
@@ -111,6 +129,15 @@
   let userAnnotations = {};
   let customClasses = {};
   let sessionLabeledCount = 0;
+
+  // Estado do Modo de Inspeção 3D
+  let isInspectMode = false;
+  let selectedCoordsIdx = null;
+  let selectionRingMesh = null;
+  let docIds = null;
+  let urlPrefixes = null;
+  let urlIndices = null;
+  const coordsIdxToDoc = new Map();
 
   // Estado do Estúdio de Rotulação
   let studioQueue = [];
@@ -186,6 +213,26 @@
     const inflated = pako.inflate(new Uint8Array(arrayBuffer));
     const str = new TextDecoder('utf-8').decode(inflated);
     return JSON.parse(str);
+  }
+
+  function decompressGzInt32(arrayBuffer) {
+    const inflated = pako.inflate(new Uint8Array(arrayBuffer));
+    if (inflated.byteOffset % 4 === 0) {
+      return new Int32Array(inflated.buffer, inflated.byteOffset, inflated.byteLength / 4);
+    }
+    const alignedBuffer = new Uint8Array(inflated.byteLength);
+    alignedBuffer.set(inflated);
+    return new Int32Array(alignedBuffer.buffer, 0, alignedBuffer.byteLength / 4);
+  }
+
+  function decompressGzUint16(arrayBuffer) {
+    const inflated = pako.inflate(new Uint8Array(arrayBuffer));
+    if (inflated.byteOffset % 2 === 0) {
+      return new Uint16Array(inflated.buffer, inflated.byteOffset, inflated.byteLength / 2);
+    }
+    const alignedBuffer = new Uint8Array(inflated.byteLength);
+    alignedBuffer.set(inflated);
+    return new Uint16Array(alignedBuffer.buffer, 0, alignedBuffer.byteLength / 2);
   }
 
   // --- Shader Customizado (Suporta até 32 classes dinâmicas) ---
@@ -290,6 +337,33 @@
     }
   }
 
+  async function loadDocIds() {
+    try {
+      const res = await fetch('data/doc_ids.bin.gz');
+      if (!res.ok) return null;
+      const buf = await res.arrayBuffer();
+      return decompressGzInt32(buf);
+    } catch (e) {
+      console.warn('doc_ids.bin.gz não disponível:', e);
+      return null;
+    }
+  }
+
+  async function loadUrlMapping() {
+    try {
+      const [resPref, resIdx] = await Promise.all([
+        fetch('data/url_prefixes.json'),
+        fetch('data/url_indices.bin.gz')
+      ]);
+      if (!resPref.ok || !resIdx.ok) return;
+      urlPrefixes = await resPref.json();
+      const bufIdx = await resIdx.arrayBuffer();
+      urlIndices = decompressGzUint16(bufIdx);
+    } catch (e) {
+      console.warn('Mapeamento de URLs não disponível:', e);
+    }
+  }
+
   // --- Inicialização da Nuvem de Pontos ---
   function initPointCloud(initialCoords) {
     pointsGeometry = new THREE.BufferGeometry();
@@ -363,6 +437,17 @@
         pointsGeometry.attributes.position.array.set(coords);
         pointsGeometry.attributes.position.needsUpdate = true;
       }
+
+      // Atualizar posição do marcador de inspeção se houver ponto selecionado
+      if (selectedCoordsIdx !== null && selectionRingMesh && pointsGeometry) {
+        const pos = pointsGeometry.attributes.position.array;
+        const sx = pos[selectedCoordsIdx * 3 + 0];
+        const sy = pos[selectedCoordsIdx * 3 + 1];
+        const sz = pos[selectedCoordsIdx * 3 + 2];
+        selectionRingMesh.position.set(sx, sy, sz);
+        inspectorCoords.textContent = `X: ${sx.toFixed(2)} | Y: ${sy.toFixed(2)} | Z: ${sz.toFixed(2)}`;
+      }
+
       hideLoading();
     } catch (err) {
       console.error(err);
@@ -724,7 +809,246 @@
 
     switchView('3d');
     controls.target.set(x, y, z);
-    camera.position.set(x, y + 15, z + 35);
+    camera.position.set(x, y + 12, z + 28);
+    inspectPoint(coordsIdx);
+  }
+
+  // =========================================================================
+  // MOTOR DE INSPEÇÃO DE PONTOS 3D (RAYCASTING & METADADOS EM TEMPO REAL)
+  // =========================================================================
+  function createSelectionMarker() {
+    if (selectionRingMesh) return selectionRingMesh;
+
+    const group = new THREE.Group();
+
+    // Anel externo com brilho ciano
+    const ringGeo = new THREE.RingGeometry(1.2, 1.8, 32);
+    const ringMat = new THREE.MeshBasicMaterial({
+      color: 0x38bdf8,
+      side: THREE.DoubleSide,
+      transparent: true,
+      opacity: 0.9,
+      depthTest: false
+    });
+    const ring = new THREE.Mesh(ringGeo, ringMat);
+    group.add(ring);
+
+    // Retículo em cruz central
+    const crossMat = new THREE.LineBasicMaterial({
+      color: 0x38bdf8,
+      transparent: true,
+      opacity: 0.75,
+      depthTest: false
+    });
+    const crossGeoH = new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(-2.2, 0, 0),
+      new THREE.Vector3(2.2, 0, 0)
+    ]);
+    const crossH = new THREE.Line(crossGeoH, crossMat);
+    group.add(crossH);
+
+    const crossGeoV = new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(0, -2.2, 0),
+      new THREE.Vector3(0, 2.2, 0)
+    ]);
+    const crossV = new THREE.Line(crossGeoV, crossMat);
+    group.add(crossV);
+
+    // Ponto central esmeralda
+    const dotGeo = new THREE.CircleGeometry(0.35, 16);
+    const dotMat = new THREE.MeshBasicMaterial({
+      color: 0x34d399,
+      side: THREE.DoubleSide,
+      transparent: true,
+      opacity: 0.95,
+      depthTest: false
+    });
+    const dot = new THREE.Mesh(dotGeo, dotMat);
+    group.add(dot);
+
+    group.renderOrder = 999;
+    group.visible = false;
+    scene.add(group);
+    selectionRingMesh = group;
+    return group;
+  }
+
+  function toggleInspectMode(enable) {
+    isInspectMode = (enable !== undefined) ? enable : !isInspectMode;
+
+    if (btnToggleInspect) {
+      btnToggleInspect.classList.toggle('active', isInspectMode);
+    }
+    if (btnToggleInspectNav) {
+      btnToggleInspectNav.classList.toggle('active', isInspectMode);
+    }
+    if (hudInspectStatus) {
+      hudInspectStatus.textContent = isInspectMode ? 'ATIVO' : 'DESATIVADO';
+    }
+    if (hudInspectTip) {
+      hudInspectTip.classList.toggle('hidden', !isInspectMode);
+    }
+    container.style.cursor = isInspectMode ? 'crosshair' : 'default';
+
+    if (!isInspectMode && !selectedCoordsIdx) {
+      if (pointInspectorCard) pointInspectorCard.classList.add('hidden');
+      if (selectionRingMesh) selectionRingMesh.visible = false;
+    }
+  }
+
+  function openDocInStudio(docItem) {
+    if (!docItem) return;
+
+    // Verificar se o documento já está no dataset de rotulação
+    let existing = labelingDataset.find(d => String(d.id) === String(docItem.id));
+    if (!existing) {
+      labelingDataset.unshift(docItem);
+      coordsIdxToDoc.set(docItem.coords_idx, docItem);
+      existing = docItem;
+    }
+
+    // Verificar se já está na fila atual do estúdio
+    let idx = studioQueue.findIndex(d => String(d.id) === String(docItem.id));
+    if (idx === -1) {
+      studioQueue.unshift(existing);
+      studioIndex = 0;
+    } else {
+      studioIndex = idx;
+    }
+
+    switchView('studio');
+    updateStudioView();
+  }
+
+  function inspectPoint(coordsIdx) {
+    if (!pointCloud || coordsIdx === undefined || coordsIdx < 0 || coordsIdx >= nPoints) return;
+    selectedCoordsIdx = coordsIdx;
+
+    // 1. Obter coordenadas no modelo 3D atual
+    const pos = pointsGeometry.attributes.position.array;
+    const x = pos[coordsIdx * 3 + 0];
+    const y = pos[coordsIdx * 3 + 1];
+    const z = pos[coordsIdx * 3 + 2];
+
+    // 2. Posicionar retículo 3D
+    if (!selectionRingMesh) {
+      createSelectionMarker();
+    }
+    selectionRingMesh.position.set(x, y, z);
+    selectionRingMesh.visible = true;
+
+    // 3. Resolver ID do documento
+    let docId = docIds ? String(docIds[coordsIdx]) : null;
+
+    // 4. Resolver Classe Atual (GPU / Metadata / localStorage)
+    let className = 'Não Mapeado';
+    let classHex = '#52525b';
+    const cid = classIds ? classIds[coordsIdx] : 0;
+    if (metadata.palette[cid]) {
+      className = metadata.palette[cid].name;
+      classHex = metadata.palette[cid].hex;
+    }
+
+    if (docId && userAnnotations[docId]) {
+      className = userAnnotations[docId];
+      const pal = getClassPaletteByName(className);
+      classHex = pal.hex;
+    }
+
+    // 5. Verificar se temos metadados ricos em labelingDataset
+    const datasetDoc = coordsIdxToDoc.get(coordsIdx);
+
+    let supplier = 'Não informado no lote reduzido';
+    let subcota = 'Não informada no lote reduzido';
+    let ano = '-';
+    let proximity = '-';
+    let url = null;
+
+    if (datasetDoc) {
+      docId = datasetDoc.id;
+      className = datasetDoc.class;
+      const pal = getClassPaletteByName(className);
+      classHex = pal.hex;
+      supplier = datasetDoc.fornecedor || 'N/A';
+      subcota = datasetDoc.subcota || 'N/A';
+      ano = datasetDoc.ano || '-';
+      const simPct = (datasetDoc.similarity * 100).toFixed(1);
+      proximity = `${datasetDoc.closest_cluster} (${simPct}%)`;
+      url = datasetDoc.url;
+    } else {
+      // Reconstruir URL oficial da Câmara a partir de url_prefixes
+      if (urlPrefixes && urlIndices && docId) {
+        const pref = urlPrefixes[urlIndices[coordsIdx]];
+        if (pref) {
+          url = `https://www.camara.leg.br/cota-parlamentar/documentos/publ/${pref}/${docId}.pdf`;
+          const parts = pref.split('/');
+          if (parts.length > 1) ano = parts[1];
+        }
+      }
+    }
+
+    if (!url && docId) {
+      url = `https://www.camara.leg.br/cota-parlamentar/documentos/publ/${docId}.pdf`;
+    }
+
+    // 6. Atualizar DOM do Card de Inspeção
+    if (inspectorDocId) inspectorDocId.textContent = `Doc #${docId || coordsIdx}`;
+    if (inspectorClassBadge) {
+      inspectorClassBadge.textContent = className;
+      inspectorClassBadge.style.color = classHex;
+      inspectorClassBadge.style.borderColor = classHex;
+      inspectorClassBadge.style.backgroundColor = `${classHex}22`;
+    }
+
+    if (inspectorSupplier) {
+      inspectorSupplier.textContent = supplier;
+      inspectorSupplier.title = supplier;
+    }
+    if (inspectorSubcota) {
+      inspectorSubcota.textContent = subcota;
+      inspectorSubcota.title = subcota;
+    }
+    if (inspectorYear) inspectorYear.textContent = ano;
+    if (inspectorCluster) inspectorCluster.textContent = proximity;
+    if (inspectorCoords) {
+      inspectorCoords.textContent = `X: ${x.toFixed(2)} | Y: ${y.toFixed(2)} | Z: ${z.toFixed(2)}`;
+    }
+
+    if (url) {
+      if (inspectorCamaraLink) {
+        inspectorCamaraLink.href = url;
+        inspectorCamaraLink.style.display = 'inline-flex';
+      }
+      if (inspectorGoogleLink) {
+        inspectorGoogleLink.href = `https://docs.google.com/viewer?url=${encodeURIComponent(url)}&embedded=true`;
+        inspectorGoogleLink.style.display = 'inline-flex';
+      }
+    } else {
+      if (inspectorCamaraLink) inspectorCamaraLink.style.display = 'none';
+      if (inspectorGoogleLink) inspectorGoogleLink.style.display = 'none';
+    }
+
+    if (btnInspectorOpenStudio) {
+      btnInspectorOpenStudio.onclick = () => {
+        openDocInStudio({
+          id: String(docId || coordsIdx),
+          name: `${docId || coordsIdx}.pdf`,
+          class: className,
+          fornecedor: supplier,
+          subcota: subcota,
+          ano: ano,
+          url: url,
+          closest_cluster: datasetDoc ? datasetDoc.closest_cluster : className,
+          similarity: datasetDoc ? datasetDoc.similarity : 1.0,
+          coords_idx: coordsIdx,
+          status: datasetDoc ? datasetDoc.status : 'rotulado'
+        });
+      };
+    }
+
+    if (pointInspectorCard) {
+      pointInspectorCard.classList.remove('hidden');
+    }
   }
 
   // =========================================================================
@@ -1090,6 +1414,56 @@
       btnTogglePanel.classList.toggle('active', !sidePanel.classList.contains('collapsed'));
     });
 
+    // 8. Modo de Inspeção de Pontos 3D
+    if (btnToggleInspect) {
+      btnToggleInspect.addEventListener('click', () => toggleInspectMode());
+    }
+    if (btnToggleInspectNav) {
+      btnToggleInspectNav.addEventListener('click', () => toggleInspectMode());
+    }
+    if (btnCloseInspector) {
+      btnCloseInspector.addEventListener('click', () => {
+        if (pointInspectorCard) pointInspectorCard.classList.add('hidden');
+        if (selectionRingMesh) selectionRingMesh.visible = false;
+        selectedCoordsIdx = null;
+      });
+    }
+
+    // Raycasting por clique no Canvas 3D
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+    let pointerDownPos = { x: 0, y: 0, time: 0 };
+
+    renderer.domElement.addEventListener('pointerdown', (e) => {
+      pointerDownPos = { x: e.clientX, y: e.clientY, time: Date.now() };
+    });
+
+    renderer.domElement.addEventListener('pointerup', (e) => {
+      const dx = Math.abs(e.clientX - pointerDownPos.x);
+      const dy = Math.abs(e.clientY - pointerDownPos.y);
+      const dt = Date.now() - pointerDownPos.time;
+
+      // Se o usuário arrastou a câmera (órbita / pan), não tratar como clique
+      if (dx > 5 || dy > 5 || dt > 1200) return;
+
+      if (!isInspectMode) return;
+
+      const rect = renderer.domElement.getBoundingClientRect();
+      mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+      mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+
+      const camDist = camera.position.distanceTo(controls.target);
+      raycaster.params.Points.threshold = Math.max(0.6, Math.min(3.5, camDist * 0.02));
+      raycaster.setFromCamera(mouse, camera);
+
+      if (pointCloud) {
+        const intersects = raycaster.intersectObject(pointCloud);
+        if (intersects && intersects.length > 0) {
+          inspectPoint(intersects[0].index);
+        }
+      }
+    });
+
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
@@ -1101,6 +1475,15 @@
   function animate() {
     requestAnimationFrame(animate);
     controls.update();
+
+    if (selectionRingMesh && selectionRingMesh.visible) {
+      selectionRingMesh.quaternion.copy(camera.quaternion);
+      const camDist = camera.position.distanceTo(selectionRingMesh.position);
+      const baseScale = Math.max(0.6, camDist * 0.015);
+      const pulse = 1.0 + 0.12 * Math.sin(Date.now() * 0.007);
+      selectionRingMesh.scale.set(baseScale * pulse, baseScale * pulse, baseScale * pulse);
+    }
+
     renderer.render(scene, camera);
   }
 
@@ -1147,8 +1530,24 @@
           d.class = userAnnotations[d.id];
           d.status = 'rotulado';
         }
+        if (d.coords_idx !== undefined) {
+          coordsIdxToDoc.set(d.coords_idx, d);
+        }
       });
 
+      // Carregar índice geral de IDs e mapeamento de URLs em background
+      loadDocIds().then(ids => {
+        if (ids) {
+          docIds = ids;
+          console.log(`Índice de ${formatNumber(ids.length)} IDs de documentos carregado.`);
+        }
+      }).catch(err => console.warn('Erro ao carregar doc_ids:', err));
+
+      loadUrlMapping().then(() => {
+        console.log('Mapeamento universal de URLs da Câmara carregado.');
+      }).catch(err => console.warn('Erro ao carregar url_mapping:', err));
+
+      createSelectionMarker();
       updatePendingBadge();
       populateTableClassFilter();
       filterStudioQueue();
