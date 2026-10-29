@@ -213,6 +213,17 @@
       "count": 4659
     }
   },
-  "updated_at": "2026-10-29 10:03:12",
+  "dataset_stats": {
+    "total_records": 3475760,
+    "declared_pdfs": 1893880,
+    "downloaded_pdfs": 1402334,
+    "successful_docs": 1339678,
+    "success_rate": "95.53%",
+    "total_pages": 1966161,
+    "avg_pages": 1.47,
+    "single_page_docs": 1000539,
+    "single_page_pct": "74.69%"
+  },
+  "updated_at": "2026-10-29 10:17:21",
   "total_annotated": 17429
 }

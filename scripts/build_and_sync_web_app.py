@@ -188,11 +188,24 @@ def main():
             "count": class_counts.get(name, 0),
         }
 
+    dataset_stats = {
+        "total_records": 3475760,
+        "declared_pdfs": 1893880,
+        "downloaded_pdfs": 1402334,
+        "successful_docs": n_docs,
+        "success_rate": f"{(n_docs / 1402334) * 100:.2f}%",
+        "total_pages": len(meta.get("pages", [])) if "pages" in meta else 1966161,
+        "avg_pages": 1.47,
+        "single_page_docs": 1000539,
+        "single_page_pct": "74.69%"
+    }
+
     metadata = {
         "n_points": n_docs,
         "default_model": "metric",
         "models": MODEL_METRICS,
         "palette": client_palette,
+        "dataset_stats": dataset_stats,
         "updated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
         "total_annotated": sum(v for k, v in class_counts.items() if k != "Não Mapeado")
     }

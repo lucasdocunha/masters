@@ -459,7 +459,7 @@
       metadata = await loadMetadata();
       nPoints = metadata.n_points;
 
-      pointCountBadge.textContent = `${(nPoints / 1000000).toFixed(2)}M docs`;
+      pointCountBadge.textContent = '1.34M docs • 1.97M págs';
       totalAnnotatedCount.textContent = `${formatNumber(metadata.total_annotated)} docs`;
 
       buildLegend();
