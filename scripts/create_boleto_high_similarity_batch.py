@@ -1,14 +1,15 @@
 #!/home/lucas.ocunha/masters/.venv_ocr/bin/python3
 """
 Gera lote de validação de Boletos Bancários com Alta Similaridade baseados no novo centróide
-e nas 22 sementes reais confirmadas pelo usuário em:
-  masters/data/validacao_batches/validacao_boleto_1000/CONFIRMADOS/
+e nas 58 sementes reais confirmadas pelo usuário em:
+  - masters/data/validacao_batches/validacao_boleto_1000/CONFIRMADOS/ (22 docs)
+  - masters/data/validacao_batches/validacao_boleto_alta_similaridade/CONFIRMADOS/ (36 docs)
 
 Organiza os candidatos em 3 subpastas estruturadas:
   1_quase_identicos_sementes_98_99pct/  (>= 98% a alguma semente direta)
   2_centroide_97pct/                    (>= 97% em relação ao novo centróide)
-  3_centroide_96pct/                    (>= 96% em relação ao novo centróide)
-  CONFIRMADOS/                          (pasta vazia para o usuário mover os confirmados)
+  3_centroide_96pct/                    (>= 96% em relação ao novo centróide, top 450)
+  CONFIRMADOS/                          (pasta com os 36 boletos já confirmados preservados)
   manifest.json
   confirmar_validacao.py
 """
@@ -22,7 +23,7 @@ import shutil
 import hashlib
 import urllib.parse
 from pathlib import Path
-from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 import pymupdf
 import cv2
@@ -32,77 +33,32 @@ os.environ["OPENBLAS_NUM_THREADS"] = "1"
 os.environ["MKL_NUM_THREADS"] = "1"
 cv2.setNumThreads(1)
 
-from rapidocr_onnxruntime import RapidOCR
-
-RE_BOLETO = re.compile(
-    r'(FICHA\s*DE\s*(COMPENSA[CÇ][AÃ]O|CAIXA)|RECIBO\s*D[OE]\s*(SACADO|PAGADOR)|'
-    r'LOCAL\s*DE\s*PAGAMENTO|PAG[AÁ]VEL\s*EM\s*QUALQUER\s*BANCO|'
-    r'AG[EÊ]NCIA\s*/\s*C[OÓ]DIGO|NOSSO\s*N[UÚ]MERO|AUTENTICA[CÇ][AÃ]O\s*MEC[AÂ]NICA|'
-    r'COMPROVANTE\s*DE\s*PAGAMENTO\s*DE\s*T[IÍ]TULO|LINHA\s*DIGIT[AÁ]VEL|'
-    r'BANCO\s*ITAU|BANCO\s*DO\s*BRASIL|BRADESCO|SANTANDER|CAIXA\s*ECON[OÔ]MICA|'
-    r'SICOOB|SICREDI|CEDENTE|SACADO|VALOR\s*DO\s*DOCUMENTO)',
-    re.IGNORECASE
-)
-
 THUMB_LARGE_DIR = Path.home() / ".cache" / "thumbnails" / "large"
 THUMB_NORMAL_DIR = Path.home() / ".cache" / "thumbnails" / "normal"
 THUMB_LARGE_DIR.mkdir(parents=True, exist_ok=True)
 THUMB_NORMAL_DIR.mkdir(parents=True, exist_ok=True)
 
-engine = None
 
-
-def init_worker():
-    global engine
-    engine = RapidOCR(use_cls=False, det_limit_side_len=380, intra_op_num_threads=1, inter_op_num_threads=1)
-
-
-def process_boleto_doc(task):
-    global engine
-    doc_id, pdf_path_str, png_path_str, forn_name = task
+def render_pdf_page(task):
+    stem, pdf_p_str, png_p_str = task
     try:
-        png_p = Path(png_path_str)
-        pdf_p = Path(pdf_path_str)
-
+        png_p = Path(png_p_str)
+        pdf_p = Path(pdf_p_str)
         if not png_p.exists():
             if not pdf_p.exists():
-                return doc_id, False, "PDF_NAO_ENCONTRADO", forn_name
+                return False
             doc = pymupdf.open(str(pdf_p))
             if len(doc) == 0:
                 doc.close()
-                return doc_id, False, "PDF_VAZIO", forn_name
+                return False
             page = doc[0]
             pix = page.get_pixmap(dpi=110, alpha=False)
             png_p.parent.mkdir(parents=True, exist_ok=True)
             pix.save(str(png_p))
             doc.close()
-
-        img = cv2.imread(str(png_p))
-        if img is None:
-            return doc_id, False, "ERRO_IMAGEM", forn_name
-
-        h = img.shape[0]
-        crop = img[:int(h * 0.65), :]
-        dt_boxes, _ = engine.text_det(crop)
-        if dt_boxes is None or len(dt_boxes) == 0:
-            return doc_id, False, "", forn_name
-
-        dt_boxes = sorted(dt_boxes, key=lambda b: np.min(b[:, 1]))[:12]
-        img_crops = engine.get_crop_img_list(crop, dt_boxes)
-
-        for i in range(0, len(img_crops), 6):
-            batch = img_crops[i:i + 6]
-            rec_res, _ = engine.text_rec(batch)
-            if not rec_res:
-                continue
-            txt = " ".join([r[0] for r in rec_res])
-            m = RE_BOLETO.search(txt)
-            if m:
-                return doc_id, True, m.group(0), forn_name
-
-        return doc_id, False, "", forn_name
-    except Exception as e:
-        return doc_id, False, f"ERRO: {e}", forn_name
+        return True
+    except Exception:
+        return False
 
 
 def render_freedesktop_thumb(png_file: Path) -> bool:
@@ -133,16 +89,19 @@ def main():
     rendered_dir.mkdir(parents=True, exist_ok=True)
 
     dest_dir = data_dir / "validacao_batches" / "validacao_boleto_alta_similaridade"
-    conf_dir = data_dir / "validacao_batches" / "validacao_boleto_1000" / "CONFIRMADOS"
+    conf_dir1 = data_dir / "validacao_batches" / "validacao_boleto_1000" / "CONFIRMADOS"
+    conf_dir2 = dest_dir / "CONFIRMADOS"
 
     print("==================================================================")
-    print(" LOTE DE VALIDAÇÃO: BOLETOS DE ALTA SIMILARIDADE (NOVO CENTRÓIDE)")
+    print(" REGENERAÇÃO DE CANDIDATOS A BOLETO (NOVO CENTRÓIDE DE 58 SEMENTES)")
     print("==================================================================")
 
-    # 1. Carregar sementes validadas pelo usuário
-    conf_stems = sorted([f.stem for f in conf_dir.glob("*.png")])
+    # 1. Carregar todas as 58 sementes validadas
+    stems1 = [f.stem for f in conf_dir1.glob("*.png")] if conf_dir1.exists() else []
+    stems2 = [f.stem for f in conf_dir2.glob("*.png")] if conf_dir2.exists() else []
+    conf_stems = sorted(list(set(stems1 + stems2)))
     conf_stems_set = set(conf_stems)
-    print(f"1. Sementes confirmadas em {conf_dir.name}: {len(conf_stems)} boletos")
+    print(f"1. Sementes confirmadas agregadas: {len(conf_stems)} boletos 100% validados")
 
     # 2. Carregar metadados e DINOv2
     print("2. Carregando representações DINOv2 e metadados de documentos...")
@@ -151,7 +110,6 @@ def main():
         meta = json.load(f)
     docs = meta["documents"]
     n_docs = len(docs)
-    doc_to_idx = {d["doc_name"]: i for i, d in enumerate(docs)}
     stem_to_idx = {Path(d["doc_name"]).stem: i for i, d in enumerate(docs)}
 
     indices_conf = [stem_to_idx[s] for s in conf_stems if s in stem_to_idx]
@@ -167,7 +125,7 @@ def main():
     npz = np.load(data_dir / "latent_vectors_full.npz", mmap_mode="r")
     dino = npz["dino_doc_embeddings"]
 
-    # 3. Calcular Novo Centróide
+    # 3. Calcular Novo Centróide de 58 sementes
     d_conf = dino[indices_conf].astype(np.float32)
     d_conf /= np.linalg.norm(d_conf, axis=1, keepdims=True)
     centroid = d_conf.mean(axis=0)
@@ -233,25 +191,29 @@ def main():
     tier2.sort(key=lambda x: -x[4])
     tier3.sort(key=lambda x: -x[4])
 
+    # Limitar tier3 para manter o lote ágil para o usuário
+    tier3 = tier3[:450]
+
     print(f"\nCandidatos identificados:")
     print(f"  • Tier 1 (>= 98% a sementes confirmadas): {len(tier1)} documentos")
     print(f"  • Tier 2 (>= 97% ao novo centróide):     {len(tier2)} documentos")
-    print(f"  • Tier 3 (>= 96% ao novo centróide):     {len(tier3)} documentos")
+    print(f"  • Tier 3 (>= 96% ao novo centróide):     {len(tier3)} documentos (top 450)")
     total_selected = len(tier1) + len(tier2) + len(tier3)
     print(f"  Total selecionado para conferência:       {total_selected} documentos")
 
-    # 6. Preparar pastas de destino
+    # 6. Preparar pastas de destino (limpar apenas as pastas de candidatos, preservar CONFIRMADOS)
     dest_tier1 = dest_dir / "1_quase_identicos_sementes_98_99pct"
     dest_tier2 = dest_dir / "2_centroide_97pct"
     dest_tier3 = dest_dir / "3_centroide_96pct"
     dest_confirmados = dest_dir / "CONFIRMADOS"
 
-    dest_tier1.mkdir(parents=True, exist_ok=True)
-    dest_tier2.mkdir(parents=True, exist_ok=True)
-    dest_tier3.mkdir(parents=True, exist_ok=True)
+    for d in [dest_tier1, dest_tier2, dest_tier3]:
+        if d.exists():
+            shutil.rmtree(d)
+        d.mkdir(parents=True, exist_ok=True)
     dest_confirmados.mkdir(parents=True, exist_ok=True)
 
-    # 7. Renderização e OCR paralelo
+    # 7. Renderização rápida paralela via ThreadPoolExecutor
     all_candidates = []
     for item in tier1:
         all_candidates.append((dest_tier1, "tier1_semente_98pct", item))
@@ -260,22 +222,18 @@ def main():
     for item in tier3:
         all_candidates.append((dest_tier3, "tier3_centroide_96pct", item))
 
-    print(f"\n4. Processando OCR e renderização de imagens ({total_selected} docs)...")
-    tasks = []
+    print(f"\n4. Renderizando páginas em PNG (110 DPI) para {total_selected} docs...")
+    render_tasks = []
     for target_dir, tier_tag, item in all_candidates:
         idx, stem, dname, sim_s, sim_c, s_stem, forn, subc = item
         pdf_path = pdf_dir / dname
         png_path = rendered_dir / f"{stem}.png"
-        tasks.append((stem, str(pdf_path), str(png_path), forn))
+        render_tasks.append((stem, str(pdf_path), str(png_path)))
 
-    t_ocr_start = time.time()
-    n_workers = min(12, os.cpu_count() or 4)
-    ocr_results = {}
-    with ProcessPoolExecutor(max_workers=n_workers, initializer=init_worker) as executor:
-        for doc_id, is_ocr, ocr_tag, forn in executor.map(process_boleto_doc, tasks, chunksize=16):
-            ocr_results[doc_id] = (is_ocr, ocr_tag)
-
-    print(f"   OCR concluído em {time.time()-t_ocr_start:.1f}s!")
+    t_render_start = time.time()
+    with ThreadPoolExecutor(max_workers=16) as pool:
+        list(pool.map(render_pdf_page, render_tasks))
+    print(f"   Renderização concluída em {time.time()-t_render_start:.1f}s!")
 
     # 8. Criar Hardlinks e compor manifesto
     manifest = []
@@ -290,8 +248,6 @@ def main():
             os.link(src_png, dst_png)
             png_links_created.append(dst_png)
 
-        is_ocr, ocr_tag = ocr_results.get(stem, (False, ""))
-
         info = lookup.get(dname, {})
         manifest.append({
             "doc_id": stem,
@@ -301,8 +257,6 @@ def main():
             "sim_seed": round(sim_s, 4),
             "nearest_seed": s_stem,
             "sim_centroid": round(sim_c, 4),
-            "ocr_confirmed": is_ocr,
-            "ocr_keyword": ocr_tag,
             "fornecedor": info.get("fornecedor", ""),
             "valor_documento": info.get("valor_documento", ""),
             "data_emissao": info.get("data_emissao", ""),
@@ -313,12 +267,12 @@ def main():
         json.dump(manifest, f, indent=2, ensure_ascii=False)
 
     # 9. Pré-renderizar miniaturas do FreeDesktop para Nautilus / Thunar
-    print(f"5. Gerando miniaturas FreeDesktop para o gerenciador de arquivos...")
+    print(f"5. Gerando miniaturas FreeDesktop para carregamento instantâneo...")
     with ThreadPoolExecutor(max_workers=16) as pool:
         list(pool.map(render_freedesktop_thumb, png_links_created))
 
-    # 10. Criar script confirmar_validacao.py
-    confirm_script_code = """#!/home/lucas.ocunha/masters/.venv_ocr/bin/python3
+    # 10. Atualizar script confirmar_validacao.py
+    confirm_script_code = """#!/usr/bin/env python3
 \"\"\"
 Confirma os boletos validados pelo usuário nesta pasta e os integra ao annotations_history.json.
 \"\"\"
@@ -334,7 +288,6 @@ CONFIRMADOS_DIR = CURRENT_DIR / "CONFIRMADOS"
 def main():
     print("=== CONFIRMAÇÃO DO LOTE DE BOLETOS DE ALTA SIMILARIDADE ===")
     
-    # 1. Obter PNGs da pasta CONFIRMADOS (ou de todas as subpastas se passado -a)
     include_all = "-a" in sys.argv
     if include_all:
         png_files = list(CURRENT_DIR.rglob("*.png"))
@@ -379,14 +332,14 @@ if __name__ == "__main__":
     confirm_path.chmod(0o755)
 
     print("\n" + "=" * 66)
-    print("   LOTE DE VALIDAÇÃO DE BOLETOS GERADO COM SUCESSO!            ")
+    print("   NOVO LOTE DE BOLETOS REGERADO COM SUCESSO!                  ")
     print("=" * 66)
     print(f"Destino: {dest_dir}")
     print(f"  ├── 1_quase_identicos_sementes_98_99pct: {len(tier1)} imagens")
     print(f"  ├── 2_centroide_97pct:                   {len(tier2)} imagens")
     print(f"  ├── 3_centroide_96pct:                   {len(tier3)} imagens")
-    print(f"  ├── CONFIRMADOS/                         (pasta pronta para arrastar os aprovados)")
-    print(f"  ├── manifest.json                        ({len(manifest)} itens detalhados)")
+    print(f"  ├── CONFIRMADOS/                         ({len(stems2)} boletos já confirmados preservados)")
+    print(f"  ├── manifest.json                        ({len(manifest)} itens)")
     print(f"  └── confirmar_validacao.py               (script de confirmação automática)")
     print(f"Tempo total: {time.time()-t0:.1f} segundos\n")
 
