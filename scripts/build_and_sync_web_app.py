@@ -39,8 +39,12 @@ CLASS_PALETTE = {
     "telefonia": {"hex": "#ef4444", "rgb": [239, 68, 68]},            # Vermelho
     "passagem_aerea": {"hex": "#ec4899", "rgb": [236, 72, 153]},      # Rosa
     "passagem_rodoviaria": {"hex": "#10b981", "rgb": [16, 185, 129]}, # Esmeralda
-    "pedagio": {"hex": "#d97706", "rgb": [217, 119, 6]},              # Âmbar
-    "iptu": {"hex": "#6366f1", "rgb": [99, 102, 241]},                # Índigo
+    "pedagio": {"hex": "#b45309", "rgb": [180, 83, 9]},               # Âmbar escuro
+    "sem_parar": {"hex": "#f59e0b", "rgb": [245, 158, 11]},           # Dourado
+    "hotelaria": {"hex": "#e11d48", "rgb": [225, 29, 72]},            # Vinho
+    "correios": {"hex": "#ca8a04", "rgb": [202, 138, 4]},             # Mostarda Correios
+    "boleto": {"hex": "#6366f1", "rgb": [99, 102, 241]},              # Índigo
+    "iptu": {"hex": "#8b5cf6", "rgb": [139, 92, 246]},                # Violeta
     "fatura": {"hex": "#14b8a6", "rgb": [20, 184, 166]},              # Teal
     "emails": {"hex": "#84cc16", "rgb": [132, 204, 22]},              # Lima
 }

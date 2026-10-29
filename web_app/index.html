@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>CEAP 3D &bull; Espaço Latente de 1.4 Milhão de Documentos</title>
-  <meta name="description" content="Visualizador 3D interativo comparativo de 1.34M documentos do CEAP através de 4 espaços latentes: DINOv2, ColPali, Multimodal e ArcFace Metric Learning.">
+  <title>CEAP 3D &bull; Latent Explorer & Estúdio de Rotulação Ativa</title>
+  <meta name="description" content="Visualizador 3D interativo e Estúdio de Rotulação Ativa de 1.34M documentos do CEAP através de 4 espaços latentes com preview de PDFs e exportação CSV.">
   <link rel="stylesheet" href="styles.css">
   
   <!-- Dependências Three.js e Pako via CDN -->
@@ -14,10 +14,9 @@
 </head>
 <body>
 
-  <!-- Canvas WebGL 3D -->
-  <div id="canvas-container"></div>
-
-  <!-- Barra Superior de Navegação e Seleção de Espaço Latente -->
+  <!-- =========================================================================
+       Barra Superior de Navegação Global
+       ========================================================================= -->
   <header id="top-nav">
     <div class="brand">
       <span class="brand-dot"></span>
@@ -25,33 +24,50 @@
       <span class="brand-badge" id="point-count-badge">1.34M docs &bull; 1.97M págs</span>
     </div>
 
-    <!-- Seletor de Modelo (Abas Minimalistas) -->
+    <!-- Seletor de Tela / Modo de Operação -->
+    <div class="view-switch-nav">
+      <button class="view-tab-btn active" id="btn-view-3d" data-view="3d">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <span>Espaço 3D</span>
+      </button>
+      <button class="view-tab-btn" id="btn-view-studio" data-view="studio">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        <span>Estúdio de Rotulação</span>
+        <span class="nav-counter-badge" id="studio-pending-badge">4.2k</span>
+      </button>
+      <button class="view-tab-btn" id="btn-view-table" data-view="table">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+        <span>Tabela & CSV</span>
+      </button>
+    </div>
+
+    <!-- Seletor de Modelo 3D (visível no modo 3D) -->
     <nav class="model-tabs" id="model-tabs">
       <button class="tab-btn" data-model="dino">
         <span class="tab-indicator" style="background:#38bdf8;"></span>
         <span class="tab-text">DINOv2</span>
-        <span class="tab-sub">Visual Puro</span>
       </button>
       <button class="tab-btn" data-model="colpali">
         <span class="tab-indicator" style="background:#a855f7;"></span>
         <span class="tab-text">ColPali</span>
-        <span class="tab-sub">Documental</span>
       </button>
       <button class="tab-btn" data-model="combined">
         <span class="tab-indicator" style="background:#22c55e;"></span>
         <span class="tab-text">Multimodal</span>
-        <span class="tab-sub">DINO + ColPali</span>
       </button>
       <button class="tab-btn active" data-model="metric">
         <span class="tab-indicator" style="background:#f43f5e;"></span>
         <span class="tab-text">Metric Learning</span>
-        <span class="tab-sub">ArcFace 128-D</span>
       </button>
     </nav>
 
-    <!-- Ações Rápidas -->
+    <!-- Ações Rápidas Globais -->
     <div class="top-actions">
-      <button class="icon-btn" id="btn-reset-cam" title="Resetar Câmera">
+      <button class="btn-action-primary" id="btn-export-csv" title="Exportar Anotações Ativas em CSV">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Exportar CSV</span>
+      </button>
+      <button class="icon-btn" id="btn-reset-cam" title="Resetar Câmera 3D">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
       </button>
       <button class="icon-btn" id="btn-toggle-autorotate" title="Pausar / Rodar Automaticamente">
@@ -60,102 +76,338 @@
       <button class="icon-btn" id="btn-fullscreen" title="Tela Cheia">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
       </button>
-      <button class="icon-btn" id="btn-toggle-panel" title="Minimizar / Expandir Painel">
+      <button class="icon-btn" id="btn-toggle-panel" title="Minimizar / Expandir Painel 3D">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
       </button>
     </div>
   </header>
 
-  <!-- Painel Flutuante Lateral (Glassmorphism) -->
-  <aside id="side-panel">
-    <div class="panel-header">
-      <div id="model-badge" class="model-badge">ArcFace Margin 128-D</div>
-      <h2 id="model-title">Deep Metric Learning (ArcFace)</h2>
-      <p id="model-desc">Margem angular explícita (+299.9% de separação inter-classe, 99.85% de acurácia de validação).</p>
-    </div>
+  <!-- =========================================================================
+       TELA 1: ESPAÇO LATENTE 3D (WebGL Canvas + Painel Lateral)
+       ========================================================================= -->
+  <main id="view-3d" class="app-view active">
+    <!-- Canvas WebGL 3D -->
+    <div id="canvas-container"></div>
 
-    <!-- Métricas do Modelo Atual -->
-    <div class="metrics-grid">
-      <div class="metric-card">
-        <div class="metric-label">Dimensão</div>
-        <div class="metric-val" id="metric-dim">128-D</div>
+    <!-- Painel Flutuante Lateral 3D -->
+    <aside id="side-panel">
+      <div class="panel-header">
+        <div id="model-badge" class="model-badge">ArcFace Margin 128-D</div>
+        <h2 id="model-title">Deep Metric Learning (ArcFace)</h2>
+        <p id="model-desc">Margem angular explícita (+299.9% de separação inter-classe, 99.85% de acurácia de validação).</p>
       </div>
-      <div class="metric-card">
-        <div class="metric-label">Separação Inter</div>
-        <div class="metric-val" id="metric-inter">1.063</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-label">Compactação Intra</div>
-        <div class="metric-val" id="metric-intra">0.960</div>
-      </div>
-    </div>
 
-    <!-- Estatísticas da Base Documental CEAP -->
-    <details class="dataset-stats-card" id="dataset-stats-details">
-      <summary class="dataset-stats-summary">
-        <span class="summary-title">Base CEAP &bull; 1.40M PDFs &bull; 1.97M Págs</span>
-        <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-      </summary>
-      <div class="stats-mini-table">
-        <div class="stat-item">
-          <span class="stat-label">Declarados na Câmara:</span>
-          <span class="stat-value">1.893.880</span>
+      <!-- Métricas do Modelo Atual -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-label">Dimensão</div>
+          <div class="metric-val" id="metric-dim">128-D</div>
         </div>
-        <div class="stat-item">
-          <span class="stat-label">Baixados no Disco:</span>
-          <span class="stat-value">1.402.334</span>
+        <div class="metric-card">
+          <div class="metric-label">Separação Inter</div>
+          <div class="metric-val" id="metric-inter">1.063</div>
         </div>
-        <div class="stat-item">
-          <span class="stat-label">Abertos c/ Sucesso:</span>
-          <span class="stat-value highlight-green">1.339.678 (95,5%)</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">Páginas Processadas:</span>
-          <span class="stat-value highlight-cyan">1.966.161 págs</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">Média por Doc:</span>
-          <span class="stat-value">1,47 pág (74,7% mono)</span>
+        <div class="metric-card">
+          <div class="metric-label">Compactação Intra</div>
+          <div class="metric-val" id="metric-intra">0.960</div>
         </div>
       </div>
-    </details>
 
-    <!-- Controles de Renderização -->
-    <div class="controls-section">
-      <div class="control-row">
-        <span>Tamanho dos Pontos</span>
-        <span class="control-val" id="size-val">1.2px</span>
-      </div>
-      <input type="range" id="slider-size" min="0.4" max="4.0" step="0.1" value="1.2">
+      <!-- Estatísticas da Base Documental CEAP -->
+      <details class="dataset-stats-card" id="dataset-stats-details">
+        <summary class="dataset-stats-summary">
+          <span class="summary-title">Base CEAP &bull; 1.40M PDFs &bull; 1.97M Págs</span>
+          <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="stats-mini-table">
+          <div class="stat-item">
+            <span class="stat-label">Declarados na Câmara:</span>
+            <span class="stat-value">1.893.880</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Baixados no Disco:</span>
+            <span class="stat-value">1.402.334</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Abertos c/ Sucesso:</span>
+            <span class="stat-value highlight-green">1.339.678 (95,5%)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Páginas Processadas:</span>
+            <span class="stat-value highlight-cyan">1.966.161 págs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Média por Doc:</span>
+            <span class="stat-value">1,47 pág (74,7% mono)</span>
+          </div>
+        </div>
+      </details>
 
-      <div class="control-row" style="margin-top: 12px;">
-        <span>Opacidade Não Mapeados</span>
-        <span class="control-val" id="unmapped-val">15%</span>
+      <!-- Controles de Renderização -->
+      <div class="controls-section">
+        <div class="control-row">
+          <span>Tamanho dos Pontos</span>
+          <span class="control-val" id="size-val">1.2px</span>
+        </div>
+        <input type="range" id="slider-size" min="0.4" max="4.0" step="0.1" value="1.2">
+
+        <div class="control-row" style="margin-top: 12px;">
+          <span>Opacidade Não Mapeados</span>
+          <span class="control-val" id="unmapped-val">15%</span>
+        </div>
+        <input type="range" id="slider-unmapped" min="0" max="100" step="5" value="15">
       </div>
-      <input type="range" id="slider-unmapped" min="0" max="100" step="5" value="15">
+
+      <!-- Filtro e Legenda das Classes -->
+      <div class="legend-header">
+        <div class="legend-title-row">
+          <h3>Classes Validadas</h3>
+          <span class="legend-count" id="total-annotated-count">22.049 docs</span>
+        </div>
+        <div class="legend-search-bar">
+          <input type="text" id="class-search" placeholder="Filtrar classe (ex: boleto, hotelaria)...">
+        </div>
+        <div class="legend-actions">
+          <button class="btn-micro" id="btn-show-all">Mostrar Todas</button>
+          <button class="btn-micro" id="btn-hide-unmapped">Ocultar Não Mapeados</button>
+        </div>
+      </div>
+
+      <div id="legend-list">
+        <!-- Inserido dinamicamente via app.js -->
+      </div>
+    </aside>
+  </main>
+
+  <!-- =========================================================================
+       TELA 2: ESTÚDIO DE ROTULAÇÃO (LABEL STUDIO MODE)
+       ========================================================================= -->
+  <main id="view-studio" class="app-view">
+    <div class="studio-layout">
+
+      <!-- Barra de Controle do Estúdio (Sub-Header) -->
+      <div class="studio-toolbar">
+        <div class="studio-toolbar-left">
+          <label class="studio-label">Fila de Trabalho:</label>
+          <select id="studio-queue-select" class="studio-select">
+            <option value="all_candidates">⚡ Todos os Candidatos Não-Mapeados (4.2k)</option>
+            <option value="boleto" selected>🏦 Candidatos Mais Próximos de Boleto Bancário</option>
+            <option value="hotelaria">🏨 Candidatos Mais Próximos de Hotelaria</option>
+            <option value="correios">📦 Candidatos Mais Próximos de Correios / ECT</option>
+            <option value="pedagio">🛣️ Candidatos Mais Próximos de Pedágio</option>
+            <option value="sem_parar">🚗 Candidatos Mais Próximos de Sem Parar</option>
+            <option value="nfe">📄 Candidatos Mais Próximos de NF-e</option>
+            <option value="nfse">📋 Candidatos Mais Próximos de NFS-e</option>
+            <option value="cupom_fiscal">🧾 Candidatos Mais Próximos de Cupom Fiscal</option>
+            <option value="nfce">📱 Candidatos Mais Próximos de NFC-e</option>
+            <option value="recibo">🖊️ Candidatos Mais Próximos de Recibo</option>
+            <option value="uber">🚕 Candidatos Mais Próximos de Uber / Táxi</option>
+            <option value="all_labeled">🔍 Revisão: Documentos Já Rotulados</option>
+          </select>
+
+          <span class="studio-counter" id="studio-counter-text">Doc 1 de 250</span>
+        </div>
+
+        <div class="studio-toolbar-center">
+          <button class="studio-nav-btn" id="studio-prev-btn" title="Atalho: Seta Esquerda (←)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            <span>Anterior</span>
+          </button>
+          <button class="studio-nav-btn btn-skip" id="studio-skip-btn" title="Atalho: Barra de Espaço">
+            <span>Pular (Espaço)</span>
+          </button>
+          <button class="studio-nav-btn" id="studio-next-btn" title="Atalho: Seta Direita (→)">
+            <span>Próximo</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+        <div class="studio-toolbar-right">
+          <label class="auto-advance-label">
+            <input type="checkbox" id="studio-auto-advance" checked>
+            <span>Auto-avançar ao rotular</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Corpo Principal do Estúdio (Viewer + Painel de Anotação) -->
+      <div class="studio-main-grid">
+
+        <!-- Coluna Esquerda/Centro: Visualizador do Documento via Google Docs Viewer -->
+        <div class="studio-viewer-pane">
+          <!-- Cabeçalho de Metadados do Documento -->
+          <div class="doc-meta-card">
+            <div class="meta-card-top">
+              <div class="doc-title-row">
+                <span class="doc-id-pill" id="doc-id-pill">Doc #5456002</span>
+                <span class="doc-current-badge" id="doc-current-badge">Não Mapeado</span>
+                <span class="doc-cluster-proximity" id="doc-cluster-proximity">Mais próximo: boleto (98.5%)</span>
+              </div>
+              <div class="doc-links-row">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="doc-link-btn" id="doc-camara-link">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  <span>Abrir na Câmara</span>
+                </a>
+                <button class="doc-link-btn" id="doc-reload-viewer" title="Recarregar Visualizador Google">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                  <span>Recarregar</span>
+                </button>
+                <button class="doc-link-btn highlight" id="doc-focus-3d" title="Focar a Câmera 3D neste Ponto">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+                  <span>Ver no 3D</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="meta-details-row">
+              <div class="meta-detail-col">
+                <span class="detail-label">Fornecedor:</span>
+                <span class="detail-val" id="doc-supplier-val">CONDOMINIO WALL STREET</span>
+              </div>
+              <div class="meta-detail-col">
+                <span class="detail-label">Subcota:</span>
+                <span class="detail-val" id="doc-subcota-val">MANUTENÇÃO DE ESCRITÓRIO DE APOIO</span>
+              </div>
+              <div class="meta-detail-col mini">
+                <span class="detail-label">Ano:</span>
+                <span class="detail-val" id="doc-year-val">2014</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Container do Iframe com Google Docs Viewer -->
+          <div class="iframe-container" id="iframe-container">
+            <div class="iframe-loading-indicator" id="iframe-loader">
+              <div class="spinner"></div>
+              <span>Carregando documento pelo Google Docs Viewer...</span>
+            </div>
+            <iframe id="doc-iframe" src="" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Painel de Classes (Estilo Label Studio) -->
+        <aside class="studio-sidebar">
+          <div class="sidebar-header">
+            <h3>Classificar Documento</h3>
+            <span class="sidebar-tip">Clique ou use os atalhos do teclado</span>
+          </div>
+
+          <!-- Botão para Criar Nova Classe Dinamicamente -->
+          <div class="add-class-box">
+            <button class="btn-add-class" id="btn-toggle-add-class">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              <span>+ Criar Nova Classe</span>
+            </button>
+            <div class="new-class-form hidden" id="new-class-form">
+              <input type="text" id="new-class-name" placeholder="Nome da classe (ex: multa, seguro)...">
+              <div class="new-class-color-row">
+                <input type="color" id="new-class-color" value="#06b6d4">
+                <button class="btn-micro-primary" id="btn-confirm-add-class">Criar</button>
+                <button class="btn-micro" id="btn-cancel-add-class">Cancelar</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grade de Pílulas de Classes (Injetadas Dinamicamente) -->
+          <div class="class-pills-list" id="class-pills-container">
+            <!-- Gerado via JS com atalhos 1..9 -->
+          </div>
+
+          <!-- Ações de Sessão -->
+          <div class="sidebar-footer">
+            <div class="session-stats">
+              <span id="session-count-text">Nesta sessão: 0 rotulados</span>
+            </div>
+            <button class="btn-sidebar-export" id="btn-studio-export-csv">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Baixar CSV Atualizado</span>
+            </button>
+          </div>
+        </aside>
+
+      </div>
     </div>
+  </main>
 
-    <!-- Filtro e Legenda das Classes -->
-    <div class="legend-header">
-      <div class="legend-title-row">
-        <h3>Classes Validadas</h3>
-        <span class="legend-count" id="total-annotated-count">18.051 docs</span>
+  <!-- =========================================================================
+       TELA 3: TABELA COMPLETA & EXPORTADOR CSV
+       ========================================================================= -->
+  <main id="view-table" class="app-view">
+    <div class="table-view-container">
+
+      <!-- Barra de Filtros e Busca da Tabela -->
+      <div class="table-toolbar">
+        <div class="table-toolbar-left">
+          <div class="search-input-wrap">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="table-search-input" placeholder="Buscar por ID, Fornecedor ou Subcota...">
+          </div>
+
+          <select id="table-filter-class" class="studio-select">
+            <option value="all">Todas as Classes</option>
+            <option value="unmapped">Somente Não Mapeados</option>
+            <!-- Injetado dinamicamente -->
+          </select>
+
+          <select id="table-sort-select" class="studio-select">
+            <option value="sim_desc">Maior Similaridade ao Cluster</option>
+            <option value="sim_asc">Menor Similaridade (Fronteira)</option>
+            <option value="id_asc">ID Crescente</option>
+            <option value="forn_asc">Fornecedor (A-Z)</option>
+          </select>
+        </div>
+
+        <div class="table-toolbar-right">
+          <span class="table-total-count" id="table-total-count">25.716 registros</span>
+          <button class="btn-action-primary" id="btn-table-download-csv">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Baixar .CSV</span>
+          </button>
+          <button class="btn-action-secondary" id="btn-table-download-json">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/></svg>
+            <span>Baixar JSON</span>
+          </button>
+        </div>
       </div>
-      <div class="legend-search-bar">
-        <input type="text" id="class-search" placeholder="Filtrar classe (ex: nfce, cupom)...">
+
+      <!-- Tabela de Documentos -->
+      <div class="table-scroll-container">
+        <table class="data-table" id="data-table">
+          <thead>
+            <tr>
+              <th style="width: 110px;">ID Doc</th>
+              <th style="width: 150px;">Classe Atual</th>
+              <th>Fornecedor</th>
+              <th>Subcota</th>
+              <th style="width: 160px;">Cluster Mais Próximo</th>
+              <th style="width: 100px;">Similaridade</th>
+              <th style="width: 150px; text-align: right;">Ações</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Linhas geradas dinamicamente via app.js -->
+          </tbody>
+        </table>
       </div>
-      <div class="legend-actions">
-        <button class="btn-micro" id="btn-show-all">Mostrar Todas</button>
-        <button class="btn-micro" id="btn-hide-unmapped">Ocultar Não Mapeados</button>
+
+      <!-- Paginação da Tabela -->
+      <div class="table-pagination">
+        <span id="page-info-text">Página 1 de 250</span>
+        <div class="pagination-buttons">
+          <button class="page-btn" id="page-first-btn">&laquo; Primeira</button>
+          <button class="page-btn" id="page-prev-btn">&lsaquo; Anterior</button>
+          <button class="page-btn active" id="page-curr-btn">1</button>
+          <button class="page-btn" id="page-next-btn">Próxima &rsaquo;</button>
+          <button class="page-btn" id="page-last-btn">Última &raquo;</button>
+        </div>
       </div>
+
     </div>
+  </main>
 
-    <div id="legend-list">
-      <!-- Inserido dinamicamente via app.js -->
-    </div>
-  </aside>
-
-  <!-- Toast / Loading Indicator -->
+  <!-- =========================================================================
+       Toast / Loading Overlay Global
+       ========================================================================= -->
   <div id="loading-overlay" class="loading-overlay hidden">
     <div class="spinner"></div>
     <span id="loading-text">Carregando coordenadas...</span>
