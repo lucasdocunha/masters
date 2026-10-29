@@ -125,10 +125,16 @@ def main():
     n_docs = len(docs)
     doc_to_idx = {d["doc_name"]: i for i, d in enumerate(docs)}
 
-    # Sementes de boletos reais de bancos e condomínios verificados
-    real_seeds = ["5456002.pdf", "5493044.pdf", "5514782.pdf", "5582976.pdf", "5723091.pdf"]
+    # Sementes de boletos reais: carregar os validados pelo usuário em CONFIRMADOS
+    confirmados_dir = batch_output / "CONFIRMADOS"
+    confirmed_seeds = []
+    if confirmados_dir.exists():
+        confirmed_seeds = [f"{f.stem}.pdf" for f in sorted(confirmados_dir.glob("*.png"))]
+
+    fallback_seeds = ["5456002.pdf", "5493044.pdf", "5514782.pdf", "5582976.pdf", "5723091.pdf"]
+    real_seeds = list(dict.fromkeys(confirmed_seeds + fallback_seeds))
     seed_indices = [doc_to_idx[s] for s in real_seeds if s in doc_to_idx]
-    print(f"   Sementes reais selecionadas: {len(seed_indices)} boletos bancários confirmados")
+    print(f"   Sementes reais selecionadas: {len(seed_indices)} boletos bancários confirmados ({len(confirmed_seeds)} em CONFIRMADOS)")
 
     seed_vecs = dino[seed_indices].astype(np.float32)
     norms_s = np.linalg.norm(seed_vecs, axis=1, keepdims=True)
@@ -208,12 +214,13 @@ def main():
             if len(results) % 100 == 0:
                 print(f"   [{len(results)}/{len(selected)}] processados em {time.time()-t_ocr_start:.1f}s...", flush=True)
 
-    # Limpar pasta anterior para remover os Sem Parar
-    if batch_output.exists():
-        shutil.rmtree(batch_output)
-
+    # Limpar apenas as subpastas geradas, preservando CONFIRMADOS
     folder_confirmed = batch_output / "1_confirmadas_por_ocr"
     folder_candidates = batch_output / "2_alta_similaridade_candidatos"
+    if folder_confirmed.exists():
+        shutil.rmtree(folder_confirmed)
+    if folder_candidates.exists():
+        shutil.rmtree(folder_candidates)
     folder_confirmed.mkdir(parents=True, exist_ok=True)
     folder_candidates.mkdir(parents=True, exist_ok=True)
 
