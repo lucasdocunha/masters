@@ -13,6 +13,7 @@ Deep Metric Learning (ArcFace / Additive Angular Margin) para Espaço Latente CE
 import base64
 import json
 import math
+import sys
 import time
 import zlib
 from pathlib import Path
@@ -51,6 +52,10 @@ CLASS_PALETTE = {
     "iptu": {"hex": "#6366f1", "rgb": [99, 102, 241]},                # Índigo
     "fatura": {"hex": "#14b8a6", "rgb": [20, 184, 166]},              # Teal
     "emails": {"hex": "#84cc16", "rgb": [132, 204, 22]},              # Lima
+    "boleto": {"hex": "#d946ef", "rgb": [217, 70, 239]},              # Fúcsia / Magenta
+    "correios": {"hex": "#f59e0b", "rgb": [245, 158, 11]},            # Amarelo Ouro / Âmbar
+    "hotelaria": {"hex": "#0ea5e9", "rgb": [14, 165, 233]},           # Azul Oceano
+    "sem_parar": {"hex": "#8b5cf6", "rgb": [139, 92, 246]},           # Violeta / Púrpura
 }
 
 
@@ -813,6 +818,37 @@ def main():
     emb_save_path = DATA_DIR / "latent_vectors_metric_learned_128d.npy"
     np.save(emb_save_path, projected_all)
     print(f"   Embeddings métricos 128-D salvos em: {emb_save_path} ({emb_save_path.stat().st_size / (1024*1024):.1f} MB)")
+
+    # 4.1 Distribuição de Confiança / Similaridade no Espaço Métrico Aprendido
+    print("\n==================================================================")
+    print(" ANÁLISE DE GRAUS DE CONFIANÇA NO NOVO ESPAÇO MÉTRICO (128-D)")
+    print("==================================================================")
+    if "nfse" in class_to_id:
+        nfse_cid = class_to_id["nfse"] - 1  # índice na matriz class_centroids_after
+        nfse_centroid_metric = class_centroids_after[nfse_cid]
+        nfse_sims = np.dot(projected_all, nfse_centroid_metric)
+
+        buckets = {
+            ">= 0.98": int(np.sum(nfse_sims >= 0.98)),
+            "0.97 - 0.98": int(np.sum((nfse_sims >= 0.97) & (nfse_sims < 0.98))),
+            "0.96 - 0.97": int(np.sum((nfse_sims >= 0.96) & (nfse_sims < 0.97))),
+            "0.95 - 0.96": int(np.sum((nfse_sims >= 0.95) & (nfse_sims < 0.96))),
+            "0.93 - 0.95": int(np.sum((nfse_sims >= 0.93) & (nfse_sims < 0.95))),
+            "0.90 - 0.93": int(np.sum((nfse_sims >= 0.90) & (nfse_sims < 0.93))),
+            "< 0.90": int(np.sum(nfse_sims < 0.90)),
+        }
+        print("\nDistribuição global de similaridade com o centróide NFS-e no espaço métrico (1.34M docs):")
+        for b, count in buckets.items():
+            pct = (count / n_docs) * 100
+            print(f"  {b:12}: {count:8,} ({pct:5.1f}%)")
+
+        # Salvar análise para consumo posterior
+        with open(DATA_DIR / "nfse_metric_confidence_distribution.json", "w", encoding="utf-8") as f:
+            json.dump({
+                "buckets": buckets,
+                "total_docs": n_docs,
+                "updated_at": time.strftime("%Y-%m-%d %H:%M:%S")
+            }, f, indent=2, ensure_ascii=False)
 
     # 6. Projeção PCA 3D
     print("\n5. Calculando projeção 3D dos 1.34M pontos no novo espaço métrico...")
