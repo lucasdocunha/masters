@@ -22,13 +22,16 @@ cd /home/lucas.ocunha/masters
 mkdir -p logs
 
 PYTHON="/home/lucas.ocunha/masters/.venv_ocr/bin/python"
+PRIORITIZE_CLASS=${1:-"nfse"}
+echo "Priorizando extração da classe: $PRIORITIZE_CLASS"
 
 # Lançar Worker 0 na GPU 0 (particionamento par de ide_documento)
 $PYTHON scripts/extract_lightonocr.py \
     --gpu-id 0 \
     --num-gpus 2 \
     --batch-size 16 \
-    --dpi 150 > logs/ocr_gpu0_${SLURM_JOB_ID}.log 2>&1 &
+    --dpi 150 \
+    --prioritize-class "$PRIORITIZE_CLASS" > logs/ocr_gpu0_${SLURM_JOB_ID}.log 2>&1 &
 PID_GPU0=$!
 
 # Lançar Worker 1 na GPU 1 (particionamento ímpar de ide_documento)
@@ -36,7 +39,8 @@ $PYTHON scripts/extract_lightonocr.py \
     --gpu-id 1 \
     --num-gpus 2 \
     --batch-size 16 \
-    --dpi 150 > logs/ocr_gpu1_${SLURM_JOB_ID}.log 2>&1 &
+    --dpi 150 \
+    --prioritize-class "$PRIORITIZE_CLASS" > logs/ocr_gpu1_${SLURM_JOB_ID}.log 2>&1 &
 PID_GPU1=$!
 
 echo "Workers disparados em background: Worker-0 (PID $PID_GPU0), Worker-1 (PID $PID_GPU1)"
