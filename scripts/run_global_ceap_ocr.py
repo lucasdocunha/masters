@@ -68,7 +68,7 @@ def extract_digital_worker(doc_id: int):
             return doc_id, None, 0, 0, 0
 
         # Ler página 1
-        txt = doc[0].get_text().strip()
+        txt = doc[0].get_text().strip().replace("\x00", "")
         doc.close()
         t_ms = max(1, int((time.time() - t0) * 1000))
 
@@ -120,7 +120,7 @@ def process_ocr_memory_task(doc_id: int):
         if not res:
             return doc_id, "", 0, n_pages, t_ms
 
-        full_txt = " ".join([line[1] for line in res])
+        full_txt = " ".join([line[1] for line in res]).replace("\x00", "")
         return doc_id, full_txt, len(full_txt), n_pages, t_ms
     except Exception:
         t_ms = max(1, int((time.time() - t0) * 1000))
@@ -142,6 +142,13 @@ def get_already_processed_ids():
 def commit_db_batch(batch_rows, model_name, pdf_to_year):
     if not batch_rows:
         return
+
+    # Sanitizar textos para remover NUL bytes (0x00) incompatíveis com PostgreSQL UTF-8
+    clean_batch = []
+    for doc_id, txt, char_count, n_pages, t_ms in batch_rows:
+        clean_txt = (txt or "").replace("\x00", "")
+        clean_batch.append((doc_id, clean_txt, len(clean_txt), n_pages, t_ms))
+    batch_rows = clean_batch
 
     with psycopg.connect(DB_URL) as conn:
         with conn.cursor() as cur:
