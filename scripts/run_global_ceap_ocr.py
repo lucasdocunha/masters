@@ -15,6 +15,7 @@ Estratégia Híbrida de Alta Performance em 2 Fases:
 
 import os
 import sys
+import json
 import time
 import signal
 import argparse
