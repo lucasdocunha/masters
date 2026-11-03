@@ -35,7 +35,86 @@ os.environ["NUMEXPR_NUM_THREADS"] = "1"
 BASE_DIR = Path("/home/lucas.ocunha/masters")
 DATA_DIR = BASE_DIR / "data"
 PDF_DIR = Path("/media/ssd2/datasets/CEAP")
+HIST_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
+EMBS_PATH = DATA_DIR / "latent_vectors_metric_learned_128d.npy"
 YEAR_FILE = DATA_DIR / "pdf_to_year.json"
+
+
+def sort_candidates_by_distance_to_top_classes(candidate_ids, min_examples=2000):
+    """
+    Ordena os documentos candidatos pela distância angular aos centróides das classes mais abundantes.
+    Documentos mais distantes / desconhecidos ficam no início da fila de OCR.
+    """
+    if not candidate_ids:
+        return candidate_ids
+
+    if not (HIST_FILE.exists() and META_PATH.exists() and EMBS_PATH.exists()):
+        print("   [AVISO] Arquivos métricos não encontrados. Mantendo ordem padrão.")
+        return candidate_ids
+
+    t0 = time.time()
+    print("\n   Calculando prioridade de OCR (mais distantes dos centróides mais frequentes)...")
+
+    with open(HIST_FILE, "r", encoding="utf-8") as f:
+        hist = json.load(f)
+    norm_hist = {k.replace(".pdf", ""): v for k, v in hist.items()}
+
+    with open(META_PATH, "r", encoding="utf-8") as f:
+        meta = json.load(f)
+    docs = meta["documents"]
+    stems = [d["doc_name"].replace(".pdf", "") for d in docs]
+    stem_to_idx = {s: i for i, s in enumerate(stems)}
+
+    embs = np.load(EMBS_PATH)
+    norms = np.linalg.norm(embs, axis=1, keepdims=True)
+    norms[norms == 0] = 1.0
+    embs /= norms
+
+    from collections import Counter
+    counts = Counter(norm_hist.values())
+    top_classes = [cls for cls, cnt in counts.most_common() if cnt >= min_examples]
+    print(f"   • Classes dominantes como referência ({len(top_classes)} classes com >={min_examples} exemplos):")
+    for cls in top_classes:
+        print(f"     - {cls:15s}: {counts[cls]:6,d} exemplos")
+
+    top_centroids = []
+    for cls in top_classes:
+        c_idxs = [stem_to_idx[s] for s, lbl in norm_hist.items() if lbl == cls and s in stem_to_idx]
+        cent = embs[c_idxs].mean(axis=0)
+        cent /= np.linalg.norm(cent)
+        top_centroids.append(cent)
+    top_centroids = np.array(top_centroids)  # shape: (K, 128)
+
+    # Similaridade máxima de cada documento com qualquer uma das classes dominantes
+    sims = np.dot(embs, top_centroids.T)  # shape: (N, K)
+    max_sim = sims.max(axis=1)            # shape: (N,)
+
+    # Mapear cada candidate_id para o seu índice e score
+    cand_set = set(candidate_ids)
+    cands_with_scores = []
+    cands_without_meta = []
+
+    for doc_id in candidate_ids:
+        s = str(doc_id)
+        if s in stem_to_idx:
+            idx = stem_to_idx[s]
+            cands_with_scores.append((doc_id, float(max_sim[idx])))
+        else:
+            cands_without_meta.append(doc_id)
+
+    # Ordenar por menor similaridade máxima (ou seja, maior distância aos clusters dominantes)
+    cands_with_scores.sort(key=lambda x: x[1])
+    sorted_ids = [doc_id for doc_id, score in cands_with_scores] + cands_without_meta
+
+    print(f"   ✓ Ordenação ativa concluída em {time.time() - t0:.2f}s para {len(candidate_ids):,} candidatos!")
+    if cands_with_scores:
+        top_1 = cands_with_scores[0]
+        top_last = cands_with_scores[-1]
+        print(f"   • 1º da fila (mais distante): Doc {top_1[0]} | Similaridade máx: {top_1[1]*100:.2f}% (Distância: {(1-top_1[1])*100:.2f}%)")
+        print(f"   • Último da fila (mais próximo): Doc {top_last[0]} | Similaridade máx: {top_last[1]*100:.2f}% (Distância: {(1-top_last[1])*100:.2f}%)")
+
+    return sorted_ids
 DB_URL = os.environ.get("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/ceap")
 
 stop_requested = False
@@ -212,11 +291,12 @@ def main():
     parser.add_argument("--phase", choices=["digital", "ocr", "all"], default="all", help="Fase a executar: 'digital', 'ocr' ou 'all' (default: all)")
     parser.add_argument("--workers", type=int, default=24, help="Número de workers paralelos (default: 24)")
     parser.add_argument("--batch-size", type=int, default=1000, help="Tamanho do lote para commit no banco (default: 1000)")
+    parser.add_argument("--priority", choices=["farthest_from_top", "id_asc"], default="farthest_from_top", help="Ordem da fila: 'farthest_from_top' (mais distantes dos centróides com mais exemplos) ou 'id_asc' (default: farthest_from_top)")
     args = parser.parse_args()
 
     print("=" * 76)
     print(" PIPELINE GLOBAL DE OCR DO ACERVO CEAP (1.4M DOCUMENTOS)")
-    print(f" Modo: {args.phase.upper()} | Workers: {args.workers} | Batch DB: {args.batch_size}")
+    print(f" Modo: {args.phase.upper()} | Prioridade: {args.priority.upper()} | Workers: {args.workers} | Batch DB: {args.batch_size}")
     print("=" * 76)
 
     # 1. Carregar lista de PDFs do disco
@@ -287,10 +367,14 @@ def main():
     # FASE 2: RapidOCR Streaming em Memória
     # ==========================================================================
     if args.phase in ["ocr", "all"] and not stop_requested:
-        if args.phase == "ocr":
+        if args.phase == "ocr" or not scanned_candidates:
             # Reconsultar do banco
             processed_ids = get_already_processed_ids()
             scanned_candidates = [doc_id for doc_id in all_doc_ids if doc_id not in processed_ids]
+
+        # Aplicar ordenação ativa: priorizar os mais distantes dos centróides mais frequentes
+        if args.priority == "farthest_from_top":
+            scanned_candidates = sort_candidates_by_distance_to_top_classes(scanned_candidates, min_examples=2000)
 
         print("\n" + "=" * 76)
         print(f" FASE 2: RAPIDOCR STREAMING EM MEMÓRIA ({len(scanned_candidates):,} ESCANEADOS)")
