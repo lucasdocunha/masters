@@ -18,7 +18,7 @@ from pathlib import Path
 DEFAULT_TEAM_ID = os.getenv("VERCEL_TEAM_ID", "")  # defina no ambiente; nunca versionar
 DEFAULT_TOKEN = os.getenv("VERCEL_TOKEN", "")  # defina no ambiente; nunca versionar
 DEFAULT_PROJECT = "ceap-latent-space-3d"
-ROOT_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 WEB_APP_DIR = ROOT_DIR / "web"
 if not WEB_APP_DIR.exists():
     WEB_APP_DIR = ROOT_DIR / "web_app"
@@ -46,17 +46,27 @@ def upload_file(team_id: str, token: str, file_path: Path, rel_path: str) -> dic
         method="POST"
     )
 
-    try:
-        with urllib.request.urlopen(req) as resp:
-            data = json.loads(resp.read().decode())
-            return {"file": rel_path, "sha": sha, "size": size, "uploaded": True}
-    except urllib.error.HTTPError as e:
-        body = e.read().decode()
-        # Se retornar 409 ou similar indicando que o arquivo já existe, é sucesso
-        if e.code in (200, 201, 409):
-            return {"file": rel_path, "sha": sha, "size": size, "uploaded": False}
-        print(f"Erro ao enviar {rel_path} (HTTP {e.code}): {body}")
-        raise
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode())
+                return {"file": rel_path, "sha": sha, "size": size, "uploaded": True}
+        except urllib.error.HTTPError as e:
+            body = e.read().decode()
+            # Se retornar 409 ou similar indicando que o arquivo já existe, é sucesso
+            if e.code in (200, 201, 409):
+                return {"file": rel_path, "sha": sha, "size": size, "uploaded": False}
+            if e.code == 429 and attempt < 3:
+                time.sleep(2 * (attempt + 1))
+                continue
+            print(f"Erro ao enviar {rel_path} (HTTP {e.code}): {body}")
+            raise
+        except (urllib.error.URLError, ConnectionResetError, TimeoutError, OSError) as e:
+            if attempt < 3:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            print(f"Erro de conexão ao enviar {rel_path}: {e}")
+            raise
 
 
 def create_deployment(team_id: str, token: str, project_name: str, files_manifest: list) -> dict:
