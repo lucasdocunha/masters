@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import numpy as np
 
-from scripts.visualize_clusters_3d import reduce_to_3d, build_3d_figure, generate_3d_visualization
+from dados.visualization.visualize_clusters_3d import reduce_to_3d, generate_3d_visualization
 
 
 def test_reduce_to_3d_pca():

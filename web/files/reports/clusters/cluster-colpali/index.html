@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria dos Clusters - ColPali VLM (Visão Multimodal)</title>
+<style>
+  :root {
+    --bg-main: #0b0f19;
+    --bg-card: #151d30;
+    --border-color: #263352;
+    --primary: #38bdf8;
+    --primary-hover: #0ea5e9;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    margin: 0;
+    padding: 24px;
+  }
+  header {
+    max-width: 1400px;
+    margin: 0 auto 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  h1 {
+    font-size: 26px;
+    margin: 0 0 8px;
+    color: var(--primary);
+  }
+  p.desc {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin: 0 0 16px;
+    line-height: 1.5;
+  }
+  .nav-bar {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .nav-btn {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .nav-btn:hover {
+    background: var(--primary);
+    color: #000;
+    border-color: var(--primary);
+  }
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .cluster-section {
+    background: #111827;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 36px;
+  }
+  .cluster-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+  }
+  .cluster-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-right: 12px;
+  }
+  .cluster-badge {
+    background: #1e3a8a;
+    color: #93c5fd;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .cluster-nav-anchor a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .cluster-nav-anchor a:hover {
+    color: var(--primary);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+  .card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background: #ffffff;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .card-info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+  }
+  .doc-rank {
+    font-size: 11px;
+    font-weight: 700;
+    color: #38bdf8;
+    text-transform: uppercase;
+  }
+  .doc-name {
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-muted);
+    font-size: 11px;
+  }
+  .actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+  }
+  .actions a {
+    flex: 1;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    transition: background 0.15s;
+  }
+  .btn-pdf {
+    background: #334155;
+    color: #f1f5f9;
+  }
+  .btn-pdf:hover {
+    background: #475569;
+  }
+  .btn-img {
+    background: #0284c7;
+    color: #ffffff;
+  }
+  .btn-img:hover {
+    background: var(--primary-hover);
+  }
+</style>
+</head>
+<body id="top">
+<header>
+  <h1>Galeria Visual dos Clusters &bull; ColPali VLM (Visão Multimodal)</h1>
+  <p class="desc">
+    20 documentos mais representativos (mais próximos do centroide no espaço latente) para cada um dos 5 clusters identificados no dataset global do CEAP (1.339.678 documentos).
+  </p>
+  <div class="nav-bar">
+    <span style="font-size: 13px; color: var(--text-muted); margin-right: 4px;">Ir para:</span>
+    <a href="#cluster-0" class="nav-btn">Cluster 0</a>
+    <a href="#cluster-1" class="nav-btn">Cluster 1</a>
+    <a href="#cluster-2" class="nav-btn">Cluster 2</a>
+    <a href="#cluster-3" class="nav-btn">Cluster 3</a>
+    <a href="#cluster-4" class="nav-btn">Cluster 4</a>
+    <a href="../latent_vectors_full_3d.html" class="nav-btn" style="margin-left: auto; background: #4f46e5; border-color: #6366f1;">&larr; Ver Espaço 3D UMAP</a>
+  </div>
+</header>
+
+<div class="container">
+  
+        <div class="cluster-section" id="cluster-0">
+          <div class="cluster-header">
+            <div>
+              <span class="cluster-title">Cluster 0</span>
+              <span class="cluster-badge">118,442 documentos (8.8%)</span>
+            </div>
+            <div class="cluster-nav-anchor">
+              <a href="#top">&uarr; Voltar ao Topo</a>
+            </div>
+          </div>
+          <div class="grid">
+            
+            <div class="card">
+              <a href="0/01_6346689.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/01_6346689.png" alt="6346689.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#01 &bull; 2017</div>
+                <div class="doc-name" title="6346689.pdf">6346689.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.059</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/01_6346689.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/01_6346689.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/02_7389882.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/02_7389882.png" alt="7389882.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#02 &bull; 2022</div>
+                <div class="doc-name" title="7389882.pdf">7389882.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.059</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/02_7389882.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/02_7389882.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/03_7148618.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/03_7148618.png" alt="7148618.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#03 &bull; 2021</div>
+                <div class="doc-name" title="7148618.pdf">7148618.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.061</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/03_7148618.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/03_7148618.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/04_8033877.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/04_8033877.png" alt="8033877.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#04 &bull; 2025</div>
+                <div class="doc-name" title="8033877.pdf">8033877.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.061</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/04_8033877.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/04_8033877.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/05_5812635.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/05_5812635.png" alt="5812635.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#05 &bull; 2015</div>
+                <div class="doc-name" title="5812635.pdf">5812635.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.062</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/05_5812635.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/05_5812635.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/06_6646370.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/06_6646370.png" alt="6646370.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#06 &bull; 2018</div>
+                <div class="doc-name" title="6646370.pdf">6646370.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.063</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/06_6646370.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/06_6646370.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/07_6940349.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/07_6940349.png" alt="6940349.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#07 &bull; 2019</div>
+                <div class="doc-name" title="6940349.pdf">6940349.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.064</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/07_6940349.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/07_6940349.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/08_6017677.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/08_6017677.png" alt="6017677.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#08 &bull; 2016</div>
+                <div class="doc-name" title="6017677.pdf">6017677.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.065</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/08_6017677.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/08_6017677.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/09_7390065.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/09_7390065.png" alt="7390065.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#09 &bull; 2022</div>
+                <div class="doc-name" title="7390065.pdf">7390065.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.065</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/09_7390065.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/09_7390065.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/10_5813065.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/10_5813065.png" alt="5813065.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#10 &bull; 2015</div>
+                <div class="doc-name" title="5813065.pdf">5813065.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.065</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/10_5813065.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/10_5813065.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/11_7390061.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/11_7390061.png" alt="7390061.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#11 &bull; 2022</div>
+                <div class="doc-name" title="7390061.pdf">7390061.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.065</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/11_7390061.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/11_7390061.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/12_7016981.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/12_7016981.png" alt="7016981.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#12 &bull; 2020</div>
+                <div class="doc-name" title="7016981.pdf">7016981.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.066</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/12_7016981.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/12_7016981.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/13_6810215.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/13_6810215.png" alt="6810215.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#13 &bull; 2019</div>
+                <div class="doc-name" title="6810215.pdf">6810215.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.066</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/13_6810215.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/13_6810215.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/14_5996537.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/14_5996537.png" alt="5996537.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#14 &bull; 2016</div>
+                <div class="doc-name" title="5996537.pdf">5996537.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.067</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/14_5996537.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/14_5996537.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/15_6731510.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/15_6731510.png" alt="6731510.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#15 &bull; 2018</div>
+                <div class="doc-name" title="6731510.pdf">6731510.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.067</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/15_6731510.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/15_6731510.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/16_6360811.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/16_6360811.png" alt="6360811.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#16 &bull; 2017</div>
+                <div class="doc-name" title="6360811.pdf">6360811.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.067</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/16_6360811.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/16_6360811.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/17_7555349.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/17_7555349.png" alt="7555349.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#17 &bull; 2023</div>
+                <div class="doc-name" title="7555349.pdf">7555349.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.067</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/17_7555349.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/17_7555349.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/18_6868296.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/18_6868296.png" alt="6868296.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#18 &bull; 2019</div>
+                <div class="doc-name" title="6868296.pdf">6868296.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.068</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/18_6868296.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/18_6868296.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/19_6904790.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/19_6904790.png" alt="6904790.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#19 &bull; 2019</div>
+                <div class="doc-name" title="6904790.pdf">6904790.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.068</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/19_6904790.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/19_6904790.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="0/20_7226299.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="0/20_7226299.png" alt="7226299.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#20 &bull; 2021</div>
+                <div class="doc-name" title="7226299.pdf">7226299.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.069</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="0/20_7226299.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="0/20_7226299.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+
+        <div class="cluster-section" id="cluster-1">
+          <div class="cluster-header">
+            <div>
+              <span class="cluster-title">Cluster 1</span>
+              <span class="cluster-badge">191,364 documentos (14.3%)</span>
+            </div>
+            <div class="cluster-nav-anchor">
+              <a href="#top">&uarr; Voltar ao Topo</a>
+            </div>
+          </div>
+          <div class="grid">
+            
+            <div class="card">
+              <a href="1/01_7558523.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/01_7558523.png" alt="7558523.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#01 &bull; 2023</div>
+                <div class="doc-name" title="7558523.pdf">7558523.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.051</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/01_7558523.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/01_7558523.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/02_7451268.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/02_7451268.png" alt="7451268.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#02 &bull; 2022</div>
+                <div class="doc-name" title="7451268.pdf">7451268.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.052</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/02_7451268.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/02_7451268.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/03_7532252.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/03_7532252.png" alt="7532252.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#03 &bull; 2023</div>
+                <div class="doc-name" title="7532252.pdf">7532252.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.053</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/03_7532252.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/03_7532252.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/04_7532256.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/04_7532256.png" alt="7532256.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#04 &bull; 2023</div>
+                <div class="doc-name" title="7532256.pdf">7532256.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.053</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/04_7532256.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/04_7532256.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/05_7571460.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/05_7571460.png" alt="7571460.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#05 &bull; 2023</div>
+                <div class="doc-name" title="7571460.pdf">7571460.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.053</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/05_7571460.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/05_7571460.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/06_7549034.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/06_7549034.png" alt="7549034.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#06 &bull; 2023</div>
+                <div class="doc-name" title="7549034.pdf">7549034.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.054</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/06_7549034.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/06_7549034.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/07_7540803.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/07_7540803.png" alt="7540803.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#07 &bull; 2023</div>
+                <div class="doc-name" title="7540803.pdf">7540803.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.054</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/07_7540803.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/07_7540803.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/08_7557625.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/08_7557625.png" alt="7557625.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#08 &bull; 2023</div>
+                <div class="doc-name" title="7557625.pdf">7557625.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.054</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/08_7557625.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/08_7557625.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/09_7563143.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/09_7563143.png" alt="7563143.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#09 &bull; 2023</div>
+                <div class="doc-name" title="7563143.pdf">7563143.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.054</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/09_7563143.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/09_7563143.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/10_7730610.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/10_7730610.png" alt="7730610.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#10 &bull; 2024</div>
+                <div class="doc-name" title="7730610.pdf">7730610.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.054</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/10_7730610.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/10_7730610.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/11_8018410.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/11_8018410.png" alt="8018410.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#11 &bull; 2025</div>
+                <div class="doc-name" title="8018410.pdf">8018410.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.054</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/11_8018410.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/11_8018410.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/12_7540787.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/12_7540787.png" alt="7540787.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#12 &bull; 2023</div>
+                <div class="doc-name" title="7540787.pdf">7540787.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.054</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/12_7540787.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/12_7540787.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/13_7758322.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/13_7758322.png" alt="7758322.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#13 &bull; 2024</div>
+                <div class="doc-name" title="7758322.pdf">7758322.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.054</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/13_7758322.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/13_7758322.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/14_7666315.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/14_7666315.png" alt="7666315.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#14 &bull; 2023</div>
+                <div class="doc-name" title="7666315.pdf">7666315.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.055</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/14_7666315.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/14_7666315.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/15_7931086.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/15_7931086.png" alt="7931086.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#15 &bull; 2025</div>
+                <div class="doc-name" title="7931086.pdf">7931086.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.055</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/15_7931086.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/15_7931086.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/16_7931062.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/16_7931062.png" alt="7931062.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#16 &bull; 2025</div>
+                <div class="doc-name" title="7931062.pdf">7931062.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.055</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/16_7931062.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/16_7931062.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/17_7541587.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/17_7541587.png" alt="7541587.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#17 &bull; 2023</div>
+                <div class="doc-name" title="7541587.pdf">7541587.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.055</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/17_7541587.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/17_7541587.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/18_7551749.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/18_7551749.png" alt="7551749.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#18 &bull; 2023</div>
+                <div class="doc-name" title="7551749.pdf">7551749.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.055</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/18_7551749.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/18_7551749.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/19_7730621.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/19_7730621.png" alt="7730621.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#19 &bull; 2024</div>
+                <div class="doc-name" title="7730621.pdf">7730621.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.055</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/19_7730621.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/19_7730621.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="1/20_7573750.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="1/20_7573750.png" alt="7573750.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#20 &bull; 2023</div>
+                <div class="doc-name" title="7573750.pdf">7573750.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.055</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="1/20_7573750.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="1/20_7573750.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+
+        <div class="cluster-section" id="cluster-2">
+          <div class="cluster-header">
+            <div>
+              <span class="cluster-title">Cluster 2</span>
+              <span class="cluster-badge">469,701 documentos (35.1%)</span>
+            </div>
+            <div class="cluster-nav-anchor">
+              <a href="#top">&uarr; Voltar ao Topo</a>
+            </div>
+          </div>
+          <div class="grid">
+            
+            <div class="card">
+              <a href="2/01_6191256.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/01_6191256.png" alt="6191256.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#01 &bull; 2017</div>
+                <div class="doc-name" title="6191256.pdf">6191256.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.029</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/01_6191256.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/01_6191256.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/02_6367408.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/02_6367408.png" alt="6367408.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#02 &bull; 2017</div>
+                <div class="doc-name" title="6367408.pdf">6367408.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.030</b></span>
+                  <span>5 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/02_6367408.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/02_6367408.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/03_6178003.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/03_6178003.png" alt="6178003.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#03 &bull; 2016</div>
+                <div class="doc-name" title="6178003.pdf">6178003.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.032</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/03_6178003.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/03_6178003.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/04_6745126.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/04_6745126.png" alt="6745126.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#04 &bull; 2019</div>
+                <div class="doc-name" title="6745126.pdf">6745126.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.034</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/04_6745126.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/04_6745126.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/05_7833291.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/05_7833291.png" alt="7833291.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#05 &bull; 2024</div>
+                <div class="doc-name" title="7833291.pdf">7833291.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.034</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/05_7833291.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/05_7833291.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/06_7856532.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/06_7856532.png" alt="7856532.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#06 &bull; 2025</div>
+                <div class="doc-name" title="7856532.pdf">7856532.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.035</b></span>
+                  <span>4 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/06_7856532.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/06_7856532.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/07_7339577.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/07_7339577.png" alt="7339577.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#07 &bull; 2022</div>
+                <div class="doc-name" title="7339577.pdf">7339577.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.036</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/07_7339577.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/07_7339577.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/08_7569550.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/08_7569550.png" alt="7569550.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#08 &bull; 2023</div>
+                <div class="doc-name" title="7569550.pdf">7569550.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.037</b></span>
+                  <span>6 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/08_7569550.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/08_7569550.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/09_5745531.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/09_5745531.png" alt="5745531.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#09 &bull; 2015</div>
+                <div class="doc-name" title="5745531.pdf">5745531.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.037</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/09_5745531.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/09_5745531.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/10_7396090.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/10_7396090.png" alt="7396090.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#10 &bull; 2022</div>
+                <div class="doc-name" title="7396090.pdf">7396090.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.037</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/10_7396090.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/10_7396090.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/11_7910703.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/11_7910703.png" alt="7910703.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#11 &bull; 2025</div>
+                <div class="doc-name" title="7910703.pdf">7910703.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.037</b></span>
+                  <span>4 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/11_7910703.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/11_7910703.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/12_6003154.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/12_6003154.png" alt="6003154.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#12 &bull; 2016</div>
+                <div class="doc-name" title="6003154.pdf">6003154.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.037</b></span>
+                  <span>4 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/12_6003154.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/12_6003154.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/13_7895476.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/13_7895476.png" alt="7895476.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#13 &bull; 2025</div>
+                <div class="doc-name" title="7895476.pdf">7895476.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.037</b></span>
+                  <span>4 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/13_7895476.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/13_7895476.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/14_6105793.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/14_6105793.png" alt="6105793.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#14 &bull; 2016</div>
+                <div class="doc-name" title="6105793.pdf">6105793.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.038</b></span>
+                  <span>9 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/14_6105793.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/14_6105793.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/15_5692241.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/15_5692241.png" alt="5692241.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#15 &bull; 2015</div>
+                <div class="doc-name" title="5692241.pdf">5692241.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.038</b></span>
+                  <span>5 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/15_5692241.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/15_5692241.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/16_5732670.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/16_5732670.png" alt="5732670.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#16 &bull; 2015</div>
+                <div class="doc-name" title="5732670.pdf">5732670.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.038</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/16_5732670.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/16_5732670.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/17_6745132.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/17_6745132.png" alt="6745132.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#17 &bull; 2019</div>
+                <div class="doc-name" title="6745132.pdf">6745132.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.038</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/17_6745132.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/17_6745132.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/18_6206732.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/18_6206732.png" alt="6206732.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#18 &bull; 2017</div>
+                <div class="doc-name" title="6206732.pdf">6206732.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.039</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/18_6206732.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/18_6206732.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/19_5473483.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/19_5473483.png" alt="5473483.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#19 &bull; 2014</div>
+                <div class="doc-name" title="5473483.pdf">5473483.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.039</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/19_5473483.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/19_5473483.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="2/20_6115862.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="2/20_6115862.png" alt="6115862.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#20 &bull; 2016</div>
+                <div class="doc-name" title="6115862.pdf">6115862.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.039</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="2/20_6115862.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="2/20_6115862.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+
+        <div class="cluster-section" id="cluster-3">
+          <div class="cluster-header">
+            <div>
+              <span class="cluster-title">Cluster 3</span>
+              <span class="cluster-badge">314,543 documentos (23.5%)</span>
+            </div>
+            <div class="cluster-nav-anchor">
+              <a href="#top">&uarr; Voltar ao Topo</a>
+            </div>
+          </div>
+          <div class="grid">
+            
+            <div class="card">
+              <a href="3/01_5894037.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/01_5894037.png" alt="5894037.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#01 &bull; 2016</div>
+                <div class="doc-name" title="5894037.pdf">5894037.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.031</b></span>
+                  <span>5 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/01_5894037.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/01_5894037.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/02_7132755.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/02_7132755.png" alt="7132755.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#02 &bull; 2020</div>
+                <div class="doc-name" title="7132755.pdf">7132755.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.034</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/02_7132755.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/02_7132755.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/03_6098510.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/03_6098510.png" alt="6098510.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#03 &bull; 2016</div>
+                <div class="doc-name" title="6098510.pdf">6098510.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.035</b></span>
+                  <span>11 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/03_6098510.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/03_6098510.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/04_7177103.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/04_7177103.png" alt="7177103.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#04 &bull; 2021</div>
+                <div class="doc-name" title="7177103.pdf">7177103.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.035</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/04_7177103.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/04_7177103.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/05_6033600.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/05_6033600.png" alt="6033600.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#05 &bull; 2016</div>
+                <div class="doc-name" title="6033600.pdf">6033600.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.036</b></span>
+                  <span>9 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/05_6033600.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/05_6033600.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/06_7453912.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/06_7453912.png" alt="7453912.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#06 &bull; 2022</div>
+                <div class="doc-name" title="7453912.pdf">7453912.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.037</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/06_7453912.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/06_7453912.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/07_7174152.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/07_7174152.png" alt="7174152.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#07 &bull; 2021</div>
+                <div class="doc-name" title="7174152.pdf">7174152.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.038</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/07_7174152.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/07_7174152.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/08_7244135.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/08_7244135.png" alt="7244135.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#08 &bull; 2021</div>
+                <div class="doc-name" title="7244135.pdf">7244135.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.038</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/08_7244135.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/08_7244135.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/09_7429938.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/09_7429938.png" alt="7429938.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#09 &bull; 2022</div>
+                <div class="doc-name" title="7429938.pdf">7429938.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.038</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/09_7429938.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/09_7429938.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/10_7123068.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/10_7123068.png" alt="7123068.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#10 &bull; 2020</div>
+                <div class="doc-name" title="7123068.pdf">7123068.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.039</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/10_7123068.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/10_7123068.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/11_7124291.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/11_7124291.png" alt="7124291.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#11 &bull; 2020</div>
+                <div class="doc-name" title="7124291.pdf">7124291.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.039</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/11_7124291.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/11_7124291.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/12_7509393.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/12_7509393.png" alt="7509393.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#12 &bull; 2023</div>
+                <div class="doc-name" title="7509393.pdf">7509393.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.039</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/12_7509393.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/12_7509393.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/13_7668628.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/13_7668628.png" alt="7668628.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#13 &bull; 2023</div>
+                <div class="doc-name" title="7668628.pdf">7668628.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.039</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/13_7668628.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/13_7668628.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/14_7244575.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/14_7244575.png" alt="7244575.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#14 &bull; 2021</div>
+                <div class="doc-name" title="7244575.pdf">7244575.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.040</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/14_7244575.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/14_7244575.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/15_6236751.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/15_6236751.png" alt="6236751.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#15 &bull; 2017</div>
+                <div class="doc-name" title="6236751.pdf">6236751.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.040</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/15_6236751.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/15_6236751.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/16_7346170.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/16_7346170.png" alt="7346170.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#16 &bull; 2022</div>
+                <div class="doc-name" title="7346170.pdf">7346170.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.040</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/16_7346170.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/16_7346170.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/17_5720073.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/17_5720073.png" alt="5720073.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#17 &bull; 2015</div>
+                <div class="doc-name" title="5720073.pdf">5720073.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.040</b></span>
+                  <span>2 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/17_5720073.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/17_5720073.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/18_7453911.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/18_7453911.png" alt="7453911.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#18 &bull; 2022</div>
+                <div class="doc-name" title="7453911.pdf">7453911.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.041</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/18_7453911.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/18_7453911.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/19_7716365.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/19_7716365.png" alt="7716365.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#19 &bull; 2024</div>
+                <div class="doc-name" title="7716365.pdf">7716365.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.041</b></span>
+                  <span>3 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/19_7716365.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/19_7716365.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="3/20_6288825.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="3/20_6288825.png" alt="6288825.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#20 &bull; 2017</div>
+                <div class="doc-name" title="6288825.pdf">6288825.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.041</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="3/20_6288825.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="3/20_6288825.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+
+        <div class="cluster-section" id="cluster-4">
+          <div class="cluster-header">
+            <div>
+              <span class="cluster-title">Cluster 4</span>
+              <span class="cluster-badge">245,628 documentos (18.3%)</span>
+            </div>
+            <div class="cluster-nav-anchor">
+              <a href="#top">&uarr; Voltar ao Topo</a>
+            </div>
+          </div>
+          <div class="grid">
+            
+            <div class="card">
+              <a href="4/01_5881093.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/01_5881093.png" alt="5881093.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#01 &bull; 2015</div>
+                <div class="doc-name" title="5881093.pdf">5881093.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.012</b></span>
+                  <span>14 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/01_5881093.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/01_5881093.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/02_5881084.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/02_5881084.png" alt="5881084.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#02 &bull; 2015</div>
+                <div class="doc-name" title="5881084.pdf">5881084.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.012</b></span>
+                  <span>14 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/02_5881084.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/02_5881084.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/03_5881054.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/03_5881054.png" alt="5881054.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#03 &bull; 2015</div>
+                <div class="doc-name" title="5881054.pdf">5881054.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.012</b></span>
+                  <span>14 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/03_5881054.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/03_5881054.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/04_5881058.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/04_5881058.png" alt="5881058.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#04 &bull; 2015</div>
+                <div class="doc-name" title="5881058.pdf">5881058.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.012</b></span>
+                  <span>14 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/04_5881058.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/04_5881058.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/05_5864155.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/05_5864155.png" alt="5864155.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#05 &bull; 2015</div>
+                <div class="doc-name" title="5864155.pdf">5864155.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.022</b></span>
+                  <span>19 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/05_5864155.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/05_5864155.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/06_5899855.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/06_5899855.png" alt="5899855.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#06 &bull; 2016</div>
+                <div class="doc-name" title="5899855.pdf">5899855.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.026</b></span>
+                  <span>7 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/06_5899855.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/06_5899855.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/07_6163216.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/07_6163216.png" alt="6163216.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#07 &bull; 2016</div>
+                <div class="doc-name" title="6163216.pdf">6163216.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.029</b></span>
+                  <span>7 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/07_6163216.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/07_6163216.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/08_5816061.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/08_5816061.png" alt="5816061.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#08 &bull; 2015</div>
+                <div class="doc-name" title="5816061.pdf">5816061.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.029</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/08_5816061.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/08_5816061.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/09_6374239.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/09_6374239.png" alt="6374239.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#09 &bull; 2017</div>
+                <div class="doc-name" title="6374239.pdf">6374239.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.032</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/09_6374239.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/09_6374239.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/10_5829089.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/10_5829089.png" alt="5829089.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#10 &bull; 2015</div>
+                <div class="doc-name" title="5829089.pdf">5829089.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.034</b></span>
+                  <span>9 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/10_5829089.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/10_5829089.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/11_5686631.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/11_5686631.png" alt="5686631.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#11 &bull; 2015</div>
+                <div class="doc-name" title="5686631.pdf">5686631.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.034</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/11_5686631.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/11_5686631.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/12_5486063.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/12_5486063.png" alt="5486063.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#12 &bull; 2014</div>
+                <div class="doc-name" title="5486063.pdf">5486063.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.034</b></span>
+                  <span>5 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/12_5486063.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/12_5486063.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/13_6433574.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/13_6433574.png" alt="6433574.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#13 &bull; 2017</div>
+                <div class="doc-name" title="6433574.pdf">6433574.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.035</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/13_6433574.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/13_6433574.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/14_5798968.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/14_5798968.png" alt="5798968.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#14 &bull; 2015</div>
+                <div class="doc-name" title="5798968.pdf">5798968.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.035</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/14_5798968.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/14_5798968.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/15_5901924.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/15_5901924.png" alt="5901924.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#15 &bull; 2016</div>
+                <div class="doc-name" title="5901924.pdf">5901924.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.035</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/15_5901924.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/15_5901924.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/16_6315033.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/16_6315033.png" alt="6315033.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#16 &bull; 2017</div>
+                <div class="doc-name" title="6315033.pdf">6315033.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.035</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/16_6315033.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/16_6315033.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/17_5948214.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/17_5948214.png" alt="5948214.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#17 &bull; 2016</div>
+                <div class="doc-name" title="5948214.pdf">5948214.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.035</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/17_5948214.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/17_5948214.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/18_5825689.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/18_5825689.png" alt="5825689.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#18 &bull; 2015</div>
+                <div class="doc-name" title="5825689.pdf">5825689.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.036</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/18_5825689.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/18_5825689.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/19_5994315.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/19_5994315.png" alt="5994315.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#19 &bull; 2016</div>
+                <div class="doc-name" title="5994315.pdf">5994315.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.036</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/19_5994315.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/19_5994315.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <a href="4/20_6226748.png" target="_blank" title="Clique para ampliar imagem">
+                <img src="4/20_6226748.png" alt="6226748.pdf" loading="lazy">
+              </a>
+              <div class="card-info">
+                <div class="doc-rank">#20 &bull; 2017</div>
+                <div class="doc-name" title="6226748.pdf">6226748.pdf</div>
+                <div class="meta-row">
+                  <span>Dist: <b>0.036</b></span>
+                  <span>1 pág(s)</span>
+                </div>
+                <div class="actions">
+                  <a href="4/20_6226748.pdf" target="_blank" class="btn-pdf">Ver PDF</a>
+                  <a href="4/20_6226748.png" target="_blank" class="btn-img">Imagem</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+</div>
+</body>
+</html>

@@ -1,40 +1,23 @@
-*.zip
+# Python / ambiente
 __pycache__/
 *.pyc
-data/*
-!data/clusters/
-!data/cluster-dino/
-!data/cluster-colpali/
-!data/clusters_comparison.html
-!data/cluster-faiss-vlm-k10/
-!data/cluster-faiss-dino-k10/
-!data/cluster-vlm-k10
-!data/cluster-dino-k10
-!data/clusters_k10_comparison.html
-!data/latent_vectors_full_3d.html
-!data/latent_vectors_dino_1_4m_3d.html
-!data/latent_vectors_colpali_1_4m_3d.html
-!data/latent_vectors_metric_learned_1_4m_3d.html
-!data/latent_vectors_sample_5pct_3d.html
-!data/demo_clusters_3d.html
-!data/pdfs_selecionados/manifest.json
-!data/pdfs_selecionados/relatorio_avaliacao.md
-!data/pdfs_selecionados/relatorio_avaliacao.json
-!data/pdfs_selecionados/relatorio_comparativo_pipelines.md
-*.pdf
-data/pgdata/
-logs/
-label_studio_data/
-ml_backend/models/*.joblib
-!ml_backend/models/metric_projection_head.pt
-!ml_backend/models/annotations_history.json
 .venv/
 .env
 .env.*
-validacao_uber
-validacao_nfs
-validacao_nfe
-validacao_agua
-validacao_energia
+
+# Dados brutos e intermediários (grandes ou regeneráveis)
+data/raw/
+data/processed/
+data/models/*.joblib
+*.zip
+*.pdf
+logs/
+*.out
+label_studio_data/
+
+# Site: miniaturas e pré-visualizações são versionadas (o deploy precisa delas).
+# Regenere com: uv run python scripts/web/build_site.py
+
+# Validação manual (áreas de trabalho fora do repo)
+validacao_*
 .venv_ocr
-web_app

@@ -1,5 +1,4 @@
-import pytest
-from scripts.evaluate_extraction import (
+from dados.extraction.evaluate_extraction import (
     clean_digits,
     parse_date_to_iso,
     clean_doc_number,

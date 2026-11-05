@@ -1,10 +1,9 @@
 import json
 from pathlib import Path
 import numpy as np
-import pytest
 
-from ml_backend.model import DocumentClassifierManager, DEFAULT_CLASSES
-from scripts.prepare_label_studio_tasks import (
+from dados.ml_backend.model import DocumentClassifierManager, DEFAULT_CLASSES
+from dados.labeling.prepare_label_studio_tasks import (
     generate_label_studio_xml_config,
     prepare_tasks,
 )

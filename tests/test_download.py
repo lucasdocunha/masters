@@ -1,7 +1,7 @@
 from pathlib import Path
-from scripts.download import get_json_zip_urls
-from scripts.download_pdfs import get_pdf_urls
-from scripts.download_url import URL_TEMPLATE
+from dados.ceap.download import get_json_zip_urls
+from dados.ceap.download_pdfs import get_pdf_urls
+from dados.ceap.download_url import URL_TEMPLATE
 
 
 def test_get_json_zip_urls() -> None:
