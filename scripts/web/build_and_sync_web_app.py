@@ -26,7 +26,9 @@ if not WEB_APP_DIR.exists():
     WEB_APP_DIR = BASE_DIR / "web_app"
 WEB_DATA_DIR = WEB_APP_DIR / "data"
 META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
-HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_PATH = DATA_DIR / "models" / "annotations_history.json"
+if not HISTORY_PATH.exists():
+    HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
 
 CLASS_PALETTE = {
     "Não Mapeado": {"hex": "#52525b", "rgb": [82, 82, 91]},
@@ -134,7 +136,10 @@ def main():
         history = json.load(f)
 
     # Mapear classes
-    known_classes = sorted(list(set(history.values())))
+    def get_lbl(val):
+        return val["label"] if isinstance(val, dict) else val
+
+    known_classes = sorted(list({get_lbl(v) for v in history.values() if get_lbl(v)}))
     class_to_id = {"Não Mapeado": 0}
     for idx, c in enumerate(known_classes, 1):
         class_to_id[c] = idx
@@ -144,7 +149,8 @@ def main():
 
     for i in range(n_docs):
         stem = Path(docs[i]["doc_name"]).stem
-        lbl = history.get(stem)
+        raw_val = history.get(stem)
+        lbl = get_lbl(raw_val) if raw_val else None
         if lbl and lbl in class_to_id:
             cid = class_to_id[lbl]
             class_ids[i] = cid
@@ -152,7 +158,7 @@ def main():
         else:
             class_counts["Não Mapeado"] += 1
 
-    print(f"   Anotações mapeadas: {sum(v for k, v in class_counts.items() if k != 'Não Mapeado'):,} em 15 classes")
+    print(f"   Anotações mapeadas: {sum(v for k, v in class_counts.items() if k != 'Não Mapeado'):,} em {len(known_classes)} classes")
 
     # 2. Gerar classes.bin.gz
     classes_raw = class_ids.tobytes()
@@ -173,6 +179,9 @@ def main():
     print("\n2. Empacotando coordenadas 3D compactadas para os 4 modelos...")
     for model_key, html_path in model_sources.items():
         dst_path = WEB_DATA_DIR / MODEL_METRICS[model_key]["file"]
+        if dst_path.exists():
+            print(f"   ✓ {dst_path.name} já existente ({dst_path.stat().st_size / (1024*1024):.2f} MB), mantendo.")
+            continue
         print(f"   Extraindo {model_key:10s} de {html_path.name}...")
         raw_coords = extract_coords_from_html(html_path)
         assert len(raw_coords) == n_docs * 3 * 4, f"Tamanho incorreto para {model_key}: {len(raw_coords)}"
