@@ -115,7 +115,7 @@ class Artifact:
 
 def scan_artifacts(
     data_dir: Path,
-    skip_dirs: set[str] = frozenset({"raw/pdfs", "pdfs_selecionados", "rendered_pages", "pgdata"}),
+    skip_dirs: set[str] = frozenset({"raw/pdfs", "pdfs_selecionados", "rendered_pages", "pgdata", "processed"}),
 ) -> list[Artifact]:
     """Lista arquivos de ``data_dir`` ignorando symlinks duplicados e PNGs (vão para as miniaturas)."""
     out: list[Artifact] = []

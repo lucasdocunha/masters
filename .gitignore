@@ -8,12 +8,39 @@ __pycache__/
 # Dados brutos e intermediários (grandes ou regeneráveis)
 data/raw/
 data/processed/
+data/pgdata/
+data/rendered_pages/
+data/pdfs_selecionados/
+data/cluster-*
+data/*.csv
+data/*.npy
+data/*.npz
+data/accepted_*.json
+data/rejected_*.json
+data/seeds_*.json
+data/*.backup*
+data/latent_vectors_*
+data/clusters_*.json
+data/distant_clusters.json
+data/full_dataset_centroids_sim90_analysis.json
+data/nfc_27k_ocr_checkpoint.json
+data/nfse_metric_confidence_distribution.json
+data/pdf_metadata_lookup.json
+data/pdf_to_year.json
+data/pending_cupom_fiscal_lotes.json
+data/danfe_confirmed_sample.json
+data/demo_*
+data/.tmp_*
+data/stem_to_url.json
 data/models/*.joblib
 *.zip
 *.pdf
 logs/
 *.out
+data/label_studio_*
 label_studio_data/
+ml_backend/models/
+web_app
 
 # Site: miniaturas e pré-visualizações são versionadas (o deploy precisa delas).
 # Regenere com: uv run python scripts/web/build_site.py
@@ -21,3 +48,7 @@ label_studio_data/
 # Validação manual (áreas de trabalho fora do repo)
 validacao_*
 .venv_ocr
+
+# Site: dependências e configuração local do Vercel
+web/node_modules/
+.vercel/

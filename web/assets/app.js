@@ -1,5 +1,5 @@
 // Inspeção CEAP — SPA estática, sem dependências no carregamento inicial.
-// Cada seção baixa só o JSON que usa; Plotly é carregado apenas na página de espaço latente.
+// Cada seção baixa só o JSON que usa; Three.js é carregado apenas na página de espaço latente.
 
 const PAGE = 50;
 const cache = new Map();
@@ -55,6 +55,7 @@ function markNav() {
   document.querySelectorAll(".side a").forEach((a) => {
     const target = a.getAttribute("href").replace(/^#\/?/, "").split("/")[0] || "";
     a.classList.toggle("on", target === h);
+    if (target === h) a.scrollIntoView({ block: "nearest", inline: "nearest" });
   });
 }
 
@@ -106,6 +107,7 @@ async function pageOverview() {
   const stat = (v, l) => `<div class="card stat"><b>${v}</b><span>${l}</span></div>`;
   app.innerHTML = `
     <h1>Visão geral</h1><p class="sub">Clusterizações, documentos e rotulagem do dataset CEAP.</p>
+    <a class="card feature" href="#/latente"><span><strong>Espaço latente</strong><span class="muted">Explore todos os documentos em uma nuvem 3D e abra cada um.</span></span><span class="btn btn--primary">Abrir espaço latente</span></a>
     <div class="grid">
       ${stat(fmt(s.environments), "ambientes de clusterização")}
       ${stat(fmt(s.clusters), "clusters no total")}
@@ -143,14 +145,14 @@ async function pageEnv(envId, cid) {
     const maxPct = Math.max(...env.clusters.map((c) => c.percent || 0), 1);
     app.innerHTML = `<div class="crumbs"><a href="#/ambientes">Ambientes</a> / ${esc(env.label)}</div>
       <h1>${esc(env.label)}</h1><p class="sub">K = ${env.k} · ${fmt(env.total_docs)} documentos · <code>${esc(env.id)}</code></p>
-      <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">
+      <div class="grid wide">
       ${env.clusters.map((c) => `
         <a class="card" href="#/ambientes/${esc(env.id)}/${esc(c.id)}">
-          <div style="display:flex;justify-content:space-between"><strong>Cluster ${esc(c.id)}</strong><span class="muted">${fmt(c.total)}</span></div>
-          <div class="bar" style="margin:8px 0"><i style="width:${((c.percent || 0) / maxPct * 100).toFixed(1)}%"></i></div>
+          <div class="card-head"><strong>Cluster ${esc(c.id)}</strong><span class="muted">${fmt(c.total)}</span></div>
+          <div class="bar" style="margin:12px 0"><i style="width:${((c.percent || 0) / maxPct * 100).toFixed(1)}%"></i></div>
           <div class="muted">${pct(c.percent)}${c.taxonomy ? ` · ${esc(c.taxonomy)}` : ""}</div>
-          ${c.dominant_subcota ? `<div class="muted" style="font-size:12px">${esc(c.dominant_subcota)} (${pct(c.dominant_pct)})</div>` : ""}
-          <div class="thumbs" style="grid-template-columns:repeat(4,1fr)">${c.samples.filter((s) => s.thumb).slice(0, 4)
+          ${c.dominant_subcota ? `<div class="muted small">${esc(c.dominant_subcota)} (${pct(c.dominant_pct)})</div>` : ""}
+          <div class="thumbs">${c.samples.filter((s) => s.thumb).slice(0, 4)
             .map((s) => `<img loading="lazy" decoding="async" src="${esc(s.thumb)}" alt="${esc(s.doc_name)}">`).join("")}</div>
         </a>`).join("")}</div>`;
     return;
@@ -201,81 +203,19 @@ async function pageDocs() {
   draw();
 }
 
-const hexToRgb = (hex) => [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
-
+let leaveLatent = null;
 async function pageLatent() {
   setTitle("Espaço latente");
-  const ds = await getDataset();
-  const palette = ds.palette;
-  const modelIds = Object.keys(ds.models);
-  let model = modelIds.includes("metric") ? "metric" : modelIds[0];
-  const hidden = new Set(); // classes ocultas
-  const byClass = {};
-  ds.docs.forEach((d, i) => ((byClass[d.class] ??= []).push(i)));
-  const classNames = Object.keys(byClass).sort();
-  app.innerHTML = `<h1>Espaço latente</h1>
-    <p class="sub">Projeção 3D de ${fmt(ds.docs.length)} documentos (amostra anotada + candidatos), uma por espaço de representação.</p>
-    <div class="toolbar"><select id="model">${modelIds.map((m) => `<option value="${m}" ${m === model ? "selected" : ""}>${esc(ds.models[m].name)} · ${ds.models[m].dims}-D</option>`).join("")}</select>
-      <span class="muted" id="model-desc"></span></div>
-    <div class="legend" id="legend"></div><div id="plot"><p class="muted" style="padding:20px">Carregando visualização…</p></div>`;
-  const legend = app.querySelector("#legend");
-  const drawLegend = () => {
-    legend.innerHTML = classNames.map((c) => {
-      const p = Object.values(palette).find((v) => v.name === c) || { hex: "#888", count: byClass[c].length };
-      return `<label><input type="checkbox" data-c="${esc(c)}" ${hidden.has(c) ? "" : "checked"}><span class="dot" style="background:${p.hex}"></span>${esc(c)} <span class="muted">${fmt(byClass[c].length)}</span></label>`;
-    }).join("");
-    legend.querySelectorAll("input").forEach((cb) => cb.addEventListener("change", () => {
-      cb.checked ? hidden.delete(cb.dataset.c) : hidden.add(cb.dataset.c);
-      plot();
-    }));
-  };
-  drawLegend();
-  // Plotly é carregado sob demanda (não bloqueia o restante do site).
-  try {
-    await ensurePlotly();
-  } catch (err) {
-    app.querySelector("#plot").innerHTML = `<div class="notice">${esc(err.message)} — verifique a conexão com cdn.plot.ly.</div>`;
-    return;
-  }
-  const plot = () => {
-    const xyz = ds.coords[model];
-    const traces = classNames.filter((c) => !hidden.has(c)).map((c) => {
-      const idx = byClass[c];
-      const p = Object.values(palette).find((v) => v.name === c) || { hex: "#888" };
-      return {
-        type: "scatter3d", mode: "markers", name: c,
-        x: idx.map((i) => xyz[i][0]), y: idx.map((i) => xyz[i][1]), z: idx.map((i) => xyz[i][2]),
-        text: idx.map((i) => `${ds.docs[i].name} · ${ds.docs[i].fornecedor ?? ""}`),
-        hovertemplate: "%{text}<extra>" + esc(c) + "</extra>",
-        marker: { size: 2.2, color: p.hex, opacity: 0.85 },
-      };
-    });
-    window.Plotly.react("plot", traces, {
-      margin: { l: 0, r: 0, t: 0, b: 0 }, paper_bgcolor: "rgba(0,0,0,0)", showlegend: false,
-      scene: { xaxis: { showticklabels: false, title: "" }, yaxis: { showticklabels: false, title: "" }, zaxis: { showticklabels: false, title: "" } },
-    }, { responsive: true, displaylogo: false });
-    app.querySelector("#model-desc").textContent = ds.models[model].description || "";
-  };
-  app.querySelector("#model").addEventListener("change", (e) => { model = e.target.value; plot(); });
-  app.querySelector("#plot").innerHTML = "";
-  plot();
-}
-
-let plotlyPromise = null;
-function ensurePlotly() {
-  if (window.Plotly) return Promise.resolve();
-  plotlyPromise ??= new Promise((res, rej) => {
-    const s = document.createElement("script");
-    s.src = "https://cdn.plot.ly/plotly-2.35.2.min.js";
-    s.onload = res; s.onerror = () => rej(new Error("Falha ao carregar Plotly"));
-    document.head.appendChild(s);
-  });
-  return plotlyPromise;
+  app.classList.add("is-latent");
+  const [{ mountLatent }, index] = await Promise.all([import("./latent.js"), load("data/latent/index.json")]);
+  if (!location.hash.startsWith("#/latente")) return;
+  leaveLatent = mountLatent(app, index, getDataset);
 }
 
 async function pageLabeling() {
   setTitle("Tarefas");
-  const [m, ds] = await Promise.all([getModels(), getDataset()]);
+  const [m, ds, latent] = await Promise.all([getModels(), getDataset(), load("data/latent/index.json")]);
+  const hexOf = Object.fromEntries(latent.classes.map((c) => [c.name, c.hex]));
   const total = m.annotations.total || 1;
   const rows = Object.entries(m.annotations.by_class);
   const max = Math.max(1, ...rows.map(([, v]) => v));
@@ -291,7 +231,7 @@ async function pageLabeling() {
       <td><div class="bar"><i style="width:${(v / max * 100).toFixed(1)}%"></i></div></td></tr>`).join("")}</tbody></table></div>
     <h2>Documentos por classe (dataset de rotulagem)</h2>
     <div class="tbl-wrap"><table><thead><tr><th>Classe</th><th class="num">Documentos</th></tr></thead><tbody>
-    ${counts.map((p) => `<tr><td><span class="dot" style="background:${p.hex}"></span>${esc(p.name)}</td><td class="num">${fmt(p.count)}</td></tr>`).join("")}</tbody></table></div>`;
+    ${counts.map((p) => `<tr><td><span class="dot" style="background:${esc(hexOf[p.name] ?? p.hex)}"></span>${esc(p.name)}</td><td class="num">${fmt(p.count)}</td></tr>`).join("")}</tbody></table></div>`;
 }
 
 async function pageResults() {
@@ -311,11 +251,11 @@ async function pageModels() {
   setTitle("Modelos");
   const [m, ds] = await Promise.all([getModels(), getDataset()]);
   app.innerHTML = `<h1>Modelos testados</h1><p class="sub">Espaços de representação comparados e artefatos treinados.</p>
-    <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(240px,1fr))">
+    <div class="grid wide">
     ${Object.values(ds.models).map((x) => `<div class="card"><strong>${esc(x.name)}</strong>
       <div class="muted">${esc(x.badge || "")} · ${esc(x.type || "")}</div>
-      <p class="muted" style="font-size:12px">${esc(x.description || "")}</p>
-      <div class="muted" style="font-size:12px">inter: ${esc(x.inter_dist ?? "—")} · intra: ${esc(x.intra_sim ?? "—")}</div></div>`).join("")}</div>
+      <p class="muted small">${esc(x.description || "")}</p>
+      <div class="muted small">inter: ${esc(x.inter_dist ?? "—")} · intra: ${esc(x.intra_sim ?? "—")}</div></div>`).join("")}</div>
     <h2>Artefatos de modelo</h2>
     <div class="tbl-wrap"><table><thead><tr><th>Arquivo</th><th>Tipo</th><th class="num">Tamanho</th></tr></thead><tbody>
     ${m.artifacts.map((a) => `<tr><td><code>${esc(a.name)}</code></td><td>${esc(a.kind)}</td><td class="num">${bytes(a.size)}</td></tr>`).join("")}</tbody></table></div>`;
@@ -405,7 +345,13 @@ const ROUTES = [
 ];
 
 async function route() {
-  const path = location.hash.replace(/^#\/?/, "").replace(/\/+$/, "");
+  let path = location.hash.replace(/^#\/?/, "").replace(/\/+$/, "");
+  if (!path && location.pathname && location.pathname !== "/") {
+    path = location.pathname.replace(/^\/+/, "").replace(/\/+$/, "");
+  }
+  leaveLatent?.();
+  leaveLatent = null;
+  app.classList.remove("is-latent");
   markNav();
   window.scrollTo({ top: 0 });
   for (const [re, fn] of ROUTES) {
