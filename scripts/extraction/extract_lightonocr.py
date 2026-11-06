@@ -5,7 +5,7 @@ Suporta múltiplas páginas por documento, aceleração dual-GPU via SLURM
 e persistência incremental com commit a cada lote.
 """
 
-from dados.config import PDF_DIR, ROOT_DIR
+from dados.config import PDF_DIR, ROOT_DIR, MODELS_DIR
 import argparse
 import io
 import os
@@ -45,58 +45,106 @@ def get_pending_documents(
     years: Optional[List[int]] = None,
     sample_only: bool = False,
     limit: Optional[int] = None,
+    prioritize_class: Optional[str] = None,
+    only_class: Optional[str] = None,
+    annotations_file: Optional[Path] = None,
 ) -> List[dict]:
     """Consulta documentos pendentes que ainda não possuem texto completo extraído."""
-    with conn.cursor() as cur:
-        query = """
-            SELECT d.ide_documento, d.ano, d.caminho_arquivo, d.num_paginas
-            FROM documento d
-            LEFT JOIN documento_texto_completo t 
-                ON d.ide_documento = t.ide_documento 
-               AND t.modelo = %s
-            WHERE t.ide_documento IS NULL
-              AND d.status IN ('baixado', 'processado')
-        """
-        params: List[Any] = [MODEL_ID]
+    target_class = only_class or prioritize_class
+    class_ids: List[int] = []
+    if target_class:
+        target_class = target_class.strip().lower()
+        if annotations_file and annotations_file.exists():
+            import json
 
-        if num_gpus > 1:
-            query += " AND (d.ide_documento %% %s) = %s"
-            params.extend([num_gpus, gpu_id])
+            with open(annotations_file, "r") as f:
+                annotations = json.load(f)
+            class_ids = [
+                int(k[:-4] if k.endswith(".pdf") else k)
+                for k, v in annotations.items()
+                if (v["label"] if isinstance(v, dict) else str(v)).strip().lower() == target_class
+            ]
+            print(
+                f"[Worker GPU-{gpu_id}] Carregados {len(class_ids):,} IDs anotados para a classe '{target_class}' de {annotations_file.name}"
+            )
+        else:
+            print(f"[Worker GPU-{gpu_id}] AVISO: Arquivo de anotações não encontrado em {annotations_file}")
 
-        if years:
-            placeholders = ",".join(["%s"] * len(years))
-            query += f" AND d.ano IN ({placeholders})"
-            params.extend(years)
+    def _query_docs(ids_filter: Optional[List[int]] = None, exclude_ids: bool = False) -> List[dict]:
+        with conn.cursor() as cur:
+            query = """
+                SELECT d.ide_documento, d.ano, d.caminho_arquivo, d.num_paginas
+                FROM documento d
+                LEFT JOIN documento_texto_completo t 
+                    ON d.ide_documento = t.ide_documento 
+                   AND t.modelo = %s
+                WHERE t.ide_documento IS NULL
+                  AND d.status IN ('baixado', 'processado')
+            """
+            params: List[Any] = [MODEL_ID]
 
-        query += " ORDER BY d.ano DESC, d.ide_documento ASC"
+            if ids_filter:
+                if exclude_ids:
+                    query += " AND NOT (d.ide_documento = ANY(%s))"
+                else:
+                    query += " AND d.ide_documento = ANY(%s)"
+                params.append(ids_filter)
 
-        if limit:
-            query += f" LIMIT {limit}"
+            if num_gpus > 1:
+                query += " AND (d.ide_documento %% %s) = %s"
+                params.extend([num_gpus, gpu_id])
 
-        cur.execute(query, params)
-        rows = cur.fetchall()
+            if years:
+                placeholders = ",".join(["%s"] * len(years))
+                query += f" AND d.ano IN ({placeholders})"
+                params.extend(years)
 
-        docs = [
-            {
-                "ide_documento": r[0],
-                "ano": r[1],
-                "caminho_arquivo": r[2],
-                "num_paginas": r[3] or 1,
-            }
-            for r in rows
-        ]
+            query += " ORDER BY d.ano DESC, d.ide_documento ASC"
 
-        if sample_only:
-            # Filtrar apenas os que estão no sample_5pct se solicitado
-            sample_file = (ROOT_DIR / "data/processed/latent_vectors_sample_5pct_metadata.json")
-            if sample_file.exists():
-                import json
+            cur.execute(query, params)
+            rows = cur.fetchall()
+            return [
+                {
+                    "ide_documento": r[0],
+                    "ano": r[1],
+                    "caminho_arquivo": r[2],
+                    "num_paginas": r[3] or 1,
+                }
+                for r in rows
+            ]
 
-                with open(sample_file, "r") as f:
-                    sample_stems = set(Path(d["doc_name"]).stem for d in json.load(f).get("documents", []))
-                docs = [d for d in docs if str(d["ide_documento"]) in sample_stems]
+    if only_class:
+        if not class_ids:
+            print(f"[Worker GPU-{gpu_id}] Nenhum documento encontrado para a classe '{only_class}'.")
+            return []
+        docs = _query_docs(ids_filter=class_ids, exclude_ids=False)
+        print(f"[Worker GPU-{gpu_id}] Documentos pendentes da classe '{only_class}': {len(docs):,}")
+    elif prioritize_class and class_ids:
+        prioritized_docs = _query_docs(ids_filter=class_ids, exclude_ids=False)
+        remaining_docs = _query_docs(ids_filter=class_ids, exclude_ids=True)
+        print(
+            f"[Worker GPU-{gpu_id}] Carregados {len(prioritized_docs):,} prioritários ('{prioritize_class}') + {len(remaining_docs):,} restantes (Total: {len(prioritized_docs) + len(remaining_docs):,})"
+        )
+        docs = prioritized_docs + remaining_docs
+    else:
+        docs = _query_docs()
 
-        return docs
+    if sample_only:
+        # Filtrar apenas os que estão no sample_5pct se solicitado
+        sample_file = (ROOT_DIR / "data/processed/latent_vectors_sample_5pct_metadata.json")
+        if not sample_file.exists():
+            sample_file = (ROOT_DIR / "data/latent_vectors_sample_5pct_metadata.json")
+        if sample_file.exists():
+            import json
+
+            with open(sample_file, "r") as f:
+                sample_stems = set(Path(d["doc_name"]).stem for d in json.load(f).get("documents", []))
+            docs = [d for d in docs if str(d["ide_documento"]) in sample_stems]
+
+    if limit:
+        docs = docs[:limit]
+
+    return docs
 
 
 def extract_page_text(
@@ -104,23 +152,39 @@ def extract_page_text(
     processor: AutoProcessor,
     image: Image.Image,
     device: str,
-    max_new_tokens: int = 1536,
 ) -> str:
-    """Extrai texto formatado em markdown de uma imagem de página."""
-    conversation = [{"role": "user", "content": [{"type": "image", "image": image}]}]
-    prompt = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
-    inputs = processor(text=[prompt], images=[image], return_tensors="pt").to(device)
+    """Extrai texto de uma única página renderizada em imagem via LightOnOCR."""
+    messages = [
+        {
+            "role": "user",
+            "content": [
+                {"type": "image", "image": image},
+                {"type": "text", "text": "Extract all text from this document image."},
+            ],
+        }
+    ]
+
+    prompt = processor.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True,
+    )
+
+    inputs = processor(
+        text=[prompt],
+        images=[image],
+        return_tensors="pt",
+    ).to(device)
 
     with torch.inference_mode():
-        output_ids = model.generate(
+        generated_ids = model.generate(
             **inputs,
-            max_new_tokens=max_new_tokens,
+            max_new_tokens=2048,
             do_sample=False,
-            temperature=None,
-            top_p=None,
         )
 
-    gen_ids = output_ids[0, inputs["input_ids"].shape[1] :]
+    prompt_len = inputs["input_ids"].shape[1]
+    gen_ids = generated_ids[:, prompt_len:]
     text = processor.decode(gen_ids, skip_special_tokens=True).strip()
     return text
 
@@ -133,9 +197,17 @@ def main():
     parser.add_argument("--dpi", type=int, default=150, help="DPI para renderização do PDF (default: 150)")
     parser.add_argument("--limit", type=int, default=None, help="Limite máximo de documentos para este job")
     parser.add_argument("--years", type=int, nargs="+", default=None, help="Filtrar por anos específicos")
-    parser.add_argument("--sample-only", action="store_true", help="Processar apenas a amostra de 5% (70k docs)")
+    parser.add_argument("--sample-only", action="store_true", help="Processar apenas a amostra de 5%% (70k docs)")
     parser.add_argument("--db-url", type=str, default=DEFAULT_DB_URL, help="URL de conexão PostgreSQL")
     parser.add_argument("--pdf-dir", type=Path, default=DEFAULT_PDF_DIR, help="Diretório dos PDFs")
+    parser.add_argument("--prioritize-class", type=str, default=None, help="Priorizar documentos de uma classe anotada específica (ex: nfse)")
+    parser.add_argument("--only-class", type=str, default=None, help="Processar APENAS documentos de uma classe anotada específica (ex: nfse)")
+    parser.add_argument(
+        "--annotations-file",
+        type=Path,
+        default=MODELS_DIR / "annotations_history.json",
+        help="Caminho do arquivo annotations_history.json",
+    )
     args = parser.parse_args()
 
     device = f"cuda:{args.gpu_id}" if torch.cuda.is_available() else "cpu"
@@ -164,6 +236,9 @@ def main():
         years=args.years,
         sample_only=args.sample_only,
         limit=args.limit,
+        prioritize_class=args.prioritize_class,
+        only_class=args.only_class,
+        annotations_file=args.annotations_file,
     )
 
     print(f"Documentos pendentes encontrados para este worker: {len(pending_docs):,}")
