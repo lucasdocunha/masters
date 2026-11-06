@@ -1,6 +1,5 @@
 from pathlib import Path
-import json
-from scripts.export_cluster_samples import generate_html_gallery
+from dados.visualization.export_cluster_samples import generate_html_gallery
 
 
 def test_generate_html_gallery(tmp_path: Path):

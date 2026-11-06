@@ -2,7 +2,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from scripts.run_faiss_kmeans import (
+from dados.clustering.run_faiss_kmeans import (
     infer_cluster_taxonomy,
     run_faiss_spherical_kmeans,
     analyze_clusters,

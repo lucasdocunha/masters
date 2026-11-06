@@ -2,15 +2,15 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# Instalar dependências básicas
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt /app/
+COPY ml_backend/requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY model.py app.py /app/
+# Código do serviço vive em src/dados/ml_backend (contexto de build = raiz do repo)
+COPY src/dados/ml_backend/model.py src/dados/ml_backend/app.py /app/
 
 EXPOSE 9090
 

@@ -1,4 +1,4 @@
-from scripts.select_eval_sample import format_expected_record
+from dados.labeling.select_eval_sample import format_expected_record
 
 
 def test_format_expected_record():

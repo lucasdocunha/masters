@@ -1,228 +1,145 @@
-# CEAP Document Classification & Active Learning Pipeline
+# CEAP · Classificação, clusterização e rotulagem ativa
 
-Repositório de pesquisa de Mestrado dedicado à classificação multimodal, agrupamento visual e rotulagem ativa (Active Learning) de comprovantes de despesas públicas da **Cota para o Exercício da Atividade Parlamentar (CEAP)** da Câmara dos Deputados (2014–2026).
+Pesquisa de Mestrado sobre comprovantes fiscais da **Cota para o Exercício da Atividade Parlamentar (CEAP)** da Câmara dos Deputados (2014–2026): download, representação multimodal, clusterização e rotulagem ativa com Label Studio.
 
----
-
-## 1. Estatísticas Oficiais do Dataset CEAP
-
-O dataset reúne os comprovantes fiscais digitalizados (PDFs) submetidos por deputados federais e disponibilizados no Portal de Dados Abertos da Câmara dos Deputados.
-
-### Visão Geral Consolidada
-
-| Métrica | Valor Consolidado |
-| :--- | :--- |
-| **Período Coberto** | **2014 a 2026** (13 anos) |
-| **Total de PDFs Esperados** | **1.406.013** documentos |
-| **Total de PDFs Baixados com Sucesso** | **1.402.334** documentos (**99,74%**) |
-| **Total de Falhas no Download (Ausentes)** | **3.679** documentos (**0,26%**) |
-| **Espaço Total em Disco Ocupado** | **274 GB** (armazenado em `/media/ssd2/datasets/CEAP/`) |
-| **Páginas por Documento** | Mín: **0** \| Média: **1,49** \| Mediana: **1,00** \| Máx: **88** |
-| **Tamanho por Arquivo** | Mín: **15 B** \| Média: **202,3 KB** \| Mediana: **122,2 KB** \| Máx: **1,37 MB** |
-| **PDFs Válidos e Renderizáveis (OK)** | **1.402.313** (**99,9985%** dos baixados) |
-| **PDFs Protegidos por Senha** | **1** único arquivo (`6946208.pdf`) |
-| **PDFs Corrompidos / 0 páginas** | **10** arquivos |
-| **Arquivos Inválidos (Não-PDF)** | **10** arquivos (apenas trailer sem cabeçalho `%PDF-`) |
-| **Falhas de Renderização de Operadores** | **0** (100% dos válidos renderizam perfeitamente) |
+> Estatísticas do dataset, taxonomia de classes e benchmark de extração: [`docs/DATASET_CEAP.md`](docs/DATASET_CEAP.md).
 
 ---
 
-### Quantidade de Documentos e Taxa de Sucesso por Ano
+## Estrutura
 
-| Ano | Total Esperado | Baixados com Sucesso | Falhas / Ausentes | Taxa de Sucesso | Taxa de Falha |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| **2014** | 73.376 | 73.326 | 50 | **99,93%** | 0,07% |
-| **2015** | 189.280 | 188.539 | 741 | **99,61%** | 0,39% |
-| **2016** | 182.161 | 182.067 | 94 | **99,95%** | 0,05% |
-| **2017** | 174.326 | 172.223 | 2.103 | **98,79%** | 1,21% |
-| **2018** | 87.994 | 87.938 | 56 | **99,94%** | 0,06% |
-| **2019** | 105.256 | 105.194 | 62 | **99,94%** | 0,06% |
-| **2020** | 77.937 | 77.856 | 81 | **99,90%** | 0,10% |
-| **2021** | 91.160 | 91.040 | 120 | **99,87%** | 0,13% |
-| **2022** | 82.768 | 82.696 | 72 | **99,91%** | 0,09% |
-| **2023** | 91.703 | 91.654 | 49 | **99,95%** | 0,05% |
-| **2024** | 95.780 | 95.649 | 131 | **99,86%** | 0,14% |
-| **2025** | 91.583 | 91.509 | 74 | **99,92%** | 0,08% |
-| **2026** | 62.689 | 62.643 | 46 | **99,93%** | 0,07% |
-| **TOTAL** | **1.406.013** | **1.402.334** | **3.679** | **99,74%** | **0,26%** |
-
----
-
-### Estatísticas de Número de Páginas
-
-A imensa maioria dos comprovantes é de **página única** (cupons fiscais, recibos, DANFEs, passagens aéreas e faturas sintéticas).
-
-| Ano | Mínimo | Média | Mediana | Máximo |
-| :---: | :---: | :---: | :---: | :---: |
-| **2014** | 1 | 1,18 | 1 | 17 |
-| **2015** | 1 | 1,26 | 1 | 68 |
-| **2016** | 0 | 1,33 | 1 | 40 |
-| **2017** | 0 | 1,46 | 1 | 36 |
-| **2018** | 0 | 1,29 | 1 | 23 |
-| **2019** | 1 | 1,52 | 1 | 75 |
-| **2020** | 1 | 1,58 | 1 | 88 |
-| **2021** | 1 | 1,65 | 1 | 33 |
-| **2022** | 1 | 1,63 | 1 | 44 |
-| **2023** | 0 | 1,64 | 1 | 56 |
-| **2024** | 1 | 1,68 | 1 | 50 |
-| **2025** | 1 | 1,71 | 1 | 58 |
-| **2026** | 0 | 2,05 | 1 | 70 |
-| **GERAL** | **0** | **1,49** | **1** | **88** |
-
----
-
-### Estatísticas de Tamanho de Arquivo
-
-| Ano | Mínimo | Média | Mediana | Máximo |
-| :---: | :---: | :---: | :---: | :---: |
-| **2014** | 5,8 KB | 119,1 KB | 62,4 KB | 1,00 MB |
-| **2015** | 2,2 KB | 125,5 KB | 64,2 KB | 1,00 MB |
-| **2016** | 71 B | 130,0 KB | 69,9 KB | 1,00 MB |
-| **2017** | 70 B | 156,8 KB | 88,2 KB | 1,00 MB |
-| **2018** | 15 B | 161,5 KB | 91,1 KB | 1,00 MB |
-| **2019** | 15 B | 206,2 KB | 137,1 KB | 1,00 MB |
-| **2020** | 1,2 KB | 240,9 KB | 164,7 KB | 1,00 MB |
-| **2021** | 1,2 KB | 269,7 KB | 196,1 KB | 1,00 MB |
-| **2022** | 1,3 KB | 294,0 KB | 235,5 KB | 1,37 MB |
-| **2023** | 1,5 KB | 278,6 KB | 224,4 KB | 1,00 MB |
-| **2024** | 1,5 KB | 282,5 KB | 234,8 KB | 1,00 MB |
-| **2025** | 1,2 KB | 284,3 KB | 224,5 KB | 1,00 MB |
-| **2026** | 3,2 KB | 295,3 KB | 218,9 KB | 1,00 MB |
-| **GERAL** | **15 B** | **202,3 KB** | **122,2 KB** | **1,37 MB** |
-
-> **Nota:** Para o detalhamento completo dos 21 arquivos anômalos identificados (10 quebrados, 10 sem cabeçalho e 1 com senha), consulte [DATASET_CEAP.md](DATASET_CEAP.md).
-
----
-
-## 2. Taxonomia de Classes Documentais
-
-A taxonomia foi definida a partir da análise da distribuição empírica dos dados e das subcotas da Câmara:
-
-| Tecla / Atalho | Classe | Descrição |
-| :---: | :--- | :--- |
-| **`1`** | `nfc` | Nota Fiscal de Consumidor Eletrônica (NFC-e / Cupom Fiscal de posto, alimentação, etc.) |
-| **`2`** | `nfe` | Nota Fiscal Eletrônica mercantil (NF-e / DANFE padrão A4 com grade de produtos) |
-| **`3`** | `nfse` | Nota Fiscal de Serviços Eletrônica municipal (NFS-e de consultoria, assessoria, serviços) |
-| **`4`** | `recibo` | Recibos em geral (táxi, pedágio, estacionamento, locação simples) |
-| **`5`** | `emails` | E-mails, trocas de mensagens e correspondências anexadas |
-| **`6`** | `energia` | Faturas e contas de energia elétrica / luz |
-| **`7`** | `agua` | Faturas e contas de água e saneamento básico |
-| **`8`** | `boleto` | Boletos bancários de cobrança e compensação |
-| **`9`** | `fatura_cartao_credito` | Faturas e demonstrativos mensais de cartão de crédito |
-| **`0`** | `uber` | Recibos e comprovantes de viagens de aplicativo (Uber, 99, etc.) |
-| **`a`** | `aviao` | Passagens aéreas, bilhetes e cartões de embarque (GOL, LATAM, Azul) |
-| **`c`** | `fatura_internet_celular` | Faturas e contas de telefonia celular, fixa e pacotes de internet |
-| **`i`** | `invoice` | Invoices comerciais internacionais e faturas em moeda estrangeira |
-| **`f`** | `fatura` | Faturas comerciais de cobrança geral, locação de veículos e serviços |
-
----
-
-## 3. Arquitetura do Pipeline
-
-```mermaid
-flowchart TD
-    A["PDFs Oficiais CEAP<br>(1.402.334 docs / 274 GB)"] --> B["PyMuPDF<br>Renderização 150 DPI"]
-    B --> C["Embeddings Multimodais<br>DINOv2 (384-D) + ColPali VLM (128-D) = 512-D"]
-    C --> D["FAISS K-Means Clustering &<br>Active Learning Sampling"]
-    D --> E["Label Studio<br>(Interface de Rotulagem Rápida)"]
-    E -- "Webhook (a cada anotação)" --> F["ML Backend (FastAPI)<br>Retreino Contínuo a cada 50 rótulos"]
-    F -- "Predições em Lote" --> E
+```
+masters-data/
+├── src/dados/          biblioteca importável (testada)
+│   ├── config.py       caminhos centrais (única fonte de verdade)
+│   ├── ceap/           download dos metadados e dos PDFs
+│   ├── clustering/     K-Means / FAISS, merge de clusters
+│   ├── extraction/     avaliação de extração, cliente Gemini
+│   ├── labeling/       tarefas do Label Studio, amostragem
+│   ├── visualization/  projeções 3D e galerias
+│   ├── metric_learning/ ArcFace / projeção métrica
+│   ├── database/       importação no PostgreSQL
+│   ├── ml_backend/     serviço FastAPI de rotulagem reativa
+│   └── web/            gerador de dados do site de inspeção
+├── scripts/            entry points (um por etapa)
+│   ├── clustering/     geração de espaços latentes e jobs Slurm
+│   ├── extraction/     extração com LightOnOCR / VLM e benchmarks
+│   ├── validation/     lotes de validação manual (batches/ e triage/)
+│   ├── labeling/       preparação do dataset de rotulagem
+│   └── web/            site, dados do espaço latente e deploy (Vercel)
+├── tests/              testes unitários (pytest)
+├── data/               dados em camadas (ver abaixo)
+├── web/                site estático de inspeção
+├── ml_backend/         Dockerfile e requirements do serviço de rotulagem
+├── sql/                esquema do banco
+└── docs/               documentação do dataset e figuras
 ```
 
-### Componentes Principais:
-1. **Representação Densa (512-D):**
-   * **DINOv2 (Vision Transformer):** 384 dimensões capturando layout visual e geometria.
-   * **ColPali (Vision-Language Model):** 128 dimensões projetadas para relevância semântica multimodal.
-2. **ML Backend Reativo (FastAPI):**
-   * Classificador linear leve (`LogisticRegression`) com tempo de retreino inferior a 0,5 segundo.
-   * **Retreino Contínuo:** Retreina automaticamente a cada **50 novas anotações** submetidas no Label Studio.
-   * **Sincronização Ativa de Predições:** Após o retreino, atualiza as predições de todas as tarefas pendentes na fila em segundo plano.
-3. **Active Learning & Priorização:**
-   * Script de amostragem por distância ao centroide do cluster (permite explorar regiões de alta incerteza ou focar em clusters limítrofes).
-   * Suporte à validação em lote através de links simbólicos com ordenação por confiança.
+**Regra:** o que é importado por testes ou por outro módulo fica em `src/dados/`; o que é executado diretamente fica em `scripts/`.
+
+### Camadas de dados
+
+| Pasta | Conteúdo | Versionado |
+| :--- | :--- | :---: |
+| `data/raw/` | `Ano-*.json(.zip)` da Câmara, amostra de PDFs | não |
+| `data/processed/` | embeddings, `.npz`, tarefas do Label Studio | não |
+| `data/models/` | histórico de anotações, cabeça de projeção métrica | parcial |
+| `data/labeling/` | decisões aceitas por classe | não |
+| `data/reports/` | clusterizações (`clusters/`) e visualizações 3D (`visualizations/`) | sim |
+| `data/evaluation/` | relatórios de avaliação e benchmark | sim |
+
+Os ~1,4 M PDFs ficam fora do repositório, em `CEAP_PDF_DIR` (padrão `/media/ssd2/datasets/CEAP`). As pastas de validação manual vão para `CEAP_DESKTOP_DIR` (padrão `~/Desktop`).
 
 ---
 
-## 4. Executando Localmente
+## Instalação
 
-### Pré-requisitos
-* Python 3.12+ (gerenciado via `uv`)
-* Docker e Docker Compose
+Pré-requisito: [`uv`](https://docs.astral.sh/uv/).
 
-### Subindo os Serviços (Label Studio + ML Backend)
 ```bash
+uv sync --all-groups                 # núcleo + testes
+uv sync --all-groups --all-extras    # tudo (torch, OCR, Gemini, API)
+```
+
+Os extras são opcionais: `pdf`, `ocr`, `ml`, `viz`, `gemini`, `api`.
+
+---
+
+## Comandos principais
+
+```bash
+# Testes
+uv run pytest
+
+# Download dos metadados (Ano-*.json.zip, 2014–2026) para data/raw/
+uv run ceap-download-metadata
+
+# Download dos PDFs listados nos JSONs (requer armazenamento externo)
+CEAP_PDF_DIR=/caminho/para/pdfs uv run ceap-download-pdfs
+
+# Gerar os dados do site e abri-lo localmente
+uv run python scripts/web/build_site.py
+cd web && python3 -m http.server 8000     # http://localhost:8000
+
+# Clusterização em cluster Slurm
+bash scripts/clustering/submit_cluster_jobs.sh
+
+# Serviço de rotulagem (Label Studio + ML backend)
 docker compose -f docker-compose.labelstudio.yml up -d
 ```
 
-* **Label Studio:** `http://localhost:8085` (Login: `admin@ceap.com` / `ceap-admin-2026`)
-* **ML Backend:** `http://localhost:9090` (Healthcheck: `GET /health`)
+Os scripts devem ser executados a partir da raiz do repositório (os caminhos relativos dependem disso).
 
-### Testes Automatizados
-```bash
-uv run pytest tests/test_ml_backend.py
+---
+
+## Site de inspeção (`web/`)
+
+Site estático, sem framework nem etapa de build. Mostra:
+
+- **Visão geral** — contagens consolidadas e ambientes.
+- **Ambientes** — cada clusterização, seus clusters, subcotas dominantes e miniaturas dos documentos.
+- **Documentos** — busca e filtro por classe nos 25.716 documentos do dataset de rotulagem.
+- **Espaço latente** — projeção 3D (Plotly, carregado sob demanda) nos quatro espaços: DINOv2, ColPali, combinado e métrico.
+- **Tarefas** — anotações por classe e status do dataset.
+- **Resultados** — relatórios de avaliação e benchmark.
+- **Modelos** — espaços comparados e artefatos treinados.
+- **Logs** — últimas 200 linhas de `slurm-*.out` e `*.log`.
+- **Arquivos** — catálogo de todos os artefatos, com pré-visualização de JSON, CSV e Markdown.
+
+### Desempenho
+
+O site foi desenhado para carregar pouco e sob demanda:
+
+| Item | Tamanho aproximado |
+| :--- | ---: |
+| `data/manifest.json` + JSONs de ambientes/modelos/logs | ~200 KB |
+| Miniaturas WebP (650 documentos, 360 px) | ~8 MB |
+| Dataset do espaço latente (`plotly_dataset.json.gz`) | 1,8 MB |
+| Plotly.js (só na página de espaço latente) | CDN |
+
+As miniaturas são geradas a partir dos PNGs originais (187 MB). Os bins de coordenadas de 1,34 M pontos (~60 MB) saíram do site; continuam em `data/processed/web_legacy/`.
+
+Para publicar no Vercel: `uv run python scripts/web/deploy_to_vercel.py`.
+
+---
+
+## Pipeline
+
+```mermaid
+flowchart TD
+    A["PDFs CEAP<br>(1,4 M docs · 274 GB)"] --> B["PyMuPDF<br>renderização 150 DPI"]
+    B --> C["Embeddings<br>DINOv2 (384-D) + ColPali (128-D)"]
+    C --> D["Métrica (ArcFace 128-D)<br>e K-Means / FAISS"]
+    D --> E["Label Studio<br>rotulagem ativa"]
+    E -- "webhook a cada anotação" --> F["ML backend (FastAPI)<br>retreino a cada 50 rótulos"]
+    F -- "predições em lote" --> E
+    D --> G["Site de inspeção<br>scripts/web/build_site.py"]
 ```
 
 ---
 
-## 5. Benchmark Comparativo de Extração de Dados Fiscais (1.300 Documentos)
+## Desenvolvimento
 
-Para validar a viabilidade de pipelines soberanos (100% locais e em hardware acadêmico) em comparação com soluções líderes de nuvem proprietárias, foi conduzido um benchmark exaustivo avaliando a extração dos 5 campos fiscais essenciais em **1.300 documentos** do CEAP (amostra estratificada com **100 documentos por ano de 2014 a 2026**).
-
-O Ground Truth foi derivado dos registros de prestação de contas oficiais da Câmara dos Deputados.
-
-### Pipelines Avaliados:
-1. **Google Gemini 2.5 Flash Lite (Cloud VLM API):** Extração zero-shot multimodal diretamente sobre a imagem renderizada (150 DPI) via API em nuvem.
-2. **Qwen2.5-VL-3B-Instruct (End-to-End Local):** Modelo multimodal compacto rodando localmente (2x NVIDIA RTX 3090) processando os patches visuais diretamente sem etapa intermediária de OCR.
-3. **LightOnOCR-3-4B + Qwen2.5-VL-3B (Two-Stage Local):** Pipeline em duas etapas onde o modelo de visão especializado **LightOnOCR-3-4B** transcreve todo o conteúdo visual em Markdown estruturado e o modelo **Qwen** atua na extração e normalização dos campos JSON.
-
----
-
-### 1. Comparativo Geral de Desempenho e Acurácia (1.300 Documentos)
-
-| Métrica / Campo Fiscal | Google Gemini 2.5 Flash Lite | Opção B: Qwen2.5-VL-3B *(End-to-End)* | Opção A: LightOnOCR + Qwen *(Two-Stage)* |
-| :--- | :---: | :---: | :---: |
-| **Documentos Processados** | **1300 / 1300** | **1300 / 1300** | **1300 / 1300** |
-| **Tempo Médio / Doc** | **13.99s** *(API Nuvem)* | **2.90s** *(Local)* ⚡ | **17.99s** *(Local)* |
-| **CNPJ / CPF do Emissor** | **86.0%** | **63.4%** | **78.2%** *(+14.8%)* |
-| **Valor Total do Documento** | **95.4%** | **87.9%** | **76.2%** |
-| **Data de Emissão** | **90.3%** | **74.2%** | **84.5%** *(+10.3%)* |
-| **Número da Nota / Cupom** | **74.2%** | **55.1%** | **64.2%** *(+9.1%)* |
-| **Nome / Razão Social** | **81.2%** | **66.9%** | **72.5%** *(+5.6%)* |
-| **MATCH PERFEITO (Todos os 5)** | **52.2%** | **25.9%** | **28.4%** *(+2.5%)* |
-
----
-
-### 2. Acurácia de Match Perfeito por Ano (Evolução Temporal 2014–2026)
-
-A evolução histórica reflete a transição dos documentos no Brasil: papéis térmicos antigos escaneados e impressoras matriciais (2014–2018) versus a consolidação das notas eletrônicas nativas (NF-e/NFC-e a partir de 2019/2020).
-
-| Ano | Amostra | Gemini 2.5 Flash Lite | Qwen-VL (End-to-End) | LightOnOCR + Qwen (Two-Stage) |
-| :---: | :---: | :---: | :---: | :---: |
-| **2014** | 100 | 34.0% | 9.0% | **18.0%** |
-| **2015** | 100 | 39.0% | 12.0% | **13.0%** |
-| **2016** | 100 | 37.0% | 23.0% | 20.0% |
-| **2017** | 100 | 47.0% | 26.0% | **33.0%** |
-| **2018** | 100 | 38.0% | 16.0% | **20.0%** |
-| **2019** | 100 | 45.0% | 20.0% | **32.0%** |
-| **2020** | 100 | 60.0% | 37.0% | **41.0%** |
-| **2021** | 100 | 59.0% | 32.0% | **35.0%** |
-| **2022** | 100 | 60.0% | **33.0%** | 30.0% |
-| **2023** | 100 | 59.0% | 29.0% | **35.0%** |
-| **2024** | 100 | 67.0% | **33.0%** | 29.0% |
-| **2025** | 100 | 58.0% | **31.0%** | 30.0% |
-| **2026** | 100 | 75.0% | **36.0%** | 33.0% |
-
----
-
-### 3. Principais Insights e Conclusões da Pesquisa
-
-1. **Trade-off Velocidade vs. Precisão Fina:**
-   * **Qwen2.5-VL-3B direto** é quase **5x mais rápido** (2.90s/doc) do que a chamada via API do Gemini (13.99s), com excelente captação do valor global da despesa (**87.9%**). No entanto, modelos de visão compactos ponta a ponta sofrem com alucinações em sequências numéricas longas (CNPJ e número do documento).
-2. **O Papel do OCR Visual Especializado (Two-Stage):**
-   * O pipeline em duas etapas com **LightOnOCR-3-4B** resolve grande parte da limitação de leitura de fontes finas e cupons desgastados:
-     * O acerto de **CNPJ saltou de 63.4% para 78.2%** (+14.8%).
-     * O acerto da **Data saltou de 74.2% para 84.5%** (+10.3%).
-     * A taxa de **Match Perfeito** subiu para **28.4%**, superando o VLM direto em documentos anteriores a 2020.
-3. **Privacidade e Soberania de Dados:**
-   * Ambos os pipelines locais rodam inteiramente dentro do servidor institucional (`sicret2`), eliminando custos recorrentes de API e garantindo que nenhum dado fiscal ou parlamentar trafegue por nuvens de terceiros.
-
+- Caminhos: sempre a partir de `dados.config`, nunca absolutos. Variáveis de ambiente: `CEAP_PDF_DIR`, `CEAP_DESKTOP_DIR`, `MODEL_DIR`, `EMBEDDINGS_NPZ`, `METADATA_JSON`.
+- Lint de correção: `uv run ruff check --select F,E9 src scripts tests` (nomes indefinidos, imports mortos, erros de sintaxe).
+- Novo script: coloque a lógica reutilizável em `src/dados/<área>/` com teste em `tests/`, e deixe em `scripts/<etapa>/` apenas a casca de linha de comando.

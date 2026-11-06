@@ -1,10 +1,10 @@
 import json
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from scripts.gemini_extractor import (
+from dados.extraction.gemini_extractor import (
     ExtracaoDocumentoFiscal,
     extract_pdf_with_gemini,
     PROMPT_SISTEMA,

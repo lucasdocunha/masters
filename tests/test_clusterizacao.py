@@ -1,5 +1,5 @@
 import numpy as np
-from scripts.clusterizacao import cluster, pool_document_embeddings
+from dados.clustering.clusterizacao import cluster, pool_document_embeddings
 
 
 def test_clustering_and_pooling() -> None:

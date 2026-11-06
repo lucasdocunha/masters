@@ -12,25 +12,25 @@ services:
     volumes:
       - ./label_studio_data:/label-studio/data
       - /media/ssd2/datasets/CEAP:/data/pdfs:ro
-      - ./data/rendered_pages:/data/images:ro
+      - ./data/processed/rendered_pages:/data/images:ro
     restart: unless-stopped
     networks:
       - ceap-label-net
 
   ml-backend:
     build:
-      context: ./ml_backend
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ml_backend/Dockerfile
     container_name: ceap-ml-backend
     ports:
       - "9090:9090"
     environment:
       - RETRAIN_INTERVAL=50
-      - EMBEDDINGS_NPZ=/data/latent_vectors_sample_5pct.npz
-      - METADATA_JSON=/data/latent_vectors_sample_5pct_metadata.json
+      - EMBEDDINGS_NPZ=/data/processed/latent_vectors_sample_5pct.npz
+      - METADATA_JSON=/data/processed/latent_vectors_sample_5pct_metadata.json
       - MODEL_DIR=/app/models
     volumes:
-      - ./ml_backend/models:/app/models
+      - ./data/models:/app/models
       - ./data:/data:ro
     restart: unless-stopped
     networks:

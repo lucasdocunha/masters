@@ -1,0 +1,377 @@
+{
+  "0": {
+    "total_docs_in_cluster": 18973,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_name": "6033600.pdf",
+        "image": "01_6033600.png",
+        "dist_to_centroid": 0.29675108194351196,
+        "num_pages": 9
+      },
+      {
+        "rank": 2,
+        "doc_name": "5903926.pdf",
+        "image": "02_5903926.png",
+        "dist_to_centroid": 0.3075631558895111,
+        "num_pages": 2
+      },
+      {
+        "rank": 3,
+        "doc_name": "7878782.pdf",
+        "image": "03_7878782.png",
+        "dist_to_centroid": 0.3085789382457733,
+        "num_pages": 2
+      },
+      {
+        "rank": 4,
+        "doc_name": "6876337.pdf",
+        "image": "04_6876337.png",
+        "dist_to_centroid": 0.30928972363471985,
+        "num_pages": 3
+      },
+      {
+        "rank": 5,
+        "doc_name": "7170948.pdf",
+        "image": "05_7170948.png",
+        "dist_to_centroid": 0.31012412905693054,
+        "num_pages": 5
+      },
+      {
+        "rank": 6,
+        "doc_name": "8132158.pdf",
+        "image": "06_8132158.png",
+        "dist_to_centroid": 0.31230419874191284,
+        "num_pages": 3
+      },
+      {
+        "rank": 7,
+        "doc_name": "8132967.pdf",
+        "image": "07_8132967.png",
+        "dist_to_centroid": 0.31601065397262573,
+        "num_pages": 2
+      },
+      {
+        "rank": 8,
+        "doc_name": "6438048.pdf",
+        "image": "08_6438048.png",
+        "dist_to_centroid": 0.3170589804649353,
+        "num_pages": 2
+      },
+      {
+        "rank": 9,
+        "doc_name": "8051620.pdf",
+        "image": "09_8051620.png",
+        "dist_to_centroid": 0.3176569938659668,
+        "num_pages": 4
+      },
+      {
+        "rank": 10,
+        "doc_name": "5754788.pdf",
+        "image": "10_5754788.png",
+        "dist_to_centroid": 0.3184552788734436,
+        "num_pages": 3
+      }
+    ]
+  },
+  "1": {
+    "total_docs_in_cluster": 15136,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_name": "8094720.pdf",
+        "image": "01_8094720.png",
+        "dist_to_centroid": 0.29592379927635193,
+        "num_pages": 4
+      },
+      {
+        "rank": 2,
+        "doc_name": "8139731.pdf",
+        "image": "02_8139731.png",
+        "dist_to_centroid": 0.30800002813339233,
+        "num_pages": 4
+      },
+      {
+        "rank": 3,
+        "doc_name": "7947530.pdf",
+        "image": "03_7947530.png",
+        "dist_to_centroid": 0.3112812340259552,
+        "num_pages": 3
+      },
+      {
+        "rank": 4,
+        "doc_name": "8043378.pdf",
+        "image": "04_8043378.png",
+        "dist_to_centroid": 0.3125617504119873,
+        "num_pages": 1
+      },
+      {
+        "rank": 5,
+        "doc_name": "6950858.pdf",
+        "image": "05_6950858.png",
+        "dist_to_centroid": 0.3144499659538269,
+        "num_pages": 1
+      },
+      {
+        "rank": 6,
+        "doc_name": "5756785.pdf",
+        "image": "06_5756785.png",
+        "dist_to_centroid": 0.3152584731578827,
+        "num_pages": 1
+      },
+      {
+        "rank": 7,
+        "doc_name": "7772293.pdf",
+        "image": "07_7772293.png",
+        "dist_to_centroid": 0.3166305124759674,
+        "num_pages": 3
+      },
+      {
+        "rank": 8,
+        "doc_name": "6396630.pdf",
+        "image": "08_6396630.png",
+        "dist_to_centroid": 0.31703484058380127,
+        "num_pages": 1
+      },
+      {
+        "rank": 9,
+        "doc_name": "7633840.pdf",
+        "image": "09_7633840.png",
+        "dist_to_centroid": 0.31770244240760803,
+        "num_pages": 1
+      },
+      {
+        "rank": 10,
+        "doc_name": "6331488.pdf",
+        "image": "10_6331488.png",
+        "dist_to_centroid": 0.31835007667541504,
+        "num_pages": 1
+      }
+    ]
+  },
+  "2": {
+    "total_docs_in_cluster": 13686,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_name": "5806719.pdf",
+        "image": "01_5806719.png",
+        "dist_to_centroid": 0.2923402488231659,
+        "num_pages": 1
+      },
+      {
+        "rank": 2,
+        "doc_name": "6226748.pdf",
+        "image": "02_6226748.png",
+        "dist_to_centroid": 0.293229341506958,
+        "num_pages": 1
+      },
+      {
+        "rank": 3,
+        "doc_name": "6360981.pdf",
+        "image": "03_6360981.png",
+        "dist_to_centroid": 0.2957717180252075,
+        "num_pages": 1
+      },
+      {
+        "rank": 4,
+        "doc_name": "5979504.pdf",
+        "image": "04_5979504.png",
+        "dist_to_centroid": 0.3017826974391937,
+        "num_pages": 1
+      },
+      {
+        "rank": 5,
+        "doc_name": "5701228.pdf",
+        "image": "05_5701228.png",
+        "dist_to_centroid": 0.30297163128852844,
+        "num_pages": 1
+      },
+      {
+        "rank": 6,
+        "doc_name": "6269403.pdf",
+        "image": "06_6269403.png",
+        "dist_to_centroid": 0.3057839274406433,
+        "num_pages": 1
+      },
+      {
+        "rank": 7,
+        "doc_name": "5959883.pdf",
+        "image": "07_5959883.png",
+        "dist_to_centroid": 0.3075397312641144,
+        "num_pages": 1
+      },
+      {
+        "rank": 8,
+        "doc_name": "6068773.pdf",
+        "image": "08_6068773.png",
+        "dist_to_centroid": 0.30772626399993896,
+        "num_pages": 1
+      },
+      {
+        "rank": 9,
+        "doc_name": "5531550.pdf",
+        "image": "09_5531550.png",
+        "dist_to_centroid": 0.30969300866127014,
+        "num_pages": 1
+      },
+      {
+        "rank": 10,
+        "doc_name": "5902962.pdf",
+        "image": "10_5902962.png",
+        "dist_to_centroid": 0.3103228211402893,
+        "num_pages": 1
+      }
+    ]
+  },
+  "3": {
+    "total_docs_in_cluster": 4775,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_name": "7741887.pdf",
+        "image": "01_7741887.png",
+        "dist_to_centroid": 0.2628934979438782,
+        "num_pages": 3
+      },
+      {
+        "rank": 2,
+        "doc_name": "7586119.pdf",
+        "image": "02_7586119.png",
+        "dist_to_centroid": 0.2628951966762543,
+        "num_pages": 3
+      },
+      {
+        "rank": 3,
+        "doc_name": "7582044.pdf",
+        "image": "03_7582044.png",
+        "dist_to_centroid": 0.26594215631484985,
+        "num_pages": 3
+      },
+      {
+        "rank": 4,
+        "doc_name": "7698734.pdf",
+        "image": "04_7698734.png",
+        "dist_to_centroid": 0.27217796444892883,
+        "num_pages": 3
+      },
+      {
+        "rank": 5,
+        "doc_name": "7416074.pdf",
+        "image": "05_7416074.png",
+        "dist_to_centroid": 0.27226418256759644,
+        "num_pages": 2
+      },
+      {
+        "rank": 6,
+        "doc_name": "7367410.pdf",
+        "image": "06_7367410.png",
+        "dist_to_centroid": 0.273413747549057,
+        "num_pages": 2
+      },
+      {
+        "rank": 7,
+        "doc_name": "7786049.pdf",
+        "image": "07_7786049.png",
+        "dist_to_centroid": 0.2749859392642975,
+        "num_pages": 3
+      },
+      {
+        "rank": 8,
+        "doc_name": "7640163.pdf",
+        "image": "08_7640163.png",
+        "dist_to_centroid": 0.27599668502807617,
+        "num_pages": 3
+      },
+      {
+        "rank": 9,
+        "doc_name": "7666630.pdf",
+        "image": "09_7666630.png",
+        "dist_to_centroid": 0.2772415578365326,
+        "num_pages": 3
+      },
+      {
+        "rank": 10,
+        "doc_name": "7829287.pdf",
+        "image": "10_7829287.png",
+        "dist_to_centroid": 0.277401864528656,
+        "num_pages": 3
+      }
+    ]
+  },
+  "4": {
+    "total_docs_in_cluster": 17539,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_name": "6432274.pdf",
+        "image": "01_6432274.png",
+        "dist_to_centroid": 0.3195851445198059,
+        "num_pages": 5
+      },
+      {
+        "rank": 2,
+        "doc_name": "6429157.pdf",
+        "image": "02_6429157.png",
+        "dist_to_centroid": 0.33214443922042847,
+        "num_pages": 5
+      },
+      {
+        "rank": 3,
+        "doc_name": "5941054.pdf",
+        "image": "03_5941054.png",
+        "dist_to_centroid": 0.33713647723197937,
+        "num_pages": 5
+      },
+      {
+        "rank": 4,
+        "doc_name": "5802086.pdf",
+        "image": "04_5802086.png",
+        "dist_to_centroid": 0.33886098861694336,
+        "num_pages": 6
+      },
+      {
+        "rank": 5,
+        "doc_name": "6360167.pdf",
+        "image": "05_6360167.png",
+        "dist_to_centroid": 0.33889856934547424,
+        "num_pages": 3
+      },
+      {
+        "rank": 6,
+        "doc_name": "7980539.pdf",
+        "image": "06_7980539.png",
+        "dist_to_centroid": 0.34182918071746826,
+        "num_pages": 3
+      },
+      {
+        "rank": 7,
+        "doc_name": "7975535.pdf",
+        "image": "07_7975535.png",
+        "dist_to_centroid": 0.34273263812065125,
+        "num_pages": 2
+      },
+      {
+        "rank": 8,
+        "doc_name": "5937445.pdf",
+        "image": "08_5937445.png",
+        "dist_to_centroid": 0.34423041343688965,
+        "num_pages": 4
+      },
+      {
+        "rank": 9,
+        "doc_name": "5949182.pdf",
+        "image": "09_5949182.png",
+        "dist_to_centroid": 0.34489983320236206,
+        "num_pages": 3
+      },
+      {
+        "rank": 10,
+        "doc_name": "7427356.pdf",
+        "image": "10_7427356.png",
+        "dist_to_centroid": 0.34576520323753357,
+        "num_pages": 4
+      }
+    ]
+  }
+}

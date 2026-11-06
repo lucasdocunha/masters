@@ -1,0 +1,1032 @@
+{
+  "0": {
+    "total_docs_in_cluster": 130973,
+    "cluster_percentage": 9.776453744855107,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_id": 951416,
+        "doc_name": "7178623.pdf",
+        "year": 2021,
+        "num_pages": 1,
+        "dist_to_centroid": 0.05472242832183838,
+        "image": "01_7178623.png",
+        "pdf": "01_7178623.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 2158,
+        "doc_name": "5552884.pdf",
+        "year": 2014,
+        "num_pages": 1,
+        "dist_to_centroid": 0.05901312828063965,
+        "image": "02_5552884.png",
+        "pdf": "02_5552884.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 2185,
+        "doc_name": "5563836.pdf",
+        "year": 2014,
+        "num_pages": 1,
+        "dist_to_centroid": 0.05909609794616699,
+        "image": "03_5563836.png",
+        "pdf": "03_5563836.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 1236731,
+        "doc_name": "7788232.pdf",
+        "year": 2024,
+        "num_pages": 1,
+        "dist_to_centroid": 0.060009539127349854,
+        "image": "04_7788232.png",
+        "pdf": "04_7788232.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 1230206,
+        "doc_name": "7709613.pdf",
+        "year": 2024,
+        "num_pages": 1,
+        "dist_to_centroid": 0.060802161693573,
+        "image": "05_7709613.png",
+        "pdf": "05_7709613.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 194193,
+        "doc_name": "5669102.pdf",
+        "year": 2015,
+        "num_pages": 2,
+        "dist_to_centroid": 0.06111347675323486,
+        "image": "06_5669102.png",
+        "pdf": "06_5669102.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 370900,
+        "doc_name": "5922004.pdf",
+        "year": 2016,
+        "num_pages": 1,
+        "dist_to_centroid": 0.0613979697227478,
+        "image": "07_5922004.png",
+        "pdf": "07_5922004.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 1290273,
+        "doc_name": "7985649.pdf",
+        "year": 2025,
+        "num_pages": 1,
+        "dist_to_centroid": 0.06187140941619873,
+        "image": "08_7985649.png",
+        "pdf": "08_7985649.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 1035033,
+        "doc_name": "7460334.pdf",
+        "year": 2022,
+        "num_pages": 1,
+        "dist_to_centroid": 0.06193488836288452,
+        "image": "09_7460334.png",
+        "pdf": "09_7460334.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 1329935,
+        "doc_name": "7855823.pdf",
+        "year": 2025,
+        "num_pages": 1,
+        "dist_to_centroid": 0.062052249908447266,
+        "image": "10_7855823.png",
+        "pdf": "10_7855823.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 891005,
+        "doc_name": "7323617.pdf",
+        "year": 2021,
+        "num_pages": 1,
+        "dist_to_centroid": 0.062122464179992676,
+        "image": "11_7323617.png",
+        "pdf": "11_7323617.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 395587,
+        "doc_name": "6102515.pdf",
+        "year": 2016,
+        "num_pages": 1,
+        "dist_to_centroid": 0.06217151880264282,
+        "image": "12_6102515.png",
+        "pdf": "12_6102515.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 89316,
+        "doc_name": "5763631.pdf",
+        "year": 2015,
+        "num_pages": 1,
+        "dist_to_centroid": 0.06218314170837402,
+        "image": "13_5763631.png",
+        "pdf": "13_5763631.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 897803,
+        "doc_name": "7152686.pdf",
+        "year": 2021,
+        "num_pages": 2,
+        "dist_to_centroid": 0.06231236457824707,
+        "image": "14_7152686.png",
+        "pdf": "14_7152686.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 194388,
+        "doc_name": "5765495.pdf",
+        "year": 2015,
+        "num_pages": 2,
+        "dist_to_centroid": 0.06270802021026611,
+        "image": "15_5765495.png",
+        "pdf": "15_5765495.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 959513,
+        "doc_name": "7259324.pdf",
+        "year": 2021,
+        "num_pages": 1,
+        "dist_to_centroid": 0.06289243698120117,
+        "image": "16_7259324.png",
+        "pdf": "16_7259324.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 430947,
+        "doc_name": "5905990.pdf",
+        "year": 2016,
+        "num_pages": 1,
+        "dist_to_centroid": 0.0629807710647583,
+        "image": "17_5905990.png",
+        "pdf": "17_5905990.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 984264,
+        "doc_name": "7340179.pdf",
+        "year": 2022,
+        "num_pages": 2,
+        "dist_to_centroid": 0.06301289796829224,
+        "image": "18_7340179.png",
+        "pdf": "18_7340179.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 984215,
+        "doc_name": "7327911.pdf",
+        "year": 2022,
+        "num_pages": 2,
+        "dist_to_centroid": 0.06308329105377197,
+        "image": "19_7327911.png",
+        "pdf": "19_7327911.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 1329948,
+        "doc_name": "7858517.pdf",
+        "year": 2025,
+        "num_pages": 1,
+        "dist_to_centroid": 0.06323683261871338,
+        "image": "20_7858517.png",
+        "pdf": "20_7858517.pdf"
+      }
+    ]
+  },
+  "1": {
+    "total_docs_in_cluster": 286641,
+    "cluster_percentage": 21.396260892542834,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_id": 827685,
+        "doc_name": "7141584.pdf",
+        "year": 2020,
+        "num_pages": 7,
+        "dist_to_centroid": 0.012614727020263672,
+        "image": "01_7141584.png",
+        "pdf": "01_7141584.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 827686,
+        "doc_name": "7141585.pdf",
+        "year": 2020,
+        "num_pages": 7,
+        "dist_to_centroid": 0.01329195499420166,
+        "image": "02_7141585.png",
+        "pdf": "02_7141585.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 1282610,
+        "doc_name": "7951789.pdf",
+        "year": 2025,
+        "num_pages": 3,
+        "dist_to_centroid": 0.014304280281066895,
+        "image": "03_7951789.png",
+        "pdf": "03_7951789.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 1054516,
+        "doc_name": "7319468.pdf",
+        "year": 2022,
+        "num_pages": 5,
+        "dist_to_centroid": 0.01465374231338501,
+        "image": "04_7319468.png",
+        "pdf": "04_7319468.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 1324006,
+        "doc_name": "8032107.pdf",
+        "year": 2025,
+        "num_pages": 7,
+        "dist_to_centroid": 0.014960646629333496,
+        "image": "05_8032107.png",
+        "pdf": "05_8032107.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 1043708,
+        "doc_name": "7486655.pdf",
+        "year": 2022,
+        "num_pages": 3,
+        "dist_to_centroid": 0.014983832836151123,
+        "image": "06_7486655.png",
+        "pdf": "06_7486655.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 1052843,
+        "doc_name": "7465887.pdf",
+        "year": 2022,
+        "num_pages": 4,
+        "dist_to_centroid": 0.015051484107971191,
+        "image": "07_7465887.png",
+        "pdf": "07_7465887.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 1052825,
+        "doc_name": "7463268.pdf",
+        "year": 2022,
+        "num_pages": 4,
+        "dist_to_centroid": 0.015264749526977539,
+        "image": "08_7463268.png",
+        "pdf": "08_7463268.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 1052974,
+        "doc_name": "7487266.pdf",
+        "year": 2022,
+        "num_pages": 4,
+        "dist_to_centroid": 0.015325427055358887,
+        "image": "09_7487266.png",
+        "pdf": "09_7487266.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 1046987,
+        "doc_name": "7463958.pdf",
+        "year": 2022,
+        "num_pages": 5,
+        "dist_to_centroid": 0.015352725982666016,
+        "image": "10_7463958.png",
+        "pdf": "10_7463958.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 1052828,
+        "doc_name": "7464031.pdf",
+        "year": 2022,
+        "num_pages": 4,
+        "dist_to_centroid": 0.015442728996276855,
+        "image": "11_7464031.png",
+        "pdf": "11_7464031.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 1169494,
+        "doc_name": "7724019.pdf",
+        "year": 2024,
+        "num_pages": 4,
+        "dist_to_centroid": 0.015636861324310303,
+        "image": "12_7724019.png",
+        "pdf": "12_7724019.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 1265429,
+        "doc_name": "7942100.pdf",
+        "year": 2025,
+        "num_pages": 3,
+        "dist_to_centroid": 0.015831589698791504,
+        "image": "13_7942100.png",
+        "pdf": "13_7942100.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 1109674,
+        "doc_name": "7513563.pdf",
+        "year": 2023,
+        "num_pages": 3,
+        "dist_to_centroid": 0.015872478485107422,
+        "image": "14_7513563.png",
+        "pdf": "14_7513563.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 1109724,
+        "doc_name": "7543658.pdf",
+        "year": 2023,
+        "num_pages": 3,
+        "dist_to_centroid": 0.015901029109954834,
+        "image": "15_7543658.png",
+        "pdf": "15_7543658.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 1109661,
+        "doc_name": "7503156.pdf",
+        "year": 2023,
+        "num_pages": 3,
+        "dist_to_centroid": 0.016259074211120605,
+        "image": "16_7503156.png",
+        "pdf": "16_7503156.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 1106543,
+        "doc_name": "7583634.pdf",
+        "year": 2023,
+        "num_pages": 3,
+        "dist_to_centroid": 0.016259372234344482,
+        "image": "17_7583634.png",
+        "pdf": "17_7583634.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 1072749,
+        "doc_name": "7666379.pdf",
+        "year": 2023,
+        "num_pages": 4,
+        "dist_to_centroid": 0.0162736177444458,
+        "image": "18_7666379.png",
+        "pdf": "18_7666379.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 1109704,
+        "doc_name": "7530634.pdf",
+        "year": 2023,
+        "num_pages": 3,
+        "dist_to_centroid": 0.016293764114379883,
+        "image": "19_7530634.png",
+        "pdf": "19_7530634.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 1134796,
+        "doc_name": "7600161.pdf",
+        "year": 2023,
+        "num_pages": 2,
+        "dist_to_centroid": 0.01643127202987671,
+        "image": "20_7600161.png",
+        "pdf": "20_7600161.pdf"
+      }
+    ]
+  },
+  "2": {
+    "total_docs_in_cluster": 363345,
+    "cluster_percentage": 27.121815839328555,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_id": 169688,
+        "doc_name": "5829089.pdf",
+        "year": 2015,
+        "num_pages": 9,
+        "dist_to_centroid": 0.01993793249130249,
+        "image": "01_5829089.png",
+        "pdf": "01_5829089.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 169687,
+        "doc_name": "5829084.pdf",
+        "year": 2015,
+        "num_pages": 8,
+        "dist_to_centroid": 0.023141682147979736,
+        "image": "02_5829084.png",
+        "pdf": "02_5829084.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 373673,
+        "doc_name": "6024189.pdf",
+        "year": 2016,
+        "num_pages": 1,
+        "dist_to_centroid": 0.023570775985717773,
+        "image": "03_6024189.png",
+        "pdf": "03_6024189.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 91875,
+        "doc_name": "5815588.pdf",
+        "year": 2015,
+        "num_pages": 1,
+        "dist_to_centroid": 0.02374446392059326,
+        "image": "04_5815588.png",
+        "pdf": "04_5815588.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 261189,
+        "doc_name": "5624322.pdf",
+        "year": 2015,
+        "num_pages": 1,
+        "dist_to_centroid": 0.024101078510284424,
+        "image": "05_5624322.png",
+        "pdf": "05_5624322.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 579845,
+        "doc_name": "6245498.pdf",
+        "year": 2017,
+        "num_pages": 1,
+        "dist_to_centroid": 0.02474355697631836,
+        "image": "06_6245498.png",
+        "pdf": "06_6245498.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 169686,
+        "doc_name": "5829078.pdf",
+        "year": 2015,
+        "num_pages": 7,
+        "dist_to_centroid": 0.02481865882873535,
+        "image": "07_5829078.png",
+        "pdf": "07_5829078.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 230419,
+        "doc_name": "5793901.pdf",
+        "year": 2015,
+        "num_pages": 1,
+        "dist_to_centroid": 0.025423407554626465,
+        "image": "08_5793901.png",
+        "pdf": "08_5793901.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 291398,
+        "doc_name": "5892533.pdf",
+        "year": 2016,
+        "num_pages": 1,
+        "dist_to_centroid": 0.02571094036102295,
+        "image": "09_5892533.png",
+        "pdf": "09_5892533.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 24021,
+        "doc_name": "5564391.pdf",
+        "year": 2014,
+        "num_pages": 1,
+        "dist_to_centroid": 0.02572089433670044,
+        "image": "10_5564391.png",
+        "pdf": "10_5564391.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 380125,
+        "doc_name": "6019177.pdf",
+        "year": 2016,
+        "num_pages": 1,
+        "dist_to_centroid": 0.025732100009918213,
+        "image": "11_6019177.png",
+        "pdf": "11_6019177.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 202759,
+        "doc_name": "5857323.pdf",
+        "year": 2015,
+        "num_pages": 1,
+        "dist_to_centroid": 0.025742173194885254,
+        "image": "12_5857323.png",
+        "pdf": "12_5857323.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 433863,
+        "doc_name": "6071132.pdf",
+        "year": 2016,
+        "num_pages": 1,
+        "dist_to_centroid": 0.026021838188171387,
+        "image": "13_6071132.png",
+        "pdf": "13_6071132.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 225645,
+        "doc_name": "5601703.pdf",
+        "year": 2015,
+        "num_pages": 1,
+        "dist_to_centroid": 0.026102662086486816,
+        "image": "14_5601703.png",
+        "pdf": "14_5601703.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 253371,
+        "doc_name": "5881054.pdf",
+        "year": 2015,
+        "num_pages": 14,
+        "dist_to_centroid": 0.026219308376312256,
+        "image": "15_5881054.png",
+        "pdf": "15_5881054.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 253373,
+        "doc_name": "5881084.pdf",
+        "year": 2015,
+        "num_pages": 14,
+        "dist_to_centroid": 0.026219308376312256,
+        "image": "16_5881084.png",
+        "pdf": "16_5881084.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 253372,
+        "doc_name": "5881058.pdf",
+        "year": 2015,
+        "num_pages": 14,
+        "dist_to_centroid": 0.026219308376312256,
+        "image": "17_5881058.png",
+        "pdf": "17_5881058.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 253374,
+        "doc_name": "5881093.pdf",
+        "year": 2015,
+        "num_pages": 14,
+        "dist_to_centroid": 0.02621936798095703,
+        "image": "18_5881093.png",
+        "pdf": "18_5881093.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 501991,
+        "doc_name": "6378524.pdf",
+        "year": 2017,
+        "num_pages": 1,
+        "dist_to_centroid": 0.02661585807800293,
+        "image": "19_6378524.png",
+        "pdf": "19_6378524.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 219658,
+        "doc_name": "5824858.pdf",
+        "year": 2015,
+        "num_pages": 1,
+        "dist_to_centroid": 0.026868343353271484,
+        "image": "20_5824858.png",
+        "pdf": "20_5824858.pdf"
+      }
+    ]
+  },
+  "3": {
+    "total_docs_in_cluster": 383674,
+    "cluster_percentage": 28.639270033545372,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_id": 432846,
+        "doc_name": "5938942.pdf",
+        "year": 2016,
+        "num_pages": 4,
+        "dist_to_centroid": 0.014897704124450684,
+        "image": "01_5938942.png",
+        "pdf": "01_5938942.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 678598,
+        "doc_name": "6727749.pdf",
+        "year": 2018,
+        "num_pages": 6,
+        "dist_to_centroid": 0.015645861625671387,
+        "image": "02_6727749.png",
+        "pdf": "02_6727749.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 887116,
+        "doc_name": "7009095.pdf",
+        "year": 2020,
+        "num_pages": 4,
+        "dist_to_centroid": 0.015963971614837646,
+        "image": "03_7009095.png",
+        "pdf": "03_7009095.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 509259,
+        "doc_name": "6302597.pdf",
+        "year": 2017,
+        "num_pages": 3,
+        "dist_to_centroid": 0.016828179359436035,
+        "image": "04_6302597.png",
+        "pdf": "04_6302597.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 678513,
+        "doc_name": "6549282.pdf",
+        "year": 2018,
+        "num_pages": 5,
+        "dist_to_centroid": 0.017039895057678223,
+        "image": "05_6549282.png",
+        "pdf": "05_6549282.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 744147,
+        "doc_name": "6772528.pdf",
+        "year": 2019,
+        "num_pages": 5,
+        "dist_to_centroid": 0.01708120107650757,
+        "image": "06_6772528.png",
+        "pdf": "06_6772528.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 365741,
+        "doc_name": "6072445.pdf",
+        "year": 2016,
+        "num_pages": 3,
+        "dist_to_centroid": 0.017392992973327637,
+        "image": "07_6072445.png",
+        "pdf": "07_6072445.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 438282,
+        "doc_name": "6135592.pdf",
+        "year": 2016,
+        "num_pages": 3,
+        "dist_to_centroid": 0.017395496368408203,
+        "image": "08_6135592.png",
+        "pdf": "08_6135592.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 487388,
+        "doc_name": "6206127.pdf",
+        "year": 2017,
+        "num_pages": 3,
+        "dist_to_centroid": 0.017695903778076172,
+        "image": "09_6206127.png",
+        "pdf": "09_6206127.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 122602,
+        "doc_name": "5894926.pdf",
+        "year": 2015,
+        "num_pages": 3,
+        "dist_to_centroid": 0.018271327018737793,
+        "image": "10_5894926.png",
+        "pdf": "10_5894926.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 506956,
+        "doc_name": "6248574.pdf",
+        "year": 2017,
+        "num_pages": 4,
+        "dist_to_centroid": 0.018414974212646484,
+        "image": "11_6248574.png",
+        "pdf": "11_6248574.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 678593,
+        "doc_name": "6727621.pdf",
+        "year": 2018,
+        "num_pages": 5,
+        "dist_to_centroid": 0.018463730812072754,
+        "image": "12_6727621.png",
+        "pdf": "12_6727621.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 441340,
+        "doc_name": "6136435.pdf",
+        "year": 2016,
+        "num_pages": 4,
+        "dist_to_centroid": 0.01850980520248413,
+        "image": "13_6136435.png",
+        "pdf": "13_6136435.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 389228,
+        "doc_name": "6131695.pdf",
+        "year": 2016,
+        "num_pages": 3,
+        "dist_to_centroid": 0.018543362617492676,
+        "image": "14_6131695.png",
+        "pdf": "14_6131695.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 809224,
+        "doc_name": "6966184.pdf",
+        "year": 2019,
+        "num_pages": 4,
+        "dist_to_centroid": 0.018586575984954834,
+        "image": "15_6966184.png",
+        "pdf": "15_6966184.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 311255,
+        "doc_name": "6003038.pdf",
+        "year": 2016,
+        "num_pages": 3,
+        "dist_to_centroid": 0.018692493438720703,
+        "image": "16_6003038.png",
+        "pdf": "16_6003038.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 654000,
+        "doc_name": "6548804.pdf",
+        "year": 2018,
+        "num_pages": 3,
+        "dist_to_centroid": 0.018735408782958984,
+        "image": "17_6548804.png",
+        "pdf": "17_6548804.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 639184,
+        "doc_name": "6569372.pdf",
+        "year": 2018,
+        "num_pages": 3,
+        "dist_to_centroid": 0.018908023834228516,
+        "image": "18_6569372.png",
+        "pdf": "18_6569372.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 311488,
+        "doc_name": "6118232.pdf",
+        "year": 2016,
+        "num_pages": 3,
+        "dist_to_centroid": 0.018964648246765137,
+        "image": "19_6118232.png",
+        "pdf": "19_6118232.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 81853,
+        "doc_name": "5823092.pdf",
+        "year": 2015,
+        "num_pages": 3,
+        "dist_to_centroid": 0.019368350505828857,
+        "image": "20_5823092.png",
+        "pdf": "20_5823092.pdf"
+      }
+    ]
+  },
+  "4": {
+    "total_docs_in_cluster": 175045,
+    "cluster_percentage": 13.066199489728128,
+    "exported_samples": [
+      {
+        "rank": 1,
+        "doc_id": 626976,
+        "doc_name": "6736602.pdf",
+        "year": 2018,
+        "num_pages": 2,
+        "dist_to_centroid": 0.028904259204864502,
+        "image": "01_6736602.png",
+        "pdf": "01_6736602.pdf"
+      },
+      {
+        "rank": 2,
+        "doc_id": 833513,
+        "doc_name": "7023758.pdf",
+        "year": 2020,
+        "num_pages": 4,
+        "dist_to_centroid": 0.030083894729614258,
+        "image": "02_7023758.png",
+        "pdf": "02_7023758.pdf"
+      },
+      {
+        "rank": 3,
+        "doc_id": 141497,
+        "doc_name": "5638328.pdf",
+        "year": 2015,
+        "num_pages": 4,
+        "dist_to_centroid": 0.03121715784072876,
+        "image": "03_5638328.png",
+        "pdf": "03_5638328.pdf"
+      },
+      {
+        "rank": 4,
+        "doc_id": 141529,
+        "doc_name": "5689090.pdf",
+        "year": 2015,
+        "num_pages": 4,
+        "dist_to_centroid": 0.03374737501144409,
+        "image": "04_5689090.png",
+        "pdf": "04_5689090.pdf"
+      },
+      {
+        "rank": 5,
+        "doc_id": 318516,
+        "doc_name": "6135669.pdf",
+        "year": 2016,
+        "num_pages": 4,
+        "dist_to_centroid": 0.03690457344055176,
+        "image": "05_6135669.png",
+        "pdf": "05_6135669.pdf"
+      },
+      {
+        "rank": 6,
+        "doc_id": 648857,
+        "doc_name": "6695707.pdf",
+        "year": 2018,
+        "num_pages": 2,
+        "dist_to_centroid": 0.037339210510253906,
+        "image": "06_6695707.png",
+        "pdf": "06_6695707.pdf"
+      },
+      {
+        "rank": 7,
+        "doc_id": 692171,
+        "doc_name": "6606739.pdf",
+        "year": 2018,
+        "num_pages": 2,
+        "dist_to_centroid": 0.03742039203643799,
+        "image": "07_6606739.png",
+        "pdf": "07_6606739.pdf"
+      },
+      {
+        "rank": 8,
+        "doc_id": 648850,
+        "doc_name": "6669045.pdf",
+        "year": 2018,
+        "num_pages": 2,
+        "dist_to_centroid": 0.03772425651550293,
+        "image": "08_6669045.png",
+        "pdf": "08_6669045.pdf"
+      },
+      {
+        "rank": 9,
+        "doc_id": 648824,
+        "doc_name": "6555018.pdf",
+        "year": 2018,
+        "num_pages": 2,
+        "dist_to_centroid": 0.03774523735046387,
+        "image": "09_6555018.png",
+        "pdf": "09_6555018.pdf"
+      },
+      {
+        "rank": 10,
+        "doc_id": 652832,
+        "doc_name": "6732106.pdf",
+        "year": 2018,
+        "num_pages": 5,
+        "dist_to_centroid": 0.037805914878845215,
+        "image": "10_6732106.png",
+        "pdf": "10_6732106.pdf"
+      },
+      {
+        "rank": 11,
+        "doc_id": 141560,
+        "doc_name": "5756719.pdf",
+        "year": 2015,
+        "num_pages": 4,
+        "dist_to_centroid": 0.0378342866897583,
+        "image": "11_5756719.png",
+        "pdf": "11_5756719.pdf"
+      },
+      {
+        "rank": 12,
+        "doc_id": 504699,
+        "doc_name": "6184058.pdf",
+        "year": 2017,
+        "num_pages": 2,
+        "dist_to_centroid": 0.03820955753326416,
+        "image": "12_6184058.png",
+        "pdf": "12_6184058.pdf"
+      },
+      {
+        "rank": 13,
+        "doc_id": 626959,
+        "doc_name": "6695173.pdf",
+        "year": 2018,
+        "num_pages": 2,
+        "dist_to_centroid": 0.03843802213668823,
+        "image": "13_6695173.png",
+        "pdf": "13_6695173.pdf"
+      },
+      {
+        "rank": 14,
+        "doc_id": 486814,
+        "doc_name": "6428280.pdf",
+        "year": 2017,
+        "num_pages": 3,
+        "dist_to_centroid": 0.03871065378189087,
+        "image": "14_6428280.png",
+        "pdf": "14_6428280.pdf"
+      },
+      {
+        "rank": 15,
+        "doc_id": 740596,
+        "doc_name": "6984329.pdf",
+        "year": 2019,
+        "num_pages": 4,
+        "dist_to_centroid": 0.03964424133300781,
+        "image": "15_6984329.png",
+        "pdf": "15_6984329.pdf"
+      },
+      {
+        "rank": 16,
+        "doc_id": 455429,
+        "doc_name": "6226916.pdf",
+        "year": 2017,
+        "num_pages": 4,
+        "dist_to_centroid": 0.03995782136917114,
+        "image": "16_6226916.png",
+        "pdf": "16_6226916.pdf"
+      },
+      {
+        "rank": 17,
+        "doc_id": 619832,
+        "doc_name": "6539367.pdf",
+        "year": 2018,
+        "num_pages": 2,
+        "dist_to_centroid": 0.040164947509765625,
+        "image": "17_6539367.png",
+        "pdf": "17_6539367.pdf"
+      },
+      {
+        "rank": 18,
+        "doc_id": 584235,
+        "doc_name": "6404406.pdf",
+        "year": 2017,
+        "num_pages": 6,
+        "dist_to_centroid": 0.04018139839172363,
+        "image": "18_6404406.png",
+        "pdf": "18_6404406.pdf"
+      },
+      {
+        "rank": 19,
+        "doc_id": 202199,
+        "doc_name": "5885499.pdf",
+        "year": 2015,
+        "num_pages": 3,
+        "dist_to_centroid": 0.04030776023864746,
+        "image": "19_5885499.png",
+        "pdf": "19_5885499.pdf"
+      },
+      {
+        "rank": 20,
+        "doc_id": 757043,
+        "doc_name": "6942309.pdf",
+        "year": 2019,
+        "num_pages": 5,
+        "dist_to_centroid": 0.04035592079162598,
+        "image": "20_6942309.png",
+        "pdf": "20_6942309.pdf"
+      }
+    ]
+  }
+}

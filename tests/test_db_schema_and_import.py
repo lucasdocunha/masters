@@ -1,5 +1,5 @@
 from pathlib import Path
-from scripts.db_import_ceap import (
+from dados.database.db_import_ceap import (
     clean_digits,
     parse_date,
     build_deputado_record,
