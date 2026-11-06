@@ -133,6 +133,9 @@ pre{background:var(--surface);border:1px solid var(--line);border-radius:var(--r
 .lat-class[aria-pressed=false] .lat-class-name{text-decoration:line-through}
 .lat-only{position:absolute;right:8px;top:4px;line-height:20px;padding:0 0 0 8px;background:var(--surface-2);color:var(--ink);opacity:0;pointer-events:none}
 .lat-legend li:hover .lat-only,.lat-only:focus-visible{opacity:1;pointer-events:auto}
+.lat-strength{display:grid;grid-template-columns:1fr auto;gap:4px 8px;align-items:center;margin-top:8px;padding:12px 8px 4px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.lat-strength output{color:var(--ink)}
+.lat-strength input{grid-column:1/-1;width:100%;height:24px;margin:0;accent-color:var(--accent);cursor:pointer}
 .lat-doc{top:24px;right:24px;width:340px;max-height:calc(100% - 48px);overflow:auto;padding:12px 20px 20px;background:var(--surface);z-index:2}
 .lat-doc-head{display:flex;justify-content:space-between;align-items:center;margin-right:-12px}
 .lat-doc-class{flex:1;min-width:0;font-size:14px;color:var(--text);overflow-wrap:anywhere}
@@ -142,6 +145,15 @@ pre{background:var(--surface);border:1px solid var(--line);border-radius:var(--r
 .lat-doc dd{margin:0;font-size:14px;color:var(--ink);overflow-wrap:anywhere}
 .lat-doc-note{font-size:14px;margin:0}
 .lat-doc .btn--primary{width:100%}
+.lat-doc-note{margin:12px 0 0}
+.lat-cands{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px;font-size:14px}
+.lat-cands li{display:grid;overflow-wrap:anywhere}
+.lat-edit{display:grid;gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.lat-edit label{font-size:13px;color:var(--muted)}
+.lat-edit select,.lat-edit input{width:100%;min-width:0;font:inherit;font-size:14px;height:40px;padding:0 12px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--bg);color:var(--ink)}
+.lat-edit .btn{width:100%}
+.lat-edit .link{justify-self:start}
+.lat-edit-msg{margin:0;min-height:20px;font-size:13px;color:var(--text)}
 .lat-hint{position:absolute;left:24px;bottom:16px;margin:0;font-size:13px;pointer-events:none}
 .lat-reset{position:absolute;left:24px;bottom:48px;background:var(--surface)}
 .lat-tip{position:absolute;top:0;left:0;max-width:300px;padding:8px 12px;background:#000;border:1px solid var(--line-strong);border-radius:var(--r-md);font-size:13px;line-height:1.45;color:var(--ink);pointer-events:none;z-index:3;overflow-wrap:anywhere}

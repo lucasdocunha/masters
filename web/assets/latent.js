@@ -45,7 +45,7 @@ async function fetchBinary(path, onProgress, signal) {
 const POINT_VERTEX = /* glsl */ `
   attribute vec3 aTarget;
   attribute float aClass;
-  uniform float uMix, uPixel, uScale, uPick;
+  uniform float uMix, uPixel, uScale, uPick, uUnmappedAlpha;
   uniform float uVisible[${MAX_CLASSES}];
   uniform vec3 uColor[${MAX_CLASSES}];
   varying vec4 vColor;
@@ -65,7 +65,7 @@ const POINT_VERTEX = /* glsl */ `
       float id = float(gl_VertexID + 1);
       vColor = vec4(mod(id, 256.0), mod(floor(id / 256.0), 256.0), floor(id / 65536.0), 255.0) / 255.0;
     } else {
-      vColor = vec4(uColor[c], labeled ? 0.92 : 0.11);
+      vColor = vec4(uColor[c], labeled ? 0.92 : uUnmappedAlpha);
     }
   }`;
 
@@ -105,6 +105,24 @@ function makeMark(size, hex) {
   return mark;
 }
 
+const documentFromRow = (row) => ({ id: row[0], name: `${row[0]}.pdf`, fornecedor: row[1], subcota: row[2], ano: row[3], url: row[4] });
+const safeUrl = (url) => (/^https:\/\//.test(url ?? "") ? url : null);
+const PASSWORD_KEY = "ceap-editor-password";
+const STRENGTH_KEY = "ceap-unmapped-strength";
+const DEFAULT_STRENGTH = 33;
+const clampStrength = (value) => (Number.isFinite(value) ? Math.min(100, Math.max(5, value)) : DEFAULT_STRENGTH);
+const readStrength = () => {
+  try { const saved = localStorage.getItem(STRENGTH_KEY); return saved === null ? DEFAULT_STRENGTH : clampStrength(Number(saved)); }
+  catch { return DEFAULT_STRENGTH; }
+};
+// Quadrática: com milhões de pontos sobrepostos, a diferença visual se concentra nas opacidades baixas.
+const strengthToAlpha = (value) => (value / 100) ** 2;
+const readPassword = () => { try { return sessionStorage.getItem(PASSWORD_KEY); } catch { return null; } };
+const writePassword = (value) => {
+  try { if (value) sessionStorage.setItem(PASSWORD_KEY, value); else sessionStorage.removeItem(PASSWORD_KEY); } catch { /* sem armazenamento */ }
+};
+const apiClass = (c) => (c.id === 0 ? "_unmapped" : c.name);
+
 function shell(index) {
   const labeled = index.classes.reduce((sum, c) => sum + (c.id ? c.count : 0), 0);
   const models = Object.values(index.models);
@@ -112,7 +130,7 @@ function shell(index) {
     <div class="lat-stage" id="lat-stage"></div>
     <header class="lat-head panel">
       <h1>Espaço latente</h1>
-      <p class="muted lat-facts"><span class="mono">${fmt(index.n_points)}</span> documentos em 3D · <span class="mono">${fmt(labeled)}</span> rotulados</p>
+      <p class="muted lat-facts"><span class="mono">${fmt(index.n_points)}</span> documentos em 3D · <span class="mono" id="lat-labeled">${fmt(labeled)}</span> rotulados</p>
       <div class="segmented" role="radiogroup" aria-label="Espaço de representação">
         ${models.map((m) => `<button type="button" role="radio" data-model="${esc(m.id)}" aria-checked="false">${esc(SHORT_NAMES[m.id] ?? m.name)}</button>`).join("")}
       </div>
@@ -122,6 +140,11 @@ function shell(index) {
       <summary>Classes</summary>
       <div class="lat-legend-actions"><button type="button" class="link" id="lat-all">Mostrar todas</button></div>
       <ul id="lat-classes"></ul>
+      <div class="lat-strength">
+        <label for="lat-strength">Pontos não mapeados</label>
+        <output id="lat-strength-value" for="lat-strength" class="mono"></output>
+        <input type="range" id="lat-strength" min="5" max="100" step="1">
+      </div>
     </details>
     <aside class="lat-doc panel" id="lat-doc" aria-live="polite" hidden></aside>
     <button type="button" class="btn lat-reset" id="lat-reset">Recentrar</button>
@@ -155,7 +178,7 @@ export function mountLatent(root, index, getDataset) {
   const docsByPoint = new Map();
   getDataset().then((ds) => { for (const d of ds.docs) docsByPoint.set(d.coords_idx, d); }).catch(() => {});
 
-  // Os metadados completos só existem quando o site foi gerado com o CSV dos pontos.
+  // Vínculos reconstruídos ou vindos de um CSV: arquivos por faixa de pontos, baixados sob demanda.
   const shards = new Map();
   const loadShard = (shard) => {
     if (!shards.has(shard)) {
@@ -171,7 +194,9 @@ export function mountLatent(root, index, getDataset) {
     if (!index.shard_size) return null;
     const rows = await loadShard(Math.floor(point / index.shard_size));
     const row = rows?.[point % index.shard_size];
-    return row ? { id: row[0], name: `${row[0]}.pdf`, fornecedor: row[1], subcota: row[2], ano: row[3], url: row[4] } : null;
+    if (!row) return null;
+    if (row.c) return { candidates: row.c.map(documentFromRow) };
+    return { ...documentFromRow(row), reconstructed: true };
   }
 
   (async () => {
@@ -221,7 +246,9 @@ export function mountLatent(root, index, getDataset) {
       }
       return out;
     };
-    const vertexOf = (point) => { for (let v = n - 1; v >= 0; v--) if (order[v] === point) return v; return -1; };
+    const vertexOfPoint = new Uint32Array(n);
+    for (let v = 0; v < n; v++) vertexOfPoint[order[v]] = v;
+    const baseClasses = classes.slice();
     const classAttr = new Uint8Array(n);
     for (let v = 0; v < n; v++) classAttr[v] = classes[order[v]];
 
@@ -238,7 +265,7 @@ export function mountLatent(root, index, getDataset) {
     for (const c of index.classes) if (c.id < MAX_CLASSES) colors[c.id].set(c.hex).convertLinearToSRGB();
     const visible = new Array(MAX_CLASSES).fill(1);
     const uniforms = {
-      uMix: { value: 0 }, uPixel: { value: renderer.getPixelRatio() }, uScale: { value: 1 }, uPick: { value: 0 },
+      uMix: { value: 0 }, uPixel: { value: renderer.getPixelRatio() }, uScale: { value: 1 }, uPick: { value: 0 }, uUnmappedAlpha: { value: strengthToAlpha(readStrength()) },
       uVisible: { value: visible }, uColor: { value: colors },
     };
     const material = new ShaderMaterial({
@@ -283,7 +310,7 @@ export function mountLatent(root, index, getDataset) {
     resize();
 
     const pointPosition = (point) => {
-      const vertex = vertexOf(point);
+      const vertex = vertexOfPoint[point];
       const a = geometry.attributes.position.array;
       const b = geometry.attributes.aTarget.array;
       const t = uniforms.uMix.value;
@@ -336,6 +363,19 @@ export function mountLatent(root, index, getDataset) {
     }
 
     const classOf = (point) => index.classes.find((c) => c.id === classes[point]) ?? { name: "—", hex: "#858b94" };
+    const counts = new Map(index.classes.map((c) => [c.id, c.count]));
+    function setPointClass(point, id) {
+      if (classes[point] === id) return;
+      counts.set(classes[point], counts.get(classes[point]) - 1);
+      counts.set(id, (counts.get(id) ?? 0) + 1);
+      classes[point] = id;
+      const vertex = vertexOfPoint[point];
+      const attribute = geometry.attributes.aClass;
+      attribute.array[vertex] = id;
+      attribute.addUpdateRange(vertex, 1);
+      attribute.needsUpdate = true;
+      dirty = true;
+    }
     const dot = (hex) => `<span class="dot" style="background:${esc(hex)}"></span>`;
     let hoverToken = 0;
 
@@ -348,7 +388,8 @@ export function mountLatent(root, index, getDataset) {
       const draw = (doc) => {
         if (token !== hoverToken) return;
         tip.innerHTML = `<div class="lat-tip-class">${dot(c.hex)}${esc(c.name)}</div>
-          ${doc ? `<div class="mono">${esc(doc.name)}</div>${doc.fornecedor ? `<div class="muted">${esc(doc.fornecedor)}</div>` : ""}`
+          ${doc?.candidates ? `<div class="muted">Vínculo incerto · ${doc.candidates.length} candidatos</div>`
+            : doc ? `<div class="mono">${esc(doc.name)}</div>${doc.fornecedor ? `<div class="muted">${esc(doc.fornecedor)}</div>` : ""}`
             : `<div class="muted mono">Ponto ${fmt(point)}</div>`}`;
         tip.hidden = false;
         positionTip();
@@ -375,28 +416,95 @@ export function mountLatent(root, index, getDataset) {
       const draw = (doc) => {
         if (token !== pinToken) return;
         const row = (label, value) => (value === undefined || value === null || value === "" ? "" : `<dt>${label}</dt><dd>${esc(value)}</dd>`);
-        const url = doc?.url && /^https:\/\//.test(doc.url) ? doc.url : null;
-        docPanel.innerHTML = `<div class="lat-doc-head"><div class="lat-doc-class">${dot(c.hex)}${esc(c.name)}</div>
+        const candidates = doc?.candidates ?? null;
+        const current = classOf(point);
+        const url = safeUrl(doc?.url);
+        const title = candidates ? "Vínculo incerto" : doc?.name ?? "Documento sem vínculo";
+        docPanel.innerHTML = `<div class="lat-doc-head"><div class="lat-doc-class">${dot(current.hex)}${esc(current.name)}</div>
             <button type="button" class="btn ghost" id="lat-doc-close" aria-label="Fechar documento">✕</button></div>
-          <h2 class="mono">${esc(doc?.name ?? "Documento sem vínculo")}</h2>
+          <h2 class="mono">${esc(title)}</h2>
           <dl>
-            ${row("Fornecedor", doc?.fornecedor)}${row("Subcota", doc?.subcota)}${row("Ano", doc?.ano)}${row("Status", doc?.status)}
+            ${row("Fornecedor", doc?.fornecedor)}${row("Subcota", doc?.subcota)}${row("Ano", doc?.ano)}
+            ${row("Status", classes[point] > 0 ? "rotulado" : "não rotulado")}
             ${row("Cluster", doc?.closest_cluster)}
             ${row("Similaridade", doc?.similarity != null ? Number(doc.similarity).toFixed(4).replace(".", ",") : null)}
             ${row("Ponto", fmt(point))}
             <dt>Posição</dt><dd class="mono">${position.toArray().map((v) => v.toFixed(2).replace(".", ",")).join("  ")}</dd>
           </dl>
           ${url ? `<a class="btn btn--primary" href="${esc(url)}" target="_blank" rel="noopener">Abrir PDF</a>` : ""}
-          ${doc ? "" : `<p class="muted lat-doc-note">Este ponto ainda não tem vínculo com um documento.</p>`}`;
+          ${candidates ? `<p class="muted lat-doc-note">Alguns PDFs deste trecho falharam no processamento, então o documento é um destes. A classe só pode ser corrigida em vínculos exatos.</p>
+            <ul class="lat-cands">${candidates.map((c) => `<li>${safeUrl(c.url) ? `<a class="mono" href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.name)}</a>` : `<span class="mono">${esc(c.name)}</span>`}
+              ${c.fornecedor ? `<span class="muted">${esc(c.fornecedor)}</span>` : ""}</li>`).join("")}</ul>` : ""}
+          ${doc?.reconstructed ? `<p class="muted lat-doc-note">Vínculo reconstruído pela ordem dos documentos.</p>` : ""}
+          ${doc ? "" : `<p class="muted lat-doc-note">Este ponto não tem documento associado.</p>`}
+          ${doc?.id ? editorHtml(point) : ""}`;
         docPanel.querySelector("#lat-doc-close").addEventListener("click", () => pin(-1));
+        if (doc?.id) bindEditor(doc, point);
         docPanel.hidden = false;
         root.querySelector("#lat").classList.add("has-doc");
       };
-      draw(docsByPoint.get(point) ?? null);
-      if (!docsByPoint.has(point) && index.shard_size) docFor(point).then((doc) => { if (doc) draw(doc); });
+      redrawPinned = draw;
+      currentDoc = null;
+      const show = (doc) => { currentDoc = doc; draw(doc); };
+      show(docsByPoint.get(point) ?? null);
+      if (!docsByPoint.has(point) && index.shard_size) docFor(point).then((doc) => { if (doc && token === pinToken) show(doc); });
       if (flyTo) flyToward(position);
     }
 
+    let redrawPinned = () => {};
+    let currentDoc = null;
+    let editorMessage = "";
+    function editorHtml(point) {
+      const current = classes[point];
+      const corrected = current !== baseClasses[point];
+      const message = editorMessage;
+      editorMessage = "";
+      return `<form class="lat-edit" id="lat-edit">
+        <label for="lat-edit-class">Corrigir classe</label>
+        <select id="lat-edit-class">${index.classes.map((c) => `<option value="${c.id}" ${c.id === current ? "selected" : ""}>${esc(c.name)}</option>`).join("")}</select>
+        ${readPassword() ? "" : `<label for="lat-edit-pass">Senha de edição</label><input type="password" id="lat-edit-pass" autocomplete="current-password" required>`}
+        <button type="submit" class="btn" id="lat-edit-save">Salvar classe</button>
+        ${corrected ? `<button type="button" class="link" id="lat-edit-undo">Desfazer correção</button>` : ""}
+        <p class="lat-edit-msg" id="lat-edit-msg" role="status">${esc(message)}</p>
+      </form>`;
+    }
+    function bindEditor(doc, point) {
+      const form = docPanel.querySelector("#lat-edit");
+      const message = (text) => { docPanel.querySelector("#lat-edit-msg").textContent = text; };
+      const submit = async (id, done) => {
+        const previous = classes[point];
+        const target = index.classes.find((c) => c.id === id);
+        const password = readPassword() ?? form.querySelector("#lat-edit-pass")?.value;
+        if (!password) { message("Informe a senha de edição."); return; }
+        form.querySelectorAll("button").forEach((b) => { b.disabled = true; });
+        setPointClass(point, id);
+        refreshLegend();
+        let failure = null;
+        try {
+          const response = await fetch("api/corrections", {
+            method: "POST", signal, headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ password, id: doc.id, point, class: apiClass(target) }),
+          });
+          if (response.status === 401) writePassword(null);
+          if (!response.ok) failure = (await response.json().catch(() => null))?.error ?? "Não foi possível salvar.";
+          else writePassword(password);
+        } catch (err) {
+          if (signal.aborted) return;
+          failure = "Sem conexão com o serviço de correções.";
+        }
+        if (failure) setPointClass(point, previous);
+        refreshLegend();
+        editorMessage = failure ?? done;
+        if (pinned === point) { placeMark(pinMark, point); redrawPinned(currentDoc ?? doc); }
+      };
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const id = Number(form.querySelector("#lat-edit-class").value);
+        if (id === classes[point]) { message("Esta já é a classe do ponto."); return; }
+        submit(id, "Correção salva.");
+      });
+      form.querySelector("#lat-edit-undo")?.addEventListener("click", () => submit(baseClasses[point], "Correção desfeita."));
+    }
     function flyToward(position) {
       const direction = camera.position.clone().sub(controls.target).normalize();
       const distance = Math.min(camera.position.distanceTo(controls.target), 70);
@@ -532,10 +640,17 @@ export function mountLatent(root, index, getDataset) {
 
     // Legenda: a cor fica presa à classe; ligar, desligar ou isolar nunca recolore as demais.
     const list = $("lat-classes");
-    const sorted = [...index.classes].filter((c) => c.count > 0).sort((a, b) => (a.id === 0) - (b.id === 0) || b.count - a.count);
-    list.innerHTML = sorted.map((c) => `<li><button type="button" class="lat-class" data-class="${c.id}" aria-pressed="true">
-        ${dot(c.hex)}<span class="lat-class-name">${esc(c.name)}</span><span class="muted mono">${fmt(c.count)}</span></button>
+    function refreshLegend() {
+      const rows = index.classes.filter((c) => counts.get(c.id) > 0)
+        .sort((x, y) => (x.id === 0) - (y.id === 0) || counts.get(y.id) - counts.get(x.id));
+      list.innerHTML = rows.map((c) => `<li><button type="button" class="lat-class" data-class="${c.id}" aria-pressed="${visible[c.id] === 1}">
+        ${dot(c.hex)}<span class="lat-class-name">${esc(c.name)}</span><span class="muted mono">${fmt(counts.get(c.id))}</span></button>
         <button type="button" class="link lat-only" data-only="${c.id}" aria-label="Mostrar só ${esc(c.name)}">Só esta</button></li>`).join("");
+      let labeled = 0;
+      for (const [id, count] of counts) if (id !== 0) labeled += count;
+      $("lat-labeled").textContent = fmt(labeled);
+    }
+    refreshLegend();
     const syncLegend = () => {
       list.querySelectorAll("[data-class]").forEach((b) => b.setAttribute("aria-pressed", String(visible[Number(b.dataset.class)] === 1)));
       if (hovered >= 0 && !visible[classes[hovered]]) { hovered = -1; placeMark(hoverMark, -1); showTip(-1); }
@@ -556,8 +671,32 @@ export function mountLatent(root, index, getDataset) {
       syncLegend();
     });
     $("lat-all").addEventListener("click", () => { visible.fill(1); syncLegend(); });
+    const strength = $("lat-strength");
+    const showStrength = () => { $("lat-strength-value").textContent = `${strength.value}%`; };
+    strength.value = String(readStrength());
+    showStrength();
+    strength.addEventListener("input", () => {
+      uniforms.uUnmappedAlpha.value = strengthToAlpha(Number(strength.value));
+      showStrength();
+      dirty = true;
+      try { localStorage.setItem(STRENGTH_KEY, strength.value); } catch { /* sem armazenamento */ }
+    });
     $("lat-reset").addEventListener("click", () => flyTo(new Vector3(), HOME.clone()));
     if (matchMedia("(max-width: 760px)").matches) $("lat-legend").open = false;
+
+    // Correções gravadas: vale o evento mais recente de cada documento.
+    fetch("api/corrections", { signal }).then((r) => (r.ok ? r.json() : null)).then((data) => {
+      if (!data) return;
+      const idByApiName = new Map(index.classes.map((c) => [apiClass(c), c.id]));
+      const latest = new Map();
+      for (const event of data.corrections) latest.set(event.id, event);
+      for (const event of latest.values()) {
+        const id = idByApiName.get(event.class);
+        if (id !== undefined && event.point >= 0 && event.point < n) setPointClass(event.point, id);
+      }
+      refreshLegend();
+      stage.dataset.corrections = String(latest.size);
+    }).catch(() => {});
 
     stage.dataset.points = String(geometry.attributes.position.count);
 

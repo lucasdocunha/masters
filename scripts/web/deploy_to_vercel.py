@@ -142,7 +142,7 @@ def main():
     # 1. Coletar todos os arquivos em web_app/
     files_to_deploy = []
     for p in WEB_APP_DIR.rglob("*"):
-        if p.is_file() and not p.name.startswith("."):
+        if p.is_file() and not p.name.startswith(".") and "node_modules" not in p.parts:
             rel = p.relative_to(WEB_APP_DIR).as_posix()
             files_to_deploy.append((p, rel))
 

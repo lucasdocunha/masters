@@ -1,8 +1,10 @@
 """Gera web/data/latent/: coordenadas, classes e metadados por ponto do espaço latente 3D.
 
-Todos os arquivos seguem a ordem dos pontos dos coords_*.bin.gz. O vínculo ponto -> documento
-só existe para os documentos com `coords_idx` no plotly_dataset, a menos que um CSV com todos os
-pontos seja informado; esse CSV é sempre conferido contra os vínculos conhecidos.
+Todos os arquivos seguem a ordem dos pontos dos coords_*.bin.gz. Os pontos seguem a ordem de
+(ano do arquivo Ano-*.json, deputado, id), como texto, sem os PDFs que falharam no processamento.
+Os documentos com `coords_idx` no plotly_dataset servem de âncoras: entre duas âncoras, se há tantos
+pontos quanto candidatos, o vínculo é exato; se sobram candidatos, é incerto. Um CSV com todos os
+pontos tem prioridade sobre essa reconstrução e também é conferido contra as âncoras.
 """
 
 import csv
@@ -17,6 +19,9 @@ from typing import Any
 import numpy as np
 
 SHARD_SIZE = 5000
+MAX_CANDIDATES = 8
+UNMAPPED_EVENT = "_unmapped"
+PDF_PATH = re.compile(r"/publ/(\d+)/(\d+)/(\d+)\.pdf")
 UNMAPPED = "Não Mapeado"
 ID_COLUMNS = ("idDocumento", "id_documento", "doc_id", "id", "doc_name", "name", "arquivo", "file")
 URL_COLUMNS = ("urlDocumento", "url_documento", "url", "link")
@@ -131,6 +136,58 @@ def enrich_from_raw(points: list[dict[str, Any] | None], raw_dir: Path) -> None:
                 point["ano"] = point["ano"] or record.get("ano") or ""
 
 
+def load_candidates(raw_dir: Path) -> list[dict[str, Any]]:
+    """Lista os PDFs dos JSONs anuais na ordem dos pontos, um arquivo por vez."""
+    keyed: dict[tuple[str, str, str], dict[str, Any]] = {}
+    for path in sorted(raw_dir.glob("Ano-*.json")):
+        file_year = re.search(r"Ano-(\d+)", path.name).group(1)
+        with open(path, encoding="utf-8") as f:
+            records = json.load(f)["dados"]
+        for record in records:
+            url = record.get("urlDocumento") or ""
+            match = PDF_PATH.search(url)
+            if match and (file_year, match[1], match[3]) not in keyed:
+                keyed[(file_year, match[1], match[3])] = {
+                    "id": match[3], "url": url, "fornecedor": record.get("fornecedor") or "",
+                    "subcota": record.get("descricao") or "", "ano": record.get("ano") or "",
+                }
+        del records
+    return [keyed[key] for key in sorted(keyed)]
+
+
+def reconstruct_points(
+    candidates: list[dict[str, Any]], known: dict[int, str], n_points: int,
+) -> tuple[list[dict[str, Any] | None], dict[str, int]]:
+    """Liga pontos a documentos entre âncoras; aborta se uma âncora sair da ordem esperada."""
+    position = {c["id"]: i for i, c in enumerate(candidates)}
+    anchors = sorted((point, position[doc_id]) for point, doc_id in known.items() if doc_id in position)
+    points: list[dict[str, Any] | None] = [None] * n_points
+    stats = {"anchors": len(anchors), "exact": 0, "uncertain": 0, "listed": 0, "unlinked": 0}
+    last_point, last_candidate = -1, -1
+    for point, candidate in [*anchors, (n_points, len(candidates))]:
+        if candidate <= last_candidate:
+            raise ValueError(f"Âncora fora da ordem no ponto {point}: a reconstrução não é confiável")
+        n_between, n_candidates = point - last_point - 1, candidate - last_candidate - 1
+        extra = n_candidates - n_between
+        for offset in range(n_between):
+            index = last_point + 1 + offset
+            start = last_candidate + 1 + offset
+            if extra == 0:
+                points[index] = candidates[start]
+                stats["exact"] += 1
+            elif extra > 0:
+                stats["uncertain"] += 1
+                if extra + 1 <= MAX_CANDIDATES:
+                    points[index] = {"id": None, "candidates": candidates[start:start + extra + 1]}
+                    stats["listed"] += 1
+            else:
+                stats["unlinked"] += 1
+        if point < n_points:
+            points[point] = candidates[candidate]
+        last_point, last_candidate = point, candidate
+    return points, stats
+
+
 def classes_from_history(points: list[dict[str, Any] | None], history: dict[str, str], palette: dict[str, dict]) -> np.ndarray:
     ids = {entry["name"]: int(key) for key, entry in palette.items()}
     for label in sorted(set(history.values()) - set(ids)):
@@ -145,17 +202,48 @@ def classes_from_history(points: list[dict[str, Any] | None], history: dict[str,
     return classes
 
 
+def _document_row(point: dict[str, Any]) -> list[Any]:
+    return [point["id"], point["fornecedor"], point["subcota"], point["ano"], point["url"]]
+
+
+def _shard_row(point: dict[str, Any] | None) -> list[Any] | dict[str, Any] | None:
+    if point is None:
+        return None
+    if point.get("candidates"):
+        return {"c": [_document_row(c) for c in point["candidates"]]}
+    return _document_row(point)
+
+
 def write_shards(points: list[dict[str, Any] | None], out_dir: Path) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     shards = 0
     for start in range(0, len(points), SHARD_SIZE):
-        rows = [[p["id"], p["fornecedor"], p["subcota"], p["ano"], p["url"]] if p else None
-                for p in points[start:start + SHARD_SIZE]]
+        rows = [_shard_row(p) for p in points[start:start + SHARD_SIZE]]
         payload = json.dumps(rows, separators=(",", ":"), ensure_ascii=False).encode()
         # mtime fixo: a mesma entrada gera os mesmos bytes.
         (out_dir / f"{start // SHARD_SIZE:05d}.json.gz").write_bytes(gzip.compress(payload, 9, mtime=0))
         shards += 1
     return shards
+
+
+def merge_corrections(history: dict[str, str], events: Iterable[dict[str, Any]]) -> dict[str, Any]:
+    """Aplica o evento mais recente de cada documento ao histórico; `_unmapped` remove o rótulo."""
+    latest: dict[str, dict[str, Any]] = {}
+    for event in sorted(events, key=lambda e: e["ts"]):
+        latest[event["id"]] = event
+    merged = dict(history)
+    changes = []
+    for doc_id, event in latest.items():
+        new = None if event["class"] == UNMAPPED_EVENT else event["class"]
+        old = merged.get(doc_id)
+        if new == old:
+            continue
+        changes.append({"id": doc_id, "de": old, "para": new})
+        if new is None:
+            del merged[doc_id]
+        else:
+            merged[doc_id] = new
+    return {"history": merged, "changes": changes}
 
 
 def build_latent_assets(
@@ -171,12 +259,16 @@ def build_latent_assets(
     check_class_counts(classes, palette)
 
     points = None
+    links: dict[str, int] = {}
+    known = {d["coords_idx"]: str(d["id"]) for d in docs}
     if csv_path:
-        points = read_points_csv(csv_path, {d["coords_idx"]: str(d["id"]) for d in docs}, n_points)
+        points = read_points_csv(csv_path, known, n_points)
         if raw_dir:
             enrich_from_raw(points, raw_dir)
-        if history_path:
-            classes = classes_from_history(points, json.loads(history_path.read_text(encoding="utf-8")), palette)
+    elif raw_dir:
+        points, links = reconstruct_points(load_candidates(raw_dir), known, n_points)
+    if points and history_path:
+        classes = classes_from_history(points, json.loads(history_path.read_text(encoding="utf-8")), palette)
 
     out_dir.mkdir(parents=True, exist_ok=True)
     for model in meta["models"].values():
@@ -198,4 +290,4 @@ def build_latent_assets(
         "shard_size": SHARD_SIZE if points else None,
     }
     (out_dir / "index.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    return {"points": n_points, "labeled": int((classes > 0).sum()), "shards": shards}
+    return {"points": n_points, "labeled": int((classes > 0).sum()), "shards": shards, **links}

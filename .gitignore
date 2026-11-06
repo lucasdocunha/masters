@@ -21,3 +21,7 @@ label_studio_data/
 # Validação manual (áreas de trabalho fora do repo)
 validacao_*
 .venv_ocr
+
+# Site: dependências e configuração local do Vercel
+web/node_modules/
+.vercel/
