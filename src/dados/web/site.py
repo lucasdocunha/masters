@@ -113,7 +113,10 @@ class Artifact:
         return self.__dict__.copy()
 
 
-def scan_artifacts(data_dir: Path, skip_dirs: set[str] = frozenset({"raw/pdfs"})) -> list[Artifact]:
+def scan_artifacts(
+    data_dir: Path,
+    skip_dirs: set[str] = frozenset({"raw/pdfs", "pdfs_selecionados", "rendered_pages", "pgdata"}),
+) -> list[Artifact]:
     """Lista arquivos de ``data_dir`` ignorando symlinks duplicados e PNGs (vão para as miniaturas)."""
     out: list[Artifact] = []
     for dirpath, dirnames, filenames in os.walk(data_dir):
