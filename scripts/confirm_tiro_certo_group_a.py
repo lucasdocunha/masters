@@ -22,7 +22,7 @@ import numpy as np
 
 BASE_DIR = Path("/home/lucas.ocunha/masters")
 DATA_DIR = BASE_DIR / "data"
-HIST_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HIST_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
 EMBS_PATH = DATA_DIR / "latent_vectors_metric_learned_128d.npy"
 LOOKUP_FILE = DATA_DIR / "pdf_metadata_lookup.json"

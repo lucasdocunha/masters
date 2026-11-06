@@ -132,7 +132,7 @@ print(f"Confirmando {len(accepted)} documentos como NFC (Cupom Fiscal / NFC-e)..
 with open(str(ROOT_DIR / "data/labeling/accepted_combustivel_as_nfc.json"), "w") as f:
     json.dump({"total": len(accepted), "stems": accepted}, f, indent=2)
 
-h_file = (ROOT_DIR / "ml_backend/models/annotations_history.json")
+h_file = (ROOT_DIR / "data/models/annotations_history.json")
 with open(h_file) as f:
     h = json.load(f)
 for s in accepted:
@@ -164,7 +164,7 @@ print(f"Confirmando {len(accepted)} documentos como NFE (DANFE Modelo 55)...")
 with open(str(ROOT_DIR / "data/labeling/accepted_combustivel_as_nfe.json"), "w") as f:
     json.dump({"total": len(accepted), "stems": accepted}, f, indent=2)
 
-h_file = (ROOT_DIR / "ml_backend/models/annotations_history.json")
+h_file = (ROOT_DIR / "data/models/annotations_history.json")
 with open(h_file) as f:
     h = json.load(f)
 for s in accepted:

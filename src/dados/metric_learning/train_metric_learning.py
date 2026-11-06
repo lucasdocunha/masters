@@ -1,4 +1,3 @@
-import sys
 #!/usr/bin/env python3
 """
 Deep Metric Learning (ArcFace / Additive Angular Margin) para Espaço Latente CEAP (512-D -> 128-D).
@@ -15,7 +14,6 @@ from dados.config import ROOT_DIR
 import base64
 import json
 import math
-import sys
 import time
 import zlib
 from pathlib import Path
@@ -31,8 +29,8 @@ BASE_DIR = ROOT_DIR
 DATA_DIR = BASE_DIR / "data"
 NPZ_PATH = DATA_DIR / "latent_vectors_full.npz"
 META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
-HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
-MODEL_SAVE_PATH = BASE_DIR / "ml_backend" / "models" / "metric_projection_head.pt"
+HISTORY_PATH = BASE_DIR / "data" / "models" / "annotations_history.json"
+MODEL_SAVE_PATH = BASE_DIR / "data" / "models" / "metric_projection_head.pt"
 OUTPUT_HTML = DATA_DIR / "latent_vectors_metric_learned_1_4m_3d.html"
 
 CLASS_PALETTE = {
@@ -897,17 +895,6 @@ def main():
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
         f.write(html_content)
     print(f"   -> Salvo em: {OUTPUT_HTML} ({OUTPUT_HTML.stat().st_size / (1024*1024):.2f} MB)")
-
-    # 8. Sincronização automática com a aplicação Web 3D e Deploy no Vercel
-    print("\n7. Sincronizando dados com o Web App 3D e atualizando Vercel...")
-    sync_script = BASE_DIR / "scripts" / "build_and_sync_web_app.py"
-    deploy_script = BASE_DIR / "scripts" / "deploy_to_vercel.py"
-    if sync_script.exists():
-        import subprocess
-        subprocess.run([sys.executable, str(sync_script)], check=False)
-        if deploy_script.exists():
-            print("   -> Disparando deploy automático na CDN do Vercel...")
-            subprocess.run([sys.executable, str(deploy_script)], check=False)
 
     print(f"\n=== SUCESSO TOTAL EM {time.time()-t_global:.1f} SEGUNDOS! ===")
 

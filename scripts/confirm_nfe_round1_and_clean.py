@@ -24,7 +24,7 @@ NFE_DIR = DATA_DIR / "validacao_batches" / "validacao_nfe_13k"
 CONFIRMADOS_DIR = NFE_DIR / "1_confirmados_ocr"
 FALSOS_DIR = NFE_DIR / "3_falsos_positivos_detectados"
 RESULTS_FILE = NFE_DIR / "rapidocr_results.json.gz"
-HISTORY_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 YEAR_FILE = DATA_DIR / "pdf_to_year.json"
 DB_URL = os.environ.get("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/ceap")
 

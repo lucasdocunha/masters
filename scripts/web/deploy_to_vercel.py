@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Deploy do Web App CEAP 3D para o Vercel via REST API.
+Deploy do site de inspeção (web/) para o Vercel via REST API.
 Não requer npm ou Node.js instalados na máquina.
 Faz upload direto dos arquivos para a CDN do Vercel e dispara o deployment.
 """
@@ -19,9 +19,7 @@ DEFAULT_TEAM_ID = os.getenv("VERCEL_TEAM_ID", "")  # defina no ambiente; nunca v
 DEFAULT_TOKEN = os.getenv("VERCEL_TOKEN", "")  # defina no ambiente; nunca versionar
 DEFAULT_PROJECT = "ceap-latent-space-3d"
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
-WEB_APP_DIR = ROOT_DIR / "web"
-if not WEB_APP_DIR.exists():
-    WEB_APP_DIR = ROOT_DIR / "web_app"
+WEB_DIR = ROOT_DIR / "web"
 
 
 def compute_sha1(data: bytes) -> str:
@@ -130,9 +128,7 @@ def assign_alias(team_id: str, token: str, deployment_id: str, alias_name: str) 
 def load_env():
     env_paths = [
         ROOT_DIR / ".env",
-        WEB_APP_DIR / ".env",
-        (ROOT_DIR / ".env"),
-        (ROOT_DIR / "web_app/.env")
+        WEB_DIR / ".env",
     ]
     for ep in env_paths:
         if ep.exists():
@@ -147,24 +143,24 @@ def load_env():
 
 def main():
     load_env()
-    parser = argparse.ArgumentParser(description="Deploy Web App CEAP 3D para o Vercel")
+    parser = argparse.ArgumentParser(description="Deploy do site de inspeção para o Vercel")
     parser.add_argument("--token", default=os.getenv("VERCEL_TOKEN", DEFAULT_TOKEN), help="Vercel Access Token")
     parser.add_argument("--team-id", default=os.getenv("VERCEL_TEAM_ID", DEFAULT_TEAM_ID), help="Vercel Team ID")
     parser.add_argument("--project", default=os.getenv("VERCEL_PROJECT", DEFAULT_PROJECT), help="Nome do projeto no Vercel")
     args = parser.parse_args()
 
     print("==================================================================")
-    print("      DEPLOY CEAP 3D LATENT EXPLORER PARA O VERCEL               ")
+    print("      DEPLOY DO SITE DE INSPEÇÃO CEAP PARA O VERCEL              ")
     print("==================================================================")
-    print(f"Diretório: {WEB_APP_DIR}")
+    print(f"Diretório: {WEB_DIR}")
     print(f"Team ID:   {args.team_id}")
     print(f"Projeto:   {args.project}")
 
-    # 1. Coletar todos os arquivos em web_app/
+    # 1. Coletar todos os arquivos de web/
     files_to_deploy = []
-    for p in WEB_APP_DIR.rglob("*"):
+    for p in WEB_DIR.rglob("*"):
         if p.is_file() and not p.name.startswith(".") and "node_modules" not in p.parts:
-            rel = p.relative_to(WEB_APP_DIR).as_posix()
+            rel = p.relative_to(WEB_DIR).as_posix()
             files_to_deploy.append((p, rel))
 
     print(f"\n1. Encontrados {len(files_to_deploy)} arquivos para deploy.")

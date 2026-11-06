@@ -21,7 +21,7 @@ BASE_DIR = Path("/home/lucas.ocunha/masters")
 DATA_DIR = BASE_DIR / "data"
 BATCH_DIR = DATA_DIR / "validacao_batches" / "validacao_cupom_fiscal"
 CONFIRMADOS_DIR = BATCH_DIR / "1_confirmados_ocr"
-HIST_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HIST_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 YEAR_FILE = DATA_DIR / "pdf_to_year.json"
 DB_URL = os.environ.get("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/ceap")
 

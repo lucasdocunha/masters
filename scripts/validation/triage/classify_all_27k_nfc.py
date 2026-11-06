@@ -216,7 +216,7 @@ def main():
     output_base = (DESKTOP_DIR / "validacao_nfc_todos_27k")
     
     # 1. Carregar lista de IDs NFC
-    history_file = root_dir / "ml_backend" / "models" / "annotations_history.json"
+    history_file = root_dir / "data" / "models" / "annotations_history.json"
     with open(history_file, "r", encoding="utf-8") as f:
         history = json.load(f)
     nfc_ids = sorted([k for k, v in history.items() if v == "nfc"])

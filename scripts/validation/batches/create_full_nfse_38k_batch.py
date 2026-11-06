@@ -70,7 +70,7 @@ def main():
     print("==================================================================")
 
     # 1. Carregar histórico e metadados
-    history_p = base_dir / "ml_backend" / "models" / "annotations_history.json"
+    history_p = base_dir / "data" / "models" / "annotations_history.json"
     with open(history_p, "r", encoding="utf-8") as f:
         history = json.load(f)
 
@@ -260,7 +260,7 @@ import json
 from pathlib import Path
 
 BASE_DIR = ROOT_DIR
-HISTORY_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 CURRENT_DIR = Path(__file__).resolve().parent
 
 def main():

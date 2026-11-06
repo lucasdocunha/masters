@@ -20,7 +20,7 @@ BASE_DIR = Path("/home/lucas.ocunha/masters")
 DATA_DIR = BASE_DIR / "data"
 VALIDATION_DIR = DATA_DIR / "validacao_batches" / "validacao_nfse_38k"
 TIER1_DIR = VALIDATION_DIR / "1_similares_98_a_100pct"
-HISTORY_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 YEAR_FILE = DATA_DIR / "pdf_to_year.json"
 DB_URL = os.environ.get("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/ceap")
 

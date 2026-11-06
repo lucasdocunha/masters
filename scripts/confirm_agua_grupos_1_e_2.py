@@ -22,7 +22,7 @@ import numpy as np
 import psycopg
 
 BASE_DIR = Path("/home/lucas.ocunha/masters")
-HIST_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HIST_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 META_PATH = BASE_DIR / "data" / "latent_vectors_full_metadata.json"
 EMBS_PATH = BASE_DIR / "data" / "latent_vectors_metric_learned_128d.npy"
 LOOKUP_FILE = BASE_DIR / "data" / "pdf_metadata_lookup.json"

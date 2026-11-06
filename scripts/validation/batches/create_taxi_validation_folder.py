@@ -133,7 +133,7 @@ print(f"Registros salvos em: {ACCEPTED_FILE}")
 
 # Enviar dados ao ML Backend
 print("\\nAtualizando histórico de anotações no ML Backend...")
-HISTORY_FILE = (ROOT_DIR / "ml_backend/models/annotations_history.json")
+HISTORY_FILE = (ROOT_DIR / "data/models/annotations_history.json")
 if HISTORY_FILE.exists():
     with open(HISTORY_FILE, "r") as f:
         history = json.load(f)

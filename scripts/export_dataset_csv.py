@@ -31,7 +31,7 @@ RAW_DIR = DATA_DIR / "raw"
 PDF_DIR = Path("/media/ssd2/datasets/CEAP")
 DESKTOP_DIR = Path("/home/lucas.ocunha/Desktop")
 
-HISTORY_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 LOOKUP_FILE = DATA_DIR / "pdf_metadata_lookup.json"
 URL_CACHE_FILE = DATA_DIR / "stem_to_url.json"
 

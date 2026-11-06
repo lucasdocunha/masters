@@ -22,7 +22,7 @@ import requests
 
 DATA_DIR = (ROOT_DIR / "data")
 IMAGES_DIR = DATA_DIR / "rendered_pages"
-HISTORY_FILE = (ROOT_DIR / "ml_backend/models/annotations_history.json")
+HISTORY_FILE = (ROOT_DIR / "data/models/annotations_history.json")
 NPZ_FILE = DATA_DIR / "latent_vectors_sample_5pct.npz"
 META_FILE = DATA_DIR / "latent_vectors_sample_5pct_metadata.json"
 LOOKUP_FILE = DATA_DIR / "pdf_metadata_lookup.json"

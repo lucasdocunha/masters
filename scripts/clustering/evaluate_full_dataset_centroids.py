@@ -17,7 +17,7 @@ BASE_DIR = ROOT_DIR
 DATA_DIR = BASE_DIR / "data"
 NPZ_FILE = DATA_DIR / "latent_vectors_full.npz"
 META_FILE = DATA_DIR / "latent_vectors_full_metadata.json"
-HISTORY_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 OUTPUT_JSON = DATA_DIR / "full_dataset_centroids_sim90_analysis.json"
 
 CLASSES = [

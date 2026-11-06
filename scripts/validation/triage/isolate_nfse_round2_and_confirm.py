@@ -26,7 +26,7 @@ import pymupdf
 BASE_DIR = ROOT_DIR
 DATA_DIR = BASE_DIR / "data"
 BATCH_DIR = DATA_DIR / "validacao_batches" / "validacao_nfse_38k"
-HISTORY_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 DEST_REMOVED_DIR = DATA_DIR / "validacao_batches" / "validacao_nfse_removidos_falsos_positivos"
 
 REJECTED_SUPPLIERS = [

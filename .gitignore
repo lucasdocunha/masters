@@ -41,8 +41,6 @@ logs/
 *.out
 data/label_studio_*
 label_studio_data/
-ml_backend/models/
-web_app
 
 # Site: miniaturas e pré-visualizações são versionadas (o deploy precisa delas).
 # Regenere com: uv run python scripts/web/build_site.py

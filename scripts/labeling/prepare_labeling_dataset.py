@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Prepara o dataset otimizado para o Estúdio de Rotulação e Tabela CSV na Web App:
+Prepara o dataset de documentos rotulados usado pelo site:
 1. Extrai mapeamento de URLs oficiais da Câmara para os 1.34M documentos
 2. Carrega as anotações existentes e incorpora os novos lotes:
    - boleto (735 confirmados + 265 candidatos de bancos/condomínios)
@@ -9,8 +9,8 @@ Prepara o dataset otimizado para o Estúdio de Rotulação e Tabela CSV na Web A
    - pedagio (81 confirmados) e sem_parar (919 candidatos)
 3. Calcula centróides de cada classe no espaço 128-D ArcFace
 4. Seleciona os Top 250 candidatos não-mapeados mais próximos da fronteira de cada cluster
-5. Salva web_app/data/labeling_dataset.json.gz (~850 KB)
-6. Atualiza web_app/data/metadata.json com a paleta completa
+5. Salva web/data/labeling_dataset.json.gz (~850 KB)
+6. Atualiza web/data/metadata.json com a paleta completa
 """
 
 from dados.config import ROOT_DIR
@@ -24,8 +24,6 @@ import numpy as np
 BASE_DIR = ROOT_DIR
 DATA_DIR = BASE_DIR / "data"
 WEB_DATA_DIR = BASE_DIR / "web" / "data"
-if not (BASE_DIR / "web").exists() and (BASE_DIR / "web_app").exists():
-    WEB_DATA_DIR = BASE_DIR / "web_app" / "data"
 WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 EXTENDED_PALETTE = {
@@ -81,7 +79,7 @@ def build_or_load_url_cache() -> dict:
 
 def load_all_batches():
     """Carrega anotações prévias e os 4 lotes validados."""
-    history_p = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+    history_p = BASE_DIR / "data" / "models" / "annotations_history.json"
     annotations = {}
     if history_p.exists():
         with open(history_p, "r", encoding="utf-8") as f:
@@ -172,7 +170,7 @@ def main():
     print(f"   Total de documentos anotados disponíveis: {len(annotations):,}")
 
     # Salvar anotações atualizadas
-    with open(BASE_DIR / "ml_backend" / "models" / "annotations_history.json", "w", encoding="utf-8") as f:
+    with open(BASE_DIR / "data" / "models" / "annotations_history.json", "w", encoding="utf-8") as f:
         json.dump(annotations, f, indent=2, ensure_ascii=False)
 
     # 4. Calcular Centróides de cada classe

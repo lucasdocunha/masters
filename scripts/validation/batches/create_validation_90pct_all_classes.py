@@ -42,8 +42,8 @@ BASE_DIR = ROOT_DIR
 DATA_DIR = BASE_DIR / "data"
 NPZ_PATH = DATA_DIR / "latent_vectors_full.npz"
 META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
-HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
-MODEL_PATH = BASE_DIR / "ml_backend" / "models" / "metric_projection_head.pt"
+HISTORY_PATH = BASE_DIR / "data" / "models" / "annotations_history.json"
+MODEL_PATH = BASE_DIR / "data" / "models" / "metric_projection_head.pt"
 RENDERED_DIR = DATA_DIR / "rendered_pages"
 TARGET_ROOT = DESKTOP_DIR / "validacao_90pct"
 THUMB_DIR = Path.home() / ".cache" / "thumbnails" / "large"
@@ -304,7 +304,7 @@ import requests
 
 CLASS_NAME = "{class_name}"
 CURRENT_DIR = Path(__file__).resolve().parent
-HISTORY_FILE = ROOT_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_FILE = ROOT_DIR / "data" / "models" / "annotations_history.json"
 ML_BACKEND_URL = "http://localhost:9090"
 
 
@@ -373,7 +373,7 @@ from pathlib import Path
 import requests
 
 CURRENT_DIR = Path(__file__).resolve().parent
-HISTORY_FILE = ROOT_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_FILE = ROOT_DIR / "data" / "models" / "annotations_history.json"
 ML_BACKEND_URL = "http://localhost:9090"
 
 

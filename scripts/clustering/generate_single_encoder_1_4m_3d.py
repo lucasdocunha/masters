@@ -24,7 +24,7 @@ BASE_DIR = ROOT_DIR
 DATA_DIR = BASE_DIR / "data"
 NPZ_PATH = DATA_DIR / "latent_vectors_full.npz"
 META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
-HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_PATH = BASE_DIR / "data" / "models" / "annotations_history.json"
 
 CLASS_PALETTE = {
     "Não Mapeado": {"hex": "#52525b", "rgb": [82, 82, 91]},

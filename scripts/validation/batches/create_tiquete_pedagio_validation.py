@@ -89,7 +89,7 @@ import urllib.request
 VALID_DIR = Path(__file__).resolve().parent
 MASTERS_DATA = (ROOT_DIR / "data")
 ACCEPTED_FILE = MASTERS_DATA / "accepted_pedagio.json"
-HISTORY_FILE = (ROOT_DIR / "ml_backend/models/annotations_history.json")
+HISTORY_FILE = (ROOT_DIR / "data/models/annotations_history.json")
 BACKEND_TRAIN_URL = "http://localhost:9090/train"
 
 print("=== CONFIRMAÇÃO DE VALIDAÇÃO: PEDÁGIO (TÍQUETES DE CABINE) ===")

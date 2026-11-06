@@ -21,7 +21,7 @@ RENDERED_DIR = DATA_DIR / "rendered_pages"
 NPZ_FILE = DATA_DIR / "latent_vectors_sample_5pct.npz"
 META_FILE = DATA_DIR / "latent_vectors_sample_5pct_metadata.json"
 LOOKUP_FILE = DATA_DIR / "pdf_metadata_lookup.json"
-HISTORY_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 THUMB_LARGE_DIR = Path.home() / ".cache" / "thumbnails" / "large"
 
 RENDERED_DIR.mkdir(parents=True, exist_ok=True)
@@ -102,7 +102,7 @@ import requests
 
 FOLDER = Path(__file__).resolve().parent
 MANIFEST_FILE = FOLDER / ".candidatos.json"
-HISTORY_FILE = (ROOT_DIR / "ml_backend/models/annotations_history.json")
+HISTORY_FILE = (ROOT_DIR / "data/models/annotations_history.json")
 ACCEPTED_FILE = (ROOT_DIR / "data/labeling/accepted_{class_key}.json")
 ML_BACKEND_URL = "http://localhost:9090"
 

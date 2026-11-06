@@ -24,7 +24,7 @@ def main():
     base_dir = ROOT_DIR
     data_dir = base_dir / "data"
     batch_dir = data_dir / "validacao_batches" / "validacao_nfse_38k"
-    history_file = base_dir / "ml_backend" / "models" / "annotations_history.json"
+    history_file = base_dir / "data" / "models" / "annotations_history.json"
     dest_removed_dir = data_dir / "validacao_batches" / "validacao_nfse_removidos_falsos_positivos"
     dest_removed_dir.mkdir(parents=True, exist_ok=True)
 

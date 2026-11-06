@@ -18,7 +18,7 @@ BASE_DIR = ROOT_DIR
 DATA_DIR = BASE_DIR / "data"
 NPZ_PATH = DATA_DIR / "latent_vectors_sample_5pct.npz"
 META_PATH = DATA_DIR / "latent_vectors_sample_5pct_metadata.json"
-HISTORY_PATH = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HISTORY_PATH = BASE_DIR / "data" / "models" / "annotations_history.json"
 OUTPUT_HTML = DATA_DIR / "latent_vectors_sample_5pct_3d.html"
 
 CLASS_COLORS = {

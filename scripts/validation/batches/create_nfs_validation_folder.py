@@ -25,7 +25,7 @@ DATA_DIR = (ROOT_DIR / "data")
 NPZ_FILE = DATA_DIR / "latent_vectors_sample_5pct.npz"
 META_FILE = DATA_DIR / "latent_vectors_sample_5pct_metadata.json"
 LOOKUP_FILE = DATA_DIR / "pdf_metadata_lookup.json"
-HISTORY_FILE = (ROOT_DIR / "ml_backend/models/annotations_history.json")
+HISTORY_FILE = (ROOT_DIR / "data/models/annotations_history.json")
 
 DEST_DIR = (DESKTOP_DIR / "validacao_nfs")
 MASTERS_LINK = (ROOT_DIR / "validacao_nfs")
@@ -203,7 +203,7 @@ import requests
 
 FOLDER = Path(__file__).resolve().parent
 MANIFEST_FILE = FOLDER / ".candidatos_iniciais.json"
-HISTORY_FILE = (ROOT_DIR / "ml_backend/models/annotations_history.json")
+HISTORY_FILE = (ROOT_DIR / "data/models/annotations_history.json")
 ACCEPTED_FILE = (ROOT_DIR / "data/labeling/accepted_nfs.json")
 ML_BACKEND_URL = "http://localhost:9090"
 LABEL_STUDIO_URL = "http://localhost:8085"

@@ -6,7 +6,7 @@ Confirmação Automática de Alta Precisão para ENERGIA e TELEFONIA:
     • ENERGIA  : ~3.046 novos confirmados
     • TELEFONIA: ~1.023 novos confirmados
 - Registra em:
-    1. ml_backend/models/annotations_history.json
+    1. data/models/annotations_history.json
     2. PostgreSQL (tabela documento)
     3. Desktop/validacao_energia_duvidas (apenas os 8 casos ambíguos para inspeção)
     4. Regenera os CSVs de exportação no Desktop
@@ -24,7 +24,7 @@ import numpy as np
 
 BASE_DIR = Path("/home/lucas.ocunha/masters")
 DATA_DIR = BASE_DIR / "data"
-HIST_FILE = BASE_DIR / "ml_backend" / "models" / "annotations_history.json"
+HIST_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
 META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
 EMBS_PATH = DATA_DIR / "latent_vectors_metric_learned_128d.npy"
 LOOKUP_FILE = DATA_DIR / "pdf_metadata_lookup.json"

@@ -202,7 +202,7 @@ from pathlib import Path
 import requests
 
 FOLDER = Path(__file__).resolve().parent
-HISTORY_FILE = (ROOT_DIR / "ml_backend/models/annotations_history.json")
+HISTORY_FILE = (ROOT_DIR / "data/models/annotations_history.json")
 ACCEPTED_FILE = (ROOT_DIR / "data/labeling/accepted_batches.json")
 ML_BACKEND_URL = "http://localhost:9090"
 

@@ -113,7 +113,7 @@ def main():
 
     npz_path = root_dir / "data" / "latent_vectors_full.npz"
     meta_path = root_dir / "data" / "latent_vectors_full_metadata.json"
-    history_path = root_dir / "ml_backend" / "models" / "annotations_history.json"
+    history_path = root_dir / "data" / "models" / "annotations_history.json"
     lookup_path = root_dir / "data" / "pdf_metadata_lookup.json"
 
     print("1. Carregando metadados e DINOv2 visual...")

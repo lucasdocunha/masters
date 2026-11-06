@@ -17,25 +17,6 @@ services:
     networks:
       - ceap-label-net
 
-  ml-backend:
-    build:
-      context: .
-      dockerfile: ml_backend/Dockerfile
-    container_name: ceap-ml-backend
-    ports:
-      - "9090:9090"
-    environment:
-      - RETRAIN_INTERVAL=50
-      - EMBEDDINGS_NPZ=/data/processed/latent_vectors_sample_5pct.npz
-      - METADATA_JSON=/data/processed/latent_vectors_sample_5pct_metadata.json
-      - MODEL_DIR=/app/models
-    volumes:
-      - ./data/models:/app/models
-      - ./data:/data:ro
-    restart: unless-stopped
-    networks:
-      - ceap-label-net
-
 networks:
   ceap-label-net:
     driver: bridge

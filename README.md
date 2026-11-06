@@ -19,7 +19,6 @@ masters-data/
 │   ├── visualization/  projeções 3D e galerias
 │   ├── metric_learning/ ArcFace / projeção métrica
 │   ├── database/       importação no PostgreSQL
-│   ├── ml_backend/     serviço FastAPI de rotulagem reativa
 │   └── web/            gerador de dados do site de inspeção
 ├── scripts/            entry points (um por etapa)
 │   ├── clustering/     geração de espaços latentes e jobs Slurm
@@ -30,7 +29,6 @@ masters-data/
 ├── tests/              testes unitários (pytest)
 ├── data/               dados em camadas (ver abaixo)
 ├── web/                site estático de inspeção
-├── ml_backend/         Dockerfile e requirements do serviço de rotulagem
 ├── sql/                esquema do banco
 └── docs/               documentação do dataset e figuras
 ```
@@ -61,7 +59,7 @@ uv sync --all-groups                 # núcleo + testes
 uv sync --all-groups --all-extras    # tudo (torch, OCR, Gemini, API)
 ```
 
-Os extras são opcionais: `pdf`, `ocr`, `ml`, `viz`, `gemini`, `api`.
+Os extras são opcionais: `pdf`, `ocr`, `ml`, `viz`, `gemini`.
 
 ---
 
@@ -84,7 +82,7 @@ cd web && python3 -m http.server 8000     # http://localhost:8000
 # Clusterização em cluster Slurm
 bash scripts/clustering/submit_cluster_jobs.sh
 
-# Serviço de rotulagem (Label Studio + ML backend)
+# Label Studio
 docker compose -f docker-compose.labelstudio.yml up -d
 ```
 
@@ -99,7 +97,7 @@ Site estático, sem framework nem etapa de build. Mostra:
 - **Visão geral** — contagens consolidadas e ambientes.
 - **Ambientes** — cada clusterização, seus clusters, subcotas dominantes e miniaturas dos documentos.
 - **Documentos** — busca e filtro por classe nos 25.716 documentos do dataset de rotulagem.
-- **Espaço latente** — projeção 3D (Plotly, carregado sob demanda) nos quatro espaços: DINOv2, ColPali, combinado e métrico.
+- **Espaço latente** — projeção 3D (Three.js) dos 1,34 M pontos nos quatro espaços: DINOv2, ColPali, combinado e métrico.
 - **Tarefas** — anotações por classe e status do dataset.
 - **Resultados** — relatórios de avaliação e benchmark.
 - **Modelos** — espaços comparados e artefatos treinados.
@@ -115,9 +113,9 @@ O site foi desenhado para carregar pouco e sob demanda:
 | `data/manifest.json` + JSONs de ambientes/modelos/logs | ~200 KB |
 | Miniaturas WebP (650 documentos, 360 px) | ~8 MB |
 | Dataset do espaço latente (`plotly_dataset.json.gz`) | 1,8 MB |
-| Plotly.js (só na página de espaço latente) | CDN |
+| Pontos do espaço latente (`data/latent/`, só nessa página) | ~60 MB |
 
-As miniaturas são geradas a partir dos PNGs originais (187 MB). Os bins de coordenadas de 1,34 M pontos (~60 MB) saíram do site; continuam em `data/processed/web_legacy/`.
+As miniaturas são geradas a partir dos PNGs originais (187 MB). `data/processed/web_legacy/` guarda os arquivos de origem dos pontos do espaço latente.
 
 Para publicar no Vercel: `uv run python scripts/web/deploy_to_vercel.py`.
 
@@ -131,8 +129,6 @@ flowchart TD
     B --> C["Embeddings<br>DINOv2 (384-D) + ColPali (128-D)"]
     C --> D["Métrica (ArcFace 128-D)<br>e K-Means / FAISS"]
     D --> E["Label Studio<br>rotulagem ativa"]
-    E -- "webhook a cada anotação" --> F["ML backend (FastAPI)<br>retreino a cada 50 rótulos"]
-    F -- "predições em lote" --> E
     D --> G["Site de inspeção<br>scripts/web/build_site.py"]
 ```
 
@@ -140,6 +136,6 @@ flowchart TD
 
 ## Desenvolvimento
 
-- Caminhos: sempre a partir de `dados.config`, nunca absolutos. Variáveis de ambiente: `CEAP_PDF_DIR`, `CEAP_DESKTOP_DIR`, `MODEL_DIR`, `EMBEDDINGS_NPZ`, `METADATA_JSON`.
+- Caminhos: sempre a partir de `dados.config`, nunca absolutos. Variáveis de ambiente: `CEAP_PDF_DIR`, `CEAP_DESKTOP_DIR`.
 - Lint de correção: `uv run ruff check --select F,E9 src scripts tests` (nomes indefinidos, imports mortos, erros de sintaxe).
 - Novo script: coloque a lógica reutilizável em `src/dados/<área>/` com teste em `tests/`, e deixe em `scripts/<etapa>/` apenas a casca de linha de comando.
