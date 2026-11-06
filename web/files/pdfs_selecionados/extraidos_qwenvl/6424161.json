@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DA TORRE EIRELI - EPP",
+  "fornecedor_cnpj_cpf": "04.473.193/0001-59",
+  "numero_documento": "2",
+  "data_emissao": "2017-10-04",
+  "valor_total": 180.1,
+  "descricao_resumida": "SASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.35,
+    "timestamp": "2026-10-26T18:21:42Z",
+    "idDocumento": 6424161
+  }
+}

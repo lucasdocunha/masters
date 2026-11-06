@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Hotel Ecos Ltda",
+  "fornecedor_cnpj_cpf": "08.990.010/0001-23",
+  "numero_documento": "202000000000609",
+  "data_emissao": "2020-08-08",
+  "valor_total": 125.0,
+  "descricao_resumida": "0901 - Hospedagem de qualquer natureza em hotéis, apart-service condominiais, flat, apart-hotéis, hotéis residência, residence-service, suite service, hotelaria marítima, motéis, pensões e congêneres; ocupação por temporada com fornecimento de serviço (o valor da alimentação e gorjeta, quando incluído no preço da diárias, fica sujeito ao Imposto Sobre Serviços). CNAE: 5510801",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.82,
+    "timestamp": "2026-10-26T18:28:14Z",
+    "idDocumento": 7088249
+  }
+}

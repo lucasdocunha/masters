@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Restaurante Rossetto & Utero Ltda Epp",
+  "fornecedor_cnpj_cpf": "16935527000148",
+  "numero_documento": "01459",
+  "data_emissao": "2018-10-24",
+  "valor_total": 10.0,
+  "descricao_resumida": "Agua S/ Gas 2un x 5,00",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:34:36Z",
+    "tempo_segundos": 2.6,
+    "idDocumento": 6692651
+  }
+}

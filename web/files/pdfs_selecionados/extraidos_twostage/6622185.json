@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BARRAVENTO HOTEL LTDA",
+  "fornecedor_cnpj_cpf": "13.456.488/0001-08",
+  "numero_documento": "66802",
+  "data_emissao": "2018-06-30",
+  "valor_total": null,
+  "descricao_resumida": "HOTEL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.57,
+    "timestamp": "2026-10-26T19:42:32Z",
+    "idDocumento": 6622185
+  }
+}

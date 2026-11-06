@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PBJM COMERCIO DE GENEROS ALIMENTICIOS LTDA EPP",
+  "fornecedor_cnpj_cpf": "09.054.158/0001-19",
+  "numero_documento": "151440",
+  "data_emissao": "2017-11-09",
+  "valor_total": 68.4,
+  "descricao_resumida": "Galocho Rodizio e Jarra 1L Limao",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:29:24Z",
+    "tempo_segundos": 2.57,
+    "idDocumento": 6438203
+  }
+}

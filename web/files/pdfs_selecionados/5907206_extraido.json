@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionaria ViaRondon S/A",
+  "fornecedor_cnpj_cpf": "10.635.691/0001-53",
+  "numero_documento": "2173034",
+  "data_emissao": "2016-01-08",
+  "valor_total": 4.4,
+  "descricao_resumida": "Tarifa de pedagio Praca02-Pirajui- SP300- Km 400,8",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:17:28Z",
+    "tempo_segundos": 5.84,
+    "idDocumento": 5907206
+  }
+}

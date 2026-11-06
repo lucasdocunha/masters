@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTOPISTA LITORAL SUL S/A",
+  "fornecedor_cnpj_cpf": "09.313.969/0001-97",
+  "numero_documento": "NCTCLILGNG3M",
+  "data_emissao": "2018-12-11",
+  "valor_total": 2.7,
+  "descricao_resumida": "F.Pgto: Dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.42,
+    "timestamp": "2026-10-26T18:23:14Z",
+    "idDocumento": 6725058
+  }
+}

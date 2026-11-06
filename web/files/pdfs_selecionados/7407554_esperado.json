@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7407554,
+  "ano": 2022,
+  "mes": 6,
+  "fornecedor": "POSTO IBIRITE LTDA",
+  "cnpjCPF": "359.987.320/0010-5",
+  "numero": "428716",
+  "tipoDocumento": "0",
+  "dataEmissao": "2022-06-24T00:00:00",
+  "valorDocumento": 111.95,
+  "valorLiquido": 111.95,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Pinheirinho",
+  "cpfParlamentar": "10627817670",
+  "siglaUF": "MG",
+  "siglaPartido": "PP",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3260/2022/7407554.pdf"
+}

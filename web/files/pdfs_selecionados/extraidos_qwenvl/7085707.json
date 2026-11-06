@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PETROCOM COMERCIO EIRELI",
+  "fornecedor_cnpj_cpf": "14.728.378/0003-82",
+  "numero_documento": "16167",
+  "data_emissao": "20/08/2020",
+  "valor_total": 100.0,
+  "descricao_resumida": "OLEO DIESEL B S10 (Código: 861 ) Qtdde.:30,396UN: LTVI. Unit.: 3,29",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.97,
+    "timestamp": "2026-10-26T18:28:53Z",
+    "idDocumento": 7085707
+  }
+}

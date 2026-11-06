@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "TORRES BARBOSA COM. DE DERIV. DE PETRO, LTDA",
+  "fornecedor_cnpj_cpf": "03.241.123/0001-02",
+  "numero_documento": "369941",
+  "data_emissao": "2015-10-08",
+  "valor_total": 50.0,
+  "descricao_resumida": "GASOLINA COMUM 13,369LTX3,74 FT",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 13.91,
+    "timestamp": "2026-10-26T19:09:50Z",
+    "idDocumento": 5831734
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GOMO COMUNICACAO LTDA",
+  "fornecedor_cnpj_cpf": "51.812.601/0001-30",
+  "numero_documento": "18",
+  "data_emissao": "2023-11-16",
+  "valor_total": null,
+  "descricao_resumida": "Diagramação de Vade Mecum do deputado Defensor Stélio Dener contendo as leis: Constituição, Introdução às Normas do Direito Brasileiro, Código Civil, Código de Processo Civil, Código Penal e Código de Processo Penal visando a divulgação do deputado Defensor Stélio Dener nos sites.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.48,
+    "timestamp": "2026-10-26T21:01:51Z",
+    "idDocumento": 7652034
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5628776,
+  "ano": 2015,
+  "mes": 2,
+  "fornecedor": "PECOBRAL",
+  "cnpjCPF": "006.899.010/0013-2",
+  "numero": "021943",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-02-20T00:00:00",
+  "valorDocumento": 99.96,
+  "valorLiquido": 99.96,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Hermes Parcianello",
+  "cpfParlamentar": "33496315920",
+  "siglaUF": "PR",
+  "siglaPartido": "MDB",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1042/2015/5628776.pdf"
+}

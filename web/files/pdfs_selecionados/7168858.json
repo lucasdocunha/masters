@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7168858,
+  "ano": 2021,
+  "mes": 3,
+  "fornecedor": "AUTO POSTO PAVAO 91 LTDA",
+  "cnpjCPF": "236.520.870/0018-7",
+  "numero": "218307",
+  "tipoDocumento": "0",
+  "dataEmissao": "2021-03-02T00:00:00",
+  "valorDocumento": 133.92,
+  "valorLiquido": 133.92,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Vitor Lippi",
+  "cpfParlamentar": "00168780860",
+  "siglaUF": "SP",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2954/2021/7168858.pdf"
+}

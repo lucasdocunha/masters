@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RADIO E TV PLANALTO LTDA",
+  "fornecedor_cnpj_cpf": "02.380.265/0001-98",
+  "numero_documento": "0000280",
+  "data_emissao": "2025-11-30",
+  "valor_total": 1000.0,
+  "descricao_resumida": "Referente veiculação de anúncio publicitário das ações de atividades parlamentares, do deputado Adriano do Baldy no mês de novembro/2025, no Jornal Folha do Sudoeste.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:42:00Z",
+    "tempo_segundos": 2.61,
+    "idDocumento": 8023608
+  }
+}

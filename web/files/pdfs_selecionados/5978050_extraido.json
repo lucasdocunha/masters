@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DE GASOLINA MARINGA LTDA",
+  "fornecedor_cnpj_cpf": "88.905.534/0001-08",
+  "numero_documento": "429375",
+  "data_emissao": "2016-04-15",
+  "valor_total": 50.07,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:28:21Z",
+    "tempo_segundos": 138.67,
+    "idDocumento": 5978050
+  }
+}

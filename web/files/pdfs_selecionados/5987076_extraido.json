@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO PARK SANTA MARIA DERIV. DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "05889046000127",
+  "numero_documento": "243676",
+  "data_emissao": "2016-05-04",
+  "valor_total": 130.0,
+  "descricao_resumida": "Gasolina C Comum (35,715 L)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:01:37Z",
+    "tempo_segundos": 2.03,
+    "idDocumento": 5987076
+  }
+}

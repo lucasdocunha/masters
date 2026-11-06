@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EMP. BRAS. DE CORREIOS E TELEGRAFOS",
+  "fornecedor_cnpj_cpf": "34028316291329",
+  "numero_documento": "1",
+  "data_emissao": "2016-03-29",
+  "valor_total": 33.1,
+  "descricao_resumida": "SEDEX A VISTA, Valor do Porte(R$)..: 33,10, Cep Destino: 70160-900 (DF), Peso real (KG)......: 0,047, Peso Tarifado:......: 0,047, OBJETO..............: SN130128312BR",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 19.87,
+    "timestamp": "2026-10-26T19:27:25Z",
+    "idDocumento": 5958381
+  }
+}

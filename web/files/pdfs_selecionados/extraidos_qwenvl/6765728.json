@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "TALENTOS LOCADORA DE VEICULOS LTDA ME",
+  "fornecedor_cnpj_cpf": "23.792.319/0001-11",
+  "numero_documento": "00000465",
+  "data_emissao": "2019-02-01",
+  "valor_total": 4700.0,
+  "descricao_resumida": "LOCAÇÃO MENSAL DE 01 VEÍCULO TIPO SEDAN 1.6, PLACA PGY 2173, MARCA VOLKSWAGEN, MODELO VOYAGE TL MVB, ANO FAB./MOD. 2017/2018, NA COR PRATA OU PRETA, FLEX, COMPLETO, CHASSI N° 9BWDB45U6JTU70252.\nLOCAÇÃO MENSAL DE 01 VEÍCULO TIPO SEDAN EXECUTIVO, PLACA EDE 2514, MARCA TOYOTA, MODELO COROLLA GLT18, ANO FAB./MOD. 2016/2017, NA COR PRETA, FLEX, COMPLETO, CHASSI N° 95RBLWHEZH063494.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 5.32,
+    "timestamp": "2026-10-26T18:26:41Z",
+    "idDocumento": 6765728
+  }
+}

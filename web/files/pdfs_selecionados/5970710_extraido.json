@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SERVICO NACIONAL DE APRENDIZ. COMERCIAL SENAC",
+  "fornecedor_cnpj_cpf": "33.469.172/0016-44",
+  "numero_documento": "024584",
+  "data_emissao": "2016-04-13",
+  "valor_total": 55.69,
+  "descricao_resumida": "Buffet mesa brasileira e lanchada suiça",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:08:10Z",
+    "tempo_segundos": 2.2,
+    "idDocumento": 5970710
+  }
+}

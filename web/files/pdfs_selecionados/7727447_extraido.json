@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "FSV-FRANKLIN DA SILVA VIEIRA",
+  "fornecedor_cnpj_cpf": "105.921.307-97",
+  "numero_documento": "17748",
+  "data_emissao": "2024-04-19",
+  "valor_total": 5313.01,
+  "descricao_resumida": "Aluguel de abril/2024, condomínio, IPTU, seguro incêndio, tarifa bancária e água/esgoto",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:10:24Z",
+    "tempo_segundos": 2.94,
+    "idDocumento": 7727447
+  }
+}

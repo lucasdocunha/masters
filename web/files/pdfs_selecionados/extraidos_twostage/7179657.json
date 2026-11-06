@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "IO DE LOYOLA LTDA",
+  "fornecedor_cnpj_cpf": "37.942.300/0001-28",
+  "numero_documento": "10610",
+  "data_emissao": "2021-02-26",
+  "valor_total": 90.17,
+  "descricao_resumida": "DIESEL 310",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 15.23,
+    "timestamp": "2026-10-26T20:37:27Z",
+    "idDocumento": 7179657
+  }
+}

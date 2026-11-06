@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "JR TECNOLOGIA LTDA",
+  "fornecedor_cnpj_cpf": "52.318.738/0001-03",
+  "numero_documento": "7",
+  "data_emissao": "2023-11-17",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Divulgação das atividades parlamentares nas redes sociais do deputado Helio Fernando Barbosa Lopes ref. 01/11/2023 a 30/11/2023.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:48:59Z",
+    "tempo_segundos": 9.36,
+    "idDocumento": 7646844
+  }
+}

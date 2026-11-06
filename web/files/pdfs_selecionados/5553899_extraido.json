@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MENEZES - CONSULTORES E ADVOGADOS ASSOCI",
+  "fornecedor_cnpj_cpf": "07.268.308/0001-61",
+  "numero_documento": "20140000000177",
+  "data_emissao": "2014-11-26",
+  "valor_total": 9500.0,
+  "descricao_resumida": "Assessoria jurídica prestada no mês de setembro de 2014. Análise da execução da legislação orçamentária.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:27:45Z",
+    "tempo_segundos": 2.13,
+    "idDocumento": 5553899
+  }
+}

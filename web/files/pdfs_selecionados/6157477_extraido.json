@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EGR - EMPRESA GAUCHA DE RODOVIAS S/A",
+  "fornecedor_cnpj_cpf": "16.987.837/0001-06",
+  "numero_documento": "2410RUB3IM15",
+  "data_emissao": "2016-11-26",
+  "valor_total": 2.4,
+  "descricao_resumida": "Tarifa de pedagio - PRACA Campo Bom (ERS-239)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:15:21Z",
+    "tempo_segundos": 1.99,
+    "idDocumento": 6157477
+  }
+}

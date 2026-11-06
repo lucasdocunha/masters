@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Serv Rio Terceirização e Serviços Ltda",
+  "fornecedor_cnpj_cpf": "10.479.861/0001-58",
+  "numero_documento": "002341",
+  "data_emissao": "2026-03-30",
+  "valor_total": 9000.0,
+  "descricao_resumida": "LOCAÇÃO JEEP MODELO COMPASS - BLINDADO - ANO 2021 MODELO 2022 - PLACA ENN-0C52",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.8,
+    "timestamp": "2026-10-26T21:44:45Z",
+    "idDocumento": 8076186
+  }
+}

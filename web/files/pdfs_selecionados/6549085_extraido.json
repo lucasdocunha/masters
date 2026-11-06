@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ITAIMBE PALACE HOTEL - ORG. SANTAMARIENSE DE HOTEIS S/A",
+  "fornecedor_cnpj_cpf": "95.624.219/0001-78",
+  "numero_documento": "063863",
+  "data_emissao": "2018-04-07",
+  "valor_total": 478.9,
+  "descricao_resumida": "Diarias, garagem, agua sem gas e taxa de servico",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:06:48Z",
+    "tempo_segundos": 27.95,
+    "idDocumento": 6549085
+  }
+}

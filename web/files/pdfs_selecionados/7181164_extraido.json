@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ORGANIZACAO HELIO MEIRELES PETROLEO",
+  "fornecedor_cnpj_cpf": "73.876.140/0002-39",
+  "numero_documento": "020214",
+  "data_emissao": "2021-04-20",
+  "valor_total": 258.86,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:35:33Z",
+    "tempo_segundos": 2.38,
+    "idDocumento": 7181164
+  }
+}

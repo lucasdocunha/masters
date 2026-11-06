@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "INOVA SOLUÇÕES PRESTADORA DE SERVIÇOS LTDA",
+  "fornecedor_cnpj_cpf": "33.058.350/0001-68",
+  "numero_documento": "191",
+  "data_emissao": "2023-07-04",
+  "valor_total": 499.0,
+  "descricao_resumida": "LICENÇA DE USO DE SOFTWARE DA SOLUÇÃO CONECTA GABINETE REFERENTE AO MÊS DE JULHO DE 2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.02,
+    "timestamp": "2026-10-26T20:58:07Z",
+    "idDocumento": 7572808
+  }
+}

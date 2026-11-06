@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VOLTA GRANDE COMUNICAÇÕES LTDA-ME",
+  "fornecedor_cnpj_cpf": "02.177.793/0001-08",
+  "numero_documento": "0002785",
+  "data_emissao": "16/04/2015",
+  "valor_total": 500.0,
+  "descricao_resumida": "Voculação de matérias sobre ações do Dep. Edinho Boz nos dias 26/03 e 02/04 no Jornal Volta Grande",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.97,
+    "timestamp": "2026-10-26T18:17:00Z",
+    "idDocumento": 5660044
+  }
+}

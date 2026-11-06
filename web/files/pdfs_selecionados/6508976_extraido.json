@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HEISS TAXI AEREO LTDA - EPP",
+  "fornecedor_cnpj_cpf": "06.964.144/0001-44",
+  "numero_documento": "000.000.017",
+  "data_emissao": "2018-01-31",
+  "valor_total": 6000.0,
+  "descricao_resumida": "SERVICO DE FRET DE AERONAVE NO TRECHO BELEM/BREVES/BELEM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T13:45:22Z",
+    "tempo_segundos": 15.79,
+    "idDocumento": 6508976
+  }
+}

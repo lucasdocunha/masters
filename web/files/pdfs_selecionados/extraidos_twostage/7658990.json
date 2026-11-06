@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Neenergia Cosern",
+  "fornecedor_cnpj_cpf": "08.324.196/0001-81",
+  "numero_documento": "107649746",
+  "data_emissao": "2023-11-08",
+  "valor_total": 539.31,
+  "descricao_resumida": "Consumo-TUSD",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.75,
+    "timestamp": "2026-10-26T21:12:07Z",
+    "idDocumento": 7658990
+  }
+}

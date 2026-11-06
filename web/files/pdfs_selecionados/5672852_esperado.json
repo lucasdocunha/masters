@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5672852,
+  "ano": 2015,
+  "mes": 4,
+  "fornecedor": "AMAURY VALLE RIBEIRO",
+  "cnpjCPF": "177.403.740/0049-9",
+  "numero": "2078",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-04-30T00:00:00",
+  "valorDocumento": 6194.29,
+  "valorLiquido": 4900.0,
+  "valorGlosa": 1294.29,
+  "nomeParlamentar": "Misael Varella",
+  "cpfParlamentar": "28492803649",
+  "siglaUF": "MG",
+  "siglaPartido": "PSD",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3045/2015/5672852.pdf"
+}

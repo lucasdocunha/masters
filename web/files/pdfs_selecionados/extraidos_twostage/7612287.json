@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ENERGISA MATO GROSSO - DISTRIBUIDORA DE ENERGIA S.A.",
+  "fornecedor_cnpj_cpf": "03.467.321/0001-99",
+  "numero_documento": "016946755",
+  "data_emissao": "2023-06-21",
+  "valor_total": 637.99,
+  "descricao_resumida": "TRIFÁSICO RESIDENCIAL / RESIDENCIAL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.86,
+    "timestamp": "2026-10-26T20:57:23Z",
+    "idDocumento": 7612287
+  }
+}

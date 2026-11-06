@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "FERNANDO HOFFMANN FERREIRA",
+  "fornecedor_cnpj_cpf": "51.124.619/0001-49",
+  "numero_documento": "18",
+  "data_emissao": "2024-08-06",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Divulgação de atividades do mandato parlamentar para os veículos de comunicação",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:02:15Z",
+    "tempo_segundos": 2.44,
+    "idDocumento": 7781179
+  }
+}

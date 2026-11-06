@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "INFORMÁTICA EMPREEND. IMOBILIÁRIOS LTDA.",
+  "fornecedor_cnpj_cpf": "14.997.688/0001-30",
+  "numero_documento": null,
+  "data_emissao": "2025-07-05",
+  "valor_total": 2439.43,
+  "descricao_resumida": "ALUGUEL, CONDÔMINIO, IPTU e 01 VAGA DE GARAGEM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 12.45,
+    "timestamp": "2026-10-26T21:33:24Z",
+    "idDocumento": 7946369
+  }
+}

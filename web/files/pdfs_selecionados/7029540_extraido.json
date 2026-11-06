@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LUCAS PAULINO DE SOUSA NOGUEIRA 05629981102",
+  "fornecedor_cnpj_cpf": "31180570000134",
+  "numero_documento": "001672257",
+  "data_emissao": "2020-03-03",
+  "valor_total": 34.0,
+  "descricao_resumida": "Resma de papel A4 75g e régua 30 cm",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:43:47Z",
+    "tempo_segundos": 24.95,
+    "idDocumento": 7029540
+  }
+}

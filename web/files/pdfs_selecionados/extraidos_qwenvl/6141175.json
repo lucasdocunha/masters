@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Centrovias Sistemas Rodoviários S/A",
+  "fornecedor_cnpj_cpf": "02.555.926/0001-79",
+  "numero_documento": "000139",
+  "data_emissao": "11/10/16",
+  "valor_total": 7.0,
+  "descricao_resumida": "Recibo de Pedágio",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.52,
+    "timestamp": "2026-10-26T18:18:54Z",
+    "idDocumento": 6141175
+  }
+}

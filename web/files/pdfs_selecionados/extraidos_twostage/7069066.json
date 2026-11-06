@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMPANHIA ESTADUAL DE DISTRIBUIÇÃO DE ENERGIA ELÉTRICA",
+  "fornecedor_cnpj_cpf": "08.467.115/0001-00",
+  "numero_documento": "117250601",
+  "data_emissao": "2020-07-06",
+  "valor_total": 96.53,
+  "descricao_resumida": "CUSTO DISP SISTEMA 100 0,764400 76,44 CONTRIB ILUM. PUB. PREFEITURA 20,09",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.43,
+    "timestamp": "2026-10-26T20:18:26Z",
+    "idDocumento": 7069066
+  }
+}

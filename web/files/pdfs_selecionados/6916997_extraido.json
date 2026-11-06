@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "JR COMERCIO E PRESTACAO DE SERVICOS LTDA",
+  "fornecedor_cnpj_cpf": "17.968.553/0001-35",
+  "numero_documento": "00013448",
+  "data_emissao": "2019-09-02",
+  "valor_total": 1557.05,
+  "descricao_resumida": "ETANOL HIDRATADO COMBUSTIVE e GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:35:46Z",
+    "tempo_segundos": 11.14,
+    "idDocumento": 6916997
+  }
+}

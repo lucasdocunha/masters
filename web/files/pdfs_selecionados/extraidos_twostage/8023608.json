@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "RADIO E TV PLANALTO LTDA",
+  "fornecedor_cnpj_cpf": "02.380.265/0001-98",
+  "numero_documento": "0000280",
+  "data_emissao": "2025-11-30",
+  "valor_total": 1000.0,
+  "descricao_resumida": "REFERENTE VEICULAÇÃO DE ANÚNCIO PUBLICITÁRIO DAS AÇÕES DE ATIVIDADES PARLAMENTARES, DO DEPUTADO ADRIANO DO BALDY NO MÊS DE NOVEMBRO/2025, NO JORNAL FOLHA DO SUDOESTE.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.43,
+    "timestamp": "2026-10-26T21:31:01Z",
+    "idDocumento": 8023608
+  }
+}

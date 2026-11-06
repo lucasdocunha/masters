@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PANTANAL VEÍCULOS LTDA",
+  "fornecedor_cnpj_cpf": "07.319.323/0001-91",
+  "numero_documento": "21.912",
+  "data_emissao": "2022-04-18",
+  "valor_total": 4700.0,
+  "descricao_resumida": "LOCAÇÃO DE VEÍCULO COROLLA RED5A47.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.63,
+    "timestamp": "2026-10-26T20:47:15Z",
+    "idDocumento": 7377597
+  }
+}

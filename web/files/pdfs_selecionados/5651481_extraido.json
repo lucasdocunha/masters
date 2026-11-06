@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POLISERVICE - SISTEMAS DE SEGURANCA LTDA",
+  "fornecedor_cnpj_cpf": "73.946.238/0001-88",
+  "numero_documento": "123.712",
+  "data_emissao": "2015-03-13",
+  "valor_total": 365.55,
+  "descricao_resumida": "SERVICOS DE MONITORAMENTO ELETRONICO PRESTADOS EM SUAS INSTALACOES REF.: 03/2015",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:43:10Z",
+    "tempo_segundos": 2.64,
+    "idDocumento": 5651481
+  }
+}

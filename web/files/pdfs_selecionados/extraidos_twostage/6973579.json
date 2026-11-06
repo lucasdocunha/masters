@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MEGA POSTO CARIOCAO LTDA",
+  "fornecedor_cnpj_cpf": "12.301.888/0001-81",
+  "numero_documento": "000061548",
+  "data_emissao": "29/11/2019",
+  "valor_total": null,
+  "descricao_resumida": "LANC DOC FISCAL REGISTRADO EM ECF - DE",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.92,
+    "timestamp": "2026-10-26T20:06:12Z",
+    "idDocumento": 6973579
+  }
+}

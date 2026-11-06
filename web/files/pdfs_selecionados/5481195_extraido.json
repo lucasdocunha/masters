@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SEMPRE COMERCIO DE COMBUSTIVEL LTDA",
+  "fornecedor_cnpj_cpf": "08.111.871/0004-37",
+  "numero_documento": "720568",
+  "data_emissao": "2014-07-22",
+  "valor_total": 146.05,
+  "descricao_resumida": "Gasolina comum (51,284 litros)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:27:52Z",
+    "tempo_segundos": 2.38,
+    "idDocumento": 5481195
+  }
+}

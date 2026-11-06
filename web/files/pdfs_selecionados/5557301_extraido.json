@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Transcoopass Rádio Táxi",
+  "fornecedor_cnpj_cpf": "33.725.029/0001-00",
+  "numero_documento": "694021",
+  "data_emissao": "2024-11-26",
+  "valor_total": 56.0,
+  "descricao_resumida": "Serviço de táxi (percurso Copacabana/Centro)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:42:09Z",
+    "tempo_segundos": 24.86,
+    "idDocumento": 5557301
+  }
+}

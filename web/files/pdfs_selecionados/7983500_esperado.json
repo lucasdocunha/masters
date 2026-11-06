@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7983500,
+  "ano": 2025,
+  "mes": 9,
+  "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DO DISTRITO FEDERAL",
+  "cnpjCPF": "156.953.570/0010-9",
+  "numero": "3939",
+  "tipoDocumento": "1",
+  "dataEmissao": "2025-09-02T00:00:00",
+  "valorDocumento": 65.0,
+  "valorLiquido": 65.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Vitor Lippi",
+  "cpfParlamentar": "00168780860",
+  "siglaUF": "SP",
+  "siglaPartido": "PSD",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2954/2025/7983500.pdf"
+}

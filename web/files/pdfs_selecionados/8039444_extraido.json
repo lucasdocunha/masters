@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VITAL BRASIL EMPREENDIMENTO IMOBILIARIO SPE LTDA",
+  "fornecedor_cnpj_cpf": "11.281.178/0001-74",
+  "numero_documento": null,
+  "data_emissao": "2026-01-10",
+  "valor_total": 11606.9,
+  "descricao_resumida": "Locacao, condominio, fundo contingencia e IPTU das salas 1101, 1102 e 1103 do Condominio Vital Brasil Business Towers.",
+  "observacoes": "Recibo de locacao e despesas condominiais",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:53:46Z",
+    "tempo_segundos": 2.38,
+    "idDocumento": 8039444
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DECIO COMERCIO E SERVICOS RODOVIARIOS LTDA",
+  "fornecedor_cnpj_cpf": "19046218001268 -",
+  "numero_documento": "57621",
+  "data_emissao": "05/01/2026",
+  "valor_total": 250.04,
+  "descricao_resumida": "Gasolina c Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.5,
+    "timestamp": "2026-10-26T18:44:40Z",
+    "idDocumento": 8039425
+  }
+}

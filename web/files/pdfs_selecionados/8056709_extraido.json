@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "FABRICA TREINAMENTO EMPRESARIAL LTDA",
+  "fornecedor_cnpj_cpf": "60.221.020/0001-14",
+  "numero_documento": "8",
+  "data_emissao": "2026-02-25",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Serviço de assessoria para produção de material audiovisual, em janeiro/2026 para divulgação da atividade do parlamentar em suas redes.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:51:56Z",
+    "tempo_segundos": 2.23,
+    "idDocumento": 8056709
+  }
+}

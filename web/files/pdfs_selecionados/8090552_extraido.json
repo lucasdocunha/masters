@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HVA CASTRO - ME",
+  "fornecedor_cnpj_cpf": "23.788.744/0001-18",
+  "numero_documento": "739",
+  "data_emissao": "2026-04-23",
+  "valor_total": 3000.0,
+  "descricao_resumida": "LOCAÇÃO POLO COMPLETO, Período 01/04/26 a 30/04/26, Contrato 739, Placa SMK-2J75",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:55:14Z",
+    "tempo_segundos": 2.43,
+    "idDocumento": 8090552
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "BR SOLUCOES TECNICAS E ADMINISTRATIVAS LTDA",
+  "fornecedor_cnpj_cpf": "49.311.629/0001-41",
+  "numero_documento": "51",
+  "data_emissao": "2024-07-31",
+  "valor_total": 14800.0,
+  "descricao_resumida": "Mapeamento de informacoes em periodicos e meios jornalisticos, elaboracao de estrategia para divulgacao de conteudo, acompanhamento em loco das atividades do parlamentar e elaboracao de conteudo e diagramacao para midia digital.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:21:03Z",
+    "tempo_segundos": 3.52,
+    "idDocumento": 7777275
+  }
+}

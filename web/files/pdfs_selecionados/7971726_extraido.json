@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HOTEL VALE DO ARAGUAIA",
+  "fornecedor_cnpj_cpf": "00313949000141",
+  "numero_documento": "0000003593",
+  "data_emissao": "2025-08-26",
+  "valor_total": 100.0,
+  "descricao_resumida": "01 diaria com entrada dia 21/08/2025 e saida em 22/08/2025",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:30:03Z",
+    "tempo_segundos": 23.35,
+    "idDocumento": 7971726
+  }
+}

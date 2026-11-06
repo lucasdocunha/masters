@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7507324,
+  "ano": 2023,
+  "mes": 2,
+  "fornecedor": "Geraldo Antônio de Andrade",
+  "cnpjCPF": "304.695.420/0017-9",
+  "numero": "000000233",
+  "tipoDocumento": "0",
+  "dataEmissao": "2023-03-09T00:00:00",
+  "valorDocumento": 300.0,
+  "valorLiquido": 300.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Wilson Santiago",
+  "cpfParlamentar": "16159977415",
+  "siglaUF": "PB",
+  "siglaPartido": "REPUBLICANOS",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1704/2023/7507324.pdf"
+}

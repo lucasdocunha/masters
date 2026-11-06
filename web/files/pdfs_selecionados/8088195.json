@@ -1,0 +1,19 @@
+{
+  "idDocumento": 8088195,
+  "ano": 2026,
+  "mes": 4,
+  "fornecedor": "BIG MALTE AUTO POSTO LTDA",
+  "cnpjCPF": "447.557.830/0019-9",
+  "numero": "24289",
+  "tipoDocumento": "0",
+  "dataEmissao": "2026-04-23T00:00:00",
+  "valorDocumento": 100.0,
+  "valorLiquido": 100.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Miguel Lombardi",
+  "cpfParlamentar": "05209979806",
+  "siglaUF": "SP",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2995/2026/8088195.pdf"
+}

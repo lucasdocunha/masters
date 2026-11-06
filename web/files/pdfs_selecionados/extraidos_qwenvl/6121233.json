@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JARJOUR VEICULOS E PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "805.175.874-91",
+  "numero_documento": "307313",
+  "data_emissao": "2016-10-17",
+  "valor_total": 125.01,
+  "descricao_resumida": "TT GASOLINA COMBO - 6lco Qt 38.485 L X$ 25 Fl---125.01",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.95,
+    "timestamp": "2026-10-26T18:20:38Z",
+    "idDocumento": 6121233
+  }
+}

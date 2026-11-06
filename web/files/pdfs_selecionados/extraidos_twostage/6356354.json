@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO LUNAR LT",
+  "fornecedor_cnpj_cpf": "017.920.108-50",
+  "numero_documento": "000.000.850",
+  "data_emissao": "07/08/2017",
+  "valor_total": null,
+  "descricao_resumida": "VENDA ECF",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.43,
+    "timestamp": "2026-10-26T19:41:35Z",
+    "idDocumento": 6356354
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CARLOS AUGUSTO DE ABREU GUGLIELMELI 55917569134",
+  "fornecedor_cnpj_cpf": "26.819.018/0001-03",
+  "numero_documento": "142",
+  "data_emissao": "2024-02-17",
+  "valor_total": 6000.0,
+  "descricao_resumida": "Divulgacao de Atividades Parlamentares em fevereiro de 2024",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:21:49Z",
+    "tempo_segundos": 40.82,
+    "idDocumento": 7688939
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO PETRO KENNEDY LTDA",
+  "fornecedor_cnpj_cpf": "15119679000100 IE 9059510417",
+  "numero_documento": "001",
+  "data_emissao": "2017-03-29",
+  "valor_total": 123.3,
+  "descricao_resumida": "3 GASOLINA ADIT DT CLEAN 36.276 LT X 3.399 (52.34)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.77,
+    "timestamp": "2026-10-26T18:20:44Z",
+    "idDocumento": 6255786
+  }
+}

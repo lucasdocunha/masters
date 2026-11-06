@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DA TORRE EIRELI - EPP",
+  "fornecedor_cnpj_cpf": "04.478.193/0001-59",
+  "numero_documento": "23384",
+  "data_emissao": "2017-10-04",
+  "valor_total": 180.1,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:26:01Z",
+    "tempo_segundos": 2.18,
+    "idDocumento": 6424161
+  }
+}

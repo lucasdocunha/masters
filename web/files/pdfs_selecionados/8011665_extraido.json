@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "NOVACAR LOCADORA DE VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "19.374.791/0001-48",
+  "numero_documento": "283/2025",
+  "data_emissao": "2025-11-03",
+  "valor_total": 10800.0,
+  "descricao_resumida": "Aluguel de veículo sem condutor - JEEP COMMANDER LIM T270, período de 01 a 30/11/2025",
+  "observacoes": "Locação de veículos isenta de emissão de Nota Fiscal conforme Lei Complementar nº 116/2003.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:35:06Z",
+    "tempo_segundos": 22.93,
+    "idDocumento": 8011665
+  }
+}

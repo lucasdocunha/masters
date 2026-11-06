@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "M B GRACIANI COMBUSTIVEIS",
+  "fornecedor_cnpj_cpf": "04.596.702/0001-30 - IE: 9024230799 - IM: AV TANCREDO NEVES, 630 - CENTRO - BOA VISTA DA APARECIDA - PR CEP: 85780-000 - Fone: (45)3287-1701",
+  "numero_documento": "00001",
+  "data_emissao": "2021-09-13",
+  "valor_total": 150.0,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.67,
+    "timestamp": "2026-10-26T18:31:05Z",
+    "idDocumento": 7258957
+  }
+}

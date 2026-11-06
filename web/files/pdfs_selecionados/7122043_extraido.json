@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Executivo Aeroporto",
+  "fornecedor_cnpj_cpf": "28.572.223/0001-42",
+  "numero_documento": "A000395",
+  "data_emissao": "2020-11-27",
+  "valor_total": 60.0,
+  "descricao_resumida": "Serviço de transporte executivo saindo do Aeroporto de Confins com destino ao Bairro Bandeirantes",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:12:54Z",
+    "tempo_segundos": 34.47,
+    "idDocumento": 7122043
+  }
+}

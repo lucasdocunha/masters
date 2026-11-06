@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "REQUINTE RESTAURANTE LTDA - EPP",
+  "fornecedor_cnpj_cpf": "86.728.858/0001-85",
+  "numero_documento": "073968",
+  "data_emissao": "2019-03-15",
+  "valor_total": 100.5,
+  "descricao_resumida": "COMBO NATURAL 10P+1T CAFE NESPRESSO 1UN T1 CREME DE MANGA 1UN T1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.99,
+    "timestamp": "2026-10-26T18:27:25Z",
+    "idDocumento": 6787736
+  }
+}

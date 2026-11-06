@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO SERTANEJO GG LTDA",
+  "fornecedor_cnpj_cpf": "07731042000141",
+  "numero_documento": "201462",
+  "data_emissao": "2021-06-30",
+  "valor_total": 179.66,
+  "descricao_resumida": "#0600604#27101921#OLEO DIESEL B S10 - COML",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 14.76,
+    "timestamp": "2026-10-26T20:41:36Z",
+    "idDocumento": 7218607
+  }
+}

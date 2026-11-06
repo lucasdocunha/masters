@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CEMIG DISTRIBUIÇÃO S.A.",
+  "fornecedor_cnpj_cpf": "06.981.180/0001-16",
+  "numero_documento": "U1 NF:002890065",
+  "data_emissao": "22/09/2014",
+  "valor_total": 76.0,
+  "descricao_resumida": "Nota Fiscal - Conta de Energia Elétrica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.54,
+    "timestamp": "2026-10-26T18:15:41Z",
+    "idDocumento": 5517915
+  }
+}

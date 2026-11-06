@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DOMINGOS GOMES DE AGUIAR NETO",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "2195395",
+  "data_emissao": "2021-06-09",
+  "valor_total": 439.12,
+  "descricao_resumida": "Venda de en. elétrica e não contribuinte",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.53,
+    "timestamp": "2026-10-26T20:31:03Z",
+    "idDocumento": 7247022
+  }
+}

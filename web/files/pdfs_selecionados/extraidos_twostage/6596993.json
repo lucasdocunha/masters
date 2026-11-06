@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Concessionária Rod Osório Porto Alegre S/A",
+  "fornecedor_cnpj_cpf": "01.654.604/0002-03",
+  "numero_documento": "P2-058",
+  "data_emissao": "2016-04-26",
+  "valor_total": 3.5,
+  "descricao_resumida": "Automóvel R$3,50 Dinheiro O Eixo Suspenso conforme Lei 13103/2015",
+  "observacoes": "Cálculo estimado dos tributos 8,65%",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 5.9,
+    "timestamp": "2026-10-26T19:52:32Z",
+    "idDocumento": 6596993
+  }
+}

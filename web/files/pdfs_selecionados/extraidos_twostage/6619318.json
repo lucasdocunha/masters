@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MR - Operadora de Viagens e Turismo LTDA. EPP",
+  "fornecedor_cnpj_cpf": "10.402.370/0001-09",
+  "numero_documento": null,
+  "data_emissao": "2018-07-04",
+  "valor_total": 2300.0,
+  "descricao_resumida": "Aluguel do imóvel de Escritório Parlamentar",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 7.5,
+    "timestamp": "2026-10-26T19:43:04Z",
+    "idDocumento": 6619318
+  }
+}

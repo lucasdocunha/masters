@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO BARTOLOMEU DE GUSMAO II LTDA",
+  "fornecedor_cnpj_cpf": "18.018.793/0001-31",
+  "numero_documento": "234546",
+  "data_emissao": "2023-07-27",
+  "valor_total": 209.24,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:57:48Z",
+    "tempo_segundos": 2.03,
+    "idDocumento": 7587362
+  }
+}

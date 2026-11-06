@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CARNE DE SOL 111 LTDA EPP",
+  "fornecedor_cnpj_cpf": "00.585.462/0001-07 205.042.250-49",
+  "numero_documento": "000015651",
+  "data_emissao": "01/00/2017",
+  "valor_total": 158.0,
+  "descricao_resumida": "34 SUCO DE LARANJA 65 FICANHA COMPLETA 9 MARIPOCA 34 SUCO DE LARANJA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.19,
+    "timestamp": "2026-10-26T19:35:37Z",
+    "idDocumento": 6350336
+  }
+}

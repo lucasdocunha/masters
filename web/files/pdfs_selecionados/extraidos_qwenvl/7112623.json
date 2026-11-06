@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO CONQUISTA DE SEPETIBA LTDA",
+  "fornecedor_cnpj_cpf": "30.366.866/0001-52",
+  "numero_documento": "36631",
+  "data_emissao": "2020-11-03",
+  "valor_total": 100.0,
+  "descricao_resumida": "VENDA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.53,
+    "timestamp": "2026-10-26T18:30:03Z",
+    "idDocumento": 7112623
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "E2 Soluções Em Tecnologia Ltda ME",
+  "fornecedor_cnpj_cpf": "07.401.893/0001-26",
+  "numero_documento": "644",
+  "data_emissao": "2014-10-02",
+  "valor_total": 687.0,
+  "descricao_resumida": "Locação de 4 microcomputadores com monitor LCD e 1 impressora multifuncional Brother 7860DW referente ao período de outubro/2014.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash",
+    "timestamp": "2026-10-21T17:18:00Z",
+    "tempo_segundos": 31.27,
+    "idDocumento": 5530109
+  }
+}

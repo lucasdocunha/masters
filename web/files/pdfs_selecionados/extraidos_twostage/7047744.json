@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Rádio Tupinambá de Sobral Ltda.",
+  "fornecedor_cnpj_cpf": "07.816.424/0001-78",
+  "numero_documento": "6952",
+  "data_emissao": "2020-04-13",
+  "valor_total": 4400.0,
+  "descricao_resumida": "Divulgação de Atividade Parlamentar do Deputado Leonidas Custódio. Nos Programação Noticiosa diária na Rádio Tupinambá de Sobral. No mês de Março/2020. Por meio da Veiculação de seus Apoi e atuação no Congresso Nacional, ministério Federal, Órgãos Públicos, difundindo Agenda, Preparação entrevistas, Artigos e Participações em eventos.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.84,
+    "timestamp": "2026-10-26T20:17:04Z",
+    "idDocumento": 7047744
+  }
+}

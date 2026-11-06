@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ESTAFACIL ESTACIONAMENTOS LTDA",
+  "fornecedor_cnpj_cpf": "25.309.343/0004-06",
+  "numero_documento": "195",
+  "data_emissao": "24/10/2025",
+  "valor_total": 859.5,
+  "descricao_resumida": "Referente a mensalidade de duas vagas de garagem no mês de Novembro.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.6,
+    "timestamp": "2026-10-26T18:41:13Z",
+    "idDocumento": 8016434
+  }
+}

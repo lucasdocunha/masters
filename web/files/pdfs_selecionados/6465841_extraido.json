@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Vip Loc Veiculos Ltda",
+  "fornecedor_cnpj_cpf": "10.186.946/0001-48",
+  "numero_documento": "003317",
+  "data_emissao": "2017-11-30",
+  "valor_total": 4032.0,
+  "descricao_resumida": "Locação de veículo (PZN5694) - Período: 01/11/2017 a 30/11/2017",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:25:09Z",
+    "tempo_segundos": 1.6,
+    "idDocumento": 6465841
+  }
+}

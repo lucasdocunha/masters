@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "TORRES BARBOSA COM. DE DERIV. DE PETRO. LTDA",
+  "fornecedor_cnpj_cpf": "03.241.123/0001-02",
+  "numero_documento": "369944",
+  "data_emissao": "2015-10-08",
+  "valor_total": 50.0,
+  "descricao_resumida": "GASOLINHA COMUM 13,369LTX3,74FT 50,006.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.79,
+    "timestamp": "2026-10-26T18:17:43Z",
+    "idDocumento": 5831734
+  }
+}

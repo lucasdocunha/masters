@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5489897,
+  "ano": 2014,
+  "mes": 8,
+  "fornecedor": "EASY TAXI",
+  "cnpjCPF": "091.636.770/0011-5",
+  "numero": "sn",
+  "tipoDocumento": "1",
+  "dataEmissao": "2014-08-05T00:00:00",
+  "valorDocumento": 58.0,
+  "valorLiquido": 58.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "NELSON MARCHEZAN JUNIOR",
+  "cpfParlamentar": "64777154068",
+  "siglaUF": "RS",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2409/2014/5489897.pdf"
+}

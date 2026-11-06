@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "00.306.597/0009-54",
+  "numero_documento": "012424",
+  "data_emissao": "2015-03-19",
+  "valor_total": 50.0,
+  "descricao_resumida": "Combustivel (Oleo Diesel GC 14)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:49:29Z",
+    "tempo_segundos": 2.94,
+    "idDocumento": 5638065
+  }
+}

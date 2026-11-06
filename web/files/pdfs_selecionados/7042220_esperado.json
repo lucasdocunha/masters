@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7042220,
+  "ano": 2020,
+  "mes": 3,
+  "fornecedor": "GUARIDA SERVIÇOS",
+  "cnpjCPF": "893.986.060/0013-0",
+  "numero": "14929",
+  "tipoDocumento": "1",
+  "dataEmissao": "2020-04-05T00:00:00",
+  "valorDocumento": 3888.17,
+  "valorLiquido": 3139.07,
+  "valorGlosa": 749.1,
+  "nomeParlamentar": "Carlos Gomes",
+  "cpfParlamentar": "02142743730",
+  "siglaUF": "RS",
+  "siglaPartido": "REPUBLICANOS",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2900/2020/7042220.pdf"
+}

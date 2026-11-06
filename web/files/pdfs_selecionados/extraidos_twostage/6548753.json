@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO MARIANA LTDA",
+  "fornecedor_cnpj_cpf": "18.052.684/0001-30",
+  "numero_documento": "378192",
+  "data_emissao": "2018-04-04",
+  "valor_total": 130.0,
+  "descricao_resumida": "300BUSTAVEL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 16.95,
+    "timestamp": "2026-10-26T19:52:05Z",
+    "idDocumento": 6548753
+  }
+}

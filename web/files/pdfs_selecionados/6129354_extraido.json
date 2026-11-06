@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "00306597005670",
+  "numero_documento": "9217",
+  "data_emissao": "2016-10-22",
+  "valor_total": 200.0,
+  "descricao_resumida": "GC (Gasolina Comum) - 59,014 L",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:01:58Z",
+    "tempo_segundos": 2.48,
+    "idDocumento": 6129354
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Uber",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2026-09-21",
+  "valor_total": 28.95,
+  "descricao_resumida": "Viagem UberX de 7.61 quilômetros em 16 minutos",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.11,
+    "timestamp": "2026-10-26T18:42:15Z",
+    "idDocumento": 8161907
+  }
+}

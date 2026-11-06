@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Radio Cultura de Arvorezinha Ltda Me",
+  "fornecedor_cnpj_cpf": "89.655.880/0001-48",
+  "numero_documento": "13119",
+  "data_emissao": "2023-03-09",
+  "valor_total": 500.0,
+  "descricao_resumida": "Divulgacao de atividade parlamentar: sobre prestacao de contas do deputado Giovani Cherini quanto as emendas parlamentares destinadas para o municipio de Arvorezinha.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:00:36Z",
+    "tempo_segundos": 3.56,
+    "idDocumento": 7484780
+  }
+}

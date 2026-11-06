@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Empresa Concessionária de Rodovias do Sul S.A",
+  "fornecedor_cnpj_cpf": "02511048000190",
+  "numero_documento": "DC8E457B-B6F6-421A-B4E5-56D824CF7C31",
+  "data_emissao": "2016-07-30",
+  "valor_total": 9.7,
+  "descricao_resumida": "DINHEIRO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.82,
+    "timestamp": "2026-10-26T18:19:35Z",
+    "idDocumento": 6061237
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Cia de Concessão Rod. Juiz de Fora - RJ",
+  "fornecedor_cnpj_cpf": "00.880.446/0003-10",
+  "numero_documento": "DFE 2002071578244781 3L6T",
+  "data_emissao": "2020-05-01",
+  "valor_total": 11.6,
+  "descricao_resumida": "C01Carro R$11,60 Dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.06,
+    "timestamp": "2026-10-26T18:29:19Z",
+    "idDocumento": 7008101
+  }
+}

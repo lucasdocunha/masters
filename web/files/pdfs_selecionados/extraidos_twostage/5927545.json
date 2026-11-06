@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Concessionária Rod Osório-Porto Alegre S/A",
+  "fornecedor_cnpj_cpf": "01.654.604/0003-86",
+  "numero_documento": "3003071456355980",
+  "data_emissao": "2016-02-24",
+  "valor_total": 12.6,
+  "descricao_resumida": "0 Eixo Suspensso ref Lei 13103/2015",
+  "observacoes": "BOA VIAGEM !!!",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 6.05,
+    "timestamp": "2026-10-26T19:24:21Z",
+    "idDocumento": 5927545
+  }
+}

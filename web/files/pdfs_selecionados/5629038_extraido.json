@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HARI & ANA RESTAURANTE LTDA EPP",
+  "fornecedor_cnpj_cpf": "07.839.490/0001-28",
+  "numero_documento": "005895",
+  "data_emissao": "2015-03-11",
+  "valor_total": 191.18,
+  "descricao_resumida": "Consumo de restaurante (café, água, coca-cola, farofa, parmegiana, Juliana e serviço)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:48:26Z",
+    "tempo_segundos": 4.48,
+    "idDocumento": 5629038
+  }
+}

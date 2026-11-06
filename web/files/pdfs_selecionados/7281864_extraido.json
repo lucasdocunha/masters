@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "UNIAO EMPREENDIMENTOS HOTELEIROS LTDA",
+  "fornecedor_cnpj_cpf": "05434087000390",
+  "numero_documento": "12128/2021",
+  "data_emissao": "2021-10-24",
+  "valor_total": 171.27,
+  "descricao_resumida": "Despesas com hospedagem (diárias)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:35:25Z",
+    "tempo_segundos": 2.5,
+    "idDocumento": 7281864
+  }
+}

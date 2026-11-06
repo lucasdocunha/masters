@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CONCESSIONARIA ROTA DE SANTA MARIA",
+  "fornecedor_cnpj_cpf": "41.886.692/0001-02",
+  "numero_documento": "0305NBSIIXH4",
+  "data_emissao": "10/03/2022",
+  "valor_total": 3.7,
+  "descricao_resumida": "Ambulancia 0800 1000287 Guincho 0800 1000287",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.05,
+    "timestamp": "2026-10-26T18:35:34Z",
+    "idDocumento": 7343423
+  }
+}

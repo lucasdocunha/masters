@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTOPISTA FERNAO DIAS",
+  "fornecedor_cnpj_cpf": "09.326.542/0001-70",
+  "numero_documento": "000324",
+  "data_emissao": "2017-10-19",
+  "valor_total": 2.1,
+  "descricao_resumida": "Tarifa de pedagio (Praca: BR381/Km-658)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:28:44Z",
+    "tempo_segundos": 1.85,
+    "idDocumento": 6456024
+  }
+}

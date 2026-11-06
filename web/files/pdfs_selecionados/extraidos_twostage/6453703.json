@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GONCALVES, MACEDO, PAIVA E RASSI ADVOGADOS ASSOCIADOS",
+  "fornecedor_cnpj_cpf": "28.373.667/0001-59",
+  "numero_documento": null,
+  "data_emissao": "2017-11-30",
+  "valor_total": 14000.0,
+  "descricao_resumida": "Estudo de Projeto de Lei que acrescenta § 23 ao artigo 20 da Lei 8.036, de 11 de maio de 1990, que \"Dispõe sobre o Fundo de Garantia do Tempo de Serviço e dá outras importâncias\" para permitir a movimentação da conta vinculada para aquisição do segundo imóvel.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.66,
+    "timestamp": "2026-10-26T19:37:31Z",
+    "idDocumento": 6453703
+  }
+}

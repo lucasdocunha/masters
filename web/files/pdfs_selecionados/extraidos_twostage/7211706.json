@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "NITGAS DO BRASIL POSTO DE GAS NATURAL VEICULAR LTDA",
+  "fornecedor_cnpj_cpf": "08.251.766/0001-50",
+  "numero_documento": "1509",
+  "data_emissao": "2021-06-22",
+  "valor_total": 307.1,
+  "descricao_resumida": "Consultas de NF-e",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.62,
+    "timestamp": "2026-10-26T20:29:16Z",
+    "idDocumento": 7211706
+  }
+}

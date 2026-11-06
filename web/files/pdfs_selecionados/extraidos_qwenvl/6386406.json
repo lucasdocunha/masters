@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "OESTE COMERCIAL DE COMBUSTÍVEL PARA AVIAÇÃO LTDA",
+  "fornecedor_cnpj_cpf": "000.001.995",
+  "numero_documento": "N° 000.001.995",
+  "data_emissao": "11/09/2017",
+  "valor_total": 3002.37,
+  "descricao_resumida": "AVGAS-100 Total aproximado de tributos federais, estaduais e municipais: 1.140,90",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 10.28,
+    "timestamp": "2026-10-26T18:23:08Z",
+    "idDocumento": 6386406
+  }
+}

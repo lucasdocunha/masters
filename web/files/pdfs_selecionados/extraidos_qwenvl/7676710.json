@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PARAPARK LTDA",
+  "fornecedor_cnpj_cpf": "18.793.888/0001-22",
+  "numero_documento": "00000678",
+  "data_emissao": "2024-01-02",
+  "valor_total": 420.0,
+  "descricao_resumida": "SERVICOS DE ESTACIONAMENTO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.39,
+    "timestamp": "2026-10-26T18:37:51Z",
+    "idDocumento": 7676710
+  }
+}

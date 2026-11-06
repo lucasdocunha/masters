@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Laércio Rezende Silva",
+  "fornecedor_cnpj_cpf": "272.127.346-91",
+  "numero_documento": null,
+  "data_emissao": "2023-01-02",
+  "valor_total": 2800.0,
+  "descricao_resumida": "Aluguel do imóvel situado na Avenida Alfredo Custódio de Paula, nº 899, Bairro Alfredo Custódio de Paula, Pouso Alegre, Minas Gerais.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.99,
+    "timestamp": "2026-10-26T18:37:58Z",
+    "idDocumento": 7483424
+  }
+}

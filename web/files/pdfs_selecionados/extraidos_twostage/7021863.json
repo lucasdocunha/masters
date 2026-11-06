@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VITORIA ORGANIZACOES EM PETROLEO LT",
+  "fornecedor_cnpj_cpf": "01.095.252/0001-04",
+  "numero_documento": "000048335",
+  "data_emissao": "2020-02-26",
+  "valor_total": 161.19,
+  "descricao_resumida": "GASOLINA ORIGINAL C",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 16.39,
+    "timestamp": "2026-10-26T20:22:05Z",
+    "idDocumento": 7021863
+  }
+}

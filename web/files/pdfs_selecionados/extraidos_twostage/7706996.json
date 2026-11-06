@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ALMADA E CIA LIMITADA",
+  "fornecedor_cnpj_cpf": "16.626.814/0002-57",
+  "numero_documento": "33396",
+  "data_emissao": "2024-03-06",
+  "valor_total": 237.54,
+  "descricao_resumida": "Venda de produtos",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 18.0,
+    "timestamp": "2026-10-26T21:20:34Z",
+    "idDocumento": 7706996
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Vlm 050 Combustiveis Ltda",
+  "fornecedor_cnpj_cpf": "42.239.864/0001-00",
+  "numero_documento": "1077",
+  "data_emissao": "2025-02-12",
+  "valor_total": 257.7,
+  "descricao_resumida": "Gasolina C Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:49:50Z",
+    "tempo_segundos": 2.96,
+    "idDocumento": 7869998
+  }
+}

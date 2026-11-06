@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MADEIRA E ARTE INDUSTRIA E COMERCIO DE MOVEIS LTDA",
+  "fornecedor_cnpj_cpf": "00757049000193",
+  "numero_documento": "0000000219",
+  "data_emissao": "2025-05-02",
+  "valor_total": 1042.0,
+  "descricao_resumida": "Locação de móveis para escritório e itens em MDF",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:39:25Z",
+    "tempo_segundos": 4.74,
+    "idDocumento": 7912055
+  }
+}

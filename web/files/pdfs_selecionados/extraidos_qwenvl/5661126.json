@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Braga",
+  "fornecedor_cnpj_cpf": "38.076.089/0001-42",
+  "numero_documento": "133592",
+  "data_emissao": "2015-12-03",
+  "valor_total": 156.41,
+  "descricao_resumida": "Gasolina",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.49,
+    "timestamp": "2026-10-26T18:17:09Z",
+    "idDocumento": 5661126
+  }
+}

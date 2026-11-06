@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "54.439.413 MARIA CLARA SILVA RIBEIRO",
+  "fornecedor_cnpj_cpf": "54.439.413/0001-04",
+  "numero_documento": "13",
+  "data_emissao": "2024-11-18",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Divulgação das atividades parlamentares do deputado federal Dr. Frederico, no mês de NOVEMBRO de 2024, por meio da gestão de conteúdos em seu canal no Youtube",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:20:54Z",
+    "tempo_segundos": 4.87,
+    "idDocumento": 7831001
+  }
+}

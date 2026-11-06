@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Vila Rica Park Locação de Veículos Ltda",
+  "fornecedor_cnpj_cpf": "60.011.343/0001-83",
+  "numero_documento": "52544",
+  "data_emissao": "2017-07-15",
+  "valor_total": 1600.0,
+  "descricao_resumida": "Locação de veículo",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.6,
+    "timestamp": "2026-10-26T18:22:45Z",
+    "idDocumento": 6356562
+  }
+}

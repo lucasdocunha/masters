@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GRAFFIT LIMEIRA PAPELARIA LTDA",
+  "fornecedor_cnpj_cpf": "35260168917061000151550010000571201045380779",
+  "numero_documento": "1",
+  "data_emissao": "2026-05-01",
+  "valor_total": 371.3,
+  "descricao_resumida": "VENDA DE MERCADORIA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.04,
+    "timestamp": "2026-10-26T18:44:29Z",
+    "idDocumento": 8042736
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "LIBER COMERCIO DE COMBUSTIVEIS E DERIVADOS DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "29.335.625/0001-96",
+  "numero_documento": "2475",
+  "data_emissao": "29/08/2021",
+  "valor_total": 1763.4,
+  "descricao_resumida": "VENDA COM CUPOM FISCAL EMITIDO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.94,
+    "timestamp": "2026-10-26T18:33:12Z",
+    "idDocumento": 7245865
+  }
+}

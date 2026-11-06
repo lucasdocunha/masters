@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CENTRO AUTOMOTIVO 1028 LTDA",
+  "fornecedor_cnpj_cpf": "59.779.512/0001-40",
+  "numero_documento": "12/07/2016",
+  "data_emissao": "2016-07-12",
+  "valor_total": 137.02,
+  "descricao_resumida": "ETANOL HIDRATADO 59,6LTX2,299 FT",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 15.57,
+    "timestamp": "2026-10-26T19:21:58Z",
+    "idDocumento": 6063642
+  }
+}

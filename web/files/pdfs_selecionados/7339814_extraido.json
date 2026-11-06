@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LOCALIZA RENT A CAR S/A",
+  "fornecedor_cnpj_cpf": "16.670.085/0049-08",
+  "numero_documento": "ACBHZ - 526031",
+  "data_emissao": "2022-03-06",
+  "valor_total": 688.33,
+  "descricao_resumida": "ALUGUEL CONFORME CONTRATO BHZG425111 E VALOR DO SEGURO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:37:21Z",
+    "tempo_segundos": 2.6,
+    "idDocumento": 7339814
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "IANE APARECIDA BAQUIAO DA SILVA",
+  "fornecedor_cnpj_cpf": "00.725.346/0001-57",
+  "numero_documento": "051.121.123",
+  "data_emissao": "23/03/2026",
+  "valor_total": null,
+  "descricao_resumida": "Venda",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.43,
+    "timestamp": "2026-10-26T21:57:56Z",
+    "idDocumento": 8070873
+  }
+}

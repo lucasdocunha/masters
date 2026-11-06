@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ViaRondon Concessionaria de Rodovia S/A",
+  "fornecedor_cnpj_cpf": "10.635.691/0001-53",
+  "numero_documento": "3294372",
+  "data_emissao": "2020-02-21",
+  "valor_total": 6.4,
+  "descricao_resumida": "Tarifa de pedagio - Praca 03 Promissao - SP-300 KM-55,7",
+  "observacoes": "Documento fiscal equivalente",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:20:27Z",
+    "tempo_segundos": 37.39,
+    "idDocumento": 7023433
+  }
+}

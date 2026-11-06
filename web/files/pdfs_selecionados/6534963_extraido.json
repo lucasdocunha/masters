@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Sindicato dos Permissionários de Táxis e Motoristas Auxiliares do Distrito Federal - SINPETAXI",
+  "fornecedor_cnpj_cpf": "00.031.708/0001-35",
+  "numero_documento": "1172",
+  "data_emissao": "2018-03-24",
+  "valor_total": 16.0,
+  "descricao_resumida": "Serviços autônomos de táxi",
+  "observacoes": "Data de emissão preenchida manualmente como 24/03/2018",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:13:54Z",
+    "tempo_segundos": 7.06,
+    "idDocumento": 6534963
+  }
+}

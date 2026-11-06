@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "WGF PARTICIPAÇÕES LTDA.",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2020-01-02",
+  "valor_total": 1961.13,
+  "descricao_resumida": "Declaração de quitação de IPTU 2020, parcela única, referente ao Edifício Glycério Alves, conjunto 1202",
+  "observacoes": "Documento de quitação (recibo/declaração), sem CNPJ do emissor visível.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:56:32Z",
+    "tempo_segundos": 31.8,
+    "idDocumento": 7003058
+  }
+}

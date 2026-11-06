@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "STAR POSTO - J C COMERCIO DE COMBUSTIVEL LTDA",
+  "fornecedor_cnpj_cpf": "23.570.062/0001-34",
+  "numero_documento": "213253",
+  "data_emissao": "2017-07-12",
+  "valor_total": 194.6,
+  "descricao_resumida": "SEL B S10 ORIGINAL ADITIVADO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:25:02Z",
+    "tempo_segundos": 2.32,
+    "idDocumento": 6373756
+  }
+}

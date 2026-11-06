@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RÁDIO PRODUÇÃO FM LTDA - EPP",
+  "fornecedor_cnpj_cpf": "00.974.497/0001-49",
+  "numero_documento": "005543",
+  "data_emissao": "2017-03-03",
+  "valor_total": 1800.0,
+  "descricao_resumida": "Valor referente divulgação de atividade parlamentar do deputado Celso Maldaner sobre as reformas previdenciárias e trabalhistas.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:31:16Z",
+    "tempo_segundos": 2.29,
+    "idDocumento": 6228594
+  }
+}

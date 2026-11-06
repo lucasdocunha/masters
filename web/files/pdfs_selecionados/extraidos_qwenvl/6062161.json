@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PREFEITURA MUNICIPAL DE XANXERÊ",
+  "fornecedor_cnpj_cpf": "53160 61332",
+  "numero_documento": "CFMOW6NVC",
+  "data_emissao": "20/07/2016 08:09:31",
+  "valor_total": 260.0,
+  "descricao_resumida": "Hospedagem de qualquer natureza em hotéis, apart-service condominiais, flat, apart-hotéis, hotéis residência, residence-service, suite service, hotelaria marítima, motéis, pensões e congêneres; ocupação por temporada com fornecimento de serviço (o valor da alimentação e gorjeta, quando incluído no preço da diária, fica sujeito ao Imposto Sobre Serviços).",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.85,
+    "timestamp": "2026-10-26T18:20:45Z",
+    "idDocumento": 6062161
+  }
+}

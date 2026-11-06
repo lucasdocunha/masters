@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COML BARCELOS & MATOS LTDA",
+  "fornecedor_cnpj_cpf": "17.138.733/0001-02",
+  "numero_documento": "135974",
+  "data_emissao": "2017-02-23",
+  "valor_total": 10.0,
+  "descricao_resumida": "TUTELA LIMPA PARABRISAS 500 ML",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:23:36Z",
+    "tempo_segundos": 2.1,
+    "idDocumento": 6220515
+  }
+}

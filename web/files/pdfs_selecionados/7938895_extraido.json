@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HOTEL ATLANTICO TOWER LTDA",
+  "fornecedor_cnpj_cpf": "29.300.887/0001-15",
+  "numero_documento": "00111533",
+  "data_emissao": "2025-06-26",
+  "valor_total": 1035.5,
+  "descricao_resumida": "Hospedagem no hotel para o período de 21/06/2025 a 25/06/2025",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:31:36Z",
+    "tempo_segundos": 9.64,
+    "idDocumento": 7938895
+  }
+}

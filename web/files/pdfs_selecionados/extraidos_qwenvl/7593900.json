@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PERFECT ASSESSORIA EM LICITAÇÃO LTDA",
+  "fornecedor_cnpj_cpf": "42.051.768/000134 II Cf/df: 0805734300109",
+  "numero_documento": "000047",
+  "data_emissao": "21/08/2023",
+  "valor_total": "R$970,00",
+  "descricao_resumida": "LOCAÇÃO DE MOVEIS DE ESCRITORIO CONFORME DESCRIMIDADO NO CONTRATO DE ALUGUEL N° 012/2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.37,
+    "timestamp": "2026-10-26T18:36:50Z",
+    "idDocumento": 7593900
+  }
+}

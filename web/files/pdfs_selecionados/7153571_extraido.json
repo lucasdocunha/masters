@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "DUAILIBE ADVOGADOS ASSOCIADOS S/S",
+  "fornecedor_cnpj_cpf": "04.831.284/0001-19",
+  "numero_documento": "164",
+  "data_emissao": "2021-01-28",
+  "valor_total": 12050.0,
+  "descricao_resumida": "PRESTAÇÃO DE SERVIÇO TÉCNICO ESPECIALIZADO DE CONSULTORIA E ASSESSORIA JURÍDICA NAS ATIVIDADES PARLAMENTARES CONFORME CONTRATO FIRMADO. REFERÊNCIA JANEIRO 2021.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:05:22Z",
+    "tempo_segundos": 16.34,
+    "idDocumento": 7153571
+  }
+}

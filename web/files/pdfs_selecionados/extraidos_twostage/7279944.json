@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "TRAVEL TO AMAZON EIRELI - EPP",
+  "fornecedor_cnpj_cpf": "23.982.484/0001-17",
+  "numero_documento": "38 / E",
+  "data_emissao": "2021-11-03",
+  "valor_total": 12200.0,
+  "descricao_resumida": "Prestação de serviços de divulgação parlamentar com criação e produção de inserções de áudio e vídeo, gestão de redes sociais (administração das páginas virtuais da parlamentar), criação gráfica e visual e divulgação das atividades parlamentares em sites particulares no contexto publicitário.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.62,
+    "timestamp": "2026-10-26T20:30:00Z",
+    "idDocumento": 7279944
+  }
+}

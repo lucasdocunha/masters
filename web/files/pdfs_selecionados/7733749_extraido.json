@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Cristiano Fedalto",
+  "fornecedor_cnpj_cpf": "14.705.236/0001-38",
+  "numero_documento": null,
+  "data_emissao": "2024-05-09",
+  "valor_total": 765.0,
+  "descricao_resumida": "Locacao de equipamentos de informatica (Microcomputador NTC, monitores LG, switch e notebook Acer) referentes ao periodo de 01 a 31/05/2024",
+  "observacoes": "Recibo de pagamento",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:09:33Z",
+    "tempo_segundos": 2.46,
+    "idDocumento": 7733749
+  }
+}

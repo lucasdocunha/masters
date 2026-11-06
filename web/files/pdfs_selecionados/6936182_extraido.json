@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CONCESSIONARIA ROTA DAS BANDEIRAS",
+  "fornecedor_cnpj_cpf": "10.647.979/0001-48",
+  "numero_documento": "QLDRGQLRC2DW",
+  "data_emissao": "2019-08-14",
+  "valor_total": 8.6,
+  "descricao_resumida": "Tarifa de pedagio - Exploracao da Rodovia",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:22:44Z",
+    "tempo_segundos": 6.0,
+    "idDocumento": 6936182
+  }
+}

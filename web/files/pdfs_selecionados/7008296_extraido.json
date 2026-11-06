@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HOTELARIA SABINO PALACE EIRELI - EPP",
+  "fornecedor_cnpj_cpf": "04.289.900/0001-51",
+  "numero_documento": "00002825",
+  "data_emissao": "2020-01-23",
+  "valor_total": 292.3,
+  "descricao_resumida": "Hospedagem",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:09:55Z",
+    "tempo_segundos": 57.39,
+    "idDocumento": 7008296
+  }
+}

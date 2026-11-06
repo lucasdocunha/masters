@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Companhia Energética de Pernambuco",
+  "fornecedor_cnpj_cpf": "10.635.932/0001-68",
+  "numero_documento": "7039299865",
+  "data_emissao": "2022-01-01",
+  "valor_total": 152.36,
+  "descricao_resumida": "Consumo Ativo(kWh) TUSD: 108,0000000 x 0,48849317 = 51,77; Consumo Ativo(kWh) TE: 108,0000000 x 0,38925319 = 41,15; Acréscimo Bandeira AMARELA: 21,29; Contrib. Ilum. Pública Municipal: 29,17; ICMS Subvenção-CDE-NF 178129912-08/10/21: 3,35; ICMS Subvenção-CDE-NF 180431775-08/11/21: 3,27; Atualização IPCA-NF 180431775-08.11.21: 2,38",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 24.21,
+    "timestamp": "2026-10-26T20:53:20Z",
+    "idDocumento": 7316993
+  }
+}

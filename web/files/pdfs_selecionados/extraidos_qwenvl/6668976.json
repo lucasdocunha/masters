@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Adala & Adala Neg. Imobiliários Ltda Me.",
+  "fornecedor_cnpj_cpf": "62612049/0001-52",
+  "numero_documento": "R$ 5.265,68",
+  "data_emissao": "2018-08-31",
+  "valor_total": 5265.68,
+  "descricao_resumida": "LOCAÇÃO DO IMÓVEL SITO A",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.73,
+    "timestamp": "2026-10-26T18:24:44Z",
+    "idDocumento": 6668976
+  }
+}

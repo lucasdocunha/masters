@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PREFEITURA MUNICIPAL DE IBIRUBÁ - RS",
+  "fornecedor_cnpj_cpf": "202100000001157",
+  "numero_documento": "202100000001157",
+  "data_emissao": "16/12/2021",
+  "valor_total": 250.0,
+  "descricao_resumida": "Propaganda e publicidade, inclusive promoção de vendas, planejamento de campanhas ou sistemas de publicidade, elaboração de desenhos, textos e demais materiais publicitários.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.04,
+    "timestamp": "2026-10-26T18:31:54Z",
+    "idDocumento": 7307347
+  }
+}

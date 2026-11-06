@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RODOPOSTO CORAL LTDA",
+  "fornecedor_cnpj_cpf": "54.844.998/0001-30",
+  "numero_documento": "025829",
+  "data_emissao": "2016-07-04",
+  "valor_total": 176.69,
+  "descricao_resumida": "Gasolina V Power Bdt B13 (47,78L)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:15:14Z",
+    "tempo_segundos": 11.16,
+    "idDocumento": 6053138
+  }
+}

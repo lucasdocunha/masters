@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO LUNAR LT",
+  "fornecedor_cnpj_cpf": "58.177.056/0001-04",
+  "numero_documento": "000.000.850",
+  "data_emissao": "2017-08-07",
+  "valor_total": 505.71,
+  "descricao_resumida": "Gasolina C comum e oleo BR valora 5W30",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:32:23Z",
+    "tempo_segundos": 2.26,
+    "idDocumento": 6356354
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Copel Distribuição S.A.",
+  "fornecedor_cnpj_cpf": "04.368.898/0001-06",
+  "numero_documento": "5292",
+  "data_emissao": "10/04/2017",
+  "valor_total": 70.94,
+  "descricao_resumida": "CUSTO DISP SISTEMA, ENERGIA CONS. B AMARELA, ENERGIA CONS. B VERMELHA, CONT ILLUMIN PUBLICA MUNICIPI, MULTA SOBRE ILLUMINACAO PUBLI, ACRESCIMO MORATORIO, MULTA POR ATRASO NO PAGAMENT, JUROS CONTA ANTERIOR",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.71,
+    "timestamp": "2026-10-26T18:21:53Z",
+    "idDocumento": 6303205
+  }
+}

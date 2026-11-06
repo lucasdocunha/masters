@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COP FAC MAQUINAS LTDA.",
+  "fornecedor_cnpj_cpf": "01.055.647/0001-83",
+  "numero_documento": "008276",
+  "data_emissao": "2014-10-31",
+  "valor_total": 250.72,
+  "descricao_resumida": "CONFORME CONTRATO DE LOCACAO DE MAQUINA FOTOCOPIADORA DE 01/10 A 31/10/2014. ADICIONAL DE LOCACAO DE COPIAS EMITIDAS.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:34:39Z",
+    "tempo_segundos": 2.66,
+    "idDocumento": 5541289
+  }
+}

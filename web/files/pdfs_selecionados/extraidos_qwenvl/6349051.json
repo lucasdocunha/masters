@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SPMAR",
+  "fornecedor_cnpj_cpf": "09.191.336/0001-53",
+  "numero_documento": null,
+  "data_emissao": "2017-07-22",
+  "valor_total": 3.3,
+  "descricao_resumida": "Dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.32,
+    "timestamp": "2026-10-26T18:21:06Z",
+    "idDocumento": 6349051
+  }
+}

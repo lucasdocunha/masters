@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Antonio Luis de Oliveira Freitas",
+  "fornecedor_cnpj_cpf": "09.122.546/0001-90",
+  "numero_documento": "1.075",
+  "data_emissao": "2014-05-11",
+  "valor_total": 300.0,
+  "descricao_resumida": "Revisão de Matéria ref. Rec Nº 287 que trata da Reforma da Previdência Social - Referente ao mês 04/2014",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.87,
+    "timestamp": "2026-10-26T19:38:53Z",
+    "idDocumento": 6321312
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7232219,
+  "ano": 2021,
+  "mes": 6,
+  "fornecedor": "CARTAXO PETROLEO LTDA",
+  "cnpjCPF": "290.497.520/0012-9",
+  "numero": "013380",
+  "tipoDocumento": "0",
+  "dataEmissao": "2021-06-27T00:00:00",
+  "valorDocumento": 350.12,
+  "valorLiquido": 350.12,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Pedro Augusto Bezerra",
+  "cpfParlamentar": "87850885368",
+  "siglaUF": "CE",
+  "siglaPartido": "PDT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3349/2021/7232219.pdf"
+}

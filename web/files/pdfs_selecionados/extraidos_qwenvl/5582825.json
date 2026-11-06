@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ABASTECEDORA E GARAGEM SS LTDA",
+  "fornecedor_cnpj_cpf": "90.212.093/0001-00",
+  "numero_documento": "00T 0000000008001",
+  "data_emissao": "26/12/2014",
+  "valor_total": 100.0,
+  "descricao_resumida": "gasolina v-power 32,269LT X 3,099",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.75,
+    "timestamp": "2026-10-26T18:14:58Z",
+    "idDocumento": 5582825
+  }
+}

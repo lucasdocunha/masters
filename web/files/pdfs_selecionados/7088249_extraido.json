@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Hotel Ecos Ltda",
+  "fornecedor_cnpj_cpf": "08990010000123",
+  "numero_documento": "00000609",
+  "data_emissao": "2020-08-29",
+  "valor_total": 125.0,
+  "descricao_resumida": "01 Diaria(s) de hospedagem",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:37:18Z",
+    "tempo_segundos": 7.49,
+    "idDocumento": 7088249
+  }
+}

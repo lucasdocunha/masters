@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GARAGEM LAITANO LTDA",
+  "fornecedor_cnpj_cpf": "92.692.185/0001-60",
+  "numero_documento": "607e9ab17382ff38daa8b72fb50fecab",
+  "data_emissao": "2015-08-11",
+  "valor_total": 50.0,
+  "descricao_resumida": "GASOLINA ADITIVADA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 10.96,
+    "timestamp": "2026-10-26T19:10:25Z",
+    "idDocumento": 5772552
+  }
+}

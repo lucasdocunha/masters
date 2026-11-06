@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EMP. BRAS. DE CORREIOS E TELEGRAFOS",
+  "fornecedor_cnpj_cpf": "65950014000103",
+  "numero_documento": "27/09/2018",
+  "data_emissao": "2018-09-27",
+  "valor_total": 66.3,
+  "descricao_resumida": "SEDEX 10 QTD. 1 PREÇO(R$) 66,30+ Valor do Porto(R$): 66,30 Cep Destino: 70100-900 (DF)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 13.11,
+    "timestamp": "2026-10-26T19:45:47Z",
+    "idDocumento": 6673767
+  }
+}

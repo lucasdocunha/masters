@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Eco050",
+  "fornecedor_cnpj_cpf": "19208022000170",
+  "numero_documento": "49DEEEBOA-DADA-4A46-ACAA-788739495DB6",
+  "data_emissao": "2021-10-09",
+  "valor_total": 6.1,
+  "descricao_resumida": "Tarifa: R$ 6,10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 15.18,
+    "timestamp": "2026-10-26T20:35:05Z",
+    "idDocumento": 7273529
+  }
+}

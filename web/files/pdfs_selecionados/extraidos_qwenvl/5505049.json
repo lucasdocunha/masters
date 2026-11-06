@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO PARK SANTA MARIA DERIV. DE PETROLEO",
+  "fornecedor_cnpj_cpf": "05.889.046/0001-27",
+  "numero_documento": "3670872014",
+  "data_emissao": "2014-08-26",
+  "valor_total": 20.0,
+  "descricao_resumida": "Bomba O Bico & EI",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.47,
+    "timestamp": "2026-10-26T18:14:05Z",
+    "idDocumento": 5505049
+  }
+}

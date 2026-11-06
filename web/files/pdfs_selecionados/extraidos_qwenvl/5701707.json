@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PETROBRAS",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "15383",
+  "data_emissao": "2015-06-06",
+  "valor_total": 109.0,
+  "descricao_resumida": "Gasolina Comum, Gasolina Aditivada, Etanol, Diesel, GLP, Lubrificante",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.34,
+    "timestamp": "2026-10-26T18:17:03Z",
+    "idDocumento": 5701707
+  }
+}

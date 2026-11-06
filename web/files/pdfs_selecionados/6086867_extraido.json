@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Recanto Sul Imóveis / Recanto Sul com Adm Imov Ltda",
+  "fornecedor_cnpj_cpf": "05.995.193/0001-81",
+  "numero_documento": null,
+  "data_emissao": "2016-08-05",
+  "valor_total": 3138.24,
+  "descricao_resumida": "Pagamento de aluguel referente ao mês de julho de 2016, do imóvel situado na Praça Marechal Deodoro 130, sala 701.",
+  "observacoes": "Recibo de aluguel acompanhado de boleto bancário.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:05:22Z",
+    "tempo_segundos": 2.74,
+    "idDocumento": 6086867
+  }
+}

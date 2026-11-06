@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "R BENJAMIM GUIMARAES,S/N, LOJA-MORRO DA GLORIA-JUIZ DE FORA-MG",
+  "fornecedor_cnpj_cpf": "36035-123",
+  "numero_documento": "000.000.803",
+  "data_emissao": "2023-09-09",
+  "valor_total": 230.02,
+  "descricao_resumida": "LUCAS COMERCIO E DERIVADOS DE PETROLEO EIRELI",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.99,
+    "timestamp": "2026-10-26T18:36:05Z",
+    "idDocumento": 7607215
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DE COMBUSTIVEIS BORDIGNON LTDA",
+  "fornecedor_cnpj_cpf": "14.583.334/0001-40",
+  "numero_documento": "1320102001",
+  "data_emissao": "13/05/2017",
+  "valor_total": 70.0,
+  "descricao_resumida": "Dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.47,
+    "timestamp": "2026-10-26T18:21:59Z",
+    "idDocumento": 6312429
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GEFERSON LUIZ RODRIGUES",
+  "fornecedor_cnpj_cpf": "40.877.217/0001-07",
+  "numero_documento": "12",
+  "data_emissao": "2024-12-19",
+  "valor_total": 4650.0,
+  "descricao_resumida": "Propaganda e publicidade, planejamento de campanhas ou sistemas de publicidade para a divulgação do mandato e atividades parlamentares",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:28:34Z",
+    "tempo_segundos": 15.1,
+    "idDocumento": 7849520
+  }
+}

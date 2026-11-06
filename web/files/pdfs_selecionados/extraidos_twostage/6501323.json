@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Bradesco",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "1720",
+  "data_emissao": "31/01/2018",
+  "valor_total": 4150.0,
+  "descricao_resumida": "Aluguel 01/2018 ref a Cinquenta por Cento do cj 11 e Cinquenta por Cento do Cj. 12",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.71,
+    "timestamp": "2026-10-26T19:52:27Z",
+    "idDocumento": 6501323
+  }
+}

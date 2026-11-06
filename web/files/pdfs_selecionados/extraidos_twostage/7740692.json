@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Equatorial Pará Distribuidora de Energia S.A",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "3025181610",
+  "data_emissao": "2024-05-17",
+  "valor_total": 219.45,
+  "descricao_resumida": "Boa Vista, Roraima, Brasil",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.41,
+    "timestamp": "2026-10-26T21:18:07Z",
+    "idDocumento": 7740692
+  }
+}

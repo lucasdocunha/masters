@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Districomp Distribuidora de Informática LTDA",
+  "fornecedor_cnpj_cpf": "01.863.881/0001-37",
+  "numero_documento": "5",
+  "data_emissao": "2019-07-11",
+  "valor_total": 2048.7,
+  "descricao_resumida": "Locação de bens móveis (computadores, monitores, impressora)",
+  "observacoes": "Nota de débito acompanhada de boleto e comprovante de pagamento",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:32:42Z",
+    "tempo_segundos": 2.59,
+    "idDocumento": 6858181
+  }
+}

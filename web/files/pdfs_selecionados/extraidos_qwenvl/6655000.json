@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Adria",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "365964605",
+  "data_emissao": "2018-08-15",
+  "valor_total": 4403.86,
+  "descricao_resumida": "Voos",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.08,
+    "timestamp": "2026-10-26T18:23:46Z",
+    "idDocumento": 6655000
+  }
+}

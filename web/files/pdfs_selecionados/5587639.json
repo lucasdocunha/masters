@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5587639,
+  "ano": 2014,
+  "mes": 12,
+  "fornecedor": "EUCATUR",
+  "cnpjCPF": "760.807.380/0106-9",
+  "numero": "289838",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-12-17T00:00:00",
+  "valorDocumento": 103.97,
+  "valorLiquido": 103.97,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "PADRE TON",
+  "cpfParlamentar": "33963312300",
+  "siglaUF": "RO",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2372/2015/5587639.pdf"
+}

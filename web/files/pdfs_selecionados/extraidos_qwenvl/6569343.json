@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MAX SERVIÇOS DE HOTELARIA LTDA - EPP",
+  "fornecedor_cnpj_cpf": "09.528.889/0001-59",
+  "numero_documento": "2018000000001005",
+  "data_emissao": "2018-04-16",
+  "valor_total": 171.25,
+  "descricao_resumida": "DESPESAS COM HOSPEDAGEM REFERENTE A 1 DIARIA NO PERIODO DE 15 A 16/04/2018 NO VALOR DE R$ 171,25.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.21,
+    "timestamp": "2026-10-26T18:23:59Z",
+    "idDocumento": 6569343
+  }
+}

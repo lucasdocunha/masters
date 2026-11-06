@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO SALES GOULART LTDA",
+  "fornecedor_cnpj_cpf": "14.534.413/0001-60",
+  "numero_documento": "5/01/2016",
+  "data_emissao": "2016-01-05",
+  "valor_total": 191.92,
+  "descricao_resumida": "OLEO OTESEC 8",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 17.24,
+    "timestamp": "2026-10-26T19:17:59Z",
+    "idDocumento": 5894958
+  }
+}

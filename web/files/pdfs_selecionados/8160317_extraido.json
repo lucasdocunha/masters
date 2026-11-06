@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO AGUIAR LTDA",
+  "fornecedor_cnpj_cpf": "18438374000159",
+  "numero_documento": "310107",
+  "data_emissao": "2026-09-18",
+  "valor_total": 284.94,
+  "descricao_resumida": "Gasolina Comum (43,370 L)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:42:25Z",
+    "tempo_segundos": 4.02,
+    "idDocumento": 8160317
+  }
+}

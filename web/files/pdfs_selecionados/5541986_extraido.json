@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO PATROPI LTDA",
+  "fornecedor_cnpj_cpf": "44620045000134",
+  "numero_documento": "089824",
+  "data_emissao": "2014-11-11",
+  "valor_total": 90.0,
+  "descricao_resumida": "Gasolina Aditivada",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:33:51Z",
+    "tempo_segundos": 8.68,
+    "idDocumento": 5541986
+  }
+}

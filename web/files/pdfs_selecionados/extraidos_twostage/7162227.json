@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "T1 CONTEÚDOS NA INTERNET LTDA",
+  "fornecedor_cnpj_cpf": "05.841.131/0001-15",
+  "numero_documento": "1706",
+  "data_emissao": "2021-03-04",
+  "valor_total": 0.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar no site: WWW.T1NOTICIAS.COM.BR, no mês de Fevereiro/2021.",
+  "observacoes": "Atestamos para os devidos fins que a referida nota foi quitada na data de: 04-03-2021.",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.18,
+    "timestamp": "2026-10-26T20:35:27Z",
+    "idDocumento": 7162227
+  }
+}

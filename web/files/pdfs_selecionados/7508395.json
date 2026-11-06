@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7508395,
+  "ano": 2023,
+  "mes": 2,
+  "fornecedor": "MEGA LOCADORA LTDA",
+  "cnpjCPF": "186.823.740/0010-8",
+  "numero": "668",
+  "tipoDocumento": "1",
+  "dataEmissao": "2023-03-10T00:00:00",
+  "valorDocumento": 6900.0,
+  "valorLiquido": 6900.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Coronel Assis",
+  "cpfParlamentar": "68902417115",
+  "siglaUF": "MT",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3544/2023/7508395.pdf"
+}

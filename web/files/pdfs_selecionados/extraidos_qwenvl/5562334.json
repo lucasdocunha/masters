@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO JK",
+  "fornecedor_cnpj_cpf": "05.256.794/0001-72",
+  "numero_documento": "0971772074",
+  "data_emissao": "18:36:27",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA COMUM 31,65LT X 3,159",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.71,
+    "timestamp": "2026-10-26T18:16:05Z",
+    "idDocumento": 5562334
+  }
+}

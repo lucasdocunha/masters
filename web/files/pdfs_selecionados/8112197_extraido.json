@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Sem Parar Instituição de Pagamento Ltda.",
+  "fornecedor_cnpj_cpf": "04.088.208/0001-65",
+  "numero_documento": "694344295",
+  "data_emissao": "2026-05-29",
+  "valor_total": 508.33,
+  "descricao_resumida": "Plano contratado, estacionamento e passagens (pedágios)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:05:52Z",
+    "tempo_segundos": 3.01,
+    "idDocumento": 8112197
+  }
+}

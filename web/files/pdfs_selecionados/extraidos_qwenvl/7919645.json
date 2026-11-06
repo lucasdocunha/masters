@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "WORKING ASSOCIACAO DE INTEGRACAO PROFISSIONAL",
+  "fornecedor_cnpj_cpf": "25939",
+  "numero_documento": "25942",
+  "data_emissao": "26-05-2025",
+  "valor_total": 33200.0,
+  "descricao_resumida": "Prestação de serviços de implementação da plataforma \"Mautic\" (ferramenta de automação de marketing em software), para divulgação das atividades parlamentares por meio eletrônico. Gestão de relacionamento digital nas Redes sociais.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.02,
+    "timestamp": "2026-10-26T18:40:16Z",
+    "idDocumento": 7919645
+  }
+}

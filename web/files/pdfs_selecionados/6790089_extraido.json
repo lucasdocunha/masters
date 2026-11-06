@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CARVALHO & LEAL LTDA - EPP",
+  "fornecedor_cnpj_cpf": "00.818.320/0001-53",
+  "numero_documento": "14524",
+  "data_emissao": "2019-03-23",
+  "valor_total": 290.0,
+  "descricao_resumida": "Despesa com hospedagem",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:23:53Z",
+    "tempo_segundos": 15.07,
+    "idDocumento": 6790089
+  }
+}

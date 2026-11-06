@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GE COMUNICAÇÃO MULTIPLATAFORMA LTDA",
+  "fornecedor_cnpj_cpf": "42.160.428/0001-41",
+  "numero_documento": "00166",
+  "data_emissao": "2023-02-09",
+  "valor_total": 4000.0,
+  "descricao_resumida": "Planejamento, confecção, manutenção e atualização de páginas eletrônicas.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.71,
+    "timestamp": "2026-10-26T20:59:25Z",
+    "idDocumento": 7496554
+  }
+}

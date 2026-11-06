@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO TOCANTINS LTDA",
+  "fornecedor_cnpj_cpf": "17.462.474/0001-58",
+  "numero_documento": "1470772019",
+  "data_emissao": "14/01/2019",
+  "valor_total": 131.0,
+  "descricao_resumida": "14* DIESEL 5L0 ADITIVA 36,399L X3 599 F1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.79,
+    "timestamp": "2026-10-26T18:25:44Z",
+    "idDocumento": 6772925
+  }
+}

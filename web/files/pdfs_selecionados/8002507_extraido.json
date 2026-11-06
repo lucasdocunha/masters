@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "NOVO MUNDO VIAGENS E TURISMO EIRELI",
+  "fornecedor_cnpj_cpf": "31379573000100",
+  "numero_documento": "2254278266",
+  "data_emissao": "2025-10-09",
+  "valor_total": 3278.71,
+  "descricao_resumida": "Passagem aérea LATAM trecho BSB/GRU",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:35:14Z",
+    "tempo_segundos": 2.74,
+    "idDocumento": 8002507
+  }
+}

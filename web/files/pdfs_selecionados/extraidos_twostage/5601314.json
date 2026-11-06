@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VALE COMERCIAL DE COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "15.495.365/0001-01",
+  "numero_documento": "198753",
+  "data_emissao": "2015-02-08",
+  "valor_total": 156.17,
+  "descricao_resumida": "GASOLINA C COMUM - Bico 09",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.73,
+    "timestamp": "2026-10-26T19:10:55Z",
+    "idDocumento": 5601314
+  }
+}

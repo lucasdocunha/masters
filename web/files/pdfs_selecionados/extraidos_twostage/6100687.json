@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "WALTER TANNUS FREITAS",
+  "fornecedor_cnpj_cpf": "00.216.623/0001-04",
+  "numero_documento": "078147",
+  "data_emissao": "2016-09-06",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA CONOR 26,853LTXS,48 FT",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 15.21,
+    "timestamp": "2026-10-26T19:24:19Z",
+    "idDocumento": 6100687
+  }
+}

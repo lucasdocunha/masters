@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PLURAL DIGITAL AGENCIA DE PUBLICIDADE LTDA",
+  "fornecedor_cnpj_cpf": "40983742000107",
+  "numero_documento": "00000072",
+  "data_emissao": "2023-11-07",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Serviço de comunicação para o Mandato da Dep. Tabata Amaral (Propaganda e publicidade, promoção de vendas, planejamento de campanhas e materiais publicitários).",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:44:10Z",
+    "tempo_segundos": 25.59,
+    "idDocumento": 7643510
+  }
+}

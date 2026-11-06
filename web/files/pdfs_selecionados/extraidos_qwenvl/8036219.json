@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "LAUANA CRISTINA CARNEIRO SOUZA",
+  "fornecedor_cnpj_cpf": "62.064.252/0001-31",
+  "numero_documento": "6",
+  "data_emissao": "2026-01-02",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar nos meios de comunicação e nas redes sociais: Instagram.com/dr.eduardovellosoe www.facebook.com/eduardovelloso.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.81,
+    "timestamp": "2026-10-26T18:41:40Z",
+    "idDocumento": 8036219
+  }
+}

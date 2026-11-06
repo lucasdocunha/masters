@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO JOTAVE LTDA - ME",
+  "fornecedor_cnpj_cpf": "08.425.298/0001-93",
+  "numero_documento": "026419",
+  "data_emissao": "2015-08-15",
+  "valor_total": 115.01,
+  "descricao_resumida": "Alcool Hidratado AERC",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:52:20Z",
+    "tempo_segundos": 2.21,
+    "idDocumento": 5779936
+  }
+}

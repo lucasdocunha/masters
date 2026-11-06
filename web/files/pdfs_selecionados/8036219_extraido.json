@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "62.064.252 LAUANA CRISTINA CARNEIRO SOUZA",
+  "fornecedor_cnpj_cpf": "62.064.252/0001-31",
+  "numero_documento": "6",
+  "data_emissao": "2026-01-02",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar nos meios de comunicação e nas redes sociais. Período de 01 a 31/12/2025.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:45:40Z",
+    "tempo_segundos": 3.81,
+    "idDocumento": 8036219
+  }
+}

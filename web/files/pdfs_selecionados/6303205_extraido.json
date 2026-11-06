@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Copel Distribuição S.A.",
+  "fornecedor_cnpj_cpf": "04.368.898/0001-06",
+  "numero_documento": "1425681",
+  "data_emissao": "2017-04-10",
+  "valor_total": 70.94,
+  "descricao_resumida": "Fornecimento de energia elétrica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:24:20Z",
+    "tempo_segundos": 3.48,
+    "idDocumento": 6303205
+  }
+}

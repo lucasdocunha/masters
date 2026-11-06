@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7085473,
+  "ano": 2020,
+  "mes": 8,
+  "fornecedor": "PEDRO IVO",
+  "cnpjCPF": "312.842.710/0014-0",
+  "numero": "00000028",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-08-24T00:00:00",
+  "valorDocumento": 3000.0,
+  "valorLiquido": 3000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "João Marcelo Souza",
+  "cpfParlamentar": "61956384120",
+  "siglaUF": "MA",
+  "siglaPartido": "MDB",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2912/2020/7085473.pdf"
+}

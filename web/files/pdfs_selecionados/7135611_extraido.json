@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DE SERVICO FLOREAT LTDA",
+  "fornecedor_cnpj_cpf": "59143404000187",
+  "numero_documento": "441680",
+  "data_emissao": "2020-10-16",
+  "valor_total": 200.0,
+  "descricao_resumida": "Gasolina Aditivada D7 Clean",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:58:53Z",
+    "tempo_segundos": 8.01,
+    "idDocumento": 7135611
+  }
+}

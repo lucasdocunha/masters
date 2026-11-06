@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "00306597005328",
+  "numero_documento": "10503",
+  "data_emissao": "2016-10-25",
+  "valor_total": 131.2,
+  "descricao_resumida": "Gasolina comum (GC)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:09:26Z",
+    "tempo_segundos": 2.18,
+    "idDocumento": 6130360
+  }
+}

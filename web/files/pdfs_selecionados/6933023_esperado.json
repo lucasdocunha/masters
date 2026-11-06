@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6933023,
+  "ano": 2019,
+  "mes": 9,
+  "fornecedor": "GERALDO DA SILVA PEREIRA",
+  "cnpjCPF": "246.637.130/0010-1",
+  "numero": "000000134",
+  "tipoDocumento": "0",
+  "dataEmissao": "2019-10-07T00:00:00",
+  "valorDocumento": 1100.0,
+  "valorLiquido": 1100.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Wilson Santiago",
+  "cpfParlamentar": "16159977415",
+  "siglaUF": "PB",
+  "siglaPartido": "REPUBLICANOS",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1704/2019/6933023.pdf"
+}

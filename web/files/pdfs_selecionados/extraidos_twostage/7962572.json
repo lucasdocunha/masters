@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Roberto Cássio Farias da Silva",
+  "fornecedor_cnpj_cpf": "639.405.587-53",
+  "numero_documento": null,
+  "data_emissao": "2025-08-01",
+  "valor_total": 2500.0,
+  "descricao_resumida": "Aluguel da sala situada Rua do Ouvidor nº 161 Sala 1304T – Centro – Rio de Janeiro/RJ CEP: 20071-000, referente ao mês de julho de 2025.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 6.39,
+    "timestamp": "2026-10-26T21:28:21Z",
+    "idDocumento": 7962572
+  }
+}

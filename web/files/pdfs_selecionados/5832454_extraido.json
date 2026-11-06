@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ASCADE - ASSOCIACAO DOS SERV. DA CAMARA DOS DEPUTADOS",
+  "fornecedor_cnpj_cpf": "00.679.365/0001-94",
+  "numero_documento": "026976",
+  "data_emissao": "2015-10-27",
+  "valor_total": 28.67,
+  "descricao_resumida": "Refeição self-service e suco de polpa copo 300ml",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:42:42Z",
+    "tempo_segundos": 4.94,
+    "idDocumento": 5832454
+  }
+}

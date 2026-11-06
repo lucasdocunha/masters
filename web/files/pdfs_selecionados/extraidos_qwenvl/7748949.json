@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CLICK SEARCH AGENCIA DE PUBLICIDADE - LTDA",
+  "fornecedor_cnpj_cpf": "37.799.427/0001-01",
+  "numero_documento": "00000210",
+  "data_emissao": "2024-06-03",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Fornecimento de Serviços e Ferramentas de apoio em tratamento de dados e Hospedagem de aplicação web de marketing direto digital. Divulgação das atividades parlamentares, conforme Ato da Mesa 43/2009.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.12,
+    "timestamp": "2026-10-26T18:37:10Z",
+    "idDocumento": 7748949
+  }
+}

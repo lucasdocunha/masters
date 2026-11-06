@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "206365",
+  "data_emissao": "2021-03-31",
+  "valor_total": 99.99,
+  "descricao_resumida": "GASOLINA COMUM B102 Bo01 Tq02",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 16.55,
+    "timestamp": "2026-10-26T20:36:26Z",
+    "idDocumento": 7174081
+  }
+}

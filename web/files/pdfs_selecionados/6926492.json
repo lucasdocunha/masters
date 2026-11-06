@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6926492,
+  "ano": 2019,
+  "mes": 7,
+  "fornecedor": "enel",
+  "cnpjCPF": "075.235.550/0016-7",
+  "numero": "138430258",
+  "tipoDocumento": "0",
+  "dataEmissao": "2019-07-08T00:00:00",
+  "valorDocumento": 230.15,
+  "valorLiquido": 230.15,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Celso Russomanno",
+  "cpfParlamentar": "01252958803",
+  "siglaUF": "SP",
+  "siglaPartido": "REPUBLICANOS",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/993/2019/6926492.pdf"
+}

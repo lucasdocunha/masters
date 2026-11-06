@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HOTEL SOU DO SUL LTDA",
+  "fornecedor_cnpj_cpf": "07.852.816/0001-92",
+  "numero_documento": "12595",
+  "data_emissao": "2014-08-13",
+  "valor_total": 60.0,
+  "descricao_resumida": "1 diaria",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:39:37Z",
+    "tempo_segundos": 2.39,
+    "idDocumento": 5501472
+  }
+}

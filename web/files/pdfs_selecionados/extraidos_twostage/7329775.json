@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CAETITÉ PALACE HOTEL LTDA.",
+  "fornecedor_cnpj_cpf": "01.808.259/0001-26",
+  "numero_documento": "2022120",
+  "data_emissao": "2022-02-10",
+  "valor_total": 200.0,
+  "descricao_resumida": "DIÁRIA REFERENTE AO PERÍODO DE 09/02/2022 À 10/02/2022",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.77,
+    "timestamp": "2026-10-26T20:54:01Z",
+    "idDocumento": 7329775
+  }
+}

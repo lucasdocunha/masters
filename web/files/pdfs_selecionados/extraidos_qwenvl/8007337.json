@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AJI OPISTA FEIRNAO TRAS S/A",
+  "fornecedor_cnpj_cpf": "09.326.342/0001-70",
+  "numero_documento": "25.10.25",
+  "data_emissao": "2025-10-25",
+  "valor_total": 3.0,
+  "descricao_resumida": "Recibo",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 1.77,
+    "timestamp": "2026-10-26T18:41:47Z",
+    "idDocumento": 8007337
+  }
+}

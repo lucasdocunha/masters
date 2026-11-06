@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PONTES & LANDIM COMBUSTIVEIS LTDA - EPP",
+  "fornecedor_cnpj_cpf": "17.120.954/0001-30",
+  "numero_documento": "311076",
+  "data_emissao": "2017-04-13",
+  "valor_total": 14.0,
+  "descricao_resumida": "Bebida Fast Nestor 280ml e Agua Mineral Indaia sem gas 500ml",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:19:54Z",
+    "tempo_segundos": 1.99,
+    "idDocumento": 6259543
+  }
+}

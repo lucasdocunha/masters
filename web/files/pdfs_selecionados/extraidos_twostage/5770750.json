@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JVC COMERCIAL LTDA",
+  "fornecedor_cnpj_cpf": "35.298.330/0001-90",
+  "numero_documento": "162490",
+  "data_emissao": "2015-08-17",
+  "valor_total": 150.0,
+  "descricao_resumida": "GAS COM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 16.4,
+    "timestamp": "2026-10-26T19:02:46Z",
+    "idDocumento": 5770750
+  }
+}

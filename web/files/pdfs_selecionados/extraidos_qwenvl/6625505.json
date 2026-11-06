@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO ITAPOA LTDA",
+  "fornecedor_cnpj_cpf": "17.488.693/0001-06",
+  "numero_documento": "243517",
+  "data_emissao": "2018-06-13",
+  "valor_total": 50.0,
+  "descricao_resumida": "1 TITA GASOLINA ORIGINAL C 70,467L R$ 7,77 PT",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.75,
+    "timestamp": "2026-10-26T18:23:47Z",
+    "idDocumento": 6625505
+  }
+}

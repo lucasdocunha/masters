@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "TAXI LEGAL",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "323-A",
+  "data_emissao": "25-02-2023",
+  "valor_total": 10.0,
+  "descricao_resumida": "DEZ RODAS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.3,
+    "timestamp": "2026-10-26T18:41:45Z",
+    "idDocumento": 7875696
+  }
+}

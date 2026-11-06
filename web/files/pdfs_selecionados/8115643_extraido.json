@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "FISTAROL & COATTI LTDA",
+  "fornecedor_cnpj_cpf": "17.623.084/0001-12",
+  "numero_documento": "16982",
+  "data_emissao": "2026-06-26",
+  "valor_total": 354.0,
+  "descricao_resumida": "1 DIÁRIA - Hospedagem em hotéis, hotelaria marítima e congêneres",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:53:16Z",
+    "tempo_segundos": 1.97,
+    "idDocumento": 8115643
+  }
+}

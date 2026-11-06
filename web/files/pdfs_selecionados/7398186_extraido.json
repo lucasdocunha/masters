@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "JGJ COMERCIO DE PETROLEO",
+  "fornecedor_cnpj_cpf": "06.539.780/0001-29",
+  "numero_documento": "000002033",
+  "data_emissao": "2022-06-11",
+  "valor_total": 251.0,
+  "descricao_resumida": "OLEO DIESEL S510 COM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:32:24Z",
+    "tempo_segundos": 25.13,
+    "idDocumento": 7398186
+  }
+}

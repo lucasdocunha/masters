@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Petrobras",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "13291",
+  "data_emissao": "03/04/2015",
+  "valor_total": 70.0,
+  "descricao_resumida": "Gasolina Aditivada, Etanol, Rega (Gás) e Lubrificante",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.39,
+    "timestamp": "2026-10-26T18:15:42Z",
+    "idDocumento": 5545952
+  }
+}

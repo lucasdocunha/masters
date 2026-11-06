@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO AGUIAR LTDA",
+  "fornecedor_cnpj_cpf": "18.438.374/0001-59",
+  "numero_documento": "310107",
+  "data_emissao": "2026-09-18",
+  "valor_total": 284.94,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.43,
+    "timestamp": "2026-10-26T18:42:08Z",
+    "idDocumento": 8160317
+  }
+}

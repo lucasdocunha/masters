@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO PATROPI LTDA",
+  "fornecedor_cnpj_cpf": "44.620.045/0001-34",
+  "numero_documento": "171.960",
+  "data_emissao": "2014-11-17",
+  "valor_total": 90.0,
+  "descricao_resumida": "B2T-GASOLINA ADITIVADA - Encerrante: 1275",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.53,
+    "timestamp": "2026-10-26T18:15:12Z",
+    "idDocumento": 5541986
+  }
+}

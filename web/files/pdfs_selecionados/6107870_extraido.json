@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionaria de Rodovias Integradas S.A. - CCR-RODONORTE",
+  "fornecedor_cnpj_cpf": "02.221.531/0009-97",
+  "numero_documento": "ccou4ys3tmvj69w",
+  "data_emissao": "2016-09-20",
+  "valor_total": 10.1,
+  "descricao_resumida": "Recibo de pedágio referente à Praça 54 - Tibagi Sul, Faixa 004, Classe 1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:12:07Z",
+    "tempo_segundos": 2.25,
+    "idDocumento": 6107870
+  }
+}

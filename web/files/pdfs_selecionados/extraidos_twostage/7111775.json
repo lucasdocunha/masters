@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO PLANALTO LTDA M.E",
+  "fornecedor_cnpj_cpf": "10.648.713/0001-10",
+  "numero_documento": "44851",
+  "data_emissao": "2020-08-14",
+  "valor_total": 184.03,
+  "descricao_resumida": "R$ 184,03 | R$ 0,00",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.64,
+    "timestamp": "2026-10-26T20:24:59Z",
+    "idDocumento": 7111775
+  }
+}

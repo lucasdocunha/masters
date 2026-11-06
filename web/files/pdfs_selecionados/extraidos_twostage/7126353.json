@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DE COMBUSTIVEIS SINAL VERDE LTDA",
+  "fornecedor_cnpj_cpf": "07.163.053/0001-72",
+  "numero_documento": "000.000.592",
+  "data_emissao": "2020-11-29",
+  "valor_total": 143.46,
+  "descricao_resumida": "Emissão NF-e em subst. docs. de venda",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.77,
+    "timestamp": "2026-10-26T20:25:16Z",
+    "idDocumento": 7126353
+  }
+}

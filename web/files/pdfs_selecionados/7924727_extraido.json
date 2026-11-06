@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SERVICO AUTONOMO DE SANEAMENTO DE PELOTAS",
+  "fornecedor_cnpj_cpf": "92.220.862/0001-48",
+  "numero_documento": "2025052075962",
+  "data_emissao": "2025-06-05",
+  "valor_total": 227.96,
+  "descricao_resumida": "Serviços de fornecimento de água comercial, esgoto, taxa de lixo e custo operacional.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:40:39Z",
+    "tempo_segundos": 3.24,
+    "idDocumento": 7924727
+  }
+}

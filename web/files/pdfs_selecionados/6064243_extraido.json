@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Yamaguchi Empreendimentos Ltda - EPP",
+  "fornecedor_cnpj_cpf": "04093679000161",
+  "numero_documento": "004702",
+  "data_emissao": "2016-06-30",
+  "valor_total": 5448.0,
+  "descricao_resumida": "Cobrança locacao mensal veiculo Jeep placa BAL6483 no periodo de 30/05/2016 a 30/06/2016",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:17:17Z",
+    "tempo_segundos": 14.16,
+    "idDocumento": 6064243
+  }
+}

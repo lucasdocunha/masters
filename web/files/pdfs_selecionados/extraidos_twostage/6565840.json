@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ANTONIO CARLOS OLIVEIRA MONTEIRO",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "519504607285",
+  "data_emissao": "2018-02-28",
+  "valor_total": 41.71,
+  "descricao_resumida": "Residencial / Residencial",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.44,
+    "timestamp": "2026-10-26T19:43:33Z",
+    "idDocumento": 6565840
+  }
+}

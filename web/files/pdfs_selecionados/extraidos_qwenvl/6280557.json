@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VALPOSTO COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "25.124.074/0001-60",
+  "numero_documento": "000037327",
+  "data_emissao": "2017-05-05",
+  "valor_total": 221.0,
+  "descricao_resumida": "2 ÓLEO DIESEL B",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.64,
+    "timestamp": "2026-10-26T18:22:18Z",
+    "idDocumento": 6280557
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO BOLA PESADA LTDA",
+  "fornecedor_cnpj_cpf": "62.972.492/0001-34",
+  "numero_documento": "044466",
+  "data_emissao": "2014-12-26",
+  "valor_total": 130.04,
+  "descricao_resumida": "COM GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 17.88,
+    "timestamp": "2026-10-26T18:53:07Z",
+    "idDocumento": 5580320
+  }
+}

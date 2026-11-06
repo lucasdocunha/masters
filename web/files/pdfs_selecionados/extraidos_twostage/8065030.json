@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Mg Terminals Rodoviarios Ltda.",
+  "fornecedor_cnpj_cpf": "16571066000171",
+  "numero_documento": "1113360547",
+  "data_emissao": "2026-02-23",
+  "valor_total": 81.6,
+  "descricao_resumida": "Passagem de passageiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 15.47,
+    "timestamp": "2026-10-26T21:49:10Z",
+    "idDocumento": 8065030
+  }
+}

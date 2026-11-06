@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CORPVS SEGURANCA ELETRONICA LTDA",
+  "fornecedor_cnpj_cpf": "04.617.596/0001-24",
+  "numero_documento": "2582059",
+  "data_emissao": "2021-10-06",
+  "valor_total": 859.37,
+  "descricao_resumida": "MONITORAMENTO ELETRONICO 24 HS REF SERVICO DO MES DE OUTUBRO/2021",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:55:22Z",
+    "tempo_segundos": 40.09,
+    "idDocumento": 7279929
+  }
+}

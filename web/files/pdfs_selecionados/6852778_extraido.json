@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LUAGGE IMOVEIS - CRISTAL",
+  "fornecedor_cnpj_cpf": "93.121.572/0001-00",
+  "numero_documento": "0000122895",
+  "data_emissao": "2019-06-12",
+  "valor_total": 2808.33,
+  "descricao_resumida": "Boleto de locação referente a aluguel, IPTU, seguro fogo, condomínio, taxa porte e multas/acordos competência 05/2019.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:11:05Z",
+    "tempo_segundos": 54.01,
+    "idDocumento": 6852778
+  }
+}

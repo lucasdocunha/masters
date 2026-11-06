@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO NOTA 10 LTDA",
+  "fornecedor_cnpj_cpf": "00.703.298/0001-04",
+  "numero_documento": "60160",
+  "data_emissao": "2015-06-08",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA C - COMUM - Bico 05",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.65,
+    "timestamp": "2026-10-26T18:16:42Z",
+    "idDocumento": 5707386
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO LIMOEIRO LTDA",
+  "fornecedor_cnpj_cpf": "05.065.447/0001-62",
+  "numero_documento": "000035210",
+  "data_emissao": "2025-11-16",
+  "valor_total": 200.0,
+  "descricao_resumida": "Gasolina aditivada",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:45:56Z",
+    "tempo_segundos": 11.13,
+    "idDocumento": 8014151
+  }
+}

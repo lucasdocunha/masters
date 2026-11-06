@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO POTENZA LTDA",
+  "fornecedor_cnpj_cpf": "210.748.443-00",
+  "numero_documento": "000.361.957",
+  "data_emissao": "2021-10-03",
+  "valor_total": 350.22,
+  "descricao_resumida": "GASOLINA COMUM 58,38 L x 5,999",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 15.98,
+    "timestamp": "2026-10-26T20:28:05Z",
+    "idDocumento": 7266521
+  }
+}

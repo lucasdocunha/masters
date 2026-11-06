@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MOMA EIRELI EPP",
+  "fornecedor_cnpj_cpf": "16.500.930/0001-16",
+  "numero_documento": "329342",
+  "data_emissao": "2018-02-15",
+  "valor_total": 31.0,
+  "descricao_resumida": "Agua de Coco 330ml, Salgado Assado e Misto Quente Queijo Quente",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:20:52Z",
+    "tempo_segundos": 11.22,
+    "idDocumento": 6509444
+  }
+}

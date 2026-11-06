@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LOCALIZA RENT A CAR S/A",
+  "fornecedor_cnpj_cpf": "16.670.085/0455-07",
+  "numero_documento": "ACSIA - 54847",
+  "data_emissao": "2017-10-20",
+  "valor_total": 2903.31,
+  "descricao_resumida": "Aluguel conforme contrato SIAF014954033",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:22:41Z",
+    "tempo_segundos": 5.31,
+    "idDocumento": 6434695
+  }
+}

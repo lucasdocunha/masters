@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CONCEBRA - Conc. Rod. Centr. do Brasil SA",
+  "fornecedor_cnpj_cpf": "18.572.225/0001-88",
+  "numero_documento": "10010031492351197",
+  "data_emissao": "2017-04-16",
+  "valor_total": 5.3,
+  "descricao_resumida": "Tarifa de pedagio",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:20:21Z",
+    "tempo_segundos": 21.52,
+    "idDocumento": 6266795
+  }
+}

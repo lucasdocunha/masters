@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO LUSON LTDA",
+  "fornecedor_cnpj_cpf": "61.476.586/0001-50",
+  "numero_documento": "105436420117",
+  "data_emissao": "2025-01-23",
+  "valor_total": 165.94,
+  "descricao_resumida": "ETANOL COMUM 41,589 L X 3,99 (52,18)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.03,
+    "timestamp": "2026-10-26T18:41:41Z",
+    "idDocumento": 7865171
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "KHRONOS SEGURANÇA PRIVADA - LTDA",
+  "fornecedor_cnpj_cpf": "04.629.488/0001-71",
+  "numero_documento": "1039801",
+  "data_emissao": "2022-04-19",
+  "valor_total": 90.0,
+  "descricao_resumida": "Serviço de monitoramento eletrônico com equipamento (SERV DE MONIT ELETR C/EQUIP)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:36:35Z",
+    "tempo_segundos": 2.1,
+    "idDocumento": 7386747
+  }
+}

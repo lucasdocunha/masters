@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "A.P AVENIDA LTDA",
+  "fornecedor_cnpj_cpf": "34.896.209/0001-05",
+  "numero_documento": "000253190",
+  "data_emissao": "2020-06-27",
+  "valor_total": 50.04,
+  "descricao_resumida": "Gasolina comum e oleo diesel B S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:52:47Z",
+    "tempo_segundos": 11.39,
+    "idDocumento": 7093974
+  }
+}

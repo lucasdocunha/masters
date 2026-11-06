@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SOL ALPHAVILLE HOTELARIA LTDA",
+  "fornecedor_cnpj_cpf": "48.779.089/0001-62",
+  "numero_documento": "377Q.3129.0619.0366699-W",
+  "data_emissao": "2026-08-31",
+  "valor_total": 529.69,
+  "descricao_resumida": "Hospedagem em apart-service condominiais, flat, apart-hotéis",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.95,
+    "timestamp": "2026-10-26T18:44:50Z",
+    "idDocumento": 8153839
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SM COMERCIO E SERVICOS LTDA - ME",
+  "fornecedor_cnpj_cpf": "09.469.018/0001-01",
+  "numero_documento": "00001030",
+  "data_emissao": "2014-07-31",
+  "valor_total": 1550.0,
+  "descricao_resumida": "REF. LOCAÇÃO VEÍCULO - PLACA OLB 8503 - PERÍODO 01/07/2014 À 31/07/2014 - R$ 1.550,00",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.62,
+    "timestamp": "2026-10-26T18:58:32Z",
+    "idDocumento": 5489574
+  }
+}

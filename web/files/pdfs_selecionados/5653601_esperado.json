@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5653601,
+  "ano": 2015,
+  "mes": 4,
+  "fornecedor": "SERRANA COMÉRCIO DE ALIMENTOS LTDA",
+  "cnpjCPF": "095.502.140/0010-6",
+  "numero": "12357",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-04-09T00:00:00",
+  "valorDocumento": 88.0,
+  "valorLiquido": 88.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "André Figueiredo",
+  "cpfParlamentar": "25905503320",
+  "siglaUF": "CE",
+  "siglaPartido": "PDT",
+  "descricaoDespesa": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1748/2015/5653601.pdf"
+}

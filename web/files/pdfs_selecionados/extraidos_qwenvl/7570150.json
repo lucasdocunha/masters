@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EVANILDO JOSE DOS SANTOS",
+  "fornecedor_cnpj_cpf": "67637515249",
+  "numero_documento": "14",
+  "data_emissao": "2023-06-26",
+  "valor_total": 800.0,
+  "descricao_resumida": "Divulgação de Atividade Parlamentar do Deputado Thiago Flores, no SITE Ariquemes News (https://ariquemesnews.com.br/), referente ao mês de Junho de 2023. Situação da Nota: PAGA.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.15,
+    "timestamp": "2026-10-26T18:36:34Z",
+    "idDocumento": 7570150
+  }
+}

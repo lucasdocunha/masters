@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5532021,
+  "ano": 2014,
+  "mes": 9,
+  "fornecedor": "POSTO VERALI LTDA",
+  "cnpjCPF": "008.751.340/0015-6",
+  "numero": "013977",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-09-29T00:00:00",
+  "valorDocumento": 49.99,
+  "valorLiquido": 49.99,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "PAULO RUBEM SANTIAGO",
+  "cpfParlamentar": "11344024491",
+  "siglaUF": "PE",
+  "siglaPartido": "PDT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1643/2014/5532021.pdf"
+}

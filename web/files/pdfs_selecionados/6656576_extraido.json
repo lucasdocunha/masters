@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+  "fornecedor_cnpj_cpf": "02451848000162",
+  "numero_documento": "0259024012153229914500314EF03",
+  "data_emissao": "2018-07-22",
+  "valor_total": 9.1,
+  "descricao_resumida": "Tarifa de pedágio na Praça ITUPEVA SUL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:17:41Z",
+    "tempo_segundos": 18.79,
+    "idDocumento": 6656576
+  }
+}

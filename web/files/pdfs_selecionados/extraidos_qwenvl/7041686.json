@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SUPREMA LOCADORA",
+  "fornecedor_cnpj_cpf": "24.894.397/0001-70",
+  "numero_documento": "280",
+  "data_emissao": "2020-04-01",
+  "valor_total": 3350.0,
+  "descricao_resumida": "Locação de carro sem motorista, para desempenho do exercício das atividades parlamentar. Período do dia 01 à 31 de Março de 2020. Placa QOS7456 - Corolla.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.97,
+    "timestamp": "2026-10-26T18:29:01Z",
+    "idDocumento": 7041686
+  }
+}

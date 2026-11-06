@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BRASEIRO STEAKHOUSE CHURRASCARIA E CHOPERIA LTDA",
+  "fornecedor_cnpj_cpf": "42.552.237/0001-25",
+  "numero_documento": "060697",
+  "data_emissao": "2024-12-17",
+  "valor_total": 87.28,
+  "descricao_resumida": "BUFFET ESPECIAL LIVRE SAB DOM E FERIADO UN, KUAT KS UN, TAXA DE SERVICO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 19.69,
+    "timestamp": "2026-10-26T21:16:16Z",
+    "idDocumento": 7848969
+  }
+}

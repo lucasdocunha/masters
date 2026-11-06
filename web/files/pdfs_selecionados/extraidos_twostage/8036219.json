@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "62.064.252 LAUANA CRISTINA CARNEIRO SOUZA",
+  "fornecedor_cnpj_cpf": "62.064.252/0001-31",
+  "numero_documento": "6",
+  "data_emissao": "2026-01-02",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar nos meios de comunicação e nas redes sociais: Instagram.com/dr.eduardovelloso e www.facebook.com/eduardovelloso. Período de 01 a 31/12/2025. Forma de pagamento à vista.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 24.68,
+    "timestamp": "2026-10-26T21:41:34Z",
+    "idDocumento": 8036219
+  }
+}

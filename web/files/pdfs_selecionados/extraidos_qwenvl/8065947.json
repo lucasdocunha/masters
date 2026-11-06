@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Pop",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2026-02-13",
+  "valor_total": 18.0,
+  "descricao_resumida": "R$18,00",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.11,
+    "timestamp": "2026-10-26T18:44:37Z",
+    "idDocumento": 8065947
+  }
+}

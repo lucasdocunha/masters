@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO LIDER LTDA",
+  "fornecedor_cnpj_cpf": "15.225.748/0001-60",
+  "numero_documento": "80789",
+  "data_emissao": "2017-09-19",
+  "valor_total": 100.0,
+  "descricao_resumida": "ETANOL COMUM 40,984 L",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:22:31Z",
+    "tempo_segundos": 4.61,
+    "idDocumento": 6394265
+  }
+}

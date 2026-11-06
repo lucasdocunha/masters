@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Valmery Santos de Moraes Rego",
+  "fornecedor_cnpj_cpf": "512.100.882-15",
+  "numero_documento": null,
+  "data_emissao": "2018-01-01",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Pagamento do aluguel do imóvel comercial (contendo 02 salas e 01 área de recepção) referente ao mês de janeiro de 2018.",
+  "observacoes": "Documento do tipo recibo de aluguel.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:19:54Z",
+    "tempo_segundos": 8.5,
+    "idDocumento": 6490550
+  }
+}

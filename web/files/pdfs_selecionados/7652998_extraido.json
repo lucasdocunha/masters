@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GOL Linhas Aéreas S.A",
+  "fornecedor_cnpj_cpf": "07575651000159",
+  "numero_documento": "1272107776746",
+  "data_emissao": "2023-12-04",
+  "valor_total": 2979.19,
+  "descricao_resumida": "Bilhete de passagem aérea trecho Sao Luiz (SLZ) para Brasilia (BSB) em 04/12/2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:54:47Z",
+    "tempo_segundos": 3.07,
+    "idDocumento": 7652998
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO MK 406 NORTE LTDA",
+  "fornecedor_cnpj_cpf": "10.591.051/0001-99",
+  "numero_documento": "28688",
+  "data_emissao": "2019-06-27",
+  "valor_total": 150.02,
+  "descricao_resumida": "Gasolina C Aditivada - 35,060 L",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:23:19Z",
+    "tempo_segundos": 12.13,
+    "idDocumento": 6861586
+  }
+}

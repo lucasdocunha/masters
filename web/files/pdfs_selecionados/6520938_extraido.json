@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO AVENIDA LTDA",
+  "fornecedor_cnpj_cpf": "17.252.743/0001-51",
+  "numero_documento": "572284",
+  "data_emissao": "2018-02-27",
+  "valor_total": 100.0,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:03:45Z",
+    "tempo_segundos": 16.42,
+    "idDocumento": 6520938
+  }
+}

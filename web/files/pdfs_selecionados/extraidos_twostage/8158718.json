@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MAPAS DE IMOVEIS LTDA",
+  "fornecedor_cnpj_cpf": "17.465.303/0001-82",
+  "numero_documento": "01.26.5472789.26",
+  "data_emissao": "2026-09-01",
+  "valor_total": 315633.0,
+  "descricao_resumida": "Imposto de Propriedade sobre Imóveis Locação",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.73,
+    "timestamp": "2026-10-26T21:55:30Z",
+    "idDocumento": 8158718
+  }
+}

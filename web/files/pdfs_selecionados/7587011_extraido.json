@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO JORUHI LTDA",
+  "fornecedor_cnpj_cpf": "61.344.214/0001-70",
+  "numero_documento": "046867",
+  "data_emissao": "2023-06-12",
+  "valor_total": 152.0,
+  "descricao_resumida": "Gasolina aditivada",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:52:39Z",
+    "tempo_segundos": 8.99,
+    "idDocumento": 7587011
+  }
+}

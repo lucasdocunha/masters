@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO PRIMOS LTDA - ME",
+  "fornecedor_cnpj_cpf": "16796236000116",
+  "numero_documento": "000000673",
+  "data_emissao": "2021-05-21",
+  "valor_total": 3626.25,
+  "descricao_resumida": "Aquisição de combustíveis (Gasolina comum, Gasolina aditivada e Etanol)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:14:25Z",
+    "tempo_segundos": 12.15,
+    "idDocumento": 7195929
+  }
+}

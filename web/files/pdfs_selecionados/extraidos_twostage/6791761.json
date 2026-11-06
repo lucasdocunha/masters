@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Intercity Administracao Hoteleira SE Ltda",
+  "fornecedor_cnpj_cpf": "02.584.924/0035-57",
+  "numero_documento": "000000090688",
+  "data_emissao": "2019-03-26",
+  "valor_total": 278.1,
+  "descricao_resumida": "Versao 08.76 |Dados Hospedagem:|Hospede: JANDIRA FEGHALI|Outros Hospedes: |UH: 813|Tipo de UH: STANDARD CASAL COM CAMA SOLTEIRO|Reserva: 855624647|Checkin: 25/03/2019|Checkout: 26/03/2019|Grupo: |ISS 8,10|DIARIA 270,00| |",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 23.29,
+    "timestamp": "2026-10-26T20:03:25Z",
+    "idDocumento": 6791761
+  }
+}

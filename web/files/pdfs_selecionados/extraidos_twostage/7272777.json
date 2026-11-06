@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "F D FEITOSA LOCAÇÃO DE VEÍCULOS EIRELI",
+  "fornecedor_cnpj_cpf": "20.146.161/0001-03",
+  "numero_documento": "000110",
+  "data_emissao": "2021-10-20",
+  "valor_total": 7500.0,
+  "descricao_resumida": "PRESTAÇÃO DE SERVIÇO DE LOCAÇÃO DE 01 (UM) VEÍCULO, SEM MOTORISTA E SEM COMBUSTÍVEL, VEÍCULO MODELO CAOACHERY TIGGO8 1.6TGDI, ANO 2020, MODELO 2021, COR PRETA, PLACA QYR6E75, CÓDIGO RENAVAM Nº 01253344148, CHASSI Nº 95PDCM61DMB001658, ÁLCOOL E GASOLINA, DE PROPRIEDADE DA LOCADORA.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 23.43,
+    "timestamp": "2026-10-26T20:41:27Z",
+    "idDocumento": 7272777
+  }
+}

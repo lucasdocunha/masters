@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ALEXANDRE FROTA DE ANDRADE",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2022-05-02",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Aluguel do mês de abril, Sala 304-C, The Square, Cotia, SP",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.39,
+    "timestamp": "2026-10-26T18:33:19Z",
+    "idDocumento": 7383831
+  }
+}

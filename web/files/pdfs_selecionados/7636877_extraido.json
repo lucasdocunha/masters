@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "JULIO CESAR MINOTTO 09807999960",
+  "fornecedor_cnpj_cpf": "25.107.124/0001-00",
+  "numero_documento": "18",
+  "data_emissao": "2023-11-05",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Divulgação de atividades parlamentares do Deputado Federal Geraldo Gabriel Mendes no Blog Olho Aberto Paraná referente ao mês de outubro de 2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:47:43Z",
+    "tempo_segundos": 2.18,
+    "idDocumento": 7636877
+  }
+}

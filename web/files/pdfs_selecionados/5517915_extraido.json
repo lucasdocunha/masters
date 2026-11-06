@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CEMIG DISTRIBUICAO S.A.",
+  "fornecedor_cnpj_cpf": "08.981.190/0001-16",
+  "numero_documento": "002890065",
+  "data_emissao": "2014-09-22",
+  "valor_total": 76.0,
+  "descricao_resumida": "Fornecimento de energia eletrica e Contrib. Custeio Ilum. Publica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:38:17Z",
+    "tempo_segundos": 2.56,
+    "idDocumento": 5517915
+  }
+}

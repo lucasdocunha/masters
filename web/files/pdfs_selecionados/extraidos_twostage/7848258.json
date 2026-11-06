@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO MANGALARGA LTDA",
+  "fornecedor_cnpj_cpf": "45351129000182",
+  "numero_documento": "036440",
+  "data_emissao": "2024-12-06",
+  "valor_total": 110.02,
+  "descricao_resumida": "ETANOL",
+  "observacoes": "000001 ELTONCARLOS WELTER\nORLANDIA\nCONT : 00033243\nVeic : Placa: Cond :\nKm: Requisicao:\nOperador: EURIPEDES\nTurno: 01\nValor aproximado dos tributos: R$ 29,97\nAprox: 16,77 Fed 13,20 Est 0,00 Mun\nFonte: IBPI 8047CD (Conforme Lei 12 741 12)",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 13.39,
+    "timestamp": "2026-10-26T21:23:09Z",
+    "idDocumento": 7848258
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DAERP - DEPARTAMENTO DE ÁGUA E ESGOTOS DE RIBEIRÃO PRETO",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "75769987",
+  "data_emissao": "2021-04-29",
+  "valor_total": 57.7,
+  "descricao_resumida": "Comercial, mensal, A-E, vencimento 30/05/2021",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.64,
+    "timestamp": "2026-10-26T20:34:50Z",
+    "idDocumento": 7208315
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SB REFEICOES LTDA",
+  "fornecedor_cnpj_cpf": "21.743.335/0001-70",
+  "numero_documento": "009625",
+  "data_emissao": "2016-12-08",
+  "valor_total": 91.51,
+  "descricao_resumida": "Refeicoes self service, guarana antartica, agua mineral e fanta laranja lata",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:13:25Z",
+    "tempo_segundos": 2.05,
+    "idDocumento": 6041460
+  }
+}

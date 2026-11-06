@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "H T COMERCIO DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "23.671.550/0001-38",
+  "numero_documento": "000068950",
+  "data_emissao": "2017-07-07",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA COMUM C 29,421 LT X 3,399 100",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 15.38,
+    "timestamp": "2026-10-26T19:34:15Z",
+    "idDocumento": 6351686
+  }
+}

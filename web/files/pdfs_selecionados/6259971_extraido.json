@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Duailibe Advogados Associados S/S",
+  "fornecedor_cnpj_cpf": "04.831.284/0001-19",
+  "numero_documento": "396",
+  "data_emissao": "2017-04-17",
+  "valor_total": 12050.0,
+  "descricao_resumida": "Prestação de serviço de consultoria técnica e jurídico realizada referente a 01 do mês de abril a 30 de abril de 2017",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:29:52Z",
+    "tempo_segundos": 2.51,
+    "idDocumento": 6259971
+  }
+}

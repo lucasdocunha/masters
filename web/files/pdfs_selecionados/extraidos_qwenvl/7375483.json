@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DE SERVIÇO FLOREAT LT",
+  "fornecedor_cnpj_cpf": "59.143.404/0001-87",
+  "numero_documento": "508461",
+  "data_emissao": "2022-04-28",
+  "valor_total": 288.46,
+  "descricao_resumida": "GASOLINA COMUM 40.070 L X 7.199 (110.91)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.18,
+    "timestamp": "2026-10-26T18:34:33Z",
+    "idDocumento": 7375483
+  }
+}

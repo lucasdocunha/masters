@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7007650,
+  "ano": 2020,
+  "mes": 1,
+  "fornecedor": "HOTEL CAIUÁ EXPRESS LTDA.",
+  "cnpjCPF": "108.354.420/0010-1",
+  "numero": "50264",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-02-04T00:00:00",
+  "valorDocumento": 450.0,
+  "valorLiquido": 450.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Enio Verri",
+  "cpfParlamentar": "39737705904",
+  "siglaUF": "PR",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2893/2020/7007650.pdf"
+}

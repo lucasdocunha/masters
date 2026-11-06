@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "OpenAI OpCo, LLC",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "JRMFTDIJ-0010",
+  "data_emissao": "2026-01-30",
+  "valor_total": 20.0,
+  "descricao_resumida": "ChatGPT Plus Subscription (per seat) - Jan 30 – Feb 28, 2026",
+  "observacoes": "Documento em USD (20.00 USD), com conversão cambial anexa do Banco Central do Brasil para R$ 104,59.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:59:14Z",
+    "tempo_segundos": 2.56,
+    "idDocumento": 8045855
+  }
+}

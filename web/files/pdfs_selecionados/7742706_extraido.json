@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMERCIAL DE PETROLEO F.CORREA LTDA",
+  "fornecedor_cnpj_cpf": "03.023.665/0001-09",
+  "numero_documento": "1713036",
+  "data_emissao": "2024-05-18",
+  "valor_total": 126.28,
+  "descricao_resumida": "ETANOL HIDRATADO COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:07:36Z",
+    "tempo_segundos": 14.94,
+    "idDocumento": 7742706
+  }
+}

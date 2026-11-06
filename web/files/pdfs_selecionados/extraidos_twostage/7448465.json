@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Eletropaulo Metropolitana Eletrocidade de São Paulo S. A.",
+  "fornecedor_cnpj_cpf": "61.695.227/0001-93",
+  "numero_documento": null,
+  "data_emissao": null,
+  "valor_total": 71.45,
+  "descricao_resumida": "Fatura de energia elétrica referente ao mês de outubro de 2022",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.85,
+    "timestamp": "2026-10-26T20:44:00Z",
+    "idDocumento": 7448465
+  }
+}

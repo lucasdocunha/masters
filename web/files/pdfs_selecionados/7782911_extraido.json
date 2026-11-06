@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EcoAraguaia",
+  "fornecedor_cnpj_cpf": "15090690000194",
+  "numero_documento": "AC99A4A4-AA93-42A0-89D6-56AC1F81B3EC",
+  "data_emissao": "2024-08-03",
+  "valor_total": 13.6,
+  "descricao_resumida": "Tarifa de pedagio - Pista: 61 - HIDROLINA - SUL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:12:31Z",
+    "tempo_segundos": 3.14,
+    "idDocumento": 7782911
+  }
+}

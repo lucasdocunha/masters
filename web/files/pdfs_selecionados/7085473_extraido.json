@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PEDRO IVO BATISTA CARVALHO 03525571330",
+  "fornecedor_cnpj_cpf": "31.284.271/0001-40",
+  "numero_documento": "00000028",
+  "data_emissao": "2020-08-24",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Assessoria e consultoria em comunicação e marketing digital para divulgação de atividade parlamentar no mês de agosto de 2020",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:01:35Z",
+    "tempo_segundos": 10.87,
+    "idDocumento": 7085473
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "JLN COMBUSTIVEIS E LUBRIFICANTES LTDA",
+  "fornecedor_cnpj_cpf": "25.117.736/0001-75",
+  "numero_documento": "000047091",
+  "data_emissao": "2025-10-24",
+  "valor_total": 231.23,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:49:42Z",
+    "tempo_segundos": 2.18,
+    "idDocumento": 8003507
+  }
+}

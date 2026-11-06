@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ARCARI FERRONATTO & CIA LTDA EPP",
+  "fornecedor_cnpj_cpf": "83854810000132",
+  "numero_documento": "61332",
+  "data_emissao": "2016-07-20",
+  "valor_total": 260.0,
+  "descricao_resumida": "Hospedagem em hotel (1 diária)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:16:34Z",
+    "tempo_segundos": 19.67,
+    "idDocumento": 6062161
+  }
+}

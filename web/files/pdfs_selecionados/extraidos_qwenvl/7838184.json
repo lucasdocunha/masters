@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CAFE CREME COMERCIO DE ALIMENTOS LTDA",
+  "fornecedor_cnpj_cpf": "50.569.368/0001-43",
+  "numero_documento": "13393",
+  "data_emissao": "2024-12-02",
+  "valor_total": 80.96,
+  "descricao_resumida": "REFEICAO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.53,
+    "timestamp": "2026-10-26T18:38:15Z",
+    "idDocumento": 7838184
+  }
+}

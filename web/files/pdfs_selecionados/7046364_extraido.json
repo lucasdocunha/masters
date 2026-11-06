@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO THERMAS LTDA",
+  "fornecedor_cnpj_cpf": "04.016.141/0001-53",
+  "numero_documento": "76840",
+  "data_emissao": "2020-01-24",
+  "valor_total": 202.61,
+  "descricao_resumida": "GASOLINA C-COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:53:35Z",
+    "tempo_segundos": 5.81,
+    "idDocumento": 7046364
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CENTRAIS ELÉTRICAS MATOGROSSENSES S.A.",
+  "fornecedor_cnpj_cpf": "03467321000199",
+  "numero_documento": "21203602",
+  "data_emissao": "2014-12-12",
+  "valor_total": 694.97,
+  "descricao_resumida": "Fornecimento de energia eletrica referente ao periodo de 12/11/2014 a 12/12/2014",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:28:07Z",
+    "tempo_segundos": 2.68,
+    "idDocumento": 5571041
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5660404,
+  "ano": 2015,
+  "mes": 4,
+  "fornecedor": "POSTO ECCO VIDA",
+  "cnpjCPF": "032.893.270/0020-2",
+  "numero": "277744",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-04-20T00:00:00",
+  "valorDocumento": 100.0,
+  "valorLiquido": 100.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "MOEMA GRAMACHO",
+  "cpfParlamentar": "13339982520",
+  "siglaUF": "BA",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3039/2015/5660404.pdf"
+}

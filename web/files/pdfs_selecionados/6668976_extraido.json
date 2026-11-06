@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Adala & Adala Neg. Imobiliários Ltda Me.",
+  "fornecedor_cnpj_cpf": "62612049/0001-52",
+  "numero_documento": null,
+  "data_emissao": "2018-09-10",
+  "valor_total": 5265.68,
+  "descricao_resumida": "Locação do imóvel sito a Rua Dom Francisco de Campos Barreto, 295, Nova Campinas - Campinas - SP, referente ao período de 01/08/2018 a 31/08/2018.",
+  "observacoes": "Documento duplicado (1a e 2a via do recibo no mesmo arquivo).",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:08:51Z",
+    "tempo_segundos": 8.78,
+    "idDocumento": 6668976
+  }
+}

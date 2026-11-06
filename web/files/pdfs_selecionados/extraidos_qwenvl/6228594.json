@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "RÁDIO PRODUÇÃO FM LTDA - EPP",
+  "fornecedor_cnpj_cpf": "005543",
+  "numero_documento": "005543",
+  "data_emissao": "2017-03-03",
+  "valor_total": 1800.0,
+  "descricao_resumida": "Gráfica Caibl (Valdir G.de Lima-me) - Cabi-SC-(49) 3648-0398 CNPJ: 72.455.926/0001-82-IE 252.708.849 10 Bls.005.151 a 005.650-50x2-29/04/2016 Aut.N° 14/2016 Não Vale Como Recibo Valor total do detalhamento dos tributos-LFN° 12.741/2012 ISSQN %R$ R$ 121,68 Alíquota 6,76%",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 4.4,
+    "timestamp": "2026-10-26T18:22:28Z",
+    "idDocumento": 6228594
+  }
+}

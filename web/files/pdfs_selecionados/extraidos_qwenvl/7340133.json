@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JULIO CESAR SANTANNA MATTOS",
+  "fornecedor_cnpj_cpf": "33.360.381/0001-79",
+  "numero_documento": "274870",
+  "data_emissao": "2022-03-07",
+  "valor_total": 4850.0,
+  "descricao_resumida": "Prestação de serviço de Segurança no período de 01a 28 de fevereiro de 2022.. Aliquota Efetiva: 2,00000000000%.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.26,
+    "timestamp": "2026-10-26T18:33:36Z",
+    "idDocumento": 7340133
+  }
+}

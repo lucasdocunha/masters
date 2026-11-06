@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "E. R. MELO MESQUITA PUBLICIDADE - ME",
+  "fornecedor_cnpj_cpf": "22.409.689/0001-45",
+  "numero_documento": "294",
+  "data_emissao": "2021-07-27",
+  "valor_total": 640.0,
+  "descricao_resumida": "SERVIÇO DE COMUNICAÇÃO NA RÁDIO PIONEIRA AM, REFERENTE DIVULGAÇÃO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.9,
+    "timestamp": "2026-10-26T20:36:50Z",
+    "idDocumento": 7246220
+  }
+}

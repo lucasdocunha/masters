@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Sindicato dos Taxistas do Distrito Federal",
+  "fornecedor_cnpj_cpf": "07.424.109/0001-03",
+  "numero_documento": null,
+  "data_emissao": "2018-12-05",
+  "valor_total": 15.0,
+  "descricao_resumida": "Referente a serviços de Táxi.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 13.58,
+    "timestamp": "2026-10-26T19:42:10Z",
+    "idDocumento": 6714709
+  }
+}

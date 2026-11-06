@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO VEM CAR LTDA",
+  "fornecedor_cnpj_cpf": "86.472.289/0001-67",
+  "numero_documento": "000.003.015",
+  "data_emissao": "2015-07-21",
+  "valor_total": 2893.17,
+  "descricao_resumida": "Aquisição de combustíveis: Gasolina C Comum, Gasolina Petrobras Grid e Etanol Etílico Hidratado Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash",
+    "timestamp": "2026-10-21T17:21:01Z",
+    "tempo_segundos": 5.42,
+    "idDocumento": 5743851
+  }
+}

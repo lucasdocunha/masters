@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO PETER PAN 01 LTDA",
+  "fornecedor_cnpj_cpf": "05.000.684/0002-26",
+  "numero_documento": "27",
+  "data_emissao": "2015-09-21",
+  "valor_total": 130.51,
+  "descricao_resumida": "GASOLINA PETROBRAS ADITIVADA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 13.0,
+    "timestamp": "2026-10-26T18:59:37Z",
+    "idDocumento": 5799443
+  }
+}

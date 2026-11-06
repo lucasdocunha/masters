@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5547618,
+  "ano": 2014,
+  "mes": 11,
+  "fornecedor": "PIMENTA VERDE ALIMENTOS LTDA",
+  "cnpjCPF": "090.609.640/0397-2",
+  "numero": "584334",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-11-04T00:00:00",
+  "valorDocumento": 10.72,
+  "valorLiquido": 10.72,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "JAIRO ATAÍDE",
+  "cpfParlamentar": "03428311604",
+  "siglaUF": "MG",
+  "siglaPartido": "DEM",
+  "descricaoDespesa": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1969/2014/5547618.pdf"
+}

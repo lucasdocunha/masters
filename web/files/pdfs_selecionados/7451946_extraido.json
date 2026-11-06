@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMPANHIA ENERGETICA DO RIO GRANDE DO NORTE COSERN",
+  "fornecedor_cnpj_cpf": "08324196000181",
+  "numero_documento": "087284477",
+  "data_emissao": "2022-10-18",
+  "valor_total": 176.82,
+  "descricao_resumida": "Consumo de energia eletrica referente ao mes 10/2022",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:40:55Z",
+    "tempo_segundos": 42.37,
+    "idDocumento": 7451946
+  }
+}

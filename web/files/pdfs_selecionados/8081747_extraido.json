@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ELDORADO COMUNICACAO E JORNALISMO LTDA",
+  "fornecedor_cnpj_cpf": "37.894.749/0001-30",
+  "numero_documento": "867",
+  "data_emissao": "2026-04-10",
+  "valor_total": 4000.0,
+  "descricao_resumida": "Referente produção, edição e finalização de matérias jornalísticas, divulgando a atividade parlamentar com distribuição para os veículos de comunicação do estado e também veiculação na rede Brnews TV no mês de abril de 2026.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:50:52Z",
+    "tempo_segundos": 2.43,
+    "idDocumento": 8081747
+  }
+}

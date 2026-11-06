@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AGUAS DO RIO",
+  "fornecedor_cnpj_cpf": "42.644.228/0001-96",
+  "numero_documento": "185675",
+  "data_emissao": "21/10/2022",
+  "valor_total": 150.68,
+  "descricao_resumida": "PAGA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.58,
+    "timestamp": "2026-10-26T18:35:28Z",
+    "idDocumento": 7464746
+  }
+}

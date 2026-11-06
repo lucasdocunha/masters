@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RONI MOTORS LOCACOES LTDA",
+  "fornecedor_cnpj_cpf": "37.331.288/0001-97",
+  "numero_documento": "000.000.084",
+  "data_emissao": "2024-11-01",
+  "valor_total": 4000.0,
+  "descricao_resumida": "LOCACAO DE VEICULOS REFERENTE A 27/09/2024 A 25/10/2024 (AUDI/Q3 1.4 TFSI - PLACA: PUN6J54)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:01:08Z",
+    "tempo_segundos": 3.78,
+    "idDocumento": 7835210
+  }
+}

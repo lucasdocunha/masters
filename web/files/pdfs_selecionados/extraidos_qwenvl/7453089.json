@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EDVALDO FRANCISCO DE OLIVEIRA",
+  "fornecedor_cnpj_cpf": "32373812000179",
+  "numero_documento": "532210323738120001790028339718",
+  "data_emissao": "24/10/2022",
+  "valor_total": 1401.0,
+  "descricao_resumida": "VENDA EFETUADA POR MICROEMPREENDEDOR INDIVIDUAL (MEI) - NO DF",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.0,
+    "timestamp": "2026-10-26T18:32:31Z",
+    "idDocumento": 7453089
+  }
+}

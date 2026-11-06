@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Brasil Leasing Locadora de Veículos",
+  "fornecedor_cnpj_cpf": "17.153.227/0001-70",
+  "numero_documento": "133",
+  "data_emissao": "2019-07-22",
+  "valor_total": 4500.0,
+  "descricao_resumida": "Locação de 1(um) Veículo Executivo marca/modelo: Toyota/Corolla 1.8 automático referente a julho/2019",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:33:21Z",
+    "tempo_segundos": 8.28,
+    "idDocumento": 6879350
+  }
+}

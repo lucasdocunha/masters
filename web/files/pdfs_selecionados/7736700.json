@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7736700,
+  "ano": 2024,
+  "mes": 4,
+  "fornecedor": "ROSARIO PARQUE",
+  "cnpjCPF": "868.619.860/0029-0",
+  "numero": "202400000008991",
+  "tipoDocumento": "0",
+  "dataEmissao": "2024-04-27T00:00:00",
+  "valorDocumento": 255.0,
+  "valorLiquido": 255.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Afonso Hamm",
+  "cpfParlamentar": "37040642034",
+  "siglaUF": "RS",
+  "siglaPartido": "PP",
+  "descricaoDespesa": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1758/2024/7736700.pdf"
+}

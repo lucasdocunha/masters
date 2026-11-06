@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO MAIOCHI JARAGUA LTDA.",
+  "fornecedor_cnpj_cpf": "08.736.536/0001-81",
+  "numero_documento": "000.033.718",
+  "data_emissao": "2019-06-11",
+  "valor_total": 141.67,
+  "descricao_resumida": "PAGAMENTO À VISTA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.69,
+    "timestamp": "2026-10-26T20:02:40Z",
+    "idDocumento": 6850884
+  }
+}

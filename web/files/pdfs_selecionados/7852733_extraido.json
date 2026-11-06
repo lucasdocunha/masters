@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "STELMAT TELEINFORMATICA LTDA",
+  "fornecedor_cnpj_cpf": "00.950.386/0001-00",
+  "numero_documento": "89/2024",
+  "data_emissao": "2025-01-02",
+  "valor_total": 2699.0,
+  "descricao_resumida": "Locação de bens móveis (1 Notebook Gamer Dell Allenware M15 e 4 Notebooks Lenovo IdeaPad 3i referente ao período de dezembro de 2024)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:17:20Z",
+    "tempo_segundos": 2.43,
+    "idDocumento": 7852733
+  }
+}

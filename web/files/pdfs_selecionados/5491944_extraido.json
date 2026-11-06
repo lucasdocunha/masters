@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Empresa Gaucha de Rodovias S.A. - EGR",
+  "fornecedor_cnpj_cpf": "16987837000106",
+  "numero_documento": "1689393",
+  "data_emissao": "2014-08-12",
+  "valor_total": 5.2,
+  "descricao_resumida": "Tarifa de pedagio - Praca: Candelaria: Santa Cruz, Pista: 5",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:32:37Z",
+    "tempo_segundos": 1.97,
+    "idDocumento": 5491944
+  }
+}

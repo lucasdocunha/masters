@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Uber do Brasil Tecnologia Ltda",
+  "fornecedor_cnpj_cpf": "17.895.646/0001-87",
+  "numero_documento": null,
+  "data_emissao": "2025-02-06",
+  "valor_total": 40.51,
+  "descricao_resumida": "Serviço de transporte por aplicativo (Uber Comfort) de Sqn 302 Bl. B - Asa Norte, Brasília - DF até Aeroporto Internacional de Brasília",
+  "observacoes": "Recibo de viagem da Uber",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:40:50Z",
+    "tempo_segundos": 9.81,
+    "idDocumento": 7866223
+  }
+}

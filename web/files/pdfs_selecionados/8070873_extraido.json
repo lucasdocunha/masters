@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "IANE APARECIDA BAQUIAO DA SILVA",
+  "fornecedor_cnpj_cpf": "00.725.346/0001-57",
+  "numero_documento": "051.121.123",
+  "data_emissao": "2026-03-23",
+  "valor_total": 524.75,
+  "descricao_resumida": "Canetas, papel sulfite, caderno mini e marca texto",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:05:37Z",
+    "tempo_segundos": 2.87,
+    "idDocumento": 8070873
+  }
+}

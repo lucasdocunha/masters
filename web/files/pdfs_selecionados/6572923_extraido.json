@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VILA RICA COMERCIO DE COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "02.314.908/0002-86",
+  "numero_documento": "867285",
+  "data_emissao": "2018-05-07",
+  "valor_total": 79.77,
+  "descricao_resumida": "Gasolina aditivada - 20,78L",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:05:24Z",
+    "tempo_segundos": 10.73,
+    "idDocumento": 6572923
+  }
+}

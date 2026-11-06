@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Prefeitura do Município de Rio Branco Secretaria Municipal de Finanças",
+  "fornecedor_cnpj_cpf": "14364962000134",
+  "numero_documento": "8",
+  "data_emissao": "2020-08-21",
+  "valor_total": 4150.0,
+  "descricao_resumida": "Locação do veículo Chevrolet/S 10, LTZ DD4A, placa QWM9E43, 2019/2020, no período de 01 de Agosto a 31 de Agosto de 2020.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.06,
+    "timestamp": "2026-10-26T18:27:37Z",
+    "idDocumento": 7086345
+  }
+}

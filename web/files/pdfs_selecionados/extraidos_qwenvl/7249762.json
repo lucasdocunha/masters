@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SITÉ DE NOTÍCIAS ACRÍTICADOCARE",
+  "fornecedor_cnpj_cpf": "34364181721",
+  "numero_documento": "174",
+  "data_emissao": "2021-07-27",
+  "valor_total": 60000.0,
+  "descricao_resumida": "SERVIÇOS DE ASSESSORIA, CONSULTORIA E CONSULTAS FINANCEIRAS E SOCIÁLIS NO PERÍODO DE 01 A 31 DE AGOSTO DE 2021 ATRAVÉS DO SITE ACRÍTICADOCARE ENDECOE ELECTRÔNICO HTTPS://Acríticadocare.com.br",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.75,
+    "timestamp": "2026-10-26T18:31:24Z",
+    "idDocumento": 7249762
+  }
+}

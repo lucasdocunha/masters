@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO PAULINHO LTDA",
+  "fornecedor_cnpj_cpf": "974.418.059-53",
+  "numero_documento": "000.001.589",
+  "data_emissao": "2015-09-30",
+  "valor_total": 1200.0,
+  "descricao_resumida": "Recebemos de POSTO PAULINHO LTDA os produtos/serviços constantes da NFe indicada ao lado",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.96,
+    "timestamp": "2026-10-26T19:11:58Z",
+    "idDocumento": 5811008
+  }
+}

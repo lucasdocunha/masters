@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RONE RODRIGUES DE SOUZA 02337587126",
+  "fornecedor_cnpj_cpf": "28470455000190",
+  "numero_documento": "000763674",
+  "data_emissao": "2017-11-09",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Serviços prestados para divulgação de atividades parlamentares, filmagens, edições e veiculações no YouTube referentes ao mês de outubro de 2017",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:29:32Z",
+    "tempo_segundos": 2.58,
+    "idDocumento": 6437521
+  }
+}

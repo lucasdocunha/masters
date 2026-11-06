@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Rocket Science Group, LLC (Mailchimp)",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "MC01102792",
+  "data_emissao": "2023-12-30",
+  "valor_total": 879.98,
+  "descricao_resumida": "Plano Essentials para 20,000 contatos",
+  "observacoes": "Recibo internacional (EUA)",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:43:40Z",
+    "tempo_segundos": 6.61,
+    "idDocumento": 7673361
+  }
+}

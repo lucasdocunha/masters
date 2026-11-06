@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO PREMIUM BM LTDA",
+  "fornecedor_cnpj_cpf": "07.220.538/0002-31",
+  "numero_documento": "000004059",
+  "data_emissao": "2024-04-04",
+  "valor_total": 277.05,
+  "descricao_resumida": "1 GASOLINA C COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:03:56Z",
+    "tempo_segundos": 2.4,
+    "idDocumento": 7715376
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO VICENTE MACHADO LTDA",
+  "fornecedor_cnpj_cpf": "05.658.350/0001-63",
+  "numero_documento": "320102002",
+  "data_emissao": "2020-09-01",
+  "valor_total": 140.99,
+  "descricao_resumida": "GASOLINA ADIVIVADA B 32,051 L 4,399 140.99",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.94,
+    "timestamp": "2026-10-26T18:28:45Z",
+    "idDocumento": 6994943
+  }
+}

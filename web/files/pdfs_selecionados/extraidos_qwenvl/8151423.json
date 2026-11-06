@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ITARARE HOTEL LIMITADA",
+  "fornecedor_cnpj_cpf": "45.461.332/0001-01",
+  "numero_documento": "1106",
+  "data_emissao": "25/08/2026",
+  "valor_total": 154.0,
+  "descricao_resumida": "Hospedagem em hotéis, hotelaria marítima e congeneres (o valor da alimentação e gorjetas, quando incluído no preço da diára, fica sujeito ao Imposto Sobre Serviços). Referente serviços de hospedagem no período de 24 a 25/08/2026 (Apt single executivo - Pajamero & Viuva)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.74,
+    "timestamp": "2026-10-26T18:45:30Z",
+    "idDocumento": 8151423
+  }
+}

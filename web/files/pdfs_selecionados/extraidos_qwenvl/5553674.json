@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JOSE SIMPLICIO ALVES DE ARAUJO",
+  "fornecedor_cnpj_cpf": "33489874315",
+  "numero_documento": "096/008976934",
+  "data_emissao": "25/11/2014",
+  "valor_total": 248.23,
+  "descricao_resumida": "NET Fone",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.56,
+    "timestamp": "2026-10-26T18:14:10Z",
+    "idDocumento": 5553674
+  }
+}

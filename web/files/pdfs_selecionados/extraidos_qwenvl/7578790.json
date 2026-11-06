@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Conc. do RodoAnel Oeste de SP S/A",
+  "fornecedor_cnpj_cpf": "09.387.725/0001-59",
+  "numero_documento": "RVE5J65",
+  "data_emissao": "2023-06-28",
+  "valor_total": 2.8,
+  "descricao_resumida": "Dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.44,
+    "timestamp": "2026-10-26T18:35:16Z",
+    "idDocumento": 7578790
+  }
+}

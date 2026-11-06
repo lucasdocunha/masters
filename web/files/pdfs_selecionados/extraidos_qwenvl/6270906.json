@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO UDEON LTDA",
+  "fornecedor_cnpj_cpf": "21.790.274/0001-00",
+  "numero_documento": "227042017114242",
+  "data_emissao": "2017-04-22",
+  "valor_total": 133.24,
+  "descricao_resumida": "GASOLINA COMUM 39,2L X 3,99 F1 133,24)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.01,
+    "timestamp": "2026-10-26T18:21:27Z",
+    "idDocumento": 6270906
+  }
+}

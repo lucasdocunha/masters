@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "TREVO DERIVADOS DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "14.481.153/0001-03",
+  "numero_documento": "423969",
+  "data_emissao": "2017-06-15",
+  "valor_total": 101.08,
+  "descricao_resumida": "Gasolina Aditivada",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:28:53Z",
+    "tempo_segundos": 3.34,
+    "idDocumento": 6322544
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "A L J Marketing Ltda",
+  "fornecedor_cnpj_cpf": "13.138.707/0001-00",
+  "numero_documento": "149",
+  "data_emissao": "2015-08-07",
+  "valor_total": null,
+  "descricao_resumida": "Notas Fiscais Eletrônicas de Serviço",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.43,
+    "timestamp": "2026-10-26T19:10:34Z",
+    "idDocumento": 5757399
+  }
+}

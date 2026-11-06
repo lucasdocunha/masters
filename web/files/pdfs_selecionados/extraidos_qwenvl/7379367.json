@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO CENTRAL DE LAVINIA LTDA",
+  "fornecedor_cnpj_cpf": "51.360.758/0001-71",
+  "numero_documento": "024467",
+  "data_emissao": "2022-05-04",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.5,
+    "timestamp": "2026-10-26T18:34:07Z",
+    "idDocumento": 7379367
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7308295,
+  "ano": 2021,
+  "mes": 12,
+  "fornecedor": "AUTO LOCADORA SALOME LTDA",
+  "cnpjCPF": "338.772.590/0017-4",
+  "numero": "0001379",
+  "tipoDocumento": "1",
+  "dataEmissao": "2021-12-17T00:00:00",
+  "valorDocumento": 2800.0,
+  "valorLiquido": 1916.0,
+  "valorGlosa": 884.0,
+  "nomeParlamentar": "Tito",
+  "cpfParlamentar": "71762477572",
+  "siglaUF": "BA",
+  "siglaPartido": "AVANTE",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3417/2021/7308295.pdf"
+}

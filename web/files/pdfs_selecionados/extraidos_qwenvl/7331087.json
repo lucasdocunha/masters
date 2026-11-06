@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Auto Posto Thermas Ltda",
+  "fornecedor_cnpj_cpf": "04.016.141/0001-53",
+  "numero_documento": "366994",
+  "data_emissao": "2022-03-13",
+  "valor_total": 350.0,
+  "descricao_resumida": "Venda de combustível ou lubrificante adquiridos ou re",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.56,
+    "timestamp": "2026-10-26T18:34:38Z",
+    "idDocumento": 7331087
+  }
+}

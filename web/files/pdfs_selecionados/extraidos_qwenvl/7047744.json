@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Rádio Tupinambá de Sobral Ltda.",
+  "fornecedor_cnpj_cpf": "62.010-562-Sobral/CE",
+  "numero_documento": "6952",
+  "data_emissao": "15/05/2018",
+  "valor_total": 41400.0,
+  "descricao_resumida": "Serviços de rádio, como apresentação de programas, promoção de eventos e publicidade.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.63,
+    "timestamp": "2026-10-26T18:28:26Z",
+    "idDocumento": 7047744
+  }
+}

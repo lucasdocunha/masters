@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "FRANCISCO DAROLD PEREIRA ME",
+  "fornecedor_cnpj_cpf": "11.683.319/0001-85",
+  "numero_documento": "202100000001157",
+  "data_emissao": "2021-12-16",
+  "valor_total": 250.0,
+  "descricao_resumida": "Divulgação da Atividade Parlamentar referente a Relatoria do PL 4328/2020, vinculada ao Jornal Tribuna das Cidades entre os dias 01/12/2021 à 05/12/2021.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:08:50Z",
+    "tempo_segundos": 114.01,
+    "idDocumento": 7307347
+  }
+}

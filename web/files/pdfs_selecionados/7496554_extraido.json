@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GE COMUNICAÇÃO MULTIPLATAFORMA LTDA",
+  "fornecedor_cnpj_cpf": "42.160.428/0001-41",
+  "numero_documento": "00166",
+  "data_emissao": "2023-02-09",
+  "valor_total": 4000.0,
+  "descricao_resumida": "Produção e edição de vídeos para divulgação do mandato do Deputado Federal Miguel Lombardi no mês de janeiro de 2023.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:43:01Z",
+    "tempo_segundos": 4.77,
+    "idDocumento": 7496554
+  }
+}

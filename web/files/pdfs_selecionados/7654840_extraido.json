@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ISABELLA OLIVEIRA MENDES",
+  "fornecedor_cnpj_cpf": "50.818.159/0001-96",
+  "numero_documento": "8",
+  "data_emissao": "2023-11-30",
+  "valor_total": 6500.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar: gestão de mídia e alimentação do site referente a serviços de 01/11/2023 a 30/11/2023.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:41:57Z",
+    "tempo_segundos": 2.83,
+    "idDocumento": 7654840
+  }
+}

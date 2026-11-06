@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "FILIBRAS COMERCIAL IMPORTAÇÃO E EXPORTAÇÃO LTDA.",
+  "fornecedor_cnpj_cpf": "05.781.815/0001-79",
+  "numero_documento": "038465",
+  "data_emissao": "2024-10-01",
+  "valor_total": 145.0,
+  "descricao_resumida": "LOCAÇÃO MAQUINA COPIADORA 3000 COPIAS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.76,
+    "timestamp": "2026-10-26T21:22:00Z",
+    "idDocumento": 7817312
+  }
+}

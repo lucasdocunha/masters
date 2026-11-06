@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO PARAQUEDA LTDA",
+  "fornecedor_cnpj_cpf": "01.416.525/0001-75",
+  "numero_documento": "6914",
+  "data_emissao": "2026-04-04",
+  "valor_total": 150.0,
+  "descricao_resumida": "ETANOL HIDRATADO COMUM (Código: 2)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 16.3,
+    "timestamp": "2026-10-26T21:52:02Z",
+    "idDocumento": 8081384
+  }
+}

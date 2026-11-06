@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SERVICO NAC. DE APRENDIZAGEM COMERCIAL - SENAC",
+  "fornecedor_cnpj_cpf": "33.489.172/0006-72",
+  "numero_documento": "159758",
+  "data_emissao": "2015-07-09",
+  "valor_total": 72.0,
+  "descricao_resumida": "MEDALHA DE FILE AU POIVRE VE 2Un X 30,00 T12,00% 60,00R$",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.06,
+    "timestamp": "2026-10-26T18:16:40Z",
+    "idDocumento": 5736716
+  }
+}

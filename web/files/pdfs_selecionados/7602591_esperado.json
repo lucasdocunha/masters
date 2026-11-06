@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7602591,
+  "ano": 2023,
+  "mes": 9,
+  "fornecedor": "HOTEL MONTE CARLO",
+  "cnpjCPF": "688.117.020/0019-9",
+  "numero": "202300000034829",
+  "tipoDocumento": "0",
+  "dataEmissao": "2023-09-03T00:00:00",
+  "valorDocumento": 187.0,
+  "valorLiquido": 187.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Carlos Gomes",
+  "cpfParlamentar": "02142743730",
+  "siglaUF": "RS",
+  "siglaPartido": "REPUBLICANOS",
+  "descricaoDespesa": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2900/2023/7602591.pdf"
+}

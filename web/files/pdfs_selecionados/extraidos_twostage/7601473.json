@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2025-08-03",
+  "valor_total": 80.0,
+  "descricao_resumida": "Recibo de passagem de táxi de Victor Bicki para Aeroporto / Hotel",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 17.63,
+    "timestamp": "2026-10-26T20:57:37Z",
+    "idDocumento": 7601473
+  }
+}

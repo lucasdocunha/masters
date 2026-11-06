@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CLACRI COMUNICACAO LTDA - EPP",
+  "fornecedor_cnpj_cpf": "14.333.774/0001-49",
+  "numero_documento": "00000624",
+  "data_emissao": "2024-12-18",
+  "valor_total": 20000.0,
+  "descricao_resumida": "Assessoria de Imprensa e Divulgação de atividade parlamentar, criações de conteúdos, textos e publicações para redes sociais.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:20:15Z",
+    "tempo_segundos": 31.08,
+    "idDocumento": 7849457
+  }
+}

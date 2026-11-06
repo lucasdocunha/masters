@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Coelce",
+  "fornecedor_cnpj_cpf": "07047251029170",
+  "numero_documento": "350061161",
+  "data_emissao": "2014-07-10",
+  "valor_total": 63.32,
+  "descricao_resumida": "Conta de energia elétrica e iluminação pública municipal",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:33:37Z",
+    "tempo_segundos": 2.34,
+    "idDocumento": 5486682
+  }
+}

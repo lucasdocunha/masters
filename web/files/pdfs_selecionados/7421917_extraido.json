@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO Z7 LTDA.",
+  "fornecedor_cnpj_cpf": "84.711.084/0001-61",
+  "numero_documento": "000.096.840",
+  "data_emissao": "2022-07-28",
+  "valor_total": 200.0,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:27:00Z",
+    "tempo_segundos": 30.1,
+    "idDocumento": 7421917
+  }
+}

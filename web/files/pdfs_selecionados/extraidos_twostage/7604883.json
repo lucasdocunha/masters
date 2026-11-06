@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ISABELLE DE OLIVEIRA ARAUJO",
+  "fornecedor_cnpj_cpf": "29.777.522/0001-86",
+  "numero_documento": "3",
+  "data_emissao": "2023-09-22",
+  "valor_total": null,
+  "descricao_resumida": "Prestação de serviços de videomaker para vídeos para divulgação de atividade parlamentar publicados em redes sociais. Captação de imagem, captação de som e edição de vídeos (disponíveis em https://www.instagram.com/hilton_erika/) nos formatos 9:16.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.06,
+    "timestamp": "2026-10-26T21:08:06Z",
+    "idDocumento": 7604883
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EMPRESA GAUCHA DE RODOVIAS S/A",
+  "fornecedor_cnpj_cpf": "16.987.837/0001-06",
+  "numero_documento": "2411Q9S6EMA3",
+  "data_emissao": "2017-07-13",
+  "valor_total": 2.4,
+  "descricao_resumida": "Ambulancia 0800 0090192 * Guincho 198",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 7.16,
+    "timestamp": "2026-10-26T19:31:28Z",
+    "idDocumento": 6354599
+  }
+}

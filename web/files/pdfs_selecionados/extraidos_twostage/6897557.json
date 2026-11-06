@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "B DE ALVARENGA HEITOR EDITORA, HOSPEDAGEM E SERVIÇOS - ME",
+  "fornecedor_cnpj_cpf": "19.798.563/0001-03",
+  "numero_documento": "32",
+  "data_emissao": "2019-08-16",
+  "valor_total": null,
+  "descricao_resumida": "BAIXADA CAMPISTA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.87,
+    "timestamp": "2026-10-26T19:54:51Z",
+    "idDocumento": 6897557
+  }
+}

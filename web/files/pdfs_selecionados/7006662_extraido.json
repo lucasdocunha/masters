@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Rádio Blau Nunes Ltda.",
+  "fornecedor_cnpj_cpf": "87656039000140",
+  "numero_documento": "8488",
+  "data_emissao": "2019-12-19",
+  "valor_total": 250.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar emenda para o Hospital Beneficente Santa Bárbara de Santa Bárbara do Sul",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:16:49Z",
+    "tempo_segundos": 8.49,
+    "idDocumento": 7006662
+  }
+}

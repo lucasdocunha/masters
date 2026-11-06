@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SECRETARIA DE ESTADO DE ECONOMIA DO DISTRICTO FEDERAL",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "173",
+  "data_emissao": "2026-01-27",
+  "valor_total": null,
+  "descricao_resumida": "Nota Fiscal de Serviço Eletrônica - NFS-e",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 32.75,
+    "timestamp": "2026-10-26T21:53:30Z",
+    "idDocumento": 8044514
+  }
+}

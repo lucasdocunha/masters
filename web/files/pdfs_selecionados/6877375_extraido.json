@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO AMERICA LTDA",
+  "fornecedor_cnpj_cpf": "22.093.697/0001-25",
+  "numero_documento": "32910",
+  "data_emissao": "2019-07-16",
+  "valor_total": 270.01,
+  "descricao_resumida": "Venda de combustivel (Oleo Diesel S10 Comum)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:11:15Z",
+    "tempo_segundos": 5.27,
+    "idDocumento": 6877375
+  }
+}

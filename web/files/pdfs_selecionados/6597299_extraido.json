@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO NEGAO RECREIO LTDA",
+  "fornecedor_cnpj_cpf": "04.622.131/0001-61",
+  "numero_documento": "113774",
+  "data_emissao": "2018-05-29",
+  "valor_total": 180.69,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:11:05Z",
+    "tempo_segundos": 8.15,
+    "idDocumento": 6597299
+  }
+}

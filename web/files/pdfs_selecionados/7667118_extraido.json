@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Santo Buffet Servicos de Alimentacao Ltda",
+  "fornecedor_cnpj_cpf": "45.350.839/0001-98",
+  "numero_documento": "458",
+  "data_emissao": "2023-12-21",
+  "valor_total": 2800.0,
+  "descricao_resumida": "FORNECIMENTO DE ALIMENTAÇÃO AOS PARLAMENTARES DA LIDERANÇA DO GOVERNO NA CAMARA NO DIA 21 DE DEZEMBRO DE 2023",
+  "observacoes": "Documento possui Carta de Correção Eletrônica (CC-e) nº 1 emitida em 16/01/2024.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:43:12Z",
+    "tempo_segundos": 6.2,
+    "idDocumento": 7667118
+  }
+}

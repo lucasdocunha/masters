@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO PARK SANTA MARIA DERIV. DE PETROLEO",
+  "fornecedor_cnpj_cpf": "05.889.046/0001-27",
+  "numero_documento": "285726",
+  "data_emissao": "2014-08-26",
+  "valor_total": 20.0,
+  "descricao_resumida": "Diesel Comum (8,164 Litros)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash",
+    "timestamp": "2026-10-21T17:19:15Z",
+    "tempo_segundos": 5.9,
+    "idDocumento": 5505049
+  }
+}

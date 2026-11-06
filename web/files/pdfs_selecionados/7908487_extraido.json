@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "INDEX SERVICOS EM COMUNICACAO DIGITAL LTDA EPP",
+  "fornecedor_cnpj_cpf": "13.440.691/0001-96",
+  "numero_documento": "1883",
+  "data_emissao": "2025-05-03",
+  "valor_total": 900.0,
+  "descricao_resumida": "Manutenção do site https://guimaraes.org.br/, para divulgação de atividades parlamentares, referente ao mês Abril/2025",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:42:35Z",
+    "tempo_segundos": 3.04,
+    "idDocumento": 7908487
+  }
+}

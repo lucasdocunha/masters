@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6972290,
+  "ano": 2019,
+  "mes": 10,
+  "fornecedor": "SARAIVA E CIA LTDA - ME",
+  "cnpjCPF": "125.455.150/0015-6",
+  "numero": "201900000000198",
+  "tipoDocumento": "0",
+  "dataEmissao": "2019-12-01T23:00:00",
+  "valorDocumento": 10000.0,
+  "valorLiquido": 10000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Hélio Leite",
+  "cpfParlamentar": "08575878204",
+  "siglaUF": "PA",
+  "siglaPartido": "UNIÃO",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2898/2019/6972290.pdf"
+}

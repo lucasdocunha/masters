@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MAIA, MOURA E SANTOS ADVOGADOS ASSOCIADOS",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2019-04-30",
+  "valor_total": null,
+  "descricao_resumida": "Relatório das atividades desempenhadas referente ao contrato de assessoria jurídica.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.31,
+    "timestamp": "2026-10-26T18:25:39Z",
+    "idDocumento": 6823007
+  }
+}

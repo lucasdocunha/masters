@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LOGIC WORLD INFORMATICA LTDA - ME",
+  "fornecedor_cnpj_cpf": "03.494.049/0001-36",
+  "numero_documento": "00000054",
+  "data_emissao": "2019-05-14",
+  "valor_total": 400.0,
+  "descricao_resumida": "Contrato de licenciamento de uso de sistema gestão política, referente a abril 2019.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:39:35Z",
+    "tempo_segundos": 6.94,
+    "idDocumento": 6842112
+  }
+}

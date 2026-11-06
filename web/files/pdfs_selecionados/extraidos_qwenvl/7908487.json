@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "INDEX SERVICOS EM COMUNICACAO DIGITAL LTDA EPP",
+  "fornecedor_cnpj_cpf": "13.440.691/0001-96",
+  "numero_documento": "NFS-e 1883",
+  "data_emissao": "2025-05-03",
+  "valor_total": 900.0,
+  "descricao_resumida": "Prestação de serviços de construção civil",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.7,
+    "timestamp": "2026-10-26T18:42:38Z",
+    "idDocumento": 7908487
+  }
+}

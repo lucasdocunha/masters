@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ECO EMPREENDIMENTOS COMERCIAIS LTDA",
+  "fornecedor_cnpj_cpf": "00.194.032/0001-75",
+  "numero_documento": "13563",
+  "data_emissao": "2025-07-23",
+  "valor_total": 284.68,
+  "descricao_resumida": "Gasolina Comum - 46,290 L",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:41:53Z",
+    "tempo_segundos": 4.86,
+    "idDocumento": 7957741
+  }
+}

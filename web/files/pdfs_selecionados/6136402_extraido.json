@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MACHADO & MENEZES RESTAURANTE LTDA",
+  "fornecedor_cnpj_cpf": "10.276.500/0001-04",
+  "numero_documento": "019710",
+  "data_emissao": "2016-10-27",
+  "valor_total": 74.14,
+  "descricao_resumida": "Refeições (pao de alho, carneiro completo, jarra caja)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:07:24Z",
+    "tempo_segundos": 1.86,
+    "idDocumento": 6136402
+  }
+}

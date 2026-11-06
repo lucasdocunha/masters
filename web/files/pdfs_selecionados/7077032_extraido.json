@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO COLIBRI LTDA",
+  "fornecedor_cnpj_cpf": "17247057000192",
+  "numero_documento": "41182",
+  "data_emissao": "2020-05-14",
+  "valor_total": 223.19,
+  "descricao_resumida": "GASOLINA TIPO C",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:18:45Z",
+    "tempo_segundos": 52.88,
+    "idDocumento": 7077032
+  }
+}

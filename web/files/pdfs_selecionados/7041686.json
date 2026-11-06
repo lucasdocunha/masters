@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7041686,
+  "ano": 2020,
+  "mes": 3,
+  "fornecedor": "SUPREMA LOCADORA",
+  "cnpjCPF": "248.943.970/0017-0",
+  "numero": "280",
+  "tipoDocumento": "1",
+  "dataEmissao": "2020-04-01T00:00:00",
+  "valorDocumento": 3350.0,
+  "valorLiquido": 3350.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Luisa Canziani",
+  "cpfParlamentar": "05823529910",
+  "siglaUF": "PR",
+  "siglaPartido": "PSD",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3205/2020/7041686.pdf"
+}

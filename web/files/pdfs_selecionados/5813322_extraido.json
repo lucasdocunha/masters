@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMERCIAL H. KARL ALLERS LTDA",
+  "fornecedor_cnpj_cpf": "31.423.015/0001-96",
+  "numero_documento": "244178",
+  "data_emissao": "2015-10-05",
+  "valor_total": 100.0,
+  "descricao_resumida": "Gasolina aditivada",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:24:45Z",
+    "tempo_segundos": 2.37,
+    "idDocumento": 5813322
+  }
+}

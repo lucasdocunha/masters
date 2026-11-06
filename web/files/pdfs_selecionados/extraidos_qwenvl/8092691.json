@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ARMARINHOS FERNANDO LTDA",
+  "fornecedor_cnpj_cpf": "48.076.228/0018-30",
+  "numero_documento": "51038",
+  "data_emissao": "2026-04-30",
+  "valor_total": 48000.0,
+  "descricao_resumida": "LANCAMENTO EFETUADO EM DECORRÊNCIA DE EMISSÃO DE DOCUMENTO F",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.63,
+    "timestamp": "2026-10-26T18:42:13Z",
+    "idDocumento": 8092691
+  }
+}

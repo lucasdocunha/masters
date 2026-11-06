@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HGIG COMERCIO E SERVICOS LTDA / POSTO ECCO VIDA",
+  "fornecedor_cnpj_cpf": "03289327000202",
+  "numero_documento": "020231",
+  "data_emissao": "2015-04-20",
+  "valor_total": 100.0,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:48:34Z",
+    "tempo_segundos": 2.29,
+    "idDocumento": 5660404
+  }
+}

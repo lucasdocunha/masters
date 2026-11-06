@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A.",
+  "fornecedor_cnpj_cpf": "04.065.033/0001-70",
+  "numero_documento": "006.738.873",
+  "data_emissao": "2024-10-11",
+  "valor_total": 215.09,
+  "descricao_resumida": "Fornecimento de energia elétrica residencial",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:09:26Z",
+    "tempo_segundos": 56.65,
+    "idDocumento": 7819739
+  }
+}

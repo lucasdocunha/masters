@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Uber",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2022-02-03",
+  "valor_total": 7.6,
+  "descricao_resumida": "Serviço de transporte privado urbano (UberX)",
+  "observacoes": "Recibo de viagem da Uber",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:21:03Z",
+    "tempo_segundos": 9.49,
+    "idDocumento": 7338783
+  }
+}

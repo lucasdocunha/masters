@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PANTANAL VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "07.319.323/0001-91",
+  "numero_documento": "24051",
+  "data_emissao": "2023-06-30",
+  "valor_total": 3850.0,
+  "descricao_resumida": "LOCAÇÃO DE VEÍCULO TRACKER SGS8E81",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:52:25Z",
+    "tempo_segundos": 5.09,
+    "idDocumento": 7576180
+  }
+}

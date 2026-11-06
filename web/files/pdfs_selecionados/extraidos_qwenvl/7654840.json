@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Bella",
+  "fornecedor_cnpj_cpf": "50.818.159/0001-96",
+  "numero_documento": "8",
+  "data_emissao": "2023-11-30",
+  "valor_total": 6500.0,
+  "descricao_resumida": "Local de Prestação de Manutenção de Páginas Eletrônicas",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.41,
+    "timestamp": "2026-10-26T18:34:55Z",
+    "idDocumento": 7654840
+  }
+}

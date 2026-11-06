@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Posto de Servicos Dom Pedro Ltda",
+  "fornecedor_cnpj_cpf": "01.325.356/0001-68",
+  "numero_documento": "19716",
+  "data_emissao": "28/09/2016",
+  "valor_total": null,
+  "descricao_resumida": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados a consumidor ou usuário final",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.82,
+    "timestamp": "2026-10-26T19:15:55Z",
+    "idDocumento": 6112920
+  }
+}

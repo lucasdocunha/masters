@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "A.P. AVENIDA LTDA",
+  "fornecedor_cnpj_cpf": "34.896.209/0001-05",
+  "numero_documento": "000253190",
+  "data_emissao": "27/06/2020",
+  "valor_total": 50.04,
+  "descricao_resumida": "GASOLINA C COMUM PV LT 35,800 X 4,19 F 150,00 OLEO DIESEL B SIO PV LT 28,991 X 3,45 F 100,02 OLEO DIESEL B SIO PV LT 28,991 X 3,45 F 100,02",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.54,
+    "timestamp": "2026-10-26T18:28:46Z",
+    "idDocumento": 7093974
+  }
+}

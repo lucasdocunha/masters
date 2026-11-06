@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "V. K IMÓVEIS",
+  "fornecedor_cnpj_cpf": "17.414.189/0001-61",
+  "numero_documento": null,
+  "data_emissao": "2015-11-23",
+  "valor_total": 3390.4,
+  "descricao_resumida": "Pagamento do Aluguel do mês de novembro de 2015 de Sala Comercial situada à Avenida Colares Moreira, nº 3, Edifício Business Center, Salas 119 e 120, Bairro Renascença, São Luís - MA.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:47:31Z",
+    "tempo_segundos": 2.45,
+    "idDocumento": 5853209
+  }
+}

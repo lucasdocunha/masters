@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Conc Sistema Anhanguera-Bandeirantes S/A",
+  "fornecedor_cnpj_cpf": "02451848000162",
+  "numero_documento": null,
+  "data_emissao": "2015-01-17",
+  "valor_total": 5.1,
+  "descricao_resumida": "Recibo de pedagio praca 84 - Limeira a Sul",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:58:54Z",
+    "tempo_segundos": 24.35,
+    "idDocumento": 5589592
+  }
+}

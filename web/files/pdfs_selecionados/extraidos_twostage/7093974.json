@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "A.P. AVENIDA LTDA",
+  "fornecedor_cnpj_cpf": "34.896.209/0001-05",
+  "numero_documento": "000253190",
+  "data_emissao": "2020-06-27",
+  "valor_total": 50.04,
+  "descricao_resumida": "GASOLINA C COMUM 150,00\nOLEO DIESEL B S10 100,02",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 19.05,
+    "timestamp": "2026-10-26T20:19:09Z",
+    "idDocumento": 7093974
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "OESTE COMERCIAL DE COMBUSTIVEL PARA AVIACAO LTDA",
+  "fornecedor_cnpj_cpf": "73.507.162/0009-41",
+  "numero_documento": "000.001.995",
+  "data_emissao": "2017-09-11",
+  "valor_total": 3002.37,
+  "descricao_resumida": "AVGAS-100",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:31:24Z",
+    "tempo_segundos": 2.74,
+    "idDocumento": 6386406
+  }
+}

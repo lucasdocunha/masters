@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Restaurante Rossetto & Utero Ltda Epp",
+  "fornecedor_cnpj_cpf": "16.935.527/0001-48",
+  "numero_documento": "0000000000113",
+  "data_emissao": "2018-10-24",
+  "valor_total": 10.0,
+  "descricao_resumida": "AQUA S/ GAS 2UN X",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.59,
+    "timestamp": "2026-10-26T18:23:00Z",
+    "idDocumento": 6692651
+  }
+}

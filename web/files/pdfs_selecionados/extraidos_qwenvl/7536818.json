@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Mapeo Servicos de Inovacao Tecnologica Ltda",
+  "fornecedor_cnpj_cpf": "43.382.036/0001-90",
+  "numero_documento": "54",
+  "data_emissao": "2023-05-02",
+  "valor_total": 5000.0,
+  "descricao_resumida": "Fornecimento de Serviços e Ferramentas de apoio em tratamento de dados e hospedagem de aplicação de web marketing direto digital, para a divulgação de atividade parlamentar da Deputada Gleisi Hoffmann, referente o período de 01/05/2023 até 31/05/2023.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.61,
+    "timestamp": "2026-10-26T18:38:02Z",
+    "idDocumento": 7536818
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Conc. Rodovia do Oeste de Sao Paulo S/A",
+  "fornecedor_cnpj_cpf": "02.415.408/0001-50",
+  "numero_documento": "02670230261601141345003552493",
+  "data_emissao": "2020-09-26",
+  "valor_total": 4.4,
+  "descricao_resumida": "Tarifa de pedagio - Praca BARUERI",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:17:47Z",
+    "tempo_segundos": 44.48,
+    "idDocumento": 7098962
+  }
+}

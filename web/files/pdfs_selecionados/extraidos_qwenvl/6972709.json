@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DIAMOND WORK CENTER",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "N.11/2019",
+  "data_emissao": "2019-11-14",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Aluguel da sala n° 1317 e vaga n° 188 - G 7, localizada Diamond Work Center à Rua São José, 280 centro Pará de Minas - MG.",
+  "observacoes": "Segundo a Lei nº 6.124/2017, Capítulo II, Seção 1, Artigo 110 do município de Pará de Minas. O aluguel não é considerado uma prestação de serviços por isso não há incidência do ISS portanto, não é obrigatório emitir Notas Fiscais para os locatários",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 4.3,
+    "timestamp": "2026-10-26T18:27:19Z",
+    "idDocumento": 6972709
+  }
+}

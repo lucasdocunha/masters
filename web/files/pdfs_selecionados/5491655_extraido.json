@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMPANHIA ENERGETICA DE PERNAMBUCO - CELPE",
+  "fornecedor_cnpj_cpf": "10835932000108",
+  "numero_documento": "002928316",
+  "data_emissao": "2014-07-23",
+  "valor_total": 979.41,
+  "descricao_resumida": "Consumo de energia elétrica e contribuição de iluminação pública referente ao mês 07/2014",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:32:23Z",
+    "tempo_segundos": 2.32,
+    "idDocumento": 5491655
+  }
+}

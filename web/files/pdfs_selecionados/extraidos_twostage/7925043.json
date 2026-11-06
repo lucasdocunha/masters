@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Karen Thais Pedroso Capiberibe",
+  "fornecedor_cnpj_cpf": "58.744.132/0001-08",
+  "numero_documento": "24",
+  "data_emissao": "2025-06-02",
+  "valor_total": null,
+  "descricao_resumida": "Nota Fiscal de Serviço Eletrônica - NFS-e",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.35,
+    "timestamp": "2026-10-26T21:34:12Z",
+    "idDocumento": 7925043
+  }
+}

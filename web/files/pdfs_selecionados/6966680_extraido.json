@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "TAM Linhas Aéreas S/A",
+  "fornecedor_cnpj_cpf": "02.012.862/0001-60",
+  "numero_documento": "957-2111831902",
+  "data_emissao": "2019-09-27",
+  "valor_total": 848.42,
+  "descricao_resumida": "Bilhete de passagem aérea (Itinerário: Brasília - Rio de Janeiro - Brasília)",
+  "observacoes": "Documento informativo de compra de passagens aéreas, autorizado a não emissão de nota fiscal.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:15:27Z",
+    "tempo_segundos": 5.62,
+    "idDocumento": 6966680
+  }
+}

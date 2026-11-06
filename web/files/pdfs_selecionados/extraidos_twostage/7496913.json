@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "THAIS MESQUITA GADELHA 05356777310",
+  "fornecedor_cnpj_cpf": "28.887.209/0001-38",
+  "numero_documento": "15",
+  "data_emissao": "2023-02-06",
+  "valor_total": null,
+  "descricao_resumida": "THAIS MESQUITA FOTOGRAFIA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.77,
+    "timestamp": "2026-10-26T21:11:54Z",
+    "idDocumento": 7496913
+  }
+}

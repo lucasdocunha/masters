@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "FABIO FRECH GOUVEIA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "1264529",
+  "data_emissao": "2018-03-01",
+  "valor_total": 2284.52,
+  "descricao_resumida": "Aluguel, Seguro Contra Incêndio, IPTU (03/10), Despesa Bancária (Inquilino), T.C.I.",
+  "observacoes": "Cond. venc.10/04/18, Cond. venc.10/04/18 garagem, F. Reserva + F. de reserva Geralvenc.10/04/18",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.6,
+    "timestamp": "2026-10-26T19:55:06Z",
+    "idDocumento": 6545914
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GOL LINHAS AEREAS",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "1272176064493",
+  "data_emissao": "2022-06-20",
+  "valor_total": null,
+  "descricao_resumida": "Viagem de passageiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.18,
+    "timestamp": "2026-10-26T18:34:12Z",
+    "idDocumento": 7400643
+  }
+}

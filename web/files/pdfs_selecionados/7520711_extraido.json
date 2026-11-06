@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "076 MELHOR 10 - CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "00306597007614",
+  "numero_documento": "595461",
+  "data_emissao": "2023-03-14",
+  "valor_total": 156.0,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:55:31Z",
+    "tempo_segundos": 22.08,
+    "idDocumento": 7520711
+  }
+}

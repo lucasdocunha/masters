@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5554781,
+  "ano": 2014,
+  "mes": 11,
+  "fornecedor": "SC Combustíveis",
+  "cnpjCPF": "838.884.040/0019-0",
+  "numero": "255830",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-11-24T00:00:00",
+  "valorDocumento": 60.0,
+  "valorLiquido": 60.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "LUCI CHOINACKI",
+  "cpfParlamentar": "70740178920",
+  "siglaUF": "SC",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/841/2014/5554781.pdf"
+}

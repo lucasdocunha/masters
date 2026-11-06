@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7483424,
+  "ano": 2023,
+  "mes": 1,
+  "fornecedor": "LAZARO ROSA DOS SANTOS",
+  "cnpjCPF": "337.966.108/20  -",
+  "numero": "s/n",
+  "tipoDocumento": "1",
+  "dataEmissao": "2023-01-02T00:00:00",
+  "valorDocumento": 2800.0,
+  "valorLiquido": 2800.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Odair Cunha",
+  "cpfParlamentar": "94892393649",
+  "siglaUF": "MG",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1625/2023/7483424.pdf"
+}

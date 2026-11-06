@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SAMIRA LIS LOPES SOUZA 03269653352",
+  "fornecedor_cnpj_cpf": "37.845.697/0001-01",
+  "numero_documento": "24",
+  "data_emissao": "2025-04-02",
+  "valor_total": 4000.0,
+  "descricao_resumida": "DIVULGAÇÃO DE ATIVIDADES PARLAMENTARES",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.78,
+    "timestamp": "2026-10-26T21:31:31Z",
+    "idDocumento": 7893709
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO VERALI LTDA.",
+  "fornecedor_cnpj_cpf": "00.875.134/0001-56",
+  "numero_documento": "013977",
+  "data_emissao": "2014-09-29",
+  "valor_total": 49.99,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:28:54Z",
+    "tempo_segundos": 20.03,
+    "idDocumento": 5532021
+  }
+}

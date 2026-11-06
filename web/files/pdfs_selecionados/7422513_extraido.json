@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Sabesp - Companhia de Saneamento Básico do Estado de São Paulo",
+  "fornecedor_cnpj_cpf": "43.776.517/0001-80",
+  "numero_documento": "SOR202275220478",
+  "data_emissao": "2022-07-18",
+  "valor_total": 95.47,
+  "descricao_resumida": "Fatura de serviços de água e/ou esgotos",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:39:48Z",
+    "tempo_segundos": 58.66,
+    "idDocumento": 7422513
+  }
+}

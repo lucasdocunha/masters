@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "DJ HOTELARIA SA IU A HOTEL",
+  "fornecedor_cnpj_cpf": "04.566.342/0003-96",
+  "numero_documento": "000123096",
+  "data_emissao": "2025-01-18",
+  "valor_total": 739.99,
+  "descricao_resumida": "Hospedagem (diária, taxa de serviço e ISS) - UH: 412 Tipo de UH: DBL SUPERIOR CASAL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:29:18Z",
+    "tempo_segundos": 10.36,
+    "idDocumento": 7861653
+  }
+}

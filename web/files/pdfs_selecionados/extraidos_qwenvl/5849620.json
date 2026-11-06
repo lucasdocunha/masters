@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BANCO BRADESCO S.A.",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "111.101",
+  "data_emissao": "2015-11-11",
+  "valor_total": 476.4,
+  "descricao_resumida": "COMPROVANTE DE PAGAMENTO DE TITULOS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.29,
+    "timestamp": "2026-10-26T18:17:55Z",
+    "idDocumento": 5849620
+  }
+}

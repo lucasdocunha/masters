@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5572111,
+  "ano": 2014,
+  "mes": 12,
+  "fornecedor": "Posto do Papai",
+  "cnpjCPF": "174.183.770/0016-8",
+  "numero": "398779",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-12-11T00:00:00",
+  "valorDocumento": 132.96,
+  "valorLiquido": 132.96,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "DR. GRILO",
+  "cpfParlamentar": "70743126653",
+  "siglaUF": "MG",
+  "siglaPartido": "SDD",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2234/2014/5572111.pdf"
+}

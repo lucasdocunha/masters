@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Adria",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "957 2122796689",
+  "data_emissao": "24/08/2023 - 15:43",
+  "valor_total": 3614.23,
+  "descricao_resumida": "Bilhete Eletrônico LATAM Airlines para viagem de passageiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.51,
+    "timestamp": "2026-10-26T18:36:28Z",
+    "idDocumento": 7605465
+  }
+}

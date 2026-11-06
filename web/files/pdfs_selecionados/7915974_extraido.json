@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "DALLE HOTEL LTDA - EPP",
+  "fornecedor_cnpj_cpf": "21.218.848/0001-61",
+  "numero_documento": "00002990",
+  "data_emissao": "2025-05-09",
+  "valor_total": 189.0,
+  "descricao_resumida": "Hospedagem de uma diária",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:45:23Z",
+    "tempo_segundos": 10.9,
+    "idDocumento": 7915974
+  }
+}

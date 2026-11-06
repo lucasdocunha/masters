@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SERVICO NACIONAL DE APRENDIZAGEM COMERCIAL SENAC",
+  "fornecedor_cnpj_cpf": "33.489.172/0006-72",
+  "numero_documento": "4140",
+  "data_emissao": "2017-06-28",
+  "valor_total": 27.28,
+  "descricao_resumida": "PRATO DO DIA 1, CHA PESSEGO 340ML",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 23.71,
+    "timestamp": "2026-10-26T19:41:59Z",
+    "idDocumento": 6324520
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VITORIA TECNOLOGIA DA INFORMACAO LTDA.",
+  "fornecedor_cnpj_cpf": "06.069.667/0001-27",
+  "numero_documento": "004353",
+  "data_emissao": "2019-03-07",
+  "valor_total": 1600.0,
+  "descricao_resumida": "Locacao de equipamentos period 01/03 ate 31/03/2019: 5 Desktops Lenovo Core i5 com monitor e 1 Impressora Brother DCP 1617",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:22:23Z",
+    "tempo_segundos": 3.94,
+    "idDocumento": 6805494
+  }
+}

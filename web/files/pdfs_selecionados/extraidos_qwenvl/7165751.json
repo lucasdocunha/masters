@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AILTON CONCOLATO & CIA LTDA - EPP",
+  "fornecedor_cnpj_cpf": "38830-000",
+  "numero_documento": "11102",
+  "data_emissao": "06/03/2021",
+  "valor_total": 67.0,
+  "descricao_resumida": "Hospedagem de qualquer natureza em hotéis, apartamentos, hotéis residenciais, pousadas, suítes, hotelaria marítima, motéis, pousadas e congressos; ocupação por temporada com fornecimento de serviço.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.09,
+    "timestamp": "2026-10-26T18:31:21Z",
+    "idDocumento": 7165751
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5724124,
+  "ano": 2015,
+  "mes": 4,
+  "fornecedor": "GNV SETE BELO LTDA",
+  "cnpjCPF": "043.995.440/0012-9",
+  "numero": "936328",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-04-27T00:00:00",
+  "valorDocumento": 50.0,
+  "valorLiquido": 50.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Lincoln Portela",
+  "cpfParlamentar": "10254730191",
+  "siglaUF": "MG",
+  "siglaPartido": "PR",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1355/2015/5724124.pdf"
+}

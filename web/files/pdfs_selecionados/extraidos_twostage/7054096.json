@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GDI COM. DE COMBUSTIVEIS 2 LTDA",
+  "fornecedor_cnpj_cpf": "30.472.287/0001-59",
+  "numero_documento": "000033431",
+  "data_emissao": "2020-03-07",
+  "valor_total": 183.92,
+  "descricao_resumida": "KAL 10% P/6A",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 15.58,
+    "timestamp": "2026-10-26T20:25:36Z",
+    "idDocumento": 7054096
+  }
+}

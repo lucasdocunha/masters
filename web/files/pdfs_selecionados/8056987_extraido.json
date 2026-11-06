@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Elvira Alice Souza Ribeiro Terra",
+  "fornecedor_cnpj_cpf": "76743942634",
+  "numero_documento": null,
+  "data_emissao": "2026-02-27",
+  "valor_total": 1150.0,
+  "descricao_resumida": "Pagamento de aluguel do imóvel localizado na Av. José Paulino da Costa, n° 64, bairro Centro, Alfenas/MG, referente ao mês de fevereiro de 2026.",
+  "observacoes": "Recibo de aluguel assinado digitalmente.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:55:56Z",
+    "tempo_segundos": 2.22,
+    "idDocumento": 8056987
+  }
+}

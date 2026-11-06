@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MAGESHOP MAGESHOP TECNOLOGIA DA INFORMAÇÃO LTDA",
+  "fornecedor_cnpj_cpf": "08.312.228/0001-29",
+  "numero_documento": "26474",
+  "data_emissao": "2023-06-14",
+  "valor_total": null,
+  "descricao_resumida": null,
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.6,
+    "timestamp": "2026-10-26T20:58:21Z",
+    "idDocumento": 7560013
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7088249,
+  "ano": 2020,
+  "mes": 8,
+  "fornecedor": "HOTEL ECOS LTDA",
+  "cnpjCPF": "089.900.100/0012-3",
+  "numero": "202000000000609",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-08-29T00:00:00",
+  "valorDocumento": 125.0,
+  "valorLiquido": 125.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Léo Moraes",
+  "cpfParlamentar": "04333073901",
+  "siglaUF": "RO",
+  "siglaPartido": "PODE",
+  "descricaoDespesa": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3263/2020/7088249.pdf"
+}

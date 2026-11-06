@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DE GASOLINA CARDOSO DE CASIRO LIDA.",
+  "fornecedor_cnpj_cpf": "14.715.136/0001-92",
+  "numero_documento": "000000000000001",
+  "data_emissao": "2015-01-23",
+  "valor_total": 100.08,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.75,
+    "timestamp": "2026-10-26T18:18:19Z",
+    "idDocumento": 5632308
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "TUPYCOMPANY COMUNICACAO LTDA-ME",
+  "fornecedor_cnpj_cpf": "18.082.174/0001-06",
+  "numero_documento": "5/E",
+  "data_emissao": "2019-10-17",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Servicos de propaganda e publicidade, promocao de vendas e planejamento de campanhas",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:32:58Z",
+    "tempo_segundos": 2.56,
+    "idDocumento": 6946937
+  }
+}

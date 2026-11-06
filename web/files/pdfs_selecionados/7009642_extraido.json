@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "020096",
+  "data_emissao": "2020-01-21",
+  "valor_total": 170.0,
+  "descricao_resumida": "Diesel Evollux S-10 (43.6010 Litros)",
+  "observacoes": "Imagem com trechos desbotados, CNPJ e nome do emitente ilegíveis.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:32:00Z",
+    "tempo_segundos": 30.97,
+    "idDocumento": 7009642
+  }
+}

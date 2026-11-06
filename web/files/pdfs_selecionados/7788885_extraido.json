@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "50.052.999 IGOR SALLES BARBOSA",
+  "fornecedor_cnpj_cpf": "50.052.999/0001-90",
+  "numero_documento": "16",
+  "data_emissao": "2024-08-15",
+  "valor_total": 6600.0,
+  "descricao_resumida": "Serviço de fotografia para divulgação da atividade parlamentar do Dep. Federal Chico Alencar, referente ao mês de agosto de 2024, no site e redes sociais do mandato.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:17:29Z",
+    "tempo_segundos": 3.65,
+    "idDocumento": 7788885
+  }
+}

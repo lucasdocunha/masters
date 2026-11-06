@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LM RECORTES E SINALIZACOES LTDA ME",
+  "fornecedor_cnpj_cpf": "20.790.493/0001-18",
+  "numero_documento": "1972",
+  "data_emissao": "2026-03-18",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Impressão de 1500 encartes de prestação de contas do mandato, para fins de divulgação da atividade do parlamentar.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:51:48Z",
+    "tempo_segundos": 2.41,
+    "idDocumento": 8070811
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6558893,
+  "ano": 2018,
+  "mes": 4,
+  "fornecedor": "REAL ALIMENTOS LTDA",
+  "cnpjCPF": "714.519.260/0049-4",
+  "numero": "207095",
+  "tipoDocumento": "0",
+  "dataEmissao": "2018-04-16T00:00:00",
+  "valorDocumento": 23.67,
+  "valorLiquido": 21.37,
+  "valorGlosa": 2.3,
+  "nomeParlamentar": "Herculano Passos",
+  "cpfParlamentar": "00551632895",
+  "siglaUF": "SP",
+  "siglaPartido": "MDB",
+  "descricaoDespesa": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2976/2018/6558893.pdf"
+}

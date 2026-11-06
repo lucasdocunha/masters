@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PONTA LOCAÇÃO DE VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "42.761.872/0001-12",
+  "numero_documento": "0771",
+  "data_emissao": "2026-09-01",
+  "valor_total": 5500.0,
+  "descricao_resumida": "Fatura referente a locação do veículo de placa SSH9D63, período de 01/08/2026 até 31/08/2026",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:43:34Z",
+    "tempo_segundos": 2.2,
+    "idDocumento": 8153750
+  }
+}

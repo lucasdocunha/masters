@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": null,
+  "valor_total": null,
+  "descricao_resumida": null,
+  "observacoes": "Documento fiscal totalmente ilegível devido à má qualidade da imagem.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:46:08Z",
+    "tempo_segundos": 18.6,
+    "idDocumento": 7031219
+  }
+}

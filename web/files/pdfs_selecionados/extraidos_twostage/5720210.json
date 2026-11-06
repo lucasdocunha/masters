@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO DACAR LTDA.",
+  "fornecedor_cnpj_cpf": "18.522.781/0001-40",
+  "numero_documento": "12/06/2015",
+  "data_emissao": "2015-06-12",
+  "valor_total": 80.0,
+  "descricao_resumida": "ETANOL HIDRATADO COMBUSTIVEL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 14.57,
+    "timestamp": "2026-10-26T19:05:13Z",
+    "idDocumento": 5720210
+  }
+}

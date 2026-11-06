@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "LA HOTELS EMPREENDIMENTOS 1 LTDA.",
+  "fornecedor_cnpj_cpf": "09.109.567/0009-22",
+  "numero_documento": "00306979",
+  "data_emissao": "2017-05-02",
+  "valor_total": 315.0,
+  "descricao_resumida": "Hospedagem em apart-service, flat, apart-hotéis, residence-service e congêneres.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 20.53,
+    "timestamp": "2026-10-26T19:30:20Z",
+    "idDocumento": 6274230
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VIA 040 CONCESSIONARIA BR040 S/A",
+  "fornecedor_cnpj_cpf": "19.726.048/0001-00",
+  "numero_documento": "6100153241UM",
+  "data_emissao": "2017-01-11",
+  "valor_total": 4.8,
+  "descricao_resumida": "Tarifa de pedagio - PRACA:P6 Felixlndia Norte",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:30:44Z",
+    "tempo_segundos": 1.99,
+    "idDocumento": 6188688
+  }
+}

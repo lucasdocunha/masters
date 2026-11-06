@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SAO JOSE PALACE HOTEL LTDA",
+  "fornecedor_cnpj_cpf": "04.961.560/0001-63",
+  "numero_documento": "15205",
+  "data_emissao": "2025-06-26",
+  "valor_total": 330.0,
+  "descricao_resumida": "Serviço de Hospedagem - R$ 165,00\nServiço de Diárias - 165,00",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.81,
+    "timestamp": "2026-10-26T21:30:49Z",
+    "idDocumento": 7946461
+  }
+}

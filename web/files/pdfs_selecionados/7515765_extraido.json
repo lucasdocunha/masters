@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Kalunga SA",
+  "fornecedor_cnpj_cpf": "43.283.811/0059-76",
+  "numero_documento": "738163",
+  "data_emissao": "2023-03-24",
+  "valor_total": 7.4,
+  "descricao_resumida": "Cola instantânea 2g power flex gel Super Bonder 2078040 Henkel",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:38:39Z",
+    "tempo_segundos": 3.32,
+    "idDocumento": 7515765
+  }
+}

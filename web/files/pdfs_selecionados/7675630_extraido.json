@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SCHUH & FILHO LTDA",
+  "fornecedor_cnpj_cpf": "85.216.299/0001-79",
+  "numero_documento": "000137840",
+  "data_emissao": "2024-01-23",
+  "valor_total": 315.17,
+  "descricao_resumida": "Gas Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:12:38Z",
+    "tempo_segundos": 1.98,
+    "idDocumento": 7675630
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BRASILIA PART.PLANEJ. ADM. DE SHOPPING CENTER LTDA",
+  "fornecedor_cnpj_cpf": "37.065.604/0003-98",
+  "numero_documento": "590853",
+  "data_emissao": "2020-07-08",
+  "valor_total": 4.9,
+  "descricao_resumida": "Nota Fiscal de Consumidor Eletrônica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.7,
+    "timestamp": "2026-10-26T20:17:20Z",
+    "idDocumento": 7081101
+  }
+}

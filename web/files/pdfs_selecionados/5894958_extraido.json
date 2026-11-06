@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO SALES GOULART LTDA",
+  "fornecedor_cnpj_cpf": "14.534.413/0001-60",
+  "numero_documento": "406704",
+  "data_emissao": "2016-01-15",
+  "valor_total": 191.92,
+  "descricao_resumida": "Oleo Diesel S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:02:28Z",
+    "tempo_segundos": 2.14,
+    "idDocumento": 5894958
+  }
+}

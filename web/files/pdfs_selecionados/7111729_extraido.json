@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PEDRO VITOR RANGEL GONCALVES 13576733701",
+  "fornecedor_cnpj_cpf": "29.977.914/0001-99",
+  "numero_documento": "00000054",
+  "data_emissao": "2020-11-03",
+  "valor_total": 8150.0,
+  "descricao_resumida": "Serviço de intérprete de LIBRAS para conteúdo online da Erika Kokay",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:25:18Z",
+    "tempo_segundos": 32.76,
+    "idDocumento": 7111729
+  }
+}

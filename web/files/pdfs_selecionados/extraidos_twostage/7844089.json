@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Podium MIX Ltda.",
+  "fornecedor_cnpj_cpf": "02.204.462/0001-56",
+  "numero_documento": "476",
+  "data_emissao": "2024-12-11",
+  "valor_total": null,
+  "descricao_resumida": "Divulgação de atividade parlamentar do Deputado Bibo Nunes, na Rádio Diário Serrano, referente ao mês de dezembro/2024. Nota quitada a vista.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.26,
+    "timestamp": "2026-10-26T21:20:16Z",
+    "idDocumento": 7844089
+  }
+}

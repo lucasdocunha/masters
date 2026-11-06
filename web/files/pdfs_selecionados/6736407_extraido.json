@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RODRIGO CAMPANELLA GONCALVES BARBOSA 06008533658",
+  "fornecedor_cnpj_cpf": "17.782.403/0001-32",
+  "numero_documento": "2019/1",
+  "data_emissao": "2019-01-09",
+  "valor_total": 250.0,
+  "descricao_resumida": "Serviço de hospedagem em servidor e manutenção do site/blog hospedado no endereço www.patrusananias.com.br entre os dias 11 de dezembro de 2018 e 10 de janeiro de 2019",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:03:24Z",
+    "tempo_segundos": 74.62,
+    "idDocumento": 6736407
+  }
+}

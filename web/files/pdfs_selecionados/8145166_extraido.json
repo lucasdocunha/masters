@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LOJA TOP 10 COMERCIO DE EQUIPAMENTOS DE INFORMATICA LTDA",
+  "fornecedor_cnpj_cpf": "41.357.623/0001-01",
+  "numero_documento": "000.037.106",
+  "data_emissao": "2026-08-07",
+  "valor_total": 65.19,
+  "descricao_resumida": "ARQUIVO FACIL ECONOMICO - AZUL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:51:41Z",
+    "tempo_segundos": 1.87,
+    "idDocumento": 8145166
+  }
+}

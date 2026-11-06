@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO FLAMENCO EIRELI",
+  "fornecedor_cnpj_cpf": "13.200.425/0001-96",
+  "numero_documento": "255307",
+  "data_emissao": "2022-09-27",
+  "valor_total": 100.0,
+  "descricao_resumida": "ETANOL COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:21:17Z",
+    "tempo_segundos": 9.77,
+    "idDocumento": 7446031
+  }
+}

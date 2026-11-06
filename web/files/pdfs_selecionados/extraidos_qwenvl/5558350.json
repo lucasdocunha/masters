@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ESTELITA RODRIGUES-ME",
+  "fornecedor_cnpj_cpf": "05.491.394/0001-84",
+  "numero_documento": "27372",
+  "data_emissao": "30/11/14",
+  "valor_total": 79.0,
+  "descricao_resumida": "Recebemos",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.3,
+    "timestamp": "2026-10-26T18:15:14Z",
+    "idDocumento": 5558350
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ADHEMAR FERREIRA MACIEL",
+  "fornecedor_cnpj_cpf": "01.064.966-20",
+  "numero_documento": "01.22.2594988.55",
+  "data_emissao": "17/03/2022",
+  "valor_total": 210.39,
+  "descricao_resumida": "IMPOSTO PREDIAL E TERRITORIAL URBANO - IPTU / 2022",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.1,
+    "timestamp": "2026-10-26T18:34:59Z",
+    "idDocumento": 7346992
+  }
+}

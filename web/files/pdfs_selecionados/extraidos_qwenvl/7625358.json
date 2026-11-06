@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PREfeitURA MUNICIPAL DE JOÃO PESSOA",
+  "fornecedor_cnpj_cpf": "1000530",
+  "numero_documento": "WDYF5XHBK",
+  "data_emissao": "27.573.137/0001-91",
+  "valor_total": 60.0,
+  "descricao_resumida": "1.08 - Planejamento, confecção, manutenção e atualização de páginas eletrônicas.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.65,
+    "timestamp": "2026-10-26T18:34:53Z",
+    "idDocumento": 7625358
+  }
+}

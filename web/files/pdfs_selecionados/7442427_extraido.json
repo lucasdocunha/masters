@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "IF LOCACOES DE IMOVEIS EIRELI",
+  "fornecedor_cnpj_cpf": "34.625.024/0001-58",
+  "numero_documento": "147",
+  "data_emissao": "2022-09-12",
+  "valor_total": 3321.0,
+  "descricao_resumida": "Aluguel periodo 05/08/2022 a 04/09/2022",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:38:00Z",
+    "tempo_segundos": 3.08,
+    "idDocumento": 7442427
+  }
+}

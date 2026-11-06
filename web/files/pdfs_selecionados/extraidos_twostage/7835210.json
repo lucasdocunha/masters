@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "RONI MOTORS LOCACOES LTDA",
+  "fornecedor_cnpj_cpf": "37.331.288/0001-97",
+  "numero_documento": "84",
+  "data_emissao": "2024-11-01",
+  "valor_total": 4000.0,
+  "descricao_resumida": "Operação Interestadual para Consumidor final",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.54,
+    "timestamp": "2026-10-26T21:14:24Z",
+    "idDocumento": 7835210
+  }
+}

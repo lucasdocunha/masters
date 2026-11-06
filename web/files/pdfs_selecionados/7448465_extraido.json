@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Eletropaulo Metropolitana Eletricidade de São Paulo S.A.",
+  "fornecedor_cnpj_cpf": "61.695.227/0001-93",
+  "numero_documento": "451294377",
+  "data_emissao": "2022-10-11",
+  "valor_total": 71.45,
+  "descricao_resumida": "Fornecimento de energia elétrica referente a OUT 2022",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:20:35Z",
+    "tempo_segundos": 8.48,
+    "idDocumento": 7448465
+  }
+}

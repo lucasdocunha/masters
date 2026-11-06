@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Eletropaulo Metropolitana Eletricidade de São Paulo S.A",
+  "fornecedor_cnpj_cpf": "61.695.227/0001-93",
+  "numero_documento": "667598365",
+  "data_emissao": "2024-12-07",
+  "valor_total": 130.09,
+  "descricao_resumida": "Conta de energia elétrica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:03:49Z",
+    "tempo_segundos": 2.97,
+    "idDocumento": 7852977
+  }
+}

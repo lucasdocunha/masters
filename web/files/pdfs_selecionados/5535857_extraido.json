@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Isaías Imóveis",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2014-10-14",
+  "valor_total": 2128.5,
+  "descricao_resumida": "Recibo de aluguel referente ao período 2014/08 do imóvel situado na Av. Dos Holandeses, 100, Sala 20, Barracenter, Calhau, São Luis - MA.",
+  "observacoes": "Documento do tipo Recibo de Aluguel sem CNPJ legível do emissor e sem número de documento.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:32:02Z",
+    "tempo_segundos": 2.15,
+    "idDocumento": 5535857
+  }
+}

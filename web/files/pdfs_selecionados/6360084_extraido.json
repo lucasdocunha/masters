@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Conc. de Rodovias Minas Gerais Goias S/A - MGO Rodovias",
+  "fornecedor_cnpj_cpf": "19.208.022/0001-70",
+  "numero_documento": "569350",
+  "data_emissao": "2017-07-30",
+  "valor_total": 6.3,
+  "descricao_resumida": "Tarifa de pedagio - Praca UBERABA Sul, BR 050 Km 104+900",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:21:16Z",
+    "tempo_segundos": 20.52,
+    "idDocumento": 6360084
+  }
+}

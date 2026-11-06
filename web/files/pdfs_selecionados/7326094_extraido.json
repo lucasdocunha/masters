@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ORN MIDIA COMUNICACAO EIRELI",
+  "fornecedor_cnpj_cpf": "29.649.568/0001-10",
+  "numero_documento": "275",
+  "data_emissao": "2021-12-29",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Gestao de midias, estrategia de comunicacao, criacao de artes e geracao de conteudo com foco na divulgacao das atividades parlamentares.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:05:00Z",
+    "tempo_segundos": 15.92,
+    "idDocumento": 7326094
+  }
+}

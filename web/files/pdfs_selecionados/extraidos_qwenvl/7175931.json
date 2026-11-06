@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Sobral & Palacio Petroleo Ltda",
+  "fornecedor_cnpj_cpf": "07.240.641/0028-82",
+  "numero_documento": "30010001",
+  "data_emissao": "2021-03-18",
+  "valor_total": 204.45,
+  "descricao_resumida": "GASOLINA COMUM Bico 21",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.15,
+    "timestamp": "2026-10-26T18:31:34Z",
+    "idDocumento": 7175931
+  }
+}

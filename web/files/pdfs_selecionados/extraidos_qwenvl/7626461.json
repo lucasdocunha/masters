@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PERUZZO COMERCIO DE COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "09.314.845/0001-26",
+  "numero_documento": "820101034",
+  "data_emissao": "2023-10-07",
+  "valor_total": 299.34,
+  "descricao_resumida": "DIESEL S-10 - Bico 14",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.62,
+    "timestamp": "2026-10-26T18:37:53Z",
+    "idDocumento": 7626461
+  }
+}

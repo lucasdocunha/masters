@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Local Locacao, Corretagem e Adm. Ltda.",
+  "fornecedor_cnpj_cpf": "17.148.263/0001-45",
+  "numero_documento": "0352/31370-4",
+  "data_emissao": "2019-07-29",
+  "valor_total": 1188.91,
+  "descricao_resumida": "Aluguel, condominio, IPTU, seguro incendio e taxa bancaria referente a 01/07/2019 a 31/07/2019",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:22:14Z",
+    "tempo_segundos": 16.59,
+    "idDocumento": 6879846
+  }
+}

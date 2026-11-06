@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Telefônica Brasil S/A",
+  "fornecedor_cnpj_cpf": "02558157000162",
+  "numero_documento": "0689233184-0",
+  "data_emissao": "2018-09-19",
+  "valor_total": 167.17,
+  "descricao_resumida": "Serviços de telecomunicações, internet e cobrança de serviços de terceiros",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:04:18Z",
+    "tempo_segundos": 13.16,
+    "idDocumento": 6688286
+  }
+}

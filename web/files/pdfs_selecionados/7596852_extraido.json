@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MOVIDA LOCAÇÃO DE VEÍCULOS S.A.",
+  "fornecedor_cnpj_cpf": "07976147005472",
+  "numero_documento": "20286325",
+  "data_emissao": "2023-03-17",
+  "valor_total": 2919.6,
+  "descricao_resumida": "Serviços de aluguel de carros (Diária, COMPLETA MENSAL ASSINATURA, Carro Reserva 7 dias Assinatura, Condutor Adicional)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:59:22Z",
+    "tempo_segundos": 2.23,
+    "idDocumento": 7596852
+  }
+}

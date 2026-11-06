@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7745694,
+  "ano": 2024,
+  "mes": 5,
+  "fornecedor": "POP DIGITAL LTDA",
+  "cnpjCPF": "433.290.670/0018-7",
+  "numero": "0000000104",
+  "tipoDocumento": "0",
+  "dataEmissao": "2024-05-30T00:00:00",
+  "valorDocumento": 12000.0,
+  "valorLiquido": 12000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Leonardo Monteiro",
+  "cpfParlamentar": "20811845672",
+  "siglaUF": "MG",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1582/2024/7745694.pdf"
+}

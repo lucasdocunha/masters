@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7146294,
+  "ano": 2020,
+  "mes": 12,
+  "fornecedor": "Ibaneza Santos Salles",
+  "cnpjCPF": "002.054.439/15  -",
+  "numero": "SN",
+  "tipoDocumento": "1",
+  "dataEmissao": "2020-12-21T00:00:00",
+  "valorDocumento": 7000.0,
+  "valorLiquido": 7000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Felipe Francischini",
+  "cpfParlamentar": "08317508986",
+  "siglaUF": "PR",
+  "siglaPartido": "UNIÃO",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3292/2021/7146294.pdf"
+}

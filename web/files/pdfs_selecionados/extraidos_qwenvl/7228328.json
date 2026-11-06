@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SOARES E FERNANDES LTDA",
+  "fornecedor_cnpj_cpf": "11.119.923/0001-83",
+  "numero_documento": "00000645",
+  "data_emissao": "2021-08-12",
+  "valor_total": 3500.0,
+  "descricao_resumida": "CONTEUDO DIVULGACAO DE CONTEUDO EM SITES",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.87,
+    "timestamp": "2026-10-26T18:32:13Z",
+    "idDocumento": 7228328
+  }
+}

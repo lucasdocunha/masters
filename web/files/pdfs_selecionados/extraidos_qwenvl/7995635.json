@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DWS COMUNICACAO LTDA",
+  "fornecedor_cnpj_cpf": "42.864.019/0001-26",
+  "numero_documento": "00000449",
+  "data_emissao": "2025-10-07",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Serviço de publicidade e design de imagens da Deputada Federal Tabata Amaral nas mídias sociais. Divulgação de atividades parlamentares.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.0,
+    "timestamp": "2026-10-26T18:41:56Z",
+    "idDocumento": 7995635
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Greyce De Queiroz Elias",
+  "fornecedor_cnpj_cpf": "051.325.976-70",
+  "numero_documento": "26115248597",
+  "data_emissao": "29/05/26",
+  "valor_total": null,
+  "descricao_resumida": "extrato de usos para conferência referente ao período de 28/04/26¹ a 29/05/26².",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.67,
+    "timestamp": "2026-10-26T18:44:16Z",
+    "idDocumento": 8112197
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JOSE RENATO FREITAS BAPTISTA",
+  "fornecedor_cnpj_cpf": "30.082.765/0001-89",
+  "numero_documento": "00050062",
+  "data_emissao": "2022-02-21",
+  "valor_total": null,
+  "descricao_resumida": "EDIÇÃO DO CONTEÚDO DO WEBSITE PARA O DEPUTADOR MARCEL VAN HATTEM. O SERVIÇO INCLUI REALIZAÇÃO DE POSTAGENS PERIÓDICAS, BACKUP DE TODOS OS DOCUMENTOS DO SITE LIMPEZA DE HOSPEDAGEM E UPLOAD DE TODOS OS ARQUIVOS QUE ESTAVAM NO SITE ANTERIORMENTE.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.67,
+    "timestamp": "2026-10-26T20:43:47Z",
+    "idDocumento": 7321260
+  }
+}

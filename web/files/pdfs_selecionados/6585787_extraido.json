@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "NIDOTTI & PAIVA LOCACAO DE VEICULOS E COM. DE PECAS LTDA ME",
+  "fornecedor_cnpj_cpf": "02.629.260/0001-56",
+  "numero_documento": "00001725",
+  "data_emissao": "2018-05-21",
+  "valor_total": 2500.0,
+  "descricao_resumida": "Locação de veículo de 20/04/2018 a 20/05/2018",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:31:08Z",
+    "tempo_segundos": 3.03,
+    "idDocumento": 6585787
+  }
+}

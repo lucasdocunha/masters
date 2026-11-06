@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MEL SERVICOS AUTOMOTIVOS LT",
+  "fornecedor_cnpj_cpf": "70939582000151",
+  "numero_documento": "490008",
+  "data_emissao": "2022-02-12",
+  "valor_total": 230.02,
+  "descricao_resumida": "ETANOL HIDRATADO COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:38:39Z",
+    "tempo_segundos": 3.85,
+    "idDocumento": 7332754
+  }
+}

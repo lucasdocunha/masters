@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DWS COMUNICACAO LTDA",
+  "fornecedor_cnpj_cpf": "42.864.019/0001-26",
+  "numero_documento": "00000449",
+  "data_emissao": "2025-10-07",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Service of publicity and design of images for the Federal Deputy Tabata Amaral on social media. Publicity of parliamentary activities. Month of reference: September. Paid note.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.99,
+    "timestamp": "2026-10-26T21:36:39Z",
+    "idDocumento": 7995635
+  }
+}

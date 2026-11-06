@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PARDAL LOCAÇÕES DE VEÍCULOS E SERVIÇOS EIRELI",
+  "fornecedor_cnpj_cpf": "13.730.487/0001-00",
+  "numero_documento": "672",
+  "data_emissao": "2020-05-15",
+  "valor_total": 2600.0,
+  "descricao_resumida": "Prestação de serviços de Locação de Veículos no período de 01 de abril/2020 a 30 de abril/2020.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 16.72,
+    "timestamp": "2026-10-26T20:18:52Z",
+    "idDocumento": 7054171
+  }
+}

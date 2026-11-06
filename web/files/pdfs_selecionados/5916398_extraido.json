@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GM Ribeiro da Costa Restaurante - EPP",
+  "fornecedor_cnpj_cpf": "01.552.582/0001-81",
+  "numero_documento": "54850",
+  "data_emissao": "2016-02-17",
+  "valor_total": 170.0,
+  "descricao_resumida": "Despesa c/ Refeição",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:14:34Z",
+    "tempo_segundos": 2.47,
+    "idDocumento": 5916398
+  }
+}

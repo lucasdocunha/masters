@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "INVESTICAR VEICULOS LTDA EPP",
+  "fornecedor_cnpj_cpf": "01.615.224/0001-70",
+  "numero_documento": "645",
+  "data_emissao": "2025-08-01",
+  "valor_total": 5800.0,
+  "descricao_resumida": "Locação de Veículo Executivo SEM MOTORISTA (Toyota Corolla, placa RET0E86, período 01/07 a 31/07/2025)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:36:31Z",
+    "tempo_segundos": 24.74,
+    "idDocumento": 7957375
+  }
+}

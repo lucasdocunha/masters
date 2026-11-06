@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Movida Participações S.A.",
+  "fornecedor_cnpj_cpf": "21.314.559/0001-66",
+  "numero_documento": "26195004/1",
+  "data_emissao": "2025-04-02",
+  "valor_total": 377.92,
+  "descricao_resumida": "Aluguel de veículos (diária), proteção básica, lavagem simples antecipada, proteção a pneus e vidros plus, condutor adicional e taxa administrativa.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:37:57Z",
+    "tempo_segundos": 23.67,
+    "idDocumento": 7924159
+  }
+}

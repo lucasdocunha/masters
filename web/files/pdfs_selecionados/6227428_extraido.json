@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMPANHIA BRASILEIRA DE DISTRIBUICAO",
+  "fornecedor_cnpj_cpf": "47.508.411/0685-40",
+  "numero_documento": "069396",
+  "data_emissao": "2017-02-23",
+  "valor_total": 151.06,
+  "descricao_resumida": "Gas Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:34:21Z",
+    "tempo_segundos": 7.51,
+    "idDocumento": 6227428
+  }
+}

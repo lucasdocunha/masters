@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "TAXI LEGAL",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "1956",
+  "data_emissao": "2022-04-18",
+  "valor_total": 39.0,
+  "descricao_resumida": "Reclamações e objetos esquecidos.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.15,
+    "timestamp": "2026-10-26T18:30:14Z",
+    "idDocumento": 7305149
+  }
+}

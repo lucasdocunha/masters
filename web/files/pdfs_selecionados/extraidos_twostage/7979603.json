@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO S.R. LTDA",
+  "fornecedor_cnpj_cpf": "17.011.467/0001-30",
+  "numero_documento": null,
+  "data_emissao": "2025-09-05",
+  "valor_total": 205.95,
+  "descricao_resumida": "ORIGINAL ETANOL (Código: 000001)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 16.86,
+    "timestamp": "2026-10-26T21:37:40Z",
+    "idDocumento": 7979603
+  }
+}

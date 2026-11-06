@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "BRUNO RAYLENIO DE SOUZA 06507955124",
+  "fornecedor_cnpj_cpf": "27.456.163/0001-30",
+  "numero_documento": "00000006",
+  "data_emissao": "2017-12-27",
+  "valor_total": 24000.0,
+  "descricao_resumida": "Producao de 04 VTs institucional de 30\" referente atividades parlamentares Dep. Federal Johnathan Pereira de Jesus.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:26:08Z",
+    "tempo_segundos": 2.62,
+    "idDocumento": 6477167
+  }
+}

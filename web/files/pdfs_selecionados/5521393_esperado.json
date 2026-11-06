@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5521393,
+  "ano": 2014,
+  "mes": 10,
+  "fornecedor": "PANIFICADORA DA VILA II LTDA.",
+  "cnpjCPF": "029.142.010/0012-0",
+  "numero": "028473",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-10-09T00:00:00",
+  "valorDocumento": 24.23,
+  "valorLiquido": 24.23,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "FRANCISCO DE ASSIS",
+  "cpfParlamentar": "48484709949",
+  "siglaUF": "SC",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2874/2014/5521393.pdf"
+}

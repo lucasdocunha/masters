@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ALYSSON PAIXÃO DE OLIVEIRA ALVES",
+  "fornecedor_cnpj_cpf": "685.131.356-15",
+  "numero_documento": null,
+  "data_emissao": "2018-01-26",
+  "valor_total": 5000.0,
+  "descricao_resumida": "Aluguel Período 01/01/2018 à 31/01/2018",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.79,
+    "timestamp": "2026-10-26T19:50:14Z",
+    "idDocumento": 6491582
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RKV ALIMENTOS LTDA",
+  "fornecedor_cnpj_cpf": "34.652.187/0001-20",
+  "numero_documento": "046456",
+  "data_emissao": "2022-05-20",
+  "valor_total": 46.9,
+  "descricao_resumida": "1 PARMEGGIANA DE MIGNON, 1 COCA COLA ZERO LT",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:20:22Z",
+    "tempo_segundos": 335.16,
+    "idDocumento": 7384390
+  }
+}

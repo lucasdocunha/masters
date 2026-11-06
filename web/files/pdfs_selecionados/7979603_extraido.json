@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO S.R. LTDA",
+  "fornecedor_cnpj_cpf": "17.011.467/0001-30",
+  "numero_documento": "21170",
+  "data_emissao": "2025-08-19",
+  "valor_total": 205.95,
+  "descricao_resumida": "ORIGINAL ETANOL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:40:31Z",
+    "tempo_segundos": 36.51,
+    "idDocumento": 7979603
+  }
+}

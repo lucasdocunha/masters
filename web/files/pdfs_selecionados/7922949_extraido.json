@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Edenilton Lima Pereira",
+  "fornecedor_cnpj_cpf": "300.570.782-20",
+  "numero_documento": null,
+  "data_emissao": "2025-05-30",
+  "valor_total": 3900.0,
+  "descricao_resumida": "Aluguel de fretamento da embarcação Presente de Deus para viagens nas comunidades ribeirinhas do Baixo Araguari.",
+  "observacoes": "Recibo de pagamento de serviços de fretamento de embarcação.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:33:08Z",
+    "tempo_segundos": 2.59,
+    "idDocumento": 7922949
+  }
+}

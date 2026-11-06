@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RAJA RENT A CAR S/A",
+  "fornecedor_cnpj_cpf": "01338388000106",
+  "numero_documento": "17629",
+  "data_emissao": "2020-08-31",
+  "valor_total": 6000.0,
+  "descricao_resumida": "Locação de veículo (Contrato 2863/9, Período: 01/08/2020 a 31/08/2020, Placa: QXD1026 FRONTIER LE X4)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:33:30Z",
+    "tempo_segundos": 2.87,
+    "idDocumento": 7106392
+  }
+}

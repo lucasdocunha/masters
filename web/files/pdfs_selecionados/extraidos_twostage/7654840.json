@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "50.818.159/0001-96",
+  "fornecedor_cnpj_cpf": "50.818.159/0001-96",
+  "numero_documento": "8",
+  "data_emissao": "2023-11-30",
+  "valor_total": null,
+  "descricao_resumida": "NFS-e",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.56,
+    "timestamp": "2026-10-26T20:58:50Z",
+    "idDocumento": 7654840
+  }
+}

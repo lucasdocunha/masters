@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "IRMAOS RUSSI LTDA",
+  "fornecedor_cnpj_cpf": "32550685253",
+  "numero_documento": "000005277",
+  "data_emissao": "2016-02-24",
+  "valor_total": 188.44,
+  "descricao_resumida": "Venda de combustíveis",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.54,
+    "timestamp": "2026-10-26T19:23:30Z",
+    "idDocumento": 5944125
+  }
+}

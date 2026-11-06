@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7086345,
+  "ano": 2020,
+  "mes": 8,
+  "fornecedor": "J P FONTES DA SILVA",
+  "cnpjCPF": "143.649.620/0013-4",
+  "numero": "8",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-08-21T00:00:00",
+  "valorDocumento": 4150.0,
+  "valorLiquido": 4150.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Mara Rocha",
+  "cpfParlamentar": "41186273291",
+  "siglaUF": "AC",
+  "siglaPartido": "MDB",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3375/2020/7086345.pdf"
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PETROENGE COM. DE COMBUSTIVEIS E SERVICOS LTDA",
+  "fornecedor_cnpj_cpf": "02.985.247/0001-30",
+  "numero_documento": "14:14:16",
+  "data_emissao": "2015-05-22",
+  "valor_total": 100.0,
+  "descricao_resumida": "GAS C Bo:0281:03",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 1.87,
+    "timestamp": "2026-10-26T18:17:25Z",
+    "idDocumento": 5692144
+  }
+}

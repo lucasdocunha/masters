@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BRASIL 21 EVENTOS E HOTELARIA LTDA",
+  "fornecedor_cnpj_cpf": "08.796.076/0006-91",
+  "numero_documento": "015648",
+  "data_emissao": "2017-04-27",
+  "valor_total": 36.3,
+  "descricao_resumida": "Cafe Condorino LM TUN YT, Taxa de Servico 3,3UNx1,00 N1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 18.68,
+    "timestamp": "2026-10-26T19:34:34Z",
+    "idDocumento": 6270511
+  }
+}

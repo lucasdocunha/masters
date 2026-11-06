@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ALBERES XAVIER DE ASSUNCAO",
+  "fornecedor_cnpj_cpf": "35.746.829/0001-12",
+  "numero_documento": "00000388",
+  "data_emissao": "2023-05-26",
+  "valor_total": 1000.0,
+  "descricao_resumida": "Referente a divulgacao da atividade parlamentar do deputado federal Lula da Fonte no blog do Alberes Xavier no mes de maio de 2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:47:04Z",
+    "tempo_segundos": 2.46,
+    "idDocumento": 7550424
+  }
+}

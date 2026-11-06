@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7269376,
+  "ano": 2021,
+  "mes": 10,
+  "fornecedor": "ECT",
+  "cnpjCPF": "109.141.460/0010-4",
+  "numero": "2141272726",
+  "tipoDocumento": "1",
+  "dataEmissao": "2021-10-01T00:00:00",
+  "valorDocumento": 35.11,
+  "valorLiquido": 35.11,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Vitor Lippi",
+  "cpfParlamentar": "00168780860",
+  "siglaUF": "SP",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "SERVIÇOS POSTAIS",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2954/2021/7269376.pdf"
+}

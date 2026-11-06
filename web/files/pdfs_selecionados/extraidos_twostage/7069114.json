@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Equatorial Pará Distribuidora de Energia S.A.",
+  "fornecedor_cnpj_cpf": "04.895.728/0001-80",
+  "numero_documento": null,
+  "data_emissao": "2020-05-26",
+  "valor_total": 475.01,
+  "descricao_resumida": "Consumo, ICMS, PIS, COFINS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.82,
+    "timestamp": "2026-10-26T20:26:36Z",
+    "idDocumento": 7069114
+  }
+}

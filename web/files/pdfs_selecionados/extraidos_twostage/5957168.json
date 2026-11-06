@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CIDADE DOIS LTDA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2016-03-07",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA CERUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 9.88,
+    "timestamp": "2026-10-26T19:24:04Z",
+    "idDocumento": 5957168
+  }
+}

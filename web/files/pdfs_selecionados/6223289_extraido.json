@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "TURORO POSTO DE SERVICO LTDA - POSTO APACHE",
+  "fornecedor_cnpj_cpf": "20.467.448/0001-27",
+  "numero_documento": "078934",
+  "data_emissao": "2017-02-24",
+  "valor_total": 350.18,
+  "descricao_resumida": "Aquisição de Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:22:14Z",
+    "tempo_segundos": 2.33,
+    "idDocumento": 6223289
+  }
+}

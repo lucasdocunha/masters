@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7316993,
+  "ano": 2022,
+  "mes": 1,
+  "fornecedor": "Companhia Energética de Pernambuco",
+  "cnpjCPF": "108.359.320/0010-8",
+  "numero": "189329437",
+  "tipoDocumento": "0",
+  "dataEmissao": "2022-01-08T00:00:00",
+  "valorDocumento": 152.36,
+  "valorLiquido": 152.36,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Túlio Gadêlha",
+  "cpfParlamentar": "06016298417",
+  "siglaUF": "PE",
+  "siglaPartido": "REDE",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3419/2022/7316993.pdf"
+}

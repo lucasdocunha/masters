@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VIACAO NOVO HORIZONTE LTDA",
+  "fornecedor_cnpj_cpf": "60.829.264/0003-46",
+  "numero_documento": "1441128",
+  "data_emissao": "10/06/2021 - 13:21:50",
+  "valor_total": 9.07,
+  "descricao_resumida": "Digest Value do BP-e",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.72,
+    "timestamp": "2026-10-26T18:31:40Z",
+    "idDocumento": 7217645
+  }
+}

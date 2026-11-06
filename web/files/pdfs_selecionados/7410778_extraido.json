@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionaria Auto Raposo Tavares S/A",
+  "fornecedor_cnpj_cpf": "10.531.501/0009-09",
+  "numero_documento": "3842407992335",
+  "data_emissao": null,
+  "valor_total": null,
+  "descricao_resumida": "Tarifa de pedagio - Praca P3 - SP 327",
+  "observacoes": "Documento parcialmente ilegivel, faltando data de emissao e valor total.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:23:59Z",
+    "tempo_segundos": 18.39,
+    "idDocumento": 7410778
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Jeferson do Pedro Silva",
+  "fornecedor_cnpj_cpf": "30.605.977/0001-01",
+  "numero_documento": "0791-A",
+  "data_emissao": "2024-11-07",
+  "valor_total": 93.0,
+  "descricao_resumida": "Serviço de transporte de táxi no percurso Anexo IV/SCES/P.Planalto/Anexo IV",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:18:04Z",
+    "tempo_segundos": 30.01,
+    "idDocumento": 7831438
+  }
+}

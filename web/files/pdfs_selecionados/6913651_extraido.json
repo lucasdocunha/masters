@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO AEROPORTO LTDA",
+  "fornecedor_cnpj_cpf": "16665259003191",
+  "numero_documento": "24725",
+  "data_emissao": "2019-08-27",
+  "valor_total": 136.67,
+  "descricao_resumida": "OLEO DIESEL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:23:33Z",
+    "tempo_segundos": 8.45,
+    "idDocumento": 6913651
+  }
+}

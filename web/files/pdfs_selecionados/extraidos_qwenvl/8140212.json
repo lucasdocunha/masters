@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PREST SERVICE – REPRESENTAÇÕES E SERVIÇOS LTDA",
+  "fornecedor_cnpj_cpf": "12.184.807-0001-00 I.M.:164234",
+  "numero_documento": "07",
+  "data_emissao": "30/07/2026",
+  "valor_total": 4000.0,
+  "descricao_resumida": "LOCAÇÃO DE 01 VEÍCULO VIRTUS PLACA: TNW9B06",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.92,
+    "timestamp": "2026-10-26T18:45:02Z",
+    "idDocumento": 8140212
+  }
+}

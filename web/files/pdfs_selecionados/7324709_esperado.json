@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7324709,
+  "ano": 2022,
+  "mes": 1,
+  "fornecedor": "AUTO POSTO FARTURA DO IGUACU LTDA",
+  "cnpjCPF": "790.637.640/0018-6",
+  "numero": "502500",
+  "tipoDocumento": "0",
+  "dataEmissao": "2022-01-19T00:00:00",
+  "valorDocumento": 291.17,
+  "valorLiquido": 291.17,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Sergio Souza",
+  "cpfParlamentar": "75687658904",
+  "siglaUF": "PR",
+  "siglaPartido": "MDB",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3062/2022/7324709.pdf"
+}

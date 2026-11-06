@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BIER FASS RESTAURANTE MUSEU LTDA",
+  "fornecedor_cnpj_cpf": "05.033.214/0001-88",
+  "numero_documento": "0000442",
+  "data_emissao": "2023-04-01",
+  "valor_total": 108.8,
+  "descricao_resumida": "SUGO DE ABACAXI HOUN, PIPETI, AGUA 300 ML, SUGO LARANJA JARRUM, AGUA C/ÁGUA SODAL, APFELSTRADEL C/CHAO, BUFFET DE ALMOÇO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.45,
+    "timestamp": "2026-10-26T19:28:58Z",
+    "idDocumento": 6209004
+  }
+}

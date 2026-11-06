@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMERCIAL LIMEIRENSE DE COMBUSTÍVEL LTDA",
+  "fornecedor_cnpj_cpf": "62.376.991/0001-69",
+  "numero_documento": "019165",
+  "data_emissao": "2020-10-13",
+  "valor_total": 100.0,
+  "descricao_resumida": "001 C96 B04-ETANOL COMUM 38,477 L X 2,599 (25,45)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.05,
+    "timestamp": "2026-10-26T18:29:04Z",
+    "idDocumento": 7116240
+  }
+}

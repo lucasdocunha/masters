@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VENTURA COMERCIO E SERVICOS LTDA.",
+  "fornecedor_cnpj_cpf": "02.083.719/0001-69",
+  "numero_documento": "37446",
+  "data_emissao": "2019-05-17",
+  "valor_total": 224.98,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:32:34Z",
+    "tempo_segundos": 4.19,
+    "idDocumento": 6874472
+  }
+}

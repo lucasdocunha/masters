@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Conc. de Rodovia Sul Matogrossense S/A",
+  "fornecedor_cnpj_cpf": "19.642.306/0001-70",
+  "numero_documento": "0016061005164604645600068B734",
+  "data_emissao": "2022-03-02",
+  "valor_total": 6.1,
+  "descricao_resumida": "Tarifa de pedagio - Rod. BR-163, KM 533,8 Jaraguari, MS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:41:19Z",
+    "tempo_segundos": 8.28,
+    "idDocumento": 7337979
+  }
+}

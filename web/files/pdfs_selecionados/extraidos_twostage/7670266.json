@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CANDELA ESTRATEGIA E COMUNICACAO LTDA",
+  "fornecedor_cnpj_cpf": "38.731.601/0001-47",
+  "numero_documento": "00064",
+  "data_emissao": "2023-12-27",
+  "valor_total": null,
+  "descricao_resumida": "Propaganda e publicidade, inclusiva promoção de vendas, planejamento de campanhas ou sistemas de publicidade, elaboração de desenhos, textos e demais materiais publicitários",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.21,
+    "timestamp": "2026-10-26T20:58:51Z",
+    "idDocumento": 7670266
+  }
+}

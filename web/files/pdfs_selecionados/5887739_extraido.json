@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "JACEMAX EPP LTDA",
+  "fornecedor_cnpj_cpf": "02.605.360/0001-42",
+  "numero_documento": "62255",
+  "data_emissao": "2015-12-01",
+  "valor_total": 147.13,
+  "descricao_resumida": "Serviços de postagens (Carta Simples Comercial e Telegrama Nacional 4H Pré-pago)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:59:27Z",
+    "tempo_segundos": 2.74,
+    "idDocumento": 5887739
+  }
+}

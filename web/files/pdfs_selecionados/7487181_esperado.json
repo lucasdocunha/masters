@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7487181,
+  "ano": 2023,
+  "mes": 1,
+  "fornecedor": "POSTO NARUM LTDA",
+  "cnpjCPF": "391.345.980/0014-7",
+  "numero": "120906",
+  "tipoDocumento": "0",
+  "dataEmissao": "2023-01-16T00:00:00",
+  "valorDocumento": 200.0,
+  "valorLiquido": 200.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Lourival Gomes",
+  "cpfParlamentar": "42310580759",
+  "siglaUF": "RJ",
+  "siglaPartido": "PP",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3167/2023/7487181.pdf"
+}

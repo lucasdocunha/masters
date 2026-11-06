@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CMP COMUNICACAO E ASSESSORIA LTDA - ME",
+  "fornecedor_cnpj_cpf": "08.742.048/0001-87",
+  "numero_documento": "7845",
+  "data_emissao": "2025-08-26",
+  "valor_total": 1000.0,
+  "descricao_resumida": "Divulgação da atividade parlamentar do Deputado Federal Thiago Flores no Jornal Eletrônico Rondoniaovivo.com",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:30:58Z",
+    "tempo_segundos": 2.04,
+    "idDocumento": 7979181
+  }
+}

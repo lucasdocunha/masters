@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CONEXAO COMUNICACOES LTDA",
+  "fornecedor_cnpj_cpf": "02.294.065/0001-12",
+  "numero_documento": "20200000000029",
+  "data_emissao": "2020-08-17",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Referente a divulgacao das acoes do mandato do deputado federal Waldenor Pereira no Blog de Giorlando Lima",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:37:05Z",
+    "tempo_segundos": 24.62,
+    "idDocumento": 7083428
+  }
+}

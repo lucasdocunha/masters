@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CELPE",
+  "fornecedor_cnpj_cpf": "323001C7-AC SHOPPING CENTER RECIFE",
+  "numero_documento": "99341872",
+  "data_emissao": "22/02/2018",
+  "valor_total": 539.91,
+  "descricao_resumida": "COMPRAS DE PRODUTOS COM COD. BARA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.41,
+    "timestamp": "2026-10-26T18:23:22Z",
+    "idDocumento": 6512044
+  }
+}

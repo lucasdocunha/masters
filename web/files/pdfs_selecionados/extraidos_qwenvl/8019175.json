@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Localiza",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "RECF218911081",
+  "data_emissao": "2025-09-18",
+  "valor_total": 4596.59,
+  "descricao_resumida": "Contrato de Aluguel de Carros/Proposta de Seguro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.39,
+    "timestamp": "2026-10-26T18:40:18Z",
+    "idDocumento": 8019175
+  }
+}

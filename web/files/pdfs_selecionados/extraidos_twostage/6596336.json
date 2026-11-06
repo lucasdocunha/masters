@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ASSOCIAÇÃO DOS TAXISTAS DA RODOVIARIA DE PORTO VELHO",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2018-05-10",
+  "valor_total": 80.0,
+  "descricao_resumida": "Transporte no trajeto entre Porto Velho a Jari",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 8.31,
+    "timestamp": "2026-10-26T19:49:37Z",
+    "idDocumento": 6596336
+  }
+}

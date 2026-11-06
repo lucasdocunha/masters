@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PLANELTUR HOTELARIA E PLANEJAMENTO LTDA",
+  "fornecedor_cnpj_cpf": "82.845.249/0001-62",
+  "numero_documento": "4103",
+  "data_emissao": "2026-08-03",
+  "valor_total": 518.0,
+  "descricao_resumida": "Hospedagem em hotéis, diária - Qtde: 2",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:03:16Z",
+    "tempo_segundos": 36.83,
+    "idDocumento": 8148624
+  }
+}

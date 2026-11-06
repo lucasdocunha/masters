@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO VIA NORTE COMERCIO DE COMBUSTIVEL LTDA ME",
+  "fornecedor_cnpj_cpf": "06.604.284/0001-37",
+  "numero_documento": "000102685",
+  "data_emissao": "2019-08-31",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA TIPO C GRANEL 22,733",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 18.37,
+    "timestamp": "2026-10-26T20:05:07Z",
+    "idDocumento": 6918960
+  }
+}

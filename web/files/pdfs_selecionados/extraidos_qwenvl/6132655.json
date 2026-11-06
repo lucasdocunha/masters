@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SERVICIO NACIONAL DE APRENDIZ COM SENAC RESTAURANTE-ESCOLA DOS SENADORES",
+  "fornecedor_cnpj_cpf": "33.469.172/0022-92",
+  "numero_documento": "07.317.349/012-98",
+  "data_emissao": "18/10/2016",
+  "valor_total": 47.1,
+  "descricao_resumida": "EXPRESSO MACCHIATO TUR M1 FRUTAS DA ESTACAO HIX FOLHAS CORDOEIRO BANSEADO CON CUSCUZ AGUA MINERAL CON GAS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.2,
+    "timestamp": "2026-10-26T18:18:52Z",
+    "idDocumento": 6132655
+  }
+}

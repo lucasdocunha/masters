@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "54.439.413/0001-04",
+  "fornecedor_cnpj_cpf": "54.439.413/0001-04",
+  "numero_documento": "18/11/2024 10:34:19",
+  "data_emissao": "2024-11-18",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Divulgação das atividades parlamentares do deputado federal Dr. Frederico, no mês de NOVEMBRO de 2024, por meio da gestão de conteúdos em seu canal no Youtube, cujo link de acesso é: https://youtube.com/@drfredericmg",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.76,
+    "timestamp": "2026-10-26T18:40:21Z",
+    "idDocumento": 7831001
+  }
+}

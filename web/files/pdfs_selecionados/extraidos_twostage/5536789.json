@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CASA DO COLEGIAL LIVRARIA E PAPELARIA LTDA",
+  "fornecedor_cnpj_cpf": "00.670.562/0001-42",
+  "numero_documento": "017892",
+  "data_emissao": "2014-11-05",
+  "valor_total": 109.8,
+  "descricao_resumida": "Arquivo morto Polifonada ProntoBox Cinza Polycart, Envelope Kraft Natural Blister, Clips Aço Galvanizado",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 15.91,
+    "timestamp": "2026-10-26T18:50:11Z",
+    "idDocumento": 5536789
+  }
+}

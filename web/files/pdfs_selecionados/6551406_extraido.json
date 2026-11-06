@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO SANTO AMARO D IMPERATRIZ LTDA",
+  "fornecedor_cnpj_cpf": "02494093000183",
+  "numero_documento": "000437279",
+  "data_emissao": "2018-04-05",
+  "valor_total": 125.28,
+  "descricao_resumida": "Gasolina V Power",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:14:19Z",
+    "tempo_segundos": 6.91,
+    "idDocumento": 6551406
+  }
+}

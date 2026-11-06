@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EcoPistas SP-070",
+  "fornecedor_cnpj_cpf": "10841050000155",
+  "numero_documento": "CDC84CBF-5C1C-468A-93B2-4EEBD4B976C6",
+  "data_emissao": "2021-12-02",
+  "valor_total": 4.2,
+  "descricao_resumida": "Tarifa de pedagio - Pista 09 Itaquaquecetuba Oeste",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:36:14Z",
+    "tempo_segundos": 2.37,
+    "idDocumento": 7303165
+  }
+}

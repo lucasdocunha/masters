@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "STAR PRINT INFORMATICA LTDA - ME",
+  "fornecedor_cnpj_cpf": "08.217.476/0001-90",
+  "numero_documento": "4207007-Icara/SC",
+  "data_emissao": "2016-07-14",
+  "valor_total": 70.0,
+  "descricao_resumida": "HOSPEDAGEM DE EMAIL 1GB (Qtd=1, 00, Valor=70, 00)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.78,
+    "timestamp": "2026-10-26T18:19:57Z",
+    "idDocumento": 6052556
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5831734,
+  "ano": 2015,
+  "mes": 10,
+  "fornecedor": "TORRES BARBOSA COM. DE DERIV. DE PETROLEO LTDA",
+  "cnpjCPF": "032.411.230/0010-2",
+  "numero": "369944",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-10-08T00:00:00",
+  "valorDocumento": 50.0,
+  "valorLiquido": 50.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Alice Portugal",
+  "cpfParlamentar": "12377392504",
+  "siglaUF": "BA",
+  "siglaPartido": "PCdoB",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1531/2015/5831734.pdf"
+}

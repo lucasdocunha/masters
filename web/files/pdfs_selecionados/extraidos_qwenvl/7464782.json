@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO CAR SERVIÇOS DE LOCAÇÃO E TURISMO LTDA.",
+  "fornecedor_cnpj_cpf": "02.212.119/0001-53",
+  "numero_documento": "1698",
+  "data_emissao": "31.10.22",
+  "valor_total": 10000.0,
+  "descricao_resumida": "Locação mensal de veículo Tipo SUV - Jeep Mod. Step Rane gate - Placa: RJU3007 Plometoura no mês de Outubro/22",
+  "observacoes": "Nota Quisada",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.26,
+    "timestamp": "2026-10-26T18:35:46Z",
+    "idDocumento": 7464782
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MARCELO SILVA GOMES",
+  "fornecedor_cnpj_cpf": "46.111.614/0001-41",
+  "numero_documento": "202600000004",
+  "data_emissao": "2026-01-01",
+  "valor_total": 27.0,
+  "descricao_resumida": "1702 - Datilografia, digitação, estenografia, expediente, secretaria em geral, resposta audível, redação, edição, interpretação, revisão, tradução, apoio e infra-estrutura administrativa e congêneres.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.11,
+    "timestamp": "2026-10-26T18:39:50Z",
+    "idDocumento": 8038587
+  }
+}

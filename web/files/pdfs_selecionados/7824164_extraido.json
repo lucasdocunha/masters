@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SIMONY LUCENA DA SILVA 07078076460",
+  "fornecedor_cnpj_cpf": "41.649.020/0001-75",
+  "numero_documento": "15",
+  "data_emissao": "2024-10-25",
+  "valor_total": 800.0,
+  "descricao_resumida": "Referente a divulgacao da atividade parlamentar do Deputado Federal Hugo Motta no portal \\\"www.acessesertao.com\\\", no mes de OUTUBRO DE 2024.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:11:19Z",
+    "tempo_segundos": 22.52,
+    "idDocumento": 7824164
+  }
+}

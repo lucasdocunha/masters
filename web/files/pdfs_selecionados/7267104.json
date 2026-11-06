@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7267104,
+  "ano": 2021,
+  "mes": 10,
+  "fornecedor": "JORGE CURI SA HOTEIS TURISMO",
+  "cnpjCPF": "921.923.680/0011-7",
+  "numero": "50693",
+  "tipoDocumento": "0",
+  "dataEmissao": "2021-10-01T00:00:00",
+  "valorDocumento": 208.0,
+  "valorLiquido": 208.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Maria do Rosário",
+  "cpfParlamentar": "48989371015",
+  "siglaUF": "RS",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1605/2021/7267104.pdf"
+}

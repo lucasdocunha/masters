@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "QUALITILOC AUTOMOVEIS LTDA",
+  "fornecedor_cnpj_cpf": "05864744000178",
+  "numero_documento": "000.001.429",
+  "data_emissao": "2019-12-09",
+  "valor_total": 7900.0,
+  "descricao_resumida": "LOCACAO DO VEICULO TRAILBLAZER LT TRAILBLAZER LT 2.8 2019/2019, TERMO DE CONTRATO 000002.01/2019",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:39:23Z",
+    "tempo_segundos": 34.02,
+    "idDocumento": 6979151
+  }
+}

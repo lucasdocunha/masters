@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SKY",
+  "fornecedor_cnpj_cpf": "401226177751-2",
+  "numero_documento": "401226177751",
+  "data_emissao": "2021-07-16",
+  "valor_total": 272.38,
+  "descricao_resumida": "Pacotes e Combos",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.35,
+    "timestamp": "2026-10-26T20:41:03Z",
+    "idDocumento": 7231446
+  }
+}

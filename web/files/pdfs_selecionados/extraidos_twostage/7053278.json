@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GLOBAL IDEAS COMUNICACAO E EVENTOS LTDA",
+  "fornecedor_cnpj_cpf": "35.224.503/0001-25",
+  "numero_documento": "00008",
+  "data_emissao": "2020-05-04",
+  "valor_total": null,
+  "descricao_resumida": "Assessoria ou consultoria de qualquer natureza, não contida em outros itens desta lista; análise, exame, pesquisa, coleta, compilação e fornecimento de dados e informações de qualquer natureza, inclusive cadastro e similares",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.23,
+    "timestamp": "2026-10-26T20:21:42Z",
+    "idDocumento": 7053278
+  }
+}

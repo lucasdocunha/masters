@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SEM PARAR INSTITUICAO DE PAGAMENTO LTDA.",
+  "fornecedor_cnpj_cpf": "04088208000165",
+  "numero_documento": "665530100",
+  "data_emissao": "2025-11-08",
+  "valor_total": 1477.49,
+  "descricao_resumida": "Plano Contratado, Estabelecimentos, Estacionamento, Passagens",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:48:54Z",
+    "tempo_segundos": 32.24,
+    "idDocumento": 8019195
+  }
+}

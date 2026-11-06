@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6578321,
+  "ano": 2018,
+  "mes": 5,
+  "fornecedor": "J B FRANCO",
+  "cnpjCPF": "219.692.260/0017-5",
+  "numero": "162",
+  "tipoDocumento": "0",
+  "dataEmissao": "2018-05-09T00:00:00",
+  "valorDocumento": 1800.0,
+  "valorLiquido": 1800.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Geraldo Resende",
+  "cpfParlamentar": "12896918191",
+  "siglaUF": "MS",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1649/2018/6578321.pdf"
+}

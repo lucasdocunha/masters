@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7623566,
+  "ano": 2023,
+  "mes": 10,
+  "fornecedor": "POSTO AEL SAO JOSE LTDA",
+  "cnpjCPF": "172.725.500/0016-2",
+  "numero": "896473",
+  "tipoDocumento": "0",
+  "dataEmissao": "2023-10-09T00:00:00",
+  "valorDocumento": 142.71,
+  "valorLiquido": 142.71,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Paulo Abi-Ackel",
+  "cpfParlamentar": "30825628172",
+  "siglaUF": "MG",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1904/2023/7623566.pdf"
+}

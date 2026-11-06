@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CENTRO AUTOMOTIVO PORTAL DAS PERDIZES LTDA",
+  "fornecedor_cnpj_cpf": "62.794.854/0001-44",
+  "numero_documento": "483549",
+  "data_emissao": "2025-05-23",
+  "valor_total": 142.34,
+  "descricao_resumida": "Gasolina",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:42:08Z",
+    "tempo_segundos": 2.99,
+    "idDocumento": 7920926
+  }
+}

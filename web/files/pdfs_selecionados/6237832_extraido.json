@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Target Rent a Car Ltda",
+  "fornecedor_cnpj_cpf": "21652672000151",
+  "numero_documento": "014361",
+  "data_emissao": "2017-02-03",
+  "valor_total": 3400.0,
+  "descricao_resumida": "Locação do veículo L-Corolla XEI 2.0 placa PVV-4682 referente ao período de 01/01/2017 a 31/01/2017",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:24:03Z",
+    "tempo_segundos": 2.4,
+    "idDocumento": 6237832
+  }
+}

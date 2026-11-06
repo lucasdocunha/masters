@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LUCAS JANUARIO ANDRADE AZEVEDO ME",
+  "fornecedor_cnpj_cpf": "27108268000106",
+  "numero_documento": "20222",
+  "data_emissao": "2022-01-17",
+  "valor_total": 1000.0,
+  "descricao_resumida": "Elaboração e divulgação de matérias jornalísticas no Jornal Novo Tempo Falls e no site www.jntnews.com.br das atividades parlamentares do Deputado Vermelho.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:27:13Z",
+    "tempo_segundos": 8.67,
+    "idDocumento": 7316536
+  }
+}

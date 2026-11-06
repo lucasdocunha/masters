@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HOTEL LANCASTER LTDA",
+  "fornecedor_cnpj_cpf": "72.220.536/0001-23",
+  "numero_documento": "20220000002349",
+  "data_emissao": "2022-11-24",
+  "valor_total": 128.48,
+  "descricao_resumida": "Despesa de Hospedagem",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:34:27Z",
+    "tempo_segundos": 8.63,
+    "idDocumento": 7467016
+  }
+}

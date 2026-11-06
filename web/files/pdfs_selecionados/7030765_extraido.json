@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PANTANAL VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "07.319.323/0001-91",
+  "numero_documento": "18660",
+  "data_emissao": "2020-02-29",
+  "valor_total": 9500.0,
+  "descricao_resumida": "LOCAÇÃO DE VEÍCULO PBU 5072",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:30:33Z",
+    "tempo_segundos": 17.02,
+    "idDocumento": 7030765
+  }
+}

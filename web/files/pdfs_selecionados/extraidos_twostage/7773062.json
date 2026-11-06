@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EVAG COMUNICACAO E TECNOLOGIA LTDA.",
+  "fornecedor_cnpj_cpf": "15.705.697/0001-73",
+  "numero_documento": "00001204",
+  "data_emissao": "2024-07-10",
+  "valor_total": 4000.0,
+  "descricao_resumida": "Hospedagem, manutenção, ajustes e atualização do site do mandato parlamentar da deputada, disponível em https://samiabomfim.com.br",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.1,
+    "timestamp": "2026-10-26T21:24:17Z",
+    "idDocumento": 7773062
+  }
+}

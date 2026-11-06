@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO BARTOLONEU DE GUSMAO II LTDA",
+  "fornecedor_cnpj_cpf": "11030-500 SAHTOS",
+  "numero_documento": "234546",
+  "data_emissao": "2023-07-27",
+  "valor_total": 209.24,
+  "descricao_resumida": "GASOLINA COMUM 25,700 L x 4,99 (32,07) GASOLIHA COMUM 6,213 L x 4,99 (7,75) GASOLIHA COMUM 10,021 L x 4,99 (12,50)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.38,
+    "timestamp": "2026-10-26T18:36:42Z",
+    "idDocumento": 7587362
+  }
+}

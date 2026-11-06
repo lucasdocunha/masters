@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "00.306.597/0021-40",
+  "numero_documento": "203288",
+  "data_emissao": "2017-11-06",
+  "valor_total": 59.54,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.45,
+    "timestamp": "2026-10-26T18:21:25Z",
+    "idDocumento": 6433517
+  }
+}

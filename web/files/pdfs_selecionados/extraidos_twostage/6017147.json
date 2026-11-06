@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SAGRADA FAMÍLIA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "REBOQUE",
+  "data_emissao": "2016-06-03",
+  "valor_total": 45.0,
+  "descricao_resumida": "Prestação de serviço de táxi",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 6.38,
+    "timestamp": "2026-10-26T19:23:59Z",
+    "idDocumento": 6017147
+  }
+}

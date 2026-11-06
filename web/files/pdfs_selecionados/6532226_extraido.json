@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Prefeitura Municipal de Vitória",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "096613",
+  "data_emissao": "2018-03-09",
+  "valor_total": 437.7,
+  "descricao_resumida": "IPTU e Taxas 2018 Cota Única",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:08:37Z",
+    "tempo_segundos": 9.59,
+    "idDocumento": 6532226
+  }
+}

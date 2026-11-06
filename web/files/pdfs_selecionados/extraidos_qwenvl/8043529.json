@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "FOCO COMUNICACAO E ESTRATEGIA LTDA",
+  "fornecedor_cnpj_cpf": "50.133.257/0001-90",
+  "numero_documento": "61",
+  "data_emissao": "2026-01-05",
+  "valor_total": 500.0,
+  "descricao_resumida": "Assessoria ou consultoria de qualquer natureza, não cont...",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.51,
+    "timestamp": "2026-10-26T18:43:09Z",
+    "idDocumento": 8043529
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CONCESS. RODOVIA OESTE DE SAO PAULO S/A",
+  "fornecedor_cnpj_cpf": "02.415.408/0001-50",
+  "numero_documento": null,
+  "data_emissao": "2014-07-11",
+  "valor_total": 3.5,
+  "descricao_resumida": "Pedágio",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 5.74,
+    "timestamp": "2026-10-26T18:52:26Z",
+    "idDocumento": 5494607
+  }
+}

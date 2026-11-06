@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Construtora e Incorporadora Nassau Ltda",
+  "fornecedor_cnpj_cpf": "11.168.945/0001-33",
+  "numero_documento": "1951",
+  "data_emissao": "2022-08-05",
+  "valor_total": 6891.5,
+  "descricao_resumida": "Aluguel Receita 01/08/2022 até 31/08/2022 + IPTU Despesa Parcela 8 de 10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.98,
+    "timestamp": "2026-10-26T20:54:33Z",
+    "idDocumento": 7439829
+  }
+}

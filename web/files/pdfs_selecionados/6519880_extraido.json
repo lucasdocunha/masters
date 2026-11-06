@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MAQUINE EMPREENDIMENTOS LTDA.",
+  "fornecedor_cnpj_cpf": "17321647000380",
+  "numero_documento": "2018/4544",
+  "data_emissao": "2018-03-06",
+  "valor_total": 384.34,
+  "descricao_resumida": "Hospedagem de uma diária em apartamento standard triplo",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:08:07Z",
+    "tempo_segundos": 10.69,
+    "idDocumento": 6519880
+  }
+}

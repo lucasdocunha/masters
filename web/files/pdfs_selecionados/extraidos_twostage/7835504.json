@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Localiza",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": null,
+  "valor_total": null,
+  "descricao_resumida": "Nota fiscal emitida pela Localiza para esclarecer sobre a obrigatoriedade de emissão de nota fiscal.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 9.74,
+    "timestamp": "2026-10-26T21:23:32Z",
+    "idDocumento": 7835504
+  }
+}

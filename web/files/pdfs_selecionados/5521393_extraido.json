@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PANIFICADORA DA VILA II LTDA - EPP",
+  "fornecedor_cnpj_cpf": "02.914.201/0001-20",
+  "numero_documento": "028473",
+  "data_emissao": "2014-09-10",
+  "valor_total": 24.23,
+  "descricao_resumida": "Buffet cafe",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:27:59Z",
+    "tempo_segundos": 1.94,
+    "idDocumento": 5521393
+  }
+}

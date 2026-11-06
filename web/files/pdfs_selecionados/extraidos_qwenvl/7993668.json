@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MARANATA AUTO POSTO DE BOTUCATU LTDA",
+  "fornecedor_cnpj_cpf": "07.170.458/0001-38",
+  "numero_documento": "000009091",
+  "data_emissao": "2025-10-07",
+  "valor_total": 92.01,
+  "descricao_resumida": "C1 B02-GASOLINA COMUM 15,361 L X 5,990",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.98,
+    "timestamp": "2026-10-26T18:42:16Z",
+    "idDocumento": 7993668
+  }
+}

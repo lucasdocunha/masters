@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6995144,
+  "ano": 2020,
+  "mes": 1,
+  "fornecedor": "POSTO CAPIM DOURADO LTDA",
+  "cnpjCPF": "073.743.460/0010-7",
+  "numero": "530523",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-01-11T00:00:00",
+  "valorDocumento": 50.0,
+  "valorLiquido": 50.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Major Vitor Hugo",
+  "cpfParlamentar": "07063842706",
+  "siglaUF": "GO",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3196/2020/6995144.pdf"
+}

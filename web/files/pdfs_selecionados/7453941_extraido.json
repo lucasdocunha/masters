@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ASOX SERVIÇOS DE TECNOLOGIA EIRELI",
+  "fornecedor_cnpj_cpf": "38.007.059/0001-84",
+  "numero_documento": "00068",
+  "data_emissao": "2022-10-10",
+  "valor_total": 475.0,
+  "descricao_resumida": "LOCACAO DE UM RACK SERVIDOR PARA SWITCH, MODEM E PABX.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:34:25Z",
+    "tempo_segundos": 26.19,
+    "idDocumento": 7453941
+  }
+}

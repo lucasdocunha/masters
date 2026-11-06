@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO N O LTDA",
+  "fornecedor_cnpj_cpf": "07.014.538/0001-02",
+  "numero_documento": "593306",
+  "data_emissao": "2022-05-09",
+  "valor_total": 202.69,
+  "descricao_resumida": "ETANOL COMUN Ba:001 Bi:19",
+  "observacoes": "Cartão de Crédito\n05.07.05.04-Comete crime quem sonega\nObservações do Contribuinte\nTrib aprox R$35,43 Fed. 36,48 Est. 0,00 Mun. Fonte:IBPT\nItendente: 03 - 03\nValor aproximado dos tributos do item\nSAT No. 000.932.205\n09/05/2022 - 14:21:09\n3522 0507 0145 3800 0102 5900 0932 2055 9330 6569 6337",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 4.0,
+    "timestamp": "2026-10-26T18:33:17Z",
+    "idDocumento": 7387884
+  }
+}

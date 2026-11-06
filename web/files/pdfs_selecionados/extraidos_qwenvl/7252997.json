@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MONTES URUBICI RESTAURANTE",
+  "fornecedor_cnpj_cpf": "38.505.212/0001-01 E: 260690511",
+  "numero_documento": "000008763",
+  "data_emissao": "2021-09-12",
+  "valor_total": 272.8,
+  "descricao_resumida": "JORNEDOR DE HIGNON COM TALHAR 1 Un T12 00% 100 AGUA MINERAL SEM GAS 500 ML 1 Un T12 00% 100 AGUA MINERAL COM GAS 500 ML 1 Un T12 00% 375 PUDIM DE LETITE CONDENSADO 1 Un T12,00% BURRATA 1 Un T12,00% CERVEJA IPA CSJ 500 ML 1 Un F1 KIDS LASCAS DE HIGNON COM ARR 1 Un T12,00% SERVICO 24,800 kgX1,000 T17,00%",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 4.73,
+    "timestamp": "2026-10-26T18:29:55Z",
+    "idDocumento": 7252997
+  }
+}

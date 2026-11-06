@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "L M DO CARMO HOTEL EIRELI-ME",
+  "fornecedor_cnpj_cpf": "21.316.635/0001-72",
+  "numero_documento": "307",
+  "data_emissao": "2022-03-08",
+  "valor_total": 110.0,
+  "descricao_resumida": "Serviço de hospedagem referente a uma diária.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:31:44Z",
+    "tempo_segundos": 6.34,
+    "idDocumento": 7356646
+  }
+}

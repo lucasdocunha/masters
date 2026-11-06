@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CONCEBRA-Conc. Rod. Centr. do Brasil SA",
+  "fornecedor_cnpj_cpf": "18.572.225/0001-88",
+  "numero_documento": "DFE 200206157530G003 RJX1",
+  "data_emissao": "2019-12-02",
+  "valor_total": null,
+  "descricao_resumida": "01 Automóvel R$ 3,30 Dinheiro",
+  "observacoes": "Cálculo estimado dos tributos 8,65% Associe PLACA e CPF/CNPJ ao DFE em até 7 dias site WWW.TRIUNFOCONCEBRA.COM.BR/DFE",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.51,
+    "timestamp": "2026-10-26T18:26:35Z",
+    "idDocumento": 6973932
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PREFEITURA MUNICIPAL DE CURITIBA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "527.553",
+  "data_emissao": "2020-02-11",
+  "valor_total": 254.8,
+  "descricao_resumida": "Parcela de IPTU/TCL 2020",
+  "observacoes": "NÃO RECEBER APÓS O VENCIMENTO\nApós o vencimento, pagamento somente através de Documento de Arrecadação Municipal - DAM, atualizado. Acesse https://damiptu.curitiba.pr.gov.br/default.aspx ou dirija-se às Ruas da Cidadania.",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.26,
+    "timestamp": "2026-10-26T20:24:34Z",
+    "idDocumento": 7029614
+  }
+}

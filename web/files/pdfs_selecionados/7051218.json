@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7051218,
+  "ano": 2020,
+  "mes": 4,
+  "fornecedor": "ENTREVIAS",
+  "cnpjCPF": "266.640.570/0018-9",
+  "numero": "sn",
+  "tipoDocumento": "1",
+  "dataEmissao": "2020-04-29T00:00:00",
+  "valorDocumento": 9.8,
+  "valorLiquido": 9.8,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Coronel Tadeu",
+  "cpfParlamentar": "04862780857",
+  "siglaUF": "SP",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3231/2020/7051218.pdf"
+}

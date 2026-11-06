@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EDITORA RORAIMENSE LTDA-ME",
+  "fornecedor_cnpj_cpf": "02.998.440/0001-05",
+  "numero_documento": "00000546",
+  "data_emissao": "2021-12-22",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Produção de áudio de atividades parlamentares com veiculação na rádio Parente FM referente ao mês de dezembro/2021",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:59:48Z",
+    "tempo_segundos": 25.26,
+    "idDocumento": 7310154
+  }
+}

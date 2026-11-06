@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PARMEGGIANO PARKCITY SUMARE",
+  "fornecedor_cnpj_cpf": "34.652.187/0001-20",
+  "numero_documento": "046456",
+  "data_emissao": "2022-05-20",
+  "valor_total": 46.9,
+  "descricao_resumida": "1 UN 40.90(0) 40.90\n1 UN 6.00(0) 6.00",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.96,
+    "timestamp": "2026-10-26T18:33:39Z",
+    "idDocumento": 7384390
+  }
+}

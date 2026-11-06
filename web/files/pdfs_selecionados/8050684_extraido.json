@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PARAAISO HOTEIS E TURISMO LTDA",
+  "fornecedor_cnpj_cpf": "05793305000111",
+  "numero_documento": "575",
+  "data_emissao": "2026-01-31",
+  "valor_total": 473.33,
+  "descricao_resumida": "Hospedagem em hotel (DIARIA - 236,67 x 2 = 473,33)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:00:31Z",
+    "tempo_segundos": 19.5,
+    "idDocumento": 8050684
+  }
+}

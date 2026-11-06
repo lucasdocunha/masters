@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CEMIG DISTRIBUIÇÃO S.A.",
+  "fornecedor_cnpj_cpf": "06.981.180/0001-16",
+  "numero_documento": null,
+  "data_emissao": "2020-01-10",
+  "valor_total": 157.8,
+  "descricao_resumida": "Energia Elétrica kWh",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.47,
+    "timestamp": "2026-10-26T20:24:37Z",
+    "idDocumento": 7000067
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Sinpetaxi",
+  "fornecedor_cnpj_cpf": "05.031.708/0051-00",
+  "numero_documento": "2178",
+  "data_emissao": "2014-12-03",
+  "valor_total": 20.0,
+  "descricao_resumida": "Viúte médio",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.39,
+    "timestamp": "2026-10-26T18:14:57Z",
+    "idDocumento": 5565327
+  }
+}

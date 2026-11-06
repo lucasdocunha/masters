@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "J.L.M. RESTAURANTE LTDA",
+  "fornecedor_cnpj_cpf": "05.202.077/0002-49",
+  "numero_documento": "0170372018",
+  "data_emissao": "2018-03-07",
+  "valor_total": 57.6,
+  "descricao_resumida": "2 21010 SALADA BAMBINI CARNE 1UN T1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.63,
+    "timestamp": "2026-10-26T18:24:50Z",
+    "idDocumento": 6518861
+  }
+}

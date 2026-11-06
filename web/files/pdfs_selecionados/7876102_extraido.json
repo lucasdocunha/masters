@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMPANHIA ENERGÉTICA DE PERNAMBUCO",
+  "fornecedor_cnpj_cpf": "10.835.932/0001-08",
+  "numero_documento": "346798458",
+  "data_emissao": "2025-02-15",
+  "valor_total": 269.36,
+  "descricao_resumida": "Consumo de energia elétrica - Residencial (236 kWh)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:41:28Z",
+    "tempo_segundos": 12.91,
+    "idDocumento": 7876102
+  }
+}

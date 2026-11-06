@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CARVALHO PINTO AUTOMOTIVOS E CONV. LTDA.",
+  "fornecedor_cnpj_cpf": "03.060.729/0001-41",
+  "numero_documento": "32R73e0YJV51Vu2d1Xc6sCpg04oZoV7eng9R+lvbnn6fB8qoA2skuSBy3",
+  "data_emissao": "2015-06-08",
+  "valor_total": 287.93,
+  "descricao_resumida": "B11-GASOLINA PODIUM - Encerrante: 919276,970 - AIE / ND:13; RED BULL SILVER EDITION 250ML 1 UN F1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 17.05,
+    "timestamp": "2026-10-26T19:04:39Z",
+    "idDocumento": 5713915
+  }
+}

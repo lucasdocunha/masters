@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "RAJA RENT A CAR S/A",
+  "fornecedor_cnpj_cpf": "01.338.388/0001-06",
+  "numero_documento": "17629",
+  "data_emissao": "2020-08-31",
+  "valor_total": 6000.0,
+  "descricao_resumida": "FATURA DE LOCAÇÃO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.62,
+    "timestamp": "2026-10-26T18:28:21Z",
+    "idDocumento": 7106392
+  }
+}

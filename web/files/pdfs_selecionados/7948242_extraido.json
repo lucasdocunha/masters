@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "60.249.066 CLAUDIA VALESKA PEREIRA DOS SANTOS",
+  "fornecedor_cnpj_cpf": "60.249.066/0001-41",
+  "numero_documento": "4",
+  "data_emissao": "2025-07-15",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Prestação de serviço de redação, captura de imagens, criação e edição de materiais para divulgação da atividade parlamentar nas redes sociais do deputado Gilson Daniel.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:41:02Z",
+    "tempo_segundos": 2.86,
+    "idDocumento": 7948242
+  }
+}

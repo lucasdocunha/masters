@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COOPERATIVA DOS TAXISTAS AUTONOMOS DO DISTRITO FEDERAL LTDA - COOPERTAXI",
+  "fornecedor_cnpj_cpf": "70309-900",
+  "numero_documento": "1193",
+  "data_emissao": "2025-09-03",
+  "valor_total": 157.52,
+  "descricao_resumida": "SERVIÇO DE TÁXI",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.52,
+    "timestamp": "2026-10-26T18:41:56Z",
+    "idDocumento": 7984181
+  }
+}

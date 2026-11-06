@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO MARIO WERNECK LIMITADA",
+  "fornecedor_cnpj_cpf": "03.665.115/0001-93",
+  "numero_documento": "002142969",
+  "data_emissao": "2026-05-10",
+  "valor_total": 366.35,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:57:54Z",
+    "tempo_segundos": 4.38,
+    "idDocumento": 8104565
+  }
+}

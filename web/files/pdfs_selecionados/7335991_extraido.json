@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "M A B COSTA ME",
+  "fornecedor_cnpj_cpf": "10.294.714/0001-03",
+  "numero_documento": "250",
+  "data_emissao": "2022-03-02",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Serviços publicitários, anúncios, divulgação em rádio e internet (blog e afins) para divulgação das atividades parlamentares na Câmara Federal, referente ao mandato do Dep. Moses Rodrigues, durante o mês de fevereiro de 2022.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:34:40Z",
+    "tempo_segundos": 8.11,
+    "idDocumento": 7335991
+  }
+}

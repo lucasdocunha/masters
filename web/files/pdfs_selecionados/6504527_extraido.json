@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MARIA JOSE FREIRE ARCOVERDE-EPP",
+  "fornecedor_cnpj_cpf": "03.325.034/0001-44",
+  "numero_documento": "000010082",
+  "data_emissao": "2018-02-02",
+  "valor_total": 500.0,
+  "descricao_resumida": "SHELL DIESEL S10 COMUM B05",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:07:37Z",
+    "tempo_segundos": 9.16,
+    "idDocumento": 6504527
+  }
+}

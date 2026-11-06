@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Trajano Imóveis (Ronaldo Trajano Rodrigues)",
+  "fornecedor_cnpj_cpf": "434.562.940-34",
+  "numero_documento": "31",
+  "data_emissao": "2017-07-21",
+  "valor_total": 2175.6,
+  "descricao_resumida": "Recibo de locação referente ao mês de julho de 2017 (aluguel)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:19:17Z",
+    "tempo_segundos": 2.32,
+    "idDocumento": 6342603
+  }
+}

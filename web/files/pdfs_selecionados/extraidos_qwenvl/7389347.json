@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "FLAVIO CARDOSO MARINHO",
+  "fornecedor_cnpj_cpf": "41.744.826/0001-42",
+  "numero_documento": "0001785374",
+  "data_emissao": "2022-05-30",
+  "valor_total": 1000.0,
+  "descricao_resumida": "Referente à divulgação no BLOG DO FM de INFORMES PUBLICITÁRIOS para divulgação das ações e prestação de contas do mandato da DEPUTADA FEDERAL CARLA DICKSON, no período de 01 a 31 de MAIO de 2022",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.34,
+    "timestamp": "2026-10-26T18:32:47Z",
+    "idDocumento": 7389347
+  }
+}

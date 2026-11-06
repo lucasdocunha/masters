@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VITÓRIA TECNOLOGIA DA INFORMAÇÃO LTDA.",
+  "fornecedor_cnpj_cpf": "022.612.657-94",
+  "numero_documento": "2712",
+  "data_emissao": "2016-12-01",
+  "valor_total": 940.0,
+  "descricao_resumida": "LOCAÇÃO DE EQUIPAMENTOS PERIODO 01/11 ATÉ 01/12/2016",
+  "observacoes": "Esta Fatura de Locação foi emitida em atendimento à legislação tributária vigente, em especial ao artigo 1° da Lei n° 8.846/94.",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.52,
+    "timestamp": "2026-10-26T18:19:13Z",
+    "idDocumento": 6161639
+  }
+}

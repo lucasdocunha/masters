@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SC COMBUSTÍVEIS LTDA",
+  "fornecedor_cnpj_cpf": "83.888.404/0001-90",
+  "numero_documento": "255830",
+  "data_emissao": "2014-11-24",
+  "valor_total": 60.0,
+  "descricao_resumida": "Gasolina comum (21,748 L)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash",
+    "timestamp": "2026-10-21T17:19:09Z",
+    "tempo_segundos": 7.74,
+    "idDocumento": 5554781
+  }
+}

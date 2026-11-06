@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7490292,
+  "ano": 2023,
+  "mes": 1,
+  "fornecedor": "ALEXANDRE ARTIOLI BARRERA",
+  "cnpjCPF": "337.937.010/0018-4",
+  "numero": "00000057",
+  "tipoDocumento": "0",
+  "dataEmissao": "2023-01-26T00:00:00",
+  "valorDocumento": 10000.0,
+  "valorLiquido": 10000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Loester Trutis",
+  "cpfParlamentar": "95486100191",
+  "siglaUF": "MS",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3318/2023/7490292.pdf"
+}

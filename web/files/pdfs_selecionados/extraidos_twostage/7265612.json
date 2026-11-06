@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "RAFAEL PERIN TAVARES",
+  "fornecedor_cnpj_cpf": "32.694.768/0001-07",
+  "numero_documento": "292",
+  "data_emissao": "2021-09-26",
+  "valor_total": 672.89,
+  "descricao_resumida": "Manutenção e administração do sistema de gestão RP com plataforma WEB do mandato do deputado Luizão Goulart, referente ao período de 05/09/2021 a 05/10/2021. Pagamento à vista.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 26.48,
+    "timestamp": "2026-10-26T20:27:16Z",
+    "idDocumento": 7265612
+  }
+}

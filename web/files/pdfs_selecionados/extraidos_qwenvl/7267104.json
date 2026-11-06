@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Jorge Curisahoteis e Turismo",
+  "fornecedor_cnpj_cpf": "92.192.368/0001-17",
+  "numero_documento": "49347/NFSe",
+  "data_emissao": "2021-10-01",
+  "valor_total": 208.0,
+  "descricao_resumida": "Hospedagem de Qualquer Natureza Em Hotéis; Apart-Service Condominiais; Flat; Apart-Hotéis; Hotéis",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.02,
+    "timestamp": "2026-10-26T18:32:10Z",
+    "idDocumento": 7267104
+  }
+}

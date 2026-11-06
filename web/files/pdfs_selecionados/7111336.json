@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7111336,
+  "ano": 2020,
+  "mes": 11,
+  "fornecedor": "TACIANO CLECIO XAVIER DE OLIVEIRA",
+  "cnpjCPF": "222.594.540/0011-4",
+  "numero": "0000001468",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-11-03T01:00:00",
+  "valorDocumento": 2000.0,
+  "valorLiquido": 2000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Pedro Augusto Bezerra",
+  "cpfParlamentar": "87850885368",
+  "siglaUF": "CE",
+  "siglaPartido": "PDT",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3349/2020/7111336.pdf"
+}

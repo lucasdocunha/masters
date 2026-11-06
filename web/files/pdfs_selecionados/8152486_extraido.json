@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "A E AGRA LTDA ME",
+  "fornecedor_cnpj_cpf": "12.064.991/0001-55",
+  "numero_documento": "008/2026",
+  "data_emissao": "2026-08-31",
+  "valor_total": 12690.0,
+  "descricao_resumida": "Locação mensal de uma pick-up Toyota Hilux SRV no período de 01/08/2026 a 31/08/2026",
+  "observacoes": "Documento de fatura de locação de veículos.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:07:44Z",
+    "tempo_segundos": 2.75,
+    "idDocumento": 8152486
+  }
+}

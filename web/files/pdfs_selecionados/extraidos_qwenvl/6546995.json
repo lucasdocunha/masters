@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ÁGUAS GUARIROBA S.A.",
+  "fornecedor_cnpj_cpf": "79021-170",
+  "numero_documento": "17107108-5",
+  "data_emissao": "05/04/2018",
+  "valor_total": 84.08,
+  "descricao_resumida": "PAGAMENTO AFÉS DATA DE VENCIMENTO SERÃO COBRADOS MULTA DE 2%, JUROS DE 1% AO MÊS E ATUALIZAÇÃO MONETÁRIA COM BASE NO INPC.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.06,
+    "timestamp": "2026-10-26T18:24:30Z",
+    "idDocumento": 6546995
+  }
+}

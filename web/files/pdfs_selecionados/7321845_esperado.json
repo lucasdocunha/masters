@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7321845,
+  "ano": 2022,
+  "mes": 1,
+  "fornecedor": "MARCEL CARLOS LEIMIG",
+  "cnpjCPF": "204.135.320/0016-8",
+  "numero": "20",
+  "tipoDocumento": "0",
+  "dataEmissao": "2022-01-28T00:00:00",
+  "valorDocumento": 3000.0,
+  "valorLiquido": 3000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Eduardo da Fonte",
+  "cpfParlamentar": "53467108415",
+  "siglaUF": "PE",
+  "siglaPartido": "PP",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1822/2022/7321845.pdf"
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Concessionaria SPMAR",
+  "fornecedor_cnpj_cpf": "09.191.336/0001-53",
+  "numero_documento": null,
+  "data_emissao": "2015-08-17",
+  "valor_total": 2.2,
+  "descricao_resumida": "BOA VIAGEM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 4.55,
+    "timestamp": "2026-10-26T19:11:15Z",
+    "idDocumento": 5784069
+  }
+}

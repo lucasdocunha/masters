@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Investcar Veículos LTDA-ME",
+  "fornecedor_cnpj_cpf": "01.615.224/0001-70",
+  "numero_documento": "000.000.235",
+  "data_emissao": "2014-12-01",
+  "valor_total": 3950.0,
+  "descricao_resumida": "Prestação de Serviços",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.91,
+    "timestamp": "2026-10-26T18:52:07Z",
+    "idDocumento": 5560877
+  }
+}

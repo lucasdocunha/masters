@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Uber do Brasil Tecnologia Ltda.",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": null,
+  "valor_total": 18.41,
+  "descricao_resumida": "Servico de transporte particular por aplicativo Uber",
+  "observacoes": "Data exata nao visivel com clareza na imagem, CNPJ nao localizado no corpo do recibo.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:39:40Z",
+    "tempo_segundos": 2.2,
+    "idDocumento": 7848203
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6573693,
+  "ano": 2018,
+  "mes": 4,
+  "fornecedor": "HOSTEL RESERVA DO SER",
+  "cnpjCPF": "232.483.190/0013-6",
+  "numero": "50321",
+  "tipoDocumento": "0",
+  "dataEmissao": "2018-04-20T00:00:00",
+  "valorDocumento": 212.5,
+  "valorLiquido": 212.5,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Pedro Uczai",
+  "cpfParlamentar": "47721855934",
+  "siglaUF": "SC",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2243/2018/6573693.pdf"
+}

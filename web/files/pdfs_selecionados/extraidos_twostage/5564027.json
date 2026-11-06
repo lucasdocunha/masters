@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "NICOLAU DERIVADOS DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "35.196.823/0005-42",
+  "numero_documento": "220677",
+  "data_emissao": "2014-12-08",
+  "valor_total": 50.0,
+  "descricao_resumida": "GASOLINA C COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 13.35,
+    "timestamp": "2026-10-26T18:55:24Z",
+    "idDocumento": 5564027
+  }
+}

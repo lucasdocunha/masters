@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Uber do Brasil Tecnologia Ltda.",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2019-09-25",
+  "valor_total": 5.38,
+  "descricao_resumida": "Serviço de transporte privado urbano (UberX) realizado em 2019-09-25",
+  "observacoes": "Recibo de viagem da Uber, não constitui documento fiscal oficial NF-e ou NFS-e com CNPJ visível no recibo.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:32:25Z",
+    "tempo_segundos": 2.7,
+    "idDocumento": 6926406
+  }
+}

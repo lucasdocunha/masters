@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DER PAULO TEXEIRA",
+  "fornecedor_cnpj_cpf": "30.605.977/0001-01",
+  "numero_documento": "12800",
+  "data_emissao": "2022-11-30",
+  "valor_total": 12800.0,
+  "descricao_resumida": "Centro e Vinte Oito Meio",
+  "observacoes": "Atividades relacionadas ao transporte de passageiros por táxi.",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.8,
+    "timestamp": "2026-10-26T18:33:52Z",
+    "idDocumento": 7473055
+  }
+}

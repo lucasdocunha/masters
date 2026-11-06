@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO S.R. LTDA - EPP",
+  "fornecedor_cnpj_cpf": "17011467000130",
+  "numero_documento": "47496",
+  "data_emissao": "2019-11-04",
+  "valor_total": 90.46,
+  "descricao_resumida": "GASOLINA ORIGINAL C - 18.850 L",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:20:22Z",
+    "tempo_segundos": 18.08,
+    "idDocumento": 6968958
+  }
+}

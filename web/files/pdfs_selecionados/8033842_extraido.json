@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ARTE E CRIATIVIDADE COMUNICACAO VISUAL LTDA",
+  "fornecedor_cnpj_cpf": "23.005.043/0001-65",
+  "numero_documento": "000000005334",
+  "data_emissao": "2025-09-17",
+  "valor_total": 525.0,
+  "descricao_resumida": "1500 cartoes de visita Dep Diego Garcia",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:34:22Z",
+    "tempo_segundos": 2.47,
+    "idDocumento": 8033842
+  }
+}

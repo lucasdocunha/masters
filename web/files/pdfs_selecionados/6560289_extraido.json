@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "A F ZEN COMERCIO DE COMBUSTIVEIS E LUBRIFICANTES LTDA",
+  "fornecedor_cnpj_cpf": "18.968.356/0001-40",
+  "numero_documento": "249112",
+  "data_emissao": "2018-04-03",
+  "valor_total": 120.0,
+  "descricao_resumida": "Gasolina tipo C Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:16:36Z",
+    "tempo_segundos": 7.74,
+    "idDocumento": 6560289
+  }
+}

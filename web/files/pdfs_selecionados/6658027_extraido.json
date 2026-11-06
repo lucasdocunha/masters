@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CALDAS INFORMATICA EIRELI",
+  "fornecedor_cnpj_cpf": "22.965.578/0001-15",
+  "numero_documento": "00000336",
+  "data_emissao": "2018-08-17",
+  "valor_total": 10380.0,
+  "descricao_resumida": "Serviço de locação de móveis e equipamentos para escritório conforme contrato firmado para o período de setembro de 2017 a agosto de 2018",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:14:32Z",
+    "tempo_segundos": 8.19,
+    "idDocumento": 6658027
+  }
+}

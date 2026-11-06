@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CELSO UBIRAJARA RUSSOMANNO",
+  "fornecedor_cnpj_cpf": "04130.080 SAO PAULO . SP",
+  "numero_documento": "206F9DFP8DA525900612EBF82B3FA6B",
+  "data_emissao": "2019-07-09",
+  "valor_total": 230.15,
+  "descricao_resumida": "Conta de Energia Elétrica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.76,
+    "timestamp": "2026-10-26T18:26:38Z",
+    "idDocumento": 6926492
+  }
+}

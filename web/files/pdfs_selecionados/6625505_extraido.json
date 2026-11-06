@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO ITAPOA LTDA",
+  "fornecedor_cnpj_cpf": "17488693000106",
+  "numero_documento": "212025",
+  "data_emissao": "2018-06-13",
+  "valor_total": 50.0,
+  "descricao_resumida": "Gasolina original",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T13:43:17Z",
+    "tempo_segundos": 22.51,
+    "idDocumento": 6625505
+  }
+}

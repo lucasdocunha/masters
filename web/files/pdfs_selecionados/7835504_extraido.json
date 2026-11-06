@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Localiza Rent a Car S/A",
+  "fornecedor_cnpj_cpf": "16.670.085/0549-13",
+  "numero_documento": "ACCCD - 31496",
+  "data_emissao": "2024-11-24",
+  "valor_total": 1924.5,
+  "descricao_resumida": "Aluguel conforme contrato CCDF019261 e valor do seguro",
+  "observacoes": "Documento é uma Fatura/Duplicata de locação de veículos acompanhada de contrato e e-mail de esclarecimento sobre isenção de nota fiscal.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:14:13Z",
+    "tempo_segundos": 26.09,
+    "idDocumento": 7835504
+  }
+}

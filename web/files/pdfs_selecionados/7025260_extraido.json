@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GAZ PARK PARTICIPACOES LTDA",
+  "fornecedor_cnpj_cpf": "04836682000110",
+  "numero_documento": "155919",
+  "data_emissao": "2020-02-14",
+  "valor_total": 200.0,
+  "descricao_resumida": "Gasolina Tipo C",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:24:29Z",
+    "tempo_segundos": 38.49,
+    "idDocumento": 7025260
+  }
+}

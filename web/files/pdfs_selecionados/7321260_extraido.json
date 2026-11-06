@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "JOSE RENATO FREITAS BAPTISTA 10713613769",
+  "fornecedor_cnpj_cpf": "30.082.765/0001-89",
+  "numero_documento": "00050062",
+  "data_emissao": "2022-02-21",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Edição do conteúdo do website para o deputado Marcel Van Hattem, incluindo postagens periódicas, backup, limpeza de hospedagem e upload de arquivos.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:37:06Z",
+    "tempo_segundos": 2.12,
+    "idDocumento": 7321260
+  }
+}

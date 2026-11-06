@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CELPE NEOENERGIA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2018-03-21",
+  "valor_total": 530.91,
+  "descricao_resumida": "Conta de energia elétrica",
+  "observacoes": "Documento parcialmente ilegível devido à qualidade da imagem.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T13:59:34Z",
+    "tempo_segundos": 16.15,
+    "idDocumento": 6512044
+  }
+}

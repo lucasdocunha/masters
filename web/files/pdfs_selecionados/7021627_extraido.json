@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "A & R LTDA",
+  "fornecedor_cnpj_cpf": "08208586000196",
+  "numero_documento": "123",
+  "data_emissao": "2020-02-23",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Prestação de serviços de gravação de vídeos, imagens e fotografias em atividades parlamentares para divulgação nos meios de comunicação do estado do Acre no mês de fevereiro de 2020.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:33:45Z",
+    "tempo_segundos": 2.19,
+    "idDocumento": 7021627
+  }
+}

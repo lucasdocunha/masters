@@ -1,0 +1,23 @@
+{
+  "fornecedor_nome": "J L MASTER COMUNICACOES DO RGS LTDA",
+  "fornecedor_cnpj_cpf": "15.696.886/0001-27",
+  "numero_documento": "6308",
+  "data_emissao": "01/09/2021",
+  "valor_total": 250.0,
+  "descricao_resumida": "1 CONTRATO DE MANUTENCAO. 250,00",
+  "observacoes": "NOTA FISCAL REFERENTE A LOCACAO DA CENTRAL TELEFONICA PERIODO DE 01/08/2021 ATÉ 31/08/2021.",
+  "fornecedor_cnpj_cpf_formatado": "15.696.886/0001-27",
+  "fornecedor_email": "financeiro@mastercomrs.com.br",
+  "fornecedor_telefone": "5193479292",
+  "fornecedor_bairro": "Centro Histórico",
+  "fornecedor_cep": "90010230",
+  "fornecedor_inscricao_municipal": "81509",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 4.88,
+    "timestamp": "2026-10-26T18:32:58Z",
+    "idDocumento": 7250371
+  }
+}

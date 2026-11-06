@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Prefeitura Municipal de Boa Vista",
+  "fornecedor_cnpj_cpf": "05.943.030/0001-55",
+  "numero_documento": "00000006",
+  "data_emissao": "2017-12-27",
+  "valor_total": 24000.0,
+  "descricao_resumida": "PRODUÇÃO DE 04 VTs INSTITUCIONAL DE 30\" REFERENTE ATIVIDADES PARLAMENTARES DEP. FEDERAL JOHNATHAN PEREIRA DE JESUS.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.12,
+    "timestamp": "2026-10-26T19:35:43Z",
+    "idDocumento": 6477167
+  }
+}

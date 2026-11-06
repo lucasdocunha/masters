@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTOPISTA FERNAO DIAS",
+  "fornecedor_cnpj_cpf": "09.326.342/0001-70",
+  "numero_documento": "003094",
+  "data_emissao": "2016-04-13",
+  "valor_total": 1.8,
+  "descricao_resumida": "Recibo de pedágio rodoviário",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:12:13Z",
+    "tempo_segundos": 1.73,
+    "idDocumento": 5991205
+  }
+}

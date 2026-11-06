@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ASA BELA TRANSPORTES E TURISMO LTDA - ME",
+  "fornecedor_cnpj_cpf": "08.346.381/0001-77",
+  "numero_documento": "00000136",
+  "data_emissao": "2015-04-23",
+  "valor_total": 7000.0,
+  "descricao_resumida": "Prestação de serviço de locação de veículo tipo Hilux SW4, ano 2014/2014, placa OZL-2526, referente ao mês de abril de 2015.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:24:31Z",
+    "tempo_segundos": 2.35,
+    "idDocumento": 5668130
+  }
+}

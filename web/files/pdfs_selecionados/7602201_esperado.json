@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7602201,
+  "ano": 2023,
+  "mes": 8,
+  "fornecedor": "Horácio Fleury de Almeida",
+  "cnpjCPF": "021.636.081/15  -",
+  "numero": "F-22",
+  "tipoDocumento": "1",
+  "dataEmissao": "2023-08-31T00:00:00",
+  "valorDocumento": 6639.2,
+  "valorLiquido": 6639.13,
+  "valorGlosa": 0.07,
+  "nomeParlamentar": "Rubens Otoni",
+  "cpfParlamentar": "13334727149",
+  "siglaUF": "GO",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1686/2023/7602201.pdf"
+}

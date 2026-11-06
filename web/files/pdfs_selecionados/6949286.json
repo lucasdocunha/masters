@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6949286,
+  "ano": 2019,
+  "mes": 10,
+  "fornecedor": "EMIVE",
+  "cnpjCPF": "078.536.040/0012-0",
+  "numero": "201933732",
+  "tipoDocumento": "0",
+  "dataEmissao": "2019-10-09T00:00:00",
+  "valorDocumento": 334.65,
+  "valorLiquido": 334.65,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Eduardo Barbosa",
+  "cpfParlamentar": "27582400682",
+  "siglaUF": "MG",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "SERVIÇO DE SEGURANÇA PRESTADO POR EMPRESA ESPECIALIZADA.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1010/2019/6949286.pdf"
+}

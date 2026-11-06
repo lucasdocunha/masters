@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "QUALITY ALLGUEL DE VEÍCULOS S/A",
+  "fornecedor_cnpj_cpf": "72.653.009/0001-02",
+  "numero_documento": "13415",
+  "data_emissao": "2022-07-22",
+  "valor_total": 3049.0,
+  "descricao_resumida": "Assinatura de veículo (12 de 12) – Período 19/08/2022 à 22/09/2022 - Veículo: Jeep COMPASS SPORT 2.0 4x2 AT 2021",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:42:03Z",
+    "tempo_segundos": 7.48,
+    "idDocumento": 7442306
+  }
+}

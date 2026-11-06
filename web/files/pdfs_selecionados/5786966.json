@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5786966,
+  "ano": 2015,
+  "mes": 8,
+  "fornecedor": "POSTO TAQUARA",
+  "cnpjCPF": "334.097.980/0018-9",
+  "numero": "015963",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-08-21T00:00:00",
+  "valorDocumento": 150.01,
+  "valorLiquido": 150.01,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "MARCELO MATOS",
+  "cpfParlamentar": "90838920772",
+  "siglaUF": "RJ",
+  "siglaPartido": "PSD",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2274/2015/5786966.pdf"
+}

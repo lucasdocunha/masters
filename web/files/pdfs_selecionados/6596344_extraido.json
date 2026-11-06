@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionaria da Rodovia Presidente Dutra S/A",
+  "fornecedor_cnpj_cpf": "00261626000132",
+  "numero_documento": "0002041005152721876000947583",
+  "data_emissao": "2018-05-25",
+  "valor_total": 14.4,
+  "descricao_resumida": "Tarifa de pedagio - Praca MOREIRA CESAR HORIE",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:13:16Z",
+    "tempo_segundos": 7.67,
+    "idDocumento": 6596344
+  }
+}

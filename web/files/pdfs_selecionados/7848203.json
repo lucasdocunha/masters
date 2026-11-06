@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7848203,
+  "ano": 2024,
+  "mes": 12,
+  "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+  "cnpjCPF": "178.956.460/0018-7",
+  "numero": "Uber Pedro 10-12-2024 18,41",
+  "tipoDocumento": "1",
+  "dataEmissao": "2024-12-10T00:00:00",
+  "valorDocumento": 18.41,
+  "valorLiquido": 18.41,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Carlos Zarattini",
+  "cpfParlamentar": "00398099863",
+  "siglaUF": "SP",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1963/2024/7848203.pdf"
+}

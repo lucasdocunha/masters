@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6893392,
+  "ano": 2019,
+  "mes": 8,
+  "fornecedor": "MP COMERCIO DE COMBUSTIVEIS LT",
+  "cnpjCPF": "091.499.360/0031-5",
+  "numero": "399232",
+  "tipoDocumento": "0",
+  "dataEmissao": "2019-08-09T00:00:00",
+  "valorDocumento": 200.0,
+  "valorLiquido": 200.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Nelson Pellegrino",
+  "cpfParlamentar": "24289612504",
+  "siglaUF": "BA",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1344/2019/6893392.pdf"
+}

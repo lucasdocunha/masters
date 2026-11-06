@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7891692,
+  "ano": 2025,
+  "mes": 3,
+  "fornecedor": "HOTEL STELTER",
+  "cnpjCPF": "853.432.260/0014-8",
+  "numero": "6667",
+  "tipoDocumento": "0",
+  "dataEmissao": "2025-04-01T00:00:00",
+  "valorDocumento": 285.0,
+  "valorLiquido": 280.0,
+  "valorGlosa": 5.0,
+  "nomeParlamentar": "Geovania de Sá",
+  "cpfParlamentar": "81095910949",
+  "siglaUF": "SC",
+  "siglaPartido": "REPUBLICANOS",
+  "descricaoDespesa": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2987/2025/7891692.pdf"
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7222693,
+  "ano": 2021,
+  "mes": 6,
+  "fornecedor": "CONC. RODOVIA DO OESTE DE SÃO PAULO S/A",
+  "cnpjCPF": "024.154.080/0015-0",
+  "numero": "02670430101624715763002782138",
+  "tipoDocumento": "1",
+  "dataEmissao": "2021-06-26T00:00:00",
+  "valorDocumento": 12.0,
+  "valorLiquido": 12.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Guiga Peixoto",
+  "cpfParlamentar": "04434956884",
+  "siglaUF": "SP",
+  "siglaPartido": "PSC",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3410/2021/7222693.pdf"
+}

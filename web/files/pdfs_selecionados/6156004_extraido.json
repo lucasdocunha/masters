@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SANA COMERCIO DE COMUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "11.898.643/0001-10",
+  "numero_documento": "092672",
+  "data_emissao": "2016-11-01",
+  "valor_total": 150.01,
+  "descricao_resumida": "Gasolina aditivada",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:09:19Z",
+    "tempo_segundos": 30.1,
+    "idDocumento": 6156004
+  }
+}

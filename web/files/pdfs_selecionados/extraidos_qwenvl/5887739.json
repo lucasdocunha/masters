@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JACEMAX EPP LTDA",
+  "fornecedor_cnpj_cpf": "02.605.360/0001-42",
+  "numero_documento": "62255",
+  "data_emissao": "2015-12-01",
+  "valor_total": 147.13,
+  "descricao_resumida": "Recebemos de ANTONIO CARLOS MENDES THAME a importância supra de R$ 147,13 (cento e quarenta e sete reais e treze centavos) referente as postagens efetuadas no Período de 16/11/2015 à 30/11/2015 com vencimento em 09/12/2015, conforme demonstrativos de postagens já encaminhados.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.93,
+    "timestamp": "2026-10-26T18:18:25Z",
+    "idDocumento": 5887739
+  }
+}

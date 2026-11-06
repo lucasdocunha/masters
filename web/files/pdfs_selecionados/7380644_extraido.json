@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "TECNEGOCIOS SOLUÇOES EM INFORMÁTICA LTDA",
+  "fornecedor_cnpj_cpf": "11.521.613/0001-90",
+  "numero_documento": "010772",
+  "data_emissao": "2022-05-11",
+  "valor_total": 599.0,
+  "descricao_resumida": "Suporte técnico em informática e sistema gerenciador de dados integrados",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:25:50Z",
+    "tempo_segundos": 69.6,
+    "idDocumento": 7380644
+  }
+}

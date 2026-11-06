@@ -1,0 +1,19 @@
+{
+  "idDocumento": 8039425,
+  "ano": 2026,
+  "mes": 1,
+  "fornecedor": "MACEDO & SOUZA LTDA",
+  "cnpjCPF": "190.462.180/0126-8",
+  "numero": "57621",
+  "tipoDocumento": "0",
+  "dataEmissao": "2026-01-05T00:00:00",
+  "valorDocumento": 250.04,
+  "valorLiquido": 250.04,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Mauricio do Vôlei",
+  "cpfParlamentar": "36009756847",
+  "siglaUF": "MG",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3566/2026/8039425.pdf"
+}

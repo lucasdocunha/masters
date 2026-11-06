@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EMPRESA GAUCHA DE RODOVIAS S/A",
+  "fornecedor_cnpj_cpf": "91.697.837/0001-05",
+  "numero_documento": "230385RA2M09",
+  "data_emissao": "2018-09-18",
+  "valor_total": 4.8,
+  "descricao_resumida": "Tarifa de pedagio - Praca Coxilha - RS-135 Km 18+000",
+  "observacoes": "Cupom fiscal um pouco desbotado mas legivel",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:23:02Z",
+    "tempo_segundos": 14.53,
+    "idDocumento": 6672938
+  }
+}

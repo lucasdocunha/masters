@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO BOA ESPERANÇA LTDA",
+  "fornecedor_cnpj_cpf": "00.911.117/0001-27",
+  "numero_documento": "243615",
+  "data_emissao": "2019-12-16",
+  "valor_total": 194.86,
+  "descricao_resumida": "GASOLINA COMUN",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.48,
+    "timestamp": "2026-10-26T18:25:56Z",
+    "idDocumento": 6985696
+  }
+}

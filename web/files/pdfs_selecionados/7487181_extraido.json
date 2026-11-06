@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO NARUM LTDA",
+  "fornecedor_cnpj_cpf": "39.134.598/0001-47",
+  "numero_documento": "120906",
+  "data_emissao": "2023-01-16",
+  "valor_total": 200.0,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:56:47Z",
+    "tempo_segundos": 4.2,
+    "idDocumento": 7487181
+  }
+}

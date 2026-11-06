@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "UBERPRINT LTDA",
+  "fornecedor_cnpj_cpf": "00.748.573/0001-06",
+  "numero_documento": "215",
+  "data_emissao": "2026-04-30",
+  "valor_total": 2790.0,
+  "descricao_resumida": "1.000 Impressos - Divulgacao Atividade Parlamentar Uberlandia Viva o Congado",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:02:11Z",
+    "tempo_segundos": 25.42,
+    "idDocumento": 8097405
+  }
+}

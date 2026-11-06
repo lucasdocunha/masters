@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Equatorial Pará Distribuidora de Energia S.A.",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "087667926",
+  "data_emissao": "2024-05-17",
+  "valor_total": 219.45,
+  "descricao_resumida": "Fornecimento de energia elétrica",
+  "observacoes": "Documento ligeiramente borrado na parte superior e inferior, mas dados principais legíveis.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:02:48Z",
+    "tempo_segundos": 2.61,
+    "idDocumento": 7740692
+  }
+}

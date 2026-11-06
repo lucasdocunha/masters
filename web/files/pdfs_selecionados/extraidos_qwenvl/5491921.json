@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Churrascaria Novilho de Prata",
+  "fornecedor_cnpj_cpf": "0281278000199",
+  "numero_documento": "53323",
+  "data_emissao": "14-06-14",
+  "valor_total": 130.0,
+  "descricao_resumida": "JESPESA C/ Refeijão",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.49,
+    "timestamp": "2026-10-26T18:16:00Z",
+    "idDocumento": 5491921
+  }
+}

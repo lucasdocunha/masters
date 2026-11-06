@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "FSV-FRANKLIN DA SILVA VIEIRA",
+  "fornecedor_cnpj_cpf": "26185/0",
+  "numero_documento": "17748",
+  "data_emissao": "19/04/2024",
+  "valor_total": 5313.01,
+  "descricao_resumida": "Aluguel, Condomínio, IPTU, Seguro, Tarifa bancária, Agua e Esgoto",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.82,
+    "timestamp": "2026-10-26T18:39:41Z",
+    "idDocumento": 7727447
+  }
+}

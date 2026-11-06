@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionária das Rodovias Integradas do Sul S/A",
+  "fornecedor_cnpj_cpf": "32.161.500/0001-00",
+  "numero_documento": null,
+  "data_emissao": "2024-07-06",
+  "valor_total": 5.5,
+  "descricao_resumida": "Tarifa de pedágio - Categoria 01 (Rodovia BR 386 KM427, Praça Montenegro Sul)",
+  "observacoes": "Documento Fiscal Equivalente - DFE de pedágio",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:00:51Z",
+    "tempo_segundos": 2.09,
+    "idDocumento": 7770624
+  }
+}

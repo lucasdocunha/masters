@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COOTRAMO-MG",
+  "fornecedor_cnpj_cpf": "04.994.250/0001-45",
+  "numero_documento": "388370",
+  "data_emissao": "2019-08-05",
+  "valor_total": 130.0,
+  "descricao_resumida": "Comprovante de corrida de táxi (Origem: Lourdes BH, Destino: Confins)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:19:26Z",
+    "tempo_segundos": 17.02,
+    "idDocumento": 6883018
+  }
+}

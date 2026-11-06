@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CASA RIVIE ESTEVES CAFETERIA LTDA",
+  "fornecedor_cnpj_cpf": "35.796.142/0001-91",
+  "numero_documento": "000024910",
+  "data_emissao": "2022-06-03",
+  "valor_total": 113.37,
+  "descricao_resumida": "Buffet KG, SUCO ESPECIAL Buffet, ESPRESSO, Buffet KG, AGUA Buffet",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.05,
+    "timestamp": "2026-10-26T20:56:34Z",
+    "idDocumento": 7396559
+  }
+}

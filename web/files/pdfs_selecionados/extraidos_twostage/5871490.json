@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "HADCO COMERCIO DE ALIMENTOS LTDA",
+  "fornecedor_cnpj_cpf": "37.505.757/0002-28",
+  "numero_documento": "EQN 506/507 BL",
+  "data_emissao": "2015-12-01",
+  "valor_total": 28.5,
+  "descricao_resumida": "McD Angus Bacon Promo Me 1 01T, Batata Media Promo 1 01T, Coca Pr med 1 Fl",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 18.94,
+    "timestamp": "2026-10-26T19:04:22Z",
+    "idDocumento": 5871490
+  }
+}

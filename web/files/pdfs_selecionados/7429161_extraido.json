@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CCRVASUL",
+  "fornecedor_cnpj_cpf": "32.161.500/0001-00",
+  "numero_documento": "0019002008166025200320556C1D8",
+  "data_emissao": "2022-08-11",
+  "valor_total": 5.2,
+  "descricao_resumida": "Pedágio - P2 - SA da Patrulha Via: 06 Oeste",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:34:51Z",
+    "tempo_segundos": 5.93,
+    "idDocumento": 7429161
+  }
+}

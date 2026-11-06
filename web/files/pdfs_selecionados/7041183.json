@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7041183,
+  "ano": 2020,
+  "mes": 3,
+  "fornecedor": "SAO PAULO AIRPORT RESTAURANTES LIMITADA",
+  "cnpjCPF": "202.054.350/0018-0",
+  "numero": "264269",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-03-17T00:00:00",
+  "valorDocumento": 39.5,
+  "valorLiquido": 39.5,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Eduardo Cury",
+  "cpfParlamentar": "04909670866",
+  "siglaUF": "SP",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2982/2020/7041183.pdf"
+}

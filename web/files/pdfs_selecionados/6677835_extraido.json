@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "DELFIORI HOTEL LTDA - ME",
+  "fornecedor_cnpj_cpf": "01.414.256/0001-08",
+  "numero_documento": "201800000008131",
+  "data_emissao": "2018-10-04",
+  "valor_total": 129.0,
+  "descricao_resumida": "Hospedagem de qualquer natureza em hotéis, apart (01 diaria a vista)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T13:59:13Z",
+    "tempo_segundos": 11.52,
+    "idDocumento": 6677835
+  }
+}

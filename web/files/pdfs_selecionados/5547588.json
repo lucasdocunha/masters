@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5547588,
+  "ano": 2014,
+  "mes": 11,
+  "fornecedor": "M.M. COLARES LTDA",
+  "cnpjCPF": "011.055.600/0017-3",
+  "numero": "069702",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-11-13T00:00:00",
+  "valorDocumento": 150.7,
+  "valorLiquido": 150.7,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "MARLLOS SAMPAIO",
+  "cpfParlamentar": "56584369315",
+  "siglaUF": "PI",
+  "siglaPartido": "PMDB",
+  "descricaoDespesa": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2325/2014/5547588.pdf"
+}

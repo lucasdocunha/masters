@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SERVICO NACIONAL DE APRENDIZAGEM COMERCIAL SENAC",
+  "fornecedor_cnpj_cpf": "33469172001644",
+  "numero_documento": "36279",
+  "data_emissao": "2023-05-10",
+  "valor_total": 90.27,
+  "descricao_resumida": "BUFFET MESA BRASILEIRA, CAFE EXPR. LONGO, COCA COLA ZERO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:48:29Z",
+    "tempo_segundos": 9.03,
+    "idDocumento": 7540651
+  }
+}

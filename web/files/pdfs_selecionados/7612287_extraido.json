@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ENERGISA MATO GROSSO - DISTRIBUIDORA DE ENERGIA S.A.",
+  "fornecedor_cnpj_cpf": "03467321000199",
+  "numero_documento": "016946755",
+  "data_emissao": "2023-06-21",
+  "valor_total": 637.99,
+  "descricao_resumida": "Consumo de energia elétrica residencial referente ao mês 06/2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:38:00Z",
+    "tempo_segundos": 3.53,
+    "idDocumento": 7612287
+  }
+}

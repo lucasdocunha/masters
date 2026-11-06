@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POUSADA AEROGRIL",
+  "fornecedor_cnpj_cpf": "24.331.165/0001-04",
+  "numero_documento": "0000003694",
+  "data_emissao": "2022-02-11",
+  "valor_total": null,
+  "descricao_resumida": "Prestação de serviço",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.48,
+    "timestamp": "2026-10-26T20:46:11Z",
+    "idDocumento": 7331386
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concer - Concessionaria da Rodovia Central do Brasil S.A.",
+  "fornecedor_cnpj_cpf": "18.572.225/0001-88",
+  "numero_documento": "1066",
+  "data_emissao": "2018-06-03",
+  "valor_total": 4.5,
+  "descricao_resumida": "Tarifa de pedagio - Automovel",
+  "observacoes": "Documento parcialmente ilegivel devido a qualidade da imagem, mas dados essenciais recuperados.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:10:03Z",
+    "tempo_segundos": 8.55,
+    "idDocumento": 6607659
+  }
+}

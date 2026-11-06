@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SERVICO NACIONAL DE APRENDIZAGEM COMERCIAL SENAC",
+  "fornecedor_cnpj_cpf": "33489172000872",
+  "numero_documento": "4140",
+  "data_emissao": "2017-08-28",
+  "valor_total": 27.28,
+  "descricao_resumida": "Prato do dia 1 e cha pêssego 340ml",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:33:22Z",
+    "tempo_segundos": 17.62,
+    "idDocumento": 6324520
+  }
+}

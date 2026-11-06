@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "181/49262642-9",
+  "data_emissao": "15/04/2016",
+  "valor_total": 3687.91,
+  "descricao_resumida": "Boleto Original: 157/00203599-6, VCTO 05/04/2016 NO VALOR DE R$ 3.342,55",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.04,
+    "timestamp": "2026-10-26T19:19:16Z",
+    "idDocumento": 5972812
+  }
+}

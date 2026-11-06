@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Real Maia Transportes Terrestres LTDA",
+  "fornecedor_cnpj_cpf": "01.945.637/0001-13",
+  "numero_documento": "127054",
+  "data_emissao": "2017-02-05",
+  "valor_total": 158.38,
+  "descricao_resumida": "Bilhete de passagem rodoviária de Porto Nacional/TO para Brasília",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:25:57Z",
+    "tempo_segundos": 20.79,
+    "idDocumento": 5985587
+  }
+}

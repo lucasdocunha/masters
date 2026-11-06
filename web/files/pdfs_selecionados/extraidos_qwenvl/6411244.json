@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "RESTAURANTE DAS MINAS LTDA EPP",
+  "fornecedor_cnpj_cpf": "04.277.081/0003-94",
+  "numero_documento": "092342",
+  "data_emissao": "2017-10-04",
+  "valor_total": 69.56,
+  "descricao_resumida": "1 T1 SELF SERVICE SEG A SEX 0,472KGX71,00 T1 2 29 SPRITE LATA ZERO 1UN F1 3 167 SOBREMESA SEG A SEX 0,13KGx71,90 T1 4 167 SOBREMESA SEG A SEX 0,075KGx71,90 T1 5 174 CAFE EXPRESSO 1UN T1 6 174 CAFE EXPRESSO 1UN T1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 4.16,
+    "timestamp": "2026-10-26T18:22:09Z",
+    "idDocumento": 6411244
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ARCARI FERRONATTO & CIA LTDA EPP",
+  "fornecedor_cnpj_cpf": "83.854.810/0001-32",
+  "numero_documento": "61332",
+  "data_emissao": "2016-07-20",
+  "valor_total": null,
+  "descricao_resumida": "SERVIÇOS DE HOTELARIA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.74,
+    "timestamp": "2026-10-26T19:27:47Z",
+    "idDocumento": 6062161
+  }
+}

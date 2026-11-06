@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Rádio Tupinambá de Sobral Ltda.",
+  "fornecedor_cnpj_cpf": "07816424000178",
+  "numero_documento": "6952",
+  "data_emissao": "2020-04-13",
+  "valor_total": 4400.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar do deputado José Leônidas de Meneses Cristino na programação noticiosa da Rádio Tupinambá de Sobral, no mês de março/2020.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:44:53Z",
+    "tempo_segundos": 48.42,
+    "idDocumento": 7047744
+  }
+}

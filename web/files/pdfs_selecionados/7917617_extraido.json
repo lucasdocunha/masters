@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Ampla Energia e Serviços S. A.",
+  "fornecedor_cnpj_cpf": "33.050.071/0001-58",
+  "numero_documento": "096748400",
+  "data_emissao": "2025-05-13",
+  "valor_total": 108.97,
+  "descricao_resumida": "Fornecimento de energia elétrica referente ao mês 05/2025",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:31:14Z",
+    "tempo_segundos": 2.54,
+    "idDocumento": 7917617
+  }
+}

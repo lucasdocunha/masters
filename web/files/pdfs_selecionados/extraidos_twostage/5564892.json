@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Concessionaria das Rodovias Ayrton Senna e Carvalho Pinto S.A.",
+  "fornecedor_cnpj_cpf": "10841050000155",
+  "numero_documento": "F2A6E2D1-533C-461F-B3A1-9162C5B72CAE",
+  "data_emissao": "2014-11-26",
+  "valor_total": 2.9,
+  "descricao_resumida": "PEDAGIO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 5.93,
+    "timestamp": "2026-10-26T18:49:07Z",
+    "idDocumento": 5564892
+  }
+}

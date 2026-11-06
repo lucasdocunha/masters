@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5910784,
+  "ano": 2016,
+  "mes": 2,
+  "fornecedor": "POSTO BELÉM 04",
+  "cnpjCPF": "416.250.620/0033-8",
+  "numero": "043263",
+  "tipoDocumento": "0",
+  "dataEmissao": "2016-02-11T00:00:00",
+  "valorDocumento": 200.05,
+  "valorLiquido": 200.05,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Aluisio Mendes",
+  "cpfParlamentar": "66746485749",
+  "siglaUF": "MA",
+  "siglaPartido": "PODE",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2999/2016/5910784.pdf"
+}

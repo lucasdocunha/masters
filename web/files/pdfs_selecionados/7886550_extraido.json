@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SENNA AUTO POSTO FILINTO - CIMC COMERCIO DE COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "43.672.456/0001-00",
+  "numero_documento": "22187",
+  "data_emissao": "2025-03-08",
+  "valor_total": 150.0,
+  "descricao_resumida": "DIESEL S10 (24,233 LT)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:29:02Z",
+    "tempo_segundos": 23.68,
+    "idDocumento": 7886550
+  }
+}

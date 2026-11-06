@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MESTRE DOS CAFES LOCACAO E COMERCIO LTDA",
+  "fornecedor_cnpj_cpf": "35359936000198",
+  "numero_documento": "202400000000038",
+  "data_emissao": "07/05/2024",
+  "valor_total": 910.3,
+  "descricao_resumida": "SERVIÇO: 14.01 - 140100100 - Lubrificação, limpeza, ilustração, revisão, conserto, restauração, blindagem, manutenção e conservação de motores, máquinas ... Locação de máquina de café para para o escritório parlamentar da Deputada Federal ANA CRISTINA DE LIMA PIMENTEL CPF 056.445.986-08, situado à Av. Luiz Perry, 123, Santa Helena, Juiz de Fora/MG. Data de emissão da nota: 07/05/2023 Período de locação: 05/05/2024 a 06/06/2024 Pagamento via boleto Bancário Locação do equipamento: Rubi + Solúvel - número de série: 3622",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 5.17,
+    "timestamp": "2026-10-26T18:38:39Z",
+    "idDocumento": 7731435
+  }
+}

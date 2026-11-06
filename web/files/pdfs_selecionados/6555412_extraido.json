@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Caminhos do Parana S/A",
+  "fornecedor_cnpj_cpf": "02.221.358/0001-70",
+  "numero_documento": null,
+  "data_emissao": "2018-04-01",
+  "valor_total": 11.1,
+  "descricao_resumida": "Tarifa de pedagio - PRACA IRATI",
+  "observacoes": "Documento equivalente a recibo de pedagio",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:12:51Z",
+    "tempo_segundos": 41.85,
+    "idDocumento": 6555412
+  }
+}

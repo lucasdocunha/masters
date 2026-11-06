@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Felício Laterça",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2019-12-02",
+  "valor_total": 500.0,
+  "descricao_resumida": "Aluguel da unidade 905 no Condomínio do Edifício Downtown",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.41,
+    "timestamp": "2026-10-26T18:28:10Z",
+    "idDocumento": 6977000
+  }
+}

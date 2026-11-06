@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMERCIO DE COMBUSTIVEIS CALHANDRA LTDA",
+  "fornecedor_cnpj_cpf": "07.614.869/0001-75",
+  "numero_documento": "C00:541896",
+  "data_emissao": "2015-08-07",
+  "valor_total": 155.68,
+  "descricao_resumida": "GASOLINA POWER Bo:03Bi;06 45,848 L X 3,465",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.79,
+    "timestamp": "2026-10-26T18:17:11Z",
+    "idDocumento": 5792148
+  }
+}

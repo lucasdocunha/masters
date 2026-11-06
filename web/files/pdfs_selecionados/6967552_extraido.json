@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DE COMBUSTIVEIS GARANTIA LTDA",
+  "fornecedor_cnpj_cpf": "72578138000243",
+  "numero_documento": "8111",
+  "data_emissao": "2019-11-23",
+  "valor_total": 221.78,
+  "descricao_resumida": "Oleo Diesel B S-10 (57,32 L)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:24:12Z",
+    "tempo_segundos": 14.22,
+    "idDocumento": 6967552
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PORTO VELHO GARAGEM-CEREJEIRA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "289838",
+  "data_emissao": "17/12/2014",
+  "valor_total": 103.97,
+  "descricao_resumida": "PASSAGEM RODOVIÁRIA MOD 3",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.27,
+    "timestamp": "2026-10-26T18:15:19Z",
+    "idDocumento": 5587639
+  }
+}

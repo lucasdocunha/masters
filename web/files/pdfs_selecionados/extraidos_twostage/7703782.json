@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "RECREIO COMERCIO DE COMBUSTIVEIS",
+  "fornecedor_cnpj_cpf": "40 085 787/0001-56",
+  "numero_documento": "068846",
+  "data_emissao": "2024-03-02",
+  "valor_total": 400.0,
+  "descricao_resumida": "OLEO DIESEL B S10 Bi16 Bo03 Tq04",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 18.05,
+    "timestamp": "2026-10-26T21:25:25Z",
+    "idDocumento": 7703782
+  }
+}

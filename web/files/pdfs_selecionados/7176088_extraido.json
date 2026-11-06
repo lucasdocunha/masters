@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "DANIEL MARQUES DE SA COUTELO CHAGAS 0349628432",
+  "fornecedor_cnpj_cpf": "34.810.534/0001-03",
+  "numero_documento": "00000088",
+  "data_emissao": "2021-04-05",
+  "valor_total": 1000.0,
+  "descricao_resumida": "Servicos de publicidade, alimentacao e atualizacao do site, gestao de redes sociais e edicao de videos referente a abril/2021.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:48:12Z",
+    "tempo_segundos": 16.59,
+    "idDocumento": 7176088
+  }
+}

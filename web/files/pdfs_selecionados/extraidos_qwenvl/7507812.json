@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DE SERVIÇO NORMANDI LTDA",
+  "fornecedor_cnpj_cpf": "49.922.040/0001-80",
+  "numero_documento": "078349",
+  "data_emissao": "2023-02-28",
+  "valor_total": 260.08,
+  "descricao_resumida": "Não Informado",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.4,
+    "timestamp": "2026-10-26T18:35:03Z",
+    "idDocumento": 7507812
+  }
+}

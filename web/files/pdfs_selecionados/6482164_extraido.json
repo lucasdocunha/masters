@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": null,
+  "valor_total": null,
+  "descricao_resumida": null,
+  "observacoes": "Múltiplos cupons fiscais presentes no documento, necessitando de processamento individualizado por cupom.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:31:02Z",
+    "tempo_segundos": 2.43,
+    "idDocumento": 6482164
+  }
+}

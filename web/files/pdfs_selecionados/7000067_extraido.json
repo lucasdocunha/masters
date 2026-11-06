@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CEMIG DISTRIBUICAO S.A.",
+  "fornecedor_cnpj_cpf": "06.981.180/0001-16",
+  "numero_documento": "174714196",
+  "data_emissao": "2020-01-10",
+  "valor_total": 186.52,
+  "descricao_resumida": "Fornecimento de energia eletrica referente ao mes de janeiro de 2020 e contribuicao de iluminaao publica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:07:12Z",
+    "tempo_segundos": 37.7,
+    "idDocumento": 7000067
+  }
+}

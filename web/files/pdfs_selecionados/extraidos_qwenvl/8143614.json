@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "M.S. RIGHI E CIA LTDA.",
+  "fornecedor_cnpj_cpf": "43.467.273/0001-53",
+  "numero_documento": "803218",
+  "data_emissao": "2026-08-05",
+  "valor_total": 204.81,
+  "descricao_resumida": "ETANOLA. Bico 11",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.47,
+    "timestamp": "2026-10-26T18:42:54Z",
+    "idDocumento": 8143614
+  }
+}

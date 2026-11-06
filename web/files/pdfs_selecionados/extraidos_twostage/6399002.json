@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Salomón Informática Corporativo",
+  "fornecedor_cnpj_cpf": "05254930000195",
+  "numero_documento": "001687",
+  "data_emissao": "2017-09-01",
+  "valor_total": 356.9,
+  "descricao_resumida": "Locação de Software",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 17.43,
+    "timestamp": "2026-10-26T19:33:51Z",
+    "idDocumento": 6399002
+  }
+}

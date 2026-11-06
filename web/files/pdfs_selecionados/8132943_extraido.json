@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO ILHA PARANA LTDA",
+  "fornecedor_cnpj_cpf": "36.131.030/0001-84",
+  "numero_documento": "000013401",
+  "data_emissao": "2026-07-14",
+  "valor_total": 273.03,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:43:27Z",
+    "tempo_segundos": 3.97,
+    "idDocumento": 8132943
+  }
+}

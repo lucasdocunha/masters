@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VÓ QUIARA RESTAURANTE EIRELI",
+  "fornecedor_cnpj_cpf": "29.843.378/0001-39",
+  "numero_documento": "000233",
+  "data_emissao": "2019-03-11",
+  "valor_total": 77.89,
+  "descricao_resumida": "Almoco e refrigerante",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:43:20Z",
+    "tempo_segundos": 7.56,
+    "idDocumento": 6790891
+  }
+}

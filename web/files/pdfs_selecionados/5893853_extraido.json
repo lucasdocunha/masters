@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ANJOS E PINTO COMERCIO E DERIVADOS DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "20.653.810/0001-54",
+  "numero_documento": "000005696",
+  "data_emissao": "2016-01-07",
+  "valor_total": 182.37,
+  "descricao_resumida": "Oleo Diesel B S-10 Original - Ipiranga",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:01:29Z",
+    "tempo_segundos": 2.3,
+    "idDocumento": 5893853
+  }
+}

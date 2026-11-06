@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "TUPAN AUTO POSTO LTDA",
+  "fornecedor_cnpj_cpf": "46.527.446/0001-70",
+  "numero_documento": "21140",
+  "data_emissao": "2026-03-19",
+  "valor_total": 296.4,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:08:17Z",
+    "tempo_segundos": 2.48,
+    "idDocumento": 8069576
+  }
+}

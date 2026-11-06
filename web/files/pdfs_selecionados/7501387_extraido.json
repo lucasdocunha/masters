@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PAULO ROGERIO DE JESUS SILVA",
+  "fornecedor_cnpj_cpf": "15.097.627/0001-80",
+  "numero_documento": "00000103",
+  "data_emissao": "2023-02-27",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Servicos de digitacao de cadastros, criacao e edicao de imagens e videos, diagramacao de materiais impressos e divulgacao de material informativo no periodo de 31/01/2023 a 27/02/2023.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:44:20Z",
+    "tempo_segundos": 4.79,
+    "idDocumento": 7501387
+  }
+}

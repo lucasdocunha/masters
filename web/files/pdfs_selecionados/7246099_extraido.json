@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ADALGISIO PIRES NETO - ME.",
+  "fornecedor_cnpj_cpf": "05961470000135",
+  "numero_documento": "306",
+  "data_emissao": "2021-08-27",
+  "valor_total": 1566.0,
+  "descricao_resumida": "Serviço referente a diagramação e tratamento de imagens para o informativo de divulgação das atividades parlamentares do deputado José Rocha (Edição Junho 2021).",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:39:37Z",
+    "tempo_segundos": 38.43,
+    "idDocumento": 7246099
+  }
+}

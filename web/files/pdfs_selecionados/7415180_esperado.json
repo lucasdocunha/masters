@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7415180,
+  "ano": 2022,
+  "mes": 6,
+  "fornecedor": "POSTO DE COMBUSTÍVEIS BERNARDINO E SILVA LTDA",
+  "cnpjCPF": "102.829.450/0010-5",
+  "numero": "140000623",
+  "tipoDocumento": "0",
+  "dataEmissao": "2022-07-01T00:00:00",
+  "valorDocumento": 140.0,
+  "valorLiquido": 140.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Tadeu Alencar",
+  "cpfParlamentar": "35284420420",
+  "siglaUF": "PE",
+  "siglaPartido": "PSB",
+  "descricaoDespesa": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2945/2022/7415180.pdf"
+}

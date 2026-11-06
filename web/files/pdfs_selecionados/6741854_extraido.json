@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO CASTELO LOCATELLI - LR PETROLED LTDA",
+  "fornecedor_cnpj_cpf": "15715389000129",
+  "numero_documento": "000586762",
+  "data_emissao": "2019-01-16",
+  "valor_total": 70.0,
+  "descricao_resumida": "OLEO DIESEL ADITIVADO S-10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:30:15Z",
+    "tempo_segundos": 53.03,
+    "idDocumento": 6741854
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DEF. ZÉ CAHLOS",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "2645",
+  "data_emissao": null,
+  "valor_total": null,
+  "descricao_resumida": "a importância de R$ 10,00 referente a serviços autônomos de Taxi.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 1.87,
+    "timestamp": "2026-10-26T18:17:19Z",
+    "idDocumento": 5612075
+  }
+}

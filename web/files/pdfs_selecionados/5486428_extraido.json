@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CARREFOUR COMERCIO E INDUSTRIA LTDA",
+  "fornecedor_cnpj_cpf": "45.543.915/0348-33",
+  "numero_documento": "197350",
+  "data_emissao": "2014-06-16",
+  "valor_total": 108.57,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:26:39Z",
+    "tempo_segundos": 34.94,
+    "idDocumento": 5486428
+  }
+}

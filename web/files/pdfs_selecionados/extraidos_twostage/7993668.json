@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MARANATA AUTO POSTO DE BOTUCATU LTDA",
+  "fornecedor_cnpj_cpf": "07.170.458/0001-33",
+  "numero_documento": "NFC-e nII 000009091 Série 001 07/10/2025 09:50:48",
+  "data_emissao": "2025-10-07",
+  "valor_total": 92.01,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 14.73,
+    "timestamp": "2026-10-26T21:39:02Z",
+    "idDocumento": 7993668
+  }
+}

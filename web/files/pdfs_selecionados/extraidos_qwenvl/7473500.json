@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SILT SELF SERVICE EIRELI ME",
+  "fornecedor_cnpj_cpf": "07.286.731/0001-94 - IE 0746477400135",
+  "numero_documento": "000 038.526 - Série: 009",
+  "data_emissao": "13/12/2022",
+  "valor_total": 20.41,
+  "descricao_resumida": "REFEICOES (JANTAR ALMCCO)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.05,
+    "timestamp": "2026-10-26T18:35:07Z",
+    "idDocumento": 7473500
+  }
+}

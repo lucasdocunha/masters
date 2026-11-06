@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Posto Ipiranga 204 Sul / Cascol Combustíveis P/ Veículos Ltda",
+  "fornecedor_cnpj_cpf": "00.306.597/0021-40",
+  "numero_documento": "6275",
+  "data_emissao": "2014-08-08",
+  "valor_total": 50.0,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": "Nota fiscal manuscrita",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:30:30Z",
+    "tempo_segundos": 28.26,
+    "idDocumento": 5498340
+  }
+}

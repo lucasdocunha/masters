@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DE GASOLINA MARTINCA LTDA",
+  "fornecedor_cnpj_cpf": "88.905.534/0001-08",
+  "numero_documento": "1SENT0",
+  "data_emissao": "2016-04-15",
+  "valor_total": 50.07,
+  "descricao_resumida": "GTU UH VL UNIT (R$) ST VL ITEM (R$)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 10.78,
+    "timestamp": "2026-10-26T19:14:27Z",
+    "idDocumento": 5978050
+  }
+}

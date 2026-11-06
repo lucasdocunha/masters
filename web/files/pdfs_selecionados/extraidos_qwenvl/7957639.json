@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "S. MIGUEL DO IGUACH",
+  "fornecedor_cnpj_cpf": "58.056.046/0001-02",
+  "numero_documento": "JQGHGBHJ420H",
+  "data_emissao": "29/07/25",
+  "valor_total": 17.4,
+  "descricao_resumida": "VENDA A CREDITO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.47,
+    "timestamp": "2026-10-26T18:40:38Z",
+    "idDocumento": 7957639
+  }
+}

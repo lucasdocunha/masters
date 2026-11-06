@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SENNAAUTOPOSTO FILINTO",
+  "fornecedor_cnpj_cpf": "43.672.456/0001-00",
+  "numero_documento": "365308",
+  "data_emissao": "2025-03-08",
+  "valor_total": 150.0,
+  "descricao_resumida": "DIESEL S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.64,
+    "timestamp": "2026-10-26T18:41:10Z",
+    "idDocumento": 7886550
+  }
+}

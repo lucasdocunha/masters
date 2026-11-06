@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EMP. BRAS. DE CORREIOS E TELEGRAFOS",
+  "fornecedor_cnpj_cpf": "236489-00186",
+  "numero_documento": "58721259",
+  "data_emissao": "2014-07-30",
+  "valor_total": 27.1,
+  "descricao_resumida": "SEDEX 10 Valor do Porte(R$): 27,10+ Valor em Dinheiro(R$): 27,10 Valor Recebido(R$): 40,00 Troco(R$): 12,90",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.3,
+    "timestamp": "2026-10-26T18:16:01Z",
+    "idDocumento": 5494252
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ADH HOTELARIA LTDA",
+  "fornecedor_cnpj_cpf": "06.015.748/0004-97",
+  "numero_documento": "171427",
+  "data_emissao": "2021-01-29",
+  "valor_total": null,
+  "descricao_resumida": "Nota Fiscal Eletrônica de Prestação de Serviços - NFS-e",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.58,
+    "timestamp": "2026-10-26T20:39:56Z",
+    "idDocumento": 7157314
+  }
+}

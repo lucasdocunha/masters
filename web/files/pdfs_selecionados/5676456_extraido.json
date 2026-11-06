@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "DRIVE CAR TRANSPORTES E COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "00.012.211/0003-06",
+  "numero_documento": "042379",
+  "data_emissao": "2015-04-30",
+  "valor_total": 174.21,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:45:02Z",
+    "tempo_segundos": 2.17,
+    "idDocumento": 5676456
+  }
+}

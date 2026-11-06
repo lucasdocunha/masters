@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "LIBRE COMUNICAÇÃO E MARKETING LTDA",
+  "fornecedor_cnpj_cpf": "08.345.631/0001-54",
+  "numero_documento": "173",
+  "data_emissao": "27/01/2026",
+  "valor_total": 8500.0,
+  "descricao_resumida": "Prestação de serviço de divulgação da atividade parlamentar e gerenciamento de redes sociais (fb.com/OficialMarcosTavares), referente ao mês de janeiro de 2026.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 10.11,
+    "timestamp": "2026-10-26T18:43:33Z",
+    "idDocumento": 8044514
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7605465,
+  "ano": 2023,
+  "mes": 9,
+  "fornecedor": "Latam Linhas Aéreas S.A",
+  "cnpjCPF": "020.128.620/0016-0",
+  "numero": "9572122796689",
+  "tipoDocumento": "0",
+  "dataEmissao": "2023-08-24T00:00:00",
+  "valorDocumento": 3614.23,
+  "valorLiquido": 3614.23,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "José Medeiros",
+  "cpfParlamentar": "42442540134",
+  "siglaUF": "MT",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "PASSAGEM AÉREA - REEMBOLSO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3411/2023/7605465.pdf"
+}

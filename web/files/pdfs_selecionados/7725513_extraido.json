@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ECOSUL",
+  "fornecedor_cnpj_cpf": "02511048000190",
+  "numero_documento": "4FC574EF-BF89-43C1-B596-C6466F6CF525",
+  "data_emissao": "2024-04-21",
+  "valor_total": 19.6,
+  "descricao_resumida": "Documento fiscal equivalente de pedágio rodoviário (Ecosul, Km 052 BR392, Pista: 02 - Capão Seco - Rio Grande).",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:07:43Z",
+    "tempo_segundos": 2.31,
+    "idDocumento": 7725513
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AGUAS DO RIO 4 SPE S.A.",
+  "fornecedor_cnpj_cpf": "42.644.228/0001-06",
+  "numero_documento": "185675",
+  "data_emissao": "2022-10-21",
+  "valor_total": 150.68,
+  "descricao_resumida": "Fornecimento de agua e servicos correlatos",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:37:52Z",
+    "tempo_segundos": 3.35,
+    "idDocumento": 7464746
+  }
+}

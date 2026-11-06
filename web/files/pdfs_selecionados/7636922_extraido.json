@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EPOLITICS S/S LTDA. - ME",
+  "fornecedor_cnpj_cpf": "15.788.156/0001-56",
+  "numero_documento": "00000222",
+  "data_emissao": "2023-11-06",
+  "valor_total": 12000.0,
+  "descricao_resumida": "Produção de conteúdo no período de 02/10/2023 a 02/11/2023 para divulgação nas redes sociais, relacionamento e monitoramento na Internet e clipping digital relacionadas ao mandato de deputado federal.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:45:57Z",
+    "tempo_segundos": 19.72,
+    "idDocumento": 7636922
+  }
+}

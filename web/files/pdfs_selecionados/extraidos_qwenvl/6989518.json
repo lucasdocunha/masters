@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Parima Transportes e Locações",
+  "fornecedor_cnpj_cpf": "01.206.568/0001-26",
+  "numero_documento": "000189",
+  "data_emissao": "2019-12-02",
+  "valor_total": 3800.0,
+  "descricao_resumida": "Locação de veículo mensal de marca Toyota, modelo Corolla XEI 2.0 flex, ano 2019, cor preta, placa PHR-1H42, chassis 9BRBD3HE3K0427618.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.07,
+    "timestamp": "2026-10-26T18:26:51Z",
+    "idDocumento": 6989518
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7080833,
+  "ano": 2020,
+  "mes": 8,
+  "fornecedor": "RESTAURANTE E POUSADA DA ISA",
+  "cnpjCPF": "277.605.850/0010-2",
+  "numero": "47",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-08-05T00:00:00",
+  "valorDocumento": 70.0,
+  "valorLiquido": 70.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Euclydes Pettersen",
+  "cpfParlamentar": "06460032670",
+  "siglaUF": "MG",
+  "siglaPartido": "PSC",
+  "descricaoDespesa": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3369/2020/7080833.pdf"
+}

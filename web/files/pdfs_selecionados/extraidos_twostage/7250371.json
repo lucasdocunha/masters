@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "J L MASTER COMUNICACOES DO RGS LTDA",
+  "fornecedor_cnpj_cpf": "15.696.886/0001-27",
+  "numero_documento": "6308",
+  "data_emissao": "2021-09-01",
+  "valor_total": 250.0,
+  "descricao_resumida": "CONTRATO DE MANUTENCAO. 250,00 NOTA FISCAL REFERENTE A LOCAÇÃO DA CENTRAL TELEFÔNICA PERÍODO DE 01/08/2021 ATE 31/08/2021.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.38,
+    "timestamp": "2026-10-26T20:40:33Z",
+    "idDocumento": 7250371
+  }
+}

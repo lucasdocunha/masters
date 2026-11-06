@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LUCIA MARIA DA SILVA",
+  "fornecedor_cnpj_cpf": "08369731000110",
+  "numero_documento": "689",
+  "data_emissao": "2024-06-01",
+  "valor_total": 200.0,
+  "descricao_resumida": "Hospedagem de 1 diária no HOTEL PRA VOCÊ",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:03:33Z",
+    "tempo_segundos": 2.57,
+    "idDocumento": 7750916
+  }
+}

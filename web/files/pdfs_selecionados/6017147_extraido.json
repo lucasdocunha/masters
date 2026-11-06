@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": "14640354659",
+  "numero_documento": null,
+  "data_emissao": "2016-06-03",
+  "valor_total": 45.0,
+  "descricao_resumida": "Serviço de táxi - Trecho Sagrada Família x Savassi",
+  "observacoes": "Documento preenchido manualmente, sem CNPJ do fornecedor legível, apenas CPF do recebedor.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:11:59Z",
+    "tempo_segundos": 2.22,
+    "idDocumento": 6017147
+  }
+}

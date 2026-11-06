@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "REDEPOSTO REGENTE FEUJO COMERCIO DE COMBUSTIVEIS",
+  "fornecedor_cnpj_cpf": "48.238.265/0001-20",
+  "numero_documento": "16439",
+  "data_emissao": "2024-10-04",
+  "valor_total": 345.59,
+  "descricao_resumida": "DIESEL S10 COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.81,
+    "timestamp": "2026-10-26T18:39:09Z",
+    "idDocumento": 7812767
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ECT - EMP, BRAS. DE CORREIOS E TELEGRAFOS",
+  "fornecedor_cnpj_cpf": "424478 - AGF LAPA",
+  "numero_documento": "03613174000118",
+  "data_emissao": "2016-04-05",
+  "valor_total": 33.1,
+  "descricao_resumida": "SEDEX A VISTA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.66,
+    "timestamp": "2026-10-26T18:18:34Z",
+    "idDocumento": 5964313
+  }
+}

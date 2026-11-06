@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MP COMERCIO DE COMBUSTIVEIS LT",
+  "fornecedor_cnpj_cpf": "09149936000315",
+  "numero_documento": "200001",
+  "data_emissao": "2019-08-09",
+  "valor_total": 200.0,
+  "descricao_resumida": "G COMB",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.33,
+    "timestamp": "2026-10-26T18:27:07Z",
+    "idDocumento": 6893392
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Thiago dos Santos Guimarães",
+  "fornecedor_cnpj_cpf": "49.541.263/0001-05",
+  "numero_documento": "62",
+  "data_emissao": "2024-07-15",
+  "valor_total": null,
+  "descricao_resumida": "Nota fiscal referente ao serviço de cobertura fotográfica do evento Feira Nater Coop, realizada no dia 12 de julho de 2024.",
+  "observacoes": "Para divulgação das atividades parlamentar do deputado federal Evair Vieira de Melo, nas redes sociais Facebook.com/evair.vieirademelo, Instagram.com/evair_de_melo/, TikTok.com/evairdemelo, Youtube.com/evairedemelo6030 e outros.",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.55,
+    "timestamp": "2026-10-26T18:38:51Z",
+    "idDocumento": 7771027
+  }
+}

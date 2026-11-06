@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RGP CONSULTORIA EMPRESARIAL LTDA",
+  "fornecedor_cnpj_cpf": "21634774000144",
+  "numero_documento": null,
+  "data_emissao": "2018-02-28",
+  "valor_total": 1700.0,
+  "descricao_resumida": "Referente ao aluguel do mês de fevereiro.",
+  "observacoes": "Recibo de aluguel",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:18:31Z",
+    "tempo_segundos": 8.17,
+    "idDocumento": 6524098
+  }
+}

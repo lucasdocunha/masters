@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Claro NXT Telecomunicações S.A",
+  "fornecedor_cnpj_cpf": "66.970.229/0041-54",
+  "numero_documento": "0002652347",
+  "data_emissao": "2024-06-19",
+  "valor_total": 208.95,
+  "descricao_resumida": "Serviços de telecomunicação, incluindo TV por assinatura (Seleção Top HD Fidelidade) e Banda Larga (Virtua Banda Larga 600 Mega Fidelidade)",
+  "observacoes": "Documento extraído de fatura consolidada contendo nota fiscal de serviços de comunicação (Mod 21)",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:13:42Z",
+    "tempo_segundos": 16.19,
+    "idDocumento": 7768107
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GDI COM. DE COMBUSTIVEIS 2 LTDA",
+  "fornecedor_cnpj_cpf": "30.472.297/0001-59",
+  "numero_documento": "00132390Z00166800",
+  "data_emissao": "2020-03-07",
+  "valor_total": 183.92,
+  "descricao_resumida": "ITEN COTIDO DE: JCAD QTD. UN. VL UNIT(R$) ST VL ITEN(R$)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.05,
+    "timestamp": "2026-10-26T18:30:32Z",
+    "idDocumento": 7054096
+  }
+}

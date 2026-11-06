@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO SAO GERMANO LTDA",
+  "fornecedor_cnpj_cpf": "02.326.411/0001-05",
+  "numero_documento": "391047",
+  "data_emissao": "2015-04-07",
+  "valor_total": 173.95,
+  "descricao_resumida": "F1 GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 15.86,
+    "timestamp": "2026-10-26T19:11:50Z",
+    "idDocumento": 5649413
+  }
+}

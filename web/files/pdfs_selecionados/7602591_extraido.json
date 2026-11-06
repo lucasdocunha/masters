@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "E. R. MAINARDI E CIA LTDA-ME",
+  "fornecedor_cnpj_cpf": "68.811.702/0001-99",
+  "numero_documento": "202300000034829",
+  "data_emissao": "2023-09-03",
+  "valor_total": 187.0,
+  "descricao_resumida": "Hospedagem em hotel (Single Std Sup) de 02/09/2023 a 03/09/2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:45:32Z",
+    "tempo_segundos": 6.04,
+    "idDocumento": 7602591
+  }
+}

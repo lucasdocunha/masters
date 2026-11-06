@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO REM LTDA",
+  "fornecedor_cnpj_cpf": "41705211000107",
+  "numero_documento": "460699",
+  "data_emissao": "2016-05-24",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:06:05Z",
+    "tempo_segundos": 2.72,
+    "idDocumento": 6023211
+  }
+}

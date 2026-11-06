@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7673227,
+  "ano": 2024,
+  "mes": 1,
+  "fornecedor": "Jornal Panorama Ltda - ME",
+  "cnpjCPF": "085.603.980/0012-2",
+  "numero": "3055",
+  "tipoDocumento": "0",
+  "dataEmissao": "2024-01-29T00:00:00",
+  "valorDocumento": 3000.0,
+  "valorLiquido": 3000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Dr. Frederico",
+  "cpfParlamentar": "07422257717",
+  "siglaUF": "MG",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3249/2024/7673227.pdf"
+}

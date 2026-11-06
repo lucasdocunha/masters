@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7557554,
+  "ano": 2023,
+  "mes": 5,
+  "fornecedor": "CEEE - Companhia Estadual de Distribuição de Energia Elétrica",
+  "cnpjCPF": "084.671.150/0010-0",
+  "numero": "15325592",
+  "tipoDocumento": "0",
+  "dataEmissao": "2023-06-05T00:00:00",
+  "valorDocumento": 411.89,
+  "valorLiquido": 411.89,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Daniel Trzeciak",
+  "cpfParlamentar": "01297812077",
+  "siglaUF": "RS",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3328/2023/7557554.pdf"
+}

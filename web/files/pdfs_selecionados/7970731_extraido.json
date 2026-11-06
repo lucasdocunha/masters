@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Kalunga SA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "311225",
+  "data_emissao": "2025-08-25",
+  "valor_total": 297.0,
+  "descricao_resumida": "Papel sulfite A4 75g 210mmx297mm Chanex PT 500 FL (10 PT)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:50:20Z",
+    "tempo_segundos": 2.16,
+    "idDocumento": 7970731
+  }
+}

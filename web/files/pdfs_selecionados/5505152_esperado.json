@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5505152,
+  "ano": 2014,
+  "mes": 8,
+  "fornecedor": "POSTO OLINDA",
+  "cnpjCPF": "407.569.830/0010-5",
+  "numero": "221094",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-08-23T00:00:00",
+  "valorDocumento": 100.0,
+  "valorLiquido": 100.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "SANDRA ROSADO",
+  "cpfParlamentar": "32889429415",
+  "siglaUF": "RN",
+  "siglaPartido": "PSB",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1689/2014/5505152.pdf"
+}

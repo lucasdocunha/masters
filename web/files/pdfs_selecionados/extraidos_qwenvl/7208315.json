@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DAERP - DEPARTAMENTO DE ÁGUA E ESGOTOS DE RIBEIRÃO PRETO",
+  "fornecedor_cnpj_cpf": "14010-070 - CNPJ: 56.022.858/0001-01",
+  "numero_documento": "15491.1",
+  "data_emissao": "2021-03-05",
+  "valor_total": 57.7,
+  "descricao_resumida": "AV INDEPENDENCIA, 3799 - SL - JARDIM CALIFORNIA RIBEIRÃO PRETO SP 14026-561",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.17,
+    "timestamp": "2026-10-26T18:31:09Z",
+    "idDocumento": 7208315
+  }
+}

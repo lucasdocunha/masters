@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Locamode aluguel de carros",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "29350",
+  "data_emissao": "2026-07-31",
+  "valor_total": 2500.0,
+  "descricao_resumida": "Locação de veículo Argo Req-1F19",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.27,
+    "timestamp": "2026-10-26T18:43:47Z",
+    "idDocumento": 8145914
+  }
+}

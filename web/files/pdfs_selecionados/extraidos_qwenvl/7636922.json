@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "E POLITICS S/S LTDA. - ME",
+  "fornecedor_cnpj_cpf": "15.788.156/0001-56",
+  "numero_documento": "0000222",
+  "data_emissao": "2023-11-06",
+  "valor_total": 12000.0,
+  "descricao_resumida": "Produção de conteúdo no período de 02/10/2023 a 02/11/2023 para divulgação nas redes sociais, relacionamento e monitoramento na Internet e clipping digital relacionadas ao mandato de deputado federal.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.11,
+    "timestamp": "2026-10-26T18:35:13Z",
+    "idDocumento": 7636922
+  }
+}

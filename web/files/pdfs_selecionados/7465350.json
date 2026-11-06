@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7465350,
+  "ano": 2022,
+  "mes": 11,
+  "fornecedor": "Conc. do sistema RodoviarioRJ/SP S.A",
+  "cnpjCPF": "443.196.880/0014-2",
+  "numero": "2685C0C",
+  "tipoDocumento": "1",
+  "dataEmissao": "2022-11-15T00:00:00",
+  "valorDocumento": 12.9,
+  "valorLiquido": 12.9,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Delegado Antônio Furtado",
+  "cpfParlamentar": "02473048754",
+  "siglaUF": "RJ",
+  "siglaPartido": "UNIÃO",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3374/2022/7465350.pdf"
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PETROBRAS",
+  "fornecedor_cnpj_cpf": "00.306.597/0063-08",
+  "numero_documento": "14215",
+  "data_emissao": "2015-04-27",
+  "valor_total": 100.0,
+  "descricao_resumida": "Gasolina Comum, Gasolina Aditivada, Etanol, Diesel, Combustíveis Gasol Indústria e Comb. Lda, Lubrificante",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 17.89,
+    "timestamp": "2026-10-26T19:01:08Z",
+    "idDocumento": 5668500
+  }
+}

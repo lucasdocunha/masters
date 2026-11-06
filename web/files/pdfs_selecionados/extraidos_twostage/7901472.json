@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CANDIDO VARGAS, 114, VIAU",
+  "fornecedor_cnpj_cpf": "30.996.688/0001-72",
+  "numero_documento": "51",
+  "data_emissao": "2025-04-15",
+  "valor_total": null,
+  "descricao_resumida": "DIVULGAÇÃO DE ATIVIDADE PARTLAMENTAR DO DEPUTADO BIBO NUNES NO PORTALNMT REFERENTE AO MÊS DE ABRIL DE 2025. NOTA QUITADA A VISTA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.93,
+    "timestamp": "2026-10-26T21:43:49Z",
+    "idDocumento": 7901472
+  }
+}

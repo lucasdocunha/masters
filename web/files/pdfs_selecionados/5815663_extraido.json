@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RADIO ALVORADA DE RONDONIA",
+  "fornecedor_cnpj_cpf": "05208699000101",
+  "numero_documento": "000-000-025",
+  "data_emissao": "2015-09-25",
+  "valor_total": 1000.0,
+  "descricao_resumida": "Serviços de publicidade - divulgação das atividades parlamentares do deputado Marcos Rogério.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:49:21Z",
+    "tempo_segundos": 2.38,
+    "idDocumento": 5815663
+  }
+}

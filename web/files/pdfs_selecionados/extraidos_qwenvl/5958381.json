@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ECT - EMP. BRAS. DE CORREIOS E TELEGRAFOS",
+  "fornecedor_cnpj_cpf": "72300019-AC CENTRAL DE SAO PAULO",
+  "numero_documento": "89297849",
+  "data_emissao": "2016-03-29",
+  "valor_total": 33.1,
+  "descricao_resumida": "SEDEX A VISTA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.63,
+    "timestamp": "2026-10-26T18:20:41Z",
+    "idDocumento": 5958381
+  }
+}

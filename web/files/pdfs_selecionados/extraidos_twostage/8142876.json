@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO SERENA COLIBRI LTDA",
+  "fornecedor_cnpj_cpf": "46899832000192",
+  "numero_documento": "517149",
+  "data_emissao": "2026-07-22",
+  "valor_total": 102.24,
+  "descricao_resumida": "R$ 102,24              | R$ 0,00",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.57,
+    "timestamp": "2026-10-26T21:48:33Z",
+    "idDocumento": 8142876
+  }
+}

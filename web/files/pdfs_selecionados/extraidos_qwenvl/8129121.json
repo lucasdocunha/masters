@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "E.PUKALL&CIA LTDA",
+  "fornecedor_cnpj_cpf": "665",
+  "numero_documento": "665",
+  "data_emissao": "2026-07-08",
+  "valor_total": 227.0,
+  "descricao_resumida": "Hospedagem:Check-in 07/07/26 Check-out 08/07/2026-1 diaria-pagamento a vista.Aliquota Efetiva:3,2500000000%",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.95,
+    "timestamp": "2026-10-26T18:43:36Z",
+    "idDocumento": 8129121
+  }
+}

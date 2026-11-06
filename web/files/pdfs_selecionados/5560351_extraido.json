@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Editora Jornalística Fátima Ltda",
+  "fornecedor_cnpj_cpf": "01.517.010/0001-61",
+  "numero_documento": "3022",
+  "data_emissao": "2014-11-19",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Publicação de matéria em jornal impresso para divulgação de atividade parlamentar.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:30:57Z",
+    "tempo_segundos": 21.9,
+    "idDocumento": 5560351
+  }
+}

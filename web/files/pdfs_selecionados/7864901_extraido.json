@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ROGERIO PEREIRA DA SILVA 40947467300",
+  "fornecedor_cnpj_cpf": "22.428.982/0001-50",
+  "numero_documento": "26",
+  "data_emissao": "2025-02-04",
+  "valor_total": 1500.0,
+  "descricao_resumida": "DIVULGAÇÃO E PUBLICAÇÃO DE MATÉRIAS JORNALÍSTICAS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:33:43Z",
+    "tempo_segundos": 29.82,
+    "idDocumento": 7864901
+  }
+}

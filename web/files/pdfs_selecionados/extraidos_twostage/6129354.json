@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "00306597005670 / IE: 0732903504556",
+  "numero_documento": "9217",
+  "data_emissao": "2016-10-22",
+  "valor_total": 200.0,
+  "descricao_resumida": "GC",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 13.72,
+    "timestamp": "2026-10-26T19:17:37Z",
+    "idDocumento": 6129354
+  }
+}

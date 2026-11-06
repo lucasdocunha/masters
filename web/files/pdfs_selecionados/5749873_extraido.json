@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DE COMBUSTIVEIS PITANGUEIRAS LTDA",
+  "fornecedor_cnpj_cpf": "20.975.790/0001-38",
+  "numero_documento": "047595",
+  "data_emissao": "2015-07-28",
+  "valor_total": 50.0,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:55:58Z",
+    "tempo_segundos": 2.44,
+    "idDocumento": 5749873
+  }
+}

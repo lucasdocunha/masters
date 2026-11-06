@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Europcar moving your way",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "N°18660",
+  "data_emissao": "29/02/2020",
+  "valor_total": 9500.0,
+  "descricao_resumida": "LOCAÇÃO DE VEÍCULO PBU 5072.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.52,
+    "timestamp": "2026-10-26T18:28:50Z",
+    "idDocumento": 7030765
+  }
+}

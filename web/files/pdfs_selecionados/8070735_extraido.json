@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ESTRATEGIA COMUNICACOES LTDA",
+  "fornecedor_cnpj_cpf": "49.181.961/0001-39",
+  "numero_documento": "18",
+  "data_emissao": "2026-03-12",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Elaboração de conteúdo para as mídias sociais. Edição de vídeo, publicações e suporte para mídia digital paga nas redes sociais Facebook e Instagram, para divulgação da atividade parlamentar.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:58:03Z",
+    "tempo_segundos": 3.55,
+    "idDocumento": 8070735
+  }
+}

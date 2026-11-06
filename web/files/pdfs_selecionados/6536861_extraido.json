@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SOBRAL & PALACIO PETROLED LTDA",
+  "fornecedor_cnpj_cpf": "07240641001568",
+  "numero_documento": "045041",
+  "data_emissao": "2018-02-22",
+  "valor_total": 154.21,
+  "descricao_resumida": "Aquisição de 38,65L de Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:09:37Z",
+    "tempo_segundos": 11.13,
+    "idDocumento": 6536861
+  }
+}

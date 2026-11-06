@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO CASTELO LOCATELLI",
+  "fornecedor_cnpj_cpf": "0542710.19.21MOLED DIESEL ADITIVADO S-10 - Bico",
+  "numero_documento": "001411H06.006.0542710.19.21MOLED DIESEL ADITIVADO S-10 - Bico",
+  "data_emissao": "23 20.896 LX3.350 F1",
+  "valor_total": 70.0,
+  "descricao_resumida": "CARTAO MASTER C: 6343CA02E893E25A5FEECA5D212D7E57 AutoSystem PAF = 3.2.4.32.2",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.9,
+    "timestamp": "2026-10-26T18:26:32Z",
+    "idDocumento": 6741854
+  }
+}

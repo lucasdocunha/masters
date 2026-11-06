@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LIBRE COMUNICACAO E MARKETING LTDA",
+  "fornecedor_cnpj_cpf": "08.345.631/0001-54",
+  "numero_documento": "173",
+  "data_emissao": "2026-01-27",
+  "valor_total": 8500.0,
+  "descricao_resumida": "Prestacao de servico de divulgacao da atividade parlamentar e gerenciamento de redes sociais referente ao mes de janeiro de 2026.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:58:51Z",
+    "tempo_segundos": 2.49,
+    "idDocumento": 8044514
+  }
+}

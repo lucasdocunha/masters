@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CLARO",
+  "fornecedor_cnpj_cpf": "946.216.326-04",
+  "numero_documento": "126/001624621",
+  "data_emissao": "15/06/2025",
+  "valor_total": 137.91,
+  "descricao_resumida": "Serviço Streaming - NET Fone",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.41,
+    "timestamp": "2026-10-26T18:41:15Z",
+    "idDocumento": 7932729
+  }
+}

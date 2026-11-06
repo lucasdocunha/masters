@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GIULIA PALMA TREVISAN LTDA",
+  "fornecedor_cnpj_cpf": "17.448.625/0001-13",
+  "numero_documento": "20252026",
+  "data_emissao": "2025-04-13",
+  "valor_total": 350.0,
+  "descricao_resumida": "DIARIAS: R$ 350,00 Aliquota: 2,0000 % Valor ISS: R$ 7,00 Valor Retencao: R$ 0,00 [Numero da Reserva: 54360 Data do Check-In: 12/04/2025 Data do Check-Out: 13/04/2025 Forma de Pagamento: MASTERCARD DEB REDE Numero do apartamento: 606 Observacao da Reserva: DIARIA R$350,00 ]",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 23.41,
+    "timestamp": "2026-10-26T21:36:17Z",
+    "idDocumento": 7898691
+  }
+}

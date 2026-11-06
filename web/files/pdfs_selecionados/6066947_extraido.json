@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO VIALE LTDA-ME",
+  "fornecedor_cnpj_cpf": "04.788.269/0001-35",
+  "numero_documento": "26370",
+  "data_emissao": "2016-07-02",
+  "valor_total": 166.07,
+  "descricao_resumida": "GASOLINA ORIGINAL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:07:10Z",
+    "tempo_segundos": 26.59,
+    "idDocumento": 6066947
+  }
+}

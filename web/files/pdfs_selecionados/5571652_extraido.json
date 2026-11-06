@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CASCOL COMBUSTIVEIS P/ VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "00.306.597/0031-12",
+  "numero_documento": "13617",
+  "data_emissao": "2014-03-03",
+  "valor_total": 50.0,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:24:29Z",
+    "tempo_segundos": 2.54,
+    "idDocumento": 5571652
+  }
+}

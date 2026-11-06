@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "A NOSSA PAPELARIA",
+  "fornecedor_cnpj_cpf": "07167236000166",
+  "numero_documento": "012028",
+  "data_emissao": "2014-11-18",
+  "valor_total": 15.9,
+  "descricao_resumida": "Grampeador Maped universal AT7 FR953511",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:31:27Z",
+    "tempo_segundos": 2.41,
+    "idDocumento": 5548425
+  }
+}

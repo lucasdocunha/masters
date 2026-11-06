@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "HELICENTER TAXI AEREO LTDA",
+  "fornecedor_cnpj_cpf": "00.088.487/0001-06",
+  "numero_documento": "00000166",
+  "data_emissao": "2019-04-23",
+  "valor_total": 3.0,
+  "descricao_resumida": "TRANSPORTE AÉREO NOS TRÊS PORTO VELHO/BURITIS/PORTO VELHO, UTILIZANDO AERONAVE BIMOTOR MODELO PA34 EMBRAER SENECA II CAPACIDADE DE 05 PASSAGEIROS, MATRÍCULA PT-EYB, TOTALIZANDO 01:20 HRS DE VOO, NO DIA 20/04/2019.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 23.38,
+    "timestamp": "2026-10-26T20:11:28Z",
+    "idDocumento": 6833031
+  }
+}

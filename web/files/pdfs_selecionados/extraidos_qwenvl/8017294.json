@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "LOCACENTER - Locadora de Automóveis Ltda - ME",
+  "fornecedor_cnpj_cpf": "01 443 988/0001-26",
+  "numero_documento": "19120",
+  "data_emissao": "2025-11-25",
+  "valor_total": 5800.0,
+  "descricao_resumida": "Locação mensal de veículo de placa SXX 6D64",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.64,
+    "timestamp": "2026-10-26T18:41:25Z",
+    "idDocumento": 8017294
+  }
+}

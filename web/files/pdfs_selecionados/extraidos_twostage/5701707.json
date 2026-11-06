@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO PETROBRAS QI 21",
+  "fornecedor_cnpj_cpf": "00.306.597/0082-62",
+  "numero_documento": "15383",
+  "data_emissao": "2015-05-20",
+  "valor_total": 100.0,
+  "descricao_resumida": "Gasolina Comum, Gasolina Aditivada, Eтанol, GLP, Lubrificante",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 16.78,
+    "timestamp": "2026-10-26T19:05:37Z",
+    "idDocumento": 5701707
+  }
+}

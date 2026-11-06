@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ECO135 ON125-KH-563",
+  "fornecedor_cnpj_cpf": "30265100000100",
+  "numero_documento": "8034DEE4-1F4C-43A3-8EEB-A04625822B10",
+  "data_emissao": "2024-07-14",
+  "valor_total": 9.6,
+  "descricao_resumida": "CARTAO DE DEBITO AUTOMATICO: R$ 9,60",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.18,
+    "timestamp": "2026-10-26T18:38:57Z",
+    "idDocumento": 7775535
+  }
+}

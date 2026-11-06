@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GOOGLE BRASIL INTERNET LTDA.",
+  "fornecedor_cnpj_cpf": "06.990.590/0001-23",
+  "numero_documento": "25204283",
+  "data_emissao": "2023-12-02",
+  "valor_total": 997.74,
+  "descricao_resumida": "Inserção de publicidade online",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.06,
+    "timestamp": "2026-10-26T21:06:29Z",
+    "idDocumento": 7661352
+  }
+}

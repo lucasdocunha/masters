@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO DE COMBUSTIVEL CUMBU CO LTDA",
+  "fornecedor_cnpj_cpf": "29004902000188",
+  "numero_documento": "222944",
+  "data_emissao": "2024-10-01",
+  "valor_total": 219.95,
+  "descricao_resumida": "ETANOL ALCOOL ETILICO B11",
+  "observacoes": "Val. Aprox. Trib. Fonte IBPT/empresometro.co C07872\nFed: 11,66 (5,3%) Est: 39,59 (18,0%)\nOp: VALDERI\n*Valor aproximado dos tributos do item\nValor aproximado dos tributos deste cupom\n(conforme Lei Fed.12.741/2012) R$ 51.25",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 14.99,
+    "timestamp": "2026-10-26T21:15:35Z",
+    "idDocumento": 7818774
+  }
+}

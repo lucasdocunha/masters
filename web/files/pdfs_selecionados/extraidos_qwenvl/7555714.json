@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Uber",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "14-05-2023",
+  "valor_total": 10.92,
+  "descricao_resumida": "Viagem de Uber",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 1.94,
+    "timestamp": "2026-10-26T18:34:46Z",
+    "idDocumento": 7555714
+  }
+}

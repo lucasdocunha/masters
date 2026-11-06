@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO FIVE STARS",
+  "fornecedor_cnpj_cpf": "00.327.248/0001-61",
+  "numero_documento": "138423",
+  "data_emissao": "2022-03-18",
+  "valor_total": 370.0,
+  "descricao_resumida": "000502 SHELL EVOLUX DIESEL S-10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 16.88,
+    "timestamp": "2026-10-26T20:45:27Z",
+    "idDocumento": 7357202
+  }
+}

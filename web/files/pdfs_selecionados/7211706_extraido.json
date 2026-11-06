@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "NITGAS DO BRASIL POSTO DE GAS NATURAL VEICULAR LTDA",
+  "fornecedor_cnpj_cpf": "08.251.766/0001-50",
+  "numero_documento": "1509",
+  "data_emissao": "2021-06-22",
+  "valor_total": 307.1,
+  "descricao_resumida": "Venda de combustíveis e/ou lubrificantes",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:30:47Z",
+    "tempo_segundos": 24.55,
+    "idDocumento": 7211706
+  }
+}

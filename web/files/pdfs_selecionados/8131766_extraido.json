@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Elovias S.A",
+  "fornecedor_cnpj_cpf": "61.887.207/0001-14",
+  "numero_documento": "4004201783275131",
+  "data_emissao": "2026-07-05",
+  "valor_total": 21.0,
+  "descricao_resumida": "Documento Fiscal Equivalente referente a pedagio (C01Carro)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:53:09Z",
+    "tempo_segundos": 12.17,
+    "idDocumento": 8131766
+  }
+}

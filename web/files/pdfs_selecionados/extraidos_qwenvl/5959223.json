@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Banco Itaú S.A.",
+  "fornecedor_cnpj_cpf": "341-7 34191.12945 99954.201143 55901.520001 1 67230000043125",
+  "numero_documento": "5671",
+  "data_emissao": "15/02/2016",
+  "valor_total": 431.25,
+  "descricao_resumida": "APOS O VENCIMENTO COBRAR MORA DE R$ 0,14 AO DIA APOS 04/03/2016 MULTA DE 8,63 PARC.:001/001-UND.:1610-BL.:02 COBRANCA ESCRITURAL.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.78,
+    "timestamp": "2026-10-26T18:18:39Z",
+    "idDocumento": 5959223
+  }
+}

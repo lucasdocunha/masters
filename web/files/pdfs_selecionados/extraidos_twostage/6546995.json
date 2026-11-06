@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ÁGUAS GUARIROBA",
+  "fornecedor_cnpj_cpf": "04.089.570/0001-50",
+  "numero_documento": "324.0018",
+  "data_emissao": "2018-04-02",
+  "valor_total": 89.01,
+  "descricao_resumida": "Serviço de água e esgoto",
+  "observacoes": "NA EMISSÃO DESTA, HAVIA 1 DÉBITO(S) EM ABERTO, NO TOTAL DE R$ 89,01. O NÃO PAGAMENTO DO(S) DÉBITO(S) PODERÁ OCASIONAR A SUSPENSÃO DO(S) SERVIÇO(S), CONFORME O REGULAMENTO DE SERVIÇOS VIGENTE E LEI N° 11.445/2007. OBS.: CASO O(S) DÉBITO(S) JÁ TENHA(M) SIDO QUITADO(S), FAVOR DESCONSIDERAR ESTE AVISO. O PAGAMENTO DESTA CONTA NÃO QUITA O(S) DÉBIT",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 23.81,
+    "timestamp": "2026-10-26T19:48:52Z",
+    "idDocumento": 6546995
+  }
+}

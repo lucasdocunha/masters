@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PANTANAL VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "07.319.323/0001-91",
+  "numero_documento": "29350",
+  "data_emissao": "2026-08-11",
+  "valor_total": 2500.0,
+  "descricao_resumida": "Locação de veículo Argo req-1f19 referente ao período de 01/07/2026 a 31/07/2026",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:00:56Z",
+    "tempo_segundos": 2.42,
+    "idDocumento": 8145914
+  }
+}

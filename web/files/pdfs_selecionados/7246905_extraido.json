@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO AEROPORTO LTDA",
+  "fornecedor_cnpj_cpf": "08.202.116/0001-15",
+  "numero_documento": "322985",
+  "data_emissao": "2021-08-30",
+  "valor_total": 253.25,
+  "descricao_resumida": "Aquisição de 39.7010 litros de Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:10:47Z",
+    "tempo_segundos": 13.59,
+    "idDocumento": 7246905
+  }
+}

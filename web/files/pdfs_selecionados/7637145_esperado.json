@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7637145,
+  "ano": 2023,
+  "mes": 11,
+  "fornecedor": "LOCAVEL - ALUGUEL DE CARROS",
+  "cnpjCPF": "073.268.410/0013-2",
+  "numero": "003176",
+  "tipoDocumento": "1",
+  "dataEmissao": "2023-11-01T00:00:00",
+  "valorDocumento": 2800.0,
+  "valorLiquido": 2800.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Odair Cunha",
+  "cpfParlamentar": "94892393649",
+  "siglaUF": "MG",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1625/2023/7637145.pdf"
+}

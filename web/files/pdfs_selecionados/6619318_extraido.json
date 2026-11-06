@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MR Operadora de Viagens e Turismo",
+  "fornecedor_cnpj_cpf": "10.402.370/0001-09",
+  "numero_documento": null,
+  "data_emissao": "2018-07-04",
+  "valor_total": 2300.0,
+  "descricao_resumida": "Recibo de aluguel de imóvel de Escritório Parlamentar referente ao período de 04/06 a 03/07/2018",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:34:51Z",
+    "tempo_segundos": 2.0,
+    "idDocumento": 6619318
+  }
+}

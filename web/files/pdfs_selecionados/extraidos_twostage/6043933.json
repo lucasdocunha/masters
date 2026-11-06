@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SAO JOAO POSTOS DE ABAST E SERV. LTDA",
+  "fornecedor_cnpj_cpf": "37.130.481/0001-60",
+  "numero_documento": "000.007.425",
+  "data_emissao": "21/06/2016",
+  "valor_total": null,
+  "descricao_resumida": "VENDA COM DECORRÊNCIA DE EMISSÃO DE CUPOM FISCAL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.85,
+    "timestamp": "2026-10-26T19:23:28Z",
+    "idDocumento": 6043933
+  }
+}

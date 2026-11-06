@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Conc. das Rodovias Integradas do Sul SA",
+  "fornecedor_cnpj_cpf": "32.161.500/0001-00",
+  "numero_documento": "0010003007159933010113024B4DB",
+  "data_emissao": "2020-09-05",
+  "valor_total": 4.6,
+  "descricao_resumida": "P3 - Gravatai Faixa:07 Oeste",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 4.36,
+    "timestamp": "2026-10-26T18:29:47Z",
+    "idDocumento": 7109173
+  }
+}

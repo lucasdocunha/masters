@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ANDRADE GODOY COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "12.823.720/0001-36",
+  "numero_documento": "289613",
+  "data_emissao": "2015-10-03",
+  "valor_total": 143.43,
+  "descricao_resumida": "Gasolina comum (11.173 litros a R$ 12.83)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:48:48Z",
+    "tempo_segundos": 1.88,
+    "idDocumento": 5818950
+  }
+}

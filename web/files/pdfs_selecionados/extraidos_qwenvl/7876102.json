@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "NEOENERGIA",
+  "fornecedor_cnpj_cpf": "770.5****",
+  "numero_documento": "2800032",
+  "data_emissao": "15/02/2025",
+  "valor_total": 269.36,
+  "descricao_resumida": "Cadastra-se e receba a sua fatura por e-mail, utilizando o QR code no verso da fatura.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.51,
+    "timestamp": "2026-10-26T18:41:10Z",
+    "idDocumento": 7876102
+  }
+}

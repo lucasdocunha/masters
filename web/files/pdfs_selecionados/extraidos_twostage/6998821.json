@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "INOVA FLORIANÓPOLIS/CENTRO",
+  "fornecedor_cnpj_cpf": "95803839000174",
+  "numero_documento": "74466",
+  "data_emissao": "2020-01-14",
+  "valor_total": 5200.0,
+  "descricao_resumida": "LOCAÇÃO DE VEÍCULOS: MENSALIDADE LOCAÇÃO VEÍCULO COROLLA PLACA QIN5736 PERÍODO: 01/01/2020 A 31/01/2020 - DADOS PARA DEPÓSITO: BANCO DO BRASIL AG 3174-7 C/C 8397-6.",
+  "observacoes": "MENSALIDADE LOCAÇÃO VEÍCULO COROLLA PLACA QIN5736 PERÍODO: 01/01/2020 A 31/01/2020 - DADOS PARA DEPÓSITO: BANCO DO BRASIL AG 3174-7 C/C 8397-6.",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 23.33,
+    "timestamp": "2026-10-26T20:18:50Z",
+    "idDocumento": 6998821
+  }
+}

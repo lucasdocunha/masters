@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ÁGUAS GUARIROBA S.A.",
+  "fornecedor_cnpj_cpf": "04.089.570/0001-50",
+  "numero_documento": "17107108-5",
+  "data_emissao": "2018-04-05",
+  "valor_total": 84.08,
+  "descricao_resumida": "Serviços de fornecimento de água e esgoto",
+  "observacoes": "Documento apresenta fatura de Águas Guariroba (2ª via) e comprovante de pagamento do Banco do Brasil na segunda página.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:06:00Z",
+    "tempo_segundos": 10.98,
+    "idDocumento": 6546995
+  }
+}

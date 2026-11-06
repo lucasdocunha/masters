@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Razão social ou nome fantasia do estabelecimento emissor",
+  "fornecedor_cnpj_cpf": "CNPJ ou CPF do emissor (formatado ou apenas dígitos)",
+  "numero_documento": "Número da nota fiscal, DANFE, cupom fiscal, bilhete ou recibo",
+  "data_emissao": "Data de emissão no formato padronizado YYYY-MM-DD",
+  "valor_total": "Valor total expresso no documento fiscal (numérico float)",
+  "descricao_resumida": "Breve resumo dos produtos ou serviços descritos",
+  "observacoes": "Observações relevantes (ou null)",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.88,
+    "timestamp": "2026-10-26T18:17:31Z",
+    "idDocumento": 5758226
+  }
+}

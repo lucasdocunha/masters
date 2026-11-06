@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Jmt Construções e Empreendimentos Ltda",
+  "fornecedor_cnpj_cpf": "12.609.733/0001-07",
+  "numero_documento": "40192024171300000000300000791053797120000215662",
+  "data_emissao": "2024-05-10",
+  "valor_total": 2156.62,
+  "descricao_resumida": "Fatura do Condomínio - Maio de 2024",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.18,
+    "timestamp": "2026-10-26T18:37:38Z",
+    "idDocumento": 7740278
+  }
+}

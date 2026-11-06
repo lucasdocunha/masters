@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SECRETARIA MUNICIPAL DA FAZENDA",
+  "fornecedor_cnpj_cpf": "18.294.169/0001-67",
+  "numero_documento": "01834419",
+  "data_emissao": "2018-08-01",
+  "valor_total": 282.65,
+  "descricao_resumida": "Vigilância, segurança ou monitoramento de bens, pessoas e se moventes.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.81,
+    "timestamp": "2026-10-26T18:25:38Z",
+    "idDocumento": 6664787
+  }
+}

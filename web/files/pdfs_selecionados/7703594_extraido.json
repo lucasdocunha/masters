@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "REAL HOTELARIA LTDA",
+  "fornecedor_cnpj_cpf": "05397404000184",
+  "numero_documento": "126247",
+  "data_emissao": "2024-03-17",
+  "valor_total": 341.0,
+  "descricao_resumida": "Hospedagem (diária) e guarda/estacionamento de veículo terrestre automotor (garagem)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:04:44Z",
+    "tempo_segundos": 3.59,
+    "idDocumento": 7703594
+  }
+}

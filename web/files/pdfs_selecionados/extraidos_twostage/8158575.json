@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO 1000 CONEGO DE CASTRO LTDA",
+  "fornecedor_cnpj_cpf": "63.052.370/0001-92",
+  "numero_documento": "000003772",
+  "data_emissao": "2026-09-20",
+  "valor_total": 51.2,
+  "descricao_resumida": "ETANOL B115 Bo08 Tq02<br>EI1746177,83 EF1746219,94",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 20.26,
+    "timestamp": "2026-10-26T21:51:46Z",
+    "idDocumento": 8158575
+  }
+}

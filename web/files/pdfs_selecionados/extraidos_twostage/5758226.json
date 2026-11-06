@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "3D VIDEO E FOTO LTDA - ME",
+  "fornecedor_cnpj_cpf": "08.220.525/0001-44",
+  "numero_documento": "52",
+  "data_emissao": "2015-08-10",
+  "valor_total": null,
+  "descricao_resumida": "PLANEJAMENTO, CONFECÇÃO, MANUTENÇÃO E ATUALIZAÇÃO DE PÁGINAS ELETRÔNICAS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.86,
+    "timestamp": "2026-10-26T19:08:25Z",
+    "idDocumento": 5758226
+  }
+}

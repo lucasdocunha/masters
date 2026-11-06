@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "REAL ALIMENTOS LTDA",
+  "fornecedor_cnpj_cpf": "71451926000494",
+  "numero_documento": "207095",
+  "data_emissao": "2018-04-18",
+  "valor_total": 23.67,
+  "descricao_resumida": "Aquisição de produtos alimentícios variados (lanche, brownie, café duplo, trident).",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:01:48Z",
+    "tempo_segundos": 62.78,
+    "idDocumento": 6558893
+  }
+}

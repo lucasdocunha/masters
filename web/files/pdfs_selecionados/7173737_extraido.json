@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "TRANSPORTE INTERESTADUAL DE LUXO S.A. - UTIL",
+  "fornecedor_cnpj_cpf": "33337007006860",
+  "numero_documento": "23969",
+  "data_emissao": "2021-02-09",
+  "valor_total": 217.65,
+  "descricao_resumida": "Bilhete de passagem terrestre de Brasilia (DF) para Petropolis (RJ), classe Leito",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:53:16Z",
+    "tempo_segundos": 29.73,
+    "idDocumento": 7173737
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMERCIAL AMAZÔNIA DE PETRÓLEO LTDA",
+  "fornecedor_cnpj_cpf": "09.001.879/0017-28",
+  "numero_documento": "31210100001679001728050070000071241769031140",
+  "data_emissao": "2021-01-26",
+  "valor_total": 132.57,
+  "descricao_resumida": "ETANOL COMUM Bico 07",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.1,
+    "timestamp": "2026-10-26T20:41:49Z",
+    "idDocumento": 7149632
+  }
+}

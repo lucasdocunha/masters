@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ESPIRITO SANTO CENTRAIS ELETRICAS S.A. - ESCELSA",
+  "fornecedor_cnpj_cpf": "28152650000171",
+  "numero_documento": "001.243.503",
+  "data_emissao": "2015-07-01",
+  "valor_total": 173.78,
+  "descricao_resumida": "Consumo de energia eletrica e contribuicao de ilunimacao publica",
+  "observacoes": "Documento de conta de energia eletrica",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:46:30Z",
+    "tempo_segundos": 2.78,
+    "idDocumento": 5780979
+  }
+}

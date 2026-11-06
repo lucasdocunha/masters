@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Eletrobras Distribuição Acre",
+  "fornecedor_cnpj_cpf": "38920-0",
+  "numero_documento": "000331965",
+  "data_emissao": "09/2014",
+  "valor_total": 263.11,
+  "descricao_resumida": "CONSUMO DE ENERGIA ELÉTRICA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.3,
+    "timestamp": "2026-10-26T18:14:29Z",
+    "idDocumento": 5516590
+  }
+}

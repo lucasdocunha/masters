@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ELDORADO COMUNICACAO E JORNALISMO LTDA",
+  "fornecedor_cnpj_cpf": "37.894.749/0001-30",
+  "numero_documento": "869",
+  "data_emissao": "2026-04-10",
+  "valor_total": null,
+  "descricao_resumida": "REFERENTE PRODUÇÃO, EDIÇÃO E FINALIZAÇÃO DE MATÉRIAS JORNALÍSTICAS, DIVULGANDO A ATIVIDADE PARLAMENTAR COM DISTRIBUIÇÃO PARA OS VEÍCULOS DE COMUNICAÇÃO DO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.08,
+    "timestamp": "2026-10-26T21:46:22Z",
+    "idDocumento": 8081747
+  }
+}

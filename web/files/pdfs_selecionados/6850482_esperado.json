@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6850482,
+  "ano": 2019,
+  "mes": 6,
+  "fornecedor": "FABRISIO",
+  "cnpjCPF": "345.613.808/33  -",
+  "numero": "SN",
+  "tipoDocumento": "1",
+  "dataEmissao": "2019-06-11T00:00:00",
+  "valorDocumento": 49.0,
+  "valorLiquido": 49.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Carlos Chiodini",
+  "cpfParlamentar": "00503190942",
+  "siglaUF": "SC",
+  "siglaPartido": "MDB",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3331/2019/6850482.pdf"
+}

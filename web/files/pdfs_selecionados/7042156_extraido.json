@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "TTS SOLUCOES EM INFORMATICA LTDA - EPP",
+  "fornecedor_cnpj_cpf": "09.275.320/0001-29",
+  "numero_documento": "2020/59",
+  "data_emissao": "2020-03-04",
+  "valor_total": 911.0,
+  "descricao_resumida": "Aluguel de equipamentos de informatica conforme contrato",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:59:25Z",
+    "tempo_segundos": 27.31,
+    "idDocumento": 7042156
+  }
+}

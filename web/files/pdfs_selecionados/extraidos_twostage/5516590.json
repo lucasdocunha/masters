@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMPANHIA DE ELETRICIDADE DO ACRE S.A.",
+  "fornecedor_cnpj_cpf": "04.065.033/0001-70",
+  "numero_documento": "000331965",
+  "data_emissao": "2014-09-13",
+  "valor_total": 263.11,
+  "descricao_resumida": "Tarifa Social de Energia Elétrica - TSEE",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.78,
+    "timestamp": "2026-10-26T18:50:10Z",
+    "idDocumento": 5516590
+  }
+}

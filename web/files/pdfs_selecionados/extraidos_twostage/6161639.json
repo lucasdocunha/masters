@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VITÓRIA TECNOLOGIA DA INFORMAÇÃO LTDA.",
+  "fornecedor_cnpj_cpf": "06.069.667/0001-27",
+  "numero_documento": "002712",
+  "data_emissao": "2016-12-01",
+  "valor_total": 940.0,
+  "descricao_resumida": "LOCAÇÃO DE EQUIPAMENTOS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.57,
+    "timestamp": "2026-10-26T19:18:21Z",
+    "idDocumento": 6161639
+  }
+}

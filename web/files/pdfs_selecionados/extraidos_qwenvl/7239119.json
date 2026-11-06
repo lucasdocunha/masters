@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Coopertáxi-BH",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "6480",
+  "data_emissao": "2021-04-18",
+  "valor_total": 64.8,
+  "descricao_resumida": "Transporte de Passageiro em Taxi",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.13,
+    "timestamp": "2026-10-26T18:31:06Z",
+    "idDocumento": 7239119
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO PALOMA OLHO DAGUA",
+  "fornecedor_cnpj_cpf": "35.196.823/0005-42",
+  "numero_documento": "202652",
+  "data_emissao": "2014-12-08",
+  "valor_total": 50.0,
+  "descricao_resumida": "Gasolina C Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:36:26Z",
+    "tempo_segundos": 2.27,
+    "idDocumento": 5564027
+  }
+}

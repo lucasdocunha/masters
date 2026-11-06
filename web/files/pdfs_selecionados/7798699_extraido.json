@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HOTEL SERRAS DE MINAS LTDA ME",
+  "fornecedor_cnpj_cpf": "07.220.161/0001-30",
+  "numero_documento": "18737",
+  "data_emissao": "2024-09-07",
+  "valor_total": 140.0,
+  "descricao_resumida": "Hospedagem de qualquer natureza em hotéis, apart-hotels, residence-service, suíte service",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:24:23Z",
+    "tempo_segundos": 2.29,
+    "idDocumento": 7798699
+  }
+}

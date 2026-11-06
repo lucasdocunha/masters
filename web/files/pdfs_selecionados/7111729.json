@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7111729,
+  "ano": 2020,
+  "mes": 10,
+  "fornecedor": "Pedro Vitor Rangel Gonçalves",
+  "cnpjCPF": "299.779.140/0019-9",
+  "numero": "00000054",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-11-03T01:00:00",
+  "valorDocumento": 8150.0,
+  "valorLiquido": 8150.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Erika Kokay",
+  "cpfParlamentar": "22441107100",
+  "siglaUF": "DF",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "CONSULTORIAS, PESQUISAS E TRABALHOS TÉCNICOS.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2403/2020/7111729.pdf"
+}

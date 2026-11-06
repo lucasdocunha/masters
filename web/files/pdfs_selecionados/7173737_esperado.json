@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7173737,
+  "ano": 2021,
+  "mes": 3,
+  "fornecedor": "Viação util",
+  "cnpjCPF": "333.370.070/0686-0",
+  "numero": "23969",
+  "tipoDocumento": "1",
+  "dataEmissao": "2021-02-10T00:00:00",
+  "valorDocumento": 217.65,
+  "valorLiquido": 217.65,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Daniel Silveira",
+  "cpfParlamentar": "05700923700",
+  "siglaUF": "RJ",
+  "siglaPartido": "PTB",
+  "descricaoDespesa": "PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3342/2021/7173737.pdf"
+}

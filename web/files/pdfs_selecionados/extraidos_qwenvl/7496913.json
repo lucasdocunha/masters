@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "THAIS MESQUITA GADELHA",
+  "fornecedor_cnpj_cpf": "28.887.209/0001-38",
+  "numero_documento": "NFS-e 15",
+  "data_emissao": "2023-02-06",
+  "valor_total": 1400.0,
+  "descricao_resumida": "Referente a trabalho de fotografias realizadas nos dias 04/05 de fevereiro, para divulgação das atividades parlamentares em redes sociais com Facebook e instagram. Nota Quitada!",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.91,
+    "timestamp": "2026-10-26T18:36:58Z",
+    "idDocumento": 7496913
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POLAR DERIVADOS DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "09.042.044/0001-24",
+  "numero_documento": "307077201409:45:06",
+  "data_emissao": "2014-07-30",
+  "valor_total": 186.98,
+  "descricao_resumida": "Redeshop MD5:54222B098F0539C60C99CBE29766E11A \"NL\" Bomba:3 Bico:10 EI:215,225,941 EF:215.285,300",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.42,
+    "timestamp": "2026-10-26T18:14:08Z",
+    "idDocumento": 5480086
+  }
+}

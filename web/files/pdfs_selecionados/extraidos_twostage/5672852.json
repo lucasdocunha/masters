@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AMAURY VALLE RIBEIRO",
+  "fornecedor_cnpj_cpf": "17.740.374/0004-99",
+  "numero_documento": "000.002.078",
+  "data_emissao": "2015-04-30",
+  "valor_total": null,
+  "descricao_resumida": "RECEBEMOS DE AMAURY VALLE RIBEIRO OS PRODUTOS/SERVIÇOS CONSTANTES DA NF-e INDICADA AO LADO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.96,
+    "timestamp": "2026-10-26T19:05:49Z",
+    "idDocumento": 5672852
+  }
+}

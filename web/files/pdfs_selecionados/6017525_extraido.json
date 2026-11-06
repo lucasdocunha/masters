@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RESTAURANTE CL ALIMENTOS LTDA EPP",
+  "fornecedor_cnpj_cpf": "15.571.468/0001-03",
+  "numero_documento": "145448",
+  "data_emissao": "2016-05-25",
+  "valor_total": 176.9,
+  "descricao_resumida": "Consumo de restaurante (água sem gás, coca cola, galinha, salada, empadinha, casquinho, café expresso, água com gás)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:07:31Z",
+    "tempo_segundos": 1.84,
+    "idDocumento": 6017525
+  }
+}

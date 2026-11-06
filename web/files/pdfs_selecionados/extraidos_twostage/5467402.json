@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SERV-NORTE COMERCIO DE COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "11.366.798/0002-97",
+  "numero_documento": "212463",
+  "data_emissao": "2014-07-04",
+  "valor_total": 10.0,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 14.22,
+    "timestamp": "2026-10-26T18:52:21Z",
+    "idDocumento": 5467402
+  }
+}

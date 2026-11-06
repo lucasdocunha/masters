@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7341991,
+  "ano": 2022,
+  "mes": 2,
+  "fornecedor": "LOCALIZA RENT A CAR SA",
+  "cnpjCPF": "166.700.850/7761-1",
+  "numero": "56816",
+  "tipoDocumento": "1",
+  "dataEmissao": "2022-03-08T00:00:00",
+  "valorDocumento": 3740.02,
+  "valorLiquido": 3740.02,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Heitor Schuch",
+  "cpfParlamentar": "45479453068",
+  "siglaUF": "RS",
+  "siglaPartido": "PSB",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3056/2022/7341991.pdf"
+}

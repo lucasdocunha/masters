@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EGR - EMPRESA GAUCHA DE RODOVIAS S/A",
+  "fornecedor_cnpj_cpf": "16.987.837/0001-06",
+  "numero_documento": "3406THAVXX14",
+  "data_emissao": "2021-07-24",
+  "valor_total": 7.0,
+  "descricao_resumida": "Ambulancia 0800 0090192 Guincho 0800 6483903",
+  "observacoes": "CONFIRA O TROCO E EXIJA O RECIBO COM A PLACA DO SEU VEICULO * BOA VIAGEM!",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.44,
+    "timestamp": "2026-10-26T18:31:38Z",
+    "idDocumento": 7242631
+  }
+}

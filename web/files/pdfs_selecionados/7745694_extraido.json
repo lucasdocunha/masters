@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POD DIGITAL LTDA",
+  "fornecedor_cnpj_cpf": "43.329.067/0001-87",
+  "numero_documento": "0000000104 - 1",
+  "data_emissao": "2024-05-30",
+  "valor_total": 12000.0,
+  "descricao_resumida": "Prestação de serviço de divulgação da atividade parlamentar e gerenciamento das redes sociais.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:22:54Z",
+    "tempo_segundos": 60.19,
+    "idDocumento": 7745694
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "LUIZ GUILHERME DO PRADO SILVA - PRODUCOES",
+  "fornecedor_cnpj_cpf": "36.351.683/0001-79",
+  "numero_documento": "0000023",
+  "data_emissao": "2020-10-30",
+  "valor_total": 3500.0,
+  "descricao_resumida": "Redação, edição e criação de conteúdo para redes sociais (Facebook: https://m.facebook.com/davidmichael.miranda/?locale2=pt_BR / Twitter: https://twitter.com/davidmirandario?s=09, e Instagram: https://www.instagram.com/davidmirandario/?hl=pt-br), para divulgação da atividade parlamentar do deputado David Miranda durante o mês de Outubro de 2020.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.71,
+    "timestamp": "2026-10-26T18:28:21Z",
+    "idDocumento": 7110748
+  }
+}

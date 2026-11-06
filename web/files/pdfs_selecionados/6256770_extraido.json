@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GOL Linhas Aéreas S.A",
+  "fornecedor_cnpj_cpf": "07.575.651/0001-59",
+  "numero_documento": "240972311",
+  "data_emissao": "2017-04-06",
+  "valor_total": 993.69,
+  "descricao_resumida": "Bilhete de passagem aérea GOL, trecho Brasília (BSB) - São Paulo (GRU), passageiro MARCIO MARINHO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:23:22Z",
+    "tempo_segundos": 35.67,
+    "idDocumento": 6256770
+  }
+}

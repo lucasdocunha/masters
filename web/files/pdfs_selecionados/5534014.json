@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5534014,
+  "ano": 2014,
+  "mes": 10,
+  "fornecedor": "PETROIL COMBUSTIVEIS LTDA",
+  "cnpjCPF": "020.722.860/0065-0",
+  "numero": "186250",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-10-29T00:00:00",
+  "valorDocumento": 100.0,
+  "valorLiquido": 100.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "LUIZ ARGÔLO",
+  "cpfParlamentar": "92228194549",
+  "siglaUF": "BA",
+  "siglaPartido": "SDD",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2357/2014/5534014.pdf"
+}

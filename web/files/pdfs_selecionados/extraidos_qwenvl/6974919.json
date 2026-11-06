@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CEDRO ASSESSORIA E ADMINISTRACAO DE HOTEIS LTDA",
+  "fornecedor_cnpj_cpf": "37.329.737/0002-43",
+  "numero_documento": "90384",
+  "data_emissao": "29/11/2019",
+  "valor_total": 190.0,
+  "descricao_resumida": "ESTACIONAMENTO REFERENTE AO MES DE OUTUBRO DE 2019.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.72,
+    "timestamp": "2026-10-26T18:27:05Z",
+    "idDocumento": 6974919
+  }
+}

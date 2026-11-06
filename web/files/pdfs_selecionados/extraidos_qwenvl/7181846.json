@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ALLPARK EMPREENDIMENTOS, PARTICIPAÇÕES E SERVIÇOS S.A.",
+  "fornecedor_cnpj_cpf": "60.537.263/0195-09",
+  "numero_documento": "153538",
+  "data_emissao": "2021-04-05",
+  "valor_total": 750.0,
+  "descricao_resumida": "GUARDA E ESTACIONAMENTO DE VEÍCULOS TERRESTRES AUTOMOTORES, DE AERONAVES E DE EMBARCAÇÕES",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.18,
+    "timestamp": "2026-10-26T18:30:59Z",
+    "idDocumento": 7181846
+  }
+}

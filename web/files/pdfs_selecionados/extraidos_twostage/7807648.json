@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DIGIRATI INFORMATICA SERVICOS E TELECOMUNICACOES LTDA",
+  "fornecedor_cnpj_cpf": "04.371.843/0001-55",
+  "numero_documento": "144040",
+  "data_emissao": "2024-09-30",
+  "valor_total": 165.46,
+  "descricao_resumida": "Serviços de manutenção (Hospedagem) na Hostnet.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 18.83,
+    "timestamp": "2026-10-26T21:26:27Z",
+    "idDocumento": 7807648
+  }
+}

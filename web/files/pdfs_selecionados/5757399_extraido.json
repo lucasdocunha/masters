@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "A L J Marketing Ltda",
+  "fornecedor_cnpj_cpf": "13138707000100",
+  "numero_documento": "149",
+  "data_emissao": "2015-08-07",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Monitoramento e atualização do site de divulgação parlamentar.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:55:50Z",
+    "tempo_segundos": 20.47,
+    "idDocumento": 5757399
+  }
+}

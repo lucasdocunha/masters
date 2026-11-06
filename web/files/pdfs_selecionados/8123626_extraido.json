@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO IACUI LTDA",
+  "fornecedor_cnpj_cpf": "10.694.613/0002-67",
+  "numero_documento": "000781872",
+  "data_emissao": "2024-06-28",
+  "valor_total": 414.05,
+  "descricao_resumida": "Diesel S10",
+  "observacoes": "Imagem rotacionada em 90 graus no sentido anti-horário",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:53:31Z",
+    "tempo_segundos": 2.2,
+    "idDocumento": 8123626
+  }
+}

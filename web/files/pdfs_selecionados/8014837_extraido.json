@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO CAMPINHO LTDA",
+  "fornecedor_cnpj_cpf": "16.937.955/0001-00",
+  "numero_documento": "000775029",
+  "data_emissao": "2025-11-10",
+  "valor_total": 50.0,
+  "descricao_resumida": "ETANOL COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:40:58Z",
+    "tempo_segundos": 2.39,
+    "idDocumento": 8014837
+  }
+}

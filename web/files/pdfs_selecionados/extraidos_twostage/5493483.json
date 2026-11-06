@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO TOSCANO",
+  "fornecedor_cnpj_cpf": "05.932.284/0001-78",
+  "numero_documento": "001",
+  "data_emissao": "2014-08-11",
+  "valor_total": 50.0,
+  "descricao_resumida": "Tanque: 002 Bomba: 002 Bico: 002 ET: 29560 33,900 EF: 2.956.052,49",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 15.3,
+    "timestamp": "2026-10-26T18:52:55Z",
+    "idDocumento": 5493483
+  }
+}

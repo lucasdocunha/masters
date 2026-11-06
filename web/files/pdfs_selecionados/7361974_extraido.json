@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "JUSTINIANO E JUSTINIANO LTDA",
+  "fornecedor_cnpj_cpf": "04.489.287/0001-16",
+  "numero_documento": "000.000.506",
+  "data_emissao": "2022-04-11",
+  "valor_total": 1451.23,
+  "descricao_resumida": "Gasolina C Comum e Óleo Diesel B S10 Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:43:08Z",
+    "tempo_segundos": 5.53,
+    "idDocumento": 7361974
+  }
+}

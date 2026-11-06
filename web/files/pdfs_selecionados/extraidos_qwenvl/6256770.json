@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GOL Linhas Aéreas S.A",
+  "fornecedor_cnpj_cpf": "07.575.651/0001-59",
+  "numero_documento": "240972311",
+  "data_emissao": "2017-04-11",
+  "valor_total": 993.69,
+  "descricao_resumida": "Recibo de pagamento para embarque de passageiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.69,
+    "timestamp": "2026-10-26T18:21:43Z",
+    "idDocumento": 6256770
+  }
+}

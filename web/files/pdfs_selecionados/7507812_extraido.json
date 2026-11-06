@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DE SERVICO NORMANDI LTDA",
+  "fornecedor_cnpj_cpf": "49.922.040/0001-80",
+  "numero_documento": "078349",
+  "data_emissao": "2023-02-28",
+  "valor_total": 260.08,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:43:28Z",
+    "tempo_segundos": 11.22,
+    "idDocumento": 7507812
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6714709,
+  "ano": 2018,
+  "mes": 12,
+  "fornecedor": "SINTAXI/DF",
+  "cnpjCPF": "074.241.090/0010-3",
+  "numero": "sn",
+  "tipoDocumento": "1",
+  "dataEmissao": "2018-12-05T00:00:00",
+  "valorDocumento": 15.0,
+  "valorLiquido": 15.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Chico D'Angelo",
+  "cpfParlamentar": "47247436700",
+  "siglaUF": "RJ",
+  "siglaPartido": "PDT",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1799/2018/6714709.pdf"
+}

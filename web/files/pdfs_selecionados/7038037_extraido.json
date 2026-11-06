@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Aerotrio Alimentos Limitada - ME",
+  "fornecedor_cnpj_cpf": "19.937.000/0001-79",
+  "numero_documento": "64427",
+  "data_emissao": "2020-03-16",
+  "valor_total": 45.0,
+  "descricao_resumida": "Tiras de frango adicional, fettuccine tradizionale, ingredientes molho tradic, fanta guarana lata",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:15:33Z",
+    "tempo_segundos": 46.93,
+    "idDocumento": 7038037
+  }
+}

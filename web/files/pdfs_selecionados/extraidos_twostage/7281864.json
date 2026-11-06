@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "UNIAO EMPREENDIMENTOS HOTELEIROS LTDA",
+  "fornecedor_cnpj_cpf": "05.434.087/0003-90",
+  "numero_documento": null,
+  "data_emissao": "2021-10-24",
+  "valor_total": 171.27,
+  "descricao_resumida": "DESPESAS COM HOSPEDAGEM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.5,
+    "timestamp": "2026-10-26T20:26:04Z",
+    "idDocumento": 7281864
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ORBE PRODUTORA & SERVICOS LTDA",
+  "fornecedor_cnpj_cpf": "68908-199-Macapá/AP",
+  "numero_documento": "15",
+  "data_emissao": "2023-11-10",
+  "valor_total": 65000.0,
+  "descricao_resumida": "PRESTAÇÃO DE SERVIÇOS REFERENTES A DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR COM OS SEGUINTEIS ITENS: Assessoria de imprensa; elab oração e produção de conteúdo audiovisual; produção, publicação, gerenciamento de conteúdos nas redes sociais do parlamentar: Instagram @malafaiadorinaldo; Twitter @malafiaa _d: Facebook @dorinaldomalafia12, monitoramento do fluxo de informações e interações de cada rede social do parlamentar por meio de software de acompanhamento online. Gestão do relacionamento e respostas das postagens nas redes sociais do parlamentar. clipping de notícias e conteúdos relacionados com a atuação do mandato parlamentar. Monitoramento das redes sociais e grupos de whatsapp de conteúdos relacionados a atuação do mandato parlamentar. Gerenciamento de tráfego. Serviço referente ao período de 01 a 31 de outubro de 2023.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 5.52,
+    "timestamp": "2026-10-26T18:37:40Z",
+    "idDocumento": 7625218
+  }
+}

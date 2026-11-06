@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CEMIG DISTRIBUIÇÃO S.A.",
+  "fornecedor_cnpj_cpf": "06.981.180/0001-16",
+  "numero_documento": "225977637",
+  "data_emissao": "2025-01-08",
+  "valor_total": null,
+  "descricao_resumida": "Controle: 32043/1118142/0005; Data da impressão: 07/01/2025 21:59:40; NOTA FISCAL: 225977637; Serie: 000; Data de emissão: 08/01/2025",
+  "observacoes": "EMITIDA EM CONTINGÊNCIA - PENDENTE DE AUTORIZAÇÃO",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.81,
+    "timestamp": "2026-10-26T21:31:53Z",
+    "idDocumento": 7856279
+  }
+}

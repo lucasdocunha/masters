@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ECT - EMP. BRAS. DE CORREIOS E TELEGRAFOS",
+  "fornecedor_cnpj_cpf": "03613174000118",
+  "numero_documento": "1115483636",
+  "data_emissao": "2016-04-05",
+  "valor_total": 33.1,
+  "descricao_resumida": "Serviço de SEDEX A VISTA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:25:08Z",
+    "tempo_segundos": 2.9,
+    "idDocumento": 5964313
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO PRESIDENTE LTDA",
+  "fornecedor_cnpj_cpf": "39.400.494/0001-37",
+  "numero_documento": "000.013.988",
+  "data_emissao": "2014-08-07",
+  "valor_total": null,
+  "descricao_resumida": "VENDA REG ECF / SIMP FAT",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.55,
+    "timestamp": "2026-10-26T18:54:52Z",
+    "idDocumento": 5511947
+  }
+}

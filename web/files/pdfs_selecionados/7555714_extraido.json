@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Uber do Brasil Tecnologia Ltda",
+  "fornecedor_cnpj_cpf": "17.895.646/0001-87",
+  "numero_documento": null,
+  "data_emissao": "2023-05-14",
+  "valor_total": 10.92,
+  "descricao_resumida": "Serviço de transporte privado urbano (viagem de Uber) de 0.65 km em Recife - PE",
+  "observacoes": "Recibo de viagem enviado por e-mail",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:38:16Z",
+    "tempo_segundos": 3.08,
+    "idDocumento": 7555714
+  }
+}

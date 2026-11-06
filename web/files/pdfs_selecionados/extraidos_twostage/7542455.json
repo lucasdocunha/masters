@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MARIA DAS GRACAS SANTOS 24919565860",
+  "fornecedor_cnpj_cpf": "18.374.817/0001-95",
+  "numero_documento": "155",
+  "data_emissao": "2023-05-12",
+  "valor_total": null,
+  "descricao_resumida": "SERVIÇOS ELETRÔNICOS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.99,
+    "timestamp": "2026-10-26T21:06:26Z",
+    "idDocumento": 7542455
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "JOSE LUIZ FERREIRA - ME",
+  "fornecedor_cnpj_cpf": "14.396.578/0001-13",
+  "numero_documento": "20190000000030",
+  "data_emissao": "2019-10-28",
+  "valor_total": 850.0,
+  "descricao_resumida": "Publicação de matérias do gabinete do deputado federal Dr. Frederico referente ao mês de outubro de 2019",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:30:31Z",
+    "tempo_segundos": 10.94,
+    "idDocumento": 6952195
+  }
+}

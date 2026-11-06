@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Entrevias",
+  "fornecedor_cnpj_cpf": "26.664.057/0001-89",
+  "numero_documento": "07603301260010208421771588171314",
+  "data_emissao": "2020-04-29",
+  "valor_total": 9.8,
+  "descricao_resumida": "Tarifa de pedagio - Via 10 N",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:01:19Z",
+    "tempo_segundos": 8.08,
+    "idDocumento": 7051218
+  }
+}

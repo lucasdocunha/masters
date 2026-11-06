@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "S N Midia, Producao E Assessoria de Marketing LTDA-ME",
+  "fornecedor_cnpj_cpf": "08.218.610/0001-78",
+  "numero_documento": "202000000000286",
+  "data_emissao": "24/08/2020",
+  "valor_total": 5500.0,
+  "descricao_resumida": "PRODUCAO DE CONTEUDO RELACIONADO AS ATIVIDADES PARLAMENTARES DO DEP. HELIO LEITE PARA DIVULGACAO NO MES DE AGOSTO, NA REDE SOCIAL DO PARLAMENTAR COMO FACEBOOK (@helioleite), INSTAGRAM (@helio.leite) E WHATSAPP NOTA QUITADA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.86,
+    "timestamp": "2026-10-26T18:29:16Z",
+    "idDocumento": 7085813
+  }
+}

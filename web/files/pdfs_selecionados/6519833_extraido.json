@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SÃO FELIPE ADM E PART LTDA",
+  "fornecedor_cnpj_cpf": "65.959.702/0001-42",
+  "numero_documento": "0123",
+  "data_emissao": "2018-01-30",
+  "valor_total": 1233.84,
+  "descricao_resumida": "CONDOMINIO REF.: FEV/18, IPTU, SEGURO",
+  "observacoes": "Documento composto por relatorio de despesas, boleto bancario e comprovante de pagamento.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:11:19Z",
+    "tempo_segundos": 8.81,
+    "idDocumento": 6519833
+  }
+}

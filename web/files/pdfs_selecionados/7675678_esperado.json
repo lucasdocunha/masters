@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7675678,
+  "ano": 2024,
+  "mes": 1,
+  "fornecedor": "LOCALIZA RENT A CAR SA",
+  "cnpjCPF": "166.700.850/9560-1",
+  "numero": "11795",
+  "tipoDocumento": "1",
+  "dataEmissao": "2024-01-23T00:00:00",
+  "valorDocumento": 1070.75,
+  "valorLiquido": 1046.25,
+  "valorGlosa": 24.5,
+  "nomeParlamentar": "Pedro Uczai",
+  "cpfParlamentar": "47721855934",
+  "siglaUF": "SC",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2243/2024/7675678.pdf"
+}

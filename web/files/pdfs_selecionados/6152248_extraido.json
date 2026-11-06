@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "W. J. J. COMERCIO DE DERIVADOS DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "05.886.460/0001-82",
+  "numero_documento": "294427",
+  "data_emissao": "2016-11-22",
+  "valor_total": 213.76,
+  "descricao_resumida": "DIESEL S-10 Bico 28",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:02:37Z",
+    "tempo_segundos": 3.76,
+    "idDocumento": 6152248
+  }
+}

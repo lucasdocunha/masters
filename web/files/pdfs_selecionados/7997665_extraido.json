@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "DPH HOTEIS EIRELI",
+  "fornecedor_cnpj_cpf": "29.116.411/0001-29",
+  "numero_documento": "29643",
+  "data_emissao": "2025-10-09",
+  "valor_total": 164.33,
+  "descricao_resumida": "DIARIA REF. HOSPEDAGEM - ENTRADA: 08/10/2025 SAIDA: 09/10/2025",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:48:17Z",
+    "tempo_segundos": 3.2,
+    "idDocumento": 7997665
+  }
+}

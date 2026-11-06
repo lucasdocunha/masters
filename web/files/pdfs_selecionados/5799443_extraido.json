@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO PETER PAN 01 LTDA",
+  "fornecedor_cnpj_cpf": "05.000.684/0002-26",
+  "numero_documento": "872691",
+  "data_emissao": "2015-09-21",
+  "valor_total": 130.51,
+  "descricao_resumida": "Gasolina Petrobras Aditivada Grid",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash",
+    "timestamp": "2026-10-21T17:20:21Z",
+    "tempo_segundos": 33.36,
+    "idDocumento": 5799443
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO CIDADE DOIS LTDA",
+  "fornecedor_cnpj_cpf": "01514-000",
+  "numero_documento": "06969",
+  "data_emissao": "2016-07-08",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 1.56,
+    "timestamp": "2026-10-26T18:19:59Z",
+    "idDocumento": 5957168
+  }
+}

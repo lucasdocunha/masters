@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionaria BR-040 S.A",
+  "fornecedor_cnpj_cpf": "19.726.048/0001-00",
+  "numero_documento": "MDIQQSD2P5H5",
+  "data_emissao": "2022-05-31",
+  "valor_total": 5.8,
+  "descricao_resumida": "Tarifa de pedagio - Categoria 1 - 2 eixo(s) - Rodovia BR040 Km 487 - Capim Branco-MG (Praca PP8)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:22:24Z",
+    "tempo_segundos": 8.84,
+    "idDocumento": 7390054
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Karen Thais Pedroso Capiberibe Eka Comunicacao",
+  "fornecedor_cnpj_cpf": "58.744.132/0001-08",
+  "numero_documento": "24",
+  "data_emissao": "2025-06-02",
+  "valor_total": 1500.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar em maio/2025 no site www.pontodapauta.com.br",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:33:01Z",
+    "tempo_segundos": 24.63,
+    "idDocumento": 7925043
+  }
+}

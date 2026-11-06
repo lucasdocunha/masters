@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Cascol Combustíveis P/ Veículos Ltda",
+  "fornecedor_cnpj_cpf": "00.306.597/0065-61",
+  "numero_documento": "13291",
+  "data_emissao": "2014-11-03",
+  "valor_total": 70.0,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": "Nota Fiscal de Venda ao Consumidor preenchida manualmente",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:37:52Z",
+    "tempo_segundos": 2.09,
+    "idDocumento": 5545952
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SOLARIS - LESIL",
+  "fornecedor_cnpj_cpf": "08900012-3456",
+  "numero_documento": "123456789",
+  "data_emissao": "2023-04-01",
+  "valor_total": 1234.56,
+  "descricao_resumida": "Venda de produtos e serviços",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.53,
+    "timestamp": "2026-10-26T18:29:24Z",
+    "idDocumento": 7031219
+  }
+}

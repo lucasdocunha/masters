@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CONDED VICTORIA BUILDING",
+  "fornecedor_cnpj_cpf": "CNPJ 04.341.935/0001-92",
+  "numero_documento": "2009115",
+  "data_emissao": "20/08/2020",
+  "valor_total": 263.76,
+  "descricao_resumida": "APOS O VENCIMENTO COBRAR MULTADE...........R$ 5,28 TAXA COND R 239,78 FUNDO RES R 23,98 PROTESTAR APOS 45 DIAS DO VENCIMENTO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.11,
+    "timestamp": "2026-10-26T18:27:43Z",
+    "idDocumento": 7092576
+  }
+}

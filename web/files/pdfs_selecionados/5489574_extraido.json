@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SM COMERCIO E SERVICOS LTDA - ME",
+  "fornecedor_cnpj_cpf": "09469018000101",
+  "numero_documento": "00001030",
+  "data_emissao": "2014-07-31",
+  "valor_total": 1550.0,
+  "descricao_resumida": "LOCAÇÃO VEÍCULO - PLACA OLB 8503 - PERÍODO 01/07/2014 À 31/07/2014",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:38:45Z",
+    "tempo_segundos": 4.93,
+    "idDocumento": 5489574
+  }
+}

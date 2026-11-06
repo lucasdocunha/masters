@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": "30265100000100",
+  "numero_documento": "90A49E82-6F2F-47E5-8E48-C2EC0F22921A",
+  "data_emissao": "2023-01-29",
+  "valor_total": 9.2,
+  "descricao_resumida": "DINHEIRO: R$ 9,20 Troco: R$ 11,00",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 7.05,
+    "timestamp": "2026-10-26T21:03:30Z",
+    "idDocumento": 7552986
+  }
+}

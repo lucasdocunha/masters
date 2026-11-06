@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DISBRAVE IMPERIAL LTDA",
+  "fornecedor_cnpj_cpf": "07.519.554/0001-08",
+  "numero_documento": "528803",
+  "data_emissao": "2016-10-25",
+  "valor_total": 150.02,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:04:14Z",
+    "tempo_segundos": 2.14,
+    "idDocumento": 6142437
+  }
+}

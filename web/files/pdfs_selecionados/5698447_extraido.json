@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO ALPHA LTDA",
+  "fornecedor_cnpj_cpf": "08.476.197/0001-41",
+  "numero_documento": "425182",
+  "data_emissao": "2015-05-29",
+  "valor_total": 133.73,
+  "descricao_resumida": "Gasolina C Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash",
+    "timestamp": "2026-10-21T17:19:47Z",
+    "tempo_segundos": 7.9,
+    "idDocumento": 5698447
+  }
+}

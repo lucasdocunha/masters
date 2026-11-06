@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO N O LTDA",
+  "fornecedor_cnpj_cpf": "07.014.538/0001-02",
+  "numero_documento": "593306",
+  "data_emissao": "2022-05-09",
+  "valor_total": 202.69,
+  "descricao_resumida": "ETANOL COMUM 41,031 L",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:31:54Z",
+    "tempo_segundos": 5.45,
+    "idDocumento": 7387884
+  }
+}

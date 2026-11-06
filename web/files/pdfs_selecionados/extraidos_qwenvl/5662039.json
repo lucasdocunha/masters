@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Copel Distribuicao S.A.",
+  "fornecedor_cnpj_cpf": "04.999.826/0001-86",
+  "numero_documento": "3790840099 - TRIFASICO",
+  "data_emissao": "25/03/2015",
+  "valor_total": 508.28,
+  "descricao_resumida": "NOTA FISCAL CONTA DE ENERGIA ELÉTRICA no. 3516342 Serie B",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.82,
+    "timestamp": "2026-10-26T18:18:16Z",
+    "idDocumento": 5662039
+  }
+}

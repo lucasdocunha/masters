@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Sinal Aluguel de Veículos LTDA-ME.",
+  "fornecedor_cnpj_cpf": "13.009.877/0001-95",
+  "numero_documento": "N°190932",
+  "data_emissao": "2019-09-03",
+  "valor_total": 4000.0,
+  "descricao_resumida": "Fatura referente locação do veículo Fluence Autom Dynamique 2.0 Ano/modelc 15/16 Km livre 4.000,00 Período: 01/08/19 a 31/08/19 Placa: PAF - 6144 Valor mensal",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.55,
+    "timestamp": "2026-10-26T18:27:51Z",
+    "idDocumento": 6951096
+  }
+}

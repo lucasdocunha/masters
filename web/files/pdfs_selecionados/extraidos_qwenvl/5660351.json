@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SERVICO NACIONAL DE APRENDIZ, COM SENAC RESTAURANTE-ESCOLA DOS SENADORES",
+  "fornecedor_cnpj_cpf": "33.469.172/0022-92",
+  "numero_documento": "1570472815",
+  "data_emissao": "15/04/2015",
+  "valor_total": 82.9,
+  "descricao_resumida": "1 T SFRITE 10n F1 2 1767 S/f LARANJA/ABACAXI 1Un I1 3 5140 BROWNIE 2unXO 01 I1 4 5462 SALADA TROPICAL 10n I1 5 5514 PINDONNO VEGETARIANO 1Un I1 6 5516 BADEJO C/ HANTEIGA DE ERVAS 2unx87_48_11",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 4.15,
+    "timestamp": "2026-10-26T18:17:48Z",
+    "idDocumento": 5660351
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CCR-RODONORTE",
+  "fornecedor_cnpj_cpf": "02.221.531/0005-63",
+  "numero_documento": "c5vbe82xcxohj0w",
+  "data_emissao": "2017-07-10",
+  "valor_total": 7.9,
+  "descricao_resumida": "Pedágio",
+  "observacoes": "Pagamento dinheiro",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 5.11,
+    "timestamp": "2026-10-26T19:37:01Z",
+    "idDocumento": 6339344
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RAFAMAR LOCADORA DE VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "34.780.904/0001-07",
+  "numero_documento": "103",
+  "data_emissao": "2022-02-21",
+  "valor_total": 4300.0,
+  "descricao_resumida": "Locação de 01 veículo marca Toyota, modelo Corolla XEI 2.0 Flex, cor cinza, referente ao período de 04/02/2022 a 04/03/2022",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:44:56Z",
+    "tempo_segundos": 6.41,
+    "idDocumento": 7331949
+  }
+}

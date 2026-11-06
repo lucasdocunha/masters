@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GP SISTEMAS E SERVICOS LTDA",
+  "fornecedor_cnpj_cpf": "10.469.072/0001-36",
+  "numero_documento": "4333",
+  "data_emissao": "2019-06-18",
+  "valor_total": 460.0,
+  "descricao_resumida": "Manutencao Sistema Gestor Politico para organizacao das rotinas administrativas do gabinete - servicos prestados no periodo de 01/06 a 30/06/2019.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:13:00Z",
+    "tempo_segundos": 6.83,
+    "idDocumento": 6860170
+  }
+}

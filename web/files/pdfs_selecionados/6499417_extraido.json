@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Restaurante de Carli São Bento",
+  "fornecedor_cnpj_cpf": "37.218.609/0001-41",
+  "numero_documento": "15284",
+  "data_emissao": "2018-01-11",
+  "valor_total": 16.0,
+  "descricao_resumida": "Despesas com lanche",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T13:48:05Z",
+    "tempo_segundos": 21.28,
+    "idDocumento": 6499417
+  }
+}

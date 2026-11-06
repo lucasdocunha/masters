@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CONDOMÍNIO EDÍFICIO COMERCIAL CENTRO CÍVICO",
+  "fornecedor_cnpj_cpf": "04.764.740/0001-55",
+  "numero_documento": "14000000010012313-4",
+  "data_emissao": "2023-04-27",
+  "valor_total": 2175.78,
+  "descricao_resumida": "Demonstrativo de despesas do condomínio referente a 05/2023 (Cota Condominial, Fundo de Reserva, Fundo Quadro de Pessoal, Obra Muro 1/5, Garagem)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:52:07Z",
+    "tempo_segundos": 3.21,
+    "idDocumento": 7543249
+  }
+}

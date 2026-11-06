@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SUELI TEREZINHA DE MORAIS ALMEIDA",
+  "fornecedor_cnpj_cpf": "866.948.396-34",
+  "numero_documento": null,
+  "data_emissao": "27-março-2024",
+  "valor_total": 6993.0,
+  "descricao_resumida": "Aluguel de residência comercial",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 18.9,
+    "timestamp": "2026-10-26T21:19:31Z",
+    "idDocumento": 7725541
+  }
+}

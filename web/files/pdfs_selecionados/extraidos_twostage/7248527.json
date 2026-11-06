@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMPANHIA OPERACIONAL DE DESENVOLVIMENTO, SANEAMENTO E AÇÕES URBANAS",
+  "fornecedor_cnpj_cpf": "25.433.004/0001-94",
+  "numero_documento": "1165539",
+  "data_emissao": "2021-09-01",
+  "valor_total": null,
+  "descricao_resumida": "Resumo mensal de qualidade da água para residência",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.91,
+    "timestamp": "2026-10-26T20:38:10Z",
+    "idDocumento": 7248527
+  }
+}

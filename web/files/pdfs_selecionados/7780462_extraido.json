@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "INSTITUTO BRASILEIRO DE ASSESSORIA INSTITUCIONAL - IBRASSI",
+  "fornecedor_cnpj_cpf": "25.422.642/0001-00",
+  "numero_documento": "19",
+  "data_emissao": "2024-08-06",
+  "valor_total": 3800.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar, referente a gestão de tráfego pago nas redes sociais, gestão de Whatsapp e Manutenção de website",
+  "observacoes": "Contém Carta de Correção Eletrônica - CC-e emitida em 2024-08-20",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:06:47Z",
+    "tempo_segundos": 23.66,
+    "idDocumento": 7780462
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Claudio Ebert Veículos ME",
+  "fornecedor_cnpj_cpf": "92.228.048/0001-70",
+  "numero_documento": "4029",
+  "data_emissao": "2015-01-14",
+  "valor_total": 1495.0,
+  "descricao_resumida": "Aluguel de veículo Voyage IUK-0548 pelo período de 23 dias",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:47:02Z",
+    "tempo_segundos": 2.55,
+    "idDocumento": 5590194
+  }
+}

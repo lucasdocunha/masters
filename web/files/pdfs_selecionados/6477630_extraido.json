@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": "20.870.696/0001-02",
+  "numero_documento": null,
+  "data_emissao": "2017-12-04",
+  "valor_total": 65.57,
+  "descricao_resumida": "Serviço de entrega / transporte expresso",
+  "observacoes": "Documento apresenta baixa qualidade de imagem (cópia fotográfica com partes ilegíveis e carimbo de 'CUPOM PARA SIMPLES CONFERENCIA NAO E DOCUMENTO FISCAL').",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:19:32Z",
+    "tempo_segundos": 2.0,
+    "idDocumento": 6477630
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO CATEDRAL LTDA",
+  "fornecedor_cnpj_cpf": "27.838.044/0001-41",
+  "numero_documento": "216457",
+  "data_emissao": "2016-02-25",
+  "valor_total": 164.33,
+  "descricao_resumida": "Gasolina comum (41,145L)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:05:14Z",
+    "tempo_segundos": 1.91,
+    "idDocumento": 5931732
+  }
+}

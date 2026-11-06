@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO TREVO JB LTDA",
+  "fornecedor_cnpj_cpf": "02.579.214/0001-90",
+  "numero_documento": "2790",
+  "data_emissao": "2020-06-19",
+  "valor_total": 117.01,
+  "descricao_resumida": "ETANOL HIDRATADO COMBUSTIVEL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:28:41Z",
+    "tempo_segundos": 37.92,
+    "idDocumento": 7065850
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "OFFICE BETHAVILLE EMPREENDIMENTOS",
+  "fornecedor_cnpj_cpf": "12.294.145/0001-21",
+  "numero_documento": "5671",
+  "data_emissao": "2016-02-15",
+  "valor_total": 431.25,
+  "descricao_resumida": "Cobranca escritural condominio 1610 parc. 001/001-und.:1610-bl.:02",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:00:26Z",
+    "tempo_segundos": 11.67,
+    "idDocumento": 5959223
+  }
+}

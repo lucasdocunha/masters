@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Conc. Rodovia do Oeste de São Paulo S/A",
+  "fornecedor_cnpj_cpf": "02.415.408/0001-50",
+  "numero_documento": "02670540001518273119000003839",
+  "data_emissao": "2018-02-10",
+  "valor_total": 6.2,
+  "descricao_resumida": "Placa: SOROCABA Faixa:008",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 6.83,
+    "timestamp": "2026-10-26T19:47:53Z",
+    "idDocumento": 6504881
+  }
+}

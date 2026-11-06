@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "F S P ANDRADE INOVA COMUNICAÇÃO E ASSESSORIA",
+  "fornecedor_cnpj_cpf": "60.493.466/0001-06",
+  "numero_documento": "002",
+  "data_emissao": "2025-05-00",
+  "valor_total": 12000.0,
+  "descricao_resumida": "SERVIÇO DE ATIVIDADE DE DIVULGAÇÃO PARLAMENTAR (GESTÃO DAS REDES SOCIAIS E COMUNICAÇÃO)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 20.43,
+    "timestamp": "2026-10-26T21:37:23Z",
+    "idDocumento": 7909266
+  }
+}

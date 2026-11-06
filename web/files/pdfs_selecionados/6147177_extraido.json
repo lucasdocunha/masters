@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VITORIA ORGANIZACOES EM PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "01.095.252/0001-04",
+  "numero_documento": "309053",
+  "data_emissao": "2016-11-17",
+  "valor_total": 204.3,
+  "descricao_resumida": "GASOLINA ORIGINAL C 35,751L X5,713 F1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:00:40Z",
+    "tempo_segundos": 2.39,
+    "idDocumento": 6147177
+  }
+}

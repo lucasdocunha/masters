@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO VIACAO CAMURUJIPE LTDA.",
+  "fornecedor_cnpj_cpf": "15.890.809/0001-03",
+  "numero_documento": "000000000Y1UURUEPP",
+  "data_emissao": "2018-06-10",
+  "valor_total": 225.9,
+  "descricao_resumida": "BILHETE DE PASSAGEM rodoviário intermunicipal PERCURSO: SALVADOR X VITORIA CONQUISTA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 19.96,
+    "timestamp": "2026-10-26T19:44:34Z",
+    "idDocumento": 6609565
+  }
+}

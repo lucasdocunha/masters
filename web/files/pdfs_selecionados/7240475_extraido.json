@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CONDORINIO DO BUSINESS CENTER RENASCENCA",
+  "fornecedor_cnpj_cpf": "21.911.703/0001-41",
+  "numero_documento": "28246",
+  "data_emissao": "2021-07-20",
+  "valor_total": 406.49,
+  "descricao_resumida": "Cota de aluguel/condomínio referente a agosto de 2021",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:54:37Z",
+    "tempo_segundos": 48.93,
+    "idDocumento": 7240475
+  }
+}

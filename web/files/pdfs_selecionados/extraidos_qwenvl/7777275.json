@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BR SOLUCOES TECNICAS E ADMINISTRATIVAS LTDA",
+  "fornecedor_cnpj_cpf": "70655-018-BRASLIA/DF",
+  "numero_documento": "51",
+  "data_emissao": "2024-07-31",
+  "valor_total": 14800.0,
+  "descricao_resumida": "1. Mapeamento de informacoes em periodicos e meios jornalisticos com noticias e informacoes do parlamentar, com elaboracao de clipping diario e semanal\n2. Elaboracao de estrategia para divulgacao de conteudo em periodicos de midia impressa e outros meios de midia nao digitais",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.32,
+    "timestamp": "2026-10-26T18:38:57Z",
+    "idDocumento": 7777275
+  }
+}

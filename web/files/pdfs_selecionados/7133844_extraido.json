@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CLARO S.A.",
+  "fornecedor_cnpj_cpf": "40.432.544/0245-93",
+  "numero_documento": "0000012491",
+  "data_emissao": "2020-12-09",
+  "valor_total": 73.0,
+  "descricao_resumida": "Mensalidade NET Virtua BL PME 30 Mega Fidelidade",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:26:09Z",
+    "tempo_segundos": 46.46,
+    "idDocumento": 7133844
+  }
+}

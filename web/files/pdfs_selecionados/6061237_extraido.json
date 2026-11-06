@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Empresa Concessionária de Rodovias do Sul S.A",
+  "fornecedor_cnpj_cpf": "02511048000190",
+  "numero_documento": "DC8E4578-86F6-4210-B4E5-E6D824CF7C31",
+  "data_emissao": "2016-07-30",
+  "valor_total": 9.7,
+  "descricao_resumida": "Recibo de pedágio referente à rodovia, categoria 01",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:05:36Z",
+    "tempo_segundos": 1.79,
+    "idDocumento": 6061237
+  }
+}

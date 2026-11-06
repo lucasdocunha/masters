@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO JOSE DE SOUZA CAMPOS LTDA",
+  "fornecedor_cnpj_cpf": "04.582.424/0001-62",
+  "numero_documento": "253578",
+  "data_emissao": "2023-01-05",
+  "valor_total": 100.0,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": "Comete crime quem sonega",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.58,
+    "timestamp": "2026-10-26T18:39:24Z",
+    "idDocumento": 7682705
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "OURO VERDE COMERCIO DE COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "10.696.134/0001-42",
+  "numero_documento": "15529",
+  "data_emissao": "2018-05-27",
+  "valor_total": 264.9,
+  "descricao_resumida": "GASOLINA CAMPM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.64,
+    "timestamp": "2026-10-26T18:24:46Z",
+    "idDocumento": 6594215
+  }
+}

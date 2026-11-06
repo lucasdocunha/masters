@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7995487,
+  "ano": 2025,
+  "mes": 10,
+  "fornecedor": "ISMAEL SOUSA DA SILVA",
+  "cnpjCPF": "332.732.570/0017-6",
+  "numero": "64",
+  "tipoDocumento": "0",
+  "dataEmissao": "2025-10-07T00:00:00",
+  "valorDocumento": 3000.0,
+  "valorLiquido": 3000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "General Girão",
+  "cpfParlamentar": "45312346772",
+  "siglaUF": "RN",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3327/2025/7995487.pdf"
+}

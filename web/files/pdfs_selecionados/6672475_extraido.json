@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EDMILSON PONTES CUNHA",
+  "fornecedor_cnpj_cpf": "060.782.226-00",
+  "numero_documento": null,
+  "data_emissao": "2018-08-28",
+  "valor_total": 1600.0,
+  "descricao_resumida": "Pagamento de aluguel referente ao mês de julho de 2018",
+  "observacoes": "Recibo de aluguel emitido por pessoa física",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:30:41Z",
+    "tempo_segundos": 13.55,
+    "idDocumento": 6672475
+  }
+}

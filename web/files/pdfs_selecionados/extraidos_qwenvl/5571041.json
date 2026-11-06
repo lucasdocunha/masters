@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CENTRAIS ELÉTRICAS MATOGROSSENSES S.A.",
+  "fornecedor_cnpj_cpf": "000.374.077/0001-99",
+  "numero_documento": "21203602",
+  "data_emissao": "12/2014",
+  "valor_total": 694.97,
+  "descricao_resumida": "COMPROVANTE DE PAGAMENTO CEMAT CENT ELET MATOGROSENSES",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.71,
+    "timestamp": "2026-10-26T18:14:37Z",
+    "idDocumento": 5571041
+  }
+}

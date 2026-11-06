@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PRACA Pratapolis",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "26043DT9UKXX",
+  "data_emissao": "2014-06-16",
+  "valor_total": 4.7,
+  "descricao_resumida": "BOA VIAGEM - LIGUE 0800-2820505",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.38,
+    "timestamp": "2026-10-26T18:15:59Z",
+    "idDocumento": 5454153
+  }
+}

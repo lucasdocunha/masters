@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SERVICOS DE AGENDAMENTO S.A.",
+  "fornecedor_cnpj_cpf": "17289475000142",
+  "numero_documento": "083048082",
+  "data_emissao": "2021-02-10",
+  "valor_total": 217.65,
+  "descricao_resumida": "Tarifa Promocional",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.5,
+    "timestamp": "2026-10-26T18:31:21Z",
+    "idDocumento": 7173737
+  }
+}

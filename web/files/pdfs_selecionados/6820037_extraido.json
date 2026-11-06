@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Marcio Lomando Bilhar da Silva",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "49",
+  "data_emissao": "2019-04-08",
+  "valor_total": 5162.96,
+  "descricao_resumida": "Recibo de pagamento de aluguel ref. abril de 2019, condomínio e IPTU",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:37:12Z",
+    "tempo_segundos": 25.18,
+    "idDocumento": 6820037
+  }
+}

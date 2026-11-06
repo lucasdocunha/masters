@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMERCIO DE COMBUSTIVEIS SCOZ LTDA",
+  "fornecedor_cnpj_cpf": "05.741.576/0001-23",
+  "numero_documento": "000528272",
+  "data_emissao": "2024-10-25",
+  "valor_total": 257.04,
+  "descricao_resumida": "GASOLINA ADITIVADA ENERGY - Bico 13",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 13.7,
+    "timestamp": "2026-10-26T21:23:22Z",
+    "idDocumento": 7824493
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PASTO ZEPPE SAO JOSE LTDA",
+  "fornecedor_cnpj_cpf": "17.272.550/0001-62",
+  "numero_documento": "000896473",
+  "data_emissao": "2023-10-09",
+  "valor_total": 142.71,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 9.82,
+    "timestamp": "2026-10-26T18:37:29Z",
+    "idDocumento": 7623566
+  }
+}

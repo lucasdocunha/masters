@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Silvana Valieris Bueno de Almeida",
+  "fornecedor_cnpj_cpf": "535.788.568-00",
+  "numero_documento": null,
+  "data_emissao": "2024-04-30",
+  "valor_total": 5000.0,
+  "descricao_resumida": "Locação de imóvel para projeção de gabinete",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 6.24,
+    "timestamp": "2026-10-26T21:20:40Z",
+    "idDocumento": 7729413
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "IBANEZIA SANTOS SALLES",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "1083.175.089-86",
+  "data_emissao": "2020-12-21",
+  "valor_total": 7000.0,
+  "descricao_resumida": "Aluguel de 01 do imóvel comercial situado na RUA: Fernando Simas 208 1 ANDAR bairro Batel CEP - 80430-190 - CURITIBA - PR, com finalidade de uso para Escritório Regional de Representação de Gabinete Parlamentar.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.45,
+    "timestamp": "2026-10-26T18:29:00Z",
+    "idDocumento": 7146294
+  }
+}

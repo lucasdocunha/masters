@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7864901,
+  "ano": 2025,
+  "mes": 1,
+  "fornecedor": "ROGERIO PEREIRA DA SILVA",
+  "cnpjCPF": "224.289.820/0015-0",
+  "numero": "26",
+  "tipoDocumento": "0",
+  "dataEmissao": "2025-02-04T00:00:00",
+  "valorDocumento": 1500.0,
+  "valorLiquido": 1500.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Pedro Lucas Fernandes",
+  "cpfParlamentar": "82994684349",
+  "siglaUF": "MA",
+  "siglaPartido": "UNIÃO",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3199/2025/7864901.pdf"
+}

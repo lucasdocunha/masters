@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO CONQUISTA DE SEPETIBA LTDA",
+  "fornecedor_cnpj_cpf": "30.366.886/0001-52",
+  "numero_documento": "36631",
+  "data_emissao": "2020-11-03",
+  "valor_total": 100.0,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:58:14Z",
+    "tempo_segundos": 34.84,
+    "idDocumento": 7112623
+  }
+}

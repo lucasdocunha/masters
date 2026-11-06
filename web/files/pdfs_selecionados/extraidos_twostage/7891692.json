@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CARLA GREICE ZIPPERER. ME.",
+  "fornecedor_cnpj_cpf": "85.343.226/0001-48",
+  "numero_documento": "6667",
+  "data_emissao": "2025-04-01",
+  "valor_total": 285.0,
+  "descricao_resumida": "Nota Fiscal de Serviço Eletrônica - Série NFS-e",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.87,
+    "timestamp": "2026-10-26T21:32:02Z",
+    "idDocumento": 7891692
+  }
+}

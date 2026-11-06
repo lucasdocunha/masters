@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6611116,
+  "ano": 2018,
+  "mes": 3,
+  "fornecedor": "ARGOS COMERCIAL E SERVICOS DE LOCACAO LTDA - ME",
+  "cnpjCPF": "693.574.080/0011-1",
+  "numero": "15",
+  "tipoDocumento": "1",
+  "dataEmissao": "2018-06-13T00:00:00",
+  "valorDocumento": 10900.0,
+  "valorLiquido": 10900.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "ADAIL CARNEIRO",
+  "cpfParlamentar": "21048215334",
+  "siglaUF": "CE",
+  "siglaPartido": "PODE",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3016/2018/6611116.pdf"
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ECO EMPREENDIMENTOS COMERCIAIS LTDA",
+  "fornecedor_cnpj_cpf": "00194032000256",
+  "numero_documento": "612275",
+  "data_emissao": "2026-01-31",
+  "valor_total": 282.15,
+  "descricao_resumida": "GASOLINA PETROBRAS GRID",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:52:30Z",
+    "tempo_segundos": 29.4,
+    "idDocumento": 8047228
+  }
+}

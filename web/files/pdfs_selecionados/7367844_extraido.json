@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ROSMARI SCHENER BAGATINI LTDA",
+  "fornecedor_cnpj_cpf": "45.546.651/0001-10",
+  "numero_documento": "20220000000209",
+  "data_emissao": "2022-04-23",
+  "valor_total": 170.0,
+  "descricao_resumida": "Hospedagem de 01 diária (entrada em 22/04/2022 e saída em 23/04/2022)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:37:13Z",
+    "tempo_segundos": 2.12,
+    "idDocumento": 7367844
+  }
+}

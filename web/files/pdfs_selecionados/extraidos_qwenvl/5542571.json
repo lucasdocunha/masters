@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMERCIAL DE COMBUSTIVEIS MAM LTDA",
+  "fornecedor_cnpj_cpf": "10.702.904/0001-12",
+  "numero_documento": "037172014",
+  "data_emissao": "2014-11-03",
+  "valor_total": 70.0,
+  "descricao_resumida": "GASOLINA MAXXI",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.45,
+    "timestamp": "2026-10-26T18:14:02Z",
+    "idDocumento": 5542571
+  }
+}

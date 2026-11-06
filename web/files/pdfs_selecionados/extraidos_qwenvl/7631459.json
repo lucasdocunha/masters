@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "IMPACTO AGÊNCIA DE NOTÍCIAS LTDA",
+  "fornecedor_cnpj_cpf": "33.194.612/0001-11",
+  "numero_documento": "257",
+  "data_emissao": "2023-10-04",
+  "valor_total": 2500.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar do Deputado Federal Darci de Matos sobre relatorias do PLP n° 108/2021, que aumenta o toetro da receita bruta para o microempreendedor individual - entradas ao vivo e gravadas, no período de outubro de 2023, junto à imprensa do norte de Santa Catarina; site e redes sociais do parlamentar e envio da notícia nos grupos de whatsapp. Manutenção do portal mídias sociais: depdarcidematos, Facebook.com/Depdarcidematos. Para apoio de Parlamentar referente ao mês de setembro/2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 4.36,
+    "timestamp": "2026-10-26T18:35:47Z",
+    "idDocumento": 7631459
+  }
+}

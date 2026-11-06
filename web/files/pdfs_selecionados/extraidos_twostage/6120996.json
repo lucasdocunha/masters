@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DEP. DAS RE COMERCIAIS",
+  "fornecedor_cnpj_cpf": "15.676.000/0001-53",
+  "numero_documento": "041",
+  "data_emissao": "2016-07-28",
+  "valor_total": 15.6,
+  "descricao_resumida": "Carta Nau Comercial",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.13,
+    "timestamp": "2026-10-26T19:25:17Z",
+    "idDocumento": 6120996
+  }
+}

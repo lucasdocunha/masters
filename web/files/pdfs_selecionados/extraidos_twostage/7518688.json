@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "IBANEZA SANTOS SALLES",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2023-03-30",
+  "valor_total": 7000.0,
+  "descricao_resumida": "Aluguel de imóvel comercial",
+  "observacoes": "Referência: março/2023.",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 6.91,
+    "timestamp": "2026-10-26T21:04:57Z",
+    "idDocumento": 7518688
+  }
+}

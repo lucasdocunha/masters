@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMPANHIA ENERGETICA DE PERNAMBUCO - CELPE",
+  "fornecedor_cnpj_cpf": "10.921.252/0001-08",
+  "numero_documento": "2016623647",
+  "data_emissao": "2022-01-07",
+  "valor_total": 152.36,
+  "descricao_resumida": "Fornecimento de energia eletrica e contribuicao iluminacao publica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:45:07Z",
+    "tempo_segundos": 5.97,
+    "idDocumento": 7316993
+  }
+}

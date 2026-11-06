@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MONTEZA HOTELARIA E TURISMO LTDA",
+  "fornecedor_cnpj_cpf": "08.151.831/0001-76",
+  "numero_documento": "4835",
+  "data_emissao": "2026-10-06",
+  "valor_total": 305.0,
+  "descricao_resumida": "DIÁRIA de hospedagem no período de 26/09/2026 a 27/09/2026",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:01:25Z",
+    "tempo_segundos": 2.86,
+    "idDocumento": 8162203
+  }
+}

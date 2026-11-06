@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "UNITAXI LTDA.",
+  "fornecedor_cnpj_cpf": "42.769.059/0001-99",
+  "numero_documento": null,
+  "data_emissao": "2017-11-01",
+  "valor_total": 140.0,
+  "descricao_resumida": "Serviço de transporte por táxi",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:21:22Z",
+    "tempo_segundos": 1.96,
+    "idDocumento": 6434840
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VITORIA TECNOLOGIA DA INFORMACAO LTDA.",
+  "fornecedor_cnpj_cpf": "06.069.667/0001-27",
+  "numero_documento": "002712",
+  "data_emissao": "2016-12-01",
+  "valor_total": 940.0,
+  "descricao_resumida": "Locacao de equipamentos: Notebook Dell Core i5, Desktops Dell Core i3 e Xerox 3210",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:02:44Z",
+    "tempo_segundos": 2.38,
+    "idDocumento": 6161639
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMPANHIA ESTADUAL DE DISTRIBUIÇÃO DE ENERGIA ELÉTRICA - CEEE EQUATORIAL",
+  "fornecedor_cnpj_cpf": "08467315000100",
+  "numero_documento": "3259329",
+  "data_emissao": "2024-02-05",
+  "valor_total": 234.14,
+  "descricao_resumida": "Fornecimento de energia elétrica referente ao mês 02/2024",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:40:13Z",
+    "tempo_segundos": 3.02,
+    "idDocumento": 7706878
+  }
+}

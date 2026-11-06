@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PREFEITURA DE OSASCO",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "08752200",
+  "data_emissao": "2023-02-14",
+  "valor_total": 1320.55,
+  "descricao_resumida": "IMPOSTO PREDIAL E TERRITORIAL URBANO 2023 - IPTU 2023 (Parcela Única)",
+  "observacoes": "Carnê de IPTU 2023 com guias de pagamento e comprovante de pagamento anexo referente à cota única.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:54:39Z",
+    "tempo_segundos": 23.74,
+    "idDocumento": 7510807
+  }
+}

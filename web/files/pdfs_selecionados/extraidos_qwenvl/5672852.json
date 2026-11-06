@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AMAURY VALLE RIBEIRO",
+  "fornecedor_cnpj_cpf": "36880-000",
+  "numero_documento": "000.002.078",
+  "data_emissao": "2015-04-30",
+  "valor_total": 6194.29,
+  "descricao_resumida": "VENDA REF.CUPOM FISCAL MG",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.67,
+    "timestamp": "2026-10-26T18:17:01Z",
+    "idDocumento": 5672852
+  }
+}

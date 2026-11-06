@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Rádio Club de Palmas Ltda.",
+  "fornecedor_cnpj_cpf": "75.661.751/0001-58",
+  "numero_documento": "016744",
+  "data_emissao": "2016-12-29",
+  "valor_total": 700.0,
+  "descricao_resumida": "Divulgação parlamentar referente às emendas destinadas pelo deputado federal Aliel Machado ao município de Palmas",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:11:31Z",
+    "tempo_segundos": 2.46,
+    "idDocumento": 6189454
+  }
+}

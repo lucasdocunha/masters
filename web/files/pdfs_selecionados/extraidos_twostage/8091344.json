@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "HOTEL MALANSKI DARWICH LTDA",
+  "fornecedor_cnpj_cpf": "09.650.306/0001-68",
+  "numero_documento": "33846",
+  "data_emissao": "2026-04-11",
+  "valor_total": 249.0,
+  "descricao_resumida": "Hospedagem em hotéis, hotelaria marítima e congêneres (o valor da alimentação e gorjeta, quando incluído no preço da diária, fica sujeito ao Imposto Sobre Serviços).",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.34,
+    "timestamp": "2026-10-26T21:55:35Z",
+    "idDocumento": 8091344
+  }
+}

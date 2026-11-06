@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO VISTA DO PANAMBY II LTDA",
+  "fornecedor_cnpj_cpf": "18.005.062/0001-51",
+  "numero_documento": "189020",
+  "data_emissao": "2021-04-09",
+  "valor_total": 162.1,
+  "descricao_resumida": "Não Informado",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.39,
+    "timestamp": "2026-10-26T18:30:33Z",
+    "idDocumento": 7188299
+  }
+}

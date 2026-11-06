@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "WEMERSON MARINHO DOS SANTOS CONSULTORIA EMPRESARIAL",
+  "fornecedor_cnpj_cpf": "36.205.111/0001-81",
+  "numero_documento": "00000053",
+  "data_emissao": "29/11/2023",
+  "valor_total": 6800.0,
+  "descricao_resumida": "Licenciamento ou cessão de direito de uso de programas de computação, inclusive distribuição.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.75,
+    "timestamp": "2026-10-26T18:36:20Z",
+    "idDocumento": 7653552
+  }
+}

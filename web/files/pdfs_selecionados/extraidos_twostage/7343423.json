@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CONCESSIONARIA ROTA DE SANTA MARIA",
+  "fornecedor_cnpj_cpf": "41.886.692/0001-02",
+  "numero_documento": null,
+  "data_emissao": "2022-03-10",
+  "valor_total": 3.7,
+  "descricao_resumida": "Entrega de veículo",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 7.92,
+    "timestamp": "2026-10-26T20:55:55Z",
+    "idDocumento": 7343423
+  }
+}

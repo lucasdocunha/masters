@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GADELHA RENT A CAR UNIPESSOAL LTDA",
+  "fornecedor_cnpj_cpf": "02.728.914/0001-07",
+  "numero_documento": null,
+  "data_emissao": "2026-03-30",
+  "valor_total": 7800.0,
+  "descricao_resumida": "LOCAÇÃO de 01(um) veículo, JEPP/COMANDER OVR TD380, placa SGQ8J4, durante o mês de março/26.",
+  "observacoes": "Documento do tipo Recibo",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:52:52Z",
+    "tempo_segundos": 2.19,
+    "idDocumento": 8075589
+  }
+}

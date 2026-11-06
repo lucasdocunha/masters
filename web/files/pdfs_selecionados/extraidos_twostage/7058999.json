@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Maria Sinova Dalpiaz",
+  "fornecedor_cnpj_cpf": "292.734.209-15",
+  "numero_documento": null,
+  "data_emissao": "2020-05-31",
+  "valor_total": 750.0,
+  "descricao_resumida": "Aluguel da sala de nº 03 – BL 01, do Edifício Lotus, sito à Rua Bulcão Viana, nº 250, nesta Cidade - Rio do Sul",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 7.56,
+    "timestamp": "2026-10-26T20:23:57Z",
+    "idDocumento": 7058999
+  }
+}

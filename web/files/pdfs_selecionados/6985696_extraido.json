@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO BOA ESPERANCA LTDA",
+  "fornecedor_cnpj_cpf": "00.911.117/0001-27",
+  "numero_documento": "243615",
+  "data_emissao": "2019-12-16",
+  "valor_total": 194.86,
+  "descricao_resumida": "Gasolina comum (42,461 L)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:33:36Z",
+    "tempo_segundos": 10.06,
+    "idDocumento": 6985696
+  }
+}

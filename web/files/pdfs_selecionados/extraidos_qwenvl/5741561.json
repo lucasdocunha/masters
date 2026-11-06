@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DE SERVIÇOS METÁLICO LIDA",
+  "fornecedor_cnpj_cpf": "60.575.784/0001-08",
+  "numero_documento": "095233",
+  "data_emissao": "2015-05-07",
+  "valor_total": 88.0,
+  "descricao_resumida": "CARTÃO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.46,
+    "timestamp": "2026-10-26T18:17:23Z",
+    "idDocumento": 5741561
+  }
+}

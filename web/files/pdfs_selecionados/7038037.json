@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7038037,
+  "ano": 2020,
+  "mes": 3,
+  "fornecedor": "AEROTRIO ALIMENTOS LIMITADA ME",
+  "cnpjCPF": "198.370.000/0017-9",
+  "numero": "064427",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-03-16T00:00:00",
+  "valorDocumento": 45.0,
+  "valorLiquido": 45.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Guiga Peixoto",
+  "cpfParlamentar": "04434956884",
+  "siglaUF": "SP",
+  "siglaPartido": "PSC",
+  "descricaoDespesa": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3410/2020/7038037.pdf"
+}

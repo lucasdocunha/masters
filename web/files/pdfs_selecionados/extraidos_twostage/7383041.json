@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COPASA",
+  "fornecedor_cnpj_cpf": "17.201.106/0001-03",
+  "numero_documento": "001.22.29074594-0",
+  "data_emissao": "2022-05-10",
+  "valor_total": null,
+  "descricao_resumida": "Água",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.58,
+    "timestamp": "2026-10-26T20:49:33Z",
+    "idDocumento": 7383041
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7375483,
+  "ano": 2022,
+  "mes": 4,
+  "fornecedor": "POSTO DE SERVICO FLOREAT LT",
+  "cnpjCPF": "591.434.040/0018-7",
+  "numero": "508461",
+  "tipoDocumento": "0",
+  "dataEmissao": "2022-04-28T00:00:00",
+  "valorDocumento": 288.46,
+  "valorLiquido": 288.46,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Carlos Zarattini",
+  "cpfParlamentar": "00398099863",
+  "siglaUF": "SP",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1963/2022/7375483.pdf"
+}

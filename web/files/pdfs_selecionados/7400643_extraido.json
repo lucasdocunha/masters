@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GOL LINHAS AEREAS S.A",
+  "fornecedor_cnpj_cpf": "07.575.651/0001-59",
+  "numero_documento": "1272176064493",
+  "data_emissao": "2022-06-19",
+  "valor_total": 1431.92,
+  "descricao_resumida": "Bilhete de passagem aérea trecho Confins (CNF) - Santos Dumont (SDU) - Brasília (BSB)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:36:24Z",
+    "tempo_segundos": 83.63,
+    "idDocumento": 7400643
+  }
+}

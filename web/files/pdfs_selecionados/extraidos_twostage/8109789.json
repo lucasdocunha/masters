@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMERCIAL FOCUS LTDA",
+  "fornecedor_cnpj_cpf": "05290880000100",
+  "numero_documento": "47369",
+  "data_emissao": "2026-05-27",
+  "valor_total": 208.0,
+  "descricao_resumida": "GASOLINA PETROBRAS 30,19",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 19.89,
+    "timestamp": "2026-10-26T21:54:19Z",
+    "idDocumento": 8109789
+  }
+}

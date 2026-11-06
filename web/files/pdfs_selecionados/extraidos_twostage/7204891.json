@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "RODO POSTO DA VISTA LTDA",
+  "fornecedor_cnpj_cpf": "04.951.962/0001-87",
+  "numero_documento": "3086",
+  "data_emissao": "2021-06-04",
+  "valor_total": 171.01,
+  "descricao_resumida": "ETANOL Bico 19",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.54,
+    "timestamp": "2026-10-26T20:31:46Z",
+    "idDocumento": 7204891
+  }
+}

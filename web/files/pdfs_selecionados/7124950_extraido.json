@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO FERNANDO STECCA LTDA",
+  "fornecedor_cnpj_cpf": "03075616000110",
+  "numero_documento": "14363",
+  "data_emissao": "2020-11-23",
+  "valor_total": 735.72,
+  "descricao_resumida": "OLEO DIESEL B S10 - COMUM, GASOLINA C ADITIVADA, GASOLINA A COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:34:47Z",
+    "tempo_segundos": 30.19,
+    "idDocumento": 7124950
+  }
+}

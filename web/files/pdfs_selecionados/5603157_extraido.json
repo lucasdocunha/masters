@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CASCAPIL COMBUSTIVEIS PARA VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "04707019001995",
+  "numero_documento": "060961",
+  "data_emissao": "2015-02-07",
+  "valor_total": 147.7,
+  "descricao_resumida": "Combustivel (Gasolina comum)",
+  "observacoes": "Documento rotacionado em 90 graus no PDF, mas legivel.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:53:43Z",
+    "tempo_segundos": 1.89,
+    "idDocumento": 5603157
+  }
+}

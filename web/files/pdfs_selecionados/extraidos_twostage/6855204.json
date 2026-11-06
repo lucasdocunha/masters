@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ANTÔNIA DOTTO ORTEGA",
+  "fornecedor_cnpj_cpf": "720.605.577-04",
+  "numero_documento": null,
+  "data_emissao": "2019-05-24",
+  "valor_total": 1072.0,
+  "descricao_resumida": "aluguel do mês de Maio /2019, referente à locação da sala 1 do piso superior do imóvel situado à Rua Dr. Manoel Pedro, nº 683 Cabral – Curitiba/PR.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 7.18,
+    "timestamp": "2026-10-26T19:59:25Z",
+    "idDocumento": 6855204
+  }
+}

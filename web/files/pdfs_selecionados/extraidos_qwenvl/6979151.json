@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "QUALITILOC",
+  "fornecedor_cnpj_cpf": "000.001.429",
+  "numero_documento": "0744844100109",
+  "data_emissao": "2019-12-09",
+  "valor_total": 7900.0,
+  "descricao_resumida": "Locacao de Veiculos sem Conductor",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.57,
+    "timestamp": "2026-10-26T18:27:09Z",
+    "idDocumento": 6979151
+  }
+}

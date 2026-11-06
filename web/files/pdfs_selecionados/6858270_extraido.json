@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Omastar S.R.L. (Ibis Montevideo)",
+  "fornecedor_cnpj_cpf": "213927830013",
+  "numero_documento": "23883",
+  "data_emissao": "2019-06-19",
+  "valor_total": 725.94,
+  "descricao_resumida": "Hospedagem e café da manhã (Desayuno e Alojamiento) no Hotel Ibis Montevideo",
+  "observacoes": "Documento estrangeiro emitido no Uruguai com conversão cambial anexa do Banco Central do Brasil para o Real (BRL)",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:38:17Z",
+    "tempo_segundos": 46.73,
+    "idDocumento": 6858270
+  }
+}

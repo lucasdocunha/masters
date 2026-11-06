@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Imobiliária Prolar LTDA",
+  "fornecedor_cnpj_cpf": "08.894.693/0001-15",
+  "numero_documento": null,
+  "data_emissao": "2022-03-07",
+  "valor_total": 3507.3,
+  "descricao_resumida": "Termo de quitação de pagamento de aluguel referente ao período de 01/02/2022 a 28/02/2022 de salas comerciais.",
+  "observacoes": "Documento é um termo de quitação de pagamento de locação, não uma nota fiscal tradicional.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:29:32Z",
+    "tempo_segundos": 23.59,
+    "idDocumento": 7338532
+  }
+}

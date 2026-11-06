@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Jaba Serviços Eireli",
+  "fornecedor_cnpj_cpf": "71091193000181",
+  "numero_documento": "009588",
+  "data_emissao": "2021-06-08",
+  "valor_total": 2900.0,
+  "descricao_resumida": "Locação do veículo Corolla GLI 2.0 16V Flex Aut. Placa RMZ 3H87, período de 22/04/2021 a 21/05/2021",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:11:31Z",
+    "tempo_segundos": 11.96,
+    "idDocumento": 7212388
+  }
+}

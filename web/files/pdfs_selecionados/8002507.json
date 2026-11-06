@@ -1,0 +1,19 @@
+{
+  "idDocumento": 8002507,
+  "ano": 2025,
+  "mes": 10,
+  "fornecedor": "TAM LINHAS AEREAS S/A.",
+  "cnpjCPF": "020.128.620/0016-0",
+  "numero": "9572254278266",
+  "tipoDocumento": "0",
+  "dataEmissao": "2025-10-09T00:00:00",
+  "valorDocumento": 3278.71,
+  "valorLiquido": 3278.71,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Orlando Silva",
+  "cpfParlamentar": "56524455568",
+  "siglaUF": "SP",
+  "siglaPartido": "PCdoB",
+  "descricaoDespesa": "PASSAGEM AÉREA - REEMBOLSO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2957/2025/8002507.pdf"
+}

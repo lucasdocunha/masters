@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionaria das Rodovias Integradas do Sul SA",
+  "fornecedor_cnpj_cpf": "32.161.500/0001-00",
+  "numero_documento": "0010003007159933010113024B4D8",
+  "data_emissao": "2020-09-05",
+  "valor_total": 4.6,
+  "descricao_resumida": "Tarifa de pedagio - Praca P3 - Gravatai",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:53:52Z",
+    "tempo_segundos": 12.43,
+    "idDocumento": 7109173
+  }
+}

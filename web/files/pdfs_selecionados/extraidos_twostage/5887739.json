@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JACEMAX EPP LTDA",
+  "fornecedor_cnpj_cpf": "02.605.360/0001-42",
+  "numero_documento": "62255",
+  "data_emissao": "2015-12-01",
+  "valor_total": 147.13,
+  "descricao_resumida": "CARTA SIMPLES COMERCIAL, TELEGRAMA NACIONAL 4H PRE-PAGO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.73,
+    "timestamp": "2026-10-26T19:13:51Z",
+    "idDocumento": 5887739
+  }
+}

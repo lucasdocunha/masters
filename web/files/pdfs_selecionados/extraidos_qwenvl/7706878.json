@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMPANHIA ESTADUAL DE DISTRIBUIÇÃO DE ENERGIA ELÉTRICA",
+  "fornecedor_cnpj_cpf": "0963156659 - CNPJ: 08.467.115/0001-00",
+  "numero_documento": "14034492",
+  "data_emissao": "05/02/2024",
+  "valor_total": 234.14,
+  "descricao_resumida": "CONSUMO DE ENERGIA ELÉTRICA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.08,
+    "timestamp": "2026-10-26T18:38:39Z",
+    "idDocumento": 7706878
+  }
+}

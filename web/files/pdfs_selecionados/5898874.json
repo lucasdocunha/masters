@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5898874,
+  "ano": 2016,
+  "mes": 1,
+  "fornecedor": "CENTRO COMERCIAL",
+  "cnpjCPF": "034.569.660/0012-6",
+  "numero": "254221",
+  "tipoDocumento": "0",
+  "dataEmissao": "2016-01-08T00:00:00",
+  "valorDocumento": 129.22,
+  "valorLiquido": 129.22,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "DÉCIO LIMA",
+  "cpfParlamentar": "38858240944",
+  "siglaUF": "SC",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1810/2016/5898874.pdf"
+}

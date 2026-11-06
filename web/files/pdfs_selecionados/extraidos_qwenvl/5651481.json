@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POLISERVICE - SISTEMAS DE SEGURANÇA LTDA",
+  "fornecedor_cnpj_cpf": "73.948.238/0001-95",
+  "numero_documento": "1258177/01",
+  "data_emissao": "13/03/2015",
+  "valor_total": 365.55,
+  "descricao_resumida": "PROTESTAR APOIS 05 DIAS UTEIS DO VENCIMENTO.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.7,
+    "timestamp": "2026-10-26T18:16:29Z",
+    "idDocumento": 5651481
+  }
+}

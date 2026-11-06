@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Francisca Beatriz Nunes dos Santos Albuquerque",
+  "fornecedor_cnpj_cpf": "54.234.858/0001-40",
+  "numero_documento": "7",
+  "data_emissao": "2024-09-10",
+  "valor_total": null,
+  "descricao_resumida": "REFERENTE AO SERVIÇO DE DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR E ACOMPANHAMENTO DO DEPUTADO FEDERAL CASTRO NETO NA ÁREA DE COMUNICAÇÃO. COM CRIAÇÃO DE PRODUÇÃO DE TEXTOS, VIDEO, FOTOS E CARDS PARA AS REDES SOCIAIS: INSTAGRAM: @CASTRONETOPi; FACEBOOK: JOSEDIASDECASTRONETO; TWITTER:@CASTRONETOPi E TIKTOK:@CASTRONETOPi. NO PERÍODO DE 10 DE AGOSTO A 10 DE SETEMBRO, NO ESTADO DO PIAUÍ.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 23.21,
+    "timestamp": "2026-10-26T21:12:55Z",
+    "idDocumento": 7799878
+  }
+}

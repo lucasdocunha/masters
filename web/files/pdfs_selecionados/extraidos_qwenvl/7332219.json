@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "TALISMA PALLACE HOTEL E SERVICOS LTDA",
+  "fornecedor_cnpj_cpf": "12.045.434/0001-97",
+  "numero_documento": "000004122",
+  "data_emissao": "2022-02-20",
+  "valor_total": 80.0,
+  "descricao_resumida": "Hospedagem de Qualquer Natureza em Hotéis, Apart-service Condominiais, Flat, Apart-Hotéis, Hotéis Residência, Residence-service, Suite Service, Hotelaria Marítima, Motéis, Pensões e Congêneres; Ocupação por Temporada com Fornecimento de Serviço (O Valor da Alimentação e Gorjeta, Quando Incluído no Preço da Diária, fica Sujeito ao Imposto sobre Serviços).",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.77,
+    "timestamp": "2026-10-26T18:33:46Z",
+    "idDocumento": 7332219
+  }
+}

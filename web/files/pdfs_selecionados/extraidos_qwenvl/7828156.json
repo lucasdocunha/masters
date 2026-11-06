@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Pontual Loc Car Ltda",
+  "fornecedor_cnpj_cpf": "30411174000149",
+  "numero_documento": "028554",
+  "data_emissao": "2024-10-31",
+  "valor_total": 3.523,
+  "descricao_resumida": "LOCACAO DO VEICULO GOL 1.6 MSI FLEX 8V",
+  "observacoes": "Atividade sem incidencia sobre o ISSQN conforme lei complementar no 116/2003",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.0,
+    "timestamp": "2026-10-26T18:38:31Z",
+    "idDocumento": 7828156
+  }
+}

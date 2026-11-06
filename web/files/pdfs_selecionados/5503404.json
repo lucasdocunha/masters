@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5503404,
+  "ano": 2014,
+  "mes": 7,
+  "fornecedor": "JK COMBUSTIVEIS",
+  "cnpjCPF": "082.021.160/0011-5",
+  "numero": "51790",
+  "tipoDocumento": "0",
+  "dataEmissao": "2014-07-23T00:00:00",
+  "valorDocumento": 20.0,
+  "valorLiquido": 20.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Paulinho da Força",
+  "cpfParlamentar": "21006768904",
+  "siglaUF": "SP",
+  "siglaPartido": "SDD",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1903/2014/5503404.pdf"
+}

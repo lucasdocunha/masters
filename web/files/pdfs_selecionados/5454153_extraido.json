@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "26043DT9UKXX",
+  "data_emissao": "2014-06-16",
+  "valor_total": 4.7,
+  "descricao_resumida": "Tarifa de pedagio - Praca Pratispolis, Rodovia MG050, KM 389",
+  "observacoes": "Documento e um recibo de pedagio sem identificacao do fornecedor ou CNPJ",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:40:41Z",
+    "tempo_segundos": 18.16,
+    "idDocumento": 5454153
+  }
+}

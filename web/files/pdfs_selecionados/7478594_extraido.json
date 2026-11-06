@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "UWBR VOX Telecomunicações S/A",
+  "fornecedor_cnpj_cpf": "12.105.570/0001-25",
+  "numero_documento": "25870012/2022",
+  "data_emissao": "2022-12-09",
+  "valor_total": 109.99,
+  "descricao_resumida": "Mensalidade de serviços de comunicação (SCM - Vox Fibra, Clube de Vantagens, Assistência Premium e Vox Educa)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:43:46Z",
+    "tempo_segundos": 12.4,
+    "idDocumento": 7478594
+  }
+}

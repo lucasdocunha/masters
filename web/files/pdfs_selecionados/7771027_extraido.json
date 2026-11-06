@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "THIAGO DOS SANTOS GUIMARAES",
+  "fornecedor_cnpj_cpf": "49.541.263/0001-05",
+  "numero_documento": "62",
+  "data_emissao": "2024-07-15",
+  "valor_total": 900.0,
+  "descricao_resumida": "COBERTURA FOTOGRAFICA DO EVENTO FEIRA NATER COOP",
+  "observacoes": "Documento complementar (Declaração) acompanhado da NFS-e v1.0 nº 62.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:19:39Z",
+    "tempo_segundos": 90.25,
+    "idDocumento": 7771027
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Posto de Servicos Dom Pedro Ltda",
+  "fornecedor_cnpj_cpf": "01.325.356/0001-68",
+  "numero_documento": "19716",
+  "data_emissao": "2016-09-28",
+  "valor_total": 200.04,
+  "descricao_resumida": "OLEO DIESEL B S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:28:33Z",
+    "tempo_segundos": 7.79,
+    "idDocumento": 6112920
+  }
+}

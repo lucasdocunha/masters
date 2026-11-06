@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GLOBAL IDEAS COMUNICACAO E EVENTOS LTDA",
+  "fornecedor_cnpj_cpf": "35.224.503/0001-25",
+  "numero_documento": "00008",
+  "data_emissao": "2020-05-04",
+  "valor_total": 3500.0,
+  "descricao_resumida": "Atividade de serviço prestado de gerenciamento de redes sociais do Deputado Federal Da Vitória referente ao mês de Abril de 2020.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:00:07Z",
+    "tempo_segundos": 37.19,
+    "idDocumento": 7053278
+  }
+}

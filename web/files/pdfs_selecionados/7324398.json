@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7324398,
+  "ano": 2022,
+  "mes": 2,
+  "fornecedor": "POSTO JR FAISAO VII LTDA",
+  "cnpjCPF": "302.594.110/0016-7",
+  "numero": "615269",
+  "tipoDocumento": "0",
+  "dataEmissao": "2022-02-05T00:00:00",
+  "valorDocumento": 50.0,
+  "valorLiquido": 50.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Alê Silva",
+  "cpfParlamentar": "79875564915",
+  "siglaUF": "MG",
+  "siglaPartido": "REPUBLICANOS",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3372/2022/7324398.pdf"
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "STARBUCKS BRASIL COMERCIO DE CAFES LTDA",
+  "fornecedor_cnpj_cpf": "07.984.267/0162-94",
+  "numero_documento": "221292",
+  "data_emissao": "2024-08-20",
+  "valor_total": 27.0,
+  "descricao_resumida": "Sand Salpicao",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:40:05Z",
+    "tempo_segundos": 19.67,
+    "idDocumento": 7793112
+  }
+}

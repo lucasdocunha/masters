@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Companhia Catarinense de Águas e Saneamento",
+  "fornecedor_cnpj_cpf": "82.508.433/0001-17",
+  "numero_documento": "19468539",
+  "data_emissao": "2025-07-25",
+  "valor_total": 91.44,
+  "descricao_resumida": "Fatura de água e esgoto referente ao mês 07/2025",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:41:43Z",
+    "tempo_segundos": 3.37,
+    "idDocumento": 7968196
+  }
+}

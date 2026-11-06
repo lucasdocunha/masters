@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CONDE & DELL ARINGA - DESENVOLVIMENTO DE SOFTWARES LTDA - EPP",
+  "fornecedor_cnpj_cpf": "09.613.772/0001-73",
+  "numero_documento": "9955",
+  "data_emissao": "2020-06-01",
+  "valor_total": null,
+  "descricao_resumida": "Notas Fiscais Eletrônicas de Serviço",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.68,
+    "timestamp": "2026-10-26T20:13:32Z",
+    "idDocumento": 7058453
+  }
+}

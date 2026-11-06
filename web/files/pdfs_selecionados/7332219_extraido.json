@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "TALISMA PALLACE HOTEL E SERVICOS LTDA",
+  "fornecedor_cnpj_cpf": "12.045.434/0001-97",
+  "numero_documento": "000004122",
+  "data_emissao": "2022-02-20",
+  "valor_total": 80.0,
+  "descricao_resumida": "Hospedagem (1 diária)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:41:51Z",
+    "tempo_segundos": 4.73,
+    "idDocumento": 7332219
+  }
+}

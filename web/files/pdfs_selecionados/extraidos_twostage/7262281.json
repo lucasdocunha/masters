@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Frederico Escalera",
+  "fornecedor_cnpj_cpf": "074.222.577-17",
+  "numero_documento": "466076084",
+  "data_emissao": "2021-09-03",
+  "valor_total": null,
+  "descricao_resumida": "extrato de usos para conferência",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 13.18,
+    "timestamp": "2026-10-26T20:32:40Z",
+    "idDocumento": 7262281
+  }
+}

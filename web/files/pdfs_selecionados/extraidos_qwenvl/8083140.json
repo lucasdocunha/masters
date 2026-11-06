@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CONCESSIONARIA EPR LITORAL PIONEIRO",
+  "fornecedor_cnpj_cpf": "51.137.031/0001-20",
+  "numero_documento": "QK2F2LCS84JW",
+  "data_emissao": "2026-04-12",
+  "valor_total": 24.0,
+  "descricao_resumida": "REDE VISA ELECTRON",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.59,
+    "timestamp": "2026-10-26T18:43:23Z",
+    "idDocumento": 8083140
+  }
+}

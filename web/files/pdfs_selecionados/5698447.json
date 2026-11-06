@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5698447,
+  "ano": 2015,
+  "mes": 5,
+  "fornecedor": "POSTO ALPHA LTDA",
+  "cnpjCPF": "084.761.970/0014-1",
+  "numero": "425182",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-05-29T00:00:00",
+  "valorDocumento": 133.73,
+  "valorLiquido": 133.73,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "PEDRO CHAVES",
+  "cpfParlamentar": "16692454115",
+  "siglaUF": "GO",
+  "siglaPartido": "MDB",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1429/2015/5698447.pdf"
+}

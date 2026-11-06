@@ -1,0 +1,19 @@
+{
+  "idDocumento": 8014151,
+  "ano": 2025,
+  "mes": 11,
+  "fornecedor": "Auto Posto Limoeiro",
+  "cnpjCPF": "050.654.470/0016-2",
+  "numero": "35210",
+  "tipoDocumento": "0",
+  "dataEmissao": "2025-11-16T00:00:00",
+  "valorDocumento": 200.0,
+  "valorLiquido": 200.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "João Cury",
+  "cpfParlamentar": "14820733826",
+  "siglaUF": "SP",
+  "siglaPartido": "MDB",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3790/2025/8014151.pdf"
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LUIZ GUILHERME DO PRADO SILVA - PRODUCOES",
+  "fornecedor_cnpj_cpf": "36.351.683/0001-79",
+  "numero_documento": "00000023",
+  "data_emissao": "2020-10-30",
+  "valor_total": 3500.0,
+  "descricao_resumida": "Redacao, edicao e criacao de conteudo para redes sociais para divulgacao da atividade parlamentar do deputado David Miranda durante o mes de outubro de 2020.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:43:00Z",
+    "tempo_segundos": 51.09,
+    "idDocumento": 7110748
+  }
+}

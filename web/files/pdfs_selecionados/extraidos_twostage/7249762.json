@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MARLUS DAS CHAGAS FERRERIA 43461817215",
+  "fornecedor_cnpj_cpf": "18.861.767/0001-33",
+  "numero_documento": "174",
+  "data_emissao": "2021-06-27",
+  "valor_total": null,
+  "descricao_resumida": "Nota Fiscal de Serviço Eletrônica 340 e NOTA CZS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.38,
+    "timestamp": "2026-10-26T20:30:25Z",
+    "idDocumento": 7249762
+  }
+}

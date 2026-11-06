@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Deputado Federal Assis do Couto",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2015-10-01",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Pagamento do aluguel do imóvel",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 7.87,
+    "timestamp": "2026-10-26T19:06:37Z",
+    "idDocumento": 5813528
+  }
+}

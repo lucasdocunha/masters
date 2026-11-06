@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Aliel Machado Bark",
+  "fornecedor_cnpj_cpf": "069.080.529-23",
+  "numero_documento": "016744",
+  "data_emissao": "2016-12-29",
+  "valor_total": 700.0,
+  "descricao_resumida": "Publicidade no Periodo de 02/01/2017 a 08/01/2017 Conforme Contrato No 13701 Emissora: RADIO CLUB AM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.84,
+    "timestamp": "2026-10-26T18:19:49Z",
+    "idDocumento": 6189454
+  }
+}

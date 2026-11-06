@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JOELMA BAITEL COQUELET",
+  "fornecedor_cnpj_cpf": "22.636.626/0001-21",
+  "numero_documento": "7583738879202263662620241226122023008439",
+  "data_emissao": "2023-12-26",
+  "valor_total": 10.0,
+  "descricao_resumida": "Divulgação de atividade parlamentar através de produção de vídeos para internet e redes sociais.",
+  "observacoes": "Pagamento à vista.",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.27,
+    "timestamp": "2026-10-26T18:37:05Z",
+    "idDocumento": 7669419
+  }
+}

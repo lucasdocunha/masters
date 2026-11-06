@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SM COMERCIO E SERVICOS LTDA - ME",
+  "fornecedor_cnpj_cpf": "09.469.018/0001-01",
+  "numero_documento": "300.275/002-85",
+  "data_emissao": "2014-07-31",
+  "valor_total": 1550.0,
+  "descricao_resumida": "SERVIÇOS DE TRANSPORTE DE NATUREZA MUNICIPAL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.84,
+    "timestamp": "2026-10-26T18:15:50Z",
+    "idDocumento": 5489574
+  }
+}

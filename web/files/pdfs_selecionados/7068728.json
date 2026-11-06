@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7068728,
+  "ano": 2020,
+  "mes": 6,
+  "fornecedor": "Parceria Comunicação",
+  "cnpjCPF": "107.197.470/0015-8",
+  "numero": "20208",
+  "tipoDocumento": "0",
+  "dataEmissao": "2020-06-29T00:00:00",
+  "valorDocumento": 2000.0,
+  "valorLiquido": 2000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Henrique Fontana",
+  "cpfParlamentar": "33410518053",
+  "siglaUF": "RS",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1454/2020/7068728.pdf"
+}

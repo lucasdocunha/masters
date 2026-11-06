@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BLOG DO NINJA PORTAIS, AGENCIA DE NOTÍCIAS E SERVIÇOS",
+  "fornecedor_cnpj_cpf": "27.573.137/0001-91",
+  "numero_documento": "1000530",
+  "data_emissao": "2023-10-13",
+  "valor_total": null,
+  "descricao_resumida": "SERVIÇOS ELETRÔNICOS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.74,
+    "timestamp": "2026-10-26T20:58:29Z",
+    "idDocumento": 7625358
+  }
+}

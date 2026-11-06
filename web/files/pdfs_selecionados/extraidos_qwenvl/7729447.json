@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SANTO SUPERMERCADO ECONOMIA SEM LIMITES",
+  "fornecedor_cnpj_cpf": "50.368.976/0007-85",
+  "numero_documento": "00000000276672",
+  "data_emissao": "2024-04-18",
+  "valor_total": 108.96,
+  "descricao_resumida": "Comete crime quen sonega",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.79,
+    "timestamp": "2026-10-26T18:38:51Z",
+    "idDocumento": 7729447
+  }
+}

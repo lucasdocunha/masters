@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GIULIA PALMA TREVISAN LTDA",
+  "fornecedor_cnpj_cpf": "17.448.625/0001-13",
+  "numero_documento": "20252026",
+  "data_emissao": "2026-04-13",
+  "valor_total": 350.0,
+  "descricao_resumida": "Hospedagem de hotel (diárias)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:35:42Z",
+    "tempo_segundos": 6.67,
+    "idDocumento": 7898691
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MR IGOR TARCIANO TIMO",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2022-06-20",
+  "valor_total": null,
+  "descricao_resumida": "Viagem para Brasília, Brasil",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 15.07,
+    "timestamp": "2026-10-26T20:54:11Z",
+    "idDocumento": 7400643
+  }
+}

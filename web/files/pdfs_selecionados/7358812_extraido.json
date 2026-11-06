@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "KARLA MENDES NAZAROVICZ XAXA 51678373168",
+  "fornecedor_cnpj_cpf": "36.213.475/0001-03",
+  "numero_documento": "00000050",
+  "data_emissao": "2022-04-19",
+  "valor_total": 4500.0,
+  "descricao_resumida": "Relatório de monitoramento e análise da presença digital, análise da reputação e planejamento técnico de comunicação digital para o mandato em 2022.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:37:44Z",
+    "tempo_segundos": 9.22,
+    "idDocumento": 7358812
+  }
+}

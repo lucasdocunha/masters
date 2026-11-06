@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PM DE BELEM DE MARIA",
+  "fornecedor_cnpj_cpf": "32.648.043/0001-74",
+  "numero_documento": "126",
+  "data_emissao": "2024-09-26",
+  "valor_total": null,
+  "descricao_resumida": "SERVIÇOS ELETRÔNICOS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.4,
+    "timestamp": "2026-10-26T21:16:53Z",
+    "idDocumento": 7806650
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO JK",
+  "fornecedor_cnpj_cpf": "05.256.794/0001-72",
+  "numero_documento": "141140",
+  "data_emissao": "2014-11-09",
+  "valor_total": 100.0,
+  "descricao_resumida": "Aquisição de 31,65 litros de Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:40:48Z",
+    "tempo_segundos": 1.91,
+    "idDocumento": 5562334
+  }
+}

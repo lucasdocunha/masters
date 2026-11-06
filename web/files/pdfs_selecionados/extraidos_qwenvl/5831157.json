@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "INKA SOLUCOES DIGITAIS LTDA",
+  "fornecedor_cnpj_cpf": "07.315.739/0001-31",
+  "numero_documento": "00800",
+  "data_emissao": "16/10/2015",
+  "valor_total": 5000.0,
+  "descricao_resumida": "RECEBIMENTO REFERENTE A ASSESSORIA DE COMUNICAÇÃO E MARKETING PARA O MANDATO DO DEPUTADO HELDER SALOMÃO.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.8,
+    "timestamp": "2026-10-26T18:17:17Z",
+    "idDocumento": 5831157
+  }
+}

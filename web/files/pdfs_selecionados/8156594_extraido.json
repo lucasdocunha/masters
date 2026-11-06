@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MASCARENHAS REIS & CIA. LTDA",
+  "fornecedor_cnpj_cpf": "05474163000120",
+  "numero_documento": "1283",
+  "data_emissao": "2026-09-17",
+  "valor_total": 1700.0,
+  "descricao_resumida": "Hospedagem em pensões, albergues, pousadas, hospedarias, ocupação por temporada com fornecimento de serviços e congêneres - 02 diárias (04/09/2026 a 06/09/2026).",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:54:41Z",
+    "tempo_segundos": 3.12,
+    "idDocumento": 8156594
+  }
+}

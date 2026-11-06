@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JANGADA COMERCIO DE COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "18.977.100/0001-38",
+  "numero_documento": "23727",
+  "data_emissao": "2025-10-09",
+  "valor_total": 210.0,
+  "descricao_resumida": "GASOLIA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 9.63,
+    "timestamp": "2026-10-26T18:40:11Z",
+    "idDocumento": 8026158
+  }
+}

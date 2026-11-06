@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "STARLINK BRAZIL SERVICOS DE INTERNET LTDA.",
+  "fornecedor_cnpj_cpf": "40.154.884/0001-53",
+  "numero_documento": "010163172",
+  "data_emissao": "2026-08-08",
+  "valor_total": 619.0,
+  "descricao_resumida": "Serviço de comunicação eletrônica referente a plano Roam - Unlimited",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:55:06Z",
+    "tempo_segundos": 20.17,
+    "idDocumento": 8145552
+  }
+}

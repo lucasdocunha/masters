@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CLIO CRIATIVA AGENCIA DE PUBLICIDADE E M",
+  "fornecedor_cnpj_cpf": "22.876.688/0001-00",
+  "numero_documento": "20190000000008",
+  "data_emissao": "2019-03-28",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Gestao de Midias Sociais - monitoramento, gerenciamento e criacao de pecas para Facebook e Instagram.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:14:41Z",
+    "tempo_segundos": 5.91,
+    "idDocumento": 6794301
+  }
+}

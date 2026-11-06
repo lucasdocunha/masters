@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VIA SUL COMERCIO DE COMBUSTIVEIS EIRELI",
+  "fornecedor_cnpj_cpf": "11.006.687/0001-99",
+  "numero_documento": "091018",
+  "data_emissao": "2016-08-29",
+  "valor_total": 160.0,
+  "descricao_resumida": "Diesel",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 12.33,
+    "timestamp": "2026-10-26T19:16:22Z",
+    "idDocumento": 6121293
+  }
+}

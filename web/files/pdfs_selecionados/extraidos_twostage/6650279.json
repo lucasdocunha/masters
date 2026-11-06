@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "LIMA HOTEIS E TURISMO LTDA - ME",
+  "fornecedor_cnpj_cpf": "48.811.269/0001-84",
+  "numero_documento": "00017666",
+  "data_emissao": "2018-07-24",
+  "valor_total": 150.0,
+  "descricao_resumida": "Referente a 01 diária de hotel. Entrada no dia 24/07/2018 - Saída no dia 25/07/2018",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.54,
+    "timestamp": "2026-10-26T19:42:50Z",
+    "idDocumento": 6650279
+  }
+}

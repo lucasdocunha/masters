@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EIXO SP",
+  "fornecedor_cnpj_cpf": "36.146.575/0001-64",
+  "numero_documento": "L650U5C3044U",
+  "data_emissao": "2024-01-12",
+  "valor_total": 11.4,
+  "descricao_resumida": "Tarifa de pedagio - Praca Piratininga",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:10:51Z",
+    "tempo_segundos": 21.78,
+    "idDocumento": 7676330
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO OLINDA LTDA",
+  "fornecedor_cnpj_cpf": "40.756.983/0001-05",
+  "numero_documento": "153710",
+  "data_emissao": "2014-08-23",
+  "valor_total": 100.0,
+  "descricao_resumida": "DIESEL B S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:39:16Z",
+    "tempo_segundos": 4.0,
+    "idDocumento": 5505152
+  }
+}

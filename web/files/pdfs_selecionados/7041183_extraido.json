@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SAO PAULO AIRPORT RESTAURANTES LIMITADA",
+  "fornecedor_cnpj_cpf": "20.205.435/0001-80",
+  "numero_documento": "264269",
+  "data_emissao": "2020-03-17",
+  "valor_total": 43.45,
+  "descricao_resumida": "SUNSHINE, S. HORCAXI e gorjeta sugerida",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:30:11Z",
+    "tempo_segundos": 84.81,
+    "idDocumento": 7041183
+  }
+}

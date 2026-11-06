@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "M.B. LOCACAO DE AERONAVES E VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "12.082.807/0001-08",
+  "numero_documento": "294",
+  "data_emissao": "25/05/2016",
+  "valor_total": 4950.0,
+  "descricao_resumida": "Locacao de aeronave bimotor ptrsn trecho Goiania / Cabeceiras / Goiania no dia 21/05/16.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.82,
+    "timestamp": "2026-10-26T18:18:55Z",
+    "idDocumento": 6008606
+  }
+}

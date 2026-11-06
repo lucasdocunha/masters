@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "M B GRACIANI COMBUSTIVEIS",
+  "fornecedor_cnpj_cpf": "04.596.702/0001-30",
+  "numero_documento": "000.240.991",
+  "data_emissao": "2021-09-13",
+  "valor_total": 150.0,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 17.58,
+    "timestamp": "2026-10-26T20:28:43Z",
+    "idDocumento": 7258957
+  }
+}

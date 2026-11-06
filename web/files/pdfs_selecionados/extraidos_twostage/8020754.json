@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JEANRLEY MICHEL VIVAS DA ANUNCIACAO",
+  "fornecedor_cnpj_cpf": "34.474.061/0001-02",
+  "numero_documento": "57",
+  "data_emissao": "2025-11-21",
+  "valor_total": null,
+  "descricao_resumida": "Nota quitada DIVULGAÇÃO DE ATIVIDADE PARLAMENTAR - Assessoria de Comunicação",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.63,
+    "timestamp": "2026-10-26T21:43:04Z",
+    "idDocumento": 8020754
+  }
+}

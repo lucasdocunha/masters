@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Rodovias Integradas do Parana SA",
+  "fornecedor_cnpj_cpf": "02191601000740",
+  "numero_documento": null,
+  "data_emissao": "2018-05-04",
+  "valor_total": 8.9,
+  "descricao_resumida": "Tarifa de pedagio - CAT 1",
+  "observacoes": "Recibo de pedagio com instrucoes para emissao de documento fiscal equivalente no site",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:34:44Z",
+    "tempo_segundos": 3.07,
+    "idDocumento": 6573296
+  }
+}

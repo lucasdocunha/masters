@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "INOVA SOLUÇÕES PRESTADORA DE SERVIÇOS LTDA",
+  "fornecedor_cnpj_cpf": "33.058.350/0001-68",
+  "numero_documento": "191",
+  "data_emissao": "2023-07-04",
+  "valor_total": 499.0,
+  "descricao_resumida": "Licença de uso de software da solução conecta gabinete referente ao mês de julho de 2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:38:46Z",
+    "tempo_segundos": 2.3,
+    "idDocumento": 7572808
+  }
+}

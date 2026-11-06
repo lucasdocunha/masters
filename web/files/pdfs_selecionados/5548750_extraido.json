@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "BRENT EMPREENDIMENTOS E ALIMENTACAO LTDA",
+  "fornecedor_cnpj_cpf": "72.614.977/0002-90",
+  "numero_documento": "46713",
+  "data_emissao": "2014-11-12",
+  "valor_total": 41.35,
+  "descricao_resumida": "Consumo de alimentacao",
+  "observacoes": "Nota fiscal de venda ao consumidor manuscrita",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:24:07Z",
+    "tempo_segundos": 3.43,
+    "idDocumento": 5548750
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LAGOA HOTEL LTDA",
+  "fornecedor_cnpj_cpf": "29.856.756/0001-19",
+  "numero_documento": "0000012032",
+  "data_emissao": "2025-05-31",
+  "valor_total": 350.0,
+  "descricao_resumida": "Hospedagem - 01 VISA CREDITO ***9206",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:41:09Z",
+    "tempo_segundos": 6.77,
+    "idDocumento": 7939519
+  }
+}

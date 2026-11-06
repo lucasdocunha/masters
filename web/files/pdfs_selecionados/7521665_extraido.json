@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "J A SERVICE E TRANSPORTE LTDA",
+  "fornecedor_cnpj_cpf": "47.121.800/0001-24",
+  "numero_documento": "11",
+  "data_emissao": "2023-03-30",
+  "valor_total": 3800.0,
+  "descricao_resumida": "Locação de veículo - Marca Ford, modelo Fusion TITGTD AWD, 2.0 automático, 2017/2017, referente ao período de 01/03/2023 a 31/03/2023.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:48:15Z",
+    "tempo_segundos": 3.1,
+    "idDocumento": 7521665
+  }
+}

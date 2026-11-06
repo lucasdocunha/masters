@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO CABRAL LTDA",
+  "fornecedor_cnpj_cpf": "17.228.339/0001-42",
+  "numero_documento": "23726",
+  "data_emissao": "2019-12-09",
+  "valor_total": 296.39,
+  "descricao_resumida": "Gasolina Tipo C (60.501 litros)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:36:23Z",
+    "tempo_segundos": 31.91,
+    "idDocumento": 6986997
+  }
+}

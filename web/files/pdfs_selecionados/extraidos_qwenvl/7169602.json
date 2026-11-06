@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO MARANELLO II LTDA",
+  "fornecedor_cnpj_cpf": "02.297.445/0001-00 - IE 118904030117",
+  "numero_documento": "263184",
+  "data_emissao": "2021-03-05",
+  "valor_total": 208.76,
+  "descricao_resumida": "GASOLINAS CDNUM Bico 17",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.93,
+    "timestamp": "2026-10-26T18:31:08Z",
+    "idDocumento": 7169602
+  }
+}

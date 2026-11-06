@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SANA COMERCIO DE COMBUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "11.898.643/0001-10",
+  "numero_documento": null,
+  "data_emissao": "2016-11-01",
+  "valor_total": 150.01,
+  "descricao_resumida": "GASOLINA ADITIVADA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 13.36,
+    "timestamp": "2026-10-26T19:22:12Z",
+    "idDocumento": 6156004
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "LOGIC WORLD INFORMATICA LTDA - ME",
+  "fornecedor_cnpj_cpf": "03.494.049/0001-36",
+  "numero_documento": "00000054",
+  "data_emissao": "2019-05-14",
+  "valor_total": 400.0,
+  "descricao_resumida": "CONTRATO DE LICENCIAMENTO DE USO DE SISTEMA GESTAO POLITICA , EFERENTE A ABRIL 2019.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.79,
+    "timestamp": "2026-10-26T18:26:19Z",
+    "idDocumento": 6842112
+  }
+}

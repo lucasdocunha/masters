@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VOLTA GRANDE COMUNICAÇÕES LTDA-ME",
+  "fornecedor_cnpj_cpf": "02.177.792/0001-08",
+  "numero_documento": "0002785",
+  "data_emissao": "2015-04-16",
+  "valor_total": 500.0,
+  "descricao_resumida": "Veiculação de matérias sobre ações do Dep. Edinho Bez nos dias 26/03 e 02/04 no Jornal Volta Grande",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.03,
+    "timestamp": "2026-10-26T19:05:20Z",
+    "idDocumento": 5660044
+  }
+}

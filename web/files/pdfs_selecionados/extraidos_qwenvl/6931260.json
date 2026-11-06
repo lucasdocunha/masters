@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Balansin E Hoffmann",
+  "fornecedor_cnpj_cpf": "97249823000",
+  "numero_documento": "1091",
+  "data_emissao": "2019-09-27",
+  "valor_total": 122.0,
+  "descricao_resumida": "Hospedagem- UMA DIARIA NO VALOR DE 122,00.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.48,
+    "timestamp": "2026-10-26T18:26:35Z",
+    "idDocumento": 6931260
+  }
+}

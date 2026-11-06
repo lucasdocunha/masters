@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO SANTO EXPEDITO LTDA",
+  "fornecedor_cnpj_cpf": "04709698000172",
+  "numero_documento": "036381",
+  "data_emissao": "2024-09-15",
+  "valor_total": 356.06,
+  "descricao_resumida": "Oleo Diesel S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:26:34Z",
+    "tempo_segundos": 26.92,
+    "idDocumento": 7805270
+  }
+}

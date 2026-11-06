@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "DITRENTO POSTOS E LOGISTICA LTDA",
+  "fornecedor_cnpj_cpf": "07.473.735/0071-94",
+  "numero_documento": "18777",
+  "data_emissao": "2016-11-18",
+  "valor_total": 120.0,
+  "descricao_resumida": "DIESEL 810 - Bico 20 42,67C X2 819 F1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.92,
+    "timestamp": "2026-10-26T18:19:27Z",
+    "idDocumento": 6146794
+  }
+}

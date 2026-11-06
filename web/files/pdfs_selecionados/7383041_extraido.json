@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Companhia de Saneamento de Minas Gerais COPASA",
+  "fornecedor_cnpj_cpf": "17.281.106/0001-03",
+  "numero_documento": "001.22.28074594-0",
+  "data_emissao": "2022-05-10",
+  "valor_total": 84.1,
+  "descricao_resumida": "Abastecimento de água, esgoto dinâmico coleta e tratamento - EDT, cobrança pelo uso de recursos hídricos - água e esgoto.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:38:21Z",
+    "tempo_segundos": 19.13,
+    "idDocumento": 7383041
+  }
+}

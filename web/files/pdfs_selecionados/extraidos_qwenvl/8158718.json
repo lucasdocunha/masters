@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MAPAS DE IMOVEIS LTDA",
+  "fornecedor_cnpj_cpf": "17.465.303/0001-82",
+  "numero_documento": "01.26.5472789.26",
+  "data_emissao": "01/09/2026",
+  "valor_total": 457.33,
+  "descricao_resumida": "Comprovante de Pagamento PM de Belo Horizonte",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.72,
+    "timestamp": "2026-10-26T18:43:52Z",
+    "idDocumento": 8158718
+  }
+}

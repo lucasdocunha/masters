@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Conc. da Rodovia Presidente Dutra S/A",
+  "fornecedor_cnpj_cpf": "06.261.626/0001-32",
+  "numero_documento": "000204100519272187630034753",
+  "data_emissao": "2018-05-25",
+  "valor_total": 14.4,
+  "descricao_resumida": "Pipa: MOSSEIRA CESAR HORJE",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.78,
+    "timestamp": "2026-10-26T18:24:17Z",
+    "idDocumento": 6596344
+  }
+}

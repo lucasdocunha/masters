@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CAPITAL ALUGUEL DE CARROS LTDA",
+  "fornecedor_cnpj_cpf": "35.970.336/0001-61",
+  "numero_documento": "18",
+  "data_emissao": "2026-07-08",
+  "valor_total": 6300.0,
+  "descricao_resumida": "Locação de veículo executivo sem motorista - Corolla - Placa TLLA16 - Período de 01a 31/05/2026",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.8,
+    "timestamp": "2026-10-26T18:42:59Z",
+    "idDocumento": 8130742
+  }
+}

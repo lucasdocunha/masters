@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "F D FEITOSA LOCAÇÃO DE VEÍCULOS EIRELI",
+  "fornecedor_cnpj_cpf": "20.146.161/0001-03",
+  "numero_documento": "000110",
+  "data_emissao": "2021-10-20",
+  "valor_total": 7500.0,
+  "descricao_resumida": "Prestação de serviço de locação de 01 veículo (Caoachery Tiggor 1.6TGDI, placa QYR6E75), referente ao período de 01/10/2021 a 31/10/2021.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:14:08Z",
+    "tempo_segundos": 18.55,
+    "idDocumento": 7272777
+  }
+}

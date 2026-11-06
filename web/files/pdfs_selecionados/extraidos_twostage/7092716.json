@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "FRANCISCO C. T. ARAUJO",
+  "fornecedor_cnpj_cpf": "08.687.623/0001-96",
+  "numero_documento": "0000000445",
+  "data_emissao": "2020-08-04",
+  "valor_total": null,
+  "descricao_resumida": "Notas Fiscais Eletrônicas de Prestação de Serviços",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.31,
+    "timestamp": "2026-10-26T20:13:10Z",
+    "idDocumento": 7092716
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO TOSCANO - DANIELLY MARIA DA COSTA GALVAO",
+  "fornecedor_cnpj_cpf": "05.932.284/0001-78",
+  "numero_documento": "126190",
+  "data_emissao": "2014-08-11",
+  "valor_total": 50.0,
+  "descricao_resumida": "DIESEL B S10 (18,588 litros)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:32:16Z",
+    "tempo_segundos": 2.17,
+    "idDocumento": 5493483
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DE LOYOLA LTDA",
+  "fornecedor_cnpj_cpf": "37.942.300/0001-28",
+  "numero_documento": "10610",
+  "data_emissao": "2021-02-26",
+  "valor_total": 90.17,
+  "descricao_resumida": "Diesel S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:59:18Z",
+    "tempo_segundos": 17.02,
+    "idDocumento": 7179657
+  }
+}

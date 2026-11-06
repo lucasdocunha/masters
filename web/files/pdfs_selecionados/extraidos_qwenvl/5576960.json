@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Gráfica Nordeste Ltda",
+  "fornecedor_cnpj_cpf": "344.563.500-59",
+  "numero_documento": "5857",
+  "data_emissao": "2014-12-23",
+  "valor_total": 20.4,
+  "descricao_resumida": "Impressão Gráfica do Boletim do Mandato de número 11, de Dezembro de 2014, do Deputado Assis Melo com Informações Acerca de Suas Atividades Legislativas (PL's de sua Autoria Relatos e Participações nas Comissões Permanentes)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.12,
+    "timestamp": "2026-10-26T18:16:04Z",
+    "idDocumento": 5576960
+  }
+}

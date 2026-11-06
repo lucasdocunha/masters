@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO ROTTA 400 LTDA.",
+  "fornecedor_cnpj_cpf": "78.148.962/0001-80",
+  "numero_documento": "66838",
+  "data_emissao": "2016-01-30",
+  "valor_total": 300.0,
+  "descricao_resumida": "Operação Interna - Consumidor final - Não se aplica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.62,
+    "timestamp": "2026-10-26T19:24:56Z",
+    "idDocumento": 5925394
+  }
+}

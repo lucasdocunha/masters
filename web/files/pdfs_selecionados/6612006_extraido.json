@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO OCEANO LTDA",
+  "fornecedor_cnpj_cpf": "08.401.243/0001-43",
+  "numero_documento": "893661",
+  "data_emissao": "2018-05-30",
+  "valor_total": 100.1,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:14:07Z",
+    "tempo_segundos": 7.78,
+    "idDocumento": 6612006
+  }
+}

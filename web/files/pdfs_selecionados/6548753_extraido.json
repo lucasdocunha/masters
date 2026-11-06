@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO MARIANA LTDA",
+  "fornecedor_cnpj_cpf": "18.052.664/0001-30",
+  "numero_documento": "378192",
+  "data_emissao": "2018-04-04",
+  "valor_total": 130.0,
+  "descricao_resumida": "Combustível (Gasolina Comum)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:16:24Z",
+    "tempo_segundos": 8.39,
+    "idDocumento": 6548753
+  }
+}

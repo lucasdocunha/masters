@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ARMARINHOS FERNANDO LTDA",
+  "fornecedor_cnpj_cpf": "48076228001830",
+  "numero_documento": "51038",
+  "data_emissao": "2026-04-30",
+  "valor_total": 48.0,
+  "descricao_resumida": "PERFURADOR GRAMPLINE 20 FOLHAS GE-20, PASTA A/Z DAC PREMIUM OFICIO LOMBO 7.5CM, ELASTICO P/DINHEIRO PREMIER",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:43:03Z",
+    "tempo_segundos": 10.76,
+    "idDocumento": 8092691
+  }
+}

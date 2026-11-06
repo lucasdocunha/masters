@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionaria SPMAR",
+  "fornecedor_cnpj_cpf": "09.191.336/0001-53",
+  "numero_documento": "54776",
+  "data_emissao": "2015-08-17",
+  "valor_total": 2.2,
+  "descricao_resumida": "Tarifa de pedagio - Praca Ribeirao Pires - Leste",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:56:12Z",
+    "tempo_segundos": 1.93,
+    "idDocumento": 5784069
+  }
+}

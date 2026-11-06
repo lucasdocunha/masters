@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO MORADA DOS NOBRES LTDA",
+  "fornecedor_cnpj_cpf": "09.215.903/0001-64",
+  "numero_documento": "476045",
+  "data_emissao": "2015-12-14",
+  "valor_total": 100.0,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:44:55Z",
+    "tempo_segundos": 2.01,
+    "idDocumento": 5879355
+  }
+}

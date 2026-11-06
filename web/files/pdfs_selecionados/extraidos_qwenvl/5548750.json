@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BRENT EMPREENDIMENTOS E ALIMENTAÇAO LTDA",
+  "fornecedor_cnpj_cpf": "72.614.977/0002-90",
+  "numero_documento": "121120153502844",
+  "data_emissao": "2014-11-12",
+  "valor_total": 41.35,
+  "descricao_resumida": "Recebemos Em. A2 114 AIDF. 11120153502844 N.F. Promovada at 08082015 Portaria SEFP n° 2922013",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.25,
+    "timestamp": "2026-10-26T18:14:11Z",
+    "idDocumento": 5548750
+  }
+}

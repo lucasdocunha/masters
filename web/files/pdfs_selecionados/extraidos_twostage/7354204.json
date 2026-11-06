@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MARCELA ELIZABETH F. DE ALMEIDA EIRELI",
+  "fornecedor_cnpj_cpf": "07.213.360/0001-10",
+  "numero_documento": "012022",
+  "data_emissao": "2022-02-22",
+  "valor_total": 4033.33,
+  "descricao_resumida": "Contrato de Locação",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 12.07,
+    "timestamp": "2026-10-26T20:57:20Z",
+    "idDocumento": 7354204
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ATLANTICA HOTELARIA LTDA",
+  "fornecedor_cnpj_cpf": "06.236.230/0001-30",
+  "numero_documento": "202500000001442",
+  "data_emissao": "2025-05-16",
+  "valor_total": 360.0,
+  "descricao_resumida": "Referente a diária (Hospedagem de qualquer natureza em hotéis), entrada em 15/05/2025 e saída em 16/05/2025.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:40:54Z",
+    "tempo_segundos": 2.71,
+    "idDocumento": 7923141
+  }
+}

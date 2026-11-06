@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Condomínio do Edifício Central Park",
+  "fornecedor_cnpj_cpf": "01.194.020/0001-03",
+  "numero_documento": "62.622",
+  "data_emissao": "2024-02-01",
+  "valor_total": 369.44,
+  "descricao_resumida": "Taxa de Condomínio 02/2024",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.94,
+    "timestamp": "2026-10-26T21:22:46Z",
+    "idDocumento": 7680137
+  }
+}

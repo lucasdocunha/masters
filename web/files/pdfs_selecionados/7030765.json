@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7030765,
+  "ano": 2020,
+  "mes": 2,
+  "fornecedor": "PANTANAL VEÍCULOS LTDA",
+  "cnpjCPF": "073.193.230/0019-1",
+  "numero": "18660",
+  "tipoDocumento": "1",
+  "dataEmissao": "2020-02-29T00:00:00",
+  "valorDocumento": 9500.0,
+  "valorLiquido": 9500.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Alex Santana",
+  "cpfParlamentar": "64682420534",
+  "siglaUF": "BA",
+  "siglaPartido": "REPUBLICANOS",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3287/2020/7030765.pdf"
+}

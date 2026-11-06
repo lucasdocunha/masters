@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA",
+  "fornecedor_cnpj_cpf": "08.467.115/0001-00",
+  "numero_documento": "61945346",
+  "data_emissao": "2025-05-16",
+  "valor_total": 118.6,
+  "descricao_resumida": "Fornecimento de energia elétrica referente ao período de 05/2025",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:48:01Z",
+    "tempo_segundos": 22.33,
+    "idDocumento": 7925266
+  }
+}

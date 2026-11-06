@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VDF COMÉRCIO DE COMBUSTÍVEIS LTDA",
+  "fornecedor_cnpj_cpf": "13.241.662/0001-03",
+  "numero_documento": "001820107034",
+  "data_emissao": "2016-09-06",
+  "valor_total": 253.16,
+  "descricao_resumida": "Bico 09 64,7L X 3,46",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.7,
+    "timestamp": "2026-10-26T18:20:06Z",
+    "idDocumento": 6098991
+  }
+}

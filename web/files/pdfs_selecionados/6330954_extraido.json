@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SAO JOAO POSTOS DE ABAST E SERV. LTDA",
+  "fornecedor_cnpj_cpf": "37.130.481/0001-60",
+  "numero_documento": "9235",
+  "data_emissao": "2017-07-03",
+  "valor_total": 1178.03,
+  "descricao_resumida": "Gasolina comum e gasolina aditivada",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:19:39Z",
+    "tempo_segundos": 2.62,
+    "idDocumento": 6330954
+  }
+}

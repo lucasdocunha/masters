@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Entrevias",
+  "fornecedor_cnpj_cpf": "26.664.057/0001-89",
+  "numero_documento": "07603301260006126421751789341193",
+  "data_emissao": "2026-09-13",
+  "valor_total": 15.0,
+  "descricao_resumida": "Documento fiscal equivalente de pedágio rodoviário",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:01:18Z",
+    "tempo_segundos": 7.8,
+    "idDocumento": 8156993
+  }
+}

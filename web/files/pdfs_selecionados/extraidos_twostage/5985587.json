@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Real Maia Transportes Terrestres - LTDA",
+  "fornecedor_cnpj_cpf": "01.945.637/0001-13",
+  "numero_documento": "127054",
+  "data_emissao": "2016-04-10",
+  "valor_total": 68.38,
+  "descricao_resumida": "BILHETE DE PASSAGEM RODOVIÁRIO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.79,
+    "timestamp": "2026-10-26T19:15:33Z",
+    "idDocumento": 5985587
+  }
+}

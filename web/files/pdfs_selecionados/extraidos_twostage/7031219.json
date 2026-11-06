@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "1050000155",
+  "data_emissao": null,
+  "valor_total": 5.0,
+  "descricao_resumida": "DINHEIRO: R$ 5,00",
+  "observacoes": "Para uso da placa e CPF acess",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 4.37,
+    "timestamp": "2026-10-26T20:18:35Z",
+    "idDocumento": 7031219
+  }
+}

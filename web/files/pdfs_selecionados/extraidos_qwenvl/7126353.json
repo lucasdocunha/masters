@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DE COMBUSTIVEIS SINAL VERDE LTDA",
+  "fornecedor_cnpj_cpf": "499.067.807-97",
+  "numero_documento": "342200194666831",
+  "data_emissao": "2020-11-30",
+  "valor_total": 143.46,
+  "descricao_resumida": "GASOLINA Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.59,
+    "timestamp": "2026-10-26T18:29:42Z",
+    "idDocumento": 7126353
+  }
+}

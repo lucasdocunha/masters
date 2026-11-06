@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO GRANJARIA LTDA",
+  "fornecedor_cnpj_cpf": "02.736.034/0001-74",
+  "numero_documento": "000441645",
+  "data_emissao": "2023-10-21",
+  "valor_total": 280.51,
+  "descricao_resumida": "Gasolina comum original (45,84 litros)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:53:20Z",
+    "tempo_segundos": 5.59,
+    "idDocumento": 7630773
+  }
+}

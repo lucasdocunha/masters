@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Erivan Neves de Andrade",
+  "fornecedor_cnpj_cpf": "27.586.688/0001-90",
+  "numero_documento": "0372-A",
+  "data_emissao": "2025-11-25",
+  "valor_total": 80.0,
+  "descricao_resumida": "Servico de transporte de taxi (percurso Aeroporto / CN)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:40:47Z",
+    "tempo_segundos": 2.14,
+    "idDocumento": 8018855
+  }
+}

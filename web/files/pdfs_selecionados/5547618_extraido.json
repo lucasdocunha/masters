@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PIMENTA VERDE ALIMENTOS LTDA",
+  "fornecedor_cnpj_cpf": "09.060.964/0039-72",
+  "numero_documento": "448954",
+  "data_emissao": "2014-11-04",
+  "valor_total": 10.75,
+  "descricao_resumida": "Suco copo e Pão de queijo",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:41:01Z",
+    "tempo_segundos": 1.79,
+    "idDocumento": 5547618
+  }
+}

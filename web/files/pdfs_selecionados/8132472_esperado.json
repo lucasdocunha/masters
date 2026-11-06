@@ -1,0 +1,19 @@
+{
+  "idDocumento": 8132472,
+  "ano": 2026,
+  "mes": 6,
+  "fornecedor": "IMOBILIARIA ROCHA FILHO LTDA",
+  "cnpjCPF": "024.183.050/0014-3",
+  "numero": "sn",
+  "tipoDocumento": "1",
+  "dataEmissao": "2026-07-01T00:00:00",
+  "valorDocumento": 5000.0,
+  "valorLiquido": 5000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Florentino Neto",
+  "cpfParlamentar": "32744811300",
+  "siglaUF": "PI",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3590/2026/8132472.pdf"
+}

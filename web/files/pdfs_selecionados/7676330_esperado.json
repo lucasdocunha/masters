@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7676330,
+  "ano": 2024,
+  "mes": 1,
+  "fornecedor": "Eixo SP - CENTROVIAS",
+  "cnpjCPF": "361.465.750/0016-4",
+  "numero": "0232",
+  "tipoDocumento": "1",
+  "dataEmissao": "2024-01-12T00:00:00",
+  "valorDocumento": 11.4,
+  "valorLiquido": 11.4,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Capitão Augusto",
+  "cpfParlamentar": "05750251829",
+  "siglaUF": "SP",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2950/2024/7676330.pdf"
+}

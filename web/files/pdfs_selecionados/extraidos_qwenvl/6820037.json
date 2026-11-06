@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Marcio Lomando Bilhar da Silva",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2019-04-08",
+  "valor_total": 5162.96,
+  "descricao_resumida": "Recebi do locatário Sr. AFONSO ANTUNES MOTTA o valor de R$ 5.162,93 (cinco mil, cento e sessenta e dois reais, e noventa e seis centavos), relativo ao pagamento da locação e encargos condominiais (taxa condomínio e IPTU), abaixo discriminados, do período de 10/04/2019 a 10/05/2019, pago pelo cheque n°........... do Banco do Brasil S.A., emitido pelo locatário, pelo que passo o presente recibo de quitação.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 4.1,
+    "timestamp": "2026-10-26T18:27:04Z",
+    "idDocumento": 6820037
+  }
+}

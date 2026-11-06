@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "G & O GRAFICA E EDITORA LTDA ME",
+  "fornecedor_cnpj_cpf": "01.691.762/0001-44",
+  "numero_documento": "494",
+  "data_emissao": "2017-12-14",
+  "valor_total": 1200.0,
+  "descricao_resumida": "MATERIAL IMPRESSO DE DIVULGAÇÃO ATIVIDADE PARLAMENTAR",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.62,
+    "timestamp": "2026-10-26T19:35:59Z",
+    "idDocumento": 6469785
+  }
+}

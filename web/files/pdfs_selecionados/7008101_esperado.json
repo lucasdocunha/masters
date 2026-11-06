@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7008101,
+  "ano": 2020,
+  "mes": 1,
+  "fornecedor": "Cia de concessão Rod. Juiz de Fora",
+  "cnpjCPF": "008.804.460/0031-0",
+  "numero": "3696",
+  "tipoDocumento": "1",
+  "dataEmissao": "2020-01-05T00:00:00",
+  "valorDocumento": 11.6,
+  "valorLiquido": 11.6,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Vinicius Farah",
+  "cpfParlamentar": "91804736791",
+  "siglaUF": "RJ",
+  "siglaPartido": "UNIÃO",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3356/2020/7008101.pdf"
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ADH HOTELARIA LTDA",
+  "fornecedor_cnpj_cpf": "06.015.748/0004-97",
+  "numero_documento": "171427",
+  "data_emissao": "2021-01-29",
+  "valor_total": 449.0,
+  "descricao_resumida": "Hospedagem em hotel (diária, comes & bebes, kit amenities)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:06:03Z",
+    "tempo_segundos": 15.07,
+    "idDocumento": 7157314
+  }
+}

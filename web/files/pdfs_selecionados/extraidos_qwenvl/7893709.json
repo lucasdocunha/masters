@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SAMIRA LIS LOPES SOUZA",
+  "fornecedor_cnpj_cpf": "37.845.697/0001-01",
+  "numero_documento": "27",
+  "data_emissao": "2025-04-02",
+  "valor_total": 4000.0,
+  "descricao_resumida": "PC DOS TRRES PODERES S/N, 643, CÂMARA DOS DEPUTADOS, ANEXO IV - GABINETE 643, ZONA CIVICO-ADMINISTRATIVA.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.88,
+    "timestamp": "2026-10-26T18:39:58Z",
+    "idDocumento": 7893709
+  }
+}

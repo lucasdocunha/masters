@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CHURRASCARIA RECANTO 23 LTDA.",
+  "fornecedor_cnpj_cpf": "02.812.278/0001-99",
+  "numero_documento": "53323",
+  "data_emissao": "14",
+  "valor_total": 130.0,
+  "descricao_resumida": "Despesa c/ Refeição",
+  "observacoes": "Data de emissao incompleta (apenas dia 14 e mes 06 sem ano legivel no cabecalho preenchido)",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:39:44Z",
+    "tempo_segundos": 2.17,
+    "idDocumento": 5491921
+  }
+}

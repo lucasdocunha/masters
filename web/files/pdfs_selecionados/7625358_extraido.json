@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "BLOG DO NINJA PORTAIS, AGENCIA DE NOTICIAS E SERVIÇOS BLOG DO NINJA",
+  "fornecedor_cnpj_cpf": "27.573.137/0001-91",
+  "numero_documento": "1000530",
+  "data_emissao": "2023-10-13",
+  "valor_total": 1000.0,
+  "descricao_resumida": "Pagamento referente a divulgação da atividade parlamentar do Deputado Federal Gervásio Maia, referente a serviços prestados no mês de setembro de 2023 no site www.blogdoninja.com.br",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:39:02Z",
+    "tempo_segundos": 2.36,
+    "idDocumento": 7625358
+  }
+}

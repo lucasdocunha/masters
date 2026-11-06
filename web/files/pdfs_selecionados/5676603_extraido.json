@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CENTRO NORTE FM STEREO LTDA",
+  "fornecedor_cnpj_cpf": "28276194000171",
+  "numero_documento": "20/001",
+  "data_emissao": "2015-04-30",
+  "valor_total": 2500.0,
+  "descricao_resumida": "Atividade Parlamentar do Deputado Federal Glauber Braga no programa \"Glauber Ação Federal\" no período de 01 a 30/04/2015",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:47:23Z",
+    "tempo_segundos": 1.99,
+    "idDocumento": 5676603
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Vila Rica Park Locacão de Veiculos Ltda",
+  "fornecedor_cnpj_cpf": "60.011.343/0001-83",
+  "numero_documento": "52544",
+  "data_emissao": "2017-07-15",
+  "valor_total": 1600.0,
+  "descricao_resumida": "Locação de veículo Toyota Corolla XEI 2.0 Flex (Mensal)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:30:07Z",
+    "tempo_segundos": 2.47,
+    "idDocumento": 6356562
+  }
+}

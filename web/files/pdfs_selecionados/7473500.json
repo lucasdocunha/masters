@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7473500,
+  "ano": 2022,
+  "mes": 12,
+  "fornecedor": "SILT SELF SERVICE EIRELI ME",
+  "cnpjCPF": "072.867.310/0019-4",
+  "numero": "38526",
+  "tipoDocumento": "0",
+  "dataEmissao": "2022-12-13T00:00:00",
+  "valorDocumento": 20.41,
+  "valorLiquido": 20.41,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Leo de Brito",
+  "cpfParlamentar": "63182246291",
+  "siglaUF": "AC",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2974/2022/7473500.pdf"
+}

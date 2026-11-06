@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RJ LOCADORA DE VEICULOS LTDA EPP",
+  "fornecedor_cnpj_cpf": "05132231000172",
+  "numero_documento": "000075",
+  "data_emissao": "2015-01-06",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Locação de veículo (KWD7968 SPIN 1.8 AT LTZ - 30/11/14 a 30/12/14)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:36:40Z",
+    "tempo_segundos": 2.43,
+    "idDocumento": 5601824
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PREFEITURA BELO HORIZONTE",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "01.19.8131529.73",
+  "data_emissao": "2019-12-20",
+  "valor_total": 1435.69,
+  "descricao_resumida": "Documento de Recolhimento e Arrecadação Municipal - DRAM - IPTU / 2019",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:12:35Z",
+    "tempo_segundos": 7.86,
+    "idDocumento": 6990657
+  }
+}

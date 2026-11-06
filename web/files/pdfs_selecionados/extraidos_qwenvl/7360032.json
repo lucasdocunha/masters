@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "99Comfort",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2022-04-02",
+  "valor_total": 35.21,
+  "descricao_resumida": "Isabela, thanks for riding with 99Comfort",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.22,
+    "timestamp": "2026-10-26T18:35:19Z",
+    "idDocumento": 7360032
+  }
+}

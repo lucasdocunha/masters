@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Google LLC",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "5028081565",
+  "data_emissao": "2024-07-31",
+  "valor_total": 21.6,
+  "descricao_resumida": "Google Workspace Business Starter - Utilizacao",
+  "observacoes": "Fatura internacional emitida em USD",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:40:36Z",
+    "tempo_segundos": 2.91,
+    "idDocumento": 7797187
+  }
+}

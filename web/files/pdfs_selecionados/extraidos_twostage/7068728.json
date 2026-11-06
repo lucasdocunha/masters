@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EDUARDO FURASTE COMUNICACAO LTDA.",
+  "fornecedor_cnpj_cpf": "10.719.747/0001-58",
+  "numero_documento": "2020/8",
+  "data_emissao": "2020-06-29",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Prestação de serviços em criação de peças de comunicação para divulgação de ações do mandato parlamentar em redes sociais: instagram (@henriquefontana), facebook (@deputadohenriquefontana), twitter (@henriquefontana) e whatsapp (51 99710 4121) relativos ao mês de junho.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 22.62,
+    "timestamp": "2026-10-26T20:19:37Z",
+    "idDocumento": 7068728
+  }
+}

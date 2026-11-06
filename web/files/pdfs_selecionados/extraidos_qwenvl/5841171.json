@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VIA SUL LTDA",
+  "fornecedor_cnpj_cpf": "04.542.337/0001-81",
+  "numero_documento": "298464",
+  "data_emissao": "13/10/2015",
+  "valor_total": 183.22,
+  "descricao_resumida": "DIESEL STO ADITIVADO - B100:2 59,7011 X 3,069 F1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.9,
+    "timestamp": "2026-10-26T18:18:16Z",
+    "idDocumento": 5841171
+  }
+}

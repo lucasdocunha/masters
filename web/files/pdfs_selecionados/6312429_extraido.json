@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DE COMBUSTIVEIS BORDIGNON LTDA",
+  "fornecedor_cnpj_cpf": "14.583.334/0001-40",
+  "numero_documento": "373774",
+  "data_emissao": "2017-05-13",
+  "valor_total": 70.0,
+  "descricao_resumida": "Gasolina comum 20,008 litros",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:28:14Z",
+    "tempo_segundos": 1.98,
+    "idDocumento": 6312429
+  }
+}

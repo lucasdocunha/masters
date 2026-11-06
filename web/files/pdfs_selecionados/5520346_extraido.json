@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VERSATIL CONSULTORIA ASSESSORIA E EVENTOS LTDA",
+  "fornecedor_cnpj_cpf": "02521804000161",
+  "numero_documento": "15",
+  "data_emissao": "2014-10-02",
+  "valor_total": 6000.0,
+  "descricao_resumida": "Trabalho de avaliação da situação de saúde da população residente na 1ª região de saúde do estado de Alagoas.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:39:00Z",
+    "tempo_segundos": 2.56,
+    "idDocumento": 5520346
+  }
+}

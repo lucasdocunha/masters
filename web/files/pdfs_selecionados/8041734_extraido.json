@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COMPANHIA ENERGETICA DE PERNAMBUCO",
+  "fornecedor_cnpj_cpf": "10.835.932/0001-08",
+  "numero_documento": "394084418",
+  "data_emissao": "2026-01-16",
+  "valor_total": 256.23,
+  "descricao_resumida": "Consumo de energia eletrica TUSD e TE, acrescimo de bandeira amarela, iluminacao publica e ICMS-CDE referente a 01/2026",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:01:05Z",
+    "tempo_segundos": 3.28,
+    "idDocumento": 8041734
+  }
+}

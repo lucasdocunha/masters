@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "UNIAO COMERCIO DE COMBUSTIVEL LTDA",
+  "fornecedor_cnpj_cpf": "07861314000128",
+  "numero_documento": "863765",
+  "data_emissao": "2016-06-15",
+  "valor_total": 50.0,
+  "descricao_resumida": "DIESEL COMUM B S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:14:20Z",
+    "tempo_segundos": 2.47,
+    "idDocumento": 6029843
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EcoAraguaita",
+  "fornecedor_cnpj_cpf": "15090690000194",
+  "numero_documento": "AC99A4A4-AA93-42A0-89D6-56AC1F81B3EC",
+  "data_emissao": "2024-08-03",
+  "valor_total": 13.6,
+  "descricao_resumida": "Placa: SDN0G48",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.76,
+    "timestamp": "2026-10-26T18:38:23Z",
+    "idDocumento": 7782911
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "HOTEL ARAUCÁRIA LTDA - ME",
+  "fornecedor_cnpj_cpf": "94612918000135",
+  "numero_documento": "405",
+  "data_emissao": "2021-07-20",
+  "valor_total": null,
+  "descricao_resumida": "Serviço de hospedagem",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.38,
+    "timestamp": "2026-10-26T20:29:20Z",
+    "idDocumento": 7233479
+  }
+}

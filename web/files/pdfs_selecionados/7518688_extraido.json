@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "IBANEZA SANTOS SALLES",
+  "fornecedor_cnpj_cpf": "002.054.439-15",
+  "numero_documento": null,
+  "data_emissao": "2023-03-30",
+  "valor_total": 7000.0,
+  "descricao_resumida": "Referente ao aluguel de 01 imóvel comercial situado na Rua: Fernando Simas 208, 1º andar, bairro Batel, Curitiba - PR, referência março/2023.",
+  "observacoes": "Recibo de aluguel emitido por pessoa física.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:51:34Z",
+    "tempo_segundos": 18.87,
+    "idDocumento": 7518688
+  }
+}

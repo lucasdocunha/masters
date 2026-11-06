@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "V. K IMÓVEIS",
+  "fornecedor_cnpj_cpf": "17.414.189/0001-61",
+  "numero_documento": null,
+  "data_emissao": "2015-11-23",
+  "valor_total": 3390.4,
+  "descricao_resumida": "Pagamento do Aluguel do mês de novembro de 2015 do imóvel Sala Comercial",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 8.06,
+    "timestamp": "2026-10-26T19:07:34Z",
+    "idDocumento": 5853209
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Uber do Brasil Tecnologia Ltda.",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2020-12-10",
+  "valor_total": 14.14,
+  "descricao_resumida": "Serviço de transporte privado urbano (Uber Comfort) realizado em Brasília - DF",
+  "observacoes": "Recibo de viagem da Uber encaminhado por e-mail, sem CNPJ explícito no corpo do documento.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:34:53Z",
+    "tempo_segundos": 153.44,
+    "idDocumento": 7131110
+  }
+}

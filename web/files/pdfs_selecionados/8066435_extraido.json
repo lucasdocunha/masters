@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "WMS COMERCIO DE ARTIGOS DE PAPELARIA LTDA",
+  "fornecedor_cnpj_cpf": "12.132.854/0001-00",
+  "numero_documento": "7265",
+  "data_emissao": "2026-03-16",
+  "valor_total": 349.2,
+  "descricao_resumida": "Papel A4 Chamex, grampeador metal, caneta Bic cristal azul, copo descartável e corretivo líquido",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:05:29Z",
+    "tempo_segundos": 17.3,
+    "idDocumento": 8066435
+  }
+}

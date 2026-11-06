@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO AVENIDA LTDA",
+  "fornecedor_cnpj_cpf": "03.425.227/0001-77",
+  "numero_documento": "27704720181179459",
+  "data_emissao": "2018-04-27",
+  "valor_total": 203.6,
+  "descricao_resumida": "CASAOLINA C - CON_M 23,369LT X 4,279 F1",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.78,
+    "timestamp": "2026-10-26T18:24:20Z",
+    "idDocumento": 6571149
+  }
+}

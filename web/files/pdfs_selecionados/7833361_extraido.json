@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HOTEL & TURISMO SAN FRANCISCO LTDA.",
+  "fornecedor_cnpj_cpf": "04.717.163/0001-40",
+  "numero_documento": "7822",
+  "data_emissao": "2024-09-29",
+  "valor_total": 250.0,
+  "descricao_resumida": "DIARIA - HOSPEDE: DIEGO MACHADO PACHECO / ESPOSA - DATA IN: 28/9/2024 - DATA OUT: 29/9/2024 - APTO: 326",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:12:59Z",
+    "tempo_segundos": 15.4,
+    "idDocumento": 7833361
+  }
+}

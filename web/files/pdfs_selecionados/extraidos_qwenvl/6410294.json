@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CONCESS. DA RODOVIA PRESIDENTE DUTRA S/A",
+  "fornecedor_cnpj_cpf": "00.861.626/0001-92",
+  "numero_documento": "1q7k2c1cjovu155",
+  "data_emissao": "26/09/2017",
+  "valor_total": 6.3,
+  "descricao_resumida": "Pagamento dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.51,
+    "timestamp": "2026-10-26T18:20:41Z",
+    "idDocumento": 6410294
+  }
+}

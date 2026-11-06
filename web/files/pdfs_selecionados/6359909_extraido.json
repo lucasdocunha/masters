@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO CAMILA LTDA",
+  "fornecedor_cnpj_cpf": "21.568.446/0001-97",
+  "numero_documento": "072468",
+  "data_emissao": "2017-07-03",
+  "valor_total": 100.0,
+  "descricao_resumida": "Aquisição de 1 T GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:31:31Z",
+    "tempo_segundos": 2.02,
+    "idDocumento": 6359909
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7106392,
+  "ano": 2020,
+  "mes": 8,
+  "fornecedor": "RAJA RENT A CAR LTDA",
+  "cnpjCPF": "013.383.880/0010-6",
+  "numero": "17629",
+  "tipoDocumento": "1",
+  "dataEmissao": "2020-08-31T00:00:00",
+  "valorDocumento": 6000.0,
+  "valorLiquido": 6000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Rodrigo de Castro",
+  "cpfParlamentar": "83035605653",
+  "siglaUF": "MG",
+  "siglaPartido": "UNIÃO",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1928/2020/7106392.pdf"
+}

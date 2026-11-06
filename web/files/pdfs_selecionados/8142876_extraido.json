@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO SERENA COLIBRI LTDA",
+  "fornecedor_cnpj_cpf": "46899832000192",
+  "numero_documento": "517149",
+  "data_emissao": "2026-07-22",
+  "valor_total": 102.24,
+  "descricao_resumida": "ETANOL COMUM 28.6390 L",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:50:45Z",
+    "tempo_segundos": 3.11,
+    "idDocumento": 8142876
+  }
+}

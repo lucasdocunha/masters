@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ARTE E CRIATIVIDADE COMUNICACAO VISUAL LTDA",
+  "fornecedor_cnpj_cpf": "23.005.043/0001-65",
+  "numero_documento": "000000005334",
+  "data_emissao": "17/09/2025",
+  "valor_total": 525.0,
+  "descricao_resumida": "1500 cartoes de visita Dep Diego Garcia Valor unitario R$ 0,35",
+  "observacoes": "NOTA QUITADA",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.0,
+    "timestamp": "2026-10-26T18:41:44Z",
+    "idDocumento": 8033842
+  }
+}

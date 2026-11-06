@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "99Pop",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2023-05-23",
+  "valor_total": 9.6,
+  "descricao_resumida": "Superquadra Norte 302, Asa Norte Superquadra Norte 302 - Asa Norte, Brasília - DF, 70297-400, Brasil",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.46,
+    "timestamp": "2026-10-26T18:35:10Z",
+    "idDocumento": 7549464
+  }
+}

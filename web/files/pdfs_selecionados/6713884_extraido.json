@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LOCALIZA RENT A CAR S/A",
+  "fornecedor_cnpj_cpf": "16.670.085/0381-28",
+  "numero_documento": "ACPIT - 116901",
+  "data_emissao": "2018-11-29",
+  "valor_total": 90.0,
+  "descricao_resumida": "Aluguel conforme contrato PITF070901 e valor do seguro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T13:59:51Z",
+    "tempo_segundos": 11.94,
+    "idDocumento": 6713884
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POLAR DERIVADOS DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "00.042.044/0001-24",
+  "numero_documento": "089486",
+  "data_emissao": "2014-07-30",
+  "valor_total": 186.98,
+  "descricao_resumida": "Gasolina comum (59,359L)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash",
+    "timestamp": "2026-10-21T17:19:38Z",
+    "tempo_segundos": 14.15,
+    "idDocumento": 5480086
+  }
+}

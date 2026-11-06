@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "HOTEL BARTZ LTDA",
+  "fornecedor_cnpj_cpf": "94.097.417/0001-68",
+  "numero_documento": "15800",
+  "data_emissao": "2026-04-21",
+  "valor_total": 210.0,
+  "descricao_resumida": "REFERENTE A 01 DIÁRIA, ENTRADA NO DIA 20/04/26 E SAÍDA DIA 21/04/26.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:02:28Z",
+    "tempo_segundos": 3.64,
+    "idDocumento": 8090247
+  }
+}

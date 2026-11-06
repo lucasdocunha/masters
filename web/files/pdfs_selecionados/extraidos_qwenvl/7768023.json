@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "VINICIUS ABREU MARQUES",
+  "fornecedor_cnpj_cpf": "22.994.397/0001-17",
+  "numero_documento": "26",
+  "data_emissao": "2024-06-20",
+  "valor_total": 396.0,
+  "descricao_resumida": "Referente a serviços prestados de divulgação da atividade parlamentar, anunciando e convocando para emenda participativa neste município do mandato do Deputado Federal Glauber Braga.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.05,
+    "timestamp": "2026-10-26T18:40:26Z",
+    "idDocumento": 7768023
+  }
+}

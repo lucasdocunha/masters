@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MS COMERCIO DE DERIVADOS PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "01.955.814/0002-23",
+  "numero_documento": "000029459",
+  "data_emissao": "2019-11-10",
+  "valor_total": 1746.0,
+  "descricao_resumida": "AVGAS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:34:21Z",
+    "tempo_segundos": 8.39,
+    "idDocumento": 6969307
+  }
+}

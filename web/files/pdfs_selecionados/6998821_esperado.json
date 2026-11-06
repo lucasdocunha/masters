@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6998821,
+  "ano": 2020,
+  "mes": 1,
+  "fornecedor": "DISK CAR LOCACAO DE VEICULOS SA",
+  "cnpjCPF": "958.038.390/0017-4",
+  "numero": "74466",
+  "tipoDocumento": "1",
+  "dataEmissao": "2020-01-14T00:00:00",
+  "valorDocumento": 5200.0,
+  "valorLiquido": 5200.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Angela Amin",
+  "cpfParlamentar": "29316715920",
+  "siglaUF": "SC",
+  "siglaPartido": "PP",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/835/2020/6998821.pdf"
+}

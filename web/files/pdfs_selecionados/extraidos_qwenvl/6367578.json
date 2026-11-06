@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "00.306.597/0063-08",
+  "numero_documento": "67809",
+  "data_emissao": "2017-08-22",
+  "valor_total": 246.89,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.48,
+    "timestamp": "2026-10-26T18:20:51Z",
+    "idDocumento": 6367578
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Conc. de Rodovias Integradas S/A",
+  "fornecedor_cnpj_cpf": "02.221.531/0010-20",
+  "numero_documento": "1283063003154325404500005CFFF",
+  "data_emissao": "2018-11-26",
+  "valor_total": 10.9,
+  "descricao_resumida": "Classe: 1 Valor:R$ 10,90 Dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 6.62,
+    "timestamp": "2026-10-26T19:47:06Z",
+    "idDocumento": 6712148
+  }
+}

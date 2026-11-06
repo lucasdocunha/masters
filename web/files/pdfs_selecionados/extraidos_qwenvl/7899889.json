@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO SANTA EDWIGES PETROLEO LTDA - FILIAL CURVELO",
+  "fornecedor_cnpj_cpf": "19.848.233/0017-34",
+  "numero_documento": "177556",
+  "data_emissao": "2025-03-24",
+  "valor_total": 167.81,
+  "descricao_resumida": "ETANOL COMUM Bico 06",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.55,
+    "timestamp": "2026-10-26T18:40:27Z",
+    "idDocumento": 7899889
+  }
+}

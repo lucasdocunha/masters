@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO SÃO LUCAS",
+  "fornecedor_cnpj_cpf": "07.282.923/0001-22",
+  "numero_documento": "215565",
+  "data_emissao": "2026-07-31",
+  "valor_total": 86.99,
+  "descricao_resumida": "ETANOL COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.51,
+    "timestamp": "2026-10-26T21:46:00Z",
+    "idDocumento": 8149193
+  }
+}

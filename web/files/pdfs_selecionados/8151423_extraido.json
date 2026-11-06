@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ITARARE HOTEL LIMITADA",
+  "fornecedor_cnpj_cpf": "45461332000101",
+  "numero_documento": "1106",
+  "data_emissao": "2020-08-25",
+  "valor_total": 154.0,
+  "descricao_resumida": "Referente serviços de hospedagem no período de 24 a 25/08/2026 (Apt single executivo - Pagamento a vista)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:03:24Z",
+    "tempo_segundos": 2.6,
+    "idDocumento": 8151423
+  }
+}

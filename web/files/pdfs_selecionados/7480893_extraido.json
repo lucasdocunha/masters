@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CASABLANCA RENT A CAR LTDA - ME",
+  "fornecedor_cnpj_cpf": "03977401000194",
+  "numero_documento": "6680",
+  "data_emissao": "2022-12-26",
+  "valor_total": 12000.0,
+  "descricao_resumida": "Locação de veículos - Toyota SW4 SRS ano/modelo 21/22, período de 01/12/22 a 30/12/22",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:43:19Z",
+    "tempo_segundos": 6.4,
+    "idDocumento": 7480893
+  }
+}

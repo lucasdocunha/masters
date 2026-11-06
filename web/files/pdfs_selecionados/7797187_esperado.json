@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7797187,
+  "ano": 2024,
+  "mes": 7,
+  "fornecedor": "google",
+  "cnpjCPF": "000.000.000/0001-0",
+  "numero": "5028081565",
+  "tipoDocumento": "1",
+  "dataEmissao": "2024-07-31T00:00:00",
+  "valorDocumento": 124.88,
+  "valorLiquido": 124.88,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Daniel Trzeciak",
+  "cpfParlamentar": "01297812077",
+  "siglaUF": "RS",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3328/2024/7797187.pdf"
+}

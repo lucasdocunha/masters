@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7338532,
+  "ano": 2022,
+  "mes": 2,
+  "fornecedor": "IMOBILIÁRIA PROLAR LTDA",
+  "cnpjCPF": "088.946.930/0011-5",
+  "numero": "SN",
+  "tipoDocumento": "1",
+  "dataEmissao": "2022-03-07T00:00:00",
+  "valorDocumento": 3507.3,
+  "valorLiquido": 3507.3,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Carlos Veras",
+  "cpfParlamentar": "03987461411",
+  "siglaUF": "PE",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3234/2022/7338532.pdf"
+}

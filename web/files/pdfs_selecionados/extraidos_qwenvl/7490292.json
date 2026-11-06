@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SECRETARIA MUNICIPAL DE FINANÇAS - SEFIN",
+  "fornecedor_cnpj_cpf": "33.793.701/0001-84",
+  "numero_documento": "00000057",
+  "data_emissao": "26/01/2023",
+  "valor_total": 10000,
+  "descricao_resumida": "PAGAMENTO À VISTA PARA SERVIÇOS DE GESTÃO DE TRÁFEGO E MARKETING DIGITAL PARA CONTEÚDOS REFERENTE A ATIVIDADE PARLAMENTAR",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.2,
+    "timestamp": "2026-10-26T18:38:28Z",
+    "idDocumento": 7490292
+  }
+}

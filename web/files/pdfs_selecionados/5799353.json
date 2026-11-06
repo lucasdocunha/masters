@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5799353,
+  "ano": 2015,
+  "mes": 9,
+  "fornecedor": "Azul Linhas Aéreas Brasileiras.",
+  "cnpjCPF": "092.962.950/0016-0",
+  "numero": "2220005638259",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-08-28T00:00:00",
+  "valorDocumento": 2086.56,
+  "valorLiquido": 2086.56,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Shéridan",
+  "cpfParlamentar": "75096102220",
+  "siglaUF": "RR",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "PASSAGEM AÉREA - REEMBOLSO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2969/2015/5799353.pdf"
+}

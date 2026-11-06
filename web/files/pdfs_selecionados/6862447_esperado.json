@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6862447,
+  "ano": 2019,
+  "mes": 5,
+  "fornecedor": "EGR EMPRESA GAUCHA DE RODOVIAS SA",
+  "cnpjCPF": "169.878.370/0010-6",
+  "numero": "2405F3GE6N29",
+  "tipoDocumento": "1",
+  "dataEmissao": "2019-05-21T00:00:00",
+  "valorDocumento": 3.25,
+  "valorLiquido": 3.25,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Maria do Rosário",
+  "cpfParlamentar": "48989371015",
+  "siglaUF": "RS",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1605/2019/6862447.pdf"
+}

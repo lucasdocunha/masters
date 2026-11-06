@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SICOOB",
+  "fornecedor_cnpj_cpf": "34.625.024/0001-58",
+  "numero_documento": "147",
+  "data_emissao": "2022-09-12",
+  "valor_total": 3321.0,
+  "descricao_resumida": "Este recibo somente terá validade com a autenticação mecânica ou acompanhado do recibo de pagamento emitido pelo Banco. Recebimento através do cheque n. do banco Esta quitação só terá validade após o pagamento do cheque pelo banco pagador.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.02,
+    "timestamp": "2026-10-26T20:55:17Z",
+    "idDocumento": 7442427
+  }
+}

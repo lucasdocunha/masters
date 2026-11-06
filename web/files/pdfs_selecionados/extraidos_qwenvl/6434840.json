@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "UNITAXI LTDA.",
+  "fornecedor_cnpj_cpf": "3524-3888",
+  "numero_documento": "PX L3027",
+  "data_emissao": "2017-11-01",
+  "valor_total": 140.0,
+  "descricao_resumida": "Cento e Quarenta reais E CENTAVOS ACIMA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.53,
+    "timestamp": "2026-10-26T18:21:33Z",
+    "idDocumento": 6434840
+  }
+}

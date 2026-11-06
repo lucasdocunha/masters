@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": "00.031.708/0003-71",
+  "numero_documento": null,
+  "data_emissao": "2018-10-10",
+  "valor_total": 20.0,
+  "descricao_resumida": "Serviços autônomos de Táxi - Percurso Hotel Bristol - Anexo IV - Câmara",
+  "observacoes": "Recibo de taxi manual. Nome do emitente nao especificado, apenas CNPJ.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:16:10Z",
+    "tempo_segundos": 8.73,
+    "idDocumento": 6695548
+  }
+}

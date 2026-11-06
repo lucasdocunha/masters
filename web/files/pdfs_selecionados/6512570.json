@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6512570,
+  "ano": 2018,
+  "mes": 1,
+  "fornecedor": "TRANSSERVICE PETROLEO LTDA",
+  "cnpjCPF": "029.270.040/0030-7",
+  "numero": "7518",
+  "tipoDocumento": "0",
+  "dataEmissao": "2018-01-03T00:00:00",
+  "valorDocumento": 2880.93,
+  "valorLiquido": 2726.52,
+  "valorGlosa": 154.41,
+  "nomeParlamentar": "Assis Carvalho",
+  "cpfParlamentar": "15670961315",
+  "siglaUF": "PI",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2338/2018/6512570.pdf"
+}

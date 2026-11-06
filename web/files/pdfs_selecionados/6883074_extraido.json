@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO DE GASOLINA DIA E NOITE LTD",
+  "fornecedor_cnpj_cpf": "07.570.378/0001-70",
+  "numero_documento": "3987",
+  "data_emissao": "2019-06-14",
+  "valor_total": 70.0,
+  "descricao_resumida": "ETANOL COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:33:22Z",
+    "tempo_segundos": 2.06,
+    "idDocumento": 6883074
+  }
+}

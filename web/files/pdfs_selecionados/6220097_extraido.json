@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": "19.346.861/0259-19",
+  "numero_documento": "214313",
+  "data_emissao": "2017-02-13",
+  "valor_total": 150.55,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": "Documento parcialmente ilegível devido à baixa qualidade da imagem.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:18:46Z",
+    "tempo_segundos": 2.25,
+    "idDocumento": 6220097
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO BRASIL GV LTDA",
+  "fornecedor_cnpj_cpf": "35810800-11",
+  "numero_documento": "27.567.496/0001-36",
+  "data_emissao": "2021-07-20",
+  "valor_total": 1579.95,
+  "descricao_resumida": "LANCAMENTO ELETRUADO EM DECORRERIA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.86,
+    "timestamp": "2026-10-26T18:29:03Z",
+    "idDocumento": 7076038
+  }
+}

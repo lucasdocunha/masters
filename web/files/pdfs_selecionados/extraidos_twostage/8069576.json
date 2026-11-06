@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "TUPAN AUTO POSTO LTDA",
+  "fornecedor_cnpj_cpf": "46.527.446/0001-70",
+  "numero_documento": "NFC-e n°000021140 Série:6 19/03/2026 20:10:32",
+  "data_emissao": "2026-03-19",
+  "valor_total": 296.4,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": "ALIQUOTAS DE PISPASEP E COFINS ZERADAS CONFORME DECRETO N 12.8752026. ALIQUOTA ZERO INCIDENTE SOBRE A IMPORTACAO E COMERCIALIZACAO DE OLEO DIESEL",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 20.83,
+    "timestamp": "2026-10-26T22:00:00Z",
+    "idDocumento": 8069576
+  }
+}

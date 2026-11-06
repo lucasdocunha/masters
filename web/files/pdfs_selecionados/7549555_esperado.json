@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7549555,
+  "ano": 2023,
+  "mes": 5,
+  "fornecedor": "PROJETO PLANALTO PAPELARIA DE MINAS LTDA",
+  "cnpjCPF": "651.140.430/0014-3",
+  "numero": "390",
+  "tipoDocumento": "0",
+  "dataEmissao": "2023-05-12T00:00:00",
+  "valorDocumento": 1321.74,
+  "valorLiquido": 1156.78,
+  "valorGlosa": 164.96,
+  "nomeParlamentar": "Misael Varella",
+  "cpfParlamentar": "28492803649",
+  "siglaUF": "MG",
+  "siglaPartido": "PSD",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3045/2023/7549555.pdf"
+}

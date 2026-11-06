@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SUGGESTIVA COMUNICACAO SOCIEDADE SIMPLES LTDA",
+  "fornecedor_cnpj_cpf": "07.287.608/0001-98",
+  "numero_documento": "00000621",
+  "data_emissao": "2017-07-31",
+  "valor_total": 2000.0,
+  "descricao_resumida": "Divulgacao de parlamentar por meio de assessoria de comunicacao e imprensa",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:24:55Z",
+    "tempo_segundos": 7.4,
+    "idDocumento": 6346890
+  }
+}

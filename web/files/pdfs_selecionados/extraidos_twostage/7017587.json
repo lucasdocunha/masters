@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Condomínio Ed. Belvedere Tower II",
+  "fornecedor_cnpj_cpf": "04.657.256/0001-27",
+  "numero_documento": "1580008585",
+  "data_emissao": "2020-02-05",
+  "valor_total": 356.58,
+  "descricao_resumida": "Taxa condomínio: 339,60\nFundo reserva: 16,98\nTotal: 356,58",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.89,
+    "timestamp": "2026-10-26T20:22:27Z",
+    "idDocumento": 7017587
+  }
+}

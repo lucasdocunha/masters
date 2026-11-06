@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "M. FRANKLIN DE CASTRO GONDIM",
+  "fornecedor_cnpj_cpf": "35.069.293/0001-48",
+  "numero_documento": "3895",
+  "data_emissao": null,
+  "valor_total": 725.41,
+  "descricao_resumida": "Referente a Nota Fiscal N° 3895",
+  "observacoes": "Pelo que afirmamos o presente recibo, para todos os fins e efeitos legais.",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.67,
+    "timestamp": "2026-10-26T19:17:38Z",
+    "idDocumento": 6033840
+  }
+}

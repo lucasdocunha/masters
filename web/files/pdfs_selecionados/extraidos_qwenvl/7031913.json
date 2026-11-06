@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTOPISTA FLUMINENSE S/A",
+  "fornecedor_cnpj_cpf": "09.324.949/0001-11",
+  "numero_documento": "USCAD1Q1M454",
+  "data_emissao": "2023-03-08",
+  "valor_total": 6.0,
+  "descricao_resumida": "Ponto: Dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.64,
+    "timestamp": "2026-10-26T18:28:29Z",
+    "idDocumento": 7031913
+  }
+}

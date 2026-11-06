@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionaria do Sistema Rodoviario Rio - SP S.A. CCR RioSP",
+  "fornecedor_cnpj_cpf": "44319688000142",
+  "numero_documento": "00220630061668551654002685C0C",
+  "data_emissao": "2022-11-16",
+  "valor_total": 12.9,
+  "descricao_resumida": "Passagem de pedagio - Categoria 01 - Praca: VIUVA GRACA NORTE",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:24:36Z",
+    "tempo_segundos": 18.08,
+    "idDocumento": 7465350
+  }
+}

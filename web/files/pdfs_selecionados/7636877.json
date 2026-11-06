@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7636877,
+  "ano": 2023,
+  "mes": 10,
+  "fornecedor": "LULIO CESAR MINOTTO",
+  "cnpjCPF": "251.071.240/0010-0",
+  "numero": "18",
+  "tipoDocumento": "0",
+  "dataEmissao": "2023-11-05T00:00:00",
+  "valorDocumento": 1500.0,
+  "valorLiquido": 1500.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Geraldo Mendes",
+  "cpfParlamentar": "05025019958",
+  "siglaUF": "PR",
+  "siglaPartido": "UNIÃO",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3628/2023/7636877.pdf"
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CIBRACCO IMOVEIS",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "1264529",
+  "data_emissao": "2018-03-01",
+  "valor_total": 2118.52,
+  "descricao_resumida": "Aluguel, Seguro Contra Incêndio, IPTU, Despesa Bancária, T.C.I. e Condomínio referente ao período de 01 mar 2018 a 30 mar 2018",
+  "observacoes": "Documento do tipo recibo de aluguel e encargos.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:17:04Z",
+    "tempo_segundos": 8.65,
+    "idDocumento": 6545914
+  }
+}

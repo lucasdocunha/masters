@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CORPVS SEGURANÇA ELETRONICA LTDA",
+  "fornecedor_cnpj_cpf": "04.617.596/0001-24",
+  "numero_documento": "2582059",
+  "data_emissao": "2021-10-06",
+  "valor_total": null,
+  "descricao_resumida": "Notas Fiscais Eletrônicas de Serviços",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.74,
+    "timestamp": "2026-10-26T20:37:11Z",
+    "idDocumento": 7279929
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6655000,
+  "ano": 2018,
+  "mes": 8,
+  "fornecedor": "GOL LINHAS AEREAS INTELIGENTES S.A.",
+  "cnpjCPF": "061.642.530/0018-7",
+  "numero": "IFGTVV/2063/21D",
+  "tipoDocumento": "0",
+  "dataEmissao": "2018-08-15T00:00:00",
+  "valorDocumento": 4403.86,
+  "valorLiquido": 4403.86,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Shéridan",
+  "cpfParlamentar": "75096102220",
+  "siglaUF": "RR",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "PASSAGEM AÉREA - REEMBOLSO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2969/2018/6655000.pdf"
+}

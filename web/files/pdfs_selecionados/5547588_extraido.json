@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "FRANGO LESTE - M. M. COLARES LTDA",
+  "fornecedor_cnpj_cpf": "01.105.560/0001-73",
+  "numero_documento": "069700",
+  "data_emissao": "2014-11-13",
+  "valor_total": 150.7,
+  "descricao_resumida": "Frango desossado, picanha, arroz branco, baião especial, refrigerante 290ml e taxa de serviço.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash",
+    "timestamp": "2026-10-21T17:18:14Z",
+    "tempo_segundos": 13.52,
+    "idDocumento": 5547588
+  }
+}

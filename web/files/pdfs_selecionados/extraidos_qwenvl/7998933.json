@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JORNAL L ATTUALITA LTDA",
+  "fornecedor_cnpj_cpf": "02.162.126/0001-98",
+  "numero_documento": "2075",
+  "data_emissao": "2025-10-13",
+  "valor_total": 450.0,
+  "descricao_resumida": "Divulgação da atividade parlamentar do Deputado Federal Afonso Hamm - Prestação de contas do mandato - Emendas parlamentares para o município de São Marcos - Ref. Mês Outubro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.1,
+    "timestamp": "2026-10-26T18:41:50Z",
+    "idDocumento": 7998933
+  }
+}

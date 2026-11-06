@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO VALDEVEZ LTDA",
+  "fornecedor_cnpj_cpf": "42.236.778/0001-44",
+  "numero_documento": "033428",
+  "data_emissao": "2014-10-24",
+  "valor_total": 182.02,
+  "descricao_resumida": "Gasolina comum (60,694 litros)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:25:51Z",
+    "tempo_segundos": 3.07,
+    "idDocumento": 5531220
+  }
+}

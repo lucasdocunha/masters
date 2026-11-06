@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO DDD LTDA",
+  "fornecedor_cnpj_cpf": "13.169.025/0001-65",
+  "numero_documento": "908407",
+  "data_emissao": "2026-04-17",
+  "valor_total": 452.75,
+  "descricao_resumida": "",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.34,
+    "timestamp": "2026-10-26T21:59:07Z",
+    "idDocumento": 8126354
+  }
+}

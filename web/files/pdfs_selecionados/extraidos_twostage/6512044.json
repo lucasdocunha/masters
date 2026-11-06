@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CELPE",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "66.671.872",
+  "data_emissao": "2018-02-21",
+  "valor_total": 539.91,
+  "descricao_resumida": "Nota Fiscal de Fiscalização e Fiscalização",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.17,
+    "timestamp": "2026-10-26T19:45:25Z",
+    "idDocumento": 6512044
+  }
+}

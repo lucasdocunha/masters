@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Cooperativa dos Condutores de Rádio Táxi de Salvador",
+  "fornecedor_cnpj_cpf": "13.615.372/0001-74",
+  "numero_documento": "N2F",
+  "data_emissao": "2014-08-05",
+  "valor_total": 45.0,
+  "descricao_resumida": "Recibo de táxi",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.41,
+    "timestamp": "2026-10-26T18:15:24Z",
+    "idDocumento": 5484068
+  }
+}

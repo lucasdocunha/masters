@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PREST SERVICE - REPRESENTAÇÕES E SERVIÇOS LTDA",
+  "fornecedor_cnpj_cpf": "12.184.807/0001-00",
+  "numero_documento": "07",
+  "data_emissao": "2026-07-30",
+  "valor_total": 4000.0,
+  "descricao_resumida": "Locação de 01 veículo Virtus placa TNW9B06, período de julho de 2026.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:58:59Z",
+    "tempo_segundos": 2.76,
+    "idDocumento": 8140212
+  }
+}

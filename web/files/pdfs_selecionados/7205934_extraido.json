@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "APCONSIG CONSULTORIA LTDA-EPP",
+  "fornecedor_cnpj_cpf": "08.380.987/0001-29",
+  "numero_documento": "64",
+  "data_emissao": "2021-06-10",
+  "valor_total": 4000.0,
+  "descricao_resumida": "Consultoria em Tecnologia da Informação (Gerenciamento de Contatos) e Tratamento de Dados, Provedores de Serviços de Aplicação e Serviços de Hospedagem na Internet - Hospedagem de Dados - Ref: 05/2021",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:05:43Z",
+    "tempo_segundos": 16.61,
+    "idDocumento": 7205934
+  }
+}

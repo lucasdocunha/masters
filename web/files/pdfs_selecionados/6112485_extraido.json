@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Cristiane do Nascimento Lancheria - ME",
+  "fornecedor_cnpj_cpf": "23026340000197",
+  "numero_documento": "000820",
+  "data_emissao": "2016-09-23",
+  "valor_total": 10.5,
+  "descricao_resumida": "01 almoço",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:12:44Z",
+    "tempo_segundos": 1.95,
+    "idDocumento": 6112485
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Marcos Alberto Conforte",
+  "fornecedor_cnpj_cpf": "044.441.928-44",
+  "numero_documento": "06",
+  "data_emissao": "2020-06-28",
+  "valor_total": 4987.1,
+  "descricao_resumida": "Recibo de locação de imóvel referente a parcela do aluguel + IPTU 2020",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.59,
+    "timestamp": "2026-10-26T18:28:54Z",
+    "idDocumento": 7072361
+  }
+}

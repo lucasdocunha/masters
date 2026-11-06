@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "FRANCISCO AUGUSTO DE PADUA E CIA. LTDA.",
+  "fornecedor_cnpj_cpf": "07.326.841/0001-32",
+  "numero_documento": "003176",
+  "data_emissao": "2023-11-10",
+  "valor_total": 2800.0,
+  "descricao_resumida": "Locacao de veiculos mensal - KWID placa RIP3A93 ref. novembro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:42:04Z",
+    "tempo_segundos": 2.4,
+    "idDocumento": 7637145
+  }
+}

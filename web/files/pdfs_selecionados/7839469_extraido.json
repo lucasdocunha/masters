@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ELSON LUIZ ALVES DA COSTA",
+  "fornecedor_cnpj_cpf": "37422203000186",
+  "numero_documento": "271",
+  "data_emissao": "2024-12-02",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Nota referente de atividades parlamentares do deputado federal Ulysses Araújo no veículo de comunicação Voz do Norte. Divulgação referente ao mês de novembro de 2024.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:04:12Z",
+    "tempo_segundos": 4.06,
+    "idDocumento": 7839469
+  }
+}

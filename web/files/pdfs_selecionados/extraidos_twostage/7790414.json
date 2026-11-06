@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "MICHELE GIOVANI SARNAGLIA",
+  "fornecedor_cnpj_cpf": "51.309.439/0001-31",
+  "numero_documento": "50",
+  "data_emissao": "2024-07-10",
+  "valor_total": null,
+  "descricao_resumida": "hospedagem no período de 9/7 a 10/7 quarto individual",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.89,
+    "timestamp": "2026-10-26T21:21:02Z",
+    "idDocumento": 7790414
+  }
+}

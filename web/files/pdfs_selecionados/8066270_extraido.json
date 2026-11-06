@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MAWAI MIDIA E PRODUCOES LTDA",
+  "fornecedor_cnpj_cpf": "33.556.976/0001-02",
+  "numero_documento": "202600000000007",
+  "data_emissao": "2026-03-16",
+  "valor_total": 3000.0,
+  "descricao_resumida": "Divulgação da atividade parlamentar da 57a legislatura do deputado federal Filipe Martins, veiculação site onovopoder.com. Referencia mês 02/2026.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:53:24Z",
+    "tempo_segundos": 2.18,
+    "idDocumento": 8066270
+  }
+}

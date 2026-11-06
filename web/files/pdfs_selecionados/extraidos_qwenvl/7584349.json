@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PARADOURO CASSEMIRO ANTONIOLI GASTRONOMIA E HOTELARIA LTDA",
+  "fornecedor_cnpj_cpf": "98.580.000/0001-03",
+  "numero_documento": "1250",
+  "data_emissao": "2023-06-28",
+  "valor_total": 149.0,
+  "descricao_resumida": "Serviços de Hospedagem, LUXO \"CASAL\", SINGLE\" - Período 27/06/2023 a 28/06/2023",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.18,
+    "timestamp": "2026-10-26T18:36:02Z",
+    "idDocumento": 7584349
+  }
+}

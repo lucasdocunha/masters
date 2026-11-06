@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JARJOUR VEICULOS E PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "00.108.670/0002-07",
+  "numero_documento": null,
+  "data_emissao": "2016-10-11",
+  "valor_total": 125.01,
+  "descricao_resumida": "GASOLINA COMUM - B100",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 15.35,
+    "timestamp": "2026-10-26T19:27:05Z",
+    "idDocumento": 6121233
+  }
+}

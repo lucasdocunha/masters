@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LATAM Airlines / Adria",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "957 2122796689",
+  "data_emissao": "2023-08-24",
+  "valor_total": 3614.23,
+  "descricao_resumida": "Bilhete Eletrônico de passagens aéreas (Brasília - Cuiabá e Cuiabá - Brasília)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:56:18Z",
+    "tempo_segundos": 42.7,
+    "idDocumento": 7605465
+  }
+}

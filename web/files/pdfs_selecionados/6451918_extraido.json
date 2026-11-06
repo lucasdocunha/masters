@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MELO HOTEIS LTDA",
+  "fornecedor_cnpj_cpf": "01.200.345/0001-51",
+  "numero_documento": "2017/1417",
+  "data_emissao": "2017-11-21",
+  "valor_total": 125.0,
+  "descricao_resumida": "Hospedagem (diária de hotel)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:30:22Z",
+    "tempo_segundos": 2.44,
+    "idDocumento": 6451918
+  }
+}

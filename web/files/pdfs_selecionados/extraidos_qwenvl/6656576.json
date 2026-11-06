@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Conc. Sistema Anhanguera-Bandeirantes S/A",
+  "fornecedor_cnpj_cpf": "02.451.848/0001-62",
+  "numero_documento": "0259024012153229914500314EF03",
+  "data_emissao": "2018-07-22",
+  "valor_total": 9.1,
+  "descricao_resumida": "Fraça: ITUPEVA SUL Faixa:012 Arrecadador:169272 22/07/2018. 19:39:05 Classe: 1 Valor:R$ 9,10 Dinheiro Tributos: Vlr. estim. 18,24% (Fonte:IBP",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.93,
+    "timestamp": "2026-10-26T18:25:29Z",
+    "idDocumento": 6656576
+  }
+}

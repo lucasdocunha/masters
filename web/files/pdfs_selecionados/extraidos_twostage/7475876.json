@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COMPANHIA DE ÁGUAS E ESGOTOS DA PARAÍBA",
+  "fornecedor_cnpj_cpf": "09.123.654/0001-87",
+  "numero_documento": "2021041077511",
+  "data_emissao": "2021-04-10",
+  "valor_total": null,
+  "descricao_resumida": "Água e Esgoto",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.64,
+    "timestamp": "2026-10-26T20:29:41Z",
+    "idDocumento": 7475876
+  }
+}

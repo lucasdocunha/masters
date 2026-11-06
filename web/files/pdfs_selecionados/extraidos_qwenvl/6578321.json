@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "J B FRANCO - ME",
+  "fornecedor_cnpj_cpf": "21.969.226/0001-75",
+  "numero_documento": "162",
+  "data_emissao": "2018-05-09",
+  "valor_total": 1800.0,
+  "descricao_resumida": "IMPRESSÃO DE 3.000 INFORMATIVOS PARA DIVULGAÇÃO DE ATIVIDADE PARLAMENTAR, NA VIABILIZAÇÃO DE RECURSOS FEDERAIS PARA DRENAGEM E ASFALTO PARA AS RUAS JOÃO MARTINS LEITE E ALLAN KARDEC, NA ÁREA CENTRAL DE CARACOL E A COMPRA DE UM APARELHO DE RAIO X E DE UM ONIBUS PARA TRANSPORTAR ALUNOS NA CIDADE DE CARACOL/MS.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.77,
+    "timestamp": "2026-10-26T18:23:44Z",
+    "idDocumento": 6578321
+  }
+}

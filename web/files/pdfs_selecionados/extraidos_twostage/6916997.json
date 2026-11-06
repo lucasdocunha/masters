@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "JR COMERCIO E PRESTACAO DE SERVICOS LTDA",
+  "fornecedor_cnpj_cpf": "131193405844776",
+  "numero_documento": "00013448-FLI/T",
+  "data_emissao": "2019-09-02",
+  "valor_total": 1557.05,
+  "descricao_resumida": "LANCAMENTO EFETUADO EM DECORRENCIA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.74,
+    "timestamp": "2026-10-26T20:01:38Z",
+    "idDocumento": 6916997
+  }
+}

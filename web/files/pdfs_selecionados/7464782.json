@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7464782,
+  "ano": 2022,
+  "mes": 10,
+  "fornecedor": "AUTO CAR TURISMO",
+  "cnpjCPF": "022.121.190/0015-3",
+  "numero": "1698",
+  "tipoDocumento": "1",
+  "dataEmissao": "2022-10-31T00:00:00",
+  "valorDocumento": 10000.0,
+  "valorLiquido": 5713.0,
+  "valorGlosa": 4287.0,
+  "nomeParlamentar": "Efraim Filho",
+  "cpfParlamentar": "00770338410",
+  "siglaUF": "PB",
+  "siglaPartido": "UNIÃO",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1823/2022/7464782.pdf"
+}

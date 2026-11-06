@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "99 TECNOLOGIA LTDA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2026-02-13",
+  "valor_total": 18.0,
+  "descricao_resumida": "Serviço de transporte de passageiros (corrida 99 Pop)",
+  "observacoes": "Recibo de transporte individual por aplicativo",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:57:07Z",
+    "tempo_segundos": 6.81,
+    "idDocumento": 8065947
+  }
+}

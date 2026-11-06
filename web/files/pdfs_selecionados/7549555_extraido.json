@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PROJETO PLANALTO PAPELARIA DE MINAS LTDA",
+  "fornecedor_cnpj_cpf": "65.114.043/0001-43",
+  "numero_documento": "000000390",
+  "data_emissao": "2023-05-12",
+  "valor_total": 1321.74,
+  "descricao_resumida": "Fita PVC, cola branca, papel 60 kg, papel 40 kg, contact, canetas esferográficas, calculadora, expositor acrílico, caixa para correspondência tripla, cola bastão.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:50:11Z",
+    "tempo_segundos": 9.83,
+    "idDocumento": 7549555
+  }
+}

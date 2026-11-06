@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO CATEDRAL LTDA",
+  "fornecedor_cnpj_cpf": "27.838.044/0001-41",
+  "numero_documento": "035743",
+  "data_emissao": "19/10/2014",
+  "valor_total": 146.04,
+  "descricao_resumida": "001*2 GASOLINA V-POWER NITRO 43,608L X3 349 F1---146,04G",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.93,
+    "timestamp": "2026-10-26T18:15:15Z",
+    "idDocumento": 5531341
+  }
+}

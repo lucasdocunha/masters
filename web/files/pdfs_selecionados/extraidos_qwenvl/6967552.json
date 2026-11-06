@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO DE COMBUSTIVEIS GARANTIA LTDA",
+  "fornecedor_cnpj_cpf": "72578459000243",
+  "numero_documento": "3869155645",
+  "data_emissao": "2019-11-23",
+  "valor_total": 221.78,
+  "descricao_resumida": "OLEO DIESEL B 5-10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.49,
+    "timestamp": "2026-10-26T18:25:22Z",
+    "idDocumento": 6967552
+  }
+}

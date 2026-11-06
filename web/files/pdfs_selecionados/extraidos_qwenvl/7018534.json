@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO AVENIDA DE FABRICIANO LTDA",
+  "fornecedor_cnpj_cpf": "19.257.895/0001-72",
+  "numero_documento": "66035",
+  "data_emissao": "2020-02-17",
+  "valor_total": 100.0,
+  "descricao_resumida": "ETANOL HIDRATADO",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.46,
+    "timestamp": "2026-10-26T18:29:32Z",
+    "idDocumento": 7018534
+  }
+}

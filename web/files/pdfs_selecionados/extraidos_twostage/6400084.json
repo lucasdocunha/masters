@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SINDICATO NACIONAL DOS TAXISTAS - SINTAX-MS",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "4522",
+  "data_emissao": "2017-09-06",
+  "valor_total": null,
+  "descricao_resumida": "Referente a serviços de Táxi, 'A VONDE DE TÁXI, A MELHOR CIGÃO, CONFORTO, RAZOÁVEZ TRANQUILIDADE'.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 11.73,
+    "timestamp": "2026-10-26T19:33:47Z",
+    "idDocumento": 6400084
+  }
+}

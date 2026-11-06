@@ -1,0 +1,19 @@
+{
+  "idDocumento": 8018855,
+  "ano": 2025,
+  "mes": 11,
+  "fornecedor": "SINPETAXI",
+  "cnpjCPF": "000.317.080/0010-0",
+  "numero": "0372A",
+  "tipoDocumento": "1",
+  "dataEmissao": "2025-11-25T00:00:00",
+  "valorDocumento": 80.0,
+  "valorLiquido": 80.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Delegado Palumbo",
+  "cpfParlamentar": "24922395865",
+  "siglaUF": "SP",
+  "siglaPartido": "PODE",
+  "descricaoDespesa": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3597/2025/8018855.pdf"
+}

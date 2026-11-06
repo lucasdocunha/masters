@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO PARK SANTA MARIA DERIV. DE PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "05.889.046/0001-27",
+  "numero_documento": "243876",
+  "data_emissao": "2016-05-04",
+  "valor_total": 130.0,
+  "descricao_resumida": "GASOLINA C - COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 17.48,
+    "timestamp": "2026-10-26T19:15:50Z",
+    "idDocumento": 5987076
+  }
+}

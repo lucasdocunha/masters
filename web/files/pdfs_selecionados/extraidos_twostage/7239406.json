@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SUELY ELIAS",
+  "fornecedor_cnpj_cpf": "323.774.458-10",
+  "numero_documento": null,
+  "data_emissao": "2021-08-01",
+  "valor_total": 5300.0,
+  "descricao_resumida": "Aluguel de imóvel",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 10.37,
+    "timestamp": "2026-10-26T20:27:43Z",
+    "idDocumento": 7239406
+  }
+}

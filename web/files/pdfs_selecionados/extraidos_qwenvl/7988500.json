@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "BETTENAS RESTAURANTE LTDA",
+  "fornecedor_cnpj_cpf": "04.439.383/0001-50",
+  "numero_documento": "1645",
+  "data_emissao": "2025-09-26",
+  "valor_total": 1089.39,
+  "descricao_resumida": "UN CROQUETE - UN BOLINHO BACALHAU - COUVERT - SIRI GRATINADO - ARROZ DE PATO A NOSSA MODA - BAC A GOSTA DA MIA - OVOS MOLES C CANELA - SERIACAIA DO ALENTEOJO - CAFE - AGUA MINALBA SEM GAS 300ML - GORJETA CONCEDIDA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.76,
+    "timestamp": "2026-10-26T18:42:31Z",
+    "idDocumento": 7988500
+  }
+}

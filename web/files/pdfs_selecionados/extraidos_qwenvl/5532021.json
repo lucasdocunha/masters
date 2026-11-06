@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO VERALI LTDA",
+  "fornecedor_cnpj_cpf": "00.875.134/0001-56",
+  "numero_documento": "014-100001 GASOLINA COAHU T6, T34L1X3, U99 FT",
+  "data_emissao": "29/09/2014",
+  "valor_total": 49.99,
+  "descricao_resumida": "GASOLINA COAHU T6, T34L1X3, U99 FT",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.95,
+    "timestamp": "2026-10-26T18:14:47Z",
+    "idDocumento": 5532021
+  }
+}

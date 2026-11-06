@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO MARU S A I",
+  "fornecedor_cnpj_cpf": "81894297000188",
+  "numero_documento": "552558",
+  "data_emissao": "2021-09-07",
+  "valor_total": 121200.0,
+  "descricao_resumida": "GASOLINA COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.51,
+    "timestamp": "2026-10-26T20:34:16Z",
+    "idDocumento": 7255738
+  }
+}

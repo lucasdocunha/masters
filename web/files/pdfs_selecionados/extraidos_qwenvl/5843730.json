@@ -1,0 +1,22 @@
+{
+  "fornecedor_nome": "Brasilbrokers Tropical Imoveis",
+  "fornecedor_cnpj_cpf": "34191750093931572998967015838000916508000312312",
+  "numero_documento": "341-7",
+  "data_emissao": "2015-10-11",
+  "valor_total": 3123.12,
+  "descricao_resumida": "Loc. Comercial 10/10/15 a 09/11/15",
+  "observacoes": [
+    "Os Valores que Forem pagos em cheque, somente terão validade após a compensação dos mesmos.",
+    "Este recibo não quita débitos anteriores, e só terá Validade autenticado pela Administradora ou Banco autorizado.",
+    "Contas de Telefone/Condominio deverão ser enviadas QUITADAS à Administradora mensalmente.",
+    "Manter o Imóvel/Bem bem conservado e com as suas obrigações devidamente quitadas."
+  ],
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 4.6,
+    "timestamp": "2026-10-26T18:18:02Z",
+    "idDocumento": 5843730
+  }
+}

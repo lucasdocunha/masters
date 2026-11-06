@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Associação JK Ponto 3023",
+  "fornecedor_cnpj_cpf": "05.869.977/0001-63",
+  "numero_documento": "9500",
+  "data_emissao": "2020-08-08",
+  "valor_total": 95.0,
+  "descricao_resumida": "Proveniente de prestação de serviço de táxi.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.63,
+    "timestamp": "2026-10-26T18:35:43Z",
+    "idDocumento": 7437413
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6703481,
+  "ano": 2018,
+  "mes": 11,
+  "fornecedor": "EL PALANQUE",
+  "cnpjCPF": "000.000.000/0001-0",
+  "numero": "75839",
+  "tipoDocumento": "3",
+  "dataEmissao": "2018-11-10T00:00:00",
+  "valorDocumento": 120.44,
+  "valorLiquido": 120.44,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "ROCHA",
+  "cpfParlamentar": "30790590263",
+  "siglaUF": "AC",
+  "siglaPartido": "PSDB",
+  "descricaoDespesa": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3048/2018/6703481.pdf"
+}

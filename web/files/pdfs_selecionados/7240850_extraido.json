@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "DELMA BARBIN & CIA LTDA",
+  "fornecedor_cnpj_cpf": "20.738.639/0001-86",
+  "numero_documento": "000.058.258",
+  "data_emissao": "2021-07-24",
+  "valor_total": 154.02,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T17:04:39Z",
+    "tempo_segundos": 225.04,
+    "idDocumento": 7240850
+  }
+}

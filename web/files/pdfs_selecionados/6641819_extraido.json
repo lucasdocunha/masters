@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ENERGISA TOCANTINS - DISTRIBUIDORA DE ENERGIA S.A.",
+  "fornecedor_cnpj_cpf": "07.285.034/0001-71",
+  "numero_documento": "00006208201",
+  "data_emissao": "2018-07-11",
+  "valor_total": 341.08,
+  "descricao_resumida": "Fornecimento de energia elétrica referente ao mês de Jul/2018",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:02:04Z",
+    "tempo_segundos": 11.26,
+    "idDocumento": 6641819
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CCR VIA SUL",
+  "fornecedor_cnpj_cpf": "32.161.500/0001-00",
+  "numero_documento": "0010002006166025200320556C100",
+  "data_emissao": "2022-08-11",
+  "valor_total": 5.2,
+  "descricao_resumida": "SA da Patrulha Via:08 Oeste",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 7.15,
+    "timestamp": "2026-10-26T20:48:48Z",
+    "idDocumento": 7429161
+  }
+}

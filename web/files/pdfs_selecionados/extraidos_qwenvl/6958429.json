@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PREFEITURA MUNICIPAL DE CAMPO GRANDE",
+  "fornecedor_cnpj_cpf": "11.730.357/0001-41",
+  "numero_documento": "00003619",
+  "data_emissao": "2019-11-04",
+  "valor_total": 2000.0,
+  "descricao_resumida": "DIVULGAÇÃO DE ATIVIDADE PARLAMENTAR",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.77,
+    "timestamp": "2026-10-26T18:28:19Z",
+    "idDocumento": 6958429
+  }
+}

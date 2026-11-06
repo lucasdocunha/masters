@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "EDUADO BARBOSA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "1956",
+  "data_emissao": "2021-04-14",
+  "valor_total": 99.1,
+  "descricao_resumida": "Recibo de passagem de táxi",
+  "observacoes": "Através do aplicativo Táxi Legal",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 5.94,
+    "timestamp": "2026-10-26T20:28:11Z",
+    "idDocumento": 7305149
+  }
+}

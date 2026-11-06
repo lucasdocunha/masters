@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SIMONE MARCON",
+  "fornecedor_cnpj_cpf": "18331 SIMONE MARCON",
+  "numero_documento": "3905",
+  "data_emissao": "2023-04-20",
+  "valor_total": 212.5,
+  "descricao_resumida": "REFERENTE A HOSPEDAGEM - ECO HOSTEL RESERVA DO DIA 4-5-6 DE ABRIL 2018. ITEM: 9.01 - Hospedagem de qualquer natureza em hotéis, apart.service condominiais, flat, apart-hotéis, hotéis residencia, residence-service, suite service, hotelaria maritima, motéis, pensões e congeneres",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.27,
+    "timestamp": "2026-10-26T18:23:20Z",
+    "idDocumento": 6573693
+  }
+}

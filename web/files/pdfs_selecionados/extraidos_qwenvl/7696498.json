@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO FAROL LTDA",
+  "fornecedor_cnpj_cpf": "43.162.249/0001-06",
+  "numero_documento": "320102001",
+  "data_emissao": "2024-03-02",
+  "valor_total": 210.33,
+  "descricao_resumida": "GASOLINA COMUN Bico 35,771 L 5,88",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.63,
+    "timestamp": "2026-10-26T18:37:44Z",
+    "idDocumento": 7696498
+  }
+}

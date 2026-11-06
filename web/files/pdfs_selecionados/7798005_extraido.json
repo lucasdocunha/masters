@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Nova Epoca Auto Posto Ltda",
+  "fornecedor_cnpj_cpf": "09.363.811/0001-21",
+  "numero_documento": "449992",
+  "data_emissao": "2024-08-22",
+  "valor_total": 160.0,
+  "descricao_resumida": "ETANOL HIDRATADO COMBUSTIVEL COMUM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:16:29Z",
+    "tempo_segundos": 56.03,
+    "idDocumento": 7798005
+  }
+}

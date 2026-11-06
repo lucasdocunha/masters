@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "RA COMUNICACAO ESTRATEGICA LTDA",
+  "fornecedor_cnpj_cpf": "52452218000180",
+  "numero_documento": "8",
+  "data_emissao": "2023-12-20",
+  "valor_total": 20000.0,
+  "descricao_resumida": "Serviços de comunicação prestados no mês de Dezembro com estratégias para alcance da divulgação do mandato parlamentar, produção de conteúdos textual e audiovisual para meios digitais e análise de mídias digitais.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:53:51Z",
+    "tempo_segundos": 15.9,
+    "idDocumento": 7666767
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "D. I. HOTEL EMPREENDIMENTOS LTDA",
+  "fornecedor_cnpj_cpf": "***3.901/0001-***",
+  "numero_documento": null,
+  "data_emissao": "2026-07-16",
+  "valor_total": 358.0,
+  "descricao_resumida": "Recibo de Pagamento",
+  "observacoes": "Pix enviado com sucesso",
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 5.89,
+    "timestamp": "2026-10-26T21:46:49Z",
+    "idDocumento": 8137295
+  }
+}

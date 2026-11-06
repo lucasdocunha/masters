@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Prefeitura Municipal de Macapá - AP",
+  "fornecedor_cnpj_cpf": "689054-540-Fone: (96) 98404-1382-Macapá/AP",
+  "numero_documento": "58.744.132",
+  "data_emissao": "2025-06-02",
+  "valor_total": 1500.0,
+  "descricao_resumida": "DIVULGACAO DE ATIVIDADE PARLAMENTAR EM MAIO/2025 NO SITE WWW.PONTODAPAUTA.COM.BR",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.2,
+    "timestamp": "2026-10-26T18:41:35Z",
+    "idDocumento": 7925043
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Concessionaria Auto Raposo Tavares S/A",
+  "fornecedor_cnpj_cpf": "10.531.501/0009-05",
+  "numero_documento": "3642407992336",
+  "data_emissao": "2022-08-17",
+  "valor_total": null,
+  "descricao_resumida": "Venda de veículos",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.68,
+    "timestamp": "2026-10-26T18:33:54Z",
+    "idDocumento": 7410778
+  }
+}

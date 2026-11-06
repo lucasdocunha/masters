@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "E.A. LOCACAO E SERVICOS LTDA",
+  "fornecedor_cnpj_cpf": "38.166.005/0001-20",
+  "numero_documento": "355222510",
+  "data_emissao": "15/10/2025",
+  "valor_total": 250.0,
+  "descricao_resumida": "Este documento é baseado na Lei Complementar Federal nro 116/03 e na LC nro 501/03 que regulamenta a emissão de recibo para cobrança e fatura.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 3.21,
+    "timestamp": "2026-10-26T18:41:21Z",
+    "idDocumento": 8003227
+  }
+}

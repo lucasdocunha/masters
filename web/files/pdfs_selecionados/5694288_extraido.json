@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EMMENDORFER COMERCIO DE VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "84429786000157",
+  "numero_documento": "139992",
+  "data_emissao": "2015-05-22",
+  "valor_total": 60.01,
+  "descricao_resumida": "Gasolina Comum Tipo C",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:42:16Z",
+    "tempo_segundos": 2.16,
+    "idDocumento": 5694288
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": null,
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "957 2181041360",
+  "data_emissao": "2022-06-28",
+  "valor_total": 1839.41,
+  "descricao_resumida": "Voos de Brasília para Campo Grande, incluindo tarifas e taxas.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.49,
+    "timestamp": "2026-10-26T20:42:10Z",
+    "idDocumento": 7405885
+  }
+}

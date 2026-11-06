@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "HOTEL SERRAS DE MINAS LTDA ME",
+  "fornecedor_cnpj_cpf": "07.220.161/0001-30",
+  "numero_documento": "18737",
+  "data_emissao": "2024-09-07",
+  "valor_total": null,
+  "descricao_resumida": "DIÁRIA NO VALOR DE:",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.66,
+    "timestamp": "2026-10-26T21:27:29Z",
+    "idDocumento": 7798699
+  }
+}

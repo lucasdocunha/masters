@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO FARIA LEMOS LTDA - EPP",
+  "fornecedor_cnpj_cpf": "58.528.006/0001-09",
+  "numero_documento": "022709",
+  "data_emissao": "2015-05-14",
+  "valor_total": 78.01,
+  "descricao_resumida": "Gasolina Comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:47:16Z",
+    "tempo_segundos": 2.43,
+    "idDocumento": 5706095
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ESPÓLIO DE MARIA ALACOQUE BEZERRA",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2018-08-28",
+  "valor_total": 1600.0,
+  "descricao_resumida": "Aluguel do mês de Julho de 2018",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 7.99,
+    "timestamp": "2026-10-26T19:41:44Z",
+    "idDocumento": 6672475
+  }
+}

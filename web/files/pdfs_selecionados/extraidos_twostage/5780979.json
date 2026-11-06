@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ESPÍRITO SANTO CENTRAIS ELÉTRICAS S.A. - ESCELSA",
+  "fornecedor_cnpj_cpf": "28.152.650/0001-71",
+  "numero_documento": "N.001.243.503",
+  "data_emissao": "2015-07-27",
+  "valor_total": null,
+  "descricao_resumida": "Nota Fiscal/Conta de Energia Elétrica",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.79,
+    "timestamp": "2026-10-26T19:06:25Z",
+    "idDocumento": 5780979
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "LWSA S/A",
+  "fornecedor_cnpj_cpf": "02.351.877/0001-52",
+  "numero_documento": "12001573",
+  "data_emissao": "2026-05-05",
+  "valor_total": 330.28,
+  "descricao_resumida": "Licenciamento ou cessão de direito de uso de programas de computação (NFS-e)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:56:42Z",
+    "tempo_segundos": 21.93,
+    "idDocumento": 8094723
+  }
+}

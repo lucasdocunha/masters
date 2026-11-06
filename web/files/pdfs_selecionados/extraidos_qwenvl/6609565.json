@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO VIACAO CAMURUJIPÉ LIDA",
+  "fornecedor_cnpj_cpf": "15.890.809/0001-03",
+  "numero_documento": "000000010N",
+  "data_emissao": "2021-06-10",
+  "valor_total": 225.5,
+  "descricao_resumida": "PASSAGEM DE VIAGEM",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.53,
+    "timestamp": "2026-10-26T18:23:17Z",
+    "idDocumento": 6609565
+  }
+}

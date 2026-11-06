@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SONIA REGINA PEREIRA FERNANDES",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "564.923-4",
+  "data_emissao": null,
+  "valor_total": 338.03,
+  "descricao_resumida": "COTA MENSAL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.16,
+    "timestamp": "2026-10-26T18:35:08Z",
+    "idDocumento": 7630248
+  }
+}

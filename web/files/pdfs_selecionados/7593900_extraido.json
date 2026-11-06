@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PERFECT ASSESSORIA EM LICITACAO LTDA",
+  "fornecedor_cnpj_cpf": "42.051.768/0001-34",
+  "numero_documento": "000047",
+  "data_emissao": "2023-08-21",
+  "valor_total": 970.0,
+  "descricao_resumida": "Locacao de moveis de escritorio conforme contrato de aluguel n 012/2023 (Mesa/Bancada assessores, Copa armario, Bancada em MDF, Mesa chefe de gab)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T17:48:36Z",
+    "tempo_segundos": 2.41,
+    "idDocumento": 7593900
+  }
+}

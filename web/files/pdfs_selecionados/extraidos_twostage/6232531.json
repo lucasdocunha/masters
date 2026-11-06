@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "SP POSTO - COMERCIO DE COMBUSTIVEIS PARA VEICULO LTDA",
+  "fornecedor_cnpj_cpf": "18.234.915/0003-99",
+  "numero_documento": "79117",
+  "data_emissao": "2017-03-10",
+  "valor_total": 50.0,
+  "descricao_resumida": "VENDA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.54,
+    "timestamp": "2026-10-26T19:36:53Z",
+    "idDocumento": 6232531
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Conc. da Rodovia Presidente Dutra S/A",
+  "fornecedor_cnpj_cpf": "00.861.626/0001-92",
+  "numero_documento": "0002062004161900653700006B97C",
+  "data_emissao": "2021-04-23",
+  "valor_total": 14.2,
+  "descricao_resumida": "Categoria 01",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 16.74,
+    "timestamp": "2026-10-26T20:31:04Z",
+    "idDocumento": 7181803
+  }
+}

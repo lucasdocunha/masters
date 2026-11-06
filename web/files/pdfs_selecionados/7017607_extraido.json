@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MOVIDA LOCACAO DE VEICULOS S.A.",
+  "fornecedor_cnpj_cpf": "07.976.147/0020-23",
+  "numero_documento": "8521521",
+  "data_emissao": "2020-02-06",
+  "valor_total": 2108.22,
+  "descricao_resumida": "Aluguel de carros (Aluguel Mensal, Basico Mensal, Condutor Adicional)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T15:54:05Z",
+    "tempo_segundos": 7.7,
+    "idDocumento": 7017607
+  }
+}

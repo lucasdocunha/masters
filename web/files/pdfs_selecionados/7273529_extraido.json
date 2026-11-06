@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Eco050 BR050",
+  "fornecedor_cnpj_cpf": "19208022000170",
+  "numero_documento": "49DEEBOA-DADA-4A46-ACAA-788739495DB6",
+  "data_emissao": "2021-10-09",
+  "valor_total": 6.1,
+  "descricao_resumida": "Tarifa de pedagio - Pista: 06 - P5 - Uberaba - Sul",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:48:40Z",
+    "tempo_segundos": 23.74,
+    "idDocumento": 7273529
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "POSTO PARIS LTDA",
+  "fornecedor_cnpj_cpf": "16.525.065/0001-90",
+  "numero_documento": "169829",
+  "data_emissao": "2015-12-20",
+  "valor_total": 144.7,
+  "descricao_resumida": "Gasolina aditivada",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:42:56Z",
+    "tempo_segundos": 1.84,
+    "idDocumento": 5883986
+  }
+}

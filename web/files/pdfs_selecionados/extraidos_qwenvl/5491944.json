@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Empresa Ga.cha de Rodovias S.A.",
+  "fornecedor_cnpj_cpf": "16.987.837/0001-06",
+  "numero_documento": "ITQ6504",
+  "data_emissao": "2014-08-12",
+  "valor_total": 5.2,
+  "descricao_resumida": "Dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.34,
+    "timestamp": "2026-10-26T18:15:07Z",
+    "idDocumento": 5491944
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Autovias S.A.",
+  "fornecedor_cnpj_cpf": "02.679.185/0001-38",
+  "numero_documento": "000110",
+  "data_emissao": "30/09/16",
+  "valor_total": 6.9,
+  "descricao_resumida": "CAT: 1 Valor: R$ 6,90",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.55,
+    "timestamp": "2026-10-26T18:19:07Z",
+    "idDocumento": 6118409
+  }
+}

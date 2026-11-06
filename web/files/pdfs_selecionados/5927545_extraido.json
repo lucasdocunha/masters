@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Concessionária Rod Osório-Porto Alegre S/A CONCEPA",
+  "fornecedor_cnpj_cpf": "01.654.604/0003-86",
+  "numero_documento": "3003071456355980",
+  "data_emissao": "2016-02-24",
+  "valor_total": 12.6,
+  "descricao_resumida": "Tarifa de pedágio - Categoria 01 Automóvel",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:13:17Z",
+    "tempo_segundos": 1.68,
+    "idDocumento": 5927545
+  }
+}

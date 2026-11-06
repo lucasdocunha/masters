@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CONDOMINIO CENTRO EMPRESARIAL BARUERI",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "05675841",
+  "data_emissao": "2014-12-01",
+  "valor_total": 345.3,
+  "descricao_resumida": "CONDOMINIO NOVEMBRO/2014 e FUNDO RESERVA NOVEMBRO/2014",
+  "observacoes": "Boleto bancário de condomínio acompanhado de comprovante de pagamento.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:38:27Z",
+    "tempo_segundos": 5.49,
+    "idDocumento": 5561297
+  }
+}

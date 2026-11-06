@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "INFORMÁTICA EMPREEND. IMOBILIÁRIOS LTDA.",
+  "fornecedor_cnpj_cpf": "14.997.688/0001-30",
+  "numero_documento": "329",
+  "data_emissao": "2025-07-05",
+  "valor_total": 2439.43,
+  "descricao_resumida": "Aluguel, condomínio, IPTU e 01 vaga de garagem para o mês de julho/2025, referente à sala 629 Bloco B do Ed, Centro Empresarial Iguatemi, parcela 02/12.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:34:38Z",
+    "tempo_segundos": 11.29,
+    "idDocumento": 7946369
+  }
+}

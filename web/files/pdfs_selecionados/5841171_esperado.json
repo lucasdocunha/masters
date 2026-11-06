@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5841171,
+  "ano": 2015,
+  "mes": 10,
+  "fornecedor": "VIA SUL LTDA",
+  "cnpjCPF": "045.423.370/0018-1",
+  "numero": "298484",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-10-13T00:00:00",
+  "valorDocumento": 183.22,
+  "valorLiquido": 183.22,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "DÉCIO LIMA",
+  "cpfParlamentar": "38858240944",
+  "siglaUF": "SC",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1810/2015/5841171.pdf"
+}

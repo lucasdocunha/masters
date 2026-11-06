@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO VISTA DO PANAMBY II LTDA",
+  "fornecedor_cnpj_cpf": "18.005.062/0001-51",
+  "numero_documento": "189020",
+  "data_emissao": "2021-04-09",
+  "valor_total": 162.1,
+  "descricao_resumida": "ETANOL COMUM (47,0000 L)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:35:04Z",
+    "tempo_segundos": 20.54,
+    "idDocumento": 7188299
+  }
+}

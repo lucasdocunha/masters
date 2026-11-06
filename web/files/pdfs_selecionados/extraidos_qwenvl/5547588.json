@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "M. M. COLARES LTDA #",
+  "fornecedor_cnpj_cpf": "01.105.560/0001-73",
+  "numero_documento": "069702",
+  "data_emissao": "2014-11-13",
+  "valor_total": 150.7,
+  "descricao_resumida": "FRANGO DESSOSSADO PICANHA ARROZ BRANCO BAIÁD ESPECIAL REFRIGERANTE 290ML TAXA DE SERVICO ISS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.83,
+    "timestamp": "2026-10-26T18:14:03Z",
+    "idDocumento": 5547588
+  }
+}

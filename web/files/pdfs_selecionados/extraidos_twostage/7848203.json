@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Uber",
+  "fornecedor_cnpj_cpf": "00.000.000/0001-00",
+  "numero_documento": null,
+  "data_emissao": "2024-12-10",
+  "valor_total": 18.41,
+  "descricao_resumida": "Viagem Uber One, Zarattini",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 14.04,
+    "timestamp": "2026-10-26T21:14:58Z",
+    "idDocumento": 7848203
+  }
+}

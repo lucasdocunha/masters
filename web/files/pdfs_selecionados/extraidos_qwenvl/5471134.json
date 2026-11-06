@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Kalunga",
+  "fornecedor_cnpj_cpf": "020552",
+  "numero_documento": "331400711424137",
+  "data_emissao": "2014-05-31",
+  "valor_total": 298.9,
+  "descricao_resumida": "RECEBEMOS",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.27,
+    "timestamp": "2026-10-26T18:15:39Z",
+    "idDocumento": 5471134
+  }
+}

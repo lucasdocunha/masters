@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Carlos",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "99",
+  "data_emissao": "2023-05-23",
+  "valor_total": 9.6,
+  "descricao_resumida": "Valor da corrida: R$12,80, Duração da corrida: 10min, Descontos: -R$3,20, Cartão de Crédito/Débito: -R$9,60",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 7.51,
+    "timestamp": "2026-10-26T21:00:28Z",
+    "idDocumento": 7549464
+  }
+}

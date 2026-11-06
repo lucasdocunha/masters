@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "COPERCANA",
+  "fornecedor_cnpj_cpf": "71.320.915/0051-91",
+  "numero_documento": "105602",
+  "data_emissao": "2024-12-01",
+  "valor_total": 160.02,
+  "descricao_resumida": "ETANOL (38,5600 LTO)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:02:41Z",
+    "tempo_segundos": 5.39,
+    "idDocumento": 7839454
+  }
+}

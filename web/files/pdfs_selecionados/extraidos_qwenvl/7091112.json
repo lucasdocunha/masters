@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Gleisi Helena Hoffmann",
+  "fornecedor_cnpj_cpf": "884/614603386",
+  "numero_documento": "001/005",
+  "data_emissao": "20/08/2020",
+  "valor_total": 398.23,
+  "descricao_resumida": "NET TV 61,14\nNET VIRTUAL + 142,85\nNET Fone 194,24",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.46,
+    "timestamp": "2026-10-26T18:29:07Z",
+    "idDocumento": 7091112
+  }
+}

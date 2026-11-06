@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PROJETO PLANALTO PAPELARIA DE MINAS LTDA",
+  "fornecedor_cnpj_cpf": "31230565114043000143550010000003901764351740",
+  "numero_documento": "000000390",
+  "data_emissao": "2023-05-12",
+  "valor_total": 1321.74,
+  "descricao_resumida": "VENDA DE MERCADORIA SUJEITA AO ST",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.12,
+    "timestamp": "2026-10-26T21:04:15Z",
+    "idDocumento": 7549555
+  }
+}

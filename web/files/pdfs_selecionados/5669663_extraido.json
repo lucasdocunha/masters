@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "CONCESS. DO RODOANEL OESTE S/A",
+  "fornecedor_cnpj_cpf": "09.387.725/0001-59",
+  "numero_documento": null,
+  "data_emissao": "2015-04-23",
+  "valor_total": 1.6,
+  "descricao_resumida": "Recibo de pedágio referente à Praça 51 - PADROEIRA INTERNA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:56:05Z",
+    "tempo_segundos": 1.93,
+    "idDocumento": 5669663
+  }
+}

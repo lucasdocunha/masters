@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "B DE ALVARENGA HEITOR EDITORA, HOSPEDAGEM E SERVICOS - ME",
+  "fornecedor_cnpj_cpf": "19.798.563/0001-03",
+  "numero_documento": "32",
+  "data_emissao": "2019-08-16",
+  "valor_total": 2650.0,
+  "descricao_resumida": "Divulgacao da atividade parlamentar do mes de agosto de 2019, propaganda do projeto de lei 2981 de 2019.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:32:18Z",
+    "tempo_segundos": 4.3,
+    "idDocumento": 6897557
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "POSTO VEM CAR LTDA",
+  "fornecedor_cnpj_cpf": "131151811172559",
+  "numero_documento": "000.003.015",
+  "data_emissao": "2015-07-21",
+  "valor_total": 2893.17,
+  "descricao_resumida": "VENDA COM ECF",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.43,
+    "timestamp": "2026-10-26T19:01:29Z",
+    "idDocumento": 5743851
+  }
+}

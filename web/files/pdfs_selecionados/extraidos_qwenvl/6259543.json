@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PONTES & LANDIM CONSUSTIVEIS LTDA - EPP",
+  "fornecedor_cnpj_cpf": "17.120.954/0001-30",
+  "numero_documento": "CUPOM FISCAL",
+  "data_emissao": "13/04/2017",
+  "valor_total": 14.0,
+  "descricao_resumida": "1 7891000990732 LAT BEBIDA FAST NESTON 280ML 1 UN X 5,00 FL A 5,90€ 2 7895445490066 AGUA MINERAL INDATA SEM GAS 3 UN X 3,00 FL A 9,00€",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.45,
+    "timestamp": "2026-10-26T18:21:01Z",
+    "idDocumento": 6259543
+  }
+}

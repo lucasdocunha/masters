@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "COML BARCELOS & MATOS LTDA",
+  "fornecedor_cnpj_cpf": "17.188.733/0001-02",
+  "numero_documento": "196974",
+  "data_emissao": "2017-02-27",
+  "valor_total": 10.0,
+  "descricao_resumida": "A PARABRISAS 500 ML",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.65,
+    "timestamp": "2026-10-26T18:21:46Z",
+    "idDocumento": 6220515
+  }
+}

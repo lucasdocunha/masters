@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6827613,
+  "ano": 2019,
+  "mes": 5,
+  "fornecedor": "EMPRESA DE TRANSPORTE ANDORINHA",
+  "cnpjCPF": "553.342.620/0018-4",
+  "numero": "738190",
+  "tipoDocumento": "1",
+  "dataEmissao": "2019-05-05T00:00:00",
+  "valorDocumento": 160.24,
+  "valorLiquido": 160.24,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Carla Zambelli",
+  "cpfParlamentar": "01335594671",
+  "siglaUF": "SP",
+  "siglaPartido": "PL",
+  "descricaoDespesa": "PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3244/2019/6827613.pdf"
+}

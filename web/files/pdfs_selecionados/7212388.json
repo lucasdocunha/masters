@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7212388,
+  "ano": 2021,
+  "mes": 5,
+  "fornecedor": "JABA  SERVIÇOS",
+  "cnpjCPF": "710.911.930/0018-1",
+  "numero": "009588",
+  "tipoDocumento": "1",
+  "dataEmissao": "2021-06-08T00:00:00",
+  "valorDocumento": 2900.0,
+  "valorLiquido": 2900.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Newton Cardoso Jr",
+  "cpfParlamentar": "01266637699",
+  "siglaUF": "MG",
+  "siglaPartido": "MDB",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2925/2021/7212388.pdf"
+}

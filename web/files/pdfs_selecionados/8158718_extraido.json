@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "PREFEITURA DE BELO HORIZONTE",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": "01.26.5472789.26",
+  "data_emissao": "2026-09-01",
+  "valor_total": 457.33,
+  "descricao_resumida": "Documento de Recolhimento e Arrecadação Municipal - DRAM (IPTU / 2026)",
+  "observacoes": "Valor total refere-se a uma parcela específica paga (Setembro), com valor de quitação integral listado como 1829.32.",
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T19:01:33Z",
+    "tempo_segundos": 3.13,
+    "idDocumento": 8158718
+  }
+}

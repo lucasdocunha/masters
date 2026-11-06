@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5462338,
+  "ano": 2014,
+  "mes": 6,
+  "fornecedor": "Transportadora Presidente Ltda",
+  "cnpjCPF": "030.055.590/0010-0",
+  "numero": "6",
+  "tipoDocumento": "1",
+  "dataEmissao": "2014-07-02T00:00:00",
+  "valorDocumento": 6000.0,
+  "valorLiquido": 6000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "Márcio Macêdo",
+  "cpfParlamentar": "50625870506",
+  "siglaUF": "SE",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2310/2014/5462338.pdf"
+}

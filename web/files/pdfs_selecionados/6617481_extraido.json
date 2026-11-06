@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "MILLENNIUM PETROLEO LTDA",
+  "fornecedor_cnpj_cpf": "03.524.403/0002-09",
+  "numero_documento": "008762",
+  "data_emissao": "2018-06-24",
+  "valor_total": 225.01,
+  "descricao_resumida": "Gasolina comum BI03",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:07:23Z",
+    "tempo_segundos": 14.49,
+    "idDocumento": 6617481
+  }
+}

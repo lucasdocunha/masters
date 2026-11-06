@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "HUBERT IMÓVEIS E ADMINISTRAÇÃO LTDA",
+  "fornecedor_cnpj_cpf": "62.816.798/0001-00",
+  "numero_documento": "237",
+  "data_emissao": "2019-05-08",
+  "valor_total": 794.66,
+  "descricao_resumida": "BOLETO REGISTRADO",
+  "observacoes": "CPF 043.***.***-41",
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.7,
+    "timestamp": "2026-10-26T18:26:30Z",
+    "idDocumento": 6885316
+  }
+}

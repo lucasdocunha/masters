@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "PANTANAL VEICULOS LTDA",
+  "fornecedor_cnpj_cpf": "2710312024",
+  "numero_documento": "N° 25.633",
+  "data_emissao": "2024-03-31",
+  "valor_total": 3800.0,
+  "descricao_resumida": "LOCAÇÃO DE VEÍCULO TRACKERSGS9J 03.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.44,
+    "timestamp": "2026-10-26T18:37:27Z",
+    "idDocumento": 7715959
+  }
+}

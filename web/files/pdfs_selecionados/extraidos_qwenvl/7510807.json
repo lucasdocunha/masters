@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ALPHABESSAS EMPREENDIMENTOS IMOBILIARIOS LTDA.",
+  "fornecedor_cnpj_cpf": "23224.44.32.0637.02.141.04",
+  "numero_documento": "8008637194",
+  "data_emissao": "2023-01-01",
+  "valor_total": 1467.28,
+  "descricao_resumida": "Imposto Predial e Territorial Urbano",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.9,
+    "timestamp": "2026-10-26T18:37:43Z",
+    "idDocumento": 7510807
+  }
+}

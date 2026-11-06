@@ -1,0 +1,19 @@
+{
+  "idDocumento": 7346992,
+  "ano": 2022,
+  "mes": 3,
+  "fornecedor": "MUNICIPIO DE BELO HORIZONTE",
+  "cnpjCPF": "187.153.830/0014-0",
+  "numero": "0122259498855",
+  "tipoDocumento": "1",
+  "dataEmissao": "2022-03-17T00:00:00",
+  "valorDocumento": 39.65,
+  "valorLiquido": 38.24,
+  "valorGlosa": 1.41,
+  "nomeParlamentar": "Fred Costa",
+  "cpfParlamentar": "02505101620",
+  "siglaUF": "MG",
+  "siglaPartido": "PATRIOTA",
+  "descricaoDespesa": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/3387/2022/7346992.pdf"
+}

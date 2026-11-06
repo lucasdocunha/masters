@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Marcio Lomando Bilhar da Silva",
+  "fornecedor_cnpj_cpf": null,
+  "numero_documento": null,
+  "data_emissao": "2019-04-08",
+  "valor_total": 5162.96,
+  "descricao_resumida": "Pagamento de aluguel e encargos condominiais",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 10.45,
+    "timestamp": "2026-10-26T20:03:53Z",
+    "idDocumento": 6820037
+  }
+}

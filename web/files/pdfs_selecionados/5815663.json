@@ -1,0 +1,19 @@
+{
+  "idDocumento": 5815663,
+  "ano": 2015,
+  "mes": 9,
+  "fornecedor": "RÁDIO ALVORADA DE RONDÔNIA LEDA",
+  "cnpjCPF": "052.086.990/0010-1",
+  "numero": "000000025",
+  "tipoDocumento": "0",
+  "dataEmissao": "2015-09-25T00:00:00",
+  "valorDocumento": 1000.0,
+  "valorLiquido": 1000.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "MARCOS ROGÉRIO",
+  "cpfParlamentar": "60232064253",
+  "siglaUF": "RO",
+  "siglaPartido": "DEM",
+  "descricaoDespesa": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2473/2015/5815663.pdf"
+}

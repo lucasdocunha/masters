@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Cootramo-MG",
+  "fornecedor_cnpj_cpf": "3681-7493 / 99394-7771",
+  "numero_documento": "388370",
+  "data_emissao": "2019-05-08",
+  "valor_total": 130.0,
+  "descricao_resumida": "COMPROVANTE DE CORRIDA DE TÁXI",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.87,
+    "timestamp": "2026-10-26T18:27:12Z",
+    "idDocumento": 6883018
+  }
+}

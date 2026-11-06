@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "Prefeitura Municipal de Ferraz de Vasconcelos",
+  "fornecedor_cnpj_cpf": "38.442.726/0001-57",
+  "numero_documento": "387/NFE",
+  "data_emissao": "2026-03-11",
+  "valor_total": 9990.0,
+  "descricao_resumida": "A Prestação de serviços de comunicação institucional, com foco na divulgação da atividade parlamentar do Deputado Federal Rodrigo Gambale, por meio das seguintes ações: Administração da página oficial no Facebook; Administração do perfil oficial no Instagram; Criação de peças gráficas digitais para publicação nas redes sociais mencionadas; Produção e edição de vídeos institucionais destinados à divulgação das ações parlamentares nas plataformas sociais do Deputado.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 4.0,
+    "timestamp": "2026-10-26T18:45:55Z",
+    "idDocumento": 8064751
+  }
+}

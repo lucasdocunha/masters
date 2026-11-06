@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "J. P. FONTES DA SILVA - ME",
+  "fornecedor_cnpj_cpf": "14364962000134",
+  "numero_documento": "8",
+  "data_emissao": "2020-08-21",
+  "valor_total": 4150.0,
+  "descricao_resumida": "Locação do veiculo Chevrolet/S10, LTZ DD4A, placa QWM9E43, 2019/2020, no período de 01 de Agosto a 31 de Agosto de 2020.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T17:34:12Z",
+    "tempo_segundos": 2.95,
+    "idDocumento": 7086345
+  }
+}

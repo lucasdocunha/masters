@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTOPISTA LITORAL S/A",
+  "fornecedor_cnpj_cpf": "09.313.969/0001-77",
+  "numero_documento": "22.06.22 14:11:20 Recibo:GNA2TDAIK33K",
+  "data_emissao": "22.06.22",
+  "valor_total": 4.1,
+  "descricao_resumida": "Dinheiro",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.61,
+    "timestamp": "2026-10-26T18:33:11Z",
+    "idDocumento": 7423779
+  }
+}

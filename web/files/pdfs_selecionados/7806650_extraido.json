@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "SEVERINO APARECIDO DA SILVA",
+  "fornecedor_cnpj_cpf": "32.648.043/0001-74",
+  "numero_documento": "126",
+  "data_emissao": "2024-09-26",
+  "valor_total": 500.0,
+  "descricao_resumida": "Divulgacao das acoes do deputado federal Lula da Fonte no mes de setembro de 2024 no blog do Silvinho",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:01:32Z",
+    "tempo_segundos": 2.84,
+    "idDocumento": 7806650
+  }
+}

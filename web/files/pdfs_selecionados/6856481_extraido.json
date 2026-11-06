@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AR PAPELARIA INFORMATICA E PRESENTES LTDA",
+  "fornecedor_cnpj_cpf": "07.772.397/0001-89",
+  "numero_documento": "000012352",
+  "data_emissao": "2019-08-07",
+  "valor_total": 616.0,
+  "descricao_resumida": "PASTA AZ COLOR, PAPEL A4 NOVO COPIMAX 75G, PASTA SUSPENCA PLAST CRISTAL, ORGANIZADOR DE PASTAS DUPLO CRISTAL",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T14:34:59Z",
+    "tempo_segundos": 8.79,
+    "idDocumento": 6856481
+  }
+}

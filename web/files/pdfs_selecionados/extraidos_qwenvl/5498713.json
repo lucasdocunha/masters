@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CENTRO DE GESTÃO DE MEIOS DE PAGAMENTO S/A",
+  "fornecedor_cnpj_cpf": "119.792.169-91",
+  "numero_documento": "158655720",
+  "data_emissao": "23/08/2014",
+  "valor_total": 731.48,
+  "descricao_resumida": "Mensalidade, Passagens, Estacionamentos, Total não Tributável, Impostos Retidos",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 2.83,
+    "timestamp": "2026-10-26T18:15:35Z",
+    "idDocumento": 5498713
+  }
+}

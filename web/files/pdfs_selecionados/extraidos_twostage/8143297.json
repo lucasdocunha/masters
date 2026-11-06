@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CONCESSIONARIA ROTA DAS BANDEIRAS",
+  "fornecedor_cnpj_cpf": "10.647.979/0001-48",
+  "numero_documento": "W0EJMJ1J847S",
+  "data_emissao": "2026-07-25",
+  "valor_total": 16.1,
+  "descricao_resumida": "Exploracao de Rodovia",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 7.14,
+    "timestamp": "2026-10-26T21:49:17Z",
+    "idDocumento": 8143297
+  }
+}

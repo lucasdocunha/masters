@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO RIBEIRANIA LTDA",
+  "fornecedor_cnpj_cpf": "12.065.343/0001-13",
+  "numero_documento": "000177202",
+  "data_emissao": "2026-07-08",
+  "valor_total": 283.0,
+  "descricao_resumida": "OLEO DIESEL S 10 AD 38,296",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 21.72,
+    "timestamp": "2026-10-26T21:47:34Z",
+    "idDocumento": 8129281
+  }
+}

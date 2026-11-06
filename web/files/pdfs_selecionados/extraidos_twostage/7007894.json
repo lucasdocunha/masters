@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "GOLD CAR BRASÍLIA LOCAÇÃO DE VEÍCULOS",
+  "fornecedor_cnpj_cpf": "26.735.227/0001-79",
+  "numero_documento": "00308",
+  "data_emissao": "2020-02-03",
+  "valor_total": 3700.0,
+  "descricao_resumida": "Locação do veículo Toyota Corolla XEI ANO 2019 Placa PBP-7201",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 18.99,
+    "timestamp": "2026-10-26T20:23:07Z",
+    "idDocumento": 7007894
+  }
+}

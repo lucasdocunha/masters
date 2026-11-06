@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "VALPOSTO COMUSTIVEIS LTDA",
+  "fornecedor_cnpj_cpf": "25124074000160",
+  "numero_documento": "000037327",
+  "data_emissao": "2017-05-05",
+  "valor_total": 221.0,
+  "descricao_resumida": "ÓLEO DIESEL B S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:26:38Z",
+    "tempo_segundos": 2.12,
+    "idDocumento": 6280557
+  }
+}

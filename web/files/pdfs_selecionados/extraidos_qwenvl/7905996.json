@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ELDORADO COMUNICACAO E JORNALISMO LTDA",
+  "fornecedor_cnpj_cpf": "0799334900160 - CPF/CNPJ 37.894.749/0001-30",
+  "numero_documento": "602",
+  "data_emissao": "16/04/2025",
+  "valor_total": 1500.0,
+  "descricao_resumida": "REFERENTE PRODUÇÃO, EDIÇÃO E FINALIZAÇÃO DE MATÉRIAS JORNALÍSTICAS, DIVULGANDO A ATIVIDADE PARLAMENTAR COM DISTRIBUIÇÃO PARA OS VEÍCULOS DE COMUNICAÇÃO DO ESTADO E TAMBÉM VEICULAÇÃO NA REDE BRNEWS TV NO MÊS DE ABRIL DE 2025. QUITADO. - Quantidade: 1,0000 (X) Valor unitário: 1.500,00 (=) Total: R$ 1.500,00",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 0,
+    "tempo_segundos": 4.64,
+    "timestamp": "2026-10-26T18:41:14Z",
+    "idDocumento": 7905996
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "AUTO POSTO GAUCHO LTDA",
+  "fornecedor_cnpj_cpf": "73.856.155/0001-06",
+  "numero_documento": "221220",
+  "data_emissao": "2014-11-11",
+  "valor_total": 126.05,
+  "descricao_resumida": "Gasolina comum",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T18:29:49Z",
+    "tempo_segundos": 2.28,
+    "idDocumento": 5542754
+  }
+}

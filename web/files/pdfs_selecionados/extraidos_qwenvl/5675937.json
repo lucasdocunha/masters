@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AUTO POSTO MARQUES DE S. VICENTE LTDA",
+  "fornecedor_cnpj_cpf": "59.720.649/0001-20",
+  "numero_documento": "187835",
+  "data_emissao": "2015-04-29",
+  "valor_total": 178.44,
+  "descricao_resumida": "CARTÃO VISA",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 2.44,
+    "timestamp": "2026-10-26T18:16:20Z",
+    "idDocumento": 5675937
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "ITAÚ BANCO ITAÚ S.A.",
+  "fornecedor_cnpj_cpf": "341-7",
+  "numero_documento": "01573",
+  "data_emissao": "2014-11-03",
+  "valor_total": 160.0,
+  "descricao_resumida": "Pagamento de serviço",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 0,
+    "tempo_segundos": 17.79,
+    "timestamp": "2026-10-26T18:56:53Z",
+    "idDocumento": 5558644
+  }
+}

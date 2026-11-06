@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "GRAFFIT LIMEIRA PAPELARIA LTDA",
+  "fornecedor_cnpj_cpf": "68.917.061/0001-51",
+  "numero_documento": "000.057.120",
+  "data_emissao": "2026-01-05",
+  "valor_total": 371.3,
+  "descricao_resumida": "Venda de mercadoria: envelope cial s/cep 63 gr, tinta carimbo pilot, envelope plast grosso sf/2f/4f, pasta y/es c/bolsa, cola pritt 40 gr",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:55:38Z",
+    "tempo_segundos": 11.65,
+    "idDocumento": 8042736
+  }
+}

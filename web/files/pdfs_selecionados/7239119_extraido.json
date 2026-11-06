@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "Coop. Mista de Transporte de Passageiro em Taxi de BH Ltda.",
+  "fornecedor_cnpj_cpf": "25.288.969/0001-11",
+  "numero_documento": "6480",
+  "data_emissao": "2021-08-16",
+  "valor_total": 64.8,
+  "descricao_resumida": "Servico de transporte de passageiro em taxi, de Cidade Administrativa para Sta. Efigenia",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-22T16:46:11Z",
+    "tempo_segundos": 10.67,
+    "idDocumento": 7239119
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "AGENCIA MIL LTDA",
+  "fornecedor_cnpj_cpf": "58.990.852/0001-53",
+  "numero_documento": "00000047",
+  "data_emissao": "2026-04-06",
+  "valor_total": 11500.0,
+  "descricao_resumida": "Prestação de serviços de comunicação digital, marketing e produção de conteúdo audiovisual realizados pela AGENCIA MIL LTDA, com foco na divulgação institucional com conteúdos voltados para São Paulo, capital.",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 22.01,
+    "timestamp": "2026-10-26T21:47:55Z",
+    "idDocumento": 8079059
+  }
+}

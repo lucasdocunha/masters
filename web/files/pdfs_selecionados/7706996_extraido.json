@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "ALMADA E CIA LIMITADA",
+  "fornecedor_cnpj_cpf": "16626814000257",
+  "numero_documento": "33396",
+  "data_emissao": "2024-03-06",
+  "valor_total": 237.54,
+  "descricao_resumida": "OLEO DIESEL B C S10",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-23T18:05:02Z",
+    "tempo_segundos": 12.49,
+    "idDocumento": 7706996
+  }
+}

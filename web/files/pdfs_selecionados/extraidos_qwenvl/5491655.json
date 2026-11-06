@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "CELPE",
+  "fornecedor_cnpj_cpf": "8383000009-8 79410011007-2",
+  "numero_documento": "002822653",
+  "data_emissao": "23/07/2014",
+  "valor_total": 979.41,
+  "descricao_resumida": "Consumo Ativo(kWh) Contribuição Iluminação Pública ICMS Subvenção-CDE-NF 000005645-04/12/13 ICMS Subvenção-CDE-NF 000005646-04/12/13 ICMS Subvenção-CDE-NF 000005647-04/12/13 ICMS Subvenção-CDE-NF 002760056-24/12/13",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "Qwen2.5-VL-3B-Instruct",
+    "metodo": "qwenvl",
+    "gpu_id": 1,
+    "tempo_segundos": 3.98,
+    "timestamp": "2026-10-26T18:15:04Z",
+    "idDocumento": 5491655
+  }
+}

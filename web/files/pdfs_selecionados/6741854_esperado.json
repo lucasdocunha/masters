@@ -1,0 +1,19 @@
+{
+  "idDocumento": 6741854,
+  "ano": 2019,
+  "mes": 1,
+  "fornecedor": "LR PETROLEO LTDA",
+  "cnpjCPF": "157.153.890/0012-9",
+  "numero": "000586762",
+  "tipoDocumento": "0",
+  "dataEmissao": "2019-01-16T00:00:00",
+  "valorDocumento": 70.0,
+  "valorLiquido": 70.0,
+  "valorGlosa": 0.0,
+  "nomeParlamentar": "ZECA DO PT",
+  "cpfParlamentar": "04064992172",
+  "siglaUF": "MS",
+  "siglaPartido": "PT",
+  "descricaoDespesa": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/2944/2019/6741854.pdf"
+}

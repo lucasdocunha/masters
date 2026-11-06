@@ -1,0 +1,17 @@
+{
+  "fornecedor_nome": "INVESTICAR VEICULOS LTDA EPP",
+  "fornecedor_cnpj_cpf": "01.615.224/0001-70",
+  "numero_documento": "645",
+  "data_emissao": "2025-08-01",
+  "valor_total": 5800.0,
+  "descricao_resumida": "Locação de Veículo Executivo",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "LightOnOCR-3-4B + Qwen2.5-VL-3B",
+    "metodo": "twostage",
+    "gpu_id": 1,
+    "tempo_segundos": 21.64,
+    "timestamp": "2026-10-26T21:34:46Z",
+    "idDocumento": 7957375
+  }
+}

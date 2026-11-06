@@ -1,0 +1,15 @@
+{
+  "fornecedor_nome": "EMPRESA DE TRANSPORTES ANDORINHA S/A",
+  "fornecedor_cnpj_cpf": "55334262008401",
+  "numero_documento": "0127952",
+  "data_emissao": "2017-03-10",
+  "valor_total": 59.83,
+  "descricao_resumida": "Bilhete de passagem rodoviaria intermunicipal (V. Grande - Rondonopolis)",
+  "observacoes": null,
+  "_metadados_extracao": {
+    "modelo": "gemini-3.5-flash-lite",
+    "timestamp": "2026-10-21T19:31:39Z",
+    "tempo_segundos": 2.34,
+    "idDocumento": 6251729
+  }
+}
