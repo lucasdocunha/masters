@@ -106,6 +106,27 @@ def check_deployment_status(team_id: str, token: str, deployment_id: str) -> dic
         return json.loads(resp.read().decode())
 
 
+def assign_alias(team_id: str, token: str, deployment_id: str, alias_name: str) -> dict:
+    url = f"https://api.vercel.com/v2/deployments/{deployment_id}/aliases?teamId={team_id}"
+    raw_body = json.dumps({"alias": alias_name}).encode("utf-8")
+    req = urllib.request.Request(
+        url,
+        data=raw_body,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+            "Content-Length": str(len(raw_body))
+        },
+        method="POST"
+    )
+    try:
+        with urllib.request.urlopen(req) as resp:
+            return json.loads(resp.read().decode())
+    except Exception as e:
+        print(f"Aviso ao atribuir alias {alias_name}: {e}")
+        return {}
+
+
 def load_env():
     env_paths = [
         ROOT_DIR / ".env",
@@ -184,6 +205,7 @@ def main():
         st = info.get("readyState") or info.get("status")
         print(f"   Status: {st}...", flush=True)
         if st in ("READY", "ready"):
+            assign_alias(args.team_id, args.token, dep_id, f"{args.project}.vercel.app")
             print("\n==================================================================")
             print("                DEPLOY CONCLUÍDO COM SUCESSO!                     ")
             print("==================================================================")

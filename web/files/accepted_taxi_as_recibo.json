@@ -1,0 +1,639 @@
+[
+  {
+    "doc_id": "8116991",
+    "doc_name": "8116991.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI",
+    "ano": 2026
+  },
+  {
+    "doc_id": "7966866",
+    "doc_name": "7966866.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI",
+    "ano": 2025
+  },
+  {
+    "doc_id": "7721917",
+    "doc_name": "7721917.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7550966",
+    "doc_name": "7550966.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI",
+    "ano": 2023
+  },
+  {
+    "doc_id": "7869156",
+    "doc_name": "7869156.pdf",
+    "classe": "recibo",
+    "fornecedor": "TÁXI LEGAL",
+    "ano": 2025
+  },
+  {
+    "doc_id": "7734077",
+    "doc_name": "7734077.pdf",
+    "classe": "recibo",
+    "fornecedor": "TÁXI LEGAL",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7531772",
+    "doc_name": "7531772.pdf",
+    "classe": "recibo",
+    "fornecedor": "TÁXI LEGAL",
+    "ano": 2023
+  },
+  {
+    "doc_id": "7400416",
+    "doc_name": "7400416.pdf",
+    "classe": "recibo",
+    "fornecedor": "TÁXI LEGAL",
+    "ano": 2022
+  },
+  {
+    "doc_id": "8139916",
+    "doc_name": "8139916.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINDICATO DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUXILIARES DO DISTRITO FEDERAL",
+    "ano": 2026
+  },
+  {
+    "doc_id": "7893146",
+    "doc_name": "7893146.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINDICATO DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUXILIARES DO DISTRITO FEDERAL",
+    "ano": 2025
+  },
+  {
+    "doc_id": "7755635",
+    "doc_name": "7755635.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINDICATO DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUXILIARES DO DISTRITO FEDERAL",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7541043",
+    "doc_name": "7541043.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINDICATO DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUXILIARES DO DISTRITO FEDERAL",
+    "ano": 2023
+  },
+  {
+    "doc_id": "5974703",
+    "doc_name": "5974703.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI DF",
+    "ano": 2016
+  },
+  {
+    "doc_id": "5877014",
+    "doc_name": "5877014.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI DF",
+    "ano": 2015
+  },
+  {
+    "doc_id": "8082210",
+    "doc_name": "8082210.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DO DISTRITO FEDERAL",
+    "ano": 2026
+  },
+  {
+    "doc_id": "7919230",
+    "doc_name": "7919230.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DO DISTRITO FEDERAL",
+    "ano": 2025
+  },
+  {
+    "doc_id": "7837704",
+    "doc_name": "7837704.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DO DISTRITO FEDERAL",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7503856",
+    "doc_name": "7503856.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DO DISTRITO FEDERAL",
+    "ano": 2023
+  },
+  {
+    "doc_id": "6384113",
+    "doc_name": "6384113.pdf",
+    "classe": "recibo",
+    "fornecedor": "Sintaxi-DF",
+    "ano": 2017
+  },
+  {
+    "doc_id": "6062674",
+    "doc_name": "6062674.pdf",
+    "classe": "recibo",
+    "fornecedor": "Sintaxi-DF",
+    "ano": 2016
+  },
+  {
+    "doc_id": "8045024",
+    "doc_name": "8045024.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTAXI 202 NORTE",
+    "ano": 2026
+  },
+  {
+    "doc_id": "7879644",
+    "doc_name": "7879644.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTAXI 202 NORTE",
+    "ano": 2025
+  },
+  {
+    "doc_id": "7793803",
+    "doc_name": "7793803.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTAXI 202 NORTE",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7658974",
+    "doc_name": "7658974.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTAXI 202 NORTE",
+    "ano": 2023
+  },
+  {
+    "doc_id": "6524926",
+    "doc_name": "6524926.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINTAXI - DF",
+    "ano": 2018
+  },
+  {
+    "doc_id": "6421973",
+    "doc_name": "6421973.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINTAXI - DF",
+    "ano": 2017
+  },
+  {
+    "doc_id": "5914923",
+    "doc_name": "5914923.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINTAXI - DF",
+    "ano": 2016
+  },
+  {
+    "doc_id": "5842040",
+    "doc_name": "5842040.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINTAXI - DF",
+    "ano": 2015
+  },
+  {
+    "doc_id": "6036070",
+    "doc_name": "6036070.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI - Taxi",
+    "ano": 2016
+  },
+  {
+    "doc_id": "5545150",
+    "doc_name": "5545150.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI - Taxi",
+    "ano": 2014
+  },
+  {
+    "doc_id": "8027404",
+    "doc_name": "8027404.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTAXI",
+    "ano": 2025
+  },
+  {
+    "doc_id": "7839431",
+    "doc_name": "7839431.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTAXI",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7592765",
+    "doc_name": "7592765.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTAXI",
+    "ano": 2023
+  },
+  {
+    "doc_id": "7324263",
+    "doc_name": "7324263.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTAXI",
+    "ano": 2022
+  },
+  {
+    "doc_id": "6275961",
+    "doc_name": "6275961.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOBRÁS RÁDIO TÁXI",
+    "ano": 2017
+  },
+  {
+    "doc_id": "6145976",
+    "doc_name": "6145976.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOBRÁS RÁDIO TÁXI",
+    "ano": 2016
+  },
+  {
+    "doc_id": "5870511",
+    "doc_name": "5870511.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOBRÁS RÁDIO TÁXI",
+    "ano": 2015
+  },
+  {
+    "doc_id": "5528676",
+    "doc_name": "5528676.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOBRÁS RÁDIO TÁXI",
+    "ano": 2014
+  },
+  {
+    "doc_id": "6521321",
+    "doc_name": "6521321.pdf",
+    "classe": "recibo",
+    "fornecedor": "Sinpetaxi",
+    "ano": 2018
+  },
+  {
+    "doc_id": "6294352",
+    "doc_name": "6294352.pdf",
+    "classe": "recibo",
+    "fornecedor": "Sinpetaxi",
+    "ano": 2017
+  },
+  {
+    "doc_id": "5950058",
+    "doc_name": "5950058.pdf",
+    "classe": "recibo",
+    "fornecedor": "Sinpetaxi",
+    "ano": 2016
+  },
+  {
+    "doc_id": "7632625",
+    "doc_name": "7632625.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINTAXI/DF",
+    "ano": 2023
+  },
+  {
+    "doc_id": "7165492",
+    "doc_name": "7165492.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINTAXI/DF",
+    "ano": 2021
+  },
+  {
+    "doc_id": "6811698",
+    "doc_name": "6811698.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINTAXI/DF",
+    "ano": 2019
+  },
+  {
+    "doc_id": "6698315",
+    "doc_name": "6698315.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINTAXI/DF",
+    "ano": 2018
+  },
+  {
+    "doc_id": "5810856",
+    "doc_name": "5810856.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI-SINDICATO PERMISSIONARIA DE TAXIS E MOT AUX DO DF",
+    "ano": 2015
+  },
+  {
+    "doc_id": "7971419",
+    "doc_name": "7971419.pdf",
+    "classe": "recibo",
+    "fornecedor": "UNITAXI DF",
+    "ano": 2025
+  },
+  {
+    "doc_id": "7719414",
+    "doc_name": "7719414.pdf",
+    "classe": "recibo",
+    "fornecedor": "UNITAXI DF",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7654824",
+    "doc_name": "7654824.pdf",
+    "classe": "recibo",
+    "fornecedor": "UNITAXI DF",
+    "ano": 2023
+  },
+  {
+    "doc_id": "7369265",
+    "doc_name": "7369265.pdf",
+    "classe": "recibo",
+    "fornecedor": "UNITAXI DF",
+    "ano": 2022
+  },
+  {
+    "doc_id": "6303039",
+    "doc_name": "6303039.pdf",
+    "classe": "recibo",
+    "fornecedor": "Rádio Táxi Alvorada Ltda.",
+    "ano": 2017
+  },
+  {
+    "doc_id": "6070748",
+    "doc_name": "6070748.pdf",
+    "classe": "recibo",
+    "fornecedor": "Rádio Táxi Alvorada Ltda.",
+    "ano": 2016
+  },
+  {
+    "doc_id": "7689869",
+    "doc_name": "7689869.pdf",
+    "classe": "recibo",
+    "fornecedor": "Táxi Alvorada Ltda",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7665439",
+    "doc_name": "7665439.pdf",
+    "classe": "recibo",
+    "fornecedor": "Táxi Alvorada Ltda",
+    "ano": 2023
+  },
+  {
+    "doc_id": "7474070",
+    "doc_name": "7474070.pdf",
+    "classe": "recibo",
+    "fornecedor": "Táxi Alvorada Ltda",
+    "ano": 2022
+  },
+  {
+    "doc_id": "7169329",
+    "doc_name": "7169329.pdf",
+    "classe": "recibo",
+    "fornecedor": "Táxi Alvorada Ltda",
+    "ano": 2021
+  },
+  {
+    "doc_id": "5916998",
+    "doc_name": "5916998.pdf",
+    "classe": "recibo",
+    "fornecedor": "UniTaxiDF",
+    "ano": 2016
+  },
+  {
+    "doc_id": "5851842",
+    "doc_name": "5851842.pdf",
+    "classe": "recibo",
+    "fornecedor": "UniTaxiDF",
+    "ano": 2015
+  },
+  {
+    "doc_id": "7466776",
+    "doc_name": "7466776.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERATIVA DOS TAXISTAS AUT. DO DIST. FEDERAL",
+    "ano": 2022
+  },
+  {
+    "doc_id": "7287740",
+    "doc_name": "7287740.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERATIVA DOS TAXISTAS AUT. DO DIST. FEDERAL",
+    "ano": 2021
+  },
+  {
+    "doc_id": "6236860",
+    "doc_name": "6236860.pdf",
+    "classe": "recibo",
+    "fornecedor": "SIND. DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUX. DO DF",
+    "ano": 2017
+  },
+  {
+    "doc_id": "6047904",
+    "doc_name": "6047904.pdf",
+    "classe": "recibo",
+    "fornecedor": "SIND. DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUX. DO DF",
+    "ano": 2016
+  },
+  {
+    "doc_id": "5820714",
+    "doc_name": "5820714.pdf",
+    "classe": "recibo",
+    "fornecedor": "SIND. DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUX. DO DF",
+    "ano": 2015
+  },
+  {
+    "doc_id": "8089101",
+    "doc_name": "8089101.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTÁXI-BH",
+    "ano": 2026
+  },
+  {
+    "doc_id": "7901332",
+    "doc_name": "7901332.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTÁXI-BH",
+    "ano": 2025
+  },
+  {
+    "doc_id": "7762397",
+    "doc_name": "7762397.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTÁXI-BH",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7618334",
+    "doc_name": "7618334.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERTÁXI-BH",
+    "ano": 2023
+  },
+  {
+    "doc_id": "8128901",
+    "doc_name": "8128901.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASSOCIACAO NACIONAL DE TAXISTAS INFORMATIZADOS ANTAXI",
+    "ano": 2026
+  },
+  {
+    "doc_id": "7483869",
+    "doc_name": "7483869.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASSOCIACAO NACIONAL DE TAXISTAS INFORMATIZADOS ANTAXI",
+    "ano": 2023
+  },
+  {
+    "doc_id": "7450816",
+    "doc_name": "7450816.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASSOCIACAO NACIONAL DE TAXISTAS INFORMATIZADOS ANTAXI",
+    "ano": 2022
+  },
+  {
+    "doc_id": "7290019",
+    "doc_name": "7290019.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASSOCIACAO NACIONAL DE TAXISTAS INFORMATIZADOS ANTAXI",
+    "ano": 2021
+  },
+  {
+    "doc_id": "6410398",
+    "doc_name": "6410398.pdf",
+    "classe": "recibo",
+    "fornecedor": "Easy Taxi",
+    "ano": 2017
+  },
+  {
+    "doc_id": "5945514",
+    "doc_name": "5945514.pdf",
+    "classe": "recibo",
+    "fornecedor": "Easy Taxi",
+    "ano": 2016
+  },
+  {
+    "doc_id": "5792737",
+    "doc_name": "5792737.pdf",
+    "classe": "recibo",
+    "fornecedor": "Easy Taxi",
+    "ano": 2015
+  },
+  {
+    "doc_id": "5507887",
+    "doc_name": "5507887.pdf",
+    "classe": "recibo",
+    "fornecedor": "Easy Taxi",
+    "ano": 2014
+  },
+  {
+    "doc_id": "5470915",
+    "doc_name": "5470915.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI - DF",
+    "ano": 2014
+  },
+  {
+    "doc_id": "6527794",
+    "doc_name": "6527794.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINDICATO DOS TAXISTAS DO DISTRITO FEDERAL- SINTAXI",
+    "ano": 2018
+  },
+  {
+    "doc_id": "6473113",
+    "doc_name": "6473113.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINDICATO DOS TAXISTAS DO DISTRITO FEDERAL- SINTAXI",
+    "ano": 2017
+  },
+  {
+    "doc_id": "7918450",
+    "doc_name": "7918450.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASPERTAXI",
+    "ano": 2025
+  },
+  {
+    "doc_id": "7689867",
+    "doc_name": "7689867.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASPERTAXI",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7611093",
+    "doc_name": "7611093.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASPERTAXI",
+    "ano": 2023
+  },
+  {
+    "doc_id": "7424311",
+    "doc_name": "7424311.pdf",
+    "classe": "recibo",
+    "fornecedor": "ASPERTAXI",
+    "ano": 2022
+  },
+  {
+    "doc_id": "7719679",
+    "doc_name": "7719679.pdf",
+    "classe": "recibo",
+    "fornecedor": "Taxi Legal",
+    "ano": 2024
+  },
+  {
+    "doc_id": "7158879",
+    "doc_name": "7158879.pdf",
+    "classe": "recibo",
+    "fornecedor": "Taxi Legal",
+    "ano": 2021
+  },
+  {
+    "doc_id": "5580233",
+    "doc_name": "5580233.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI  - Taxi",
+    "ano": 2015
+  },
+  {
+    "doc_id": "5578735",
+    "doc_name": "5578735.pdf",
+    "classe": "recibo",
+    "fornecedor": "SINPETAXI  - Taxi",
+    "ano": 2014
+  },
+  {
+    "doc_id": "6263730",
+    "doc_name": "6263730.pdf",
+    "classe": "recibo",
+    "fornecedor": "RADIO TAXI SAO JOSE",
+    "ano": 2017
+  },
+  {
+    "doc_id": "6030727",
+    "doc_name": "6030727.pdf",
+    "classe": "recibo",
+    "fornecedor": "RADIO TAXI SAO JOSE",
+    "ano": 2016
+  },
+  {
+    "doc_id": "5667157",
+    "doc_name": "5667157.pdf",
+    "classe": "recibo",
+    "fornecedor": "RADIO TAXI SAO JOSE",
+    "ano": 2015
+  },
+  {
+    "doc_id": "5973561",
+    "doc_name": "5973561.pdf",
+    "classe": "recibo",
+    "fornecedor": "Unitaxi DF",
+    "ano": 2016
+  },
+  {
+    "doc_id": "6241585",
+    "doc_name": "6241585.pdf",
+    "classe": "recibo",
+    "fornecedor": "COOPERATIVAS DOS TAXISTAS AUTÔNOMOS DO DISTRITO FEDERAL",
+    "ano": 2017
+  }
+]

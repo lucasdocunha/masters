@@ -1,0 +1,452 @@
+{
+  "5531550": {
+    "ano": 2014,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "TORRE COMBUSTIVEIS LTDA ME",
+    "tipoDocumento": "0",
+    "valorLiquido": "30",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5903926": {
+    "ano": 2015,
+    "descricao": "MANUTEN\u00c7\u00c3O DE ESCRIT\u00d3RIO DE APOIO \u00c0 ATIVIDADE PARLAMENTAR",
+    "fornecedor": "ELETROBR\u00c1S DISTRIBUICAO PIAUI",
+    "tipoDocumento": "0",
+    "valorLiquido": "83.22",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5802086": {
+    "ano": 2015,
+    "descricao": "LOCA\u00c7\u00c3O OU FRETAMENTO DE VE\u00cdCULOS AUTOMOTORES",
+    "fornecedor": "MISTER CAR RENT A CAR",
+    "tipoDocumento": "1",
+    "valorLiquido": "2266.27",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5756785": {
+    "ano": 2015,
+    "descricao": "DIVULGA\u00c7\u00c3O DA ATIVIDADE PARLAMENTAR.",
+    "fornecedor": "Davi Silva da Cunha",
+    "tipoDocumento": "0",
+    "valorLiquido": "3680",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5701228": {
+    "ano": 2015,
+    "descricao": "FORNECIMENTO DE ALIMENTA\u00c7\u00c3O DO PARLAMENTAR",
+    "fornecedor": "SERVI\u00c7O NACIONAL DE APRENDIZAGEM COMERCIAL - SENAC",
+    "tipoDocumento": "0",
+    "valorLiquido": "25.5",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5754788": {
+    "ano": 2015,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "S\u00c3O JO\u00c3O POSTOS DE ABASTECIMENTOS E SERVI\u00c7OS",
+    "tipoDocumento": "0",
+    "valorLiquido": "104.12",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5806719": {
+    "ano": 2015,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "AUTO POSTO M R DA TAQUARA",
+    "tipoDocumento": "0",
+    "valorLiquido": "100.03",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5902962": {
+    "ano": 2015,
+    "descricao": "FORNECIMENTO DE ALIMENTA\u00c7\u00c3O DO PARLAMENTAR",
+    "fornecedor": "BRASIL 21 EVENTOS E HOTELARIA LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "46.2",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5937445": {
+    "ano": 2016,
+    "descricao": "LOCA\u00c7\u00c3O OU FRETAMENTO DE VE\u00cdCULOS AUTOMOTORES",
+    "fornecedor": "RB 1000 AG\u00caNCIA LOCA\u00c7\u00c3O DE VE\u00cdCULOS E SERVI\u00c7OS LTDA",
+    "tipoDocumento": "1",
+    "valorLiquido": "5500",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6068773": {
+    "ano": 2016,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "POSTO DE GASOLINA CORDEIRO LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "207.83",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6033600": {
+    "ano": 2016,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "FRANZONI COM. DE COMBUST. LTDA.",
+    "tipoDocumento": "0",
+    "valorLiquido": "77.6",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5949182": {
+    "ano": 2016,
+    "descricao": "MANUTEN\u00c7\u00c3O DE ESCRIT\u00d3RIO DE APOIO \u00c0 ATIVIDADE PARLAMENTAR",
+    "fornecedor": "L DE OLIVEIRA LOG\u00cdSTICA ME",
+    "tipoDocumento": "0",
+    "valorLiquido": "58.9",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5979504": {
+    "ano": 2016,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "AUTO POSTO MORADA DOS NOBRES LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "100.02",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5959883": {
+    "ano": 2016,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "POSTO NAILA",
+    "tipoDocumento": "0",
+    "valorLiquido": "100.03",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "5941054": {
+    "ano": 2016,
+    "descricao": "LOCA\u00c7\u00c3O OU FRETAMENTO DE VE\u00cdCULOS AUTOMOTORES",
+    "fornecedor": "BRASIL VERDE LOCADORA DE VE\u00cdCULOS LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "1120",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6360981": {
+    "ano": 2017,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "IBEFIL COMBUST\u00cdVEIS LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "100.06",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6269403": {
+    "ano": 2017,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "AUTO POSTO AGUIA DE OURO - EIRELI",
+    "tipoDocumento": "0",
+    "valorLiquido": "152.1",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6226748": {
+    "ano": 2017,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "AUTO POSTO AGUIA DE OURO - EIRELI",
+    "tipoDocumento": "0",
+    "valorLiquido": "220.03",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6331488": {
+    "ano": 2017,
+    "descricao": "DIVULGA\u00c7\u00c3O DA ATIVIDADE PARLAMENTAR.",
+    "fornecedor": "FRANCERLEY FAGUNDES GUILHERME ME -UNIVERSAL C\u00d3PIAS",
+    "tipoDocumento": "0",
+    "valorLiquido": "12600",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6438048": {
+    "ano": 2017,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "POSTO COPA 94",
+    "tipoDocumento": "0",
+    "valorLiquido": "20",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6429157": {
+    "ano": 2017,
+    "descricao": "LOCA\u00c7\u00c3O OU FRETAMENTO DE VE\u00cdCULOS AUTOMOTORES",
+    "fornecedor": "LOCAVEL SEVI\u00c7OS LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "6800",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6396630": {
+    "ano": 2017,
+    "descricao": "DIVULGA\u00c7\u00c3O DA ATIVIDADE PARLAMENTAR.",
+    "fornecedor": "TUDO ROND\u00d4NIA-JORNAL ELETR\u00d4NICO",
+    "tipoDocumento": "0",
+    "valorLiquido": "1000",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6360167": {
+    "ano": 2017,
+    "descricao": "MANUTEN\u00c7\u00c3O DE ESCRIT\u00d3RIO DE APOIO \u00c0 ATIVIDADE PARLAMENTAR",
+    "fornecedor": "AR PAPELARIA INFORM\u00c1TICA E PRESENTES LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "500.45",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6432274": {
+    "ano": 2017,
+    "descricao": "LOCA\u00c7\u00c3O OU FRETAMENTO DE VE\u00cdCULOS AUTOMOTORES",
+    "fornecedor": "VILA RICA PARK LOCA\u00c7\u00c3O DE VE\u00cdCULOS LTDA",
+    "tipoDocumento": "1",
+    "valorLiquido": "3000",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6876337": {
+    "ano": 2019,
+    "descricao": "MANUTEN\u00c7\u00c3O DE ESCRIT\u00d3RIO DE APOIO \u00c0 ATIVIDADE PARLAMENTAR",
+    "fornecedor": "AMORETTO CAFES EXPRESSO LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "654.6",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "6950858": {
+    "ano": 2019,
+    "descricao": "SERVI\u00c7O DE SEGURAN\u00c7A PRESTADO POR EMPRESA ESPECIALIZADA.",
+    "fornecedor": "KHRONOS MONITORAMENTO ELETRONICO LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "113.61",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7170948": {
+    "ano": 2021,
+    "descricao": "MANUTEN\u00c7\u00c3O DE ESCRIT\u00d3RIO DE APOIO \u00c0 ATIVIDADE PARLAMENTAR",
+    "fornecedor": "PROSERVER TELECOMUNICA\u00c7\u00d5ES LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "199.9",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7427356": {
+    "ano": 2022,
+    "descricao": "PASSAGENS TERRESTRES, MAR\u00cdTIMAS OU FLUVIAIS",
+    "fornecedor": "VIA\u00c7\u00c3O CATARINENSE LTDA",
+    "tipoDocumento": "1",
+    "valorLiquido": "151.39",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7367410": {
+    "ano": 2022,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "69.91",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7416074": {
+    "ano": 2022,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "13.5",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7640163": {
+    "ano": 2023,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "19.33",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7666630": {
+    "ano": 2023,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "14.21",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7586119": {
+    "ano": 2023,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "46.66",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7582044": {
+    "ano": 2023,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "26.79",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7633840": {
+    "ano": 2023,
+    "descricao": "DIVULGA\u00c7\u00c3O DA ATIVIDADE PARLAMENTAR.",
+    "fornecedor": "INFORMA NA HORA SERVI\u00c7OS DE PUBLICIDADE E PROPAGANDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "1000",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7772293": {
+    "ano": 2024,
+    "descricao": "DIVULGA\u00c7\u00c3O DA ATIVIDADE PARLAMENTAR.",
+    "fornecedor": "G. ALVES DE OLIVEIRA E CIA LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "1600",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7786049": {
+    "ano": 2024,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "12.78",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7829287": {
+    "ano": 2024,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "17.38",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7698734": {
+    "ano": 2024,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "27.84",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7741887": {
+    "ano": 2024,
+    "descricao": "SERVI\u00c7O DE T\u00c1XI, PED\u00c1GIO E ESTACIONAMENTO",
+    "fornecedor": "UBER DO BRASIL TECNOLOGIA LTDA.",
+    "tipoDocumento": "1",
+    "valorLiquido": "78.71",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "8051620": {
+    "ano": 2025,
+    "descricao": "FORNECIMENTO DE ALIMENTA\u00c7\u00c3O DO PARLAMENTAR",
+    "fornecedor": "ZUCCO MORUMBI",
+    "tipoDocumento": "0",
+    "valorLiquido": "136",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7975535": {
+    "ano": 2025,
+    "descricao": "LOCA\u00c7\u00c3O OU FRETAMENTO DE VE\u00cdCULOS AUTOMOTORES",
+    "fornecedor": "M.R.H. LOCADORA DE VEICULOS LTDA",
+    "tipoDocumento": "1",
+    "valorLiquido": "5600",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7947530": {
+    "ano": 2025,
+    "descricao": "DIVULGA\u00c7\u00c3O DA ATIVIDADE PARLAMENTAR.",
+    "fornecedor": "JORNAL EXPRESSO DO OESTE LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "300",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7980539": {
+    "ano": 2025,
+    "descricao": "PASSAGENS TERRESTRES, MAR\u00cdTIMAS OU FLUVIAIS",
+    "fornecedor": "EMPRESA SANTO ANJO DA GUARDA LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "28.6",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "7878782": {
+    "ano": 2025,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "POSTO DE COMBUSTIVEL 107 NORTE LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "60",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "8139731": {
+    "ano": 2026,
+    "descricao": "MANUTEN\u00c7\u00c3O DE ESCRIT\u00d3RIO DE APOIO \u00c0 ATIVIDADE PARLAMENTAR",
+    "fornecedor": "LWSA S/A",
+    "tipoDocumento": "0",
+    "valorLiquido": "267.31",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "8094720": {
+    "ano": 2026,
+    "descricao": "DIVULGA\u00c7\u00c3O DA ATIVIDADE PARLAMENTAR.",
+    "fornecedor": "LWSA S/A - Locaweb",
+    "tipoDocumento": "0",
+    "valorLiquido": "59.18",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "8132158": {
+    "ano": 2026,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "POSTO DOS TROPEIROS SOROCABA LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "150",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "8043378": {
+    "ano": 2026,
+    "descricao": "DIVULGA\u00c7\u00c3O DA ATIVIDADE PARLAMENTAR.",
+    "fornecedor": "FABIANO DA SILVA COUTINHO ME",
+    "tipoDocumento": "0",
+    "valorLiquido": "1000",
+    "passageiro": "",
+    "trecho": ""
+  },
+  "8132967": {
+    "ano": 2026,
+    "descricao": "COMBUST\u00cdVEIS E LUBRIFICANTES.",
+    "fornecedor": "ANTIGO SAO CRISTOVAO AUTO POSTO LTDA",
+    "tipoDocumento": "0",
+    "valorLiquido": "260.08",
+    "passageiro": "",
+    "trecho": ""
+  }
+}
