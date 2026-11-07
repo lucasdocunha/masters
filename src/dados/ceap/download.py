@@ -3,10 +3,11 @@ import io
 import re
 import urllib.request
 import zipfile
-from pathlib import Path
+
+from dados.config import RAW_DIR
 
 PAGE_URL = "https://dadosabertos.camara.leg.br/swagger/api.html"
-OUTPUT_DIR = Path(__file__).resolve().parents[1] / "data" / "raw"
+OUTPUT_DIR = RAW_DIR
 
 
 def get_json_zip_urls(start_year: int = 2014) -> list[str]:

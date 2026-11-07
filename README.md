@@ -75,6 +75,8 @@ uv run ceap-download-metadata
 # Download dos PDFs listados nos JSONs (requer armazenamento externo)
 CEAP_PDF_DIR=/caminho/para/pdfs uv run ceap-download-pdfs
 
+# O mesmo download em um job Slurm: ajuste DEST e REPO em scripts/ceap/slurm_download_pdfs.sh
+
 # Gerar os dados do site e abri-lo localmente
 uv run python scripts/web/build_site.py
 cd web && python3 -m http.server 8000     # http://localhost:8000

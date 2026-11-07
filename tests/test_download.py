@@ -1,7 +1,8 @@
 from pathlib import Path
 from dados.ceap.download import get_json_zip_urls
-from dados.ceap.download_pdfs import get_pdf_urls
-from dados.ceap.download_url import URL_TEMPLATE
+from dados.ceap.download_pdfs import DEFAULT_DEST, download_pdf, get_pdf_urls
+from dados.ceap.download_url import DEFAULT_DEST as METADATA_DEST, URL_TEMPLATE
+from dados.config import PDF_DIR, RAW_DIR
 
 
 def test_get_json_zip_urls() -> None:
@@ -21,6 +22,24 @@ def test_get_pdf_urls() -> None:
     if path.exists():
         urls = get_pdf_urls(path)
         assert isinstance(urls, list)
+
+
+def test_default_paths_come_from_config() -> None:
+    assert DEFAULT_DEST == PDF_DIR
+    assert METADATA_DEST == RAW_DIR
+
+
+def test_download_pdf_reports_each_outcome(tmp_path: Path) -> None:
+    source = tmp_path / "origem.pdf"
+    source.write_bytes(b"%PDF")
+    dest = tmp_path / "destino"
+    dest.mkdir()
+
+    assert download_pdf(source.as_uri(), dest) == "baixado"
+    assert (dest / "origem.pdf").read_bytes() == b"%PDF"
+    assert download_pdf(source.as_uri(), dest) == "existente"
+    assert download_pdf((tmp_path / "nao_existe.pdf").as_uri(), dest) == "falha"
+    assert not list(dest.glob("*.tmp"))
 
 
 if __name__ == "__main__":

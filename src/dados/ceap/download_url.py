@@ -6,7 +6,9 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from pathlib import Path
 
-DEFAULT_DEST = Path(__file__).resolve().parents[1] / "data" / "raw"
+from dados.config import RAW_DIR
+
+DEFAULT_DEST = RAW_DIR
 URL_TEMPLATE = "https://www.camara.leg.br/cotas/Ano-{year}.json.zip"
 
 

@@ -5,18 +5,19 @@ import re
 import shutil
 import sys
 import urllib.request
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-DEFAULT_DEST = Path(__file__).resolve().parents[1] / "data" / "raw" / "pdfs"
+from dados.config import PDF_DIR, RAW_DIR
+
+DEFAULT_DEST = PDF_DIR
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 
 def get_default_json_files() -> list[Path]:
-    root = Path(__file__).resolve().parents[1]
-    found = list(root.glob("Ano-*.json")) + list((root / "data" / "raw").glob("Ano-*.json"))
     valid = []
-    for p in found:
+    for p in RAW_DIR.glob("Ano-*.json"):
         m = re.search(r"Ano-(\d{4})", p.name)
         if m and int(m.group(1)) >= 2014:
             valid.append(p)
@@ -37,10 +38,11 @@ def get_pdf_urls(json_path: Path) -> list[str]:
     )
 
 
-def download_pdf(url: str, dest_dir: Path) -> bool:
+def download_pdf(url: str, dest_dir: Path) -> str:
+    """Baixa um PDF e devolve "baixado", "existente" ou "falha"."""
     filename = dest_dir / url.split("/")[-1]
     if filename.exists() and filename.stat().st_size > 0:
-        return False
+        return "existente"
     if shutil.disk_usage(dest_dir).free < 200 * 1024 * 1024:
         raise OSError("Espaço em disco insuficiente (< 200MB livres).")
 
@@ -50,12 +52,12 @@ def download_pdf(url: str, dest_dir: Path) -> bool:
         with urllib.request.urlopen(req, timeout=20) as resp, open(tmp_file, "wb") as f:
             shutil.copyfileobj(resp, f)
         tmp_file.replace(filename)
-        return True
+        return "baixado"
     except Exception as e:
         if tmp_file.exists():
             tmp_file.unlink()
         print(f"\n[Falha] {url}: {e}", file=sys.stderr, flush=True)
-        return False
+        return "falha"
 
 
 def main() -> None:
@@ -78,7 +80,7 @@ def main() -> None:
         "json_files",
         nargs="*",
         type=Path,
-        help="Arquivos Ano-*.json (padrão: >= 2014 no projeto)",
+        help="Arquivos Ano-*.json (padrão: >= 2014 em data/raw)",
     )
     args = parser.parse_args()
 
@@ -87,8 +89,9 @@ def main() -> None:
 
     if not json_paths:
         print("Nenhum arquivo Ano-*.json encontrado (>= 2014). Baixe os JSONs primeiro.", flush=True)
-        return
+        sys.exit(1)
 
+    results = Counter()
     for path in json_paths:
         urls = get_pdf_urls(path)
         total = len(urls)
@@ -101,15 +104,17 @@ def main() -> None:
             futures = [executor.submit(download_pdf, u, args.path) for u in urls]
             for i, future in enumerate(as_completed(futures), start=1):
                 try:
-                    future.result()
+                    results[future.result()] += 1
                 except OSError as e:
                     print(f"\nInterrompido: {e}", file=sys.stderr, flush=True)
                     executor.shutdown(wait=False, cancel_futures=True)
-                    return
+                    sys.exit(1)
                 if i % 10 == 0 or i == total:
                     pct = (i * 100) // total
                     print(f"\r[{path.name}] {i}/{total} ({pct}%) PDFs processados", end="", flush=True)
         print()
+
+    print(f"Baixados: {results['baixado']} | Já existentes: {results['existente']} | Falhas: {results['falha']}", flush=True)
 
 
 if __name__ == "__main__":
