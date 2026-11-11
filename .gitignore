@@ -54,4 +54,3 @@ validacao_*
 # Site: dependências e configuração local do Vercel
 web/node_modules/
 .vercel/
-site_inspecao/

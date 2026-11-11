@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparativo FAISS K=10 &bull; ColPali VLM vs DINOv2</title>
+<style>
+  :root {
+    --bg-main: #0b0f19;
+    --bg-card: #151d30;
+    --border-color: #263352;
+    --primary: #38bdf8;
+    --secondary: #818cf8;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    margin: 0;
+    padding: 24px;
+  }
+  .container { max-width: 1440px; margin: 0 auto; }
+  header {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  h1 { font-size: 26px; color: var(--primary); margin: 0 0 8px; }
+  p.desc { color: var(--text-muted); font-size: 14px; margin: 0 0 16px; line-height: 1.5; }
+  .grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 1024px) {
+    .grid-two { grid-template-columns: 1fr; }
+  }
+  .panel {
+    background: #111827;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+  }
+  .panel-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .panel-title.vlm { color: #38bdf8; }
+  .panel-title.dino { color: #a78bfa; }
+  .btn-gallery {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 5px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .btn-gallery:hover { background: var(--primary); color: #000; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  th, td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid #1e293b;
+  }
+  th { color: var(--text-muted); font-weight: 600; }
+  tr:hover { background: rgba(255,255,255,0.02); }
+  .badge-class {
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 11px;
+  }
+  .tbl-link {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .tbl-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Dashboard Comparativo FAISS K=10 &bull; ColPali VLM vs DINOv2</h1>
+    <p class="desc">
+      Identificação e caracterização semântica das 10 classes dominantes no CEAP (1.339.678 documentos),
+      contrastando a separabilidade multimodal (ColPali VLM) com a representação estrutural-visual (DINOv2).
+    </p>
+    <div>
+      <a href="cluster-faiss-vlm-k10/index.html" class="btn-gallery" style="background: #0284c7; color: #fff;">Ver Galeria ColPali VLM (K=10) &rarr;</a>
+      <a href="cluster-faiss-dino-k10/index.html" class="btn-gallery" style="background: #7c3aed; color: #fff; margin-left: 8px;">Ver Galeria DINOv2 (K=10) &rarr;</a>
+      <a href="latent_vectors_full_3d.html" class="btn-gallery" style="margin-left: 8px;">Espaço 3D UMAP &rarr;</a>
+    </div>
+  </header>
+
+  <div class="grid-two">
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title vlm">ColPali VLM (Visão Multimodal - 128D)</span>
+        <a href="cluster-faiss-vlm-k10/index.html" class="btn-gallery">Abrir Galeria &rarr;</a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Cluster</th>
+            <th>Classe Sugerida</th>
+            <th>Documentos</th>
+            <th>Subcota Dominante</th>
+            <th>Dist. Média</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr>
+          <td><b>Cluster 0</b></td>
+          <td><span class="badge-class">BILHETE_AEREO_EMBARQUE</span></td>
+          <td><b>96</b> (1.9%)</td>
+          <td title="PASSAGEM AÉREA - REEMBOLSO">PASSAGEM AÉREA - REEMBOLSO... (57%)</td>
+          <td>0.158</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-0" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 1</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>850</b> (17.0%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (77%)</td>
+          <td>0.102</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-1" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 2</b></td>
+          <td><span class="badge-class">RECIBO_TAXI_ESTACIONAMENTO</span></td>
+          <td><b>219</b> (4.4%)</td>
+          <td title="SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO">SERVIÇO DE TÁXI, PEDÁGIO E ESTAC... (96%)</td>
+          <td>0.112</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-2" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 3</b></td>
+          <td><span class="badge-class">CUPOM_REFEICAO_ALIMENTACAO</span></td>
+          <td><b>472</b> (9.4%)</td>
+          <td title="FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR">FORNECIMENTO DE ALIMENTAÇÃO DO P... (49%)</td>
+          <td>0.095</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-3" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 4</b></td>
+          <td><span class="badge-class">DANFE_A4_OU_FATURA</span></td>
+          <td><b>543</b> (10.9%)</td>
+          <td title="MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR">MANUTENÇÃO DE ESCRITÓRIO DE APOI... (54%)</td>
+          <td>0.131</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-4" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 5</b></td>
+          <td><span class="badge-class">DANFE_A4_OU_FATURA</span></td>
+          <td><b>845</b> (16.9%)</td>
+          <td title="MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR">MANUTENÇÃO DE ESCRITÓRIO DE APOI... (26%)</td>
+          <td>0.126</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-5" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 6</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>225</b> (4.5%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (69%)</td>
+          <td>0.157</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-6" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 7</b></td>
+          <td><span class="badge-class">RECIBO_TAXI_ESTACIONAMENTO</span></td>
+          <td><b>377</b> (7.5%)</td>
+          <td title="SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO">SERVIÇO DE TÁXI, PEDÁGIO E ESTAC... (97%)</td>
+          <td>0.145</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-7" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 8</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>1,136</b> (22.7%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (68%)</td>
+          <td>0.099</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-8" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 9</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>237</b> (4.7%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (74%)</td>
+          <td>0.072</td>
+          <td><a href="cluster-faiss-vlm-k10/index.html#cluster-9" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title dino">DINOv2 (Estrutura Visual / Layout - 384D)</span>
+        <a href="cluster-faiss-dino-k10/index.html" class="btn-gallery">Abrir Galeria &rarr;</a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Cluster</th>
+            <th>Classe Sugerida</th>
+            <th>Documentos</th>
+            <th>Subcota Dominante</th>
+            <th>Dist. Média</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr>
+          <td><b>Cluster 0</b></td>
+          <td><span class="badge-class">RECIBO_TAXI_ESTACIONAMENTO</span></td>
+          <td><b>227</b> (4.5%)</td>
+          <td title="SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO">SERVIÇO DE TÁXI, PEDÁGIO E ESTAC... (68%)</td>
+          <td>0.108</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-0" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 1</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>315</b> (6.3%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (52%)</td>
+          <td>0.109</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-1" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 2</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>437</b> (8.7%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (55%)</td>
+          <td>0.104</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-2" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 3</b></td>
+          <td><span class="badge-class">RECIBO_TAXI_ESTACIONAMENTO</span></td>
+          <td><b>541</b> (10.8%)</td>
+          <td title="SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO">SERVIÇO DE TÁXI, PEDÁGIO E ESTAC... (36%)</td>
+          <td>0.104</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-3" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 4</b></td>
+          <td><span class="badge-class">DANFE_A4_OU_FATURA</span></td>
+          <td><b>1,133</b> (22.7%)</td>
+          <td title="MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR">MANUTENÇÃO DE ESCRITÓRIO DE APOI... (36%)</td>
+          <td>0.112</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-4" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 5</b></td>
+          <td><span class="badge-class">DANFE_A4_OU_FATURA</span></td>
+          <td><b>364</b> (7.3%)</td>
+          <td title="MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR">MANUTENÇÃO DE ESCRITÓRIO DE APOI... (19%)</td>
+          <td>0.116</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-5" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 6</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>442</b> (8.8%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (67%)</td>
+          <td>0.067</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-6" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 7</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>632</b> (12.6%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (65%)</td>
+          <td>0.059</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-7" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 8</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>661</b> (13.2%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (66%)</td>
+          <td>0.072</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-8" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>Cluster 9</b></td>
+          <td><span class="badge-class">CUPOM_FISCAL_COMBUSTIVEL</span></td>
+          <td><b>248</b> (5.0%)</td>
+          <td title="COMBUSTÍVEIS E LUBRIFICANTES.">COMBUSTÍVEIS E LUBRIFICANTES.... (60%)</td>
+          <td>0.100</td>
+          <td><a href="cluster-faiss-dino-k10/index.html#cluster-9" class="tbl-link">Ver Amostras &rarr;</a></td>
+        </tr>
+        
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

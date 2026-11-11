@@ -14,6 +14,7 @@ import argparse
 import urllib.request
 import urllib.error
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 DEFAULT_TEAM_ID = os.getenv("VERCEL_TEAM_ID", "")  # defina no ambiente; nunca versionar
 DEFAULT_TOKEN = os.getenv("VERCEL_TOKEN", "")  # defina no ambiente; nunca versionar
@@ -75,7 +76,8 @@ def create_deployment(team_id: str, token: str, project_name: str, files_manifes
         "name": project_name,
         "files": files_manifest,
         "projectSettings": {
-            "framework": None
+            "framework": None,
+            "rootDirectory": None
         },
         "target": "production"
     }
@@ -151,39 +153,56 @@ def main():
     parser.add_argument("--token", default=os.getenv("VERCEL_TOKEN", DEFAULT_TOKEN), help="Vercel Access Token")
     parser.add_argument("--team-id", default=os.getenv("VERCEL_TEAM_ID", DEFAULT_TEAM_ID), help="Vercel Team ID")
     parser.add_argument("--project", default=os.getenv("VERCEL_PROJECT", DEFAULT_PROJECT), help="Nome do projeto no Vercel")
+    parser.add_argument("--dir", default=None, help="Diretório de arquivos para deploy (padrão: web)")
     args = parser.parse_args()
+
+    deploy_dir = Path(args.dir).resolve() if args.dir else WEB_APP_DIR
+    if not deploy_dir.exists():
+        print(f"Erro: diretório '{deploy_dir}' não encontrado.")
+        sys.exit(1)
 
     print("==================================================================")
     print("      DEPLOY CEAP 3D LATENT EXPLORER PARA O VERCEL               ")
     print("==================================================================")
-    print(f"Diretório: {WEB_APP_DIR}")
+    print(f"Diretório: {deploy_dir}")
     print(f"Team ID:   {args.team_id}")
     print(f"Projeto:   {args.project}")
 
-    # 1. Coletar todos os arquivos em web_app/
+    # 1. Coletar todos os arquivos no diretório selecionado
     files_to_deploy = []
-    for p in WEB_APP_DIR.rglob("*"):
+    for p in deploy_dir.rglob("*"):
         if p.is_file() and not p.name.startswith(".") and "node_modules" not in p.parts:
-            rel = p.relative_to(WEB_APP_DIR).as_posix()
+            rel = p.relative_to(deploy_dir).as_posix()
             files_to_deploy.append((p, rel))
 
     print(f"\n1. Encontrados {len(files_to_deploy)} arquivos para deploy.")
 
-    # 2. Upload de cada arquivo para a CDN do Vercel
+    # 2. Upload de cada arquivo para a CDN do Vercel (em paralelo)
     manifest = []
-    print("\n2. Enviando arquivos para a CDN do Vercel...")
+    print("\n2. Enviando arquivos para a CDN do Vercel (em paralelo)...")
     t_start_upload = time.time()
-    for file_path, rel_path in files_to_deploy:
-        size_mb = file_path.stat().st_size / (1024 * 1024)
-        print(f"   -> [{size_mb:6.2f} MB] {rel_path}...", end=" ", flush=True)
-        res = upload_file(args.team_id, args.token, file_path, rel_path)
-        manifest.append({
-            "file": rel_path,
+    total_files = len(files_to_deploy)
+    completed = 0
+
+    def _worker(item):
+        fpath, rpath = item
+        res = upload_file(args.team_id, args.token, fpath, rpath)
+        return {
+            "file": rpath,
             "sha": res["sha"],
             "size": res["size"]
-        })
-        print(f"OK (sha: {res['sha'][:8]}...)")
+        }
 
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        futures = {executor.submit(_worker, item): item for item in files_to_deploy}
+        for fut in as_completed(futures):
+            res = fut.result()
+            manifest.append(res)
+            completed += 1
+            if completed % 50 == 0 or completed == total_files:
+                print(f"   Progresso: [{completed:4d}/{total_files}] arquivos verificados/enviados ({completed*100/total_files:5.1f}%)...", flush=True)
+
+    manifest.sort(key=lambda x: x["file"])
     print(f"   Upload concluído em {time.time() - t_start_upload:.1f}s.")
 
     # 3. Criar Deployment na API do Vercel
