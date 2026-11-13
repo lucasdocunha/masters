@@ -203,3 +203,10 @@ test("o cabeçalho do JS é o das partes versionadas", () => {
   const part = readFileSync(new URL("../../data/rotulos/parte_0218.csv", import.meta.url), "utf8");
   assert.equal(part.slice(0, part.indexOf("\n")), CSV_HEADER);
 });
+
+test("GET pode ficar 5 s no CDN; POST nunca é guardado", async () => {
+  const gh = fakeGithub();
+  assert.match((await listLabels(env, gh)).headers.get("cache-control"), /s-maxage=5/);
+  const saved = await saveLabels(post([{ id: "5", class: "agua", mode: "documento" }]), env, gh);
+  assert.equal(saved.headers.get("cache-control"), "no-store");
+});

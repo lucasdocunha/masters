@@ -108,6 +108,8 @@ function makeMark(size, hex) {
 const documentFromRow = (row) => ({ id: row[0], name: `${row[0]}.pdf`, fornecedor: row[1], subcota: row[2], ano: row[3], url: row[4] });
 const safeUrl = (url) => (/^https:\/\//.test(url ?? "") ? url : null);
 const PASSWORD_KEY = "ceap-editor-password";
+const CHANNEL = "ceap-rotulos"; // avisos entre abas do mesmo navegador quando um rótulo é salvo
+const POLL_MS = 15000;
 const STRENGTH_KEY = "ceap-unmapped-strength";
 const DEFAULT_STRENGTH = 33;
 const clampStrength = (value) => (Number.isFinite(value) ? Math.min(100, Math.max(5, value)) : DEFAULT_STRENGTH);
@@ -222,6 +224,8 @@ export function mountLatent(root, index, getDataset) {
 
   function startScene(classes, firstCoords) {
     if (classes.length !== n || firstCoords.length !== n * 3) throw new Error("Os arquivos de pontos não têm o tamanho esperado.");
+    let lastTs = 0;
+    const channel = "BroadcastChannel" in window ? new BroadcastChannel(CHANNEL) : null;
 
     let renderer;
     try { renderer = new WebGLRenderer({ antialias: false, powerPreference: "high-performance" }); }
@@ -487,8 +491,12 @@ export function mountLatent(root, index, getDataset) {
             body: JSON.stringify({ password, changes: [{ id: doc.id, point, class: apiClass(target), mode: "latente", meta }] }),
           });
           if (response.status === 401) writePassword(null);
-          if (!response.ok) failure = (await response.json().catch(() => null))?.error ?? "Não foi possível salvar.";
-          else writePassword(password);
+          const body = await response.json().catch(() => null);
+          if (!response.ok) failure = body?.error ?? "Não foi possível salvar.";
+          else {
+            writePassword(password);
+            if (body?.applied?.length) { lastTs = Math.max(lastTs, ...body.applied.map((e) => e.ts)); channel?.postMessage({ events: body.applied }); }
+          }
         } catch (err) {
           if (signal.aborted) return;
           failure = "Sem conexão com o serviço de rótulos.";
@@ -685,23 +693,41 @@ export function mountLatent(root, index, getDataset) {
     $("lat-reset").addEventListener("click", () => flyTo(new Vector3(), HOME.clone()));
     if (matchMedia("(max-width: 760px)").matches) $("lat-legend").open = false;
 
-    // Rótulos gravados pelo site (log no git): vale o evento mais recente de cada documento.
-    fetch("api/labels", { signal, cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((data) => {
-      if (!data) return;
-      const idByApiName = new Map(index.classes.map((c) => [apiClass(c), c.id]));
+    // Rótulos gravados (log no git): vale o evento mais recente de cada documento. Chegam ao abrir a página,
+    // na hora quando outra aba deste navegador salva (BroadcastChannel) e a cada 15 s de outros lugares.
+    const idByApiName = new Map(index.classes.map((c) => [apiClass(c), c.id]));
+    const known = new Set();
+    function applyEvents(events) {
       const latest = new Map();
-      for (const event of data.corrections) latest.set(event.id, event);
+      for (const event of [...events].sort((a, b) => a.ts - b.ts)) if (event.ts >= lastTs) latest.set(event.id, event);
+      let changed = false;
       for (const event of latest.values()) {
+        known.add(event.id);
         const id = idByApiName.get(event.class);
-        if (id !== undefined && event.point >= 0 && event.point < n) setPointClass(event.point, id);
+        if (id === undefined || !(event.point >= 0 && event.point < n) || classes[event.point] === id) continue;
+        setPointClass(event.point, id);
+        changed = true;
       }
+      if (events.length) lastTs = Math.max(lastTs, ...events.map((e) => e.ts));
+      stage.dataset.corrections = String(known.size);
+      if (!changed) return;
       refreshLegend();
-      stage.dataset.corrections = String(latest.size);
-    }).catch(() => {});
+      if (pinned >= 0) { placeMark(pinMark, pinned); redrawPinned(currentDoc); }
+    }
+    const poll = () => fetch("api/labels", { signal, cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null)).then((data) => { if (data) applyEvents(data.corrections); }).catch(() => {});
+    poll();
+    const timer = setInterval(() => { if (document.visibilityState === "visible") poll(); }, POLL_MS);
+    const onVisible = () => { if (document.visibilityState === "visible") poll(); };
+    document.addEventListener("visibilitychange", onVisible);
+    if (channel) channel.onmessage = (event) => applyEvents(event.data?.events ?? []);
 
     stage.dataset.points = String(geometry.attributes.position.count);
 
     return () => {
+      clearInterval(timer);
+      channel?.close();
+      document.removeEventListener("visibilitychange", onVisible);
       cancelAnimationFrame(frame);
       observer.disconnect();
       canvas.removeEventListener("pointermove", onMove);

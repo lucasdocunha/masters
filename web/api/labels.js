@@ -21,7 +21,10 @@ const STATUS = "rotulado";
 const MAX_POINT = 1339677;
 const RETRIES = 3;
 const JSON_HEADERS = { "Content-Type": "application/json", "Cache-Control": "no-store" };
-const reply = (status, body) => new Response(JSON.stringify(body), { status, headers: JSON_HEADERS });
+const reply = (status, body, headers = JSON_HEADERS) => new Response(JSON.stringify(body), { status, headers });
+// O GET é consultado pelo site a cada 15 s: o CDN guarda 5 s para limitar as chamadas ao GitHub (~720/h),
+// não importa quantas pessoas estejam com o site aberto.
+const LIST_HEADERS = { "Content-Type": "application/json", "Cache-Control": "public, max-age=0, s-maxage=5, stale-while-revalidate=10" };
 
 const digest = (value) => createHash("sha256").update(String(value)).digest();
 const samePassword = (given, expected) => timingSafeEqual(digest(given), digest(expected));
@@ -219,7 +222,7 @@ export async function listLabels(env, store) {
   if (!store) return reply(200, { corrections: [] });
   try {
     const head = await store.head();
-    return reply(200, { corrections: parseLog(await store.read(paths(env).log, head)) });
+    return reply(200, { corrections: parseLog(await store.read(paths(env).log, head)) }, LIST_HEADERS);
   } catch (err) {
     console.error(err);
     return reply(502, { error: "Não foi possível ler as correções." });
