@@ -1,0 +1,4683 @@
+{
+  "data_execucao": "2026-11-13 10:14:52",
+  "total_analisado": 584,
+  "distribuicao": {
+    "recibo": 155,
+    "cupom_fiscal": 69,
+    "boleto": 360
+  },
+  "itens": [
+    {
+      "doc_id": "5475644",
+      "fornecedor": "SINPETAXI - DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5510629",
+      "fornecedor": "PAIM & FILHOS LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5493455",
+      "fornecedor": "POUSADA PASCANA",
+      "subcota": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5454471",
+      "fornecedor": "BARAO PALACE HOTEL LTDA",
+      "subcota": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5493186",
+      "fornecedor": "RODOVIA DAS CATARATAS S.A.",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5456908",
+      "fornecedor": "GARDINUS RESTAURANTE E BUFFET LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5509320",
+      "fornecedor": "ATACADÃO DO PAPEL LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5579210",
+      "fornecedor": "SINPETAXI  - TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5515422",
+      "fornecedor": "ENEIDE EUSTÁQUIA COSTA FERNANDES-ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5452607",
+      "fornecedor": "EUSÉPIO PIZZARIA E RESTAURANTE LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5585749",
+      "fornecedor": "RESTAURANTE TRINDADE LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5505400",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5463002",
+      "fornecedor": "MAXPETRO",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5457498",
+      "fornecedor": "RESTAURANTE RODA DAGUA LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5520976",
+      "fornecedor": "ALBERTO JOSÉ MACEDO FILHO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5518332",
+      "fornecedor": "AUTO VIAÇÃO 1001  LTDA",
+      "subcota": "PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5524311",
+      "fornecedor": "KAKA PAPELARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5547559",
+      "fornecedor": "SINPETAXI - TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5551958",
+      "fornecedor": "POSTO IPIRANGA PARANOÁ",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5556993",
+      "fornecedor": "WMS COMÉRCIO DE ARTIGOS DE PAPELARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5476000",
+      "fornecedor": "HOTEL NACIONAL - JOSÉ LIMA DE OLIVEIRA",
+      "subcota": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5566468",
+      "fornecedor": "PORTOCAR LTDA",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5483731",
+      "fornecedor": "UNITAXI LTDA",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5594943",
+      "fornecedor": "CASCOL COMBUSTIVEIS PARA VEICULOS LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5465134",
+      "fornecedor": "AUTO POSTO ARAXA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5579100",
+      "fornecedor": "GUARUCOOP TÁXI AEROPORTO",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5486826",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5620797",
+      "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DE BRASÍLIA - ATB",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5547058",
+      "fornecedor": "CHURRASCARIA ASSADO NA BRASA LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "7820163",
+      "fornecedor": "TÁXI LEGAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6386745",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7824560",
+      "fornecedor": "BARBARA DANTAS MAYER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "7862978",
+      "fornecedor": "BARBARA DANTAS MAYER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "7967780",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6076677",
+      "fornecedor": "AL GOMES ALIMENTAÇÃO TLDA ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5647380",
+      "fornecedor": "BRASIL 21 GASTRONOMIA E SERVIÇOS LTDA.",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5519681",
+      "fornecedor": "LUIZ CARLOS PORTO FUNARI-CHURRASCARIA ACEGUÁ",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5453813",
+      "fornecedor": "CHURRASCARIA E PIZZARIA BOCAS GRILL",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5852553",
+      "fornecedor": "SHALOM RÁDIO TAXI LTDA",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5863941",
+      "fornecedor": "PBJM COMÉRCIO DE GÊNEROS ALIMENTÍCIOS LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5618410",
+      "fornecedor": "POSTO ABAST. BACELLAR DE VILA ISABEL LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5597400",
+      "fornecedor": "DOM FRANCISCO RESTAURANTE LTDA.",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6132005",
+      "fornecedor": "DOM FRANCISCO RESTAURANTE LTDA.",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5502000",
+      "fornecedor": "EDP-EMPREENDIMENTO E DER DE PETRÓLEO LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5529460",
+      "fornecedor": "CHURRASCARIA DO GAUCHO",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6503435",
+      "fornecedor": "ASSOCIACAO COLORENSE DE RADIODIFUSAO COMUNITARIA",
+      "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "6042189",
+      "fornecedor": "RESTAURANTE TANAKA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6768282",
+      "fornecedor": "MALAGHETA BUFFET A QUILO",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5486212",
+      "fornecedor": "FRANCISCO RESTAURANTE LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5556560",
+      "fornecedor": "RESTAURANTE SEARA LTDA - ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5586028",
+      "fornecedor": "BRASIL 21 GASTRONOMIA E SERVIÇOS LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5649454",
+      "fornecedor": "RESTAURANTE NIPPON",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5673942",
+      "fornecedor": "COMIDAS REGIONAIS DO BRASIL LTDA.",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5754432",
+      "fornecedor": "FRANCISCO RESTAURANTE LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6049954",
+      "fornecedor": "A MERCEARIA - BAR, SUSHI E RESTÔ",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5668002",
+      "fornecedor": "BARU RESTAURANTE LTDA.",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6302708",
+      "fornecedor": "LOCFACIL RENT A CAR",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5529156",
+      "fornecedor": "PADARIA ALMEIDA E MONTEIRO LTDA-ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6054266",
+      "fornecedor": "CIA DO SABOR",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5499399",
+      "fornecedor": "COISA E TALL COM DE ALIMENTOS LTDA.-ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6015932",
+      "fornecedor": "ESPAÇO GOURMET",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5734194",
+      "fornecedor": "FURINI & FERREIRA EMPREENDIMENTOS LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6053056",
+      "fornecedor": "FRATELLI POSTO DE COMBUSTIVEIS LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5657104",
+      "fornecedor": "SOHO RESTAURANTE-LUPAERI ALIMENTOS, PUBLIC. EVENTOS LTDA ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6446085",
+      "fornecedor": "CAVALO BRANCO HOTEL",
+      "subcota": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5811458",
+      "fornecedor": "CAFE E BAR CARVALHO ALVIM",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6344086",
+      "fornecedor": "R. N.C. COMUNICAÇÃO - REDE NORTE DE COMUNICAÇÃO LTDA",
+      "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5752701",
+      "fornecedor": "RESTAURANTE CHINA LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5484443",
+      "fornecedor": "TURBOMICRO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5802712",
+      "fornecedor": "UNIDAS LOCADORA DE VEICULOS LTDA",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5651542",
+      "fornecedor": "JK COMBUSTIVEIS",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "6049285",
+      "fornecedor": "O GAUCHO DA VILA LTDA ME - ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6062551",
+      "fornecedor": "RESTAURANTE E CHURRASCARIA ESTILO CAMPEIRO",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5938363",
+      "fornecedor": "FINO SABOR RESTAURANTE",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6177303",
+      "fornecedor": "ESTRELA DO PORTO",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5644008",
+      "fornecedor": "PBJM COMERCIO DE GENEROS ALIMENTICIOS LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5595462",
+      "fornecedor": "PAPELARIA DE MINAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "6086506",
+      "fornecedor": "RESTAURANTE PERTUTTI",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6090289",
+      "fornecedor": "EMYSOUTO PAPELARIA E INFORMÁTICA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5453753",
+      "fornecedor": "VIDAL GRÁFICA LTDA",
+      "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5869339",
+      "fornecedor": "RICARDO ANTONIO CALIXTO S/S LTDA.",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5886491",
+      "fornecedor": "DON'DURICA CAFÉ E RESTAURANTE",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6087441",
+      "fornecedor": "WM PAPELARIA E ESCRITÓRIO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5829115",
+      "fornecedor": "RESTAURANTE DONA MARIA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5758411",
+      "fornecedor": "COOPSETA - COOPERATIVA DE SERVIÇO - ESPECIAL DE TA",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5542856",
+      "fornecedor": "GOLDEN GREEN AUTO POSTO LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5913378",
+      "fornecedor": "RESTAURANTE E PIZZARIA NAPOLITANA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5796586",
+      "fornecedor": "KI FILE RESTAURANTE LTDA ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5926491",
+      "fornecedor": "JORNAL CENTRO NORTE NOTÍCIAS",
+      "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5564050",
+      "fornecedor": "VELOZ",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5535574",
+      "fornecedor": "WMS COMÉRCIO DE ARTIGOS DE PAPELARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "6133478",
+      "fornecedor": "OLIVEIRAS BAR E RESTAURANTE  LTDA.",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6532691",
+      "fornecedor": "CEARA TAXI AEREO LTDA",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE AERONAVES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6375698",
+      "fornecedor": "TRIO RESTAURANTE LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5884390",
+      "fornecedor": "GARDINUS RESTAURANTE E BUFFET LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5758261",
+      "fornecedor": "CHURRASCARIA E LANCHONETE ARAUJO ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6018595",
+      "fornecedor": "RESTAURANTE TCHE GAROTO",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5680479",
+      "fornecedor": "AUTO POSTO PETER PAN 01 LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5515022",
+      "fornecedor": "MJH BACH LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5531676",
+      "fornecedor": "PUERTO-RESTAURANTE LTDA.",
+      "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5526114",
+      "fornecedor": "BAR E RESTAURANTE VISCONDESSA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5755912",
+      "fornecedor": "NSG RESTAURANTE EIRELI-ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6798337",
+      "fornecedor": "GSS EMPREENDIMENTO ALIMENTICIO EIRELI - ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5930702",
+      "fornecedor": "FRATELLI POSTO DE COMBUSTÍVEIS LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "6229128",
+      "fornecedor": "GIBÃO DO PARQUE",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5978766",
+      "fornecedor": "LA PENHA - GABRIELA BUFFET LTDA.-ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5480263",
+      "fornecedor": "PETISCARIA URUPÁ",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5563026",
+      "fornecedor": "RESTAURANTE O TRAIRÃO LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5469105",
+      "fornecedor": "RESTAURANTE SOMBRERO",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5778084",
+      "fornecedor": "SOHO RESTAURANTE-LUPA ALIMENTOS, PUBLIC. E EVENTOS LTDA ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5906895",
+      "fornecedor": "SRR COMÉRCIO DE VARIEDADES LTDA ME",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5516110",
+      "fornecedor": "MARIA´S RESTAURANTE",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6137766",
+      "fornecedor": "EMYSOUTO PAPELARIA E INFORMÁTICA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "6647904",
+      "fornecedor": "RESTAURANTE TEODORO E TEODORO LTDA - ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6536794",
+      "fornecedor": "TOP LINE TAXI AÉREO LTDA",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE AERONAVES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5736580",
+      "fornecedor": "PBJM COMÉRCIO DE GÊNEROS ALIMENTÍCIOS LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5979495",
+      "fornecedor": "BOTECO 27 BAR E RESTAURANTE LTDA - ME",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5948687",
+      "fornecedor": "D. W. S. FREITAS COMÉRCIO",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5483815",
+      "fornecedor": "HFM COMÉRCIO DE CARNES NOBRES LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6187129",
+      "fornecedor": "AUTO LESTE LTDA ME",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5551419",
+      "fornecedor": "AUTO POSTO AEROPORTO LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5991372",
+      "fornecedor": "BECO DO CARMO RESTAURANTE E BAR LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5775124",
+      "fornecedor": "FLOR DO CERRADO HOSPEDAGEM",
+      "subcota": "HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5962089",
+      "fornecedor": "LOCAR NEW VEÍCULOS E MÁQUINAS LTDA",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5655252",
+      "fornecedor": "POSTO SANTA FE",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "6319016",
+      "fornecedor": "SUPER POSTO DOIS MIL LTDA",
+      "subcota": "COMBUSTÍVEIS E LUBRIFICANTES.",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5717340",
+      "fornecedor": "BRASIL 21 EVENTOS E HOTELARIA LTDA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "6645258",
+      "fornecedor": "BOI NA BRASA",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5556040",
+      "fornecedor": "BAR E  RESTAURANTE  MONUMENTAL LTDA-EPP",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5501053",
+      "fornecedor": "GALETERIA E CHURRASCARIA SAMPAIO",
+      "subcota": "FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "cupom_fiscal",
+      "motivo": "Nota Fiscal Venda ao Consumidor Modelo 2 / Série D-1 de restaurante"
+    },
+    {
+      "doc_id": "5627281",
+      "fornecedor": "WMS COMÉRCIO DE ARTIGOS DE PAPELARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "5539184",
+      "fornecedor": "AUTO LESTE LTDA ME",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo / quitação mantida"
+    },
+    {
+      "doc_id": "8116991",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7966866",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7721917",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7550966",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7869156",
+      "fornecedor": "TÁXI LEGAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7734077",
+      "fornecedor": "TÁXI LEGAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7531772",
+      "fornecedor": "TÁXI LEGAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7400416",
+      "fornecedor": "TÁXI LEGAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "8139916",
+      "fornecedor": "SINDICATO DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUXILIARES DO DISTRITO FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7893146",
+      "fornecedor": "SINDICATO DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUXILIARES DO DISTRITO FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7755635",
+      "fornecedor": "SINDICATO DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUXILIARES DO DISTRITO FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7541043",
+      "fornecedor": "SINDICATO DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUXILIARES DO DISTRITO FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5974703",
+      "fornecedor": "SINPETAXI DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5877014",
+      "fornecedor": "SINPETAXI DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "8082210",
+      "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DO DISTRITO FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7919230",
+      "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DO DISTRITO FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7837704",
+      "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DO DISTRITO FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7503856",
+      "fornecedor": "ASSOCIAÇÃO DOS TAXISTAS DO DISTRITO FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6384113",
+      "fornecedor": "SINTAXI-DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6062674",
+      "fornecedor": "SINTAXI-DF",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "8045024",
+      "fornecedor": "COOPERTAXI 202 NORTE",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7879644",
+      "fornecedor": "COOPERTAXI 202 NORTE",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7793803",
+      "fornecedor": "COOPERTAXI 202 NORTE",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7658974",
+      "fornecedor": "COOPERTAXI 202 NORTE",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6524926",
+      "fornecedor": "SINTAXI - DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6421973",
+      "fornecedor": "SINTAXI - DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5914923",
+      "fornecedor": "SINTAXI - DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5842040",
+      "fornecedor": "SINTAXI - DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6036070",
+      "fornecedor": "SINPETAXI - TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5545150",
+      "fornecedor": "SINPETAXI - TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "8027404",
+      "fornecedor": "COOPERTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7839431",
+      "fornecedor": "COOPERTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7592765",
+      "fornecedor": "COOPERTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7324263",
+      "fornecedor": "COOPERTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6275961",
+      "fornecedor": "COOBRÁS RÁDIO TÁXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6145976",
+      "fornecedor": "COOBRÁS RÁDIO TÁXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5870511",
+      "fornecedor": "COOBRÁS RÁDIO TÁXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5528676",
+      "fornecedor": "COOBRÁS RÁDIO TÁXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6521321",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6294352",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5950058",
+      "fornecedor": "SINPETAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7632625",
+      "fornecedor": "SINTAXI/DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7165492",
+      "fornecedor": "SINTAXI/DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6811698",
+      "fornecedor": "SINTAXI/DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6698315",
+      "fornecedor": "SINTAXI/DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5810856",
+      "fornecedor": "SINPETAXI-SINDICATO PERMISSIONARIA DE TAXIS E MOT AUX DO DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7971419",
+      "fornecedor": "UNITAXI DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7719414",
+      "fornecedor": "UNITAXI DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7654824",
+      "fornecedor": "UNITAXI DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7369265",
+      "fornecedor": "UNITAXI DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6303039",
+      "fornecedor": "RÁDIO TÁXI ALVORADA LTDA.",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6070748",
+      "fornecedor": "RÁDIO TÁXI ALVORADA LTDA.",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7689869",
+      "fornecedor": "TÁXI ALVORADA LTDA",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7665439",
+      "fornecedor": "TÁXI ALVORADA LTDA",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7474070",
+      "fornecedor": "TÁXI ALVORADA LTDA",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7169329",
+      "fornecedor": "TÁXI ALVORADA LTDA",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5916998",
+      "fornecedor": "UNITAXIDF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5851842",
+      "fornecedor": "UNITAXIDF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7466776",
+      "fornecedor": "COOPERATIVA DOS TAXISTAS AUT. DO DIST. FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7287740",
+      "fornecedor": "COOPERATIVA DOS TAXISTAS AUT. DO DIST. FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6236860",
+      "fornecedor": "SIND. DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUX. DO DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6047904",
+      "fornecedor": "SIND. DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUX. DO DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5820714",
+      "fornecedor": "SIND. DOS PERMISSIONARIOS DE TAXIS E MOTORISTAS AUX. DO DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "8089101",
+      "fornecedor": "COOPERTÁXI-BH",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7901332",
+      "fornecedor": "COOPERTÁXI-BH",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7762397",
+      "fornecedor": "COOPERTÁXI-BH",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7618334",
+      "fornecedor": "COOPERTÁXI-BH",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "8128901",
+      "fornecedor": "ASSOCIACAO NACIONAL DE TAXISTAS INFORMATIZADOS ANTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7483869",
+      "fornecedor": "ASSOCIACAO NACIONAL DE TAXISTAS INFORMATIZADOS ANTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7450816",
+      "fornecedor": "ASSOCIACAO NACIONAL DE TAXISTAS INFORMATIZADOS ANTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7290019",
+      "fornecedor": "ASSOCIACAO NACIONAL DE TAXISTAS INFORMATIZADOS ANTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6410398",
+      "fornecedor": "EASY TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5945514",
+      "fornecedor": "EASY TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5792737",
+      "fornecedor": "EASY TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5507887",
+      "fornecedor": "EASY TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5470915",
+      "fornecedor": "SINPETAXI - DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6527794",
+      "fornecedor": "SINDICATO DOS TAXISTAS DO DISTRITO FEDERAL- SINTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6473113",
+      "fornecedor": "SINDICATO DOS TAXISTAS DO DISTRITO FEDERAL- SINTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7918450",
+      "fornecedor": "ASPERTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7689867",
+      "fornecedor": "ASPERTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7611093",
+      "fornecedor": "ASPERTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7424311",
+      "fornecedor": "ASPERTAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7719679",
+      "fornecedor": "TAXI LEGAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "7158879",
+      "fornecedor": "TAXI LEGAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5580233",
+      "fornecedor": "SINPETAXI  - TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5578735",
+      "fornecedor": "SINPETAXI  - TAXI",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6263730",
+      "fornecedor": "RADIO TAXI SAO JOSE",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6030727",
+      "fornecedor": "RADIO TAXI SAO JOSE",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5667157",
+      "fornecedor": "RADIO TAXI SAO JOSE",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5973561",
+      "fornecedor": "UNITAXI DF",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "6241585",
+      "fornecedor": "COOPERATIVAS DOS TAXISTAS AUTÔNOMOS DO DISTRITO FEDERAL",
+      "subcota": "SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de táxi / transporte individual"
+    },
+    {
+      "doc_id": "5456002",
+      "fornecedor": "CONDOMINIO WALL STREET",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5514782",
+      "fornecedor": "CONDOMINIO WALL STREET",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5540193",
+      "fornecedor": "CONDOMINIO WALL STREET",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5910222",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO VICTÓRIA OFFICE TOWER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5668981",
+      "fornecedor": "LOCUS ADMINISTRADORA DE IMOVEIS",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5772405",
+      "fornecedor": "LOCUS ADMINISTRADORA DE IMOVEI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5609678",
+      "fornecedor": "CONDOMINIO EDIFICIO MERCANTIL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5806463",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1801",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6484210",
+      "fornecedor": "REDENTOR ADMINISTRACAO DE IMOVEIS LIMITADA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5941068",
+      "fornecedor": "CONDOMÍNIO DO ED. MASTER TOWER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6552613",
+      "fornecedor": "RICOPY COMÉRCIO, SERVIÇOS E LOCAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5992208",
+      "fornecedor": "CONDOMINIO EDIFICIO OLIMPO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5671387",
+      "fornecedor": "CONDOMINIO IBIRAPUERA CENTRAL PARK",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5673807",
+      "fornecedor": "ADMINISTRADORA IRMÃOS BESSA IMÓVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5489529",
+      "fornecedor": "COND EDIFICIO EUGENIA CAMPOS",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5617274",
+      "fornecedor": "ADMINISTRADORA IRMÃOS BESSA IMÓVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5739266",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6437069",
+      "fornecedor": "PREDIAL ADMINISTRADORA DE CONDOMÍNIOS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5643121",
+      "fornecedor": "ADMINISTRADORA IRMÃOS BESSA IMÓVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6290211",
+      "fornecedor": "CONDOMÍNIO ED. MARBLE ARC",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5556181",
+      "fornecedor": "REQUINTE ASSESSORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5530078",
+      "fornecedor": "IMOBILIARIA COLMEIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5729443",
+      "fornecedor": "PERSONA NEGÓCIOS  IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5901600",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1810",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6042195",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1810",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6679093",
+      "fornecedor": "RICOPY COMÉRCIO, SERVIÇOS E LOCAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6170627",
+      "fornecedor": "IMOBILIÁRIA CONTINENTAL LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5619569",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1810",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5749212",
+      "fornecedor": "ADMINISTRADORA IRMÃOS BESSA IMÓVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6156401",
+      "fornecedor": "IMOBILIÁRIA CONTINENTAL LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5721439",
+      "fornecedor": "AMARIL FRANKLIN ADMINISTRAÇÃO IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5497440",
+      "fornecedor": "PROTEL ADMINISTRAÇÃO IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5719843",
+      "fornecedor": "IMAGEM IMOBILIARIA E ADM GERAL DE EMPRESAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5679685",
+      "fornecedor": "PERSONA NEGÓCIOS  IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6197714",
+      "fornecedor": "IMOBILIÁRIA CONTINENTAL LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5806456",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1801",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6600529",
+      "fornecedor": "RICOPY COMÉRCIO, SERVIÇOS E LOCAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5732818",
+      "fornecedor": "IMAGEM IMOBILIARIA E ADM GERAL DE EMPRESAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6492732",
+      "fornecedor": "CONDOMINIO DO EDIFICIO EVOLUTION",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6272703",
+      "fornecedor": "GRALHA AZUL IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5490757",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7390738",
+      "fornecedor": "IMOBILIÁRIA FROSSARD ADMINISTRAÇÃO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5717958",
+      "fornecedor": "A PREDIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6043541",
+      "fornecedor": "IMOBILIÁRIA SENZALA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7285282",
+      "fornecedor": "CONDOMINIO DO EDIFICIO CARLA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6040338",
+      "fornecedor": "CONDOMINIO IBIRAPUERA CENTRAL PARK",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6063326",
+      "fornecedor": "PERSONA NEGÓCIOS  IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7451550",
+      "fornecedor": "IMOBILIÁRIA FROSSARD ADMINISTRAÇÃO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7366483",
+      "fornecedor": "CONDOMINIO DO EDIFICIO MARBLE ARCH",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6795143",
+      "fornecedor": "PLACAR IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6370478",
+      "fornecedor": "CONDOMÍNIO EDIFICO ITAPARICA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5723292",
+      "fornecedor": "ATIVA - ASSESSORIA IMOBILIARIA LTDA.",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5600973",
+      "fornecedor": "CONDOMINIO WALL STREET",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6956595",
+      "fornecedor": "RIZZO LOCACOES IMOBILIARIAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5503213",
+      "fornecedor": "PROTEL ADMINISTRAÇÃO IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6576019",
+      "fornecedor": "CONDOMINIO DO EDIFICIO DO OLIMPO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6013863",
+      "fornecedor": "IMOBILIÁRIA SENZALA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5599597",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5517287",
+      "fornecedor": "IMOBILIARIA RAZÃO LTDA.",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5624123",
+      "fornecedor": "FINANCIAL IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7224159",
+      "fornecedor": "IMOBILIÁRIA FROSSARD ADMINISTRAÇÃO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5599065",
+      "fornecedor": "CONDOMINIO DO EDIFICIO GUIMARRÃES TRADE",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6044858",
+      "fornecedor": "CONDOMÍNIO COMERCIAL EDIFÍCIO OFFICE CENTER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5747891",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5497437",
+      "fornecedor": "PROTEL ADMINISTRAÇÃO IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5778815",
+      "fornecedor": "CONDOMINIO IBIRAPUERA CENTRAL PARK",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5544417",
+      "fornecedor": "IMOBILIARIA RAZÃO LTDA.",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5576665",
+      "fornecedor": "REQUINTE ASSESSORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6765526",
+      "fornecedor": "AMARIL FRANKLIN ADMINISTRACAO IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5904081",
+      "fornecedor": "LOCUS ADMINISTRADORA DE IMOVEI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5739267",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5897286",
+      "fornecedor": "GRALHA AZUL IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5603815",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5673203",
+      "fornecedor": "IMAGEM IMOBILIARIA E ADM GERAL DE EMPRESAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7372828",
+      "fornecedor": "IMOBILIARIA FROSSARD ADMINISTRACAO LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5758593",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5729440",
+      "fornecedor": "PERSONA NEGÓCIOS  IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7050670",
+      "fornecedor": "CONDOMÍNIO EMPRESARIAL PEDRO BASSO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5524858",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5688813",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5465525",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5598123",
+      "fornecedor": "CONDOMINIO EDIFICIO OLIMPO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5480456",
+      "fornecedor": "CONDOMÍNIO PREMIER CENTER-BLOCO A",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5776924",
+      "fornecedor": "ADMINISTRADORA IRMÃOS BESSA IMÓVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5927562",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1810",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6593093",
+      "fornecedor": "CONDOMINIO WALL STREET",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5706185",
+      "fornecedor": "CONDOMINIO EDIFICIO MERCANTIL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7780834",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5491209",
+      "fornecedor": "CONDOMÍNIO PREMIER CENTER-BLOCO A",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7797771",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5699010",
+      "fornecedor": "CONDOMINIO IBIRAPUERA CENTRAL PARK",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5587238",
+      "fornecedor": "REQUINTE ASSESSORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7425762",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7451552",
+      "fornecedor": "IMOBILIÁRIA FROSSARD ADMINISTRAÇÃO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5834820",
+      "fornecedor": "CONDOMÍNIO EDIFICIO METROPOLIS EMPRESARIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5507884",
+      "fornecedor": "ADSECUR - CONSULTORIA IMOBILIARIA E CORRETORA DE SEGUROS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6429199",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1810",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6958334",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6403609",
+      "fornecedor": "SUBCONDOMINIO COMPLEXO EMPRESARIAL RM TRADE CENTER-AV. REPUBLICA DO LIBANO, 251",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7765872",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6645352",
+      "fornecedor": "RICOPY COMÉRCIO, SERVIÇOS E LOCAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5901604",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1810",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7264596",
+      "fornecedor": "ALFA PRINT LOCAÇÕES EIRELI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7303634",
+      "fornecedor": "MAXIPRED-ASSESSORIA PREDIAL LT",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5514600",
+      "fornecedor": "PLANESUL IMOBILIARIA LTDA ME",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5666072",
+      "fornecedor": "CONDOMINIO EDIFICIO MERCANTIL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5750705",
+      "fornecedor": "CONDOMINIO EDIFICIO MERCANTIL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5964163",
+      "fornecedor": "FINANCIAL IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6492292",
+      "fornecedor": "CREDITO REAL IMOVEIS E CONDOMINIOS S A",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7524653",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7487871",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6229508",
+      "fornecedor": "GRALHA AZUL IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7539817",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6704218",
+      "fornecedor": "IMOBILIARIA BENDER LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6058021",
+      "fornecedor": "CONDOMINIO EDIFICIO TRES PODERS",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5537319",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO LUCIANO COSTA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6111543",
+      "fornecedor": "IMOBILIÁRIA SENZALA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7353523",
+      "fornecedor": "IMOBILIÁRIA FROSSARD ADMINISTRAÇÃO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6008905",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1810",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6081423",
+      "fornecedor": "CONDOMINIO EDIFICIO OLIMPO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5736157",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO LUCIANO COSTA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7206047",
+      "fornecedor": "CONDOMINIO DO EDIFICIO MARBLE ARCH",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5730134",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7520686",
+      "fornecedor": "BARRETO BARRETO IMOBILIARIA LIMITADA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6034055",
+      "fornecedor": "CALIL COMERCIO E ADMINISTRACAO DE IMOVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6511039",
+      "fornecedor": "CONDOMINIO DO EDIFICIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5917074",
+      "fornecedor": "ADMINISTRADORA IMOBILIARIA ASSIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6797769",
+      "fornecedor": "IMOBILIÁRIA ROCHA & ROCHA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6936126",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO LUCIANO COSTA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6153475",
+      "fornecedor": "SEGURA IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6146379",
+      "fornecedor": "ACIR ADMINISTRADORA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5896297",
+      "fornecedor": "CONDOMINIO WALL STREET",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5799459",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6519333",
+      "fornecedor": "MORAIS DOS SANTOS EMPREENDIMENTOS E ADMINISTRACAO DE IMOVEIS PROPRIOS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5539870",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5480859",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO CARLA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5493884",
+      "fornecedor": "CONDOMINIO EDIFICIO MERCANTIL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6192301",
+      "fornecedor": "IMOBILIÁRIA MONTREAL LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7447181",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7035803",
+      "fornecedor": "GOLDEN IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5769927",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7235577",
+      "fornecedor": "HERLE- LOCAÇÕES E INCORPORAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7553832",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7428915",
+      "fornecedor": "RESIDENCIAL ADMINISTRAÇÃO E GESTÃO DE PROPRIEDADES IMOBILIARIAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7042940",
+      "fornecedor": "IMOBILIARIA MARKIZE LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5524951",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6520236",
+      "fornecedor": "CONDOMINIO DO EDIFICIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5527247",
+      "fornecedor": "CONDOMINIO EDIFICIO OLIMPO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5688815",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6218182",
+      "fornecedor": "IMOBILIÁRIA ALIANÇA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6625105",
+      "fornecedor": "CONTATO GESTÃO IMOBILIÁRIA E ADMINISTRAÇÃO ORGANIZACIONAL LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5577553",
+      "fornecedor": "IMOBILIARIA 2000 SA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5582645",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6429191",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1810",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5780533",
+      "fornecedor": "ADSECUR - CONSULTORIA IMOBILIARIA E CORRETORA DE SEGUROS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6105465",
+      "fornecedor": "CONDOMÍNIO DO ED. MASTER TOWER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5647321",
+      "fornecedor": "ADMINISTRADORA IRMÃOS BESSA IMÓVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5722205",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7398815",
+      "fornecedor": "ADMINISTRADORA IMOBILIARIA ASSIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7896741",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6312285",
+      "fornecedor": "JOÃO BATISTA MALDONADO- IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5726110",
+      "fornecedor": "CONDOMINIO IBIRAPUERA CENTRAL PARK",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5582651",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7733280",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6465437",
+      "fornecedor": "PALMARES ADMINISTRADORA DE IMOVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5465540",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5499859",
+      "fornecedor": "EDIFICIO A LUSITANIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5507888",
+      "fornecedor": "ADSECUR - CONSULTORIA IMOBILIARIA E CORRETORA DE SEGUROS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "8009163",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6130924",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6807296",
+      "fornecedor": "IMOBILIÁRIA ROCHA & ROCHA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6201866",
+      "fornecedor": "LOCUS ADMINISTRADORA DE IMOVEI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6081568",
+      "fornecedor": "EDIFICIO A LUSITANIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5629005",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6426532",
+      "fornecedor": "CONDOMÍNIO EDIFICIO ABSOLUT BUSINESS STYLE",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5722201",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5758155",
+      "fornecedor": "CONDOR HAIM ASSESSORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5490756",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5660726",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7065529",
+      "fornecedor": "AMARIL FRANKLIN ADMINISTRACAO IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6682434",
+      "fornecedor": "CONDOMINIO DO EDIFICIO CARLA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7997256",
+      "fornecedor": "RICOPY COMÉRCIO, SERVIÇOS E LOCAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5506079",
+      "fornecedor": "CONDOMINIO ELITE COMERCIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7956475",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6842998",
+      "fornecedor": "IMOBILIÁRIA ROCHA & ROCHA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5739866",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO TORQUE EMPRESARIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5722196",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6206470",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6566316",
+      "fornecedor": "CONDOMINIO WALL STREET",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6270687",
+      "fornecedor": "IMOBILIÁRIA ALIANÇA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6570712",
+      "fornecedor": "LEAL ADMINISTRADORA DE BENS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7458663",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6456744",
+      "fornecedor": "GRALHA AZUL IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6629409",
+      "fornecedor": "PREDIAL ADMINISTRADORA DE CONDOMINIOS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5507699",
+      "fornecedor": "CONDOMINIO EDIFICIO MERCANTIL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7539284",
+      "fornecedor": "ACIR ADMINISTRADORA DE CONDOMÍNIO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5548861",
+      "fornecedor": "ISAIAS IMOVEIS E CONSULTORIA IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "recibo",
+      "motivo": "Recibo autêntico de aluguel/quitação (sem boleto)"
+    },
+    {
+      "doc_id": "6099242",
+      "fornecedor": "PERSONA NEGÓCIOS  IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5660700",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6707974",
+      "fornecedor": "IMOBILIÁRIA ROCHA & ROCHA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6621260",
+      "fornecedor": "CONDOMÍNIO EVOLUTION",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6625759",
+      "fornecedor": "RICOPY COMÉRCIO, SERVIÇOS E LOCAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5508816",
+      "fornecedor": "IMOBILIARIA RAZÃO LTDA.",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7606634",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7993644",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6599626",
+      "fornecedor": "AMARIL FRANKLIN ADMINISTRACAO IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6745332",
+      "fornecedor": "PREDIAL ADMINISTRADORA DE CONDOMINIOS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7714432",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6453048",
+      "fornecedor": "AICA - ADMINISTRAÇÃO IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5493340",
+      "fornecedor": "RIVIERA ADMINISTRADORA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5834832",
+      "fornecedor": "CONDOMÍNIO EDIFICIO METROPOLIS EMPRESARIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6121610",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO TORQUE EMPRESARIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7925957",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5716897",
+      "fornecedor": "EDIFICIO A LUSITANIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6873286",
+      "fornecedor": "IMOBILIARIA SANTAAMERICA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6246698",
+      "fornecedor": "CONDOMINIO EDIFICIO TRES PODERS",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6544128",
+      "fornecedor": "ACIR ADMINISTRADORA CONDOMÍNIO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6034095",
+      "fornecedor": "CONDOMÍNIO - EXECUTIVO MANHATTAN",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5816630",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO VICTÓRIA OFFICE TOWER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7275888",
+      "fornecedor": "MARTINELLI NOVAS LOCAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5895712",
+      "fornecedor": "PERSONA NEGÓCIOS  IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7059324",
+      "fornecedor": "CONTATO GESTÃO IMOBILIÁRIA E ADMINISTRAÇÃO ORGANIZACIONAL LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6492286",
+      "fornecedor": "CONDOMINIO EDIFICIO GUIMARAES TRADE",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6671599",
+      "fornecedor": "IMOBILIÁRIA ROCHA & ROCHA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5839007",
+      "fornecedor": "SEGURA IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7415700",
+      "fornecedor": "CREDITO REAL, IMO. E CONDOMÍNIOS SA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5936578",
+      "fornecedor": "FINANCIAL IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7129215",
+      "fornecedor": "VJSA ADM. DE CONDOMINIOS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5644805",
+      "fornecedor": "JOAO GRANADO IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6070137",
+      "fornecedor": "PREDIAL ADMINISTRADORA DE CONDOMÍNIOS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7908121",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7746025",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5982859",
+      "fornecedor": "AMARIL FRANKLIN ADMINISTRAÇÃO IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6715742",
+      "fornecedor": "MAXIPRED-ASSESSORIA PREDIAL LT",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6671597",
+      "fornecedor": "IMOBILIÁRIA ROCHA & ROCHA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5480447",
+      "fornecedor": "CONDOMÍNIO PREMIER CENTER-BLOCO A",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5988696",
+      "fornecedor": "ADSECUR - CONSULTORIA IMOBILIARIA E CORRETORA DE SEGUROS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6065111",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO EVOLUTION 1810",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7177134",
+      "fornecedor": "IMOBILIÁRIA FROSSARD ADMINISTRAÇÃO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5723198",
+      "fornecedor": "ADMINISTRADORA IRMÃOS BESSA IMÓVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5647607",
+      "fornecedor": "CONDOMINIO IBIRAPUERA CENTRAL PARK",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7851098",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7832042",
+      "fornecedor": "AMARIL FRANKLIN ADMINISTRACAO IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5758612",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5857262",
+      "fornecedor": "CONDOMINIO EDIF. EMPR. ORLANDO GOMES",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5647908",
+      "fornecedor": "CONDOMINIO DO EDIFICIO GUIMARRÃES TRADE",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6819545",
+      "fornecedor": "PLACAR IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6906859",
+      "fornecedor": "IMOBILIARIA MARKIZE LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7813375",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5590357",
+      "fornecedor": "PERSONA NEGÓCIOS  IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7114370",
+      "fornecedor": "CONDOMINIO CENTRO EMPRESARIAL IGUATEMI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6899306",
+      "fornecedor": "FLEISCHMAN ASSESSORIA IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6974120",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7506525",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6497887",
+      "fornecedor": "CONDOMINIO DO EDIFICIO CLUBE DE ENGENHARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7593459",
+      "fornecedor": "CONDOMINIO CENTRO EMPRESARIAL IGUATEMI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7418087",
+      "fornecedor": "CREDITO REAL, IMO. E CONDOMÍNIOS SA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5535598",
+      "fornecedor": "CONDOMINIO EMPRESARIAL CIDADE JARDIM",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6143892",
+      "fornecedor": "ADMINISTRADORA PARANA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5778543",
+      "fornecedor": "ATIVA - ASSESSORIA IMOBILIARIA LTDA.",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5983983",
+      "fornecedor": "OLIVEIRA E SOUSA IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7586131",
+      "fornecedor": "NELSON BENEDITO CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5609639",
+      "fornecedor": "PROTEL ADMINISTRAÇÃO IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6487163",
+      "fornecedor": "AUXILIADORA PREDIAL LTDA. GRUPO AUXILIADORA PREDIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6010023",
+      "fornecedor": "PREDIAL ADMINISTRADORA DE CONDOMÍNIOS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5791161",
+      "fornecedor": "CONDOMINIO EMPRESARIAL ADRIANOPOLIS",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6976047",
+      "fornecedor": "AUXILIADORA PREDIAL LTDA. GRUPO AUXILIADORA PREDIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5568490",
+      "fornecedor": "PACTO ADMINISTRADORA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6080362",
+      "fornecedor": "CONDOMÍNIO RAC'Z CENTER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6139851",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5470969",
+      "fornecedor": "CONST E IMOBILIARIA ALDEIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7483048",
+      "fornecedor": "CREDITO REAL, IMO. E CONDOMÍNIOS SA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6189885",
+      "fornecedor": "JOÃO BATISTA MALDONADO- IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5457222",
+      "fornecedor": "PERSONA NEGÓCIOS  IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6389576",
+      "fornecedor": "CONDOR HAIM ASSESSORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7050702",
+      "fornecedor": "CONDOMÍNIO NAVARRO BUILDING",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5595857",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO SUPER CENTER VENÂNCIO 2000",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5973549",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5834482",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO VICTÓRIA OFFICE TOWER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5758311",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO CARLA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6597422",
+      "fornecedor": "LEAL ADMINISTRADORA DE BENS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5524953",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5524907",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5707847",
+      "fornecedor": "CONDOMINIO PROSPERE OFFICE HARMONY",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6443744",
+      "fornecedor": "PACTO ADMINISTRADORA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6779382",
+      "fornecedor": "AMARIL FRANKLIN ADMINISTRACAO IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5593879",
+      "fornecedor": "LOCUS ADMINISTRADORA DE IMOVEI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6023428",
+      "fornecedor": "CONDOMÍNIO RAC'Z CENTER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6381946",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO CLUBE DE ENGENHARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6807429",
+      "fornecedor": "IMOBILIARIA ZIBELL LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5702065",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5671419",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6713041",
+      "fornecedor": "RIZZO LOCACOES IMOBILIARIAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7567662",
+      "fornecedor": "IMOBILIÁRIA PLENA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6551742",
+      "fornecedor": "CONDOMINIO DO EDIFICIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5467381",
+      "fornecedor": "AUXILIADORA PREDIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6343911",
+      "fornecedor": "AICA - ADMINISTRAÇÃO IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6565575",
+      "fornecedor": "LELLO CONDOMÍNIOS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6304455",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO BRAFER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5471051",
+      "fornecedor": "ISAIAS IMOVEIS E CONSULTORIA IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6544419",
+      "fornecedor": "CONDOMINIO DO EDIFICIO EVOLUTION",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6698057",
+      "fornecedor": "CONDOMINIO EDIFICIO EDUARDO SCHADRACK",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7302152",
+      "fornecedor": "IMOBILIÁRIA SÃO BERNARDO ADMINISTRAÇÃO DE BENS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6651676",
+      "fornecedor": "SANCRUZA CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6936417",
+      "fornecedor": "CONDOMÍNIO NAVARRO BUILDING",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6890213",
+      "fornecedor": "CONDOMÍNIO EMPRESARIAL ENGENHEIRO JOSÉ CAMILO BRITO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5733130",
+      "fornecedor": "JOAO GRANADO IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6152366",
+      "fornecedor": "AICA - ADMINISTRAÇÃO IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6235449",
+      "fornecedor": "CONDOMÍNIO DO ED. MASTER TOWER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5785265",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO LUCIANO COSTA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6070452",
+      "fornecedor": "CONDOMÍNIO DO ED BELEM OFFICE CENTER",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7166712",
+      "fornecedor": "RMJE - ADMINISTRADORA E INCORPORADORA DE BENS LTDA",
+      "subcota": "SERVIÇOS POSTAIS",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5883553",
+      "fornecedor": "LEONARDO RIZZO PARTICIPAÇÕES IMOBILIARIAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6519625",
+      "fornecedor": "AICA ADMINISTRACAO IMOBILIARIA EIRELI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5739809",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO TORQUE EMPRESARIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5958380",
+      "fornecedor": "SEGURA IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5654794",
+      "fornecedor": "AUXILIADORA PREDIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7282199",
+      "fornecedor": "ILUMIDIA MIDIA EXTERIOR E LOCAÇÕES EIRELI-ME",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7230893",
+      "fornecedor": "CONDOMINIO CENTRO EMPRESARIAL IGUATEMI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5465548",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5590986",
+      "fornecedor": "ISAIAS IMOVEIS E CONSULTORIA IMOBILIÁRIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5762460",
+      "fornecedor": "EDIFICIO A LUSITANIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5895413",
+      "fornecedor": "COND. DO ED. PETRO TOWER BUSSINESS - SALA 911",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6673447",
+      "fornecedor": "LOCARFLEX LOCAÇÕES DE VEÍCULOS EIRELI ME",
+      "subcota": "LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7677865",
+      "fornecedor": "CENTRO EMPRESARIAL MEDITERRANEO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5524955",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6512608",
+      "fornecedor": "AUXILIADORA PREDIAL LTDA. GRUPO AUXILIADORA PREDIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6278354",
+      "fornecedor": "NEON CONDOMINIOS",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7395474",
+      "fornecedor": "AMARIL FRANKLIN ADMINISTRACAO IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7025309",
+      "fornecedor": "CONDOMÍNIO EDIFÍCIO COLOMBO",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6472002",
+      "fornecedor": "REDENTOR ADMINISTRACAO DE IMOVEIS LIMITADA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6434272",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO CLUBE DE ENGENHARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6125993",
+      "fornecedor": "IMAGEM IMOBILIARIA E ADM GERAL DE EMPRESAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6243860",
+      "fornecedor": "GRALHA AZUL IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7343143",
+      "fornecedor": "CONDOMINIO DO EDIFICIO MARBLE ARCH",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5761434",
+      "fornecedor": "CONDOMÍNIO DO EDIFÍCIO TORQUE EMPRESARIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6278906",
+      "fornecedor": "IMAGEM IMOBILIARIA E ADM GERAL DE EMPRESAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5604585",
+      "fornecedor": "SEGURA IMOBILIARIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6066545",
+      "fornecedor": "CBM LOCAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6142081",
+      "fornecedor": "IMAGEM IMOBILIARIA E ADM GERAL DE EMPRESAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5536866",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6306672",
+      "fornecedor": "ACIR ADMINISTRADORA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5913223",
+      "fornecedor": "GRALHA AZUL IMOBILIÁRIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5599595",
+      "fornecedor": "EDIFICIO DE PAOLI",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6552034",
+      "fornecedor": "SANCRUZA CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5927734",
+      "fornecedor": "GALVÃO LOCAÇÕES",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6470163",
+      "fornecedor": "FREIRE CONSULTORIA IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6173106",
+      "fornecedor": "LEONARDO RIZZO PARTICIPAÇÕES IMOBILIARIAS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6252824",
+      "fornecedor": "ADMINISTRADORA IRMÃOS BESSA IMÓVEIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7311672",
+      "fornecedor": "EDIFICIO EMPRESARIAL DELMIRO GOUVEIA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7391935",
+      "fornecedor": "ADMINISTRADORA IMOBILIARIA ASSIS LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6698054",
+      "fornecedor": "CONDOMINIO EDIFICIO EDUARDO SCHADRACK",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6978382",
+      "fornecedor": "RICOPY COMÉRCIO, SERVIÇOS E LOCAÇÕES LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5593055",
+      "fornecedor": "A PREDIAL",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7034104",
+      "fornecedor": "AMARIL FRANKLIN ADMINISTRACAO IMOBILIARIA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "6359338",
+      "fornecedor": "CONDOMINIO ED.BELVEDERE TOWER II",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5547374",
+      "fornecedor": "CD-  INFORMATICA EMPREENDIMENTOS",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5608489",
+      "fornecedor": "LOCAWEB SERVIÇOS DE INTERNET S/A",
+      "subcota": "DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "5679278",
+      "fornecedor": "SKY BRASIL SERVIÇOS S/A",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7548158",
+      "fornecedor": "IMOBILIÁRIA PLENA LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    },
+    {
+      "doc_id": "7699027",
+      "fornecedor": "TI85 CONSULTORIA EM TECNOLOGIA DA INFORMAÇÃO LTDA",
+      "subcota": "MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR",
+      "classe_anterior": "recibo",
+      "classe_nova": "boleto",
+      "motivo": "Boleto bancário / taxa condominial com banco, cedente e vencimento"
+    }
+  ]
+}
