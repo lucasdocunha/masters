@@ -227,6 +227,7 @@ async function pageLabelingMode(mode, cls, queue) {
   const names = review.classes.map((c) => c.nome);
   if (!names.includes(cls)) { location.replace(`#/${mode === "pasta" ? "pasta" : "rotular"}/${names[0]}`); return; }
   const classes = latent.classes.filter((c) => c.id !== 0).map((c) => c.name);
+  app.classList.add("is-wide");
   leaveLabeling = mode === "pasta"
     ? labeling.mountFolderMode(app, review, cls)
     : labeling.mountDocMode(app, review, [...classes, ...names.filter((n) => !classes.includes(n)), "_unmapped"], cls, queue);
@@ -375,7 +376,7 @@ async function route() {
   leaveLatent = null;
   leaveLabeling?.();
   leaveLabeling = null;
-  app.classList.remove("is-latent");
+  app.classList.remove("is-latent", "is-wide");
   markNav();
   window.scrollTo({ top: 0 });
   for (const [re, fn] of ROUTES) {

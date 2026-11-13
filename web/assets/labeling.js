@@ -6,7 +6,8 @@ const PENDING_KEY = "ceap-rotulagem-pendentes";
 const REJECTED_KEY = "ceap-pasta-rejeitados";
 const UNMAPPED = "_unmapped";
 const AUTO_FLUSH = 25;
-const FOLDER_PAGE = 60;
+const PAGE_SIZES = [60, 120, 240, 480];
+const PAGE_SIZE_KEY = "ceap-pasta-por-pagina";
 const KEYS = "1234567890qwertyuiop";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -126,7 +127,7 @@ function thumbnail(url, width) {
           waiting.shift()?.();
         }
       });
-      if (running < 4) waiting.shift()?.();
+      if (running < 6) waiting.shift()?.();
     }));
   }
   return thumbs.get(url);
@@ -294,13 +295,22 @@ export function mountFolderMode(app, index, cls) {
   const rejectedEver = new Set(readJson(rejectedKey, []));
   let all = [], saved = new Map(), page = [], marked = new Set(), message = "", busy = false;
   let observer = null;
+  let pageSize = PAGE_SIZES.includes(readJson(PAGE_SIZE_KEY, 120)) ? readJson(PAGE_SIZE_KEY, 120) : 120;
 
   app.innerHTML = shell(index, "pasta", cls, `<div class="toolbar rot-folder-bar">
       <select id="rot-class" aria-label="Classe">${classOptions(index, cls)}</select>
+      <select id="rot-size" aria-label="Documentos por página">${PAGE_SIZES.map((n) => `<option value="${n}" ${n === pageSize ? "selected" : ""}>${n} por página</option>`).join("")}</select>
       <span class="muted small" id="rot-left"></span>
     </div>
     <div id="rot-folder"><p class="muted">Carregando fila…</p></div>`);
   app.querySelector("#rot-class").addEventListener("change", (e) => { location.hash = `#/pasta/${e.target.value}`; });
+  app.querySelector("#rot-size").addEventListener("change", (e) => {
+    if (marked.size) { message = "Confirme ou pule a página antes de mudar o tamanho."; e.target.value = String(pageSize); draw(); return; }
+    pageSize = Number(e.target.value);
+    writeJson(PAGE_SIZE_KEY, pageSize);
+    message = "";
+    nextPage();
+  });
   const root = app.querySelector("#rot-folder");
 
   const open = (doc) => {
@@ -314,7 +324,7 @@ export function mountFolderMode(app, index, cls) {
 
   function nextPage() {
     const remaining = all.filter((d) => !saved.has(d.id) && !rejectedEver.has(d.id) && !pending.has(d.id));
-    page = remaining.slice(0, FOLDER_PAGE);
+    page = remaining.slice(0, pageSize);
     marked = new Set();
     app.querySelector("#rot-left").textContent = `${fmt(remaining.length)} candidatos restantes de ${fmt(all.length)}`;
     draw();
@@ -368,7 +378,7 @@ export function mountFolderMode(app, index, cls) {
         const slot = entry.target.querySelector(".rot-thumb");
         const url = safeUrl(doc?.url);
         if (!url) { slot.innerHTML = `<span class="muted small">sem PDF</span>`; continue; }
-        thumbnail(url, 220).then((src) => { slot.innerHTML = `<img src="${src}" alt="Página 1 do documento ${esc(doc.id)}">`; })
+        thumbnail(url, 200).then((src) => { slot.innerHTML = `<img src="${src}" alt="Página 1 do documento ${esc(doc.id)}">`; })
           .catch(() => { slot.innerHTML = `<span class="muted small">sem miniatura</span>`; });
       }
     }, { rootMargin: "400px" });

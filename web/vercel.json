@@ -9,6 +9,15 @@
   ],
   "headers": [
     {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
       "source": "/data/review/(.*)",
       "headers": [
         {
@@ -46,15 +55,6 @@
     },
     {
       "source": "/data/latent/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
-      ]
-    },
-    {
-      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

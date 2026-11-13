@@ -172,7 +172,7 @@ pre{background:var(--surface);border:1px solid var(--line);border-radius:var(--r
 .rot-modes a[aria-current=true]{background:var(--accent);color:var(--accent-ink)}
 .rot-preview{margin:0 0 16px;font-size:14px}
 kbd{font-family:var(--mono);font-size:12px;line-height:18px;min-width:20px;padding:0 4px;border:1px solid var(--line-strong);border-radius:var(--r-sm);color:var(--muted);text-align:center;display:inline-block}
-.rot-doc{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;min-height:calc(100vh - 260px)}
+.rot-doc{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:16px;min-height:calc(100vh - 260px)}
 .rot-viewer{border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--surface);min-height:520px}
 .rot-viewer iframe{display:block;width:100%;height:100%;min-height:calc(100vh - 260px);border:0;background:#fff}
 .rot-side{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px 20px;display:flex;flex-direction:column;gap:12px;min-width:0}
@@ -196,11 +196,12 @@ kbd{font-family:var(--mono);font-size:12px;line-height:18px;min-width:20px;paddi
 .rot-pass input{font:inherit;font-size:14px;height:40px;padding:0 12px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--bg);color:var(--ink);min-width:0}
 .chip--pending{background:var(--accent);color:var(--accent-ink)}
 .chip--warn{background:rgba(255,194,71,.16);color:#ffc247}
-.rot-folder-bar{justify-content:space-between}
+.rot-folder-bar #rot-left{margin-left:auto}
 .rot-actions{position:sticky;top:0;z-index:2;display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:12px 0;margin-bottom:8px;background:var(--bg);border-bottom:1px solid var(--line)}
 .rot-actions .rot-msg{flex-basis:100%}
 .rot-actions .rot-pass{flex-basis:100%;max-width:420px}
-.rot-grid{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+.main.is-wide{max-width:none}
+.rot-grid{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
 .rot-card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:border-color .15s var(--ease),opacity .15s var(--ease)}
 .rot-card:hover{border-color:var(--line-strong)}
 .rot-card-hit{display:flex;flex-direction:column;width:100%;padding:0;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}
