@@ -21,7 +21,7 @@ def main() -> None:
         ROOT_DIR / "web/data/latent",
         csv_path=args.csv,
         raw_dir=ROOT_DIR / "data/raw",
-        history_path=ROOT_DIR / "data/models/annotations_history.json",
+        history_path=ROOT_DIR / "data/rotulos",
     )
     print("Espaço latente gerado em web/data/latent/:")
     for key, value in stats.items():

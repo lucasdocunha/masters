@@ -8,7 +8,6 @@ from dados.web.latent import (
     build_latent_assets,
     doc_id_from,
     load_candidates,
-    merge_corrections,
     read_points_csv,
     reconstruct_points,
 )
@@ -154,20 +153,6 @@ def test_build_reconstroi_sem_csv_e_grava_candidatos(tmp_path) -> None:
     assert _classes(out) == [1, 0, 1]
     rows = json.loads(gzip.decompress((out / "meta/00000.json.gz").read_bytes()))
     assert rows[0] == ["10", "F10", "S", 2020, url.format(10)]
-
-
-def test_correcoes_vale_a_mais_recente_e_unmapped_remove() -> None:
-    events = [
-        {"id": "1", "class": "uber", "ts": 2},
-        {"id": "1", "class": "nfe", "ts": 1},
-        {"id": "2", "class": "_unmapped", "ts": 1},
-        {"id": "3", "class": "nfse", "ts": 1},
-        {"id": "4", "class": "nfe", "ts": 1},
-    ]
-    result = merge_corrections({"1": "recibo", "2": "boleto", "4": "nfe"}, events)
-    assert result["history"] == {"1": "uber", "3": "nfse", "4": "nfe"}
-    assert {"id": "2", "de": "boleto", "para": None} in result["changes"]
-    assert len(result["changes"]) == 3
 
 
 @pytest.mark.parametrize("value,expected", [("123", "123"), ("123.pdf", "123"), ("https://x/1/2020/55.PDF", "55"), ("", None)])

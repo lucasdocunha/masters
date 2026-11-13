@@ -101,6 +101,8 @@ Site estático, sem framework nem etapa de build. Mostra:
 - **Documentos** — busca e filtro por classe nos 25.716 documentos do dataset de rotulagem.
 - **Espaço latente** — projeção 3D (Three.js) dos 1,34 M pontos nos quatro espaços: DINOv2, ColPali, combinado e métrico.
 - **Tarefas** — anotações por classe e status do dataset.
+- **Rotular** — um documento por vez (PDF + botões/atalhos de classe), em filas por classe: candidatos mais próximos do centróide, auditoria (rotulados menos típicos) e os tirados da pasta.
+- **Pasta por classe** — grade com as miniaturas dos candidatos mais próximos do centróide; tire os que não são da classe e confirme o resto.
 - **Resultados** — relatórios de avaliação e benchmark.
 - **Modelos** — espaços comparados e artefatos treinados.
 - **Logs** — últimas 200 linhas de `slurm-*.out` e `*.log`.
@@ -120,6 +122,38 @@ O site foi desenhado para carregar pouco e sob demanda:
 As miniaturas são geradas a partir dos PNGs originais (187 MB). `data/processed/web_legacy/` guarda os arquivos de origem dos pontos do espaço latente.
 
 Para publicar no Vercel: `uv run python scripts/web/deploy_to_vercel.py`.
+
+### Rotulagem pelo site
+
+A fonte da verdade dos rótulos é o CSV dos documentos rotulados, versionado em partes:
+`data/rotulos/parte_NNNN.csv`, uma por faixa de 25.000 `doc_id` (~1 MB cada; a API do GitHub recusa arquivos
+acima de ~40 MB). O site grava nelas direto no GitHub: cada "Salvar no git" / "Confirmar" vira **um commit**
+que altera só as partes afetadas e acrescenta as mudanças em `data/labeling/correcoes_site.csv` (log de
+auditoria, também usado para o site mostrar as classes novas antes do próximo deploy). Depois de rotular,
+`git pull` e, se quiser o arquivo único, `uv run python scripts/export_dataset_csv.py --juntar`
+(gera `data/ceap_documentos_rotulados.csv`, não versionado).
+
+| Variável no Vercel | Valor |
+| :--- | :--- |
+| `EDITOR_PASSWORD` | senha pedida no site |
+| `GITHUB_TOKEN` | token fine-grained com só *Contents: read and write* neste repositório |
+| `GITHUB_REPO` | `lucasdocunha/masters` |
+| `GITHUB_BRANCH` | `main` (ou uma branch de teste) |
+
+```bash
+# Filas de revisão (no cluster, onde estão os embeddings métricos 128-D); depois publique o site
+uv run python scripts/labeling/build_review_queues.py
+uv run python scripts/labeling/build_review_queues.py --coords-3d   # prévia com as coordenadas 3D do site
+
+# Recriar as partes a partir do histórico antigo (sobrescreve classes vindas do site!)
+uv run python scripts/export_dataset_csv.py --do-historico
+
+# Espaço latente com as classes das partes
+uv run python scripts/web/build_latent_assets.py
+```
+
+Os PDFs vêm da Câmara: o modo documento os mostra direto; as miniaturas da pasta passam por `api/pdf`
+(só aceita URLs de comprovantes da cota) e são desenhadas com pdf.js.
 
 ---
 

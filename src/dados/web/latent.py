@@ -20,7 +20,6 @@ import numpy as np
 
 SHARD_SIZE = 5000
 MAX_CANDIDATES = 8
-UNMAPPED_EVENT = "_unmapped"
 PDF_PATH = re.compile(r"/publ/(\d+)/(\d+)/(\d+)\.pdf")
 UNMAPPED = "Não Mapeado"
 ID_COLUMNS = ("idDocumento", "id_documento", "doc_id", "id", "doc_name", "name", "arquivo", "file")
@@ -226,26 +225,6 @@ def write_shards(points: list[dict[str, Any] | None], out_dir: Path) -> int:
     return shards
 
 
-def merge_corrections(history: dict[str, str], events: Iterable[dict[str, Any]]) -> dict[str, Any]:
-    """Aplica o evento mais recente de cada documento ao histórico; `_unmapped` remove o rótulo."""
-    latest: dict[str, dict[str, Any]] = {}
-    for event in sorted(events, key=lambda e: e["ts"]):
-        latest[event["id"]] = event
-    merged = dict(history)
-    changes = []
-    for doc_id, event in latest.items():
-        new = None if event["class"] == UNMAPPED_EVENT else event["class"]
-        old = merged.get(doc_id)
-        if new == old:
-            continue
-        changes.append({"id": doc_id, "de": old, "para": new})
-        if new is None:
-            del merged[doc_id]
-        else:
-            merged[doc_id] = new
-    return {"history": merged, "changes": changes}
-
-
 def build_latent_assets(
     legacy_dir: Path, dataset_path: Path, out_dir: Path, *,
     csv_path: Path | None = None, raw_dir: Path | None = None, history_path: Path | None = None,
@@ -271,7 +250,13 @@ def build_latent_assets(
     elif raw_dir:
         points, links = reconstruct_points(load_candidates(raw_dir), known, n_points)
     if points and history_path:
-        classes = classes_from_history(points, json.loads(history_path.read_text(encoding="utf-8")), palette)
+        # As partes versionadas (data/rotulos/) são a fonte da verdade; o JSON é o formato antigo.
+        if history_path.is_dir() or history_path.suffix == ".csv":
+            from dados.labeling.labels_csv import read_labels_csv
+            history = read_labels_csv(history_path)
+        else:
+            history = json.loads(history_path.read_text(encoding="utf-8"))
+        classes = classes_from_history(points, history, palette)
 
     out_dir.mkdir(parents=True, exist_ok=True)
     for model in meta["models"].values():

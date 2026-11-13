@@ -481,16 +481,17 @@ export function mountLatent(root, index, getDataset) {
         refreshLegend();
         let failure = null;
         try {
-          const response = await fetch("api/corrections", {
+          const meta = { fornecedor: doc.fornecedor, subcota: doc.subcota, ano: Number(doc.ano) || undefined, url: safeUrl(doc.url) ?? undefined };
+          const response = await fetch("api/labels", {
             method: "POST", signal, headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ password, id: doc.id, point, class: apiClass(target) }),
+            body: JSON.stringify({ password, changes: [{ id: doc.id, point, class: apiClass(target), mode: "latente", meta }] }),
           });
           if (response.status === 401) writePassword(null);
           if (!response.ok) failure = (await response.json().catch(() => null))?.error ?? "Não foi possível salvar.";
           else writePassword(password);
         } catch (err) {
           if (signal.aborted) return;
-          failure = "Sem conexão com o serviço de correções.";
+          failure = "Sem conexão com o serviço de rótulos.";
         }
         if (failure) setPointClass(point, previous);
         refreshLegend();
@@ -684,8 +685,8 @@ export function mountLatent(root, index, getDataset) {
     $("lat-reset").addEventListener("click", () => flyTo(new Vector3(), HOME.clone()));
     if (matchMedia("(max-width: 760px)").matches) $("lat-legend").open = false;
 
-    // Correções gravadas: vale o evento mais recente de cada documento.
-    fetch("api/corrections", { signal }).then((r) => (r.ok ? r.json() : null)).then((data) => {
+    // Rótulos gravados pelo site (log no git): vale o evento mais recente de cada documento.
+    fetch("api/labels", { signal, cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((data) => {
       if (!data) return;
       const idByApiName = new Map(index.classes.map((c) => [apiClass(c), c.id]));
       const latest = new Map();
