@@ -13,8 +13,10 @@ Deep Metric Learning (ArcFace / Additive Angular Margin) para Espaço Latente CE
 
 from dados.config import ROOT_DIR
 import base64
+import gzip
 import json
 import math
+import subprocess
 import sys
 import time
 import zlib
@@ -906,20 +908,43 @@ def main():
 
     # 8. Sincronização automática com a aplicação Web 3D e Deploy no Vercel
     print("\n7. Sincronizando dados com o Web App 3D e atualizando Vercel...")
-    sync_script = BASE_DIR / "scripts" / "web" / "build_and_sync_web_app.py"
-    if not sync_script.exists():
-        sync_script = BASE_DIR / "scripts" / "build_and_sync_web_app.py"
+    gz_coords = gzip.compress(coord_bytes, compresslevel=6)
+    web_latent_dir = BASE_DIR / "web" / "data" / "latent"
+    legacy_dir = BASE_DIR / "data" / "processed" / "web_legacy"
+    if legacy_dir.exists():
+        (legacy_dir / "coords_metric.bin.gz").write_bytes(gz_coords)
+    if web_latent_dir.exists():
+        (web_latent_dir / "coords_metric.bin.gz").write_bytes(gz_coords)
+    print(f"   -> Coordenadas 3D compactadas salvas ({len(gz_coords)/(1024*1024):.2f} MB)")
+
+    # Executar build_latent_assets para atualizar classes, index.json e shards
+    build_latent_script = BASE_DIR / "scripts" / "web" / "build_latent_assets.py"
+    if build_latent_script.exists():
+        print("   -> Executando build_latent_assets.py...")
+        subprocess.run([sys.executable, str(build_latent_script)], check=False)
+        # Garantir que coords_metric.bin.gz novo não seja sobrescrito pelo legado
+        if web_latent_dir.exists():
+            (web_latent_dir / "coords_metric.bin.gz").write_bytes(gz_coords)
+
+    # Atualizar models.json
+    try:
+        from dados.config import MODELS_DIR
+        from dados.web.site import build_models
+        models_info = build_models(MODELS_DIR, HISTORY_PATH)
+        models_json_path = BASE_DIR / "web" / "data" / "models.json"
+        with open(models_json_path, "w", encoding="utf-8") as f:
+            json.dump(models_info, f, ensure_ascii=False)
+        print(f"   -> web/data/models.json atualizado com {models_info['annotations']['total']:,} anotações em {len(models_info['annotations']['by_class'])} classes!")
+    except Exception as e:
+        print(f"   Aviso ao atualizar models.json: {e}")
 
     deploy_script = BASE_DIR / "scripts" / "web" / "deploy_to_vercel.py"
     if not deploy_script.exists():
         deploy_script = BASE_DIR / "scripts" / "deploy_to_vercel.py"
 
-    if sync_script.exists():
-        import subprocess
-        subprocess.run([sys.executable, str(sync_script)], check=False)
-        if deploy_script.exists():
-            print("   -> Disparando deploy automático na CDN do Vercel...")
-            subprocess.run([sys.executable, str(deploy_script)], check=False)
+    if deploy_script.exists():
+        print("   -> Disparando deploy automático na CDN do Vercel...")
+        subprocess.run([sys.executable, str(deploy_script)], check=False)
 
     print(f"\n=== SUCESSO TOTAL EM {time.time()-t_global:.1f} SEGUNDOS! ===")
 
