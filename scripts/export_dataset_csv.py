@@ -1,251 +1,71 @@
-#!/home/lucas.ocunha/masters/.venv_ocr/bin/python3
-"""
-Gera os arquivos .CSV solicitados com todos os documentos do CEAP:
-Colunas:
-  - doc_id: Identificador numérico do documento
-  - caminho_arquivo: Caminho absoluto do arquivo PDF no disco
-  - link_documento: URL oficial pública na Câmara dos Deputados
-  - arquivo_json_origem: Caminho do arquivo JSON anual de onde veio o registro
-  - metadados_json: Objeto JSON compacto com os dados da despesa (fornecedor, CNPJ/CPF, valor, subcota, parlamentar)
-  - ano: Ano da despesa
-  - classe_mapeada: Classe atribuída no processo de anotação/metric learning (ou 'Não Mapeado')
-  - status: 'rotulado' ou 'nao_mapeado'
+"""Gera/atualiza os rótulos versionados (data/rotulos/parte_NNNN.csv) e, se pedido, o CSV único.
 
-Saídas geradas:
-  1. data/ceap_documentos_completo.csv (~1.40M linhas - universo total)
-  2. data/ceap_documentos_rotulados.csv (~61.9k linhas - apenas os já mapeados)
-  3. Symlinks convenientes no Desktop do usuário para acesso imediato.
+As partes são a fonte da verdade dos rótulos: o site grava nelas direto pelo GitHub. Por isso, quando
+elas já existem, este script só acrescenta metadados de documentos novos e nunca troca classes vindas do site.
+
+Uso (a partir da raiz do repositório):
+    uv run python scripts/export_dataset_csv.py                  # completa metadados faltantes nas partes
+    uv run python scripts/export_dataset_csv.py --juntar         # também junta tudo em data/ceap_documentos_rotulados.csv
+    uv run python scripts/export_dataset_csv.py --do-historico   # (re)cria as partes a partir de annotations_history.json
+    uv run python scripts/export_dataset_csv.py --completo       # também gera data/ceap_documentos_completo.csv
+                                                                 # (todos os PDFs em CEAP_PDF_DIR)
+Os CSVs únicos não são versionados.
 """
 
-import os
-import sys
-import glob
-import json
-import time
+import argparse
 import csv
-from pathlib import Path
+import json
+import os
 
-BASE_DIR = Path("/home/lucas.ocunha/masters")
-DATA_DIR = BASE_DIR / "data"
-RAW_DIR = DATA_DIR / "raw"
-PDF_DIR = Path("/media/ssd2/datasets/CEAP")
-DESKTOP_DIR = Path("/home/lucas.ocunha/Desktop")
+from dados.config import DATA_DIR, MODELS_DIR, PDF_DIR, RAW_DIR
+from dados.labeling.labels_csv import (
+    HEADERS, build_rows, doc_key, load_raw_metadata, make_row, normalize_history, read_label_rows, update_rows,
+    write_labels_csv, write_labels_dir,
+)
 
-HISTORY_FILE = BASE_DIR / "data" / "models" / "annotations_history.json"
-LOOKUP_FILE = DATA_DIR / "pdf_metadata_lookup.json"
-URL_CACHE_FILE = DATA_DIR / "stem_to_url.json"
-
-CSV_ALL_FILE = DATA_DIR / "ceap_documentos_completo.csv"
-CSV_ROTULADOS_FILE = DATA_DIR / "ceap_documentos_rotulados.csv"
-
-
-def clean_str(val):
-    if val is None:
-        return ""
-    return str(val).strip().replace("\r", " ").replace("\n", " ")
+PARTS_DIR = DATA_DIR / "rotulos"
+CSV_ROTULADOS = DATA_DIR / "ceap_documentos_rotulados.csv"
+CSV_COMPLETO = DATA_DIR / "ceap_documentos_completo.csv"
+HISTORY = MODELS_DIR / "annotations_history.json"
 
 
-def main():
-    print("=" * 76)
-    print(" EXPORTAÇÃO DO DATASET CEAP EM FORMATO .CSV")
-    print("=" * 76)
-    t_start = time.time()
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--do-historico", action="store_true", help="Recria as partes com as classes de annotations_history.json")
+    parser.add_argument("--juntar", action="store_true", help="Junta as partes em data/ceap_documentos_rotulados.csv")
+    parser.add_argument("--completo", action="store_true", help="Gera também o CSV com todos os PDFs do disco")
+    args = parser.parse_args()
 
-    # 1. Carregar anotações existentes
-    print("\n1. Carregando histórico de anotações...")
-    with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-        raw_annotations = json.load(f)
+    if args.do_historico or not any(PARTS_DIR.glob("parte_*.csv")):
+        labels = normalize_history(json.loads(HISTORY.read_text(encoding="utf-8")))
+        print(f"{len(labels):,} rótulos em {HISTORY.name}; lendo metadados de {RAW_DIR}…")
+        rows = build_rows(labels, load_raw_metadata(RAW_DIR, labels))
+    else:
+        existing = read_label_rows(PARTS_DIR)
+        labels = {doc_id: row[-2] for doc_id, row in existing.items()}
+        missing = [doc_id for doc_id, row in existing.items() if not row[1]]
+        print(f"{len(labels):,} rótulos nas partes; {len(missing):,} sem metadados.")
+        metadata = load_raw_metadata(RAW_DIR, missing) if missing else {}
+        rows = update_rows({k: v for k, v in existing.items() if k not in metadata}, labels, metadata)
 
-    # Normalizar chaves para stem sem extensão
-    annotations = {}
-    for k, v in raw_annotations.items():
-        s = str(k).replace(".pdf", "")
-        annotations[s] = v
-    print(f"   ✓ Total de documentos rotulados carregados: {len(annotations):,}")
+    count = write_labels_dir(PARTS_DIR, rows)
+    parts = sorted(PARTS_DIR.glob("parte_*.csv"))
+    largest = max(p.stat().st_size for p in parts) / 2**20
+    print(f"{PARTS_DIR}: {count:,} linhas em {len(parts)} partes (maior: {largest:.2f} MB)")
 
-    # 2. Carregar stem_to_url e lookup como fallback/referência
-    print("\n2. Carregando caches de URL e metadados rápidos...")
-    with open(URL_CACHE_FILE, "r", encoding="utf-8") as f:
-        stem_to_url = json.load(f)
-    print(f"   ✓ URLs mapeadas no cache: {len(stem_to_url):,}")
+    if args.juntar:
+        write_labels_csv(CSV_ROTULADOS, rows)
+        print(f"{CSV_ROTULADOS}: {CSV_ROTULADOS.stat().st_size / 2**20:.1f} MB")
 
-    with open(LOOKUP_FILE, "r", encoding="utf-8") as f:
-        pdf_lookup = json.load(f)
-    print(f"   ✓ Metadados de lookup: {len(pdf_lookup):,}")
-
-    # 3. Listar arquivos presentes fisicamente no SSD
-    print("\n3. Verificando arquivos no SSD (/media/ssd2/datasets/CEAP)...")
-    disk_files = set(os.listdir(PDF_DIR))
-    print(f"   ✓ Total de PDFs encontrados no disco: {len(disk_files):,}")
-
-    # 4. Mapear dados brutos a partir de Ano-*.json
-    print("\n4. Indexando dados detalhados dos JSONs brutos da Câmara (2014 a 2026)...")
-    raw_files = sorted(RAW_DIR.glob("Ano-*.json"))
-    
-    # doc_id -> dict com metadados completos
-    doc_metadata = {}
-    total_raw_records = 0
-
-    for json_p in raw_files:
-        ano_str = json_p.stem.replace("Ano-", "")
-        t0 = time.time()
-        with open(json_p, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        items = data.get("dados", []) if isinstance(data, dict) else data
-        total_raw_records += len(items)
-
-        for item in items:
-            doc_id = item.get("idDocumento")
-            if not doc_id:
-                continue
-            doc_id_str = str(doc_id)
-
-            # Manter primeiro registro ou consolidar se não existir
-            if doc_id_str not in doc_metadata:
-                url = item.get("urlDocumento") or stem_to_url.get(doc_id_str, "")
-                ano = item.get("ano") or int(ano_str) if ano_str.isdigit() else 2024
-                
-                # Resumo compacto dos metadados fiscais em JSON
-                meta_compact = {
-                    "fornecedor": clean_str(item.get("fornecedor")),
-                    "cnpjCPF": clean_str(item.get("cnpjCPF")),
-                    "valorDocumento": clean_str(item.get("valorDocumento")),
-                    "valorLiquido": clean_str(item.get("valorLiquido")),
-                    "subcota": clean_str(item.get("descricao")),
-                    "nomeParlamentar": clean_str(item.get("nomeParlamentar")),
-                    "siglaUF": clean_str(item.get("siglaUF")),
-                    "siglaPartido": clean_str(item.get("siglaPartido")),
-                    "dataEmissao": clean_str(item.get("dataEmissao"))
-                }
-
-                doc_metadata[doc_id_str] = {
-                    "ano": int(ano),
-                    "url": url,
-                    "arquivo_json": f"data/raw/{json_p.name}",
-                    "metadados_json": json.dumps(meta_compact, ensure_ascii=False)
-                }
-
-        print(f"   • {json_p.name}: {len(items):,} despesas indexadas em {time.time()-t0:.2f}s")
-
-    print(f"\n   ✓ Total de despesas processadas nos JSONs: {total_raw_records:,}")
-    print(f"   ✓ Documentos únicos indexados com metadados: {len(doc_metadata):,}")
-
-    # 5. Gerar os dois arquivos CSV
-    print("\n5. Escrevendo arquivos CSV...")
-
-    headers = [
-        "doc_id",
-        "caminho_arquivo",
-        "link_documento",
-        "arquivo_json_origem",
-        "metadados_json",
-        "ano",
-        "classe_mapeada",
-        "status"
-    ]
-
-    # Conjunto unificado de todos os documentos (presentes em disco + anotados + nos metadados)
-    all_doc_ids = set()
-    # Adiciona a partir do disco
-    for fname in disk_files:
-        if fname.endswith(".pdf"):
-            all_doc_ids.add(fname.replace(".pdf", ""))
-    # Adiciona a partir das anotações (garante 100% dos rotulados)
-    for stem in annotations:
-        all_doc_ids.add(stem)
-
-    sorted_doc_ids = sorted(list(all_doc_ids), key=lambda x: int(x) if x.isdigit() else x)
-    print(f"   • Total de documentos a exportar no CSV completo: {len(sorted_doc_ids):,}")
-
-    count_all = 0
-    count_rotulados = 0
-
-    with open(CSV_ALL_FILE, "w", newline="", encoding="utf-8") as f_all, \
-         open(CSV_ROTULADOS_FILE, "w", newline="", encoding="utf-8") as f_rot:
-
-        w_all = csv.writer(f_all)
-        w_rot = csv.writer(f_rot)
-
-        w_all.writerow(headers)
-        w_rot.writerow(headers)
-
-        for doc_id_str in sorted_doc_ids:
-            # Caminho físico do arquivo
-            caminho_pdf = f"/media/ssd2/datasets/CEAP/{doc_id_str}.pdf"
-
-            # Classe mapeada
-            classe = annotations.get(doc_id_str, "")
-            is_rotulado = bool(classe)
-            classe_str = classe if is_rotulado else "Não Mapeado"
-            status_str = "rotulado" if is_rotulado else "nao_mapeado"
-
-            # Metadados
-            info = doc_metadata.get(doc_id_str)
-            if info:
-                link = info["url"] or stem_to_url.get(doc_id_str, "")
-                arq_json = info["arquivo_json"]
-                meta_json = info["metadados_json"]
-                ano = info["ano"]
-            else:
-                # Fallback para lookup
-                fname = f"{doc_id_str}.pdf"
-                lk = pdf_lookup.get(fname, {})
-                ano = lk.get("ano", 2024)
-                link = stem_to_url.get(doc_id_str, f"https://www.camara.leg.br/cota-parlamentar/documentos/publ/{ano}/{doc_id_str}.pdf")
-                arq_json = f"data/raw/Ano-{ano}.json"
-                meta_compact = {
-                    "fornecedor": clean_str(lk.get("fornecedor", "")),
-                    "subcota": clean_str(lk.get("subcota", "")),
-                    "ano": ano
-                }
-                meta_json = json.dumps(meta_compact, ensure_ascii=False)
-
-            row = [
-                doc_id_str,
-                caminho_pdf,
-                link,
-                arq_json,
-                meta_json,
-                ano,
-                classe_str,
-                status_str
-            ]
-
-            w_all.writerow(row)
-            count_all += 1
-
-            if is_rotulado:
-                w_rot.writerow(row)
-                count_rotulados += 1
-
-    # 6. Criar links no Desktop
-    print("\n6. Criando atalhos no Desktop...")
-    desktop_all = DESKTOP_DIR / "ceap_documentos_completo.csv"
-    desktop_rot = DESKTOP_DIR / "ceap_documentos_rotulados.csv"
-
-    if desktop_all.is_symlink() or desktop_all.exists():
-        desktop_all.unlink()
-    if desktop_rot.is_symlink() or desktop_rot.exists():
-        desktop_rot.unlink()
-
-    desktop_all.symlink_to(CSV_ALL_FILE)
-    desktop_rot.symlink_to(CSV_ROTULADOS_FILE)
-
-    sz_all_mb = CSV_ALL_FILE.stat().st_size / (1024 * 1024)
-    sz_rot_mb = CSV_ROTULADOS_FILE.stat().st_size / (1024 * 1024)
-
-    print("\n" + "=" * 76)
-    print(" EXPORTAÇÃO CONCLUÍDA COM SUCESSO!")
-    print("=" * 76)
-    print(f"1. CSV Completo (Todos os arquivos):")
-    print(f"   • Caminho: {CSV_ALL_FILE}")
-    print(f"   • Desktop: {desktop_all}")
-    print(f"   • Linhas:  {count_all:,} registros | Tamanho: {sz_all_mb:.1f} MB")
-    print(f"\n2. CSV Rotulados (Apenas classes já mapeadas):")
-    print(f"   • Caminho: {CSV_ROTULADOS_FILE}")
-    print(f"   • Desktop: {desktop_rot}")
-    print(f"   • Linhas:  {count_rotulados:,} registros | Tamanho: {sz_rot_mb:.1f} MB")
-    print(f"\nTempo total de execução: {time.time()-t_start:.1f}s")
+    if args.completo:
+        on_disk = {name.removesuffix(".pdf") for name in os.listdir(PDF_DIR) if name.endswith(".pdf")}
+        by_id = {row[0]: row for row in rows}
+        with open(CSV_COMPLETO, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f, lineterminator="\n")
+            writer.writerow(HEADERS)
+            for doc_id in sorted(on_disk | set(by_id), key=doc_key):
+                writer.writerow(by_id.get(doc_id) or make_row(doc_id, "Não Mapeado", None)[:-1] + ["nao_mapeado"])
+        print(f"{CSV_COMPLETO}: {len(on_disk | set(by_id)):,} linhas")
 
 
 if __name__ == "__main__":

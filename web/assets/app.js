@@ -212,6 +212,26 @@ async function pageLatent() {
   leaveLatent = mountLatent(app, index, getDataset);
 }
 
+let leaveLabeling = null;
+async function pageLabelingMode(mode, cls, queue) {
+  setTitle(mode === "pasta" ? "Pasta por classe" : "Rotular");
+  const [labeling, review, latent] = await Promise.all([
+    import("./labeling.js"),
+    load("data/review/index.json").catch(() => null),
+    load("data/latent/index.json"),
+  ]);
+  if (!review?.classes?.length) {
+    app.innerHTML = `<h1>Rotulagem</h1><div class="notice">As filas de revisão não foram publicadas. Rode <code>uv run python scripts/labeling/build_review_queues.py</code> e publique o site.</div>`;
+    return;
+  }
+  const names = review.classes.map((c) => c.nome);
+  if (!names.includes(cls)) { location.replace(`#/${mode === "pasta" ? "pasta" : "rotular"}/${names[0]}`); return; }
+  const classes = latent.classes.filter((c) => c.id !== 0).map((c) => c.name);
+  leaveLabeling = mode === "pasta"
+    ? labeling.mountFolderMode(app, review, cls)
+    : labeling.mountDocMode(app, review, [...classes, ...names.filter((n) => !classes.includes(n)), "_unmapped"], cls, queue);
+}
+
 async function pageLabeling() {
   setTitle("Tarefas");
   const [m, ds, latent] = await Promise.all([getModels(), getDataset(), load("data/latent/index.json")]);
@@ -338,6 +358,8 @@ const ROUTES = [
   [/^documentos$/, () => pageDocs()],
   [/^latente$/, () => pageLatent()],
   [/^rotulagem$/, () => pageLabeling()],
+  [/^rotular(?:\/([a-z_]+))?(?:\/([a-z]+))?$/, (m) => pageLabelingMode("documento", m[1], m[2])],
+  [/^pasta(?:\/([a-z_]+))?$/, (m) => pageLabelingMode("pasta", m[1])],
   [/^resultados$/, () => pageResults()],
   [/^modelos$/, () => pageModels()],
   [/^logs$/, () => pageLogs()],
@@ -351,6 +373,8 @@ async function route() {
   }
   leaveLatent?.();
   leaveLatent = null;
+  leaveLabeling?.();
+  leaveLabeling = null;
   app.classList.remove("is-latent");
   markNav();
   window.scrollTo({ top: 0 });
