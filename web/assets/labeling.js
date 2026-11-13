@@ -9,6 +9,15 @@ const AUTO_FLUSH = 25;
 const PAGE_SIZES = [60, 120, 240, 480];
 const PAGE_SIZE_KEY = "ceap-pasta-por-pagina";
 const KEYS = "1234567890qwertyuiop";
+const CHANNEL = "ceap-rotulos"; // mesmo canal do espaço latente: avisa as outras abas quando algo é salvo
+
+// Avisa as outras abas e repassa avisos recebidos para quem estiver montado.
+function openChannel(onEvents) {
+  if (!("BroadcastChannel" in window)) return { post() {}, close() {} };
+  const channel = new BroadcastChannel(CHANNEL);
+  channel.onmessage = (event) => onEvents(event.data?.events ?? []);
+  return { post: (events) => channel.postMessage({ events }), close: () => channel.close() };
+}
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const fmt = (n) => Number(n).toLocaleString("pt-BR");
@@ -158,6 +167,11 @@ export function mountDocMode(app, index, classes, cls, queueName) {
   const queueKey = ["candidatos", "auditoria", "rejeitados"].includes(queueName) ? queueName : "candidatos";
   const options = [...classes.filter((c) => c !== UNMAPPED), UNMAPPED];
   let items = [], position = 0, saved = new Map(), message = "", busy = false;
+  const channel = openChannel((events) => {
+    for (const e of events) { saved.set(e.id, e.class); if (pending.get(e.id)?.class === e.class) pending.delete(e.id); }
+    persistPending();
+    if (items.length) draw();
+  });
 
   app.innerHTML = shell(index, "documento", cls, `<div class="toolbar">
       <select id="rot-class" aria-label="Classe">${classOptions(index, cls)}</select>
@@ -253,6 +267,7 @@ export function mountDocMode(app, index, classes, cls, queueName) {
     if (result.ok) {
       for (const c of batch) { pending.delete(c.id); saved.set(c.id, c.class); }
       persistPending();
+      if (result.applied.length) channel.post(result.applied);
       message = result.commit ? `${fmt(result.applied.length)} rótulos gravados no git (${result.commit.slice(0, 7)}).` : "Nada mudou.";
     } else message = result.error;
     draw();
@@ -282,6 +297,7 @@ export function mountDocMode(app, index, classes, cls, queueName) {
 
   return () => {
     abort.abort();
+    channel.close();
     document.removeEventListener("keydown", onKey);
     window.removeEventListener("beforeunload", onLeave);
   };
@@ -295,6 +311,7 @@ export function mountFolderMode(app, index, cls) {
   const rejectedEver = new Set(readJson(rejectedKey, []));
   let all = [], saved = new Map(), page = [], marked = new Set(), message = "", busy = false;
   let observer = null;
+  const channel = openChannel((events) => { for (const e of events) saved.set(e.id, e.class); });
   let pageSize = PAGE_SIZES.includes(readJson(PAGE_SIZE_KEY, 120)) ? readJson(PAGE_SIZE_KEY, 120) : 120;
 
   app.innerHTML = shell(index, "pasta", cls, `<div class="toolbar rot-folder-bar">
@@ -397,6 +414,7 @@ export function mountFolderMode(app, index, cls) {
     busy = false;
     if (!result.ok) { message = result.error; draw(); return; }
     for (const d of keep) saved.set(d.id, cls);
+    if (result.applied.length) channel.post(result.applied);
     for (const d of out) rejectedEver.add(d.id);
     writeJson(rejectedKey, [...rejectedEver]);
     message = `${fmt(result.applied.length)} documentos gravados como ${cls}${result.commit ? ` (${result.commit.slice(0, 7)})` : ""}.` +
@@ -410,5 +428,5 @@ export function mountFolderMode(app, index, cls) {
     nextPage();
   }).catch((err) => { if (!signal.aborted) root.innerHTML = `<div class="notice">${esc(err.message)}</div>`; });
 
-  return () => { abort.abort(); observer?.disconnect(); };
+  return () => { abort.abort(); observer?.disconnect(); channel.close(); };
 }

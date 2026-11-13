@@ -147,10 +147,27 @@ uv run python scripts/labeling/build_review_queues.py --coords-3d   # prévia co
 
 # Recriar as partes a partir do histórico antigo (sobrescreve classes vindas do site!)
 uv run python scripts/export_dataset_csv.py --do-historico
-
-# Espaço latente com as classes das partes
-uv run python scripts/web/build_latent_assets.py
 ```
+
+**Sincronização.** `data/rotulos/` é a única fonte da verdade; `data/models/annotations_history.json` é uma
+cópia gerada para os scripts do cluster. O Espaço latente aberto recebe as mudanças na hora quando outra aba
+do mesmo navegador salva, e a cada 15 s quando vêm de outro lugar.
+
+```bash
+# Depois de git pull (rótulos feitos pelo site): partes -> histórico
+uv run python scripts/labeling/sync_labels.py
+
+# Depois de um script do cluster mudar o histórico (saneamento, confirm_*): histórico -> partes.
+# Só entra o que mudou desde o último commit, então o que veio do site não é revertido.
+uv run python scripts/labeling/sync_labels.py --importar-historico
+
+# Antes de publicar: classes do espaço latente a partir das partes (não mexe nas coordenadas)
+uv run python scripts/web/refresh_latent_classes.py
+
+uv run python scripts/labeling/sync_labels.py --verificar   # partes == histórico?
+```
+
+`uv run pytest` falha se o histórico tiver mudanças que não estão nas partes nem no log do site.
 
 Os PDFs vêm da Câmara: o modo documento os mostra direto; as miniaturas da pasta passam por `api/pdf`
 (só aceita URLs de comprovantes da cota) e são desenhadas com pdf.js.

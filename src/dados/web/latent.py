@@ -279,3 +279,35 @@ def build_latent_assets(
     }
     (out_dir / "index.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     return {"points": n_points, "labeled": int((classes > 0).sum()), "shards": shards, **links}
+
+
+def refresh_latent_classes(latent_dir: Path, labels: dict[str, str]) -> dict[str, Any]:
+    """Recalcula classes.bin.gz e as contagens do index.json a partir das shards publicadas e dos rótulos.
+
+    Não toca nas coordenadas: serve para refletir mudanças de rótulo sem refazer o espaço latente.
+    Pontos sem vínculo exato com um documento ficam como Não Mapeado.
+    """
+    from dados.labeling.review_queues import load_points
+
+    index_path = latent_dir / "index.json"
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    ids = {c["name"]: c["id"] for c in index["classes"]}
+    for name in sorted(set(labels.values()) - set(ids)):
+        new_id = max(ids.values()) + 1
+        ids[name] = new_id
+        index["classes"].append({"id": new_id, "name": name, "hex": CLASS_COLORS.get(name, "#c8ccd2"), "count": 0})
+    points = load_points(latent_dir / "meta")
+    if len(points) != index["n_points"]:
+        raise ValueError(f"{len(points)} pontos nas shards, {index['n_points']} no index.json")
+    classes = np.zeros(len(points), dtype=np.uint8)
+    for i, point in enumerate(points):
+        name = labels.get(str(point[0])) if point else None
+        if name:
+            classes[i] = ids[name]
+    old = np.frombuffer(gzip.decompress((latent_dir / "classes.bin.gz").read_bytes()), dtype=np.uint8)
+    (latent_dir / "classes.bin.gz").write_bytes(gzip.compress(classes.tobytes(), 6, mtime=0))
+    counts = np.bincount(classes, minlength=max(ids.values()) + 1)
+    for c in index["classes"]:
+        c["count"] = int(counts[c["id"]])
+    index_path.write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return {"pontos": len(points), "rotulados": int((classes > 0).sum()), "mudaram": int((old != classes).sum()) if len(old) == len(classes) else len(classes)}
