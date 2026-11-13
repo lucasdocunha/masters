@@ -1,3 +1,4 @@
+import sys
 #!/usr/bin/env python3
 """
 Deep Metric Learning (ArcFace / Additive Angular Margin) para Espaço Latente CEAP (512-D -> 128-D).
@@ -12,8 +13,11 @@ Deep Metric Learning (ArcFace / Additive Angular Margin) para Espaço Latente CE
 
 from dados.config import ROOT_DIR
 import base64
+import gzip
 import json
 import math
+import subprocess
+import sys
 import time
 import zlib
 from pathlib import Path
@@ -29,8 +33,8 @@ BASE_DIR = ROOT_DIR
 DATA_DIR = BASE_DIR / "data"
 NPZ_PATH = DATA_DIR / "latent_vectors_full.npz"
 META_PATH = DATA_DIR / "latent_vectors_full_metadata.json"
-HISTORY_PATH = BASE_DIR / "data" / "models" / "annotations_history.json"
-MODEL_SAVE_PATH = BASE_DIR / "data" / "models" / "metric_projection_head.pt"
+HISTORY_PATH = DATA_DIR / "models" / "annotations_history.json"
+MODEL_SAVE_PATH = DATA_DIR / "models" / "metric_projection_head.pt"
 OUTPUT_HTML = DATA_DIR / "latent_vectors_metric_learned_1_4m_3d.html"
 
 CLASS_PALETTE = {
@@ -777,6 +781,12 @@ def main():
     MODEL_SAVE_PATH.parent.mkdir(parents=True, exist_ok=True)
     torch.save(model.state_dict(), MODEL_SAVE_PATH)
     print(f"   Modelo salvo com sucesso em: {MODEL_SAVE_PATH}")
+    alt_save = BASE_DIR / "ml_backend" / "models" / "metric_projection_head.pt"
+    try:
+        alt_save.parent.mkdir(parents=True, exist_ok=True)
+        torch.save(model.state_dict(), alt_save)
+    except Exception:
+        pass
 
     # 4. Avaliar Separação no Espaço Projetado (128-D)
     model.eval()
@@ -895,6 +905,46 @@ def main():
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
         f.write(html_content)
     print(f"   -> Salvo em: {OUTPUT_HTML} ({OUTPUT_HTML.stat().st_size / (1024*1024):.2f} MB)")
+
+    # 8. Sincronização automática com a aplicação Web 3D e Deploy no Vercel
+    print("\n7. Sincronizando dados com o Web App 3D e atualizando Vercel...")
+    gz_coords = gzip.compress(coord_bytes, compresslevel=6)
+    web_latent_dir = BASE_DIR / "web" / "data" / "latent"
+    legacy_dir = BASE_DIR / "data" / "processed" / "web_legacy"
+    if legacy_dir.exists():
+        (legacy_dir / "coords_metric.bin.gz").write_bytes(gz_coords)
+    if web_latent_dir.exists():
+        (web_latent_dir / "coords_metric.bin.gz").write_bytes(gz_coords)
+    print(f"   -> Coordenadas 3D compactadas salvas ({len(gz_coords)/(1024*1024):.2f} MB)")
+
+    # Executar build_latent_assets para atualizar classes, index.json e shards
+    build_latent_script = BASE_DIR / "scripts" / "web" / "build_latent_assets.py"
+    if build_latent_script.exists():
+        print("   -> Executando build_latent_assets.py...")
+        subprocess.run([sys.executable, str(build_latent_script)], check=False)
+        # Garantir que coords_metric.bin.gz novo não seja sobrescrito pelo legado
+        if web_latent_dir.exists():
+            (web_latent_dir / "coords_metric.bin.gz").write_bytes(gz_coords)
+
+    # Atualizar models.json
+    try:
+        from dados.config import MODELS_DIR
+        from dados.web.site import build_models
+        models_info = build_models(MODELS_DIR, HISTORY_PATH)
+        models_json_path = BASE_DIR / "web" / "data" / "models.json"
+        with open(models_json_path, "w", encoding="utf-8") as f:
+            json.dump(models_info, f, ensure_ascii=False)
+        print(f"   -> web/data/models.json atualizado com {models_info['annotations']['total']:,} anotações em {len(models_info['annotations']['by_class'])} classes!")
+    except Exception as e:
+        print(f"   Aviso ao atualizar models.json: {e}")
+
+    deploy_script = BASE_DIR / "scripts" / "web" / "deploy_to_vercel.py"
+    if not deploy_script.exists():
+        deploy_script = BASE_DIR / "scripts" / "deploy_to_vercel.py"
+
+    if deploy_script.exists():
+        print("   -> Disparando deploy automático na CDN do Vercel...")
+        subprocess.run([sys.executable, str(deploy_script)], check=False)
 
     print(f"\n=== SUCESSO TOTAL EM {time.time()-t_global:.1f} SEGUNDOS! ===")
 
