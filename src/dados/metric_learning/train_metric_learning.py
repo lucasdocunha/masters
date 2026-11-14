@@ -938,13 +938,13 @@ def main():
     except Exception as e:
         print(f"   Aviso ao atualizar models.json: {e}")
 
-    deploy_script = BASE_DIR / "scripts" / "web" / "deploy_to_vercel.py"
-    if not deploy_script.exists():
-        deploy_script = BASE_DIR / "scripts" / "deploy_to_vercel.py"
-
-    if deploy_script.exists():
-        print("   -> Disparando deploy automático na CDN do Vercel...")
-        subprocess.run([sys.executable, str(deploy_script)], check=False)
+    # Deploy no Vercel é disparado de forma inteligente via manifest pelo pipeline dedicado
+    # deploy_script = BASE_DIR / "scripts" / "web" / "deploy_to_vercel.py"
+    # if not deploy_script.exists():
+    #     deploy_script = BASE_DIR / "scripts" / "deploy_to_vercel.py"
+    # if deploy_script.exists():
+    #     print("   -> Disparando deploy automático na CDN do Vercel...")
+    #     subprocess.run([sys.executable, str(deploy_script)], check=False)
 
     print(f"\n=== SUCESSO TOTAL EM {time.time()-t_global:.1f} SEGUNDOS! ===")
 
