@@ -20,26 +20,33 @@ const mb = (n) => (n / 1048576).toFixed(1).replace(".", ",");
 const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
 const reducedMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// Baixa com progresso e descomprime. Testa a assinatura gzip porque a CDN pode já ter descomprimido.
-async function fetchBinary(path, onProgress, signal) {
-  const response = await fetch(path, { signal });
-  if (!response.ok) throw new Error(`${response.status} ao baixar ${path}`);
-  const reader = response.body.getReader();
-  const chunks = [];
-  let received = 0;
-  for (;;) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    chunks.push(value);
-    received += value.length;
-    onProgress?.(value.length);
+// Baixa com progresso, retentativas automáticas e descomprime. Testa a assinatura gzip porque a CDN pode já ter descomprimido.
+async function fetchBinary(path, onProgress, signal, retries = 2) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(path, { signal, cache: "no-cache" });
+      if (!response.ok) throw new Error(`${response.status} ao baixar ${path}`);
+      const reader = response.body.getReader();
+      const chunks = [];
+      let received = 0;
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        chunks.push(value);
+        received += value.length;
+        onProgress?.(value.length);
+      }
+      const bytes = new Uint8Array(received);
+      let offset = 0;
+      for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.length; }
+      if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return bytes.buffer;
+      const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
+      return await new Response(stream).arrayBuffer();
+    } catch (err) {
+      if (signal?.aborted || attempt === retries) throw err;
+      await new Promise((r) => setTimeout(r, 1000 * (attempt + 1)));
+    }
   }
-  const bytes = new Uint8Array(received);
-  let offset = 0;
-  for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.length; }
-  if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return bytes.buffer;
-  const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
-  return new Response(stream).arrayBuffer();
 }
 
 const POINT_VERTEX = /* glsl */ `
@@ -173,8 +180,13 @@ export function mountLatent(root, index, getDataset) {
 
   const fail = (message) => {
     $("lat-load").innerHTML = `<strong>Não foi possível desenhar os pontos</strong>
-      <span class="muted">${esc(message)}</span><a href="#/documentos">Ver a lista de documentos</a>`;
+      <span class="muted">${esc(message)}</span>
+      <div style="display:flex;gap:12px;margin-top:12px;justify-content:center">
+        <button type="button" class="btn btn--primary" id="lat-retry">Tentar novamente</button>
+        <a class="btn" href="#/documentos">Ver a lista de documentos</a>
+      </div>`;
     $("lat-load").hidden = false;
+    $("lat-retry")?.addEventListener("click", () => location.reload());
   };
 
   const docsByPoint = new Map();

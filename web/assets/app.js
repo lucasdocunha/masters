@@ -40,8 +40,8 @@ const getLogs = async () => (state.logs ??= (await load("data/logs.json")).logs)
 async function getDataset() {
   if (!state.dataset) {
     state.dataset = (async () => {
-      const r = await fetch("data/plotly_dataset.json.gz");
-      if (!r.ok) throw new Error("dataset indisponível");
+      const r = await fetch("data/plotly_dataset.json.gz", { cache: "no-cache" });
+      if (!r.ok) throw new Error(`${r.status} ao baixar data/plotly_dataset.json.gz`);
       const stream = r.body.pipeThrough(new DecompressionStream("gzip"));
       return JSON.parse(await new Response(stream).text());
     })();

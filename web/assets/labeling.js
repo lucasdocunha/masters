@@ -30,12 +30,19 @@ const readPassword = () => { try { return sessionStorage.getItem(PASSWORD_KEY); 
 const writePassword = (v) => { try { if (v) sessionStorage.setItem(PASSWORD_KEY, v); else sessionStorage.removeItem(PASSWORD_KEY); } catch { /* idem */ } };
 
 // ---------------------------------------------------------------- dados
-async function fetchJsonGz(path, signal) {
-  const response = await fetch(path, { signal });
-  if (!response.ok) throw new Error(`${response.status} ao baixar ${path}`);
-  const bytes = new Uint8Array(await response.arrayBuffer());
-  if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return JSON.parse(new TextDecoder().decode(bytes));
-  return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"))).json();
+async function fetchJsonGz(path, signal, retries = 2) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(path, { signal, cache: "no-cache" });
+      if (!response.ok) throw new Error(`${response.status} ao baixar ${path}`);
+      const bytes = new Uint8Array(await response.arrayBuffer());
+      if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return JSON.parse(new TextDecoder().decode(bytes));
+      return await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"))).json();
+    } catch (err) {
+      if (signal?.aborted || attempt === retries) throw err;
+      await new Promise((r) => setTimeout(r, 1000 * (attempt + 1)));
+    }
+  }
 }
 
 const queues = new Map();
