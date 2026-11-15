@@ -1,10 +1,13 @@
 # pip install -U transformers accelerate pymupdf pillow pandas tqdm
+import atexit
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
+import fcntl
 import io
 import json
 import os
 import re
+import signal
 import sys
 import time
 from pathlib import Path
@@ -19,11 +22,121 @@ import pandas as pd
 SHARD_ID = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("SLURM_ARRAY_TASK_ID", 0))
 NUM_SHARDS = int(sys.argv[2]) if len(sys.argv) > 2 else int(os.environ.get("SLURM_ARRAY_TASK_COUNT", 1))
 
+UNIFIED_JSONL = Path("resultados.jsonl")
+PART_JSONL = Path(f"resultados_parte_{SHARD_ID}.jsonl")
+LOCK_FILE = Path(".resultados.jsonl.lock")
+
 
 def log(msg: str) -> None:
     agora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     tqdm.write(f"[{agora}] [Parte {SHARD_ID + 1}/{NUM_SHARDS}] {msg}")
 
+
+def carregar_registros_jsonl(caminho: Path) -> dict[str, dict]:
+    registros: dict[str, dict] = {}
+    if not caminho.exists():
+        return registros
+    with caminho.open("r", encoding="utf-8") as f:
+        for linha in f:
+            linha = linha.strip()
+            if not linha:
+                continue
+            try:
+                obj = json.loads(linha)
+                if isinstance(obj, dict):
+                    for link, dados in obj.items():
+                        if isinstance(dados, dict) and "erro" not in dados:
+                            registros[str(link)] = dados
+            except json.JSONDecodeError:
+                pass
+    return registros
+
+
+def consolidar_todos_jsonl() -> set[str]:
+    """Unifica resultados.jsonl e quaisquer resultados_parte_*.jsonl em um único resultados.jsonl."""
+    LOCK_FILE.touch(exist_ok=True)
+    with LOCK_FILE.open("r+") as lf:
+        fcntl.flock(lf, fcntl.LOCK_EX)
+        try:
+            unificado = carregar_registros_jsonl(UNIFIED_JSONL)
+            arquivos_partes = sorted(Path(".").glob("resultados_parte_*.jsonl"))
+            novos_das_partes = 0
+
+            for arq in arquivos_partes:
+                parciais = carregar_registros_jsonl(arq)
+                for link, dados in parciais.items():
+                    if link not in unificado:
+                        unificado[link] = dados
+                        novos_das_partes += 1
+
+            if novos_das_partes > 0 or not UNIFIED_JSONL.exists():
+                tmp_path = UNIFIED_JSONL.with_suffix(".jsonl.tmp")
+                with tmp_path.open("w", encoding="utf-8") as f_out:
+                    for link, dados in unificado.items():
+                        f_out.write(json.dumps({link: dados}, ensure_ascii=False) + "\n")
+                tmp_path.replace(UNIFIED_JSONL)
+
+            if PART_JSONL.exists():
+                PART_JSONL.unlink(missing_ok=True)
+
+            return set(unificado.keys())
+        finally:
+            fcntl.flock(lf, fcntl.LOCK_UN)
+
+
+def salvar_no_unificado(link: str, dados: dict) -> None:
+    """Grava imediatamente no resultados.jsonl único com lock de arquivo entre processos."""
+    linha = json.dumps({link: dados}, ensure_ascii=False) + "\n"
+    LOCK_FILE.touch(exist_ok=True)
+    with LOCK_FILE.open("r+") as lf:
+        fcntl.flock(lf, fcntl.LOCK_EX)
+        try:
+            with UNIFIED_JSONL.open("a", encoding="utf-8") as f_out:
+                f_out.write(linha)
+                f_out.flush()
+        finally:
+            fcntl.flock(lf, fcntl.LOCK_UN)
+
+
+interrompido = False
+
+
+def _tratar_sinal(signum, _frame):
+    global interrompido
+    interrompido = True
+    nome_sinal = signal.Signals(signum).name
+    log(f"Sinal {nome_sinal} recebido! Consolidando todos os resultados em '{UNIFIED_JSONL}' antes de encerrar...")
+    total = len(consolidar_todos_jsonl())
+    log(f"Consolidação concluída ({total} documentos únicos em '{UNIFIED_JSONL}'). Encerrando.")
+    sys.exit(0)
+
+
+signal.signal(signal.SIGINT, _tratar_sinal)
+signal.signal(signal.SIGTERM, _tratar_sinal)
+atexit.register(consolidar_todos_jsonl)
+
+# 1. Consolida quaisquer resultados_parte_*.jsonl anteriores e carrega links já feitos
+links_processados = consolidar_todos_jsonl()
+
+csv_path = "data/ceap_nfe_selecionadas.csv"
+df_full = pd.read_csv(csv_path)
+df_shard = df_full.iloc[SHARD_ID::NUM_SHARDS].copy()
+total_shard_original = len(df_shard)
+
+# Filtra apenas os que ainda NÃO foram processados (não conta os já feitos)
+df = df_shard[~df_shard["link_documento"].astype(str).isin(links_processados)].copy().reset_index(drop=True)
+ja_feitos_nesta_parte = total_shard_original - len(df)
+total_pendentes = len(df)
+
+log(
+    f"CSV '{csv_path}' ({len(df_full)} total) | "
+    f"Já salvos em '{UNIFIED_JSONL}': {len(links_processados)} (desta parte: {ja_feitos_nesta_parte}) | "
+    f"Restantes para inferência nesta parte: {total_pendentes}"
+)
+
+if total_pendentes == 0:
+    log("Todos os documentos desta parte já foram processados! Encerrando.")
+    sys.exit(0)
 
 MODEL = "maritaca-ai/S5-nano"
 log(f"Iniciando job | CUDA disponível: {torch.cuda.is_available()}")
@@ -112,50 +225,22 @@ def extrair_dict_json(texto: str) -> dict:
     return {"raw_response": texto.strip()}
 
 
-csv_path = "data/ceap_nfe_selecionadas.csv"
-df_full = pd.read_csv(csv_path)
-df = df_full.iloc[SHARD_ID::NUM_SHARDS].copy().reset_index(drop=True)
-total_docs = len(df)
-
-out_jsonl = Path(f"resultados_parte_{SHARD_ID}.jsonl")
-links_processados = set()
-if out_jsonl.exists():
-    with out_jsonl.open("r", encoding="utf-8") as f:
-        for linha in f:
-            linha = linha.strip()
-            if not linha:
-                continue
-            try:
-                registro = json.loads(linha)
-                links_processados.update(registro.keys())
-            except json.JSONDecodeError:
-                pass
-
 pendentes = [
     (idx, row.get("doc_id", idx), str(row["link_documento"]))
     for idx, row in df.iterrows()
-    if str(row["link_documento"]) not in links_processados
 ]
-
-log(
-    f"CSV '{csv_path}' ({len(df_full)} total) | Parte: {total_docs} docs | "
-    f"Já no JSONL: {len(links_processados)} | Pendentes: {len(pendentes)}"
-)
 
 t_inicio = time.time()
 sucessos = 0
 erros = 0
 
-# Prefetch paralelo de PDFs nas CPUs (8 workers) para a GPU nunca esperar download
 PREFETCH_WORKERS = 8
 MAX_FILA_PREFETCH = 16
 
 with (
-    out_jsonl.open("a", encoding="utf-8") as f_out,
     ThreadPoolExecutor(max_workers=PREFETCH_WORKERS) as pool,
     tqdm(
-        total=total_docs,
-        initial=total_docs - len(pendentes),
+        total=total_pendentes,
         desc=f"Parte {SHARD_ID + 1}/{NUM_SHARDS}",
         unit="doc",
         dynamic_ncols=True,
@@ -169,6 +254,8 @@ with (
         futuros[item] = pool.submit(baixar_imagens, item[2])
 
     for item in pendentes:
+        if interrompido:
+            break
         idx, doc_id, link = item
         fut = futuros.pop(item)
 
@@ -183,29 +270,25 @@ with (
             t_inf = time.time() - t_inf_start
 
             dados_extraidos = extrair_dict_json(resposta_str)
-            linha_jsonl = json.dumps({link: dados_extraidos}, ensure_ascii=False)
-            f_out.write(linha_jsonl + "\n")
-            f_out.flush()
+            salvar_no_unificado(link, dados_extraidos)
 
             sucessos += 1
             pbar.set_postfix(ok=sucessos, err=erros, dl=f"{t_dl:.1f}s", inf=f"{t_inf:.1f}s")
             log(
-                f"[{idx + 1}/{total_docs}] doc_id={doc_id} | {len(imgs)} pág(s) | "
+                f"[{idx + 1}/{total_pendentes}] doc_id={doc_id} | {len(imgs)} pág(s) | "
                 f"dl={t_dl:.1f}s inf={t_inf:.1f}s | {json.dumps(dados_extraidos, ensure_ascii=False)}"
             )
         except Exception as e:
             erros += 1
-            linha_erro = json.dumps({link: {"erro": str(e)}}, ensure_ascii=False)
-            f_out.write(linha_erro + "\n")
-            f_out.flush()
             pbar.set_postfix(ok=sucessos, err=erros)
-            log(f"[{idx + 1}/{total_docs}] ERRO doc_id={doc_id} ({link}): {e}")
+            log(f"[{idx + 1}/{total_pendentes}] ERRO doc_id={doc_id} ({link}): {e}")
         finally:
             pbar.update(1)
 
+total_unificado = len(consolidar_todos_jsonl())
 tempo_total_min = (time.time() - t_inicio) / 60
 log(
     f"FINALIZADO em {tempo_total_min:.1f} min | "
-    f"Sucessos: {sucessos} | Já em cache: {len(links_processados)} | Erros: {erros} | "
-    f"Salvo em: {out_jsonl}"
+    f"Novos nesta execução: {sucessos} | Erros: {erros} | "
+    f"Total acumulado em '{UNIFIED_JSONL}': {total_unificado}"
 )
