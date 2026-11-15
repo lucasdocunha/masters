@@ -43,7 +43,7 @@ logs/
 saida_inferencias/
 resultados*.csv
 resultados*.jsonl
-.resultados.jsonl.lock
+.resultados*.jsonl.lock
 data/label_studio_*
 label_studio_data/
 

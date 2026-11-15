@@ -21,15 +21,17 @@ import pandas as pd
 
 SHARD_ID = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("SLURM_ARRAY_TASK_ID", 0))
 NUM_SHARDS = int(sys.argv[2]) if len(sys.argv) > 2 else int(os.environ.get("SLURM_ARRAY_TASK_COUNT", 1))
+MODEL = sys.argv[3] if len(sys.argv) > 3 else os.environ.get("MODEL_NAME", "maritaca-ai/S5-nano")
+MODEL_SLUG = re.sub(r"[^a-zA-Z0-9._-]+", "_", MODEL.split("/")[-1])
 
-UNIFIED_JSONL = Path("resultados.jsonl")
-PART_JSONL = Path(f"resultados_parte_{SHARD_ID}.jsonl")
-LOCK_FILE = Path(".resultados.jsonl.lock")
+UNIFIED_JSONL = Path(f"resultados_{MODEL_SLUG}.jsonl")
+PART_JSONL = Path(f"resultados_{MODEL_SLUG}_parte_{SHARD_ID}.jsonl")
+LOCK_FILE = Path(f".resultados_{MODEL_SLUG}.jsonl.lock")
 
 
 def log(msg: str) -> None:
     agora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    tqdm.write(f"[{agora}] [Parte {SHARD_ID + 1}/{NUM_SHARDS}] {msg}")
+    tqdm.write(f"[{agora}] [{MODEL_SLUG} | Parte {SHARD_ID + 1}/{NUM_SHARDS}] {msg}")
 
 
 def carregar_registros_jsonl(caminho: Path) -> dict[str, dict]:
@@ -53,23 +55,30 @@ def carregar_registros_jsonl(caminho: Path) -> dict[str, dict]:
 
 
 def consolidar_todos_jsonl() -> set[str]:
-    """Unifica resultados.jsonl e quaisquer resultados_parte_*.jsonl em um único resultados.jsonl."""
+    """Unifica resultados do modelo atual (e migra resultados.jsonl/resultados_parte_*.jsonl legados se S5-nano)."""
     LOCK_FILE.touch(exist_ok=True)
     with LOCK_FILE.open("r+") as lf:
         fcntl.flock(lf, fcntl.LOCK_EX)
         try:
             unificado = carregar_registros_jsonl(UNIFIED_JSONL)
-            arquivos_partes = sorted(Path(".").glob("resultados_parte_*.jsonl"))
-            novos_das_partes = 0
+            arquivos_extras = list(sorted(Path(".").glob(f"resultados_{MODEL_SLUG}_parte_*.jsonl")))
 
-            for arq in arquivos_partes:
+            # Compatibilidade com arquivos da execução anterior do S5-nano
+            if MODEL_SLUG == "S5-nano":
+                legado_unificado = Path("resultados.jsonl")
+                if legado_unificado.exists():
+                    arquivos_extras.insert(0, legado_unificado)
+                arquivos_extras.extend(sorted(Path(".").glob("resultados_parte_*.jsonl")))
+
+            novos = 0
+            for arq in arquivos_extras:
                 parciais = carregar_registros_jsonl(arq)
                 for link, dados in parciais.items():
                     if link not in unificado:
                         unificado[link] = dados
-                        novos_das_partes += 1
+                        novos += 1
 
-            if novos_das_partes > 0 or not UNIFIED_JSONL.exists():
+            if novos > 0 or not UNIFIED_JSONL.exists():
                 tmp_path = UNIFIED_JSONL.with_suffix(".jsonl.tmp")
                 with tmp_path.open("w", encoding="utf-8") as f_out:
                     for link, dados in unificado.items():
@@ -85,7 +94,7 @@ def consolidar_todos_jsonl() -> set[str]:
 
 
 def salvar_no_unificado(link: str, dados: dict) -> None:
-    """Grava imediatamente no resultados.jsonl único com lock de arquivo entre processos."""
+    """Grava imediatamente no resultados_<modelo>.jsonl único com lock de arquivo entre processos."""
     linha = json.dumps({link: dados}, ensure_ascii=False) + "\n"
     LOCK_FILE.touch(exist_ok=True)
     with LOCK_FILE.open("r+") as lf:
@@ -105,7 +114,7 @@ def _tratar_sinal(signum, _frame):
     global interrompido
     interrompido = True
     nome_sinal = signal.Signals(signum).name
-    log(f"Sinal {nome_sinal} recebido! Consolidando todos os resultados em '{UNIFIED_JSONL}' antes de encerrar...")
+    log(f"Sinal {nome_sinal} recebido! Consolidando resultados em '{UNIFIED_JSONL}' antes de encerrar...")
     total = len(consolidar_todos_jsonl())
     log(f"Consolidação concluída ({total} documentos únicos em '{UNIFIED_JSONL}'). Encerrando.")
     sys.exit(0)
@@ -115,15 +124,15 @@ signal.signal(signal.SIGINT, _tratar_sinal)
 signal.signal(signal.SIGTERM, _tratar_sinal)
 atexit.register(consolidar_todos_jsonl)
 
-# 1. Consolida quaisquer resultados_parte_*.jsonl anteriores e carrega links já feitos
+# 1. Consolida quaisquer resultados parciais anteriores e carrega links já feitos para este modelo
 links_processados = consolidar_todos_jsonl()
 
-csv_path = "data/ceap_nfe_selecionadas.csv"
+csv_path = "/users/home/lucas.ocunha/research/masters/data/ceap_nfe_todas_20k..csv"
 df_full = pd.read_csv(csv_path)
 df_shard = df_full.iloc[SHARD_ID::NUM_SHARDS].copy()
 total_shard_original = len(df_shard)
 
-# Filtra apenas os que ainda NÃO foram processados (não conta os já feitos)
+# Filtra apenas os que ainda NÃO foram processados por este modelo
 df = df_shard[~df_shard["link_documento"].astype(str).isin(links_processados)].copy().reset_index(drop=True)
 ja_feitos_nesta_parte = total_shard_original - len(df)
 total_pendentes = len(df)
@@ -135,11 +144,10 @@ log(
 )
 
 if total_pendentes == 0:
-    log("Todos os documentos desta parte já foram processados! Encerrando.")
+    log(f"Todos os documentos desta parte já foram processados pelo modelo '{MODEL}'! Encerrando.")
     sys.exit(0)
 
-MODEL = "maritaca-ai/S5-nano"
-log(f"Iniciando job | CUDA disponível: {torch.cuda.is_available()}")
+log(f"Iniciando job | Modelo: {MODEL} | CUDA disponível: {torch.cuda.is_available()}")
 if torch.cuda.is_available():
     gpu_name = torch.cuda.get_device_name(0)
     vram_gb = torch.cuda.get_device_properties(0).total_memory / (1024**3)
@@ -241,7 +249,7 @@ with (
     ThreadPoolExecutor(max_workers=PREFETCH_WORKERS) as pool,
     tqdm(
         total=total_pendentes,
-        desc=f"Parte {SHARD_ID + 1}/{NUM_SHARDS}",
+        desc=f"{MODEL_SLUG} P{SHARD_ID + 1}/{NUM_SHARDS}",
         unit="doc",
         dynamic_ncols=True,
     ) as pbar,
