@@ -127,7 +127,7 @@ atexit.register(consolidar_todos_jsonl)
 # 1. Consolida quaisquer resultados parciais anteriores e carrega links já feitos para este modelo
 links_processados = consolidar_todos_jsonl()
 
-csv_path = "/users/home/lucas.ocunha/research/masters/data/ceap_nfe_todas_20k..csv"
+csv_path = "/users/home/lucas.ocunha/research/masters/data/ceap_nfe_todas_20k.csv"
 df_full = pd.read_csv(csv_path)
 df_shard = df_full.iloc[SHARD_ID::NUM_SHARDS].copy()
 total_shard_original = len(df_shard)
