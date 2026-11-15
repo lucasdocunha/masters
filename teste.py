@@ -191,7 +191,7 @@ with (
             pbar.set_postfix(ok=sucessos, err=erros, dl=f"{t_dl:.1f}s", inf=f"{t_inf:.1f}s")
             log(
                 f"[{idx + 1}/{total_docs}] doc_id={doc_id} | {len(imgs)} pág(s) | "
-                f"dl={t_dl:.1f}s inf={t_inf:.1f}s | {json.dumps(dados_extraidos, ensure_ascii=False)[:120]}"
+                f"dl={t_dl:.1f}s inf={t_inf:.1f}s | {json.dumps(dados_extraidos, ensure_ascii=False)}"
             )
         except Exception as e:
             erros += 1
