@@ -122,20 +122,9 @@ def main():
             m.get("caminho_arquivo", f"/media/ssd2/datasets/CEAP/{d_id}.pdf")
         ]
 
-    # 5. Gerar CSV 1: Novas selecionadas nesta etapa (2.494 docs)
-    out_novas = DATA_DIR / "ceap_nfe_selecionadas_novas.csv"
-    with open(out_novas, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(CSV_HEADER)
-        for d_id in sorted(novas_selecionadas, key=lambda x: int(x) if x.isdigit() else x):
-            origem = "validacao_desktop_meta_20k" if d_id in desktop_ids else "validacao_site"
-            writer.writerow(format_row(d_id, origem))
-
-    print(f"[OK] {out_novas.name} salvo com {len(novas_selecionadas):,} linhas ({out_novas.stat().st_size / 1024:.1f} KB)")
-
-    # 6. Gerar CSV 2: Base completa de todas as 20.232 NF-e
-    out_todas = DATA_DIR / "ceap_nfe_todas_20k.csv"
-    with open(out_todas, "w", newline="", encoding="utf-8") as f:
+    # 6. Gerar CSV principal: data/ceap_nfe_selecionadas.csv com TODAS as 20.232 NF-e
+    out_selecionadas = DATA_DIR / "ceap_nfe_selecionadas.csv"
+    with open(out_selecionadas, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(CSV_HEADER)
         for d_id in sorted(all_nfe_ids, key=lambda x: int(x) if x.isdigit() else x):
@@ -147,17 +136,24 @@ def main():
                 origem = "base_historica"
             writer.writerow(format_row(d_id, origem))
 
-    print(f"[OK] {out_todas.name} salvo com {len(all_nfe_ids):,} linhas ({out_todas.stat().st_size / (1024*1024):.2f} MB)")
+    print(f"[OK] {out_selecionadas.name} salvo com {len(all_nfe_ids):,} linhas ({out_selecionadas.stat().st_size / (1024*1024):.2f} MB)")
 
-    # 7. Criar cópia/atalho conveniente data/ceap_nfe_selecionadas.csv
-    out_alias = DATA_DIR / "ceap_nfe_selecionadas.csv"
-    with open(out_alias, "w", newline="", encoding="utf-8") as f:
+    # 7. Manter também data/ceap_nfe_todas_20k.csv como sinônimo explícito
+    out_todas = DATA_DIR / "ceap_nfe_todas_20k.csv"
+    if out_todas != out_selecionadas:
+        import shutil
+        shutil.copyfile(out_selecionadas, out_todas)
+    print(f"[OK] {out_todas.name} sincronizado com {len(all_nfe_ids):,} linhas.")
+
+    # 8. Guardar lote recente (2.494 docs) em arquivo específico
+    out_novas = DATA_DIR / "ceap_nfe_selecionadas_lote_recente.csv"
+    with open(out_novas, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(CSV_HEADER)
         for d_id in sorted(novas_selecionadas, key=lambda x: int(x) if x.isdigit() else x):
             origem = "validacao_desktop_meta_20k" if d_id in desktop_ids else "validacao_site"
             writer.writerow(format_row(d_id, origem))
-    print(f"[OK] {out_alias.name} salvo.")
+    print(f"[OK] {out_novas.name} salvo com {len(novas_selecionadas):,} linhas.")
 
     print(f"\nConcluído com sucesso em {time.time()-t0:.2f}s!")
 
