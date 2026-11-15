@@ -242,8 +242,8 @@ t_inicio = time.time()
 sucessos = 0
 erros = 0
 
-PREFETCH_WORKERS = 8
-MAX_FILA_PREFETCH = 16
+PREFETCH_WORKERS = 4
+MAX_FILA_PREFETCH = 8
 
 with (
     ThreadPoolExecutor(max_workers=PREFETCH_WORKERS) as pool,

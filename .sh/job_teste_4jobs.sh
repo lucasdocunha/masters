@@ -4,7 +4,7 @@
 #SBATCH --array=0-4
 #SBATCH --gres=gpu:1
 #SBATCH --mem=64G
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=12
 #SBATCH --output=saida_%a.out
 #SBATCH --error=saida_%a.err
 #SBATCH --time=72:00:00
@@ -21,20 +21,39 @@ SCRIPT_PATH="/users/home/lucas.ocunha/research/masters/teste.py"
 echo "Iniciando Parte ${SHARD_ID} de ${NUM_SHARDS} na GPU:"
 nvidia-smi
 
-# Se passar um modelo específico no sbatch (ex: sbatch .sh/job_teste_4jobs.sh Qwen/Qwen3.5-4B), roda só ele;
-# caso contrário, roda ambos em sequência na mesma alocação:
-if [ -n "${1:-}" ]; then
-    MODELOS=("$1")
+# Se passar modelos como argumento no sbatch, usa os passados;
+# caso contrário, sobe os 3 modelos em paralelo na mesma H100 (80GB):
+if [ "$#" -gt 0 ]; then
+    MODELOS=("$@")
 else
     MODELOS=(
         "maritaca-ai/S5-nano"
         "Qwen/Qwen3.5-4B"
+        "Qwen/Qwen3.5-9B"
     )
 fi
 
+PIDS=()
+
+encerrar_filhos() {
+    echo "Sinal de interrupção recebido no job! Encaminhando para os ${#PIDS[@]} modelos em paralelo..."
+    for pid in "${PIDS[@]}"; do
+        kill -TERM "$pid" 2>/dev/null || true
+    done
+    wait
+    exit 0
+}
+
+trap encerrar_filhos SIGINT SIGTERM
+
 for MODELO in "${MODELOS[@]}"; do
     echo "======================================================================"
-    echo "Rodando modelo: ${MODELO} (Parte ${SHARD_ID}/${NUM_SHARDS})"
+    echo "Subindo em paralelo na GPU: ${MODELO} (Parte ${SHARD_ID}/${NUM_SHARDS})"
     echo "======================================================================"
-    python -u "${SCRIPT_PATH}" "${SHARD_ID}" "${NUM_SHARDS}" "${MODELO}"
+    python -u "${SCRIPT_PATH}" "${SHARD_ID}" "${NUM_SHARDS}" "${MODELO}" &
+    PIDS+=("$!")
 done
+
+# Aguarda todos os modelos em paralelo finalizarem
+wait
+echo "Todos os ${#MODELOS[@]} modelos finalizaram a Parte ${SHARD_ID}/${NUM_SHARDS}!"
