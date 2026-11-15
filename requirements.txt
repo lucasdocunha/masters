@@ -1,0 +1,15 @@
+# PyTorch com suporte a CUDA 12.8 (recomendado pelo CLUSTER.IA para NVIDIA H100)
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch>=2.6.0
+torchvision>=0.21.0
+
+# Hugging Face & Inferência Multimodal (maritaca-ai/S5-nano)
+transformers>=4.50.0
+accelerate>=1.4.0
+safetensors>=0.5.0
+huggingface-hub>=0.29.0
+
+# Processamento de PDF, Imagens e Dados
+pymupdf>=1.25.0
+pillow>=11.0.0
+pandas>=2.2.0
