@@ -39,8 +39,16 @@ data/models/*.joblib
 *.pdf
 logs/
 *.out
+*.err
+saida_inferencias/
+resultados*.csv
 data/label_studio_*
 label_studio_data/
+
+# Configurações locais de agentes
+.agents/
+.claude/
+skills-lock.json
 
 # Site: miniaturas e pré-visualizações são versionadas (o deploy precisa delas).
 # Regenere com: uv run python scripts/web/build_site.py

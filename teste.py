@@ -1,11 +1,16 @@
 # pip install -U transformers accelerate pymupdf pillow pandas
 import io
+import os
+import sys
 from pathlib import Path
 import urllib.request
 import fitz  # PyMuPDF
 from PIL import Image
 from transformers import AutoProcessor, AutoModelForMultimodalLM
 import pandas as pd
+
+SHARD_ID = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("SLURM_ARRAY_TASK_ID", 0))
+NUM_SHARDS = int(sys.argv[2]) if len(sys.argv) > 2 else int(os.environ.get("SLURM_ARRAY_TASK_COUNT", 1))
 
 MODEL = "maritaca-ai/S5-nano"
 processor = AutoProcessor.from_pretrained(MODEL)
@@ -66,17 +71,31 @@ def perguntar(imagens, pergunta, pensar=False, max_new_tokens=1024):
     return processor.decode(novos, skip_special_tokens=True)
 
 
-df = pd.read_csv("data/ceap_documentos_rotulados.csv")
-saida_dir = Path("saida_inferencias")
-saida_dir.mkdir(exist_ok=True)
+df = pd.read_csv("data/ceap_nfe_selecionadas.csv")
+df = df.iloc[SHARD_ID::NUM_SHARDS].copy().reset_index(drop=True)
+print(f"[Parte {SHARD_ID + 1}/{NUM_SHARDS}] Processando {len(df)} documentos...")
+
+saida_dir = Path("saida_inferencias") / f"parte_{SHARD_ID}"
 
 for idx, row in df.iterrows():
     doc_id = row.get("doc_id", idx)
-    imgs = baixar_imagens(row["link_documento"])
-    resposta = perguntar(imgs, prompt)
+    lote_dir = saida_dir / f"lote_{idx // 500:04d}"
+    lote_dir.mkdir(parents=True, exist_ok=True)
+    arq_json = lote_dir / f"{doc_id}.json"
 
-    (saida_dir / f"{doc_id}.json").write_text(resposta, encoding="utf-8")
-    df.loc[idx, "resposta"] = resposta
+    if arq_json.exists():
+        df.loc[idx, "resposta"] = arq_json.read_text(encoding="utf-8")
+        continue
 
-df.to_csv("resultados.csv", index=False)
+    try:
+        imgs = baixar_imagens(row["link_documento"])
+        resposta = perguntar(imgs, prompt)
+        arq_json.write_text(resposta, encoding="utf-8")
+        df.loc[idx, "resposta"] = resposta
+    except Exception as e:
+        print(f"[Erro doc_id={doc_id}]: {e}", flush=True)
+        df.loc[idx, "resposta"] = None
+
+df.to_csv(f"resultados_parte_{SHARD_ID}.csv", index=False)
+
 
