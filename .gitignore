@@ -42,6 +42,7 @@ logs/
 *.err
 saida_inferencias/
 resultados*.csv
+resultados*.jsonl
 data/label_studio_*
 label_studio_data/
 

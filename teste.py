@@ -1,7 +1,10 @@
-# pip install -U transformers accelerate pymupdf pillow pandas
+# pip install -U transformers accelerate pymupdf pillow pandas tqdm
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 import io
+import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -9,17 +12,18 @@ import urllib.request
 import fitz  # PyMuPDF
 from PIL import Image
 import torch
+from tqdm import tqdm
 from transformers import AutoProcessor, AutoModelForMultimodalLM
 import pandas as pd
+
+SHARD_ID = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("SLURM_ARRAY_TASK_ID", 0))
+NUM_SHARDS = int(sys.argv[2]) if len(sys.argv) > 2 else int(os.environ.get("SLURM_ARRAY_TASK_COUNT", 1))
 
 
 def log(msg: str) -> None:
     agora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"[{agora}] [Parte {SHARD_ID + 1}/{NUM_SHARDS}] {msg}", flush=True)
+    tqdm.write(f"[{agora}] [Parte {SHARD_ID + 1}/{NUM_SHARDS}] {msg}")
 
-
-SHARD_ID = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("SLURM_ARRAY_TASK_ID", 0))
-NUM_SHARDS = int(sys.argv[2]) if len(sys.argv) > 2 else int(os.environ.get("SLURM_ARRAY_TASK_COUNT", 1))
 
 MODEL = "maritaca-ai/S5-nano"
 log(f"Iniciando job | CUDA disponível: {torch.cuda.is_available()}")
@@ -54,7 +58,8 @@ Schema JSON esperado e regras por campo:
 """
 
 
-def baixar_imagens(url, dpi=150, paginas=None):
+def baixar_imagens(url: str, dpi: int = 150, paginas=None):
+    t0 = time.time()
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         dados = resp.read()
@@ -67,9 +72,9 @@ def baixar_imagens(url, dpi=150, paginas=None):
             pix = doc[i].get_pixmap(dpi=dpi)
             imgs.append(Image.frombytes("RGB", (pix.width, pix.height), pix.samples))
         doc.close()
-        return imgs
+        return imgs, time.time() - t0
 
-    return [Image.open(io.BytesIO(dados)).convert("RGB")]
+    return [Image.open(io.BytesIO(dados)).convert("RGB")], time.time() - t0
 
 
 def perguntar(imagens, pergunta, pensar=False, max_new_tokens=1024):
@@ -89,67 +94,118 @@ def perguntar(imagens, pergunta, pensar=False, max_new_tokens=1024):
     return processor.decode(novos, skip_special_tokens=True)
 
 
+def extrair_dict_json(texto: str) -> dict:
+    limpo = re.sub(r"^```(?:json)?\s*|\s*```$", "", texto.strip(), flags=re.IGNORECASE)
+    try:
+        obj = json.loads(limpo)
+        if isinstance(obj, dict):
+            return obj
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", limpo, flags=re.DOTALL)
+        if match:
+            try:
+                obj = json.loads(match.group(0))
+                if isinstance(obj, dict):
+                    return obj
+            except json.JSONDecodeError:
+                pass
+    return {"raw_response": texto.strip()}
+
+
 csv_path = "data/ceap_nfe_selecionadas.csv"
 df_full = pd.read_csv(csv_path)
 df = df_full.iloc[SHARD_ID::NUM_SHARDS].copy().reset_index(drop=True)
 total_docs = len(df)
-log(f"CSV '{csv_path}' lido ({len(df_full)} total) -> {total_docs} documentos atribuídos a esta parte.")
 
-saida_dir = Path("saida_inferencias") / f"parte_{SHARD_ID}"
+out_jsonl = Path(f"resultados_parte_{SHARD_ID}.jsonl")
+links_processados = set()
+if out_jsonl.exists():
+    with out_jsonl.open("r", encoding="utf-8") as f:
+        for linha in f:
+            linha = linha.strip()
+            if not linha:
+                continue
+            try:
+                registro = json.loads(linha)
+                links_processados.update(registro.keys())
+            except json.JSONDecodeError:
+                pass
+
+pendentes = [
+    (idx, row.get("doc_id", idx), str(row["link_documento"]))
+    for idx, row in df.iterrows()
+    if str(row["link_documento"]) not in links_processados
+]
+
+log(
+    f"CSV '{csv_path}' ({len(df_full)} total) | Parte: {total_docs} docs | "
+    f"Já no JSONL: {len(links_processados)} | Pendentes: {len(pendentes)}"
+)
+
 t_inicio = time.time()
 sucessos = 0
-pulados = 0
 erros = 0
 
-for idx, row in df.iterrows():
-    doc_id = row.get("doc_id", idx)
-    lote_dir = saida_dir / f"lote_{idx // 500:04d}"
-    lote_dir.mkdir(parents=True, exist_ok=True)
-    arq_json = lote_dir / f"{doc_id}.json"
+# Prefetch paralelo de PDFs nas CPUs (8 workers) para a GPU nunca esperar download
+PREFETCH_WORKERS = 8
+MAX_FILA_PREFETCH = 16
 
-    if arq_json.exists():
-        df.loc[idx, "resposta"] = arq_json.read_text(encoding="utf-8")
-        pulados += 1
-        log(f"[{idx + 1}/{total_docs} | {(idx + 1) / total_docs * 100:5.1f}%] doc_id={doc_id} -> JÁ PROCESSADO (cache)")
-        continue
+with (
+    out_jsonl.open("a", encoding="utf-8") as f_out,
+    ThreadPoolExecutor(max_workers=PREFETCH_WORKERS) as pool,
+    tqdm(
+        total=total_docs,
+        initial=total_docs - len(pendentes),
+        desc=f"Parte {SHARD_ID + 1}/{NUM_SHARDS}",
+        unit="doc",
+        dynamic_ncols=True,
+    ) as pbar,
+):
+    futuros = {}
+    iter_pendentes = iter(pendentes)
 
-    t_doc = time.time()
-    try:
-        imgs = baixar_imagens(row["link_documento"])
-        t_dl = time.time() - t_doc
+    for _ in range(min(MAX_FILA_PREFETCH, len(pendentes))):
+        item = next(iter_pendentes)
+        futuros[item] = pool.submit(baixar_imagens, item[2])
 
-        t_inf_start = time.time()
-        resposta = perguntar(imgs, prompt)
-        t_inf = time.time() - t_inf_start
+    for item in pendentes:
+        idx, doc_id, link = item
+        fut = futuros.pop(item)
 
-        arq_json.write_text(resposta, encoding="utf-8")
-        df.loc[idx, "resposta"] = resposta
-        sucessos += 1
+        prox = next(iter_pendentes, None)
+        if prox is not None:
+            futuros[prox] = pool.submit(baixar_imagens, prox[2])
 
-        decorrido = time.time() - t_inicio
-        processados_agora = sucessos + erros
-        media_s = decorrido / max(processados_agora, 1)
-        restantes = total_docs - (idx + 1)
-        eta_min = (restantes * media_s) / 60
+        try:
+            imgs, t_dl = fut.result()
+            t_inf_start = time.time()
+            resposta_str = perguntar(imgs, prompt)
+            t_inf = time.time() - t_inf_start
 
-        resumo_json = " ".join(resposta.split())[:120]
-        log(
-            f"[{idx + 1}/{total_docs} | {(idx + 1) / total_docs * 100:5.1f}%] "
-            f"doc_id={doc_id} | {len(imgs)} pág(s) | dl={t_dl:.1f}s inf={t_inf:.1f}s | "
-            f"ETA: {eta_min:.1f} min | {resumo_json}"
-        )
-    except Exception as e:
-        erros += 1
-        log(f"[{idx + 1}/{total_docs} | {(idx + 1) / total_docs * 100:5.1f}%] ERRO doc_id={doc_id} ({ time.time() - t_doc:.1f}s): {e}")
-        df.loc[idx, "resposta"] = None
+            dados_extraidos = extrair_dict_json(resposta_str)
+            linha_jsonl = json.dumps({link: dados_extraidos}, ensure_ascii=False)
+            f_out.write(linha_jsonl + "\n")
+            f_out.flush()
 
-out_csv = f"resultados_parte_{SHARD_ID}.csv"
-df.to_csv(out_csv, index=False)
+            sucessos += 1
+            pbar.set_postfix(ok=sucessos, err=erros, dl=f"{t_dl:.1f}s", inf=f"{t_inf:.1f}s")
+            log(
+                f"[{idx + 1}/{total_docs}] doc_id={doc_id} | {len(imgs)} pág(s) | "
+                f"dl={t_dl:.1f}s inf={t_inf:.1f}s | {json.dumps(dados_extraidos, ensure_ascii=False)[:120]}"
+            )
+        except Exception as e:
+            erros += 1
+            linha_erro = json.dumps({link: {"erro": str(e)}}, ensure_ascii=False)
+            f_out.write(linha_erro + "\n")
+            f_out.flush()
+            pbar.set_postfix(ok=sucessos, err=erros)
+            log(f"[{idx + 1}/{total_docs}] ERRO doc_id={doc_id} ({link}): {e}")
+        finally:
+            pbar.update(1)
+
 tempo_total_min = (time.time() - t_inicio) / 60
 log(
     f"FINALIZADO em {tempo_total_min:.1f} min | "
-    f"Total: {total_docs} | Sucessos: {sucessos} | Cache: {pulados} | Erros: {erros} | "
-    f"Salvo em: {out_csv}"
+    f"Sucessos: {sucessos} | Já em cache: {len(links_processados)} | Erros: {erros} | "
+    f"Salvo em: {out_jsonl}"
 )
-
-
