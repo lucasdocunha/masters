@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "data_analise": "2026-11-16 10:42:09",
+    "total_documentos_base": 20232,
+    "documentos_comuns_intersecao": 20071,
+    "modelos_avaliados": [
+      "S5-nano",
+      "Qwen3.5-4B",
+      "Qwen3.5-9B"
+    ]
+  },
+  "cobertura": {
+    "S5-nano": {
+      "total_docs": 20128,
+      "percentage_base": 99.49,
+      "raw_response_count": 7,
+      "raw_response_pct": 0.03,
+      "preenchimento_campos": {
+        "numero_nota": {
+          "count": 20044,
+          "percentage": 99.87
+        },
+        "chave_de_acesso": {
+          "count": 19680,
+          "percentage": 98.05
+        },
+        "data_emissao": {
+          "count": 20056,
+          "percentage": 99.93
+        },
+        "valor_total_nota": {
+          "count": 20060,
+          "percentage": 99.95
+        },
+        "cnpj_emitente": {
+          "count": 18761,
+          "percentage": 93.47
+        },
+        "cnpj_destinatario": {
+          "count": 17836,
+          "percentage": 88.86
+        }
+      }
+    },
+    "Qwen3.5-4B": {
+      "total_docs": 20184,
+      "percentage_base": 99.76,
+      "raw_response_count": 106,
+      "raw_response_pct": 0.53,
+      "preenchimento_campos": {
+        "numero_nota": {
+          "count": 19967,
+          "percentage": 99.48
+        },
+        "chave_de_acesso": {
+          "count": 19848,
+          "percentage": 98.89
+        },
+        "data_emissao": {
+          "count": 19964,
+          "percentage": 99.47
+        },
+        "valor_total_nota": {
+          "count": 19966,
+          "percentage": 99.48
+        },
+        "cnpj_emitente": {
+          "count": 19947,
+          "percentage": 99.38
+        },
+        "cnpj_destinatario": {
+          "count": 19102,
+          "percentage": 95.17
+        }
+      }
+    },
+    "Qwen3.5-9B": {
+      "total_docs": 20213,
+      "percentage_base": 99.91,
+      "raw_response_count": 215,
+      "raw_response_pct": 1.06,
+      "preenchimento_campos": {
+        "numero_nota": {
+          "count": 19856,
+          "percentage": 98.93
+        },
+        "chave_de_acesso": {
+          "count": 19701,
+          "percentage": 98.16
+        },
+        "data_emissao": {
+          "count": 19856,
+          "percentage": 98.93
+        },
+        "valor_total_nota": {
+          "count": 19855,
+          "percentage": 98.92
+        },
+        "cnpj_emitente": {
+          "count": 19843,
+          "percentage": 98.86
+        },
+        "cnpj_destinatario": {
+          "count": 19735,
+          "percentage": 98.33
+        }
+      }
+    }
+  },
+  "validacao_chave_sefaz_mod11": {
+    "S5-nano": {
+      "total_chaves_extraidas": 19680,
+      "exatamente_44_digitos": 584,
+      "exatamente_44_digitos_pct": 2.91,
+      "validas_sefaz_mod11": 277,
+      "validas_sefaz_mod11_pct": 1.38
+    },
+    "Qwen3.5-4B": {
+      "total_chaves_extraidas": 19848,
+      "exatamente_44_digitos": 6878,
+      "exatamente_44_digitos_pct": 34.27,
+      "validas_sefaz_mod11": 5952,
+      "validas_sefaz_mod11_pct": 29.65
+    },
+    "Qwen3.5-9B": {
+      "total_chaves_extraidas": 19701,
+      "exatamente_44_digitos": 5956,
+      "exatamente_44_digitos_pct": 29.67,
+      "validas_sefaz_mod11": 5012,
+      "validas_sefaz_mod11_pct": 24.97
+    }
+  },
+  "concordancia_entre_modelos": {
+    "numero_nota": {
+      "consenso_3_3_norm": 17784,
+      "consenso_3_3_norm_pct": 88.61,
+      "consenso_3_3_exato": 7950,
+      "consenso_3_3_exato_pct": 39.61,
+      "maioria_2_3_norm": 19804,
+      "maioria_2_3_norm_pct": 98.67,
+      "divergencia_total_norm": 267,
+      "divergencia_total_norm_pct": 1.33,
+      "qwen4b_eq_qwen9b_norm": 18600,
+      "qwen4b_eq_qwen9b_norm_pct": 92.67,
+      "s5nano_eq_qwen9b_norm": 18603,
+      "s5nano_eq_qwen9b_norm_pct": 92.69,
+      "s5nano_eq_qwen4b_norm": 18169,
+      "s5nano_eq_qwen4b_norm_pct": 90.52
+    },
+    "chave_de_acesso": {
+      "consenso_3_3_norm": 197,
+      "consenso_3_3_norm_pct": 0.98,
+      "consenso_3_3_exato": 196,
+      "consenso_3_3_exato_pct": 0.98,
+      "maioria_2_3_norm": 4655,
+      "maioria_2_3_norm_pct": 23.19,
+      "divergencia_total_norm": 15331,
+      "divergencia_total_norm_pct": 76.38,
+      "qwen4b_eq_qwen9b_norm": 4121,
+      "qwen4b_eq_qwen9b_norm_pct": 20.53,
+      "s5nano_eq_qwen9b_norm": 448,
+      "s5nano_eq_qwen9b_norm_pct": 2.23,
+      "s5nano_eq_qwen4b_norm": 480,
+      "s5nano_eq_qwen4b_norm_pct": 2.39
+    },
+    "data_emissao": {
+      "consenso_3_3_norm": 14615,
+      "consenso_3_3_norm_pct": 72.82,
+      "consenso_3_3_exato": 14615,
+      "consenso_3_3_exato_pct": 72.82,
+      "maioria_2_3_norm": 19793,
+      "maioria_2_3_norm_pct": 98.61,
+      "divergencia_total_norm": 277,
+      "divergencia_total_norm_pct": 1.38,
+      "qwen4b_eq_qwen9b_norm": 16279,
+      "qwen4b_eq_qwen9b_norm_pct": 81.11,
+      "s5nano_eq_qwen9b_norm": 16322,
+      "s5nano_eq_qwen9b_norm_pct": 81.32,
+      "s5nano_eq_qwen4b_norm": 16422,
+      "s5nano_eq_qwen4b_norm_pct": 81.82
+    },
+    "valor_total_nota": {
+      "consenso_3_3_norm": 17594,
+      "consenso_3_3_norm_pct": 87.66,
+      "consenso_3_3_exato": 17594,
+      "consenso_3_3_exato_pct": 87.66,
+      "maioria_2_3_norm": 19971,
+      "maioria_2_3_norm_pct": 99.5,
+      "divergencia_total_norm": 99,
+      "divergencia_total_norm_pct": 0.49,
+      "qwen4b_eq_qwen9b_norm": 18031,
+      "qwen4b_eq_qwen9b_norm_pct": 89.84,
+      "s5nano_eq_qwen9b_norm": 19141,
+      "s5nano_eq_qwen9b_norm_pct": 95.37,
+      "s5nano_eq_qwen4b_norm": 17987,
+      "s5nano_eq_qwen4b_norm_pct": 89.62
+    },
+    "cnpj_emitente": {
+      "consenso_3_3_norm": 5730,
+      "consenso_3_3_norm_pct": 28.55,
+      "consenso_3_3_exato": 5192,
+      "consenso_3_3_exato_pct": 25.87,
+      "maioria_2_3_norm": 13617,
+      "maioria_2_3_norm_pct": 67.84,
+      "divergencia_total_norm": 6454,
+      "divergencia_total_norm_pct": 32.16,
+      "qwen4b_eq_qwen9b_norm": 8731,
+      "qwen4b_eq_qwen9b_norm_pct": 43.5,
+      "s5nano_eq_qwen9b_norm": 7344,
+      "s5nano_eq_qwen9b_norm_pct": 36.59,
+      "s5nano_eq_qwen4b_norm": 9002,
+      "s5nano_eq_qwen4b_norm_pct": 44.85
+    },
+    "cnpj_destinatario": {
+      "consenso_3_3_norm": 10520,
+      "consenso_3_3_norm_pct": 52.41,
+      "consenso_3_3_exato": 9396,
+      "consenso_3_3_exato_pct": 46.81,
+      "maioria_2_3_norm": 17734,
+      "maioria_2_3_norm_pct": 88.36,
+      "divergencia_total_norm": 2231,
+      "divergencia_total_norm_pct": 11.12,
+      "qwen4b_eq_qwen9b_norm": 14096,
+      "qwen4b_eq_qwen9b_norm_pct": 70.23,
+      "s5nano_eq_qwen9b_norm": 12424,
+      "s5nano_eq_qwen9b_norm_pct": 61.9,
+      "s5nano_eq_qwen4b_norm": 12254,
+      "s5nano_eq_qwen4b_norm_pct": 61.05
+    }
+  },
+  "acuracia_contra_ground_truth_ceap": {
+    "S5-nano": {
+      "valor_total_nota": {
+        "corretos": 18725,
+        "total": 20071,
+        "acuracia_pct": 93.29
+      },
+      "data_emissao": {
+        "corretos": 18057,
+        "total": 20071,
+        "acuracia_pct": 89.97
+      },
+      "cnpj_emitente": {
+        "corretos": 9349,
+        "total": 20071,
+        "acuracia_pct": 46.58
+      }
+    },
+    "Qwen3.5-4B": {
+      "valor_total_nota": {
+        "corretos": 17613,
+        "total": 20071,
+        "acuracia_pct": 87.75
+      },
+      "data_emissao": {
+        "corretos": 15503,
+        "total": 20071,
+        "acuracia_pct": 77.24
+      },
+      "cnpj_emitente": {
+        "corretos": 10690,
+        "total": 20071,
+        "acuracia_pct": 53.26
+      }
+    },
+    "Qwen3.5-9B": {
+      "valor_total_nota": {
+        "corretos": 19024,
+        "total": 20071,
+        "acuracia_pct": 94.78
+      },
+      "data_emissao": {
+        "corretos": 15877,
+        "total": 20071,
+        "acuracia_pct": 79.1
+      },
+      "cnpj_emitente": {
+        "corretos": 11220,
+        "total": 20071,
+        "acuracia_pct": 55.9
+      }
+    },
+    "Ensemble_Maioria_2_3": {
+      "valor_total_nota": {
+        "corretos": 19121,
+        "total": 20071,
+        "acuracia_pct": 95.27
+      },
+      "data_emissao": {
+        "corretos": 17111,
+        "total": 20071,
+        "acuracia_pct": 85.25
+      },
+      "cnpj_emitente": {
+        "corretos": 12480,
+        "total": 20071,
+        "acuracia_pct": 62.18
+      }
+    }
+  }
+}
