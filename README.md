@@ -180,10 +180,80 @@ Os PDFs vêm da Câmara: o modo documento os mostra direto; as miniaturas da pas
 flowchart TD
     A["PDFs CEAP<br>(1,4 M docs · 274 GB)"] --> B["PyMuPDF<br>renderização 150 DPI"]
     B --> C["Embeddings<br>DINOv2 (384-D) + ColPali (128-D)"]
+    B --> E_VLM["Modelos VLM<br>(S5-nano, Qwen-4B, Qwen-9B)"]
     C --> D["Métrica (ArcFace 128-D)<br>e K-Means / FAISS"]
     D --> E["Label Studio<br>rotulagem ativa"]
     D --> G["Site de inspeção<br>scripts/web/build_site.py"]
+    E_VLM --> H["Extração estruturada de campos<br>e benchmark"]
 ```
+
+---
+
+## Consulta aos Dados Oficiais do CEAP e Benchmark de Extração
+
+Como consultar qualquer documento fiscal diretamente nos dados abertos do CEAP e compará-lo com as predições dos modelos de visão-linguagem (VLM).
+
+### 1. Como consultar um documento fiscal via código
+
+Os metadados oficiais declarados na prestação de contas dos parlamentares ficam armazenados em `data/raw/Ano-<ano>.json`. A função abaixo consulta qualquer documento pelo seu `idDocumento`:
+
+```python
+import json
+from pathlib import Path
+
+def consultar_ceap(doc_id: int):
+    """Consulta o registro fiscal oficial do CEAP pelo idDocumento."""
+    for ano in range(2014, 2027):
+        path = Path(f"data/raw/Ano-{ano}.json")
+        if not path.exists():
+            continue
+        with open(path, "r", encoding="utf-8") as f:
+            for item in json.load(f).get("dados", []):
+                if item.get("idDocumento") == doc_id:
+                    return item
+    return None
+
+registro = consultar_ceap(5452023)
+print(json.dumps(registro, indent=2, ensure_ascii=False))
+```
+
+### 2. Exemplo Real: Dados do CEAP vs. Extrações dos Modelos
+
+Exemplo do documento **5452023** (NF-e de combustível):
+* **PDF Oficial:** [5452023.pdf (Câmara)](https://www.camara.leg.br/cota-parlamentar/documentos/publ/1282/2014/5452023.pdf)
+* **Arquivo Local:** `/media/ssd2/datasets/CEAP/5452023.pdf`
+
+#### Retorno Oficial do CEAP (Ground Truth):
+```json
+{
+  "idDocumento": 5452023,
+  "nomeParlamentar": "Nilson Pinto",
+  "cpf": "02875900200",
+  "idDeputado": 74352,
+  "siglaUF": "PA",
+  "siglaPartido": "PSDB",
+  "descricao": "COMBUSTÍVEIS E LUBRIFICANTES.",
+  "fornecedor": "POSTO UMARIZAL",
+  "cnpjCPF": "140.826.480/0016-9 ",
+  "numero": "2084",
+  "dataEmissao": "2014-06-30T00:00:00",
+  "valorDocumento": "4774.03",
+  "valorLiquido": "4500",
+  "urlDocumento": "https://www.camara.leg.br/cota-parlamentar/documentos/publ/1282/2014/5452023.pdf"
+}
+```
+
+#### Comparativo de Extração (VLM):
+| Campo Avaliado | CEAP (Ground Truth) | S5-nano | Qwen3.5-4B | Qwen3.5-9B |
+| :--- | :--- | :--- | :--- | :--- |
+| **`numero_nota`** | `2084` | `"000002084"` ✅ | `"000002084"` ✅ | `"000002084"` ✅ |
+| **`data_emissao`** | `2014-06-30` | `"2014-06-30"` ✅ | `"2014-06-30"` ✅ | `"2014-06-30"` ✅ |
+| **`valor_total_nota`** | `4774.03` | `4774.03` ✅ | `4.77403` *(erro de ponto)* | `4774.03` ✅ |
+| **`cnpj_emitente`** | `14082648000169` | `"14082648000169"` ✅ | `"14082648000169"` ✅ | `"14082648000169"` ✅ |
+| **`cnpj_destinatario`**| `02875900200` | `"02875900200"` ✅ | `"02875900200"` ✅ | `"02875900200"` ✅ |
+| **`chave_de_acesso`** | *(Não consta no CEAP)* | `...000284100020931`<br>*(39 dig — truncou)* | `1514061408264800016955001000002084100020931`<br>*(44 dig completos)* ✅ | `...00002084100020931`<br>*(41 dig — truncou)* |
+
+> O relatório com a avaliação completa dos modelos nas 20.232 NF-e está disponível em [`data/evaluation/relatorio_comparativo_modelos_vlm.md`](data/evaluation/relatorio_comparativo_modelos_vlm.md).
 
 ---
 
