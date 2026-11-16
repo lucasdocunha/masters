@@ -191,11 +191,42 @@ flowchart TD
 
 ## Consulta aos Dados Oficiais do CEAP e Benchmark de Extração
 
-Como consultar qualquer documento fiscal diretamente nos dados abertos do CEAP e compará-lo com as predições dos modelos de visão-linguagem (VLM).
+Como consultar qualquer documento fiscal diretamente nos dados abertos da Câmara (via API REST oficial ou nos arquivos em lote) e compará-lo com as predições dos modelos de visão-linguagem (VLM).
 
-### 1. Como consultar um documento fiscal via código
+### 1. Como bater na API Oficial da Câmara (REST API v2)
 
-Os metadados oficiais declarados na prestação de contas dos parlamentares ficam armazenados em `data/raw/Ano-<ano>.json`. A função abaixo consulta qualquer documento pelo seu `idDocumento`:
+A Câmara dos Deputados disponibiliza a **API de Dados Abertos v2** (pública, gratuita e sem necessidade de chave de autenticação) para consulta direta via HTTP:
+
+* **Endpoint de Despesas:** `GET https://dadosabertos.camara.leg.br/api/v2/deputados/{idDeputado}/despesas`
+* **Parâmetros principais:** `ano`, `mes`, `itens` (paginação), `ordem`, `ordenarPor`.
+
+#### Exemplo em Python (usando biblioteca padrão `urllib`):
+```python
+import json
+import urllib.request
+
+# Consulta as despesas do parlamentar (ex: id 204379) no ano de 2024
+url = "https://dadosabertos.camara.leg.br/api/v2/deputados/204379/despesas?ano=2024&itens=5"
+req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "Mozilla/5.0"})
+
+with urllib.request.urlopen(req) as resp:
+    resultado = json.loads(resp.read().decode("utf-8"))
+
+for despesa in resultado.get("dados", []):
+    print(f"Documento: {despesa['numDocumento']} | Fornecedor: {despesa['nomeFornecedor']}")
+    print(f"CNPJ: {despesa['cnpjCpfFornecedor']} | Valor: R$ {despesa['valorDocumento']}")
+    print(f"Data: {despesa['dataDocumento']} | Tipo: {despesa['tipoDocumento']}")
+    print(f"Link do Comprovante: {despesa['urlDocumento']}\n")
+```
+
+#### Exemplo via cURL no Terminal:
+```bash
+curl -s "https://dadosabertos.camara.leg.br/api/v2/deputados/204379/despesas?ano=2024&itens=2" | jq .dados
+```
+
+### 2. Como consultar documentos nos dados históricos em lote (Bulk Data)
+
+Para pesquisas e processamento massivo (2014–2026), a Câmara fornece os arquivos anuais consolidados em `Ano-<ano>.json.zip` (`data/raw/Ano-<ano>.json`). A função abaixo busca instantaneamente qualquer comprovante pelo seu `idDocumento` único:
 
 ```python
 import json
@@ -217,7 +248,7 @@ registro = consultar_ceap(5452023)
 print(json.dumps(registro, indent=2, ensure_ascii=False))
 ```
 
-### 2. Exemplo Real: Dados do CEAP vs. Extrações dos Modelos
+### 3. Exemplo Real: Dados do CEAP vs. Extrações dos Modelos
 
 Exemplo do documento **5452023** (NF-e de combustível):
 * **PDF Oficial:** [5452023.pdf (Câmara)](https://www.camara.leg.br/cota-parlamentar/documentos/publ/1282/2014/5452023.pdf)
